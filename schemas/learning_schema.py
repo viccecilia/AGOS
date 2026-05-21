@@ -9,8 +9,8 @@ from schemas.workspace_schema import WORKSPACE_ID_PATTERN
 
 
 EVENT_ID_PATTERN = re.compile(r"^[a-z0-9][a-z0-9_-]{2,99}$")
-TARGET_TYPES = {"content_draft", "reply_draft", "pain_point"}
-SIGNALS = {"saved", "ignored", "converted", "positive_reply", "negative_reply"}
+TARGET_TYPES = {"content_draft", "reply_draft", "pain_point", "question", "answer_branch", "reply_attempt"}
+SIGNALS = {"saved", "shared", "liked", "ignored", "converted", "positive_reply", "negative_reply", "attempt_posted"}
 
 
 class LearningValidationError(ValueError):

@@ -390,30 +390,37 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.38",
+    "controlCenterVersion": "0.1.39",
     "lastUpdated": "2026-05-21",
-    "currentPhase": "Phase 4 / Korea-Taiwan Market Stage Gate",
-    "currentRound": "R040",
-    "nextRound": "R041",
+    "currentPhase": "Real Growth Workflow MVP Correction",
+    "currentRound": "ROUND-REAL-GROWTH-001",
+    "nextRound": "R041 after acceptance",
     "overallProgress": 80,
-    "activeFocus": "R040 Korea/Taiwan market stage gate is complete and waiting for user acceptance. Do not enter R041 until the user confirms."
+    "activeFocus": "Real growth workflow correction is complete: AGOS can intake a question, create answer branches, require human review, track reply attempts, ingest feedback, and update the best answer branch. R041 remains paused until acceptance."
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.38 Complete Phase 4 Korea-Taiwan market gate",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.38",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.38",
-    "note": "Phase 4 Korea/Taiwan market stage gate is mapped to GitHub tag agos-v0.1.38. Wait for user acceptance before R041."
+    "latestCommit": "agos-v0.1.39 Real growth workflow correction",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.39",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.39",
+    "note": "Real growth workflow correction is mapped to GitHub tag agos-v0.1.39. This is the new MVP acceptance baseline."
   },
   "metrics": {
     "roundsPlanned": 60,
     "roundsCompleted": 40,
     "roundsInProgress": 0,
-    "reportsEmbedded": 44
+    "reportsEmbedded": 45
   },
   "modules": [
+    {
+      "name": "Real Growth Workflow MVP",
+      "progress": 100,
+      "status": "done",
+      "ownerPath": "services/question_inbox_engine.py + services/answer_branch_engine.py + services/reply_attempt_engine.py",
+      "next": "Use this workflow as the actual operating spine before adding more SaaS UI."
+    },
     {
       "name": "Project Control Center",
       "progress": 100,
@@ -454,14 +461,14 @@
       "progress": 100,
       "status": "done",
       "ownerPath": "services/reply_engine.py",
-      "next": "后续学习闭环可记录回复草稿表现"
+      "next": "Reply workflow is now review-gated through answer branches and reply attempts; no automatic spam or mass send."
     },
     {
       "name": "AI Learning Loop",
       "progress": 100,
       "status": "done",
       "ownerPath": "services/learning_engine.py",
-      "next": "报告系统可读取学习事件和推荐排序"
+      "next": "Real growth workflow now ingests reply attempts and updates best answer branches from feedback."
     },
     {
       "name": "Report Engine",
@@ -1346,9 +1353,41 @@
         "R031-R040 reports complete",
         "All Phase 4 smoke tests passed"
       ]
+    },
+    {
+      "id": "ROUND-REAL-GROWTH-001",
+      "title": "AGOS Real Growth Workflow Correction Round",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "Corrected AGOS from a blueprint-only system into a real growth workflow MVP: question intake, answer branches, human review, reply attempts, feedback learning, best-answer update, and workspace isolation are now validated.",
+      "files": [
+        "services/question_inbox_engine.py",
+        "services/answer_branch_engine.py",
+        "services/prospect_discovery_engine.py",
+        "services/reply_attempt_engine.py",
+        "services/learning_engine.py",
+        "tests/real_growth_workflow_smoke_test.py",
+        "runtime/task_results/ROUND-REAL-GROWTH-001/ROUND_SUMMARY.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "python tests\\real_growth_workflow_smoke_test.py passed",
+        "python tests\\learning_smoke_test.py passed",
+        "python tests\\eu_us_phase3_e2e_test.py passed",
+        "python tests\\korea_taiwan_phase4_e2e_test.py passed"
+      ]
     }
   ],
   "versions": [
+    {
+      "version": "0.1.39",
+      "date": "2026-05-21",
+      "round": "ROUND-REAL-GROWTH-001",
+      "type": "correction",
+      "location": "docs/project_control_center.html + services/question_inbox_engine.py + services/answer_branch_engine.py + services/reply_attempt_engine.py + services/prospect_discovery_engine.py + tests/real_growth_workflow_smoke_test.py",
+      "downloadTarget": "git checkout agos-v0.1.39",
+      "notes": "Real growth workflow MVP correction completed. The control center now tracks real growth verification instead of only round progress."
+    },
     {
       "version": "0.1.38",
       "date": "2026-05-21",
@@ -2283,7 +2322,61 @@
       "deliverable": "长期自动增长基础设施验收",
       "report": "runtime/task_results/R060/ROUND_SUMMARY.md"
     }
-  ]
+  ],
+  "realGrowthVerification": {
+    "status": "passed",
+    "stage": "real_growth_workflow_mvp",
+    "todayNewQuestions": 1,
+    "pendingReplyQuestions": 0,
+    "repliedQuestions": 1,
+    "highEngagementAnswers": 1,
+    "ignoredAnswers": 0,
+    "bestAnswerBranches": 1,
+    "humanReviewDefault": true,
+    "automaticSpam": false,
+    "automaticAccountRegistration": false,
+    "platformBypass": false,
+    "workspaceIsolation": "passed",
+    "acceptanceItems": [
+      {
+        "label": "Can intake a real/manual question",
+        "passed": true
+      },
+      {
+        "label": "Can generate multiple answer branches",
+        "passed": true
+      },
+      {
+        "label": "Can record a reply attempt",
+        "passed": true
+      },
+      {
+        "label": "Can record engagement feedback",
+        "passed": true
+      },
+      {
+        "label": "Can learn and mark the best answer branch",
+        "passed": true
+      },
+      {
+        "label": "Workspace isolation blocks cross-product learning bleed",
+        "passed": true
+      },
+      {
+        "label": "No auto spam, mass send, account registration, or platform bypass",
+        "passed": true
+      }
+    ],
+    "evidence": [
+      "tests/real_growth_workflow_smoke_test.py",
+      "services/question_inbox_engine.py",
+      "services/answer_branch_engine.py",
+      "services/prospect_discovery_engine.py",
+      "services/reply_attempt_engine.py",
+      "services/learning_engine.py",
+      "runtime/task_results/ROUND-REAL-GROWTH-001/ROUND_SUMMARY.md"
+    ]
+  }
 }
   </script>
 
@@ -2299,6 +2392,7 @@
       <nav class="nav">
         <div class="nav-title">导航</div>
         <a href="#overview">项目总览 <small id="nav-version"></small></a>
+        <a href="#real-growth">Real Growth <small>MVP</small></a>
         <a href="#completion">AI 完成度 <small id="nav-progress"></small></a>
         <a href="#rounds">Round 路线图 <small>60</small></a>
         <a href="#reports">报告嵌入 <small id="nav-reports"></small></a>
@@ -2351,6 +2445,20 @@
         <div class="metric"><span>规划 Round</span><strong id="metric-rounds">60</strong></div>
         <div class="metric"><span>进行中</span><strong id="metric-active">1</strong></div>
         <div class="metric"><span>已嵌入报告</span><strong id="metric-reports">0</strong></div>
+      </section>
+
+
+      <section id="real-growth" class="panel section">
+        <div class="section-head">
+          <div>
+            <h2>Real Growth Verification</h2>
+            <p>Acceptance is now based on whether AGOS can run the real operating loop: find questions, draft answers, review manually, track attempts, learn feedback, and update the best answer branch.</p>
+          </div>
+          <span class="badge b-green" id="real-growth-status">pending</span>
+        </div>
+        <div class="grid four" id="real-growth-metrics"></div>
+        <div style="height:14px"></div>
+        <div id="real-growth-checklist"></div>
       </section>
 
       <section id="completion" class="panel section">
@@ -2534,6 +2642,32 @@
       el("nav-progress").textContent = `${state.project.overallProgress}%`;
       el("nav-reports").textContent = state.metrics.reportsEmbedded;
       el("nav-git").textContent = state.git.status === "not_initialized" ? "pending" : state.git.branch || state.git.latestCommit;
+    }
+
+    function renderRealGrowth() {
+      const rg = state.realGrowthVerification || {};
+      const status = rg.status || 'pending';
+      el('real-growth-status').className = `badge ${status === 'passed' ? 'b-green' : 'b-amber'}`;
+      el('real-growth-status').textContent = status;
+      const metrics = [
+        ['Today new questions', rg.todayNewQuestions ?? 0],
+        ['Pending replies', rg.pendingReplyQuestions ?? 0],
+        ['Replied questions', rg.repliedQuestions ?? 0],
+        ['High-engagement answers', rg.highEngagementAnswers ?? 0],
+        ['Ignored answers', rg.ignoredAnswers ?? 0],
+        ['Best answer branches', rg.bestAnswerBranches ?? 0],
+        ['Workspace isolation', rg.workspaceIsolation || 'pending'],
+        ['Human review default', rg.humanReviewDefault ? 'yes' : 'pending']
+      ];
+      el('real-growth-metrics').innerHTML = metrics.map(([label, value]) => `
+        <div class="card"><h3>${esc(label)}</h3><p><strong>${esc(value)}</strong></p></div>
+      `).join('');
+      el('real-growth-checklist').innerHTML = (rg.acceptanceItems || []).map(item => `
+        <div class="card" style="margin-bottom:10px">
+          <div class="topline"><span class="badge ${item.passed ? 'b-green' : 'b-amber'}">${item.passed ? 'passed' : 'pending'}</span></div>
+          <p>${esc(item.label)}</p>
+        </div>
+      `).join('');
     }
 
     function renderGit() {
@@ -2743,6 +2877,7 @@
     }
 
     renderOverview();
+    renderRealGrowth();
     renderGit();
     renderModules();
     renderRounds();
