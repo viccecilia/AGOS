@@ -1,0 +1,50 @@
+{
+  "strategy_id": "eu_us_youtube_longform_strategy_v1",
+  "source_content_template_set_id": "eu_us_english_content_factory_v1",
+  "workspace_id": "eu_us_growth_lab",
+  "accuracy_policy": "avoid misleading claims; use sample data wording only",
+  "episodes": [
+    {
+      "episode_id": "youtube_workflow_overload_001",
+      "pain_point_id": "workflow_overload_reddit",
+      "title": "How to Turn Scattered AI Tools Into One Weekly Growth Workflow",
+      "target_viewer": "solo founders and indie builders",
+      "promise": "A practical operating rhythm for research, content, replies, learning, and reports.",
+      "chapters": [
+        {
+          "chapter": "Problem",
+          "beats": ["why more tools do not fix workflow overload", "where founders lose time each week"]
+        },
+        {
+          "chapter": "Diagnosis",
+          "beats": ["map the growth loop", "separate research, drafting, replying, learning, and reporting"]
+        },
+        {
+          "chapter": "Workflow",
+          "beats": ["Monday pain radar", "Tuesday content drafts", "Wednesday reply review", "Friday report review"]
+        },
+        {
+          "chapter": "Review Gate",
+          "beats": ["what must be checked before publishing", "how to avoid hard-sell replies"]
+        },
+        {
+          "chapter": "Next Step",
+          "beats": ["start with one platform", "measure saved time and content quality"]
+        }
+      ],
+      "script_outline": [
+        "Open with the real frustration: five AI tools, zero weekly rhythm.",
+        "Show a simple growth loop diagram using pain radar, content, replies, learning, and reporting.",
+        "Walk through a sample week and explain what gets reviewed before anything is published.",
+        "Close with a conservative next step: test the workflow on one pain point."
+      ],
+      "seo": {
+        "primary_keyword": "AI growth workflow",
+        "secondary_keywords": ["AI marketing workflow", "solo founder growth system", "content workflow automation"],
+        "description": "A practical guide for turning scattered AI marketing tools into one weekly growth workflow for solo founders and indie builders.",
+        "thumbnail_text": "One Weekly AI Growth Workflow",
+        "disclaimer": "Uses local sample workflow data, not a guaranteed growth claim."
+      }
+    }
+  ]
+}

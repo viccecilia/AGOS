@@ -390,28 +390,28 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.18",
+    "controlCenterVersion": "0.1.28",
     "lastUpdated": "2026-05-21",
-    "currentPhase": "Phase 2 / JAG Validation Complete",
-    "currentRound": "R021",
-    "nextRound": "R022",
-    "overallProgress": 42,
-    "activeFocus": "Phase 2 Japan AI Guide validation is complete. Current round is R021: Europe and US user profile. JAG data remains isolated in its own workspace."
+    "currentPhase": "Phase 3 / Europe-US Market Stage Gate",
+    "currentRound": "R030",
+    "nextRound": "R031",
+    "overallProgress": 60,
+    "activeFocus": "R030 Europe/US market stage gate is complete and waiting for user acceptance. Do not enter R031 until the user confirms."
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.18 Complete Phase 2 JAG validation",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.18",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.18",
-    "note": "Phase 2 milestone is mapped to GitHub tag agos-v0.1.18. Use the tag to recover this exact milestone version."
+    "latestCommit": "agos-v0.1.28 Complete Phase 3 Europe-US market gate",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.28",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.28",
+    "note": "Phase 3 Europe/US market stage gate is mapped to GitHub tag agos-v0.1.28. Wait for user acceptance before R031."
   },
   "metrics": {
     "roundsPlanned": 60,
-    "roundsCompleted": 20,
-    "roundsInProgress": 1,
-    "reportsEmbedded": 24
+    "roundsCompleted": 30,
+    "roundsInProgress": 0,
+    "reportsEmbedded": 34
   },
   "modules": [
     {
@@ -426,7 +426,7 @@
       "progress": 100,
       "status": "done",
       "ownerPath": "portal_saas/workspace/",
-      "next": "后续模块必须通过 workspace_id 绑定到 Workspace 边界"
+      "next": "R021 added Europe/US profile metadata under a separate eu_us_growth_lab workspace. Continue with R022 pain radar inputs."
     },
     {
       "name": "Customer Knowledge Base",
@@ -440,7 +440,7 @@
       "progress": 100,
       "status": "done",
       "ownerPath": "services/pain_point_engine.py",
-      "next": "后续内容工厂从痛点雷达读取高优先级痛点"
+      "next": "R022 added English pain radar samples and ranking validation. R023 can now generate content from top pain points."
     },
     {
       "name": "AI Content Factory",
@@ -988,9 +988,278 @@
         "Round report file written",
         "Control center updated"
       ]
+    },
+    {
+      "id": "R021",
+      "title": "Europe and US User Profile",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "Created a Europe/US growth profile with personas, motivations, budget bands, experience levels, content preferences, and pain filters. The smoke test proves it can drive pain-point filtering while keeping JAG isolated.",
+      "files": [
+        "runtime/samples/eu_us_user_profile.json",
+        "tests/eu_us_profile_smoke_test.py",
+        "runtime/task_results/R021/ROUND_SUMMARY.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "python tests\\eu_us_profile_smoke_test.py passed",
+        "python tests\\jag_phase2_smoke_test.py passed",
+        "Workspace isolation test passed"
+      ]
+    },
+    {
+      "id": "R022",
+      "title": "English Pain Radar",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "Built English pain radar samples from the R021 Europe/US profile. Reddit, SEO, Quora-style question intent, and Threads-style social signals are represented with ranking metadata and platform-safe tags.",
+      "files": [
+        "runtime/samples/eu_us_english_pain_radar.json",
+        "tests/english_pain_radar_smoke_test.py",
+        "runtime/task_results/R022/ROUND_SUMMARY.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "python tests\\english_pain_radar_smoke_test.py passed",
+        "python tests\\eu_us_profile_smoke_test.py passed",
+        "python tests\\jag_phase2_smoke_test.py passed"
+      ]
+    },
+    {
+      "id": "R023",
+      "title": "English Content Factory",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "Created English content templates for image/text posts, short videos, long-form outlines, and SEO briefs. The smoke test generates one review-gated draft from each high-priority R022 pain point and keeps every draft in needs_review.",
+      "files": [
+        "runtime/samples/eu_us_english_content_templates.json",
+        "tests/english_content_factory_smoke_test.py",
+        "runtime/task_results/R023/ROUND_SUMMARY.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "python tests\\english_content_factory_smoke_test.py passed",
+        "python tests\\english_pain_radar_smoke_test.py passed",
+        "python tests\\eu_us_profile_smoke_test.py passed"
+      ]
+    },
+    {
+      "id": "R024",
+      "title": "Reddit / Quora Reply Workflow",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "Created English discussion rules for Reddit and Quora-style questions, generated natural review-gated replies, and verified hard-sell plus fake guarantee language is blocked and marked rejected.",
+      "files": [
+        "runtime/samples/eu_us_reply_workflow_rules.json",
+        "tests/reply_workflow_smoke_test.py",
+        "runtime/task_results/R024/ROUND_SUMMARY.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "python tests\\reply_workflow_smoke_test.py passed",
+        "python tests\\english_content_factory_smoke_test.py passed",
+        "python tests\\jag_phase2_smoke_test.py passed"
+      ]
+    },
+    {
+      "id": "R025",
+      "title": "Instagram / TikTok English Short Video",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "Created TikTok and Instagram English short-video packages with hooks, scripts, shot suggestions, captions, hashtags, platform rules, and an explicit no-upload policy.",
+      "files": [
+        "runtime/samples/eu_us_short_video_packages.json",
+        "tests/short_video_package_smoke_test.py",
+        "runtime/task_results/R025/ROUND_SUMMARY.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "python tests\\short_video_package_smoke_test.py passed",
+        "python tests\\english_content_factory_smoke_test.py passed",
+        "python tests\\reply_workflow_smoke_test.py passed"
+      ]
+    },
+    {
+      "id": "R026",
+      "title": "YouTube Long-Form Strategy",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "Created a reusable YouTube long-form strategy with title, target viewer, promise, chapter structure, script outline, SEO keywords, description, thumbnail text, and a conservative accuracy disclaimer.",
+      "files": [
+        "runtime/samples/eu_us_youtube_longform_strategy.json",
+        "tests/youtube_longform_strategy_smoke_test.py",
+        "runtime/task_results/R026/ROUND_SUMMARY.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "python tests\\youtube_longform_strategy_smoke_test.py passed",
+        "python tests\\english_content_factory_smoke_test.py passed",
+        "python tests\\jag_phase2_smoke_test.py passed"
+      ]
+    },
+    {
+      "id": "R027",
+      "title": "English Growth Report",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "Created English daily, weekly, and optimization report samples from R022-R026 artifacts. The report set is explicitly marked sample_data_only and does not claim live market performance.",
+      "files": [
+        "runtime/samples/eu_us_growth_report_sample.json",
+        "tests/english_growth_report_smoke_test.py",
+        "runtime/task_results/R027/ROUND_SUMMARY.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "python tests\\english_growth_report_smoke_test.py passed",
+        "python tests\\youtube_longform_strategy_smoke_test.py passed",
+        "python tests\\reply_workflow_smoke_test.py passed"
+      ]
+    },
+    {
+      "id": "R028",
+      "title": "Europe/US Trend Prediction",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "Created sample trend signals with seasonality, platform hot spots, linked pain points, and content opportunities. Validation confirms every trend recommendation maps to existing pain data and remains labeled sample_data_only.",
+      "files": [
+        "runtime/samples/eu_us_trend_signal_sample.json",
+        "tests/trend_signal_smoke_test.py",
+        "runtime/task_results/R028/ROUND_SUMMARY.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "python tests\\trend_signal_smoke_test.py passed",
+        "python tests\\english_growth_report_smoke_test.py passed",
+        "python tests\\english_pain_radar_smoke_test.py passed"
+      ]
+    },
+    {
+      "id": "R029",
+      "title": "English Platform Adapter",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "Adapted one pain point into Reddit, TikTok, Instagram, YouTube, and SEO outputs. Validation confirms all five platform versions exist and the generic content template set is referenced but not overwritten.",
+      "files": [
+        "runtime/samples/eu_us_platform_adapter_sample.json",
+        "tests/platform_adapter_smoke_test.py",
+        "runtime/task_results/R029/ROUND_SUMMARY.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "python tests\\platform_adapter_smoke_test.py passed",
+        "python tests\\trend_signal_smoke_test.py passed",
+        "python tests\\english_content_factory_smoke_test.py passed"
+      ]
+    },
+    {
+      "id": "R030",
+      "title": "Europe/US Market Stage Gate",
+      "status": "waiting_acceptance",
+      "date": "2026-05-21",
+      "summary": "Validated the complete Europe/US sample chain from R021 through R029: profile, pain radar, content factory, reply workflow, short video, YouTube, growth report, trend signals, and platform adapter. The project is waiting for user acceptance before R031.",
+      "files": [
+        "tests/eu_us_phase3_e2e_test.py",
+        "runtime/task_results/R030/ROUND_SUMMARY.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "python tests\\eu_us_phase3_e2e_test.py passed",
+        "R021-R030 reports complete",
+        "All Phase 3 smoke tests passed"
+      ]
     }
   ],
   "versions": [
+    {
+      "version": "0.1.28",
+      "date": "2026-05-21",
+      "round": "R030",
+      "type": "git",
+      "location": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.28",
+      "downloadTarget": "git checkout agos-v0.1.28",
+      "notes": "R030 Europe/US market stage gate complete. Waiting for user acceptance before R031."
+    },
+    {
+      "version": "0.1.27",
+      "date": "2026-05-21",
+      "round": "R029",
+      "type": "round",
+      "location": "docs/project_control_center.html + runtime/task_results/R029 + runtime/samples/eu_us_platform_adapter_sample.json + tests/platform_adapter_smoke_test.py",
+      "downloadTarget": "local working tree before next stage gate commit",
+      "notes": "R029 platform adapter completed locally. Git commit is deferred until R030 stage gate."
+    },
+    {
+      "version": "0.1.26",
+      "date": "2026-05-21",
+      "round": "R028",
+      "type": "round",
+      "location": "docs/project_control_center.html + runtime/task_results/R028 + runtime/samples/eu_us_trend_signal_sample.json + tests/trend_signal_smoke_test.py",
+      "downloadTarget": "local working tree before next stage gate commit",
+      "notes": "R028 trend signal sample completed locally. Git commit is deferred until the next major stage gate."
+    },
+    {
+      "version": "0.1.25",
+      "date": "2026-05-21",
+      "round": "R027",
+      "type": "round",
+      "location": "docs/project_control_center.html + runtime/task_results/R027 + runtime/samples/eu_us_growth_report_sample.json + tests/english_growth_report_smoke_test.py",
+      "downloadTarget": "local working tree before next stage gate commit",
+      "notes": "R027 English growth report completed locally. Git commit is deferred until the next major stage gate."
+    },
+    {
+      "version": "0.1.24",
+      "date": "2026-05-21",
+      "round": "R026",
+      "type": "round",
+      "location": "docs/project_control_center.html + runtime/task_results/R026 + runtime/samples/eu_us_youtube_longform_strategy.json + tests/youtube_longform_strategy_smoke_test.py",
+      "downloadTarget": "local working tree before next stage gate commit",
+      "notes": "R026 YouTube long-form strategy completed locally. Git commit is deferred until the next major stage gate."
+    },
+    {
+      "version": "0.1.23",
+      "date": "2026-05-21",
+      "round": "R025",
+      "type": "round",
+      "location": "docs/project_control_center.html + runtime/task_results/R025 + runtime/samples/eu_us_short_video_packages.json + tests/short_video_package_smoke_test.py",
+      "downloadTarget": "local working tree before next stage gate commit",
+      "notes": "R025 short-video package completed locally. Git commit is deferred until the next major stage gate."
+    },
+    {
+      "version": "0.1.22",
+      "date": "2026-05-21",
+      "round": "R024",
+      "type": "round",
+      "location": "docs/project_control_center.html + runtime/task_results/R024 + runtime/samples/eu_us_reply_workflow_rules.json + tests/reply_workflow_smoke_test.py",
+      "downloadTarget": "local working tree before next stage gate commit",
+      "notes": "R024 reply workflow completed locally. Git commit is deferred until the next major stage gate."
+    },
+    {
+      "version": "0.1.21",
+      "date": "2026-05-21",
+      "round": "R023",
+      "type": "round",
+      "location": "docs/project_control_center.html + runtime/task_results/R023 + runtime/samples/eu_us_english_content_templates.json + tests/english_content_factory_smoke_test.py",
+      "downloadTarget": "local working tree before next stage gate commit",
+      "notes": "R023 English content factory completed locally. Git commit is deferred until the next major stage gate."
+    },
+    {
+      "version": "0.1.20",
+      "date": "2026-05-21",
+      "round": "R022",
+      "type": "round",
+      "location": "docs/project_control_center.html + runtime/task_results/R022 + runtime/samples/eu_us_english_pain_radar.json + tests/english_pain_radar_smoke_test.py",
+      "downloadTarget": "local working tree before next stage gate commit",
+      "notes": "R022 English pain radar completed locally. Git commit is deferred until the next major stage gate."
+    },
+    {
+      "version": "0.1.19",
+      "date": "2026-05-21",
+      "round": "R021",
+      "type": "round",
+      "location": "docs/project_control_center.html + runtime/task_results/R021 + runtime/samples/eu_us_user_profile.json + tests/eu_us_profile_smoke_test.py",
+      "downloadTarget": "local working tree before next stage gate commit",
+      "notes": "R021 Europe/US user profile completed locally. Git commit is deferred until the next major stage gate."
+    },
     {
       "version": "0.1.18",
       "date": "2026-05-21",
@@ -1368,92 +1637,101 @@
       "id": "R021",
       "phase": "Phase 3",
       "name": "欧美用户画像",
-      "status": "in_progress",
+      "status": "done",
       "progress": 0,
-      "deliverable": "Europe and US user profile, motivations, budget, travel experience, and content preferences",
+      "deliverable": "Europe and US profile sample, workspace metadata, and profile-driven pain filter smoke test",
       "report": "runtime/task_results/R021/ROUND_SUMMARY.md",
-      "summary": "Upcoming: define the Europe and US user profile for AGOS targeting, keeping JAG scenario data separated from core SaaS foundation logic."
+      "summary": "Completed the Europe/US profile for AGOS with personas, motivations, budget bands, experience levels, content preferences, and pain filters. Validation confirms the profile drives pain-point filtering and does not overwrite JAG data."
     },
     {
       "id": "R022",
       "phase": "Phase 3",
       "name": "英文痛点雷达",
-      "status": "planned",
+      "status": "done",
       "progress": 0,
-      "deliverable": "Reddit、Quora、SEO 痛点库",
-      "report": "runtime/task_results/R022/ROUND_SUMMARY.md"
+      "deliverable": "English pain-point categories, platform tags, search intent, and trend ranking sample",
+      "report": "runtime/task_results/R022/ROUND_SUMMARY.md",
+      "summary": "Completed English pain radar using the R021 Europe/US profile. Validation proves Reddit and SEO filtering work, Quora-style questions are safely represented as SEO intent metadata, and trend ranking returns the expected top pain points."
     },
     {
       "id": "R023",
       "phase": "Phase 3",
       "name": "英文内容工厂",
-      "status": "planned",
+      "status": "done",
       "progress": 0,
-      "deliverable": "英文图文、短视频、长内容",
-      "report": "runtime/task_results/R023/ROUND_SUMMARY.md"
+      "deliverable": "English content templates and review-gated content generation smoke test",
+      "report": "runtime/task_results/R023/ROUND_SUMMARY.md",
+      "summary": "Completed the English content factory for Europe/US samples. It creates image/text, short-video, long-form, and SEO draft formats from R022 pain points, with every draft held for human review and no publishing behavior added."
     },
     {
       "id": "R024",
       "phase": "Phase 3",
       "name": "Reddit / Quora 回复工作流",
-      "status": "planned",
+      "status": "done",
       "progress": 0,
-      "deliverable": "自然讨论回复和线索引导",
-      "report": "runtime/task_results/R024/ROUND_SUMMARY.md"
+      "deliverable": "Natural English reply workflow with risk rejection and human-review status",
+      "report": "runtime/task_results/R024/ROUND_SUMMARY.md",
+      "summary": "Completed Reddit and Quora-style reply workflow. Natural replies are generated as review-gated drafts, Quora-style inputs remain under SEO handling, and hard-sell plus fake guarantee language is blocked as rejected."
     },
     {
       "id": "R025",
       "phase": "Phase 3",
       "name": "Instagram / TikTok 英文短视频",
-      "status": "planned",
+      "status": "done",
       "progress": 0,
-      "deliverable": "Hook、脚本、镜头建议",
-      "report": "runtime/task_results/R025/ROUND_SUMMARY.md"
+      "deliverable": "TikTok and Instagram English short-video packages with complete fields",
+      "report": "runtime/task_results/R025/ROUND_SUMMARY.md",
+      "summary": "Completed review-gated TikTok and Instagram short-video packages. Each package includes hook, script, shot suggestions, caption, hashtags, platform rules, and an explicit no-upload policy."
     },
     {
       "id": "R026",
       "phase": "Phase 3",
       "name": "YouTube 长内容策略",
-      "status": "planned",
+      "status": "done",
       "progress": 0,
-      "deliverable": "路线讲解、避坑指南、AI 演示",
-      "report": "runtime/task_results/R026/ROUND_SUMMARY.md"
+      "deliverable": "Reusable YouTube long-form strategy with chapters, script outline, and SEO fields",
+      "report": "runtime/task_results/R026/ROUND_SUMMARY.md",
+      "summary": "Completed YouTube long-form strategy. The sample includes a complete topic, structure, script outline, SEO description, thumbnail text, and conservative disclaimer; validation confirms the outline and SEO fields are complete."
     },
     {
       "id": "R027",
       "phase": "Phase 3",
       "name": "英文增长报告",
-      "status": "planned",
+      "status": "done",
       "progress": 0,
-      "deliverable": "英文市场周报和优化建议",
-      "report": "runtime/task_results/R027/ROUND_SUMMARY.md"
+      "deliverable": "English daily, weekly, and optimization report samples with sample-only guard",
+      "report": "runtime/task_results/R027/ROUND_SUMMARY.md",
+      "summary": "Completed English growth reports for the Europe/US sample set. The reports summarize pain, content, reply, short-video, YouTube, and platform recommendations while clearly marking all metrics as local sample data only."
     },
     {
       "id": "R028",
       "phase": "Phase 3",
       "name": "欧美趋势预测",
-      "status": "planned",
+      "status": "done",
       "progress": 0,
-      "deliverable": "趋势信号和内容建议",
-      "report": "runtime/task_results/R028/ROUND_SUMMARY.md"
+      "deliverable": "Sample trend signals and trend-to-content recommendation chain",
+      "report": "runtime/task_results/R028/ROUND_SUMMARY.md",
+      "summary": "Completed Europe/US trend signal samples. The model links seasonality, platform hot spots, and content opportunities back to existing pain points, while explicitly avoiding any live-market claim."
     },
     {
       "id": "R029",
       "phase": "Phase 3",
       "name": "英文平台适配器",
-      "status": "planned",
+      "status": "done",
       "progress": 0,
-      "deliverable": "同一痛点多平台表达",
-      "report": "runtime/task_results/R029/ROUND_SUMMARY.md"
+      "deliverable": "Five-platform adapter sample for one English pain point",
+      "report": "runtime/task_results/R029/ROUND_SUMMARY.md",
+      "summary": "Completed multi-platform adaptation for workflow_overload_reddit. The adapter outputs distinct Reddit, TikTok, Instagram, YouTube, and SEO versions while leaving the generic content templates untouched."
     },
     {
       "id": "R030",
       "phase": "Phase 3",
       "name": "欧美市场验证",
-      "status": "planned",
+      "status": "done",
       "progress": 0,
-      "deliverable": "第二市场验证报告",
-      "report": "runtime/task_results/R030/ROUND_SUMMARY.md"
+      "deliverable": "Europe/US market stage-gate report and end-to-end validation",
+      "report": "runtime/task_results/R030/ROUND_SUMMARY.md",
+      "summary": "Completed the Europe/US market stage gate. R021-R030 reports are complete, the end-to-end sample chain passed validation, and the project is waiting for user acceptance before entering R031 / Phase 4."
     },
     {
       "id": "R031",
@@ -1462,7 +1740,8 @@
       "status": "planned",
       "progress": 0,
       "deliverable": "韩语市场用户画像",
-      "report": "runtime/task_results/R031/ROUND_SUMMARY.md"
+      "report": "runtime/task_results/R031/ROUND_SUMMARY.md",
+      "summary": "Paused until user acceptance of R030. After approval, R031 will create the Korean user profile without overwriting other market data."
     },
     {
       "id": "R032",

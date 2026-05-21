@@ -1,0 +1,58 @@
+{
+  "package_set_id": "eu_us_short_video_packages_v1",
+  "source_template_set_id": "eu_us_english_content_factory_v1",
+  "workspace_id": "eu_us_growth_lab",
+  "publishing_policy": "no automatic upload",
+  "platform_rules": {
+    "tiktok": {
+      "target_length_seconds": 35,
+      "style": "direct, fast, practical",
+      "caption_rule": "lead with the pain and promise one practical fix"
+    },
+    "instagram": {
+      "target_length_seconds": 45,
+      "style": "saveable, polished, checklist-oriented",
+      "caption_rule": "make the post easy to save and share with a team"
+    }
+  },
+  "packages": [
+    {
+      "package_id": "tiktok_workflow_overload_001",
+      "platform": "tiktok",
+      "pain_point_id": "workflow_overload_reddit",
+      "hook": "You do not need another AI tool. You need one weekly growth workflow.",
+      "script": [
+        "Show the messy stack: research notes, draft docs, reply tabs, and reports.",
+        "Name the real problem: the tools are not connected by a weekly operating rhythm.",
+        "Show the fix: pain radar on Monday, content drafts Tuesday, replies Wednesday, report Friday.",
+        "Close with a review gate: do not publish until a human checks the draft."
+      ],
+      "shot_suggestions": [
+        "screen recording of scattered tabs",
+        "simple weekly workflow board",
+        "before and after checklist"
+      ],
+      "caption": "A simple weekly AI growth workflow beats a bigger tool stack.",
+      "hashtags": ["#aigrowth", "#solofounder", "#growthworkflow", "#aitools"]
+    },
+    {
+      "package_id": "instagram_client_reporting_001",
+      "platform": "instagram",
+      "pain_point_id": "client_reporting_seo",
+      "hook": "Small agencies lose hours because client reporting is rebuilt from scratch.",
+      "script": [
+        "Open with the monthly reporting scramble.",
+        "Show the three required layers: pain signals, content output, and learning signals.",
+        "Turn the layers into a repeatable report template.",
+        "End with a saveable checklist for the next client review."
+      ],
+      "shot_suggestions": [
+        "calendar deadline visual",
+        "three-column reporting layout",
+        "checklist carousel frame"
+      ],
+      "caption": "Save this reporting structure before your next client growth review.",
+      "hashtags": ["#agencygrowth", "#clientreporting", "#growthops", "#marketingworkflow"]
+    }
+  ]
+}

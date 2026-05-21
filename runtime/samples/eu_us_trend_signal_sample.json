@@ -1,0 +1,46 @@
+{
+  "trend_model_id": "eu_us_trend_signal_model_v1",
+  "workspace_id": "eu_us_growth_lab",
+  "sample_data_only": true,
+  "source_report_set_id": "eu_us_growth_report_v1",
+  "signals": [
+    {
+      "signal_id": "q1_tool_consolidation",
+      "season": "Q1 planning",
+      "market": "US",
+      "platform_hotspots": ["reddit", "youtube", "seo"],
+      "linked_pain_point_id": "workflow_overload_reddit",
+      "signal_strength": 88,
+      "why_it_matters": "Founders review tool costs and workflows during planning cycles.",
+      "content_opportunity": "Show a weekly AI growth workflow that replaces scattered tool usage.",
+      "recommended_formats": ["reddit_discussion", "youtube_walkthrough", "seo_guide"]
+    },
+    {
+      "signal_id": "agency_reporting_deadline",
+      "season": "month-end reporting",
+      "market": "UK",
+      "platform_hotspots": ["instagram", "seo"],
+      "linked_pain_point_id": "client_reporting_seo",
+      "signal_strength": 82,
+      "why_it_matters": "Small agencies need repeatable reporting before client review meetings.",
+      "content_opportunity": "Package a saveable reporting checklist and SEO article brief.",
+      "recommended_formats": ["instagram_carousel", "seo_checklist"]
+    },
+    {
+      "signal_id": "saas_message_testing",
+      "season": "campaign reset",
+      "market": "DE",
+      "platform_hotspots": ["threads", "youtube"],
+      "linked_pain_point_id": "message_testing_threads",
+      "signal_strength": 76,
+      "why_it_matters": "SaaS teams need better message validation before scaling content.",
+      "content_opportunity": "Create a message testing plan and long-form explanation.",
+      "recommended_formats": ["threads_prompt", "youtube_outline"]
+    }
+  ],
+  "recommendation_rules": {
+    "minimum_signal_strength": 75,
+    "must_reference_existing_pain_point": true,
+    "must_label_sample_data": true
+  }
+}

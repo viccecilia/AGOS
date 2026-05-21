@@ -1,0 +1,48 @@
+{
+  "adapter_id": "eu_us_platform_adapter_v1",
+  "workspace_id": "eu_us_growth_lab",
+  "source_pain_point_id": "workflow_overload_reddit",
+  "do_not_overwrite_template_set": "eu_us_english_content_factory_v1",
+  "outputs": [
+    {
+      "platform": "reddit",
+      "format": "discussion_reply_seed",
+      "angle": "practical peer advice",
+      "headline": "You may not need another AI tool; you may need a weekly operating rhythm.",
+      "body": "Start by mapping one pain point to one content draft, one reply review, and one report. Keep it small enough to repeat next week.",
+      "cta": "Ask one clarifying question before recommending any product."
+    },
+    {
+      "platform": "tiktok",
+      "format": "short_video_script",
+      "angle": "fast workflow contrast",
+      "headline": "Five AI tools, zero growth rhythm?",
+      "body": "Show scattered tabs, then show a weekly loop: pain radar, draft, reply review, report. End with the review gate.",
+      "cta": "Save the weekly workflow before adding another tool."
+    },
+    {
+      "platform": "instagram",
+      "format": "carousel_post",
+      "angle": "saveable checklist",
+      "headline": "The weekly AI growth workflow checklist",
+      "body": "Slide 1 pain radar. Slide 2 content draft. Slide 3 reply review. Slide 4 learning signal. Slide 5 report.",
+      "cta": "Save this before your next content planning session."
+    },
+    {
+      "platform": "youtube",
+      "format": "long_form_outline",
+      "angle": "structured walkthrough",
+      "headline": "How to turn scattered AI tools into one weekly growth workflow",
+      "body": "Walk through the operating loop, explain why each step exists, and show how human review prevents low-quality automation.",
+      "cta": "Test the workflow on one pain point before scaling."
+    },
+    {
+      "platform": "seo",
+      "format": "article_brief",
+      "angle": "implementation guide",
+      "headline": "AI growth workflow: a practical weekly system for small teams",
+      "body": "Define the search intent, compare scattered tools vs. one operating loop, and provide a repeatable setup checklist.",
+      "cta": "Use the checklist to audit your current growth process."
+    }
+  ]
+}

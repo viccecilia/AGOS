@@ -1,0 +1,40 @@
+{
+  "profile_id": "eu_us_growth_profile_v1",
+  "workspace_id": "eu_us_growth_lab",
+  "markets": ["US", "UK", "DE", "FR", "NL", "SE"],
+  "primary_personas": [
+    {
+      "persona_id": "solo_builder",
+      "label": "Solo founder or indie builder",
+      "motivation": "Find repeatable growth workflows without hiring a full marketing team.",
+      "budget_band": "50-300 USD per month",
+      "experience_level": "intermediate",
+      "content_preferences": ["comparison posts", "workflow teardown", "short tactical videos"],
+      "pain_filters": ["workflow_overload", "channel_uncertainty", "tool_fragmentation"]
+    },
+    {
+      "persona_id": "small_agency_operator",
+      "label": "Small agency operator",
+      "motivation": "Standardize client growth operations and reporting across accounts.",
+      "budget_band": "300-1500 USD per month",
+      "experience_level": "advanced",
+      "content_preferences": ["case study", "ROI checklist", "client reporting template"],
+      "pain_filters": ["client_reporting", "content_pipeline", "account_coordination"]
+    },
+    {
+      "persona_id": "saas_growth_manager",
+      "label": "SaaS growth manager",
+      "motivation": "Improve content-to-lead conversion with clearer pain-point intelligence.",
+      "budget_band": "1000-5000 USD per month",
+      "experience_level": "advanced",
+      "content_preferences": ["benchmark report", "SEO playbook", "LinkedIn thought post"],
+      "pain_filters": ["lead_quality", "seo_prioritization", "message_testing"]
+    }
+  ],
+  "selection_rules": {
+    "must_include_market": ["US", "UK", "DE", "FR"],
+    "minimum_budget_signal": "50 USD per month",
+    "preferred_platforms": ["reddit", "seo", "youtube", "x", "threads"],
+    "tone": "specific, evidence-led, non-hype"
+  }
+}

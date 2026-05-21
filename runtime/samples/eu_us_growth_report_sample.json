@@ -1,0 +1,67 @@
+{
+  "report_set_id": "eu_us_growth_report_v1",
+  "workspace_id": "eu_us_growth_lab",
+  "sample_data_only": true,
+  "source_artifacts": [
+    "eu_us_english_pain_radar_v1",
+    "eu_us_english_content_factory_v1",
+    "eu_us_reply_workflow_v1",
+    "eu_us_short_video_packages_v1",
+    "eu_us_youtube_longform_strategy_v1"
+  ],
+  "reports": [
+    {
+      "report_id": "eu_us_daily_growth_report",
+      "report_type": "daily",
+      "title": "Daily Europe/US Growth Report",
+      "summary": "Sample daily view: prioritize workflow overload because it has the strongest pain score and already has content, reply, short-video, and YouTube follow-up assets.",
+      "metrics": {
+        "pain_points": 4,
+        "content_templates": 4,
+        "reply_samples": 2,
+        "short_video_packages": 2,
+        "youtube_strategies": 1
+      },
+      "recommendations": [
+        "Use workflow_overload_reddit as the first integrated campaign test.",
+        "Keep all replies and drafts in needs_review before external use.",
+        "Compare Reddit discussion angle against SEO article angle before scaling."
+      ]
+    },
+    {
+      "report_id": "eu_us_weekly_growth_report",
+      "report_type": "weekly",
+      "title": "Weekly Europe/US Growth Report",
+      "summary": "Sample weekly view: the content system is ready for a review-gated campaign around solo founders, small agencies, and SaaS growth managers.",
+      "metrics": {
+        "validated_rounds": 6,
+        "sample_markets": 6,
+        "platforms_covered": 6,
+        "risk_block_rules": 4,
+        "stage_gate": "pending R030"
+      },
+      "recommendations": [
+        "Use R028 trend prediction to choose the next pain-point cluster.",
+        "Use R029 learning loop to record reviewer feedback before the R030 gate.",
+        "Do not treat these sample counts as live market performance."
+      ]
+    },
+    {
+      "report_id": "eu_us_optimization_report",
+      "report_type": "optimization",
+      "title": "Europe/US Optimization Recommendations",
+      "summary": "Sample optimization view: strengthen evidence quality, reviewer scoring, and platform-specific packaging before using the assets outside local validation.",
+      "metrics": {
+        "highest_priority_pain": "workflow_overload_reddit",
+        "strongest_content_path": "SEO article plus YouTube walkthrough",
+        "highest_risk_surface": "discussion replies",
+        "recommended_next_round": "R028"
+      },
+      "recommendations": [
+        "Add source confidence and seasonality signals in R028.",
+        "Add reviewer feedback and learning weights in R029.",
+        "Commit and tag the Phase 3 gate at R030 after validation."
+      ]
+    }
+  ]
+}

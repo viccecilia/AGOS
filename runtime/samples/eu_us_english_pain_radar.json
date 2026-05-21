@@ -1,0 +1,84 @@
+{
+  "radar_id": "eu_us_english_pain_radar_v1",
+  "source_profile_id": "eu_us_growth_profile_v1",
+  "workspace_id": "eu_us_growth_lab",
+  "ranking_formula": "trend_score * 0.45 + urgency_score * 0.30 + value_score * 0.25",
+  "pain_points": [
+    {
+      "pain_point_id": "workflow_overload_reddit",
+      "source": "r022_local_reddit_sample",
+      "platform": "reddit",
+      "market": "US",
+      "audience": "solo_builder",
+      "category": "workflow_overload",
+      "title": "I have too many AI tools and still no weekly growth workflow",
+      "evidence": "Reddit-style founder question about connecting research, content, replies, and reporting.",
+      "trend_score": 91,
+      "urgency_score": 87,
+      "value_score": 93,
+      "tags": ["solo_builder", "workflow_overload", "reddit", "growth_system"],
+      "metadata": {
+        "search_intent": "find a practical AI growth workflow",
+        "question_style": "community_post",
+        "content_angle": "workflow teardown"
+      }
+    },
+    {
+      "pain_point_id": "client_reporting_seo",
+      "source": "r022_local_seo_sample",
+      "platform": "seo",
+      "market": "UK",
+      "audience": "small_agency_operator",
+      "category": "client_reporting",
+      "title": "Best way to automate client growth reports for a small agency",
+      "evidence": "SEO-style query with buying intent around reporting and repeatable operations.",
+      "trend_score": 84,
+      "urgency_score": 82,
+      "value_score": 92,
+      "tags": ["small_agency_operator", "client_reporting", "seo", "reporting"],
+      "metadata": {
+        "search_intent": "compare reporting automation options",
+        "question_style": "seo_query",
+        "content_angle": "ROI checklist"
+      }
+    },
+    {
+      "pain_point_id": "seo_prioritization_quora_style",
+      "source": "r022_local_quora_style_sample",
+      "platform": "seo",
+      "market": "FR",
+      "audience": "saas_growth_manager",
+      "category": "seo_prioritization",
+      "title": "How should a SaaS team choose which SEO pain points to write about first?",
+      "evidence": "Quora-style educational question mapped into SEO platform handling because Quora is not a supported publishing platform yet.",
+      "trend_score": 80,
+      "urgency_score": 78,
+      "value_score": 88,
+      "tags": ["saas_growth_manager", "seo_prioritization", "quora_style", "education"],
+      "metadata": {
+        "search_intent": "learn prioritization method",
+        "question_style": "quora_style_question",
+        "content_angle": "SEO playbook"
+      }
+    },
+    {
+      "pain_point_id": "message_testing_threads",
+      "source": "r022_local_threads_sample",
+      "platform": "threads",
+      "market": "DE",
+      "audience": "saas_growth_manager",
+      "category": "message_testing",
+      "title": "We publish often but do not know which message actually converts",
+      "evidence": "Social post-style complaint about weak signal before scaling content production.",
+      "trend_score": 78,
+      "urgency_score": 79,
+      "value_score": 85,
+      "tags": ["saas_growth_manager", "message_testing", "threads", "conversion"],
+      "metadata": {
+        "search_intent": "validate message before scaling",
+        "question_style": "social_post",
+        "content_angle": "message test plan"
+      }
+    }
+  ]
+}

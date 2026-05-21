@@ -1,0 +1,44 @@
+{
+  "template_set_id": "eu_us_english_content_factory_v1",
+  "source_radar_id": "eu_us_english_pain_radar_v1",
+  "workspace_id": "eu_us_growth_lab",
+  "review_policy": "all drafts remain needs_review; no automatic publishing",
+  "templates": [
+    {
+      "template_id": "image_text_post",
+      "platform": "instagram",
+      "format": "post",
+      "content_type": "image_text",
+      "hook_pattern": "Still solving {category} with scattered tools?",
+      "body_pattern": "Use this simple diagnostic: map the pain, pick one workflow, and review the result before scaling. Pain: {title}.",
+      "required_tags": ["image_text", "carousel", "needs_review"]
+    },
+    {
+      "template_id": "short_video_script",
+      "platform": "tiktok",
+      "format": "short_video",
+      "content_type": "short_video",
+      "hook_pattern": "If {audience} keep hitting {category}, try this 30-second workflow check.",
+      "body_pattern": "Scene 1: name the pain. Scene 2: show the broken workflow. Scene 3: show the AGOS-style fix. Evidence: {evidence}.",
+      "required_tags": ["short_video", "script", "needs_review"]
+    },
+    {
+      "template_id": "long_form_outline",
+      "platform": "youtube",
+      "format": "youtube_outline",
+      "content_type": "long_form",
+      "hook_pattern": "A practical walkthrough for {audience}: fixing {category}.",
+      "body_pattern": "Outline: problem context, why it matters, workflow diagnosis, content/reply/report loop, review checklist. Pain: {title}.",
+      "required_tags": ["long_form", "outline", "needs_review"]
+    },
+    {
+      "template_id": "seo_article_brief",
+      "platform": "seo",
+      "format": "seo_article",
+      "content_type": "seo",
+      "hook_pattern": "How to solve {category} without adding another disconnected tool",
+      "body_pattern": "Search intent: practical comparison and implementation guide. Include pain evidence, workflow steps, proof points, and a review-gated CTA. Pain: {title}.",
+      "required_tags": ["seo", "article_brief", "needs_review"]
+    }
+  ]
+}

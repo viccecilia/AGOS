@@ -1,0 +1,35 @@
+{
+  "rule_set_id": "eu_us_reply_workflow_v1",
+  "workspace_id": "eu_us_growth_lab",
+  "supported_discussion_sources": [
+    {
+      "source": "reddit",
+      "platform": "reddit",
+      "style": "peer discussion",
+      "required_behavior": ["answer the question first", "avoid hard selling", "invite context", "keep human review"]
+    },
+    {
+      "source": "quora_style_question",
+      "platform": "seo",
+      "style": "educational answer",
+      "required_behavior": ["explain tradeoffs", "avoid fake authority", "include review gate", "no automatic posting"]
+    }
+  ],
+  "risk_rules": {
+    "block_phrases": ["buy now", "limited offer", "guaranteed", "click my link"],
+    "blocked_outcome": "rejected",
+    "normal_outcome": "needs_review"
+  },
+  "sample_questions": [
+    {
+      "reply_id": "reddit_workflow_overload_reply",
+      "platform": "reddit",
+      "question": "I have tried five AI marketing tools, but I still do not have a repeatable weekly growth workflow. What should I fix first?"
+    },
+    {
+      "reply_id": "quora_style_seo_prioritization_reply",
+      "platform": "seo",
+      "question": "How should a SaaS team decide which customer pain point deserves the next SEO article?"
+    }
+  ]
+}
