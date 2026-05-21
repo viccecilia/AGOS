@@ -335,7 +335,7 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.0",
+    "controlCenterVersion": "0.1.1",
     "lastUpdated": "2026-05-21",
     "currentPhase": "Phase 1 / SaaS Foundation",
     "currentRound": "ROUND-SAAS-001",
@@ -356,7 +356,7 @@
     "roundsPlanned": 60,
     "roundsCompleted": 0,
     "roundsInProgress": 1,
-    "reportsEmbedded": 1
+    "reportsEmbedded": 2
   },
   "modules": [
     {"name": "Project Control Center", "progress": 60, "status": "in_progress", "ownerPath": "docs/project_control_center.html", "next": "接入真实 Git commit 与 Round 报告"},
@@ -374,6 +374,7 @@
   ],
   "paths": [
     {"path": "docs/project_control_center.html", "purpose": "项目导航中枢、Round 入口、Git 版本角标、报告嵌入页"},
+    {"path": "docs/round_execution_prompts.md", "purpose": "60 个 Round 的标准执行任务词、前置验证、阶段验收和输出格式"},
     {"path": "runtime/task_results/", "purpose": "每个 Round 的结果、验证、总结和交付证据"},
     {"path": "portal_saas/", "purpose": "SaaS 管理端、客户管理、订阅、Skill 市场"},
     {"path": "services/", "purpose": "AI 内容、报告、订阅、权限、风控、优化建议等核心服务"},
@@ -391,9 +392,27 @@
       "summary": "把原始 HTML 蓝图升级为项目神经中枢：增加完成度导航、Round 状态、Git 角标、历史版本下载、报告嵌入和新增 Round 模板。",
       "files": ["docs/project_control_center.html"],
       "verification": ["HTML 文件可直接打开", "项目数据集中在 project-state JSON 中维护", "Git 当前状态显示为未初始化"]
+    },
+    {
+      "id": "ROUND-PROMPTS-001",
+      "title": "60 Round 执行任务词",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "为 R001-R060 写入可逐轮执行的标准任务词，增加前置验证、允许/禁止修改、必须验证、完成定义和阶段验收暂停规则。",
+      "files": ["docs/round_execution_prompts.md", "docs/project_control_center.html"],
+      "verification": ["任务词文件已创建", "阶段验收 Round 已标记为 R012/R020/R030/R040/R048/R054/R060", "控制中心已挂载任务词路径"]
     }
   ],
   "versions": [
+    {
+      "id": "control-center-v0.1.1",
+      "label": "Control Center v0.1.1",
+      "date": "2026-05-21",
+      "gitRef": "local git",
+      "location": "docs/project_control_center.html + docs/round_execution_prompts.md",
+      "notes": "增加 60 Round 执行任务词文件，并把阶段验收和前置验证规则挂入控制中心。",
+      "snapshot": "AGOS Project Control Center v0.1.1\\nPath: docs/project_control_center.html\\nRound prompts: docs/round_execution_prompts.md\\nDate: 2026-05-21\\nStatus: local git version before GitHub remote binding.\\n"
+    },
     {
       "id": "control-center-v0.1.0",
       "label": "Control Center v0.1.0",
