@@ -1,0 +1,56 @@
+{
+  "report_set_id": "korea_taiwan_market_report_v1",
+  "sample_data_only": true,
+  "source_artifacts": [
+    "korea_traveler_profile_v1",
+    "korea_content_templates_v1",
+    "korea_visual_content_strategy_v1",
+    "taiwan_traveler_profile_v1",
+    "taiwan_content_templates_v1",
+    "korea_taiwan_pain_points_v1",
+    "korea_taiwan_reply_workflow_v1",
+    "seasonal_content_system_v1"
+  ],
+  "reports": [
+    {
+      "report_id": "korea_market_sample_report",
+      "market": "KR",
+      "language": "ko",
+      "title": "Korea Market Sample Report",
+      "summary": "Sample Korea report: route clarity, repeat-trip discovery, localized Korean templates, and seasonal planning are ready for review-gated content experiments.",
+      "metrics": {
+        "profiles": 2,
+        "pain_points": 2,
+        "content_templates": 4,
+        "visual_rules": 3,
+        "reply_templates": 1,
+        "seasonal_variants": 4
+      },
+      "recommendations": [
+        "Start with route clarity content for first-time planners.",
+        "Use visual route frames instead of generic landmark montage.",
+        "Keep Korean replies concise, polite, and review-gated."
+      ]
+    },
+    {
+      "report_id": "taiwan_market_sample_report",
+      "market": "TW",
+      "language": "zh-Hant",
+      "title": "Taiwan Market Sample Report",
+      "summary": "Sample Taiwan report: Traditional Chinese family routes, repeat-trip ideas, and seasonal content can be packaged into deep guides and saveable social posts.",
+      "metrics": {
+        "profiles": 2,
+        "pain_points": 2,
+        "content_templates": 3,
+        "reply_templates": 1,
+        "seasonal_variants": 4,
+        "language_guard": "Traditional Chinese only"
+      },
+      "recommendations": [
+        "Start with family route planning and clear transport details.",
+        "Use Traditional Chinese tone and avoid Simplified Chinese phrasing.",
+        "Verify festival dates before using seasonal festival content."
+      ]
+    }
+  ]
+}

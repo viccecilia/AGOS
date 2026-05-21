@@ -1,0 +1,62 @@
+{
+  "seasonal_system_id": "seasonal_content_system_v1",
+  "markets": ["KR", "TW"],
+  "sample_data_only": true,
+  "live_weather_or_event_policy": "do not assume real-time weather or event availability",
+  "seasons": [
+    {
+      "season_id": "spring_sakura",
+      "label": "Cherry blossom planning",
+      "typical_window": "late March to early April sample window",
+      "content_angles": ["route planning", "crowd-aware alternatives", "photo-friendly checklist"],
+      "market_variants": {
+        "KR": "벚꽃 여행은 이동 시간과 대체 동선을 함께 설명한다.",
+        "TW": "櫻花行程要同時準備備案路線與交通時間。"
+      }
+    },
+    {
+      "season_id": "autumn_leaves",
+      "label": "Autumn leaves planning",
+      "typical_window": "late October to late November sample window",
+      "content_angles": ["day-trip route", "seasonal shopping", "walking sequence"],
+      "market_variants": {
+        "KR": "단풍 코스는 이동 피로도와 짧은 산책 동선을 중심으로 제안한다.",
+        "TW": "楓葉路線以交通便利、散步時間與周邊餐廳搭配為主。"
+      }
+    },
+    {
+      "season_id": "onsen_winter",
+      "label": "Winter hot spring planning",
+      "typical_window": "December to February sample window",
+      "content_angles": ["relaxed itinerary", "family comfort", "packing checklist"],
+      "market_variants": {
+        "KR": "온천 콘텐츠는 휴식감, 이동 편의, 준비물을 간단히 정리한다.",
+        "TW": "溫泉內容重點放在交通、住宿節奏與親子舒適度。"
+      }
+    },
+    {
+      "season_id": "festival_sample",
+      "label": "Festival planning",
+      "typical_window": "sample-only; verify real dates before use",
+      "content_angles": ["date verification reminder", "transport planning", "nearby backup route"],
+      "market_variants": {
+        "KR": "축제 일정은 반드시 실제 날짜 확인 후 사용해야 한다.",
+        "TW": "祭典資訊必須先確認實際日期，不能用樣例當成即時資訊。"
+      }
+    }
+  ],
+  "recommendation_examples": [
+    {
+      "market": "KR",
+      "season_id": "spring_sakura",
+      "platform": "instagram",
+      "recommendation": "Create a saveable Korean carousel for sakura route planning with backup routes and station context."
+    },
+    {
+      "market": "TW",
+      "season_id": "onsen_winter",
+      "platform": "seo",
+      "recommendation": "Create a Traditional Chinese winter hot spring guide focused on family comfort and transport planning."
+    }
+  ]
+}

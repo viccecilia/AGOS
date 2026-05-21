@@ -1,0 +1,41 @@
+{
+  "template_set_id": "taiwan_content_templates_v1",
+  "source_profile_id": "taiwan_traveler_profile_v1",
+  "workspace_id": "taiwan_growth_lab",
+  "language_policy": "Traditional Chinese only; no Simplified Chinese tone mixing",
+  "templates": [
+    {
+      "template_id": "tw_deep_guide_family_route",
+      "platform": "seo",
+      "format": "seo_article",
+      "content_type": "deep_guide",
+      "target_persona": "family_japan_planner_tw",
+      "title": "親子日本自由行怎麼排：交通、餐廳與休息時間一次整理",
+      "hook": "帶孩子去日本，行程不是越滿越好，而是要把交通、用餐與休息時間排清楚。",
+      "body": "用繁中語氣拆解親子路線、交通細節、餐廳選擇與備用時間，讓讀者可以收藏後逐步檢查。",
+      "review_notes": ["use Traditional Chinese wording", "avoid Simplified Chinese tone", "human review before publishing"]
+    },
+    {
+      "template_id": "tw_short_video_repeat_route",
+      "platform": "youtube",
+      "format": "short_video",
+      "content_type": "short_video",
+      "target_persona": "independent_repeat_traveler_tw",
+      "title": "去過東京好幾次，下一趟可以這樣排",
+      "hook": "如果你已經去過熱門景點，這次可以用一條更輕鬆的巷弄路線開始。",
+      "body": "短影音用三段式呈現：起點、散步路線、季節選物，避免假裝是即時熱門趨勢。",
+      "review_notes": ["keep tone natural for Taiwan", "no fake live trend claim", "review route logic"]
+    },
+    {
+      "template_id": "tw_social_saveable_post",
+      "platform": "instagram",
+      "format": "post",
+      "content_type": "social_post",
+      "target_persona": "family_japan_planner_tw",
+      "title": "日本親子行前收藏清單",
+      "hook": "出發前先確認這五件事，旅途中會輕鬆很多。",
+      "body": "用卡片整理交通、餐廳、付款、購物、休息時間，語氣保持親切、清楚、可收藏。",
+      "review_notes": ["saveable layout", "Traditional Chinese labels", "avoid mainland phrasing"]
+    }
+  ]
+}

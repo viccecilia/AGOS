@@ -1,0 +1,36 @@
+{
+  "rule_set_id": "korea_taiwan_reply_workflow_v1",
+  "source_pain_library_id": "korea_taiwan_pain_points_v1",
+  "publishing_policy": "no automatic replies",
+  "risk_rules": {
+    "blocked_phrases": ["지금 구매", "100% 보장", "立即購買", "保證有效", "點我的連結"],
+    "normal_outcome": "needs_review",
+    "blocked_outcome": "rejected"
+  },
+  "reply_templates": [
+    {
+      "template_id": "kr_route_help_reply",
+      "workspace_id": "korea_growth_lab",
+      "language": "ko",
+      "source_platform": "seo",
+      "pain_point_id": "kr_route_confusion_station",
+      "tone": "polite, concise, practical",
+      "sample_question": "처음 일본 여행인데 공항에서 숙소까지 가는 동선이 너무 헷갈려요.",
+      "draft_reply": "처음이라면 공항에서 숙소까지의 이동을 먼저 고정하고, 첫 식사는 숙소 근처로 잡는 편이 안전합니다. 역 이름, 환승 횟수, 예상 이동 시간을 따로 확인한 뒤 일정에 여유 시간을 넣어보세요. 자동 답변이 아니라 검토용 초안입니다.",
+      "review_status": "needs_review",
+      "risk_level": "normal"
+    },
+    {
+      "template_id": "tw_family_route_reply",
+      "workspace_id": "taiwan_growth_lab",
+      "language": "zh-Hant",
+      "source_platform": "seo",
+      "pain_point_id": "tw_family_route_planning",
+      "tone": "親切、清楚、實用",
+      "sample_question": "親子日本自由行要怎麼排，才不會交通太累又吃飯很趕？",
+      "draft_reply": "親子行程可以先把交通時間、用餐地點和休息點固定下來，再安排景點。建議每天保留一段彈性時間，餐廳也先準備一個備案。這是一段需要人工檢查的回覆草稿，不會自動發送。",
+      "review_status": "needs_review",
+      "risk_level": "normal"
+    }
+  ]
+}

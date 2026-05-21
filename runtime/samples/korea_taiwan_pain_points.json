@@ -1,0 +1,71 @@
+{
+  "pain_library_id": "korea_taiwan_pain_points_v1",
+  "workspaces": ["korea_growth_lab", "taiwan_growth_lab"],
+  "sample_data_only": true,
+  "pain_points": [
+    {
+      "pain_point_id": "kr_route_confusion_station",
+      "workspace_id": "korea_growth_lab",
+      "source": "r036_local_korea_sample",
+      "platform": "seo",
+      "market": "KR",
+      "language": "ko",
+      "audience": "first_time_japan_planner",
+      "category": "route_confusion",
+      "title": "일본 첫 여행에서 공항, 숙소, 첫 식사 동선이 헷갈린다",
+      "evidence": "Korean sample intent asks for clear route sequence and station transfer context.",
+      "trend_score": 84,
+      "urgency_score": 88,
+      "value_score": 90,
+      "tags": ["korea", "route", "first_trip", "seo"]
+    },
+    {
+      "pain_point_id": "kr_repeat_trip_discovery",
+      "workspace_id": "korea_growth_lab",
+      "source": "r036_local_korea_sample",
+      "platform": "instagram",
+      "market": "KR",
+      "language": "ko",
+      "audience": "repeat_weekend_traveler",
+      "category": "local_discovery",
+      "title": "반복 여행자는 유명 관광지보다 짧고 새로운 동네 루트를 원한다",
+      "evidence": "Korean sample intent favors seasonal neighborhood picks and compact routes.",
+      "trend_score": 78,
+      "urgency_score": 74,
+      "value_score": 82,
+      "tags": ["korea", "repeat_trip", "neighborhood", "instagram"]
+    },
+    {
+      "pain_point_id": "tw_family_route_planning",
+      "workspace_id": "taiwan_growth_lab",
+      "source": "r036_local_taiwan_sample",
+      "platform": "seo",
+      "market": "TW",
+      "language": "zh-Hant",
+      "audience": "family_japan_planner_tw",
+      "category": "family_route_planning",
+      "title": "親子日本行程需要同時考慮交通、餐廳與休息時間",
+      "evidence": "Taiwan sample intent asks for Traditional Chinese route planning with family constraints.",
+      "trend_score": 86,
+      "urgency_score": 84,
+      "value_score": 91,
+      "tags": ["taiwan", "family_trip", "route", "seo"]
+    },
+    {
+      "pain_point_id": "tw_repeat_trip_ideas",
+      "workspace_id": "taiwan_growth_lab",
+      "source": "r036_local_taiwan_sample",
+      "platform": "threads",
+      "market": "TW",
+      "language": "zh-Hant",
+      "audience": "independent_repeat_traveler_tw",
+      "category": "repeat_trip_ideas",
+      "title": "回訪旅客想找不制式、但仍然好安排的短天數日本玩法",
+      "evidence": "Taiwan sample intent favors natural Traditional Chinese social discussion and route inspiration.",
+      "trend_score": 79,
+      "urgency_score": 76,
+      "value_score": 84,
+      "tags": ["taiwan", "repeat_trip", "threads", "seasonal_route"]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "strategy_id": "korea_visual_content_strategy_v1",
+  "source_template_set_id": "korea_content_templates_v1",
+  "workspace_id": "korea_growth_lab",
+  "asset_policy": "strategy only; no real image assets generated",
+  "visual_rules": [
+    {
+      "rule_id": "route_clarity",
+      "target_persona": "first_time_japan_planner",
+      "content_style": "clear route-first travel planning",
+      "shot_preferences": [
+        "map crop with one highlighted route",
+        "station entrance or transfer sign",
+        "simple before-after itinerary frame"
+      ],
+      "layout_preferences": ["large Korean headline", "one route per frame", "time and cost callout"],
+      "avoid": ["busy collage", "unsupported crowd-level claim", "decorative stock-only image"]
+    },
+    {
+      "rule_id": "saveable_checklist",
+      "target_persona": "first_time_japan_planner",
+      "content_style": "saveable checklist and card format",
+      "shot_preferences": [
+        "flat lay travel essentials",
+        "food ordering cue card",
+        "shopping list frame"
+      ],
+      "layout_preferences": ["numbered checklist", "high contrast labels", "clear final save prompt"],
+      "avoid": ["tiny dense text", "literal translation captions", "unreviewed price claim"]
+    },
+    {
+      "rule_id": "repeat_trip_discovery",
+      "target_persona": "repeat_weekend_traveler",
+      "content_style": "specific neighborhood discovery",
+      "shot_preferences": [
+        "quiet street detail",
+        "seasonal shelf or storefront",
+        "short walking sequence"
+      ],
+      "layout_preferences": ["neighborhood name first", "seasonal context", "compact route note"],
+      "avoid": ["generic landmark montage", "fake live trend label", "overly formal tourism tone"]
+    }
+  ],
+  "recommendation_examples": [
+    {
+      "template_id": "kr_short_route_video",
+      "visual_rule_id": "route_clarity",
+      "recommendation": "Open with a route map, then show the station transfer and final food stop as three clean frames."
+    },
+    {
+      "template_id": "kr_saveable_checklist_post",
+      "visual_rule_id": "saveable_checklist",
+      "recommendation": "Use a five-card checklist with large Korean labels and one action per card."
+    }
+  ]
+}

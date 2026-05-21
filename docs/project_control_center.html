@@ -390,28 +390,28 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.28",
+    "controlCenterVersion": "0.1.38",
     "lastUpdated": "2026-05-21",
-    "currentPhase": "Phase 3 / Europe-US Market Stage Gate",
-    "currentRound": "R030",
-    "nextRound": "R031",
-    "overallProgress": 60,
-    "activeFocus": "R030 Europe/US market stage gate is complete and waiting for user acceptance. Do not enter R031 until the user confirms."
+    "currentPhase": "Phase 4 / Korea-Taiwan Market Stage Gate",
+    "currentRound": "R040",
+    "nextRound": "R041",
+    "overallProgress": 80,
+    "activeFocus": "R040 Korea/Taiwan market stage gate is complete and waiting for user acceptance. Do not enter R041 until the user confirms."
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.28 Complete Phase 3 Europe-US market gate",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.28",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.28",
-    "note": "Phase 3 Europe/US market stage gate is mapped to GitHub tag agos-v0.1.28. Wait for user acceptance before R031."
+    "latestCommit": "agos-v0.1.38 Complete Phase 4 Korea-Taiwan market gate",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.38",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.38",
+    "note": "Phase 4 Korea/Taiwan market stage gate is mapped to GitHub tag agos-v0.1.38. Wait for user acceptance before R041."
   },
   "metrics": {
     "roundsPlanned": 60,
-    "roundsCompleted": 30,
+    "roundsCompleted": 40,
     "roundsInProgress": 0,
-    "reportsEmbedded": 34
+    "reportsEmbedded": 44
   },
   "modules": [
     {
@@ -426,7 +426,7 @@
       "progress": 100,
       "status": "done",
       "ownerPath": "portal_saas/workspace/",
-      "next": "R021 added Europe/US profile metadata under a separate eu_us_growth_lab workspace. Continue with R022 pain radar inputs."
+      "next": "R034 added taiwan_growth_lab as an isolated Taiwan market sample workspace. R035 will add Traditional Chinese templates."
     },
     {
       "name": "Customer Knowledge Base",
@@ -440,7 +440,7 @@
       "progress": 100,
       "status": "done",
       "ownerPath": "services/pain_point_engine.py",
-      "next": "R022 added English pain radar samples and ranking validation. R023 can now generate content from top pain points."
+      "next": "R036 added Korea/Taiwan pain-point library with market and language filters. R037 will adapt content and report samples."
     },
     {
       "name": "AI Content Factory",
@@ -1167,9 +1167,278 @@
         "R021-R030 reports complete",
         "All Phase 3 smoke tests passed"
       ]
+    },
+    {
+      "id": "R031",
+      "title": "Korean User Profile",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "Created the Korean market profile with traveler personas, motivation, budget bands, travel experience, tone preferences, platform preferences, content preferences, and localization rules. Isolation validation confirms Europe/US data is untouched.",
+      "files": [
+        "runtime/samples/korea_user_profile.json",
+        "tests/korea_profile_smoke_test.py",
+        "runtime/task_results/R031/ROUND_SUMMARY.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "python tests\\korea_profile_smoke_test.py passed",
+        "python tests\\eu_us_phase3_e2e_test.py passed",
+        "Workspace isolation test passed"
+      ]
+    },
+    {
+      "id": "R032",
+      "title": "Korean Content Templates",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "Created Korean templates for TikTok, Instagram, YouTube, and SEO with localized tone rules. The template set explicitly rejects literal machine translation and keeps all outputs review-gated.",
+      "files": [
+        "runtime/samples/korea_content_templates.json",
+        "tests/korea_content_template_smoke_test.py",
+        "runtime/task_results/R032/ROUND_SUMMARY.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "python tests\\korea_content_template_smoke_test.py passed",
+        "python tests\\korea_profile_smoke_test.py passed",
+        "python tests\\eu_us_phase3_e2e_test.py passed"
+      ]
+    },
+    {
+      "id": "R033",
+      "title": "Korean Visual Content Strategy",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "Created Korean visual strategy rules with shot preferences, layout preferences, avoid lists, and recommendation examples linked to Korean templates. The asset policy is strategy-only: no real images were generated.",
+      "files": [
+        "runtime/samples/korea_visual_content_strategy.json",
+        "tests/korea_visual_strategy_smoke_test.py",
+        "runtime/task_results/R033/ROUND_SUMMARY.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "python tests\\korea_visual_strategy_smoke_test.py passed",
+        "python tests\\korea_content_template_smoke_test.py passed",
+        "python tests\\korea_profile_smoke_test.py passed"
+      ]
+    },
+    {
+      "id": "R034",
+      "title": "Taiwan User Profile",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "Created the Taiwan Traditional Chinese profile with personas, travel preferences, language habits, tone preferences, platform preferences, and localization rules. Isolation validation confirms Korea data is untouched.",
+      "files": [
+        "runtime/samples/taiwan_user_profile.json",
+        "tests/taiwan_profile_smoke_test.py",
+        "runtime/task_results/R034/ROUND_SUMMARY.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "python tests\\taiwan_profile_smoke_test.py passed",
+        "python tests\\korea_visual_strategy_smoke_test.py passed",
+        "Korea/Taiwan isolation test passed"
+      ]
+    },
+    {
+      "id": "R035",
+      "title": "Traditional Chinese Content Templates",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "Created Traditional Chinese deep-guide, short-video, and social templates from the Taiwan profile. Validation confirms the templates avoid Simplified Chinese tone markers and remain review-gated.",
+      "files": [
+        "runtime/samples/taiwan_content_templates.json",
+        "tests/taiwan_content_template_smoke_test.py",
+        "runtime/task_results/R035/ROUND_SUMMARY.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "python tests\\taiwan_content_template_smoke_test.py passed",
+        "python tests\\taiwan_profile_smoke_test.py passed",
+        "python tests\\korea_visual_strategy_smoke_test.py passed"
+      ]
+    },
+    {
+      "id": "R036",
+      "title": "Korea/Taiwan Pain-Point Library",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "Created Korea/Taiwan pain-point samples with region, language, workspace, platform, category, and scoring metadata. Validation confirms Korean and Taiwan pain points filter correctly by market and language.",
+      "files": [
+        "runtime/samples/korea_taiwan_pain_points.json",
+        "tests/korea_taiwan_pain_library_smoke_test.py",
+        "runtime/task_results/R036/ROUND_SUMMARY.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "python tests\\korea_taiwan_pain_library_smoke_test.py passed",
+        "python tests\\korea_content_template_smoke_test.py passed",
+        "python tests\\taiwan_content_template_smoke_test.py passed"
+      ]
+    },
+    {
+      "id": "R037",
+      "title": "Korea/Taiwan Reply Workflow",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "Created Korean and Traditional Chinese natural reply templates with no-automatic-replies policy and risk rejection for promotional claims. Validation confirms both languages generate review-gated replies and risky phrases are blocked.",
+      "files": [
+        "runtime/samples/korea_taiwan_reply_workflow_rules.json",
+        "tests/korea_taiwan_reply_workflow_smoke_test.py",
+        "runtime/task_results/R037/ROUND_SUMMARY.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "python tests\\korea_taiwan_reply_workflow_smoke_test.py passed",
+        "python tests\\korea_taiwan_pain_library_smoke_test.py passed",
+        "python tests\\taiwan_content_template_smoke_test.py passed"
+      ]
+    },
+    {
+      "id": "R038",
+      "title": "Seasonal Content System",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "Created seasonal content planning for sakura, autumn leaves, winter hot springs, and festivals across Korea and Taiwan samples. Validation confirms all seasonal entries are sample-only and do not assume real-time weather or event availability.",
+      "files": [
+        "runtime/samples/seasonal_content_system.json",
+        "tests/seasonal_content_smoke_test.py",
+        "runtime/task_results/R038/ROUND_SUMMARY.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "python tests\\seasonal_content_smoke_test.py passed",
+        "python tests\\korea_taiwan_reply_workflow_smoke_test.py passed",
+        "python tests\\korea_taiwan_pain_library_smoke_test.py passed"
+      ]
+    },
+    {
+      "id": "R039",
+      "title": "Korea/Taiwan Data Report",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "Created Korea and Taiwan market report samples from R031-R038 artifacts. The reports summarize profiles, pain points, content templates, reply workflow, visual strategy, and seasonal suggestions while remaining sample-data only.",
+      "files": [
+        "runtime/samples/korea_taiwan_market_report_sample.json",
+        "tests/korea_taiwan_market_report_smoke_test.py",
+        "runtime/task_results/R039/ROUND_SUMMARY.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "python tests\\korea_taiwan_market_report_smoke_test.py passed",
+        "python tests\\seasonal_content_smoke_test.py passed",
+        "python tests\\korea_taiwan_reply_workflow_smoke_test.py passed"
+      ]
+    },
+    {
+      "id": "R040",
+      "title": "Korea/Taiwan Market Stage Gate",
+      "status": "waiting_acceptance",
+      "date": "2026-05-21",
+      "summary": "Validated the complete Korea/Taiwan sample chain from R031 through R039: Korean profile, Korean templates, Korean visual strategy, Taiwan profile, Traditional Chinese templates, pain library, reply workflow, seasonal content, and market reports. The project is waiting for user acceptance before R041.",
+      "files": [
+        "tests/korea_taiwan_phase4_e2e_test.py",
+        "runtime/task_results/R040/ROUND_SUMMARY.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "python tests\\korea_taiwan_phase4_e2e_test.py passed",
+        "R031-R040 reports complete",
+        "All Phase 4 smoke tests passed"
+      ]
     }
   ],
   "versions": [
+    {
+      "version": "0.1.38",
+      "date": "2026-05-21",
+      "round": "R040",
+      "type": "git",
+      "location": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.38",
+      "downloadTarget": "git checkout agos-v0.1.38",
+      "notes": "R040 Korea/Taiwan market stage gate complete. Waiting for user acceptance before R041."
+    },
+    {
+      "version": "0.1.37",
+      "date": "2026-05-21",
+      "round": "R039",
+      "type": "round",
+      "location": "docs/project_control_center.html + runtime/task_results/R039 + runtime/samples/korea_taiwan_market_report_sample.json + tests/korea_taiwan_market_report_smoke_test.py",
+      "downloadTarget": "local working tree before next stage gate commit",
+      "notes": "R039 Korea/Taiwan market reports completed locally. Git commit is deferred until R040 stage gate."
+    },
+    {
+      "version": "0.1.36",
+      "date": "2026-05-21",
+      "round": "R038",
+      "type": "round",
+      "location": "docs/project_control_center.html + runtime/task_results/R038 + runtime/samples/seasonal_content_system.json + tests/seasonal_content_smoke_test.py",
+      "downloadTarget": "local working tree before next stage gate commit",
+      "notes": "R038 seasonal content system completed locally. Git commit is deferred until the next major stage gate."
+    },
+    {
+      "version": "0.1.35",
+      "date": "2026-05-21",
+      "round": "R037",
+      "type": "round",
+      "location": "docs/project_control_center.html + runtime/task_results/R037 + runtime/samples/korea_taiwan_reply_workflow_rules.json + tests/korea_taiwan_reply_workflow_smoke_test.py",
+      "downloadTarget": "local working tree before next stage gate commit",
+      "notes": "R037 Korea/Taiwan reply workflow completed locally. Git commit is deferred until the next major stage gate."
+    },
+    {
+      "version": "0.1.34",
+      "date": "2026-05-21",
+      "round": "R036",
+      "type": "round",
+      "location": "docs/project_control_center.html + runtime/task_results/R036 + runtime/samples/korea_taiwan_pain_points.json + tests/korea_taiwan_pain_library_smoke_test.py",
+      "downloadTarget": "local working tree before next stage gate commit",
+      "notes": "R036 Korea/Taiwan pain library completed locally. Git commit is deferred until the next major stage gate."
+    },
+    {
+      "version": "0.1.33",
+      "date": "2026-05-21",
+      "round": "R035",
+      "type": "round",
+      "location": "docs/project_control_center.html + runtime/task_results/R035 + runtime/samples/taiwan_content_templates.json + tests/taiwan_content_template_smoke_test.py",
+      "downloadTarget": "local working tree before next stage gate commit",
+      "notes": "R035 Traditional Chinese content templates completed locally. Git commit is deferred until the next major stage gate."
+    },
+    {
+      "version": "0.1.32",
+      "date": "2026-05-21",
+      "round": "R034",
+      "type": "round",
+      "location": "docs/project_control_center.html + runtime/task_results/R034 + runtime/samples/taiwan_user_profile.json + tests/taiwan_profile_smoke_test.py",
+      "downloadTarget": "local working tree before next stage gate commit",
+      "notes": "R034 Taiwan user profile completed locally. Git commit is deferred until the next major stage gate."
+    },
+    {
+      "version": "0.1.31",
+      "date": "2026-05-21",
+      "round": "R033",
+      "type": "round",
+      "location": "docs/project_control_center.html + runtime/task_results/R033 + runtime/samples/korea_visual_content_strategy.json + tests/korea_visual_strategy_smoke_test.py",
+      "downloadTarget": "local working tree before next stage gate commit",
+      "notes": "R033 Korean visual strategy completed locally. Git commit is deferred until the next major stage gate."
+    },
+    {
+      "version": "0.1.30",
+      "date": "2026-05-21",
+      "round": "R032",
+      "type": "round",
+      "location": "docs/project_control_center.html + runtime/task_results/R032 + runtime/samples/korea_content_templates.json + tests/korea_content_template_smoke_test.py",
+      "downloadTarget": "local working tree before next stage gate commit",
+      "notes": "R032 Korean content templates completed locally. Git commit is deferred until the next major stage gate."
+    },
+    {
+      "version": "0.1.29",
+      "date": "2026-05-21",
+      "round": "R031",
+      "type": "round",
+      "location": "docs/project_control_center.html + runtime/task_results/R031 + runtime/samples/korea_user_profile.json + tests/korea_profile_smoke_test.py",
+      "downloadTarget": "local working tree before next stage gate commit",
+      "notes": "R031 Korean user profile completed locally. Git commit is deferred until the next major stage gate."
+    },
     {
       "version": "0.1.28",
       "date": "2026-05-21",
@@ -1737,92 +2006,101 @@
       "id": "R031",
       "phase": "Phase 4",
       "name": "韩国用户画像",
-      "status": "planned",
+      "status": "done",
       "progress": 0,
-      "deliverable": "韩语市场用户画像",
+      "deliverable": "Korean user profile sample and workspace isolation validation",
       "report": "runtime/task_results/R031/ROUND_SUMMARY.md",
-      "summary": "Paused until user acceptance of R030. After approval, R031 will create the Korean user profile without overwriting other market data."
+      "summary": "Completed the Korean user profile. It defines Korean traveler personas, tone preferences, platform preferences, motivations, budget bands, travel experience, and content preferences while keeping Korea data isolated in korea_growth_lab."
     },
     {
       "id": "R032",
       "phase": "Phase 4",
       "name": "韩语内容模板",
-      "status": "planned",
+      "status": "done",
       "progress": 0,
-      "deliverable": "韩语短视频和图文模板",
-      "report": "runtime/task_results/R032/ROUND_SUMMARY.md"
+      "deliverable": "Localized Korean content templates for TikTok, Instagram, YouTube, and SEO",
+      "report": "runtime/task_results/R032/ROUND_SUMMARY.md",
+      "summary": "Completed Korean content templates. The sample covers short video, saveable image/text posts, YouTube outlines, and SEO briefs with Korean localization rules instead of literal machine translation."
     },
     {
       "id": "R033",
       "phase": "Phase 4",
       "name": "韩国视觉内容策略",
-      "status": "planned",
+      "status": "done",
       "progress": 0,
-      "deliverable": "视觉内容和本地语气",
-      "report": "runtime/task_results/R033/ROUND_SUMMARY.md"
+      "deliverable": "Korean visual strategy fields, shot preferences, and recommendation examples",
+      "report": "runtime/task_results/R033/ROUND_SUMMARY.md",
+      "summary": "Completed Korean visual content strategy. It defines route clarity, saveable checklist, and repeat-trip discovery styles with shot preferences and avoid rules, while staying strategy-only with no real image generation."
     },
     {
       "id": "R034",
       "phase": "Phase 4",
       "name": "台湾用户画像",
-      "status": "planned",
+      "status": "done",
       "progress": 0,
-      "deliverable": "繁中市场用户画像",
-      "report": "runtime/task_results/R034/ROUND_SUMMARY.md"
+      "deliverable": "Taiwan Traditional Chinese user profile and Korea/Taiwan isolation validation",
+      "report": "runtime/task_results/R034/ROUND_SUMMARY.md",
+      "summary": "Completed Taiwan user profile. It defines Traditional Chinese personas, travel preferences, tone, platform preferences, content preferences, and localization rules while keeping Taiwan data isolated in taiwan_growth_lab."
     },
     {
       "id": "R035",
       "phase": "Phase 4",
       "name": "繁中内容模板",
-      "status": "planned",
+      "status": "done",
       "progress": 0,
-      "deliverable": "繁中深度攻略和短内容",
-      "report": "runtime/task_results/R035/ROUND_SUMMARY.md"
+      "deliverable": "Traditional Chinese deep-guide, short-video, and social templates with language guard",
+      "report": "runtime/task_results/R035/ROUND_SUMMARY.md",
+      "summary": "Completed Traditional Chinese content templates. The set covers deep guides, short videos, and social posts, with explicit checks against Simplified Chinese tone mixing."
     },
     {
       "id": "R036",
       "phase": "Phase 4",
       "name": "韩台痛点库",
-      "status": "planned",
+      "status": "done",
       "progress": 0,
-      "deliverable": "韩语和繁中痛点收集",
-      "report": "runtime/task_results/R036/ROUND_SUMMARY.md"
+      "deliverable": "Korea/Taiwan pain library with market and language filters",
+      "report": "runtime/task_results/R036/ROUND_SUMMARY.md",
+      "summary": "Completed Korea/Taiwan pain-point library. Korean and Taiwan pain points are tied to separate workspaces and can be filtered by region and language, with top pain points identified for each market."
     },
     {
       "id": "R037",
       "phase": "Phase 4",
       "name": "韩台回复工作流",
-      "status": "planned",
+      "status": "done",
       "progress": 0,
-      "deliverable": "本地化自然回复",
-      "report": "runtime/task_results/R037/ROUND_SUMMARY.md"
+      "deliverable": "Korean and Traditional Chinese reply workflow with risk rejection",
+      "report": "runtime/task_results/R037/ROUND_SUMMARY.md",
+      "summary": "Completed Korea/Taiwan reply workflow. Korean and Traditional Chinese replies are natural, review-gated, reusable, and protected by risk rules; no automatic sending was added."
     },
     {
       "id": "R038",
       "phase": "Phase 4",
       "name": "季节内容系统",
-      "status": "planned",
+      "status": "done",
       "progress": 0,
-      "deliverable": "樱花、红叶、温泉、祭典内容",
-      "report": "runtime/task_results/R038/ROUND_SUMMARY.md"
+      "deliverable": "Seasonal content system for Korea/Taiwan sample markets",
+      "report": "runtime/task_results/R038/ROUND_SUMMARY.md",
+      "summary": "Completed seasonal content system for sakura, autumn leaves, winter hot springs, and festivals. The system supports Korean and Traditional Chinese variants while clearly requiring real date and condition verification before production use."
     },
     {
       "id": "R039",
       "phase": "Phase 4",
       "name": "韩台数据报告",
-      "status": "planned",
+      "status": "done",
       "progress": 0,
-      "deliverable": "本地市场报告",
-      "report": "runtime/task_results/R039/ROUND_SUMMARY.md"
+      "deliverable": "Korea/Taiwan sample market reports and optimization recommendations",
+      "report": "runtime/task_results/R039/ROUND_SUMMARY.md",
+      "summary": "Completed Korea/Taiwan market reports. They summarize profiles, pain points, content, replies, visual strategy, and seasonal suggestions, with explicit sample-only guards and no fake live metrics."
     },
     {
       "id": "R040",
       "phase": "Phase 4",
       "name": "韩台市场验证",
-      "status": "planned",
+      "status": "done",
       "progress": 0,
-      "deliverable": "多语言区域验证",
-      "report": "runtime/task_results/R040/ROUND_SUMMARY.md"
+      "deliverable": "Korea/Taiwan market stage-gate report and end-to-end validation",
+      "report": "runtime/task_results/R040/ROUND_SUMMARY.md",
+      "summary": "Completed the Korea/Taiwan market stage gate. R031-R040 reports are complete, the end-to-end sample chain passed validation, and the project is waiting for user acceptance before entering R041 / Phase 5."
     },
     {
       "id": "R041",
@@ -1831,7 +2109,8 @@
       "status": "planned",
       "progress": 0,
       "deliverable": "新加坡、泰国、马来、印尼优先级",
-      "report": "runtime/task_results/R041/ROUND_SUMMARY.md"
+      "report": "runtime/task_results/R041/ROUND_SUMMARY.md",
+      "summary": "Paused until user acceptance of R040. After approval, R041 will create Southeast Asia country priority without overwriting existing market data."
     },
     {
       "id": "R042",

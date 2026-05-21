@@ -1,0 +1,35 @@
+{
+  "profile_id": "korea_traveler_profile_v1",
+  "workspace_id": "korea_growth_lab",
+  "markets": ["KR"],
+  "primary_personas": [
+    {
+      "persona_id": "first_time_japan_planner",
+      "label": "First-time Japan trip planner from Korea",
+      "motivation": "Plan a short Japan trip with clear routes, food choices, and shopping ideas.",
+      "budget_band": "600000-1800000 KRW per trip",
+      "travel_experience": "first_or_second_japan_trip",
+      "tone_preference": "polite, concise, practical, locally aware",
+      "platform_preferences": ["instagram", "youtube", "tiktok", "seo"],
+      "content_preferences": ["saveable itinerary", "short route video", "food and shopping checklist"],
+      "pain_filters": ["route_confusion", "food_choice", "shopping_efficiency"]
+    },
+    {
+      "persona_id": "repeat_weekend_traveler",
+      "label": "Repeat weekend Japan traveler from Korea",
+      "motivation": "Find efficient, fresh, and less generic ideas for short repeat trips.",
+      "budget_band": "400000-1200000 KRW per trip",
+      "travel_experience": "repeat_short_trip",
+      "tone_preference": "specific, trend-aware, low-friction",
+      "platform_preferences": ["instagram", "youtube", "threads", "seo"],
+      "content_preferences": ["neighborhood picks", "seasonal shopping route", "compact video guide"],
+      "pain_filters": ["repeat_trip_fatigue", "seasonal_timing", "local_discovery"]
+    }
+  ],
+  "localization_rules": {
+    "language": "ko",
+    "avoid": ["literal machine translation", "overly formal tourism copy", "unsupported live claims"],
+    "must_include": ["clear route context", "price or time sensitivity when sample data supports it", "human review before publishing"],
+    "preferred_platforms": ["instagram", "youtube", "tiktok", "seo"]
+  }
+}
