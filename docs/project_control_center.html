@@ -390,22 +390,22 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.39",
-    "lastUpdated": "2026-05-21",
-    "currentPhase": "Real Growth Workflow MVP Correction",
+    "controlCenterVersion": "0.1.40",
+    "lastUpdated": "2026-05-22",
+    "currentPhase": "Phase Blueprint System Added",
     "currentRound": "ROUND-REAL-GROWTH-001",
     "nextRound": "R041 after acceptance",
     "overallProgress": 80,
-    "activeFocus": "Real growth workflow correction is complete: AGOS can intake a question, create answer branches, require human review, track reply attempts, ingest feedback, and update the best answer branch. R041 remains paused until acceptance."
+    "activeFocus": "AGOS now has a formal Phase / Round / Task Blueprint System: Foundation, Real Growth, War Room, Scout Network, Real Ops, SaaS Commercial, and Autonomous Growth. The original 60 Round structure remains intact."
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.39 Real growth workflow correction",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.39",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.39",
-    "note": "Real growth workflow correction is mapped to GitHub tag agos-v0.1.39. This is the new MVP acceptance baseline."
+    "latestCommit": "agos-v0.1.40 Add phase blueprint system",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.40",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.40",
+    "note": "Phase / Round / Task Blueprint System is mapped to GitHub tag agos-v0.1.40."
   },
   "metrics": {
     "roundsPlanned": 60,
@@ -1376,9 +1376,41 @@
         "python tests\\eu_us_phase3_e2e_test.py passed",
         "python tests\\korea_taiwan_phase4_e2e_test.py passed"
       ]
+    },
+    {
+      "id": "BLUEPRINT-SYSTEM-001",
+      "title": "AGOS Phase / Round / Task Blueprint System",
+      "status": "done",
+      "date": "2026-05-22",
+      "summary": "Added the formal AGOS phase blueprint covering Foundation, Real Growth, War Room, Scout Network, Real Ops, SaaS Commercial, and Autonomous Growth. The control center now embeds the phase roadmap and standard Round Execution Request template.",
+      "files": [
+        "docs/phases/PHASE-A-FOUNDATION.md",
+        "docs/phases/PHASE-B-REAL-GROWTH.md",
+        "docs/phases/PHASE-C-WAR-ROOM.md",
+        "docs/phases/PHASE-D-SCOUT-NETWORK.md",
+        "docs/phases/PHASE-E-REAL-OPS.md",
+        "docs/phases/PHASE-F-SAAS-COMMERCIAL.md",
+        "docs/phases/PHASE-G-AUTONOMOUS-GROWTH.md",
+        "docs/rounds/ROUND_EXECUTION_TEMPLATE.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "Control center JSON parsed",
+        "Phase blueprint rendered in browser",
+        "Original 60 Round structure preserved"
+      ]
     }
   ],
   "versions": [
+    {
+      "version": "0.1.40",
+      "date": "2026-05-22",
+      "round": "BLUEPRINT-SYSTEM-001",
+      "type": "blueprint",
+      "location": "docs/project_control_center.html + docs/phases + docs/rounds/ROUND_EXECUTION_TEMPLATE.md",
+      "downloadTarget": "local working tree before next milestone commit",
+      "notes": "Added AGOS Phase / Round / Task Blueprint System to the control center."
+    },
     {
       "version": "0.1.39",
       "date": "2026-05-21",
@@ -2376,6 +2408,131 @@
       "services/learning_engine.py",
       "runtime/task_results/ROUND-REAL-GROWTH-001/ROUND_SUMMARY.md"
     ]
+  },
+  "phaseBlueprint": {
+    "source": "docs/phases/ + docs/rounds/ROUND_EXECUTION_TEMPLATE.md",
+    "finalGoal": "AI Growth War Command OS: continuously discover opportunities, trends, needs, content, feedback, optimization, and evolution.",
+    "phases": [
+      {
+        "id": "PHASE-A-FOUNDATION",
+        "name": "FOUNDATION / Growth OS Foundation",
+        "file": "docs/phases/PHASE-A-FOUNDATION.md",
+        "goal": "Build Workspace -> Knowledge -> Pain Point -> Content -> Reply -> Learning -> Report.",
+        "rounds": "R001-R012",
+        "acceptance": [
+          "Workspace isolation",
+          "Content generation",
+          "Reply drafts",
+          "Learning loop",
+          "Daily report system"
+        ],
+        "next": "Phase B - REAL GROWTH"
+      },
+      {
+        "id": "PHASE-B-REAL-GROWTH",
+        "name": "REAL GROWTH WORKFLOW",
+        "file": "docs/phases/PHASE-B-REAL-GROWTH.md",
+        "goal": "Upgrade from blueprint system to real question -> answer branches -> human review -> reply attempt -> feedback -> best-answer learning.",
+        "rounds": "ROUND-REAL-GROWTH-001 to 005",
+        "acceptance": [
+          "Record real questions",
+          "Generate real replies",
+          "Learn feedback"
+        ],
+        "next": "Phase C - AI WAR ROOM"
+      },
+      {
+        "id": "PHASE-C-WAR-ROOM",
+        "name": "AI WAR ROOM / War Command System",
+        "file": "docs/phases/PHASE-C-WAR-ROOM.md",
+        "goal": "Build battle collection, analysis, strategy, execution, verification, memory, and correction.",
+        "rounds": "ROUND-WAR-ROOM-001 to 005",
+        "acceptance": [
+          "AI work visibility",
+          "Human review points",
+          "Code check points",
+          "Runtime verification",
+          "Direction correction"
+        ],
+        "next": "Phase D - AI SCOUT NETWORK"
+      },
+      {
+        "id": "PHASE-D-SCOUT-NETWORK",
+        "name": "AI SCOUT NETWORK",
+        "file": "docs/phases/PHASE-D-SCOUT-NETWORK.md",
+        "goal": "Build multilingual discovery, trend clustering, heat detection, strategic interpretation, and cross-platform expansion.",
+        "rounds": "ROUND-SCOUT-001 to 007",
+        "acceptance": [
+          "Discover real growth opportunities"
+        ],
+        "next": "Phase E - REAL OPERATION"
+      },
+      {
+        "id": "PHASE-E-REAL-OPS",
+        "name": "REAL OPERATION SPRINT",
+        "file": "docs/phases/PHASE-E-REAL-OPS.md",
+        "goal": "Run AGOS for 7-14 days as real daily operations, not a test.",
+        "rounds": "ROUND-OPS-001 to 007",
+        "acceptance": [
+          "Actually help one Workspace grow"
+        ],
+        "next": "Phase F - SaaS Commercial Layer"
+      },
+      {
+        "id": "PHASE-F-SAAS-COMMERCIAL",
+        "name": "SAAS COMMERCIAL LAYER",
+        "file": "docs/phases/PHASE-F-SAAS-COMMERCIAL.md",
+        "goal": "Upgrade AGOS into an enterprise SaaS growth platform.",
+        "rounds": "ROUND-SAAS-001 to 007",
+        "acceptance": [
+          "Pay",
+          "Upload knowledge base",
+          "Submit requirements",
+          "View reports",
+          "Accept results"
+        ],
+        "next": "Phase G - Autonomous Growth"
+      },
+      {
+        "id": "PHASE-G-AUTONOMOUS-GROWTH",
+        "name": "AUTONOMOUS GROWTH",
+        "file": "docs/phases/PHASE-G-AUTONOMOUS-GROWTH.md",
+        "goal": "Upgrade AGOS from AI-assisted operations to autonomous growth system.",
+        "rounds": "ROUND-AUTO-001 to 006",
+        "acceptance": [
+          "Autonomous strategy",
+          "Autonomous scheduling",
+          "Autonomous optimization",
+          "Trend prediction",
+          "Autonomous War Room"
+        ],
+        "next": "AI Growth Operating System"
+      }
+    ],
+    "roundTemplate": {
+      "file": "docs/rounds/ROUND_EXECUTION_TEMPLATE.md",
+      "sections": [
+        "Round Identity",
+        "Round Goal",
+        "Execution Tasks",
+        "Test Tasks",
+        "Review Tasks",
+        "Out of Scope",
+        "Allowed Changes",
+        "Forbidden Changes",
+        "Required Verification",
+        "Definition of Done",
+        "Output Format"
+      ],
+      "outputFormat": [
+        "What changed",
+        "Status of every task",
+        "Verification result",
+        "Collaboration acceptance result",
+        "Incomplete items / risks",
+        "Next round recommendation"
+      ]
+    }
   }
 }
   </script>
@@ -2393,6 +2550,7 @@
         <div class="nav-title">导航</div>
         <a href="#overview">项目总览 <small id="nav-version"></small></a>
         <a href="#real-growth">Real Growth <small>MVP</small></a>
+        <a href="#phase-blueprint">Blueprint <small>phases</small></a>
         <a href="#completion">AI 完成度 <small id="nav-progress"></small></a>
         <a href="#rounds">Round 路线图 <small>60</small></a>
         <a href="#reports">报告嵌入 <small id="nav-reports"></small></a>
@@ -2459,6 +2617,25 @@
         <div class="grid four" id="real-growth-metrics"></div>
         <div style="height:14px"></div>
         <div id="real-growth-checklist"></div>
+      </section>
+
+
+      <section id="phase-blueprint" class="panel section">
+        <div class="section-head">
+          <div>
+            <h2>AGOS Phase / Round / Task Blueprint</h2>
+            <p>The long-term AGOS roadmap is now governed by independent Phase files, Round files, standard task/test/review grain, runtime results, and stage Gate control.</p>
+          </div>
+          <span class="badge b-violet">blueprint system</span>
+        </div>
+        <div class="callout" id="blueprint-final-goal"></div>
+        <div style="height:14px"></div>
+        <div class="grid two" id="phase-blueprint-grid"></div>
+        <div style="height:14px"></div>
+        <div class="card">
+          <div class="topline"><h3>Round Execution Request Template</h3><span class="badge b-cyan">standard</span></div>
+          <div id="round-template-summary"></div>
+        </div>
       </section>
 
       <section id="completion" class="panel section">
@@ -2642,6 +2819,32 @@
       el("nav-progress").textContent = `${state.project.overallProgress}%`;
       el("nav-reports").textContent = state.metrics.reportsEmbedded;
       el("nav-git").textContent = state.git.status === "not_initialized" ? "pending" : state.git.branch || state.git.latestCommit;
+    }
+
+
+    function renderPhaseBlueprint() {
+      const bp = state.phaseBlueprint || { phases: [], roundTemplate: { sections: [], outputFormat: [] } };
+      el('blueprint-final-goal').innerHTML = '<strong>Final goal:</strong> ' + esc(bp.finalGoal || 'AI Growth Operating System');
+      el('phase-blueprint-grid').innerHTML = (bp.phases || []).map(phase => `
+        <article class="card">
+          <div class="topline"><h3>${esc(phase.id)}</h3><span class="badge b-blue">${esc(phase.rounds)}</span></div>
+          <p><strong>${esc(phase.name)}</strong></p>
+          <p>${esc(phase.goal)}</p>
+          <p><code>${esc(phase.file)}</code></p>
+          <ul>
+            ${(phase.acceptance || []).map(item => `<li>${esc(item)}</li>`).join('')}
+          </ul>
+          <p><strong>Next:</strong> ${esc(phase.next)}</p>
+        </article>
+      `).join('');
+      const tpl = bp.roundTemplate || { sections: [], outputFormat: [] };
+      el('round-template-summary').innerHTML = `
+        <p><code>${esc(tpl.file || '')}</code></p>
+        <div class="grid two">
+          <div><h3>Required Sections</h3><ul>${(tpl.sections || []).map(item => `<li>${esc(item)}</li>`).join('')}</ul></div>
+          <div><h3>Output Format</h3><ul>${(tpl.outputFormat || []).map(item => `<li>${esc(item)}</li>`).join('')}</ul></div>
+        </div>
+      `;
     }
 
     function renderRealGrowth() {
@@ -2878,6 +3081,7 @@
 
     renderOverview();
     renderRealGrowth();
+    renderPhaseBlueprint();
     renderGit();
     renderModules();
     renderRounds();
