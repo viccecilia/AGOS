@@ -390,13 +390,13 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.4",
+    "controlCenterVersion": "0.1.15",
     "lastUpdated": "2026-05-21",
     "currentPhase": "Phase 1 / SaaS Foundation",
-    "currentRound": "R002",
-    "nextRound": "R003",
-    "overallProgress": 10,
-    "activeFocus": "R001 控制中心已经完成，下一步进入 R002 Product Workspace 架构，开始建立客户/产品隔离的核心数据边界。"
+    "currentRound": "R012_STAGE_GATE",
+    "nextRound": "R013_AFTER_USER_APPROVAL",
+    "overallProgress": 32,
+    "activeFocus": "R012 Phase 1 阶段验收已完成，当前等待用户验收。不要自动进入 R013；验收通过后再进入 Japan AI Guide 推广画像。"
   },
   "git": {
     "status": "local_initialized",
@@ -409,23 +409,23 @@
   },
   "metrics": {
     "roundsPlanned": 60,
-    "roundsCompleted": 1,
-    "roundsInProgress": 1,
-    "reportsEmbedded": 5
+    "roundsCompleted": 12,
+    "roundsInProgress": 0,
+    "reportsEmbedded": 16
   },
   "modules": [
     {"name": "Project Control Center", "progress": 100, "status": "done", "ownerPath": "docs/project_control_center.html", "next": "后续每轮持续更新控制中心、报告嵌入和 Git 版本记录"},
-    {"name": "Product Workspace", "progress": 15, "status": "planned", "ownerPath": "portal_saas/workspace/", "next": "定义 Workspace 数据模型"},
-    {"name": "Customer Knowledge Base", "progress": 10, "status": "planned", "ownerPath": "portal_saas/customer_knowledge/", "next": "客户资料、FAQ、语气、产品资料分层"},
-    {"name": "Pain Point Radar", "progress": 10, "status": "planned", "ownerPath": "services/pain_point_engine.py", "next": "问题收集、痛点聚类、趋势标签"},
-    {"name": "AI Content Factory", "progress": 12, "status": "planned", "ownerPath": "services/content_engine.py", "next": "图文、短视频、Hook、SEO 模板"},
-    {"name": "AI Reply Workflow", "progress": 8, "status": "planned", "ownerPath": "services/reply_engine.py", "next": "自然回复、人审、避免硬广"},
-    {"name": "AI Learning Loop", "progress": 8, "status": "planned", "ownerPath": "services/learning_engine.py", "next": "收藏、转化、忽略、复盘学习"},
-    {"name": "Report Engine", "progress": 10, "status": "planned", "ownerPath": "services/report_engine.py", "next": "日报、周报、月报"},
+    {"name": "Product Workspace", "progress": 100, "status": "done", "ownerPath": "portal_saas/workspace/", "next": "后续模块必须通过 workspace_id 绑定到 Workspace 边界"},
+    {"name": "Customer Knowledge Base", "progress": 100, "status": "done", "ownerPath": "portal_saas/customer_knowledge/", "next": "后续内容工厂必须读取 Workspace 级知识库"},
+    {"name": "Pain Point Radar", "progress": 100, "status": "done", "ownerPath": "services/pain_point_engine.py", "next": "后续内容工厂从痛点雷达读取高优先级痛点"},
+    {"name": "AI Content Factory", "progress": 100, "status": "done", "ownerPath": "services/content_engine.py", "next": "后续回复和报告可读取待审核内容草稿"},
+    {"name": "AI Reply Workflow", "progress": 100, "status": "done", "ownerPath": "services/reply_engine.py", "next": "后续学习闭环可记录回复草稿表现"},
+    {"name": "AI Learning Loop", "progress": 100, "status": "done", "ownerPath": "services/learning_engine.py", "next": "报告系统可读取学习事件和推荐排序"},
+    {"name": "Report Engine", "progress": 100, "status": "done", "ownerPath": "services/report_engine.py", "next": "报告区可继续嵌入每轮摘要和样例增长报告"},
     {"name": "SaaS Customer Management", "progress": 8, "status": "planned", "ownerPath": "portal_saas/customer_management/", "next": "客户、套餐、Workspace、AI 活跃度"},
     {"name": "Subscription Engine", "progress": 8, "status": "planned", "ownerPath": "services/subscription_engine.py", "next": "月付、季付、年付、企业版"},
-    {"name": "AI Provider Bridge", "progress": 8, "status": "planned", "ownerPath": "services/ai_provider_engine.py", "next": "OpenAI、DeepSeek、Claude、客户自有 Key"},
-    {"name": "Skill Marketplace", "progress": 8, "status": "planned", "ownerPath": "portal_saas/skill_marketplace/", "next": "SEO、TikTok、Reddit、X Trend、行业包"}
+    {"name": "AI Provider Bridge", "progress": 100, "status": "done", "ownerPath": "services/ai_provider_engine.py", "next": "真实 Provider 接入前必须设计安全密钥存储"},
+    {"name": "Skill Marketplace", "progress": 100, "status": "done", "ownerPath": "portal_saas/skill_marketplace/", "next": "阶段验收后再扩展真实套餐和 UI"}
   ],
   "paths": [
     {"path": "docs/project_control_center.html", "purpose": "项目导航中枢、Round 入口、Git 版本角标、报告嵌入页"},
@@ -483,9 +483,207 @@
       "summary": "R001 完成 AGOS 控制中心基础建设：HTML 总控页、60 Round 执行任务词、本地 Git 初始化、Round 摘要浮层和 R001 正式报告。下一轮进入 Product Workspace 架构。",
       "files": ["docs/project_control_center.html", "docs/round_execution_prompts.md", "runtime/task_results/R001/ROUND_SUMMARY.md", ".gitignore"],
       "verification": ["JSON 解析通过", "HTML 本地预览通过", "60 个 Round 正常显示", "12 个模块正常显示", "R001 报告已写入"]
+    },
+    {
+      "id": "R002",
+      "title": "Product Workspace 架构",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "R002 建立了 AGOS 的客户/产品级隔离边界：Workspace 模型、schema 校验、文件存储服务、SaaS 入口说明和隔离 smoke test。后续知识库、痛点、内容、回复和报告都必须绑定 workspace_id。",
+      "files": ["models/workspace.py", "schemas/workspace_schema.py", "services/workspace_service.py", "portal_saas/workspace/README.md", "tests/workspace_smoke_test.py", "runtime/task_results/R002/ROUND_SUMMARY.md"],
+      "verification": ["Python 语法检查通过", "Workspace smoke test 通过", "不同 Workspace 数据隔离通过", "非法 workspace_id 拦截通过"]
+    },
+    {
+      "id": "R003",
+      "title": "客户知识库系统",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "R003 建立 Workspace 级客户知识库：品牌语气、产品资料、FAQ、行业资料和内容模板都必须绑定 workspace_id，后续 AI 内容不能绕过客户知识库使用全局共享提示。",
+      "files": ["models/knowledge.py", "schemas/knowledge_schema.py", "services/knowledge_service.py", "portal_saas/customer_knowledge/README.md", "tests/knowledge_smoke_test.py", "runtime/task_results/R003/ROUND_SUMMARY.md"],
+      "verification": ["Python 语法检查通过", "Workspace smoke test 通过", "Knowledge smoke test 通过", "缺失 Workspace 拦截通过", "知识库数据隔离通过"]
+    },
+    {
+      "id": "R004",
+      "title": "官方账号矩阵中心",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "R004 建立 Workspace 级官方账号矩阵，支持 TikTok、Instagram、X、YouTube、Reddit、Threads、SEO 的账号档案、内容策略、账号状态和风险状态，同时禁止保存密码、cookie、token、API key 等敏感凭证。",
+      "files": ["models/account_matrix.py", "schemas/account_matrix_schema.py", "services/account_matrix_service.py", "portal_saas/account_matrix/README.md", "tests/account_matrix_smoke_test.py", "runtime/task_results/R004/ROUND_SUMMARY.md"],
+      "verification": ["Python 语法检查通过", "Workspace smoke test 通过", "Knowledge smoke test 通过", "Account matrix smoke test 通过", "敏感 metadata 拦截通过"]
+    },
+    {
+      "id": "R005",
+      "title": "全网痛点雷达",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "R005 建立 Workspace 级痛点雷达，使用本地样例数据记录来源、平台、市场、人群、分类、证据、标签和趋势/紧急度/价值分数，并计算 priority_score。当前没有真实抓取或平台访问。",
+      "files": ["models/pain_point.py", "schemas/pain_point_schema.py", "services/pain_point_engine.py", "portal_saas/pain_radar/README.md", "tests/pain_point_smoke_test.py", "runtime/task_results/R005/ROUND_SUMMARY.md"],
+      "verification": ["Python 语法检查通过", "Workspace/Knowledge/Account Matrix 回归通过", "Pain point smoke test 通过", "趋势排序通过", "非法平台和非法分数拦截通过"]
+    },
+    {
+      "id": "R006",
+      "title": "AI 内容工厂 MVP",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "R006 建立 Workspace 级内容草稿工厂，从客户知识库和痛点雷达读取输入，生成 TikTok、Instagram、Reddit、YouTube、SEO 五类待审核草稿。所有草稿默认 needs_review，不自动发布。",
+      "files": ["models/content.py", "schemas/content_schema.py", "services/content_engine.py", "portal_saas/content_factory/README.md", "tests/content_smoke_test.py", "runtime/task_results/R006/ROUND_SUMMARY.md"],
+      "verification": ["Python 语法检查通过", "Workspace/Knowledge/Account/Pain Point 回归通过", "Content smoke test 通过", "五类平台草稿生成通过", "人工审核状态保留通过"]
+    },
+    {
+      "id": "R007",
+      "title": "AI 回复工作流 MVP",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "R007 建立 Workspace 级回复草稿工作流，支持自然回复草稿、人审状态、硬广/冒充风险标记和回复记录。当前不接入真实评论区，不自动发送。",
+      "files": ["models/reply.py", "schemas/reply_schema.py", "services/reply_engine.py", "portal_saas/reply_workflow/README.md", "tests/reply_smoke_test.py", "runtime/task_results/R007/ROUND_SUMMARY.md"],
+      "verification": ["Python 语法检查通过", "完整 smoke 回归通过", "Reply smoke test 通过", "硬广风险标记通过", "人工审核状态保留通过"]
+    },
+    {
+      "id": "R008",
+      "title": "AI 学习与复盘系统",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "R008 建立 Workspace 级学习闭环，记录 saved、ignored、converted、positive_reply、negative_reply 等反馈信号，并基于权重生成下一步推荐排序。当前不训练模型，不使用真实用户隐私数据。",
+      "files": ["models/learning.py", "schemas/learning_schema.py", "services/learning_engine.py", "portal_saas/learning_loop/README.md", "tests/learning_smoke_test.py", "runtime/task_results/R008/ROUND_SUMMARY.md"],
+      "verification": ["Python 语法检查通过", "完整 smoke 回归通过", "Learning smoke test 通过", "反馈写入通过", "推荐排序通过"]
+    },
+    {
+      "id": "R009",
+      "title": "报告系统 MVP",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "R009 建立 Workspace 级报告系统，生成日报、周报、月报，汇总痛点、内容草稿、回复草稿和学习推荐。报告明确标记为样例数据，不伪装成真实业务结果。",
+      "files": ["models/report.py", "schemas/report_schema.py", "services/report_engine.py", "portal_saas/reports/README.md", "tests/report_smoke_test.py", "runtime/task_results/R009/ROUND_SUMMARY.md"],
+      "verification": ["Python 语法检查通过", "完整 smoke 回归通过", "Report smoke test 通过", "日报/周报/月报生成通过"]
+    },
+    {
+      "id": "R010",
+      "title": "AI Provider 基础桥接",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "R010 建立 AI Provider 抽象，支持 Provider 类型、能力标签、额度字段和 mock-only 路由。配置示例不含真实密钥，测试验证 api_key 等敏感字段会被拦截。",
+      "files": ["models/ai_provider.py", "schemas/ai_provider_schema.py", "services/ai_provider_engine.py", "config/ai_providers.sample.json", "tests/ai_provider_smoke_test.py", "runtime/task_results/R010/ROUND_SUMMARY.md"],
+      "verification": ["Python 语法检查通过", "AI Provider smoke test 通过", "密钥字段拦截通过", "密钥扫描通过"]
+    },
+    {
+      "id": "R011",
+      "title": "Skill Marketplace 基础结构",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "R011 建立 Skill Marketplace 基础结构，支持 SEO、TikTok、Reddit、Premium AI Pack 等 Skill 的套餐权限和启用/禁用校验。当前不实现真实付费扣费。",
+      "files": ["models/skill.py", "schemas/skill_schema.py", "services/skill_engine.py", "portal_saas/skill_marketplace/README.md", "tests/skill_smoke_test.py", "runtime/task_results/R011/ROUND_SUMMARY.md"],
+      "verification": ["Python 语法检查通过", "完整 smoke 回归通过", "Skill smoke test 通过", "套餐越权拦截通过", "禁用 Skill 拦截通过"]
+    },
+    {
+      "id": "R012",
+      "title": "通用增长 MVP 阶段验收",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "R012 完成 Phase 1 阶段验收。R001-R011 报告齐全，Python 语法检查通过，全部 smoke tests 通过。当前等待用户验收，不能自动进入 R013。",
+      "files": ["runtime/task_results/R012/ROUND_SUMMARY.md", "docs/project_control_center.html"],
+      "verification": ["R001-R011 报告完整性通过", "Python 语法检查通过", "全部 smoke tests 通过", "控制中心进入等待用户验收状态"]
     }
   ],
   "versions": [
+    {
+      "id": "control-center-v0.1.15",
+      "label": "Control Center v0.1.15",
+      "date": "2026-05-21",
+      "gitRef": "stage gate commit pending",
+      "location": "docs/project_control_center.html + runtime/task_results/R012/ROUND_SUMMARY.md",
+      "notes": "R012 Phase 1 阶段验收完成。等待用户验收后再进入 R013。",
+      "snapshot": "AGOS Project Control Center v0.1.15\\nRound: R012 Phase 1 gate completed\\nStatus: waiting for user approval\\n"
+    },
+    {
+      "id": "control-center-v0.1.14",
+      "label": "Control Center v0.1.14",
+      "date": "2026-05-21",
+      "gitRef": "pending stage commit",
+      "location": "docs/project_control_center.html + R011 skill files",
+      "notes": "R011 完成 Skill Marketplace 基础结构，控制中心进入 R012 阶段验收。",
+      "snapshot": "AGOS Project Control Center v0.1.14\\nRound: R011 completed\\nNext: R012 Phase 1 Gate\\n"
+    },
+    {
+      "id": "control-center-v0.1.13",
+      "label": "Control Center v0.1.13",
+      "date": "2026-05-21",
+      "gitRef": "pending stage commit",
+      "location": "docs/project_control_center.html + R010 provider files",
+      "notes": "R010 完成 AI Provider 基础桥接，控制中心推进到 R011。",
+      "snapshot": "AGOS Project Control Center v0.1.13\\nRound: R010 completed\\nNext: R011 Skill Marketplace\\n"
+    },
+    {
+      "id": "control-center-v0.1.12",
+      "label": "Control Center v0.1.12",
+      "date": "2026-05-21",
+      "gitRef": "pending stage commit",
+      "location": "docs/project_control_center.html + R009 report files",
+      "notes": "R009 完成报告系统 MVP，控制中心推进到 R010。",
+      "snapshot": "AGOS Project Control Center v0.1.12\\nRound: R009 completed\\nNext: R010 AI Provider Bridge\\n"
+    },
+    {
+      "id": "control-center-v0.1.11",
+      "label": "Control Center v0.1.11",
+      "date": "2026-05-21",
+      "gitRef": "pending stage commit",
+      "location": "docs/project_control_center.html + R008 learning loop files",
+      "notes": "R008 完成 AI 学习与复盘系统，控制中心推进到 R009。",
+      "snapshot": "AGOS Project Control Center v0.1.11\\nRound: R008 completed\\nNext: R009 Report Engine MVP\\n"
+    },
+    {
+      "id": "control-center-v0.1.10",
+      "label": "Control Center v0.1.10",
+      "date": "2026-05-21",
+      "gitRef": "pending stage commit",
+      "location": "docs/project_control_center.html + R007 reply workflow files",
+      "notes": "R007 完成 AI 回复工作流 MVP，控制中心推进到 R008。按新策略，本轮不单独 Git commit，等待阶段大节点统一提交。",
+      "snapshot": "AGOS Project Control Center v0.1.10\\nRound: R007 completed\\nNext: R008 AI Learning Loop\\nGit strategy: commit at stage gate or explicit request\\n"
+    },
+    {
+      "id": "control-center-v0.1.9",
+      "label": "Control Center v0.1.9",
+      "date": "2026-05-21",
+      "gitRef": "pending stage commit",
+      "location": "docs/project_control_center.html + R006 content factory files",
+      "notes": "R006 完成 AI 内容工厂 MVP，控制中心推进到 R007。按新策略，本轮不单独 Git commit，等待阶段大节点统一提交。",
+      "snapshot": "AGOS Project Control Center v0.1.9\\nRound: R006 completed\\nNext: R007 AI Reply Workflow MVP\\nGit strategy: commit at stage gate or explicit request\\n"
+    },
+    {
+      "id": "control-center-v0.1.8",
+      "label": "Control Center v0.1.8",
+      "date": "2026-05-21",
+      "gitRef": "pending stage commit",
+      "location": "docs/project_control_center.html + R005 pain radar files",
+      "notes": "R005 完成全网痛点雷达，控制中心推进到 R006。按新策略，本轮不单独 Git commit，等待阶段大节点统一提交。",
+      "snapshot": "AGOS Project Control Center v0.1.8\\nRound: R005 completed\\nNext: R006 AI Content Factory MVP\\nGit strategy: commit at stage gate or explicit request\\n"
+    },
+    {
+      "id": "control-center-v0.1.7",
+      "label": "Control Center v0.1.7",
+      "date": "2026-05-21",
+      "gitRef": "pending stage commit",
+      "location": "docs/project_control_center.html + R004 account matrix files",
+      "notes": "R004 完成官方账号矩阵中心，控制中心推进到 R005。按新策略，本轮不单独 Git commit，等待阶段大节点统一提交。",
+      "snapshot": "AGOS Project Control Center v0.1.7\\nRound: R004 completed\\nNext: R005 Pain Point Radar\\nGit strategy: commit at stage gate or explicit request\\n"
+    },
+    {
+      "id": "control-center-v0.1.6",
+      "label": "Control Center v0.1.6",
+      "date": "2026-05-21",
+      "gitRef": "pending stage commit",
+      "location": "docs/project_control_center.html + R003 knowledge files",
+      "notes": "R003 完成客户知识库系统，控制中心推进到 R004。按新策略，本轮不单独 Git commit，等待阶段大节点统一提交。",
+      "snapshot": "AGOS Project Control Center v0.1.6\\nRound: R003 completed\\nNext: R004 Account Matrix\\nGit strategy: commit at stage gate or explicit request\\n"
+    },
+    {
+      "id": "control-center-v0.1.5",
+      "label": "Control Center v0.1.5",
+      "date": "2026-05-21",
+      "gitRef": "pending stage commit",
+      "location": "docs/project_control_center.html + R002 workspace files",
+      "notes": "R002 完成 Product Workspace 架构，控制中心推进到 R003。按新策略，本轮不单独 Git commit，等待阶段大节点统一提交。",
+      "snapshot": "AGOS Project Control Center v0.1.5\\nRound: R002 completed\\nNext: R003 Customer Knowledge Base\\nGit strategy: commit at stage gate or explicit request\\n"
+    },
     {
       "id": "control-center-v0.1.4",
       "label": "Control Center v0.1.4",
@@ -534,17 +732,17 @@
   ],
   "rounds": [
     {"id":"R001","phase":"Phase 1","name":"通用 AI Growth OS 蓝图","status":"done","progress":100,"deliverable":"HTML 控制中心、60 Round 执行任务词、本地 Git 初始化和 R001 报告","report":"runtime/task_results/R001/ROUND_SUMMARY.md","summary":"R001 已完成 AGOS 的项目神经中枢。实际交付包括控制中心 HTML、60 Round 执行协议、Git 本地版本记录、Round 点击摘要浮层和正式 R001 报告。后续每一轮都要先验证上一轮结果，再更新控制中心和对应报告。"},
-    {"id":"R002","phase":"Phase 1","name":"Product Workspace 架构","status":"in_progress","progress":0,"deliverable":"Workspace 数据结构与页面入口","report":"runtime/task_results/R002/ROUND_SUMMARY.md"},
-    {"id":"R003","phase":"Phase 1","name":"客户知识库系统","status":"planned","progress":0,"deliverable":"FAQ、产品资料、语气、行业资料","report":"runtime/task_results/R003/ROUND_SUMMARY.md"},
-    {"id":"R004","phase":"Phase 1","name":"官方账号矩阵中心","status":"planned","progress":0,"deliverable":"平台账号、内容策略、账号状态","report":"runtime/task_results/R004/ROUND_SUMMARY.md"},
-    {"id":"R005","phase":"Phase 1","name":"全网痛点雷达","status":"planned","progress":0,"deliverable":"痛点收集、聚类、趋势标签","report":"runtime/task_results/R005/ROUND_SUMMARY.md"},
-    {"id":"R006","phase":"Phase 1","name":"AI 内容工厂 MVP","status":"planned","progress":0,"deliverable":"图文、短视频、Hook、SEO 输出","report":"runtime/task_results/R006/ROUND_SUMMARY.md"},
-    {"id":"R007","phase":"Phase 1","name":"回复工作流 MVP","status":"planned","progress":0,"deliverable":"自然回复草稿、人审、回复记录","report":"runtime/task_results/R007/ROUND_SUMMARY.md"},
-    {"id":"R008","phase":"Phase 1","name":"AI 学习与复盘系统","status":"planned","progress":0,"deliverable":"反馈、收藏、忽略、转化学习","report":"runtime/task_results/R008/ROUND_SUMMARY.md"},
-    {"id":"R009","phase":"Phase 1","name":"报告系统 MVP","status":"planned","progress":0,"deliverable":"日报、周报、月报","report":"runtime/task_results/R009/ROUND_SUMMARY.md"},
-    {"id":"R010","phase":"Phase 1","name":"AI Provider 基础桥接","status":"planned","progress":0,"deliverable":"多模型配置和客户自有 Key","report":"runtime/task_results/R010/ROUND_SUMMARY.md"},
-    {"id":"R011","phase":"Phase 1","name":"Skill Marketplace 基础结构","status":"planned","progress":0,"deliverable":"Skill 包、权限、套餐绑定","report":"runtime/task_results/R011/ROUND_SUMMARY.md"},
-    {"id":"R012","phase":"Phase 1","name":"通用增长 MVP 验收","status":"planned","progress":0,"deliverable":"首个可闭环增长工作台","report":"runtime/task_results/R012/ROUND_SUMMARY.md"},
+    {"id":"R002","phase":"Phase 1","name":"Product Workspace 架构","status":"done","progress":100,"deliverable":"Workspace 数据结构、schema 校验、文件存储服务、SaaS 入口说明和隔离 smoke test","report":"runtime/task_results/R002/ROUND_SUMMARY.md","summary":"R002 已完成 Product Workspace 架构。实际交付包括 Workspace 领域模型、schema 校验、文件存储服务、SaaS 入口说明和 smoke test。系统现在有了客户/产品级隔离边界，后续知识库、痛点、内容、回复、报告和 AI 配置都必须绑定 workspace_id。"},
+    {"id":"R003","phase":"Phase 1","name":"客户知识库系统","status":"done","progress":100,"deliverable":"Workspace 级品牌语气、产品资料、FAQ、行业资料和内容模板","report":"runtime/task_results/R003/ROUND_SUMMARY.md","summary":"R003 已完成客户知识库系统。实际交付包括 KnowledgeBase 模型、schema 校验、Workspace 绑定服务、SaaS 入口说明和知识库 CRUD/隔离测试。每个客户知识库都必须绑定到已有 workspace_id，后续内容生成不能绕过该边界。"},
+    {"id":"R004","phase":"Phase 1","name":"官方账号矩阵中心","status":"done","progress":100,"deliverable":"Workspace 级多平台账号档案、内容策略、账号状态和风险状态","report":"runtime/task_results/R004/ROUND_SUMMARY.md","summary":"R004 已完成官方账号矩阵中心。实际交付包括 AccountProfile 模型、平台/状态/risk schema 校验、Workspace 绑定服务、SaaS 入口说明和账号矩阵 smoke test。系统支持 TikTok、Instagram、X、YouTube、Reddit、Threads、SEO，并明确禁止保存密码、cookie、token 或 API key。"},
+    {"id":"R005","phase":"Phase 1","name":"全网痛点雷达","status":"done","progress":100,"deliverable":"Workspace 级痛点样例导入、分类、趋势分数、优先级排序和筛选","report":"runtime/task_results/R005/ROUND_SUMMARY.md","summary":"R005 已完成全网痛点雷达基础系统。实际交付包括 PainPoint 模型、schema 校验、本地样例导入、平台/分类筛选、priority_score 排序和 smoke test。当前没有真实网站抓取，所有痛点均来自本地样例数据。"},
+    {"id":"R006","phase":"Phase 1","name":"AI 内容工厂 MVP","status":"done","progress":100,"deliverable":"Workspace 级多平台待审核内容草稿生成","report":"runtime/task_results/R006/ROUND_SUMMARY.md","summary":"R006 已完成 AI 内容工厂 MVP。实际交付包括 ContentDraft 模型、schema 校验、内容草稿服务、SaaS 入口说明和内容生成 smoke test。系统可从 Workspace 知识库和高优先级痛点生成 TikTok、Instagram、Reddit、YouTube、SEO 五类草稿，所有草稿默认 needs_review，不自动发布。"},
+    {"id":"R007","phase":"Phase 1","name":"回复工作流 MVP","status":"done","progress":100,"deliverable":"Workspace 级自然回复草稿、人审状态、风险标记和回复记录","report":"runtime/task_results/R007/ROUND_SUMMARY.md","summary":"R007 已完成 AI 回复工作流 MVP。实际交付包括 ReplyDraft 模型、schema 校验、回复生成服务、SaaS 入口说明和回复 smoke test。系统只生成待审核回复草稿，并可标记硬广和冒充风险；不接入真实评论区，不自动发送。"},
+    {"id":"R008","phase":"Phase 1","name":"AI 学习与复盘系统","status":"done","progress":100,"deliverable":"Workspace 级反馈事件、推荐排序和本地复盘信号","report":"runtime/task_results/R008/ROUND_SUMMARY.md","summary":"R008 已完成 AI 学习与复盘系统。实际交付包括 LearningEvent 模型、schema 校验、学习事件服务、SaaS 入口说明和学习 smoke test。系统可记录收藏、忽略、转化、正负回复等样例反馈，并生成下一步推荐排序；不训练真实模型，不使用真实隐私数据。"},
+    {"id":"R009","phase":"Phase 1","name":"报告系统 MVP","status":"done","progress":100,"deliverable":"Workspace 级日报、周报、月报样例报告生成","report":"runtime/task_results/R009/ROUND_SUMMARY.md","summary":"R009 已完成报告系统 MVP。实际交付包括 GrowthReport 模型、schema 校验、报告生成服务、SaaS 入口说明和报告 smoke test。系统可基于样例痛点、内容、回复和学习事件生成日报、周报、月报，并明确标记为样例数据。"},
+    {"id":"R010","phase":"Phase 1","name":"AI Provider 基础桥接","status":"done","progress":100,"deliverable":"Mock-only AI Provider 配置、能力路由、额度字段和密钥字段拦截","report":"runtime/task_results/R010/ROUND_SUMMARY.md","summary":"R010 已完成 AI Provider 基础桥接。实际交付包括 AIProviderConfig 模型、schema 校验、mock-only 路由服务、无密钥 sample 配置和 provider smoke test。当前不写入真实 API Key，不进行真实付费调用。"},
+    {"id":"R011","phase":"Phase 1","name":"Skill Marketplace 基础结构","status":"done","progress":100,"deliverable":"Skill 包、套餐权限、启用/禁用和越权拦截","report":"runtime/task_results/R011/ROUND_SUMMARY.md","summary":"R011 已完成 Skill Marketplace 基础结构。实际交付包括 SkillDefinition 模型、schema 校验、Skill 权限服务、SaaS 入口说明和 Skill smoke test。系统可按 Starter/Growth/Premium 等套餐判断 Skill 可用性，禁用 Skill 不可调用，不实现真实付费扣费。"},
+    {"id":"R012","phase":"Phase 1","name":"通用增长 MVP 验收","status":"done","progress":100,"deliverable":"Phase 1 通用增长 MVP 阶段验收报告和完整 smoke test 验证","report":"runtime/task_results/R012/ROUND_SUMMARY.md","summary":"R012 已完成 Phase 1 阶段验收。R001-R011 报告齐全，Python 语法检查通过，Workspace、知识库、账号矩阵、痛点、内容、回复、学习、报告、Provider、Skill 全部 smoke test 通过。当前必须等待用户验收，不能自动进入 R013。"},
     {"id":"R013","phase":"Phase 2","name":"Japan AI Guide 推广画像","status":"planned","progress":0,"deliverable":"JAG 首个真实推广 Workspace","report":"runtime/task_results/R013/ROUND_SUMMARY.md"},
     {"id":"R014","phase":"Phase 2","name":"JAG 平台账号矩阵","status":"planned","progress":0,"deliverable":"TikTok、IG、X、YouTube、SEO 账号策略","report":"runtime/task_results/R014/ROUND_SUMMARY.md"},
     {"id":"R015","phase":"Phase 2","name":"JAG 痛点库","status":"planned","progress":0,"deliverable":"游客痛点和搜索意图库","report":"runtime/task_results/R015/ROUND_SUMMARY.md"},
@@ -1061,6 +1259,24 @@
     renderPaths();
     bindFilters();
     bindRoundTemplate();
+
+    async function checkForControlCenterUpdate() {
+      if (location.protocol !== "http:" && location.protocol !== "https:") return;
+      try {
+        const response = await fetch(`${location.pathname}?control_center_check=${Date.now()}`, { cache: "no-store" });
+        const html = await response.text();
+        const match = html.match(/<script id="project-state" type="application\/json">([\s\S]*?)<\/script>/);
+        if (!match) return;
+        const latest = JSON.parse(match[1]);
+        if (latest.project?.controlCenterVersion && latest.project.controlCenterVersion !== state.project.controlCenterVersion) {
+          location.reload();
+        }
+      } catch (error) {
+        console.warn("Control center auto-refresh check failed", error);
+      }
+    }
+
+    setInterval(checkForControlCenterUpdate, 5000);
   </script>
 </body>
 </html>

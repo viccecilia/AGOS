@@ -1,0 +1,10 @@
+[
+  {
+    "provider_id": "mock_primary",
+    "provider_type": "mock",
+    "display_name": "Mock Primary Provider",
+    "capabilities": ["text", "classification", "content_draft", "reply_draft", "report_summary"],
+    "monthly_quota": 100000,
+    "enabled": true
+  }
+]
