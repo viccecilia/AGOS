@@ -344,13 +344,13 @@
     "activeFocus": "把战略蓝图升级为项目导航、完成度追踪、Git 版本入口和 Round 报告中枢。"
   },
   "git": {
-    "status": "not_initialized",
+    "status": "local_initialized",
     "repositoryUrl": "",
-    "branch": "",
-    "latestCommit": "",
+    "branch": "master",
+    "latestCommit": "local git ready",
     "latestCommitUrl": "",
-    "uploadLocationLabel": "Git 尚未初始化",
-    "note": "初始化仓库并推送后，把 repositoryUrl、branch、latestCommit、latestCommitUrl 填入这里，右上角会变成可追踪版本角标。"
+    "uploadLocationLabel": "本地 Git 已初始化，远程仓库待绑定",
+    "note": "本地 Git 已初始化。创建 GitHub 仓库并推送后，把 repositoryUrl、branch、latestCommit、latestCommitUrl 填入这里，右上角会变成可点击的远程版本角标。"
   },
   "metrics": {
     "roundsPlanned": 60,
@@ -400,7 +400,7 @@
       "date": "2026-05-21",
       "gitRef": "local-draft",
       "location": "docs/project_control_center.html",
-      "notes": "首版项目控制中心。Git 仓库尚未初始化，上传后可把 commit URL 写入 project-state.git。",
+      "notes": "首版项目控制中心。本地 Git 已初始化；上传 GitHub 后可把 commit URL 写入 project-state.git。",
       "snapshot": "AGOS Project Control Center v0.1.0\\nPath: docs/project_control_center.html\\nDate: 2026-05-21\\nStatus: local draft before Git initialization.\\n"
     }
   ],
@@ -649,6 +649,7 @@
       done: "已完成",
       blocked: "阻塞",
       not_initialized: "Git 未初始化",
+      local_initialized: "本地 Git 已初始化",
       clean: "已上传 Git",
       dirty: "本地有改动"
     };
@@ -658,6 +659,7 @@
       done: "b-green",
       blocked: "b-red",
       not_initialized: "b-amber",
+      local_initialized: "b-cyan",
       clean: "b-green",
       dirty: "b-amber"
     };
@@ -712,7 +714,7 @@
       el("nav-version").textContent = `v${state.project.controlCenterVersion}`;
       el("nav-progress").textContent = `${state.project.overallProgress}%`;
       el("nav-reports").textContent = state.metrics.reportsEmbedded;
-      el("nav-git").textContent = state.git.status === "not_initialized" ? "pending" : state.git.latestCommit;
+      el("nav-git").textContent = state.git.status === "not_initialized" ? "pending" : state.git.branch || state.git.latestCommit;
     }
 
     function renderGit() {
