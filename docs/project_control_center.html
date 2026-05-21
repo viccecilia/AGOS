@@ -274,6 +274,41 @@
       font-size: 13px;
       line-height: 1.6;
     }
+    .round-card {
+      cursor: pointer;
+      transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
+    }
+    .round-card:hover, .round-card.active {
+      border-color: #2563eb;
+      box-shadow: 0 12px 28px rgba(37, 99, 235, .14);
+      transform: translateY(-1px);
+    }
+    .round-detail {
+      margin-top: 14px;
+      padding: 18px;
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      background: #f8fbff;
+    }
+    .round-detail-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 14px;
+      margin-top: 12px;
+    }
+    .detail-box {
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .detail-box ul {
+      margin: 0;
+      padding-left: 18px;
+      color: #475467;
+      font-size: 13px;
+      line-height: 1.7;
+    }
     .muted { color: var(--muted); }
     .callout {
       padding: 14px 16px;
@@ -319,7 +354,7 @@
     @media (max-width: 1180px) {
       .layout { grid-template-columns: 1fr; }
       .side { position: static; height: auto; }
-      .hero, .metrics, .grid.two, .grid.three, .grid.four, .round-list, .input-grid {
+      .hero, .metrics, .grid.two, .grid.three, .grid.four, .round-list, .input-grid, .round-detail-grid {
         grid-template-columns: 1fr;
       }
       .content { padding: 16px; }
@@ -335,7 +370,7 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.1",
+    "controlCenterVersion": "0.1.2",
     "lastUpdated": "2026-05-21",
     "currentPhase": "Phase 1 / SaaS Foundation",
     "currentRound": "ROUND-SAAS-001",
@@ -356,7 +391,7 @@
     "roundsPlanned": 60,
     "roundsCompleted": 0,
     "roundsInProgress": 1,
-    "reportsEmbedded": 2
+    "reportsEmbedded": 3
   },
   "modules": [
     {"name": "Project Control Center", "progress": 60, "status": "in_progress", "ownerPath": "docs/project_control_center.html", "next": "接入真实 Git commit 与 Round 报告"},
@@ -401,9 +436,27 @@
       "summary": "为 R001-R060 写入可逐轮执行的标准任务词，增加前置验证、允许/禁止修改、必须验证、完成定义和阶段验收暂停规则。",
       "files": ["docs/round_execution_prompts.md", "docs/project_control_center.html"],
       "verification": ["任务词文件已创建", "阶段验收 Round 已标记为 R012/R020/R030/R040/R048/R054/R060", "控制中心已挂载任务词路径"]
+    },
+    {
+      "id": "ROUND-UI-001",
+      "title": "Round 点击摘要面板",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "控制中心支持点击任意 Round 卡片查看详细但简练的摘要，包含本轮要做什么或已做什么、验证要求、报告位置、前置检查和阶段验收提醒。",
+      "files": ["docs/project_control_center.html"],
+      "verification": ["Round 卡片可点击", "摘要不是整篇 Markdown，也不是单句描述", "阶段验收轮会显示人工验收提醒"]
     }
   ],
   "versions": [
+    {
+      "id": "control-center-v0.1.2",
+      "label": "Control Center v0.1.2",
+      "date": "2026-05-21",
+      "gitRef": "local git",
+      "location": "docs/project_control_center.html",
+      "notes": "增加 Round 点击摘要面板，每个 Round 可在页面内查看本轮计划/结果摘要、验证要求和验收提醒。",
+      "snapshot": "AGOS Project Control Center v0.1.2\\nFeature: clickable Round summary panel\\nPath: docs/project_control_center.html\\nDate: 2026-05-21\\n"
+    },
     {
       "id": "control-center-v0.1.1",
       "label": "Control Center v0.1.1",
@@ -584,6 +637,7 @@
           <button data-filter="Phase 7">AI 自动化</button>
         </div>
         <div class="round-list" id="round-list"></div>
+        <div class="round-detail" id="round-detail" aria-live="polite"></div>
       </section>
 
       <section id="reports" class="panel section">
@@ -764,10 +818,66 @@
       `).join("");
     }
 
+    function isGateRound(roundId) {
+      return ["R012", "R020", "R030", "R040", "R048", "R054", "R060"].includes(roundId);
+    }
+
+    function previousRoundId(roundId) {
+      const index = state.rounds.findIndex(item => item.id === roundId);
+      return index > 0 ? state.rounds[index - 1].id : "无";
+    }
+
+    function roundActionLabel(round) {
+      if (round.status === "done") return "本轮已完成，摘要应记录实际修改、验证结果、Git 版本和剩余风险。";
+      if (round.status === "in_progress") return "本轮正在执行，摘要用于追踪当前目标、已完成部分、待验证项目和下一步动作。";
+      if (round.status === "blocked") return "本轮当前阻塞，摘要应优先说明阻塞原因、所需决策和恢复条件。";
+      return "本轮尚未开始，摘要说明即将建设的能力、允许改动范围、验证方式和完成标准。";
+    }
+
+    function roundSummary(round) {
+      if (round.summary) return round.summary;
+      const gateText = isGateRound(round.id)
+        ? "这是阶段验收 Round，完成后必须停止继续推进，并通知用户人工验收。"
+        : `执行前必须先验证上一轮 ${previousRoundId(round.id)} 的报告、测试结果、控制中心状态和 Git 状态。`;
+      return `${round.name} 属于 ${round.phase}。本轮核心交付是：${round.deliverable}。${roundActionLabel(round)} 验证重点包括报告路径 ${round.report} 是否生成或更新、控制中心状态是否同步、相关 smoke test 是否通过。${gateText}`;
+    }
+
+    function renderRoundDetail(round) {
+      if (!round) return;
+      el("round-detail").innerHTML = `
+        <div class="topline">
+          <div>
+            <h3>${esc(round.id)} · ${esc(round.name)}</h3>
+            <p>${esc(roundSummary(round))}</p>
+          </div>
+          ${badge(round.status)}
+        </div>
+        <div class="round-detail-grid">
+          <div class="detail-box">
+            <h3>${round.status === "done" ? "本轮已做" : "本轮要做"}</h3>
+            <ul>
+              <li>围绕 ${esc(round.deliverable)} 建立可验证交付物。</li>
+              <li>执行前检查上一轮结果，执行后更新控制中心和 Round 报告。</li>
+              <li>${isGateRound(round.id) ? "本轮是阶段验收点，需要用户确认后再继续。" : "本轮不是阶段门，完成验证后可以进入下一轮。"}</li>
+            </ul>
+          </div>
+          <div class="detail-box">
+            <h3>验证与报告</h3>
+            <ul>
+              <li>前置验证：${esc(previousRoundId(round.id))}</li>
+              <li>报告路径：<code>${esc(round.report)}</code></li>
+              <li>进度：${Number(round.progress) || 0}%</li>
+              <li>验收：${isGateRound(round.id) ? "需要用户阶段验收" : "协作验收记录写入报告"}</li>
+            </ul>
+          </div>
+        </div>
+      `;
+    }
+
     function renderRounds(filter = "all") {
       const rounds = state.rounds.filter(r => filter === "all" || r.status === filter || r.phase === filter);
       el("round-list").innerHTML = rounds.map(r => `
-        <article class="round-card">
+        <article class="round-card" data-round-id="${esc(r.id)}" tabindex="0" role="button" aria-label="查看 ${esc(r.id)} 摘要">
           <div class="round-top">
             <h3 class="round-title">${esc(r.id)} · ${esc(r.name)}</h3>
             ${badge(r.status)}
@@ -780,6 +890,23 @@
           </ul>
         </article>
       `).join("");
+      document.querySelectorAll(".round-card").forEach(card => {
+        const open = () => {
+          const round = state.rounds.find(item => item.id === card.dataset.roundId);
+          if (!round) return;
+          document.querySelectorAll(".round-card").forEach(item => item.classList.remove("active"));
+          card.classList.add("active");
+          renderRoundDetail(round);
+        };
+        card.addEventListener("click", open);
+        card.addEventListener("keydown", event => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            open();
+          }
+        });
+      });
+      renderRoundDetail(rounds[0] || state.rounds[0]);
     }
 
     function renderReports() {
