@@ -390,13 +390,13 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.3",
+    "controlCenterVersion": "0.1.4",
     "lastUpdated": "2026-05-21",
     "currentPhase": "Phase 1 / SaaS Foundation",
-    "currentRound": "ROUND-SAAS-001",
-    "nextRound": "ROUND-SAAS-002",
-    "overallProgress": 8,
-    "activeFocus": "把战略蓝图升级为项目导航、完成度追踪、Git 版本入口和 Round 报告中枢。"
+    "currentRound": "R002",
+    "nextRound": "R003",
+    "overallProgress": 10,
+    "activeFocus": "R001 控制中心已经完成，下一步进入 R002 Product Workspace 架构，开始建立客户/产品隔离的核心数据边界。"
   },
   "git": {
     "status": "local_initialized",
@@ -409,12 +409,12 @@
   },
   "metrics": {
     "roundsPlanned": 60,
-    "roundsCompleted": 0,
+    "roundsCompleted": 1,
     "roundsInProgress": 1,
-    "reportsEmbedded": 4
+    "reportsEmbedded": 5
   },
   "modules": [
-    {"name": "Project Control Center", "progress": 60, "status": "in_progress", "ownerPath": "docs/project_control_center.html", "next": "接入真实 Git commit 与 Round 报告"},
+    {"name": "Project Control Center", "progress": 100, "status": "done", "ownerPath": "docs/project_control_center.html", "next": "后续每轮持续更新控制中心、报告嵌入和 Git 版本记录"},
     {"name": "Product Workspace", "progress": 15, "status": "planned", "ownerPath": "portal_saas/workspace/", "next": "定义 Workspace 数据模型"},
     {"name": "Customer Knowledge Base", "progress": 10, "status": "planned", "ownerPath": "portal_saas/customer_knowledge/", "next": "客户资料、FAQ、语气、产品资料分层"},
     {"name": "Pain Point Radar", "progress": 10, "status": "planned", "ownerPath": "services/pain_point_engine.py", "next": "问题收集、痛点聚类、趋势标签"},
@@ -474,9 +474,27 @@
       "summary": "把 Round 摘要从列表底部改为右侧浮层窗口。现在点击任意 Round 会立即打开可见摘要，不需要滚动到 60 个卡片之后。",
       "files": ["docs/project_control_center.html"],
       "verification": ["点击 Round 后浮层立即显示", "浮层包含关闭按钮", "R012 等阶段验收 Round 仍显示验收提醒"]
+    },
+    {
+      "id": "R001",
+      "title": "通用 AI Growth OS 蓝图与控制中心",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "R001 完成 AGOS 控制中心基础建设：HTML 总控页、60 Round 执行任务词、本地 Git 初始化、Round 摘要浮层和 R001 正式报告。下一轮进入 Product Workspace 架构。",
+      "files": ["docs/project_control_center.html", "docs/round_execution_prompts.md", "runtime/task_results/R001/ROUND_SUMMARY.md", ".gitignore"],
+      "verification": ["JSON 解析通过", "HTML 本地预览通过", "60 个 Round 正常显示", "12 个模块正常显示", "R001 报告已写入"]
     }
   ],
   "versions": [
+    {
+      "id": "control-center-v0.1.4",
+      "label": "Control Center v0.1.4",
+      "date": "2026-05-21",
+      "gitRef": "local git",
+      "location": "docs/project_control_center.html + runtime/task_results/R001/ROUND_SUMMARY.md",
+      "notes": "R001 正式完成：控制中心进入可持续执行状态，当前 Round 推进到 R002。",
+      "snapshot": "AGOS Project Control Center v0.1.4\\nRound: R001 completed\\nNext: R002 Product Workspace architecture\\nDate: 2026-05-21\\n"
+    },
     {
       "id": "control-center-v0.1.3",
       "label": "Control Center v0.1.3",
@@ -515,8 +533,8 @@
     }
   ],
   "rounds": [
-    {"id":"R001","phase":"Phase 1","name":"通用 AI Growth OS 蓝图","status":"in_progress","progress":60,"deliverable":"HTML 控制中心与项目路线图","report":"docs/project_control_center.html"},
-    {"id":"R002","phase":"Phase 1","name":"Product Workspace 架构","status":"planned","progress":0,"deliverable":"Workspace 数据结构与页面入口","report":"runtime/task_results/R002/ROUND_SUMMARY.md"},
+    {"id":"R001","phase":"Phase 1","name":"通用 AI Growth OS 蓝图","status":"done","progress":100,"deliverable":"HTML 控制中心、60 Round 执行任务词、本地 Git 初始化和 R001 报告","report":"runtime/task_results/R001/ROUND_SUMMARY.md","summary":"R001 已完成 AGOS 的项目神经中枢。实际交付包括控制中心 HTML、60 Round 执行协议、Git 本地版本记录、Round 点击摘要浮层和正式 R001 报告。后续每一轮都要先验证上一轮结果，再更新控制中心和对应报告。"},
+    {"id":"R002","phase":"Phase 1","name":"Product Workspace 架构","status":"in_progress","progress":0,"deliverable":"Workspace 数据结构与页面入口","report":"runtime/task_results/R002/ROUND_SUMMARY.md"},
     {"id":"R003","phase":"Phase 1","name":"客户知识库系统","status":"planned","progress":0,"deliverable":"FAQ、产品资料、语气、行业资料","report":"runtime/task_results/R003/ROUND_SUMMARY.md"},
     {"id":"R004","phase":"Phase 1","name":"官方账号矩阵中心","status":"planned","progress":0,"deliverable":"平台账号、内容策略、账号状态","report":"runtime/task_results/R004/ROUND_SUMMARY.md"},
     {"id":"R005","phase":"Phase 1","name":"全网痛点雷达","status":"planned","progress":0,"deliverable":"痛点收集、聚类、趋势标签","report":"runtime/task_results/R005/ROUND_SUMMARY.md"},
