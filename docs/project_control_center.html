@@ -390,53 +390,152 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.15",
+    "controlCenterVersion": "0.1.18",
     "lastUpdated": "2026-05-21",
-    "currentPhase": "Phase 1 / SaaS Foundation",
-    "currentRound": "R012_STAGE_GATE",
-    "nextRound": "R013_AFTER_USER_APPROVAL",
-    "overallProgress": 32,
-    "activeFocus": "R012 Phase 1 阶段验收已完成，当前等待用户验收。不要自动进入 R013；验收通过后再进入 Japan AI Guide 推广画像。"
+    "currentPhase": "Phase 2 / JAG Validation Complete",
+    "currentRound": "R021",
+    "nextRound": "R022",
+    "overallProgress": 42,
+    "activeFocus": "Phase 2 Japan AI Guide validation is complete. Current round is R021: Europe and US user profile. JAG data remains isolated in its own workspace."
   },
   "git": {
-    "status": "local_initialized",
-    "repositoryUrl": "",
+    "status": "remote_synced",
+    "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "local git ready",
-    "latestCommitUrl": "",
-    "uploadLocationLabel": "本地 Git 已初始化，远程仓库待绑定",
-    "note": "本地 Git 已初始化。创建 GitHub 仓库并推送后，把 repositoryUrl、branch、latestCommit、latestCommitUrl 填入这里，右上角会变成可点击的远程版本角标。"
+    "latestCommit": "agos-v0.1.18 Complete Phase 2 JAG validation",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.18",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.18",
+    "note": "Phase 2 milestone is mapped to GitHub tag agos-v0.1.18. Use the tag to recover this exact milestone version."
   },
   "metrics": {
     "roundsPlanned": 60,
-    "roundsCompleted": 12,
-    "roundsInProgress": 0,
-    "reportsEmbedded": 16
+    "roundsCompleted": 20,
+    "roundsInProgress": 1,
+    "reportsEmbedded": 24
   },
   "modules": [
-    {"name": "Project Control Center", "progress": 100, "status": "done", "ownerPath": "docs/project_control_center.html", "next": "后续每轮持续更新控制中心、报告嵌入和 Git 版本记录"},
-    {"name": "Product Workspace", "progress": 100, "status": "done", "ownerPath": "portal_saas/workspace/", "next": "后续模块必须通过 workspace_id 绑定到 Workspace 边界"},
-    {"name": "Customer Knowledge Base", "progress": 100, "status": "done", "ownerPath": "portal_saas/customer_knowledge/", "next": "后续内容工厂必须读取 Workspace 级知识库"},
-    {"name": "Pain Point Radar", "progress": 100, "status": "done", "ownerPath": "services/pain_point_engine.py", "next": "后续内容工厂从痛点雷达读取高优先级痛点"},
-    {"name": "AI Content Factory", "progress": 100, "status": "done", "ownerPath": "services/content_engine.py", "next": "后续回复和报告可读取待审核内容草稿"},
-    {"name": "AI Reply Workflow", "progress": 100, "status": "done", "ownerPath": "services/reply_engine.py", "next": "后续学习闭环可记录回复草稿表现"},
-    {"name": "AI Learning Loop", "progress": 100, "status": "done", "ownerPath": "services/learning_engine.py", "next": "报告系统可读取学习事件和推荐排序"},
-    {"name": "Report Engine", "progress": 100, "status": "done", "ownerPath": "services/report_engine.py", "next": "报告区可继续嵌入每轮摘要和样例增长报告"},
-    {"name": "SaaS Customer Management", "progress": 8, "status": "planned", "ownerPath": "portal_saas/customer_management/", "next": "客户、套餐、Workspace、AI 活跃度"},
-    {"name": "Subscription Engine", "progress": 8, "status": "planned", "ownerPath": "services/subscription_engine.py", "next": "月付、季付、年付、企业版"},
-    {"name": "AI Provider Bridge", "progress": 100, "status": "done", "ownerPath": "services/ai_provider_engine.py", "next": "真实 Provider 接入前必须设计安全密钥存储"},
-    {"name": "Skill Marketplace", "progress": 100, "status": "done", "ownerPath": "portal_saas/skill_marketplace/", "next": "阶段验收后再扩展真实套餐和 UI"}
+    {
+      "name": "Project Control Center",
+      "progress": 100,
+      "status": "done",
+      "ownerPath": "docs/project_control_center.html",
+      "next": "后续每轮持续更新控制中心、报告嵌入和 Git 版本记录"
+    },
+    {
+      "name": "Product Workspace",
+      "progress": 100,
+      "status": "done",
+      "ownerPath": "portal_saas/workspace/",
+      "next": "后续模块必须通过 workspace_id 绑定到 Workspace 边界"
+    },
+    {
+      "name": "Customer Knowledge Base",
+      "progress": 100,
+      "status": "done",
+      "ownerPath": "portal_saas/customer_knowledge/",
+      "next": "后续内容工厂必须读取 Workspace 级知识库"
+    },
+    {
+      "name": "Pain Point Radar",
+      "progress": 100,
+      "status": "done",
+      "ownerPath": "services/pain_point_engine.py",
+      "next": "后续内容工厂从痛点雷达读取高优先级痛点"
+    },
+    {
+      "name": "AI Content Factory",
+      "progress": 100,
+      "status": "done",
+      "ownerPath": "services/content_engine.py",
+      "next": "后续回复和报告可读取待审核内容草稿"
+    },
+    {
+      "name": "AI Reply Workflow",
+      "progress": 100,
+      "status": "done",
+      "ownerPath": "services/reply_engine.py",
+      "next": "后续学习闭环可记录回复草稿表现"
+    },
+    {
+      "name": "AI Learning Loop",
+      "progress": 100,
+      "status": "done",
+      "ownerPath": "services/learning_engine.py",
+      "next": "报告系统可读取学习事件和推荐排序"
+    },
+    {
+      "name": "Report Engine",
+      "progress": 100,
+      "status": "done",
+      "ownerPath": "services/report_engine.py",
+      "next": "报告区可继续嵌入每轮摘要和样例增长报告"
+    },
+    {
+      "name": "SaaS Customer Management",
+      "progress": 8,
+      "status": "planned",
+      "ownerPath": "portal_saas/customer_management/",
+      "next": "客户、套餐、Workspace、AI 活跃度"
+    },
+    {
+      "name": "Subscription Engine",
+      "progress": 8,
+      "status": "planned",
+      "ownerPath": "services/subscription_engine.py",
+      "next": "月付、季付、年付、企业版"
+    },
+    {
+      "name": "AI Provider Bridge",
+      "progress": 100,
+      "status": "done",
+      "ownerPath": "services/ai_provider_engine.py",
+      "next": "真实 Provider 接入前必须设计安全密钥存储"
+    },
+    {
+      "name": "Skill Marketplace",
+      "progress": 100,
+      "status": "done",
+      "ownerPath": "portal_saas/skill_marketplace/",
+      "next": "阶段验收后再扩展真实套餐和 UI"
+    }
   ],
   "paths": [
-    {"path": "docs/project_control_center.html", "purpose": "项目导航中枢、Round 入口、Git 版本角标、报告嵌入页"},
-    {"path": "docs/round_execution_prompts.md", "purpose": "60 个 Round 的标准执行任务词、前置验证、阶段验收和输出格式"},
-    {"path": "runtime/task_results/", "purpose": "每个 Round 的结果、验证、总结和交付证据"},
-    {"path": "portal_saas/", "purpose": "SaaS 管理端、客户管理、订阅、Skill 市场"},
-    {"path": "services/", "purpose": "AI 内容、报告、订阅、权限、风控、优化建议等核心服务"},
-    {"path": "schemas/", "purpose": "结构化数据契约"},
-    {"path": "models/", "purpose": "业务模型和持久化模型"},
-    {"path": "config/", "purpose": "AI Provider、套餐、运行配置"},
-    {"path": "tests/", "purpose": "Round 验证和回归测试"}
+    {
+      "path": "docs/project_control_center.html",
+      "purpose": "项目导航中枢、Round 入口、Git 版本角标、报告嵌入页"
+    },
+    {
+      "path": "docs/round_execution_prompts.md",
+      "purpose": "60 个 Round 的标准执行任务词、前置验证、阶段验收和输出格式"
+    },
+    {
+      "path": "runtime/task_results/",
+      "purpose": "每个 Round 的结果、验证、总结和交付证据"
+    },
+    {
+      "path": "portal_saas/",
+      "purpose": "SaaS 管理端、客户管理、订阅、Skill 市场"
+    },
+    {
+      "path": "services/",
+      "purpose": "AI 内容、报告、订阅、权限、风控、优化建议等核心服务"
+    },
+    {
+      "path": "schemas/",
+      "purpose": "结构化数据契约"
+    },
+    {
+      "path": "models/",
+      "purpose": "业务模型和持久化模型"
+    },
+    {
+      "path": "config/",
+      "purpose": "AI Provider、套餐、运行配置"
+    },
+    {
+      "path": "tests/",
+      "purpose": "Round 验证和回归测试"
+    }
   ],
   "reports": [
     {
@@ -445,8 +544,14 @@
       "status": "in_progress",
       "date": "2026-05-21",
       "summary": "把原始 HTML 蓝图升级为项目神经中枢：增加完成度导航、Round 状态、Git 角标、历史版本下载、报告嵌入和新增 Round 模板。",
-      "files": ["docs/project_control_center.html"],
-      "verification": ["HTML 文件可直接打开", "项目数据集中在 project-state JSON 中维护", "Git 当前状态显示为未初始化"]
+      "files": [
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "HTML 文件可直接打开",
+        "项目数据集中在 project-state JSON 中维护",
+        "Git 当前状态显示为未初始化"
+      ]
     },
     {
       "id": "ROUND-PROMPTS-001",
@@ -454,8 +559,15 @@
       "status": "done",
       "date": "2026-05-21",
       "summary": "为 R001-R060 写入可逐轮执行的标准任务词，增加前置验证、允许/禁止修改、必须验证、完成定义和阶段验收暂停规则。",
-      "files": ["docs/round_execution_prompts.md", "docs/project_control_center.html"],
-      "verification": ["任务词文件已创建", "阶段验收 Round 已标记为 R012/R020/R030/R040/R048/R054/R060", "控制中心已挂载任务词路径"]
+      "files": [
+        "docs/round_execution_prompts.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "任务词文件已创建",
+        "阶段验收 Round 已标记为 R012/R020/R030/R040/R048/R054/R060",
+        "控制中心已挂载任务词路径"
+      ]
     },
     {
       "id": "ROUND-UI-001",
@@ -463,8 +575,14 @@
       "status": "done",
       "date": "2026-05-21",
       "summary": "控制中心支持点击任意 Round 卡片查看详细但简练的摘要，包含本轮要做什么或已做什么、验证要求、报告位置、前置检查和阶段验收提醒。",
-      "files": ["docs/project_control_center.html"],
-      "verification": ["Round 卡片可点击", "摘要不是整篇 Markdown，也不是单句描述", "阶段验收轮会显示人工验收提醒"]
+      "files": [
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "Round 卡片可点击",
+        "摘要不是整篇 Markdown，也不是单句描述",
+        "阶段验收轮会显示人工验收提醒"
+      ]
     },
     {
       "id": "ROUND-UI-002",
@@ -472,8 +590,14 @@
       "status": "done",
       "date": "2026-05-21",
       "summary": "把 Round 摘要从列表底部改为右侧浮层窗口。现在点击任意 Round 会立即打开可见摘要，不需要滚动到 60 个卡片之后。",
-      "files": ["docs/project_control_center.html"],
-      "verification": ["点击 Round 后浮层立即显示", "浮层包含关闭按钮", "R012 等阶段验收 Round 仍显示验收提醒"]
+      "files": [
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "点击 Round 后浮层立即显示",
+        "浮层包含关闭按钮",
+        "R012 等阶段验收 Round 仍显示验收提醒"
+      ]
     },
     {
       "id": "R001",
@@ -481,8 +605,19 @@
       "status": "done",
       "date": "2026-05-21",
       "summary": "R001 完成 AGOS 控制中心基础建设：HTML 总控页、60 Round 执行任务词、本地 Git 初始化、Round 摘要浮层和 R001 正式报告。下一轮进入 Product Workspace 架构。",
-      "files": ["docs/project_control_center.html", "docs/round_execution_prompts.md", "runtime/task_results/R001/ROUND_SUMMARY.md", ".gitignore"],
-      "verification": ["JSON 解析通过", "HTML 本地预览通过", "60 个 Round 正常显示", "12 个模块正常显示", "R001 报告已写入"]
+      "files": [
+        "docs/project_control_center.html",
+        "docs/round_execution_prompts.md",
+        "runtime/task_results/R001/ROUND_SUMMARY.md",
+        ".gitignore"
+      ],
+      "verification": [
+        "JSON 解析通过",
+        "HTML 本地预览通过",
+        "60 个 Round 正常显示",
+        "12 个模块正常显示",
+        "R001 报告已写入"
+      ]
     },
     {
       "id": "R002",
@@ -490,8 +625,20 @@
       "status": "done",
       "date": "2026-05-21",
       "summary": "R002 建立了 AGOS 的客户/产品级隔离边界：Workspace 模型、schema 校验、文件存储服务、SaaS 入口说明和隔离 smoke test。后续知识库、痛点、内容、回复和报告都必须绑定 workspace_id。",
-      "files": ["models/workspace.py", "schemas/workspace_schema.py", "services/workspace_service.py", "portal_saas/workspace/README.md", "tests/workspace_smoke_test.py", "runtime/task_results/R002/ROUND_SUMMARY.md"],
-      "verification": ["Python 语法检查通过", "Workspace smoke test 通过", "不同 Workspace 数据隔离通过", "非法 workspace_id 拦截通过"]
+      "files": [
+        "models/workspace.py",
+        "schemas/workspace_schema.py",
+        "services/workspace_service.py",
+        "portal_saas/workspace/README.md",
+        "tests/workspace_smoke_test.py",
+        "runtime/task_results/R002/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "Python 语法检查通过",
+        "Workspace smoke test 通过",
+        "不同 Workspace 数据隔离通过",
+        "非法 workspace_id 拦截通过"
+      ]
     },
     {
       "id": "R003",
@@ -499,8 +646,21 @@
       "status": "done",
       "date": "2026-05-21",
       "summary": "R003 建立 Workspace 级客户知识库：品牌语气、产品资料、FAQ、行业资料和内容模板都必须绑定 workspace_id，后续 AI 内容不能绕过客户知识库使用全局共享提示。",
-      "files": ["models/knowledge.py", "schemas/knowledge_schema.py", "services/knowledge_service.py", "portal_saas/customer_knowledge/README.md", "tests/knowledge_smoke_test.py", "runtime/task_results/R003/ROUND_SUMMARY.md"],
-      "verification": ["Python 语法检查通过", "Workspace smoke test 通过", "Knowledge smoke test 通过", "缺失 Workspace 拦截通过", "知识库数据隔离通过"]
+      "files": [
+        "models/knowledge.py",
+        "schemas/knowledge_schema.py",
+        "services/knowledge_service.py",
+        "portal_saas/customer_knowledge/README.md",
+        "tests/knowledge_smoke_test.py",
+        "runtime/task_results/R003/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "Python 语法检查通过",
+        "Workspace smoke test 通过",
+        "Knowledge smoke test 通过",
+        "缺失 Workspace 拦截通过",
+        "知识库数据隔离通过"
+      ]
     },
     {
       "id": "R004",
@@ -508,8 +668,21 @@
       "status": "done",
       "date": "2026-05-21",
       "summary": "R004 建立 Workspace 级官方账号矩阵，支持 TikTok、Instagram、X、YouTube、Reddit、Threads、SEO 的账号档案、内容策略、账号状态和风险状态，同时禁止保存密码、cookie、token、API key 等敏感凭证。",
-      "files": ["models/account_matrix.py", "schemas/account_matrix_schema.py", "services/account_matrix_service.py", "portal_saas/account_matrix/README.md", "tests/account_matrix_smoke_test.py", "runtime/task_results/R004/ROUND_SUMMARY.md"],
-      "verification": ["Python 语法检查通过", "Workspace smoke test 通过", "Knowledge smoke test 通过", "Account matrix smoke test 通过", "敏感 metadata 拦截通过"]
+      "files": [
+        "models/account_matrix.py",
+        "schemas/account_matrix_schema.py",
+        "services/account_matrix_service.py",
+        "portal_saas/account_matrix/README.md",
+        "tests/account_matrix_smoke_test.py",
+        "runtime/task_results/R004/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "Python 语法检查通过",
+        "Workspace smoke test 通过",
+        "Knowledge smoke test 通过",
+        "Account matrix smoke test 通过",
+        "敏感 metadata 拦截通过"
+      ]
     },
     {
       "id": "R005",
@@ -517,8 +690,21 @@
       "status": "done",
       "date": "2026-05-21",
       "summary": "R005 建立 Workspace 级痛点雷达，使用本地样例数据记录来源、平台、市场、人群、分类、证据、标签和趋势/紧急度/价值分数，并计算 priority_score。当前没有真实抓取或平台访问。",
-      "files": ["models/pain_point.py", "schemas/pain_point_schema.py", "services/pain_point_engine.py", "portal_saas/pain_radar/README.md", "tests/pain_point_smoke_test.py", "runtime/task_results/R005/ROUND_SUMMARY.md"],
-      "verification": ["Python 语法检查通过", "Workspace/Knowledge/Account Matrix 回归通过", "Pain point smoke test 通过", "趋势排序通过", "非法平台和非法分数拦截通过"]
+      "files": [
+        "models/pain_point.py",
+        "schemas/pain_point_schema.py",
+        "services/pain_point_engine.py",
+        "portal_saas/pain_radar/README.md",
+        "tests/pain_point_smoke_test.py",
+        "runtime/task_results/R005/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "Python 语法检查通过",
+        "Workspace/Knowledge/Account Matrix 回归通过",
+        "Pain point smoke test 通过",
+        "趋势排序通过",
+        "非法平台和非法分数拦截通过"
+      ]
     },
     {
       "id": "R006",
@@ -526,8 +712,21 @@
       "status": "done",
       "date": "2026-05-21",
       "summary": "R006 建立 Workspace 级内容草稿工厂，从客户知识库和痛点雷达读取输入，生成 TikTok、Instagram、Reddit、YouTube、SEO 五类待审核草稿。所有草稿默认 needs_review，不自动发布。",
-      "files": ["models/content.py", "schemas/content_schema.py", "services/content_engine.py", "portal_saas/content_factory/README.md", "tests/content_smoke_test.py", "runtime/task_results/R006/ROUND_SUMMARY.md"],
-      "verification": ["Python 语法检查通过", "Workspace/Knowledge/Account/Pain Point 回归通过", "Content smoke test 通过", "五类平台草稿生成通过", "人工审核状态保留通过"]
+      "files": [
+        "models/content.py",
+        "schemas/content_schema.py",
+        "services/content_engine.py",
+        "portal_saas/content_factory/README.md",
+        "tests/content_smoke_test.py",
+        "runtime/task_results/R006/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "Python 语法检查通过",
+        "Workspace/Knowledge/Account/Pain Point 回归通过",
+        "Content smoke test 通过",
+        "五类平台草稿生成通过",
+        "人工审核状态保留通过"
+      ]
     },
     {
       "id": "R007",
@@ -535,8 +734,21 @@
       "status": "done",
       "date": "2026-05-21",
       "summary": "R007 建立 Workspace 级回复草稿工作流，支持自然回复草稿、人审状态、硬广/冒充风险标记和回复记录。当前不接入真实评论区，不自动发送。",
-      "files": ["models/reply.py", "schemas/reply_schema.py", "services/reply_engine.py", "portal_saas/reply_workflow/README.md", "tests/reply_smoke_test.py", "runtime/task_results/R007/ROUND_SUMMARY.md"],
-      "verification": ["Python 语法检查通过", "完整 smoke 回归通过", "Reply smoke test 通过", "硬广风险标记通过", "人工审核状态保留通过"]
+      "files": [
+        "models/reply.py",
+        "schemas/reply_schema.py",
+        "services/reply_engine.py",
+        "portal_saas/reply_workflow/README.md",
+        "tests/reply_smoke_test.py",
+        "runtime/task_results/R007/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "Python 语法检查通过",
+        "完整 smoke 回归通过",
+        "Reply smoke test 通过",
+        "硬广风险标记通过",
+        "人工审核状态保留通过"
+      ]
     },
     {
       "id": "R008",
@@ -544,8 +756,21 @@
       "status": "done",
       "date": "2026-05-21",
       "summary": "R008 建立 Workspace 级学习闭环，记录 saved、ignored、converted、positive_reply、negative_reply 等反馈信号，并基于权重生成下一步推荐排序。当前不训练模型，不使用真实用户隐私数据。",
-      "files": ["models/learning.py", "schemas/learning_schema.py", "services/learning_engine.py", "portal_saas/learning_loop/README.md", "tests/learning_smoke_test.py", "runtime/task_results/R008/ROUND_SUMMARY.md"],
-      "verification": ["Python 语法检查通过", "完整 smoke 回归通过", "Learning smoke test 通过", "反馈写入通过", "推荐排序通过"]
+      "files": [
+        "models/learning.py",
+        "schemas/learning_schema.py",
+        "services/learning_engine.py",
+        "portal_saas/learning_loop/README.md",
+        "tests/learning_smoke_test.py",
+        "runtime/task_results/R008/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "Python 语法检查通过",
+        "完整 smoke 回归通过",
+        "Learning smoke test 通过",
+        "反馈写入通过",
+        "推荐排序通过"
+      ]
     },
     {
       "id": "R009",
@@ -553,8 +778,20 @@
       "status": "done",
       "date": "2026-05-21",
       "summary": "R009 建立 Workspace 级报告系统，生成日报、周报、月报，汇总痛点、内容草稿、回复草稿和学习推荐。报告明确标记为样例数据，不伪装成真实业务结果。",
-      "files": ["models/report.py", "schemas/report_schema.py", "services/report_engine.py", "portal_saas/reports/README.md", "tests/report_smoke_test.py", "runtime/task_results/R009/ROUND_SUMMARY.md"],
-      "verification": ["Python 语法检查通过", "完整 smoke 回归通过", "Report smoke test 通过", "日报/周报/月报生成通过"]
+      "files": [
+        "models/report.py",
+        "schemas/report_schema.py",
+        "services/report_engine.py",
+        "portal_saas/reports/README.md",
+        "tests/report_smoke_test.py",
+        "runtime/task_results/R009/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "Python 语法检查通过",
+        "完整 smoke 回归通过",
+        "Report smoke test 通过",
+        "日报/周报/月报生成通过"
+      ]
     },
     {
       "id": "R010",
@@ -562,8 +799,20 @@
       "status": "done",
       "date": "2026-05-21",
       "summary": "R010 建立 AI Provider 抽象，支持 Provider 类型、能力标签、额度字段和 mock-only 路由。配置示例不含真实密钥，测试验证 api_key 等敏感字段会被拦截。",
-      "files": ["models/ai_provider.py", "schemas/ai_provider_schema.py", "services/ai_provider_engine.py", "config/ai_providers.sample.json", "tests/ai_provider_smoke_test.py", "runtime/task_results/R010/ROUND_SUMMARY.md"],
-      "verification": ["Python 语法检查通过", "AI Provider smoke test 通过", "密钥字段拦截通过", "密钥扫描通过"]
+      "files": [
+        "models/ai_provider.py",
+        "schemas/ai_provider_schema.py",
+        "services/ai_provider_engine.py",
+        "config/ai_providers.sample.json",
+        "tests/ai_provider_smoke_test.py",
+        "runtime/task_results/R010/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "Python 语法检查通过",
+        "AI Provider smoke test 通过",
+        "密钥字段拦截通过",
+        "密钥扫描通过"
+      ]
     },
     {
       "id": "R011",
@@ -571,8 +820,21 @@
       "status": "done",
       "date": "2026-05-21",
       "summary": "R011 建立 Skill Marketplace 基础结构，支持 SEO、TikTok、Reddit、Premium AI Pack 等 Skill 的套餐权限和启用/禁用校验。当前不实现真实付费扣费。",
-      "files": ["models/skill.py", "schemas/skill_schema.py", "services/skill_engine.py", "portal_saas/skill_marketplace/README.md", "tests/skill_smoke_test.py", "runtime/task_results/R011/ROUND_SUMMARY.md"],
-      "verification": ["Python 语法检查通过", "完整 smoke 回归通过", "Skill smoke test 通过", "套餐越权拦截通过", "禁用 Skill 拦截通过"]
+      "files": [
+        "models/skill.py",
+        "schemas/skill_schema.py",
+        "services/skill_engine.py",
+        "portal_saas/skill_marketplace/README.md",
+        "tests/skill_smoke_test.py",
+        "runtime/task_results/R011/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "Python 语法检查通过",
+        "完整 smoke 回归通过",
+        "Skill smoke test 通过",
+        "套餐越权拦截通过",
+        "禁用 Skill 拦截通过"
+      ]
     },
     {
       "id": "R012",
@@ -580,11 +842,182 @@
       "status": "done",
       "date": "2026-05-21",
       "summary": "R012 完成 Phase 1 阶段验收。R001-R011 报告齐全，Python 语法检查通过，全部 smoke tests 通过。当前等待用户验收，不能自动进入 R013。",
-      "files": ["runtime/task_results/R012/ROUND_SUMMARY.md", "docs/project_control_center.html"],
-      "verification": ["R001-R011 报告完整性通过", "Python 语法检查通过", "全部 smoke tests 通过", "控制中心进入等待用户验收状态"]
+      "files": [
+        "runtime/task_results/R012/ROUND_SUMMARY.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "R001-R011 报告完整性通过",
+        "Python 语法检查通过",
+        "全部 smoke tests 通过",
+        "控制中心进入等待用户验收状态"
+      ]
+    },
+    {
+      "id": "R013",
+      "title": "Japan AI Guide Growth Profile",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "JAG workspace profile completed: target personas, target markets, and promotion goal are defined in a dedicated workspace.",
+      "files": [
+        "runtime/task_results/R013/ROUND_SUMMARY.md",
+        "tests/jag_phase2_smoke_test.py",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "JAG Phase 2 smoke test passed",
+        "Round report file written",
+        "Control center updated"
+      ]
+    },
+    {
+      "id": "R014",
+      "title": "JAG Platform Account Matrix",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "JAG account matrix completed for TikTok, Instagram, Reddit, YouTube, and SEO. Reddit remains review-gated.",
+      "files": [
+        "runtime/task_results/R014/ROUND_SUMMARY.md",
+        "tests/jag_phase2_smoke_test.py",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "JAG Phase 2 smoke test passed",
+        "Round report file written",
+        "Control center updated"
+      ]
+    },
+    {
+      "id": "R015",
+      "title": "JAG Pain Point Library",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "JAG pain radar completed with train transfer and food language pain points, priorities, keywords, and audience mapping.",
+      "files": [
+        "runtime/task_results/R015/ROUND_SUMMARY.md",
+        "tests/jag_phase2_smoke_test.py",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "JAG Phase 2 smoke test passed",
+        "Round report file written",
+        "Control center updated"
+      ]
+    },
+    {
+      "id": "R016",
+      "title": "JAG Content Topic Pool",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "JAG content factory completed with platform-specific drafts for TikTok, Instagram, Reddit, YouTube, and SEO.",
+      "files": [
+        "runtime/task_results/R016/ROUND_SUMMARY.md",
+        "tests/jag_phase2_smoke_test.py",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "JAG Phase 2 smoke test passed",
+        "Round report file written",
+        "Control center updated"
+      ]
+    },
+    {
+      "id": "R017",
+      "title": "JAG Natural Reply Templates",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "JAG reply workflow completed. Reddit replies stay in needs_review state before any publishing action.",
+      "files": [
+        "runtime/task_results/R017/ROUND_SUMMARY.md",
+        "tests/jag_phase2_smoke_test.py",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "JAG Phase 2 smoke test passed",
+        "Round report file written",
+        "Control center updated"
+      ]
+    },
+    {
+      "id": "R018",
+      "title": "JAG Growth Reports",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "JAG report layer completed with daily, weekly, and monthly report objects and KPI summaries.",
+      "files": [
+        "runtime/task_results/R018/ROUND_SUMMARY.md",
+        "tests/jag_phase2_smoke_test.py",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "JAG Phase 2 smoke test passed",
+        "Round report file written",
+        "Control center updated"
+      ]
+    },
+    {
+      "id": "R019",
+      "title": "JAG Automation Loop",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "JAG phase smoke test completed across workspace, knowledge, account matrix, pain, content, reply, learning, and reports.",
+      "files": [
+        "runtime/task_results/R019/ROUND_SUMMARY.md",
+        "tests/jag_phase2_smoke_test.py",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "JAG Phase 2 smoke test passed",
+        "Round report file written",
+        "Control center updated"
+      ]
+    },
+    {
+      "id": "R020",
+      "title": "JAG Growth Validation",
+      "status": "done",
+      "date": "2026-05-21",
+      "summary": "Phase 2 gate passed. JAG scenario proves the SaaS foundation can support a real workspace without touching guide app APIs.",
+      "files": [
+        "runtime/task_results/R020/ROUND_SUMMARY.md",
+        "tests/jag_phase2_smoke_test.py",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "JAG Phase 2 smoke test passed",
+        "Round report file written",
+        "Control center updated"
+      ]
     }
   ],
   "versions": [
+    {
+      "version": "0.1.18",
+      "date": "2026-05-21",
+      "round": "R020",
+      "type": "git",
+      "location": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.18",
+      "downloadTarget": "git checkout agos-v0.1.18",
+      "notes": "Phase 2 milestone mapped to Git tag agos-v0.1.18."
+    },
+    {
+      "version": "0.1.17",
+      "date": "2026-05-21",
+      "round": "R020",
+      "type": "fix",
+      "location": "docs/project_control_center.html",
+      "downloadTarget": "runtime/versions/agos_control_center_v0.1.17.html",
+      "notes": "Fixed Phase 2 control-center summaries after encoding-safe update and kept R021 as next execution pointer."
+    },
+    {
+      "id": "control-center-v0.1.16",
+      "label": "Control Center v0.1.16",
+      "date": "2026-05-21",
+      "gitRef": "pending phase2 commit",
+      "location": "docs/project_control_center.html + runtime/task_results/R013-R020 + tests/jag_phase2_smoke_test.py",
+      "notes": "R013-R020 Japan AI Guide Phase 2 validation completed. Current execution pointer moved to R021.",
+      "snapshot": "AGOS Project Control Center v0.1.16\nPhase 2: JAG validation completed\nNext: R021 Europe/US user profile\n"
+    },
     {
       "id": "control-center-v0.1.15",
       "label": "Control Center v0.1.15",
@@ -731,66 +1164,567 @@
     }
   ],
   "rounds": [
-    {"id":"R001","phase":"Phase 1","name":"通用 AI Growth OS 蓝图","status":"done","progress":100,"deliverable":"HTML 控制中心、60 Round 执行任务词、本地 Git 初始化和 R001 报告","report":"runtime/task_results/R001/ROUND_SUMMARY.md","summary":"R001 已完成 AGOS 的项目神经中枢。实际交付包括控制中心 HTML、60 Round 执行协议、Git 本地版本记录、Round 点击摘要浮层和正式 R001 报告。后续每一轮都要先验证上一轮结果，再更新控制中心和对应报告。"},
-    {"id":"R002","phase":"Phase 1","name":"Product Workspace 架构","status":"done","progress":100,"deliverable":"Workspace 数据结构、schema 校验、文件存储服务、SaaS 入口说明和隔离 smoke test","report":"runtime/task_results/R002/ROUND_SUMMARY.md","summary":"R002 已完成 Product Workspace 架构。实际交付包括 Workspace 领域模型、schema 校验、文件存储服务、SaaS 入口说明和 smoke test。系统现在有了客户/产品级隔离边界，后续知识库、痛点、内容、回复、报告和 AI 配置都必须绑定 workspace_id。"},
-    {"id":"R003","phase":"Phase 1","name":"客户知识库系统","status":"done","progress":100,"deliverable":"Workspace 级品牌语气、产品资料、FAQ、行业资料和内容模板","report":"runtime/task_results/R003/ROUND_SUMMARY.md","summary":"R003 已完成客户知识库系统。实际交付包括 KnowledgeBase 模型、schema 校验、Workspace 绑定服务、SaaS 入口说明和知识库 CRUD/隔离测试。每个客户知识库都必须绑定到已有 workspace_id，后续内容生成不能绕过该边界。"},
-    {"id":"R004","phase":"Phase 1","name":"官方账号矩阵中心","status":"done","progress":100,"deliverable":"Workspace 级多平台账号档案、内容策略、账号状态和风险状态","report":"runtime/task_results/R004/ROUND_SUMMARY.md","summary":"R004 已完成官方账号矩阵中心。实际交付包括 AccountProfile 模型、平台/状态/risk schema 校验、Workspace 绑定服务、SaaS 入口说明和账号矩阵 smoke test。系统支持 TikTok、Instagram、X、YouTube、Reddit、Threads、SEO，并明确禁止保存密码、cookie、token 或 API key。"},
-    {"id":"R005","phase":"Phase 1","name":"全网痛点雷达","status":"done","progress":100,"deliverable":"Workspace 级痛点样例导入、分类、趋势分数、优先级排序和筛选","report":"runtime/task_results/R005/ROUND_SUMMARY.md","summary":"R005 已完成全网痛点雷达基础系统。实际交付包括 PainPoint 模型、schema 校验、本地样例导入、平台/分类筛选、priority_score 排序和 smoke test。当前没有真实网站抓取，所有痛点均来自本地样例数据。"},
-    {"id":"R006","phase":"Phase 1","name":"AI 内容工厂 MVP","status":"done","progress":100,"deliverable":"Workspace 级多平台待审核内容草稿生成","report":"runtime/task_results/R006/ROUND_SUMMARY.md","summary":"R006 已完成 AI 内容工厂 MVP。实际交付包括 ContentDraft 模型、schema 校验、内容草稿服务、SaaS 入口说明和内容生成 smoke test。系统可从 Workspace 知识库和高优先级痛点生成 TikTok、Instagram、Reddit、YouTube、SEO 五类草稿，所有草稿默认 needs_review，不自动发布。"},
-    {"id":"R007","phase":"Phase 1","name":"回复工作流 MVP","status":"done","progress":100,"deliverable":"Workspace 级自然回复草稿、人审状态、风险标记和回复记录","report":"runtime/task_results/R007/ROUND_SUMMARY.md","summary":"R007 已完成 AI 回复工作流 MVP。实际交付包括 ReplyDraft 模型、schema 校验、回复生成服务、SaaS 入口说明和回复 smoke test。系统只生成待审核回复草稿，并可标记硬广和冒充风险；不接入真实评论区，不自动发送。"},
-    {"id":"R008","phase":"Phase 1","name":"AI 学习与复盘系统","status":"done","progress":100,"deliverable":"Workspace 级反馈事件、推荐排序和本地复盘信号","report":"runtime/task_results/R008/ROUND_SUMMARY.md","summary":"R008 已完成 AI 学习与复盘系统。实际交付包括 LearningEvent 模型、schema 校验、学习事件服务、SaaS 入口说明和学习 smoke test。系统可记录收藏、忽略、转化、正负回复等样例反馈，并生成下一步推荐排序；不训练真实模型，不使用真实隐私数据。"},
-    {"id":"R009","phase":"Phase 1","name":"报告系统 MVP","status":"done","progress":100,"deliverable":"Workspace 级日报、周报、月报样例报告生成","report":"runtime/task_results/R009/ROUND_SUMMARY.md","summary":"R009 已完成报告系统 MVP。实际交付包括 GrowthReport 模型、schema 校验、报告生成服务、SaaS 入口说明和报告 smoke test。系统可基于样例痛点、内容、回复和学习事件生成日报、周报、月报，并明确标记为样例数据。"},
-    {"id":"R010","phase":"Phase 1","name":"AI Provider 基础桥接","status":"done","progress":100,"deliverable":"Mock-only AI Provider 配置、能力路由、额度字段和密钥字段拦截","report":"runtime/task_results/R010/ROUND_SUMMARY.md","summary":"R010 已完成 AI Provider 基础桥接。实际交付包括 AIProviderConfig 模型、schema 校验、mock-only 路由服务、无密钥 sample 配置和 provider smoke test。当前不写入真实 API Key，不进行真实付费调用。"},
-    {"id":"R011","phase":"Phase 1","name":"Skill Marketplace 基础结构","status":"done","progress":100,"deliverable":"Skill 包、套餐权限、启用/禁用和越权拦截","report":"runtime/task_results/R011/ROUND_SUMMARY.md","summary":"R011 已完成 Skill Marketplace 基础结构。实际交付包括 SkillDefinition 模型、schema 校验、Skill 权限服务、SaaS 入口说明和 Skill smoke test。系统可按 Starter/Growth/Premium 等套餐判断 Skill 可用性，禁用 Skill 不可调用，不实现真实付费扣费。"},
-    {"id":"R012","phase":"Phase 1","name":"通用增长 MVP 验收","status":"done","progress":100,"deliverable":"Phase 1 通用增长 MVP 阶段验收报告和完整 smoke test 验证","report":"runtime/task_results/R012/ROUND_SUMMARY.md","summary":"R012 已完成 Phase 1 阶段验收。R001-R011 报告齐全，Python 语法检查通过，Workspace、知识库、账号矩阵、痛点、内容、回复、学习、报告、Provider、Skill 全部 smoke test 通过。当前必须等待用户验收，不能自动进入 R013。"},
-    {"id":"R013","phase":"Phase 2","name":"Japan AI Guide 推广画像","status":"planned","progress":0,"deliverable":"JAG 首个真实推广 Workspace","report":"runtime/task_results/R013/ROUND_SUMMARY.md"},
-    {"id":"R014","phase":"Phase 2","name":"JAG 平台账号矩阵","status":"planned","progress":0,"deliverable":"TikTok、IG、X、YouTube、SEO 账号策略","report":"runtime/task_results/R014/ROUND_SUMMARY.md"},
-    {"id":"R015","phase":"Phase 2","name":"JAG 痛点库","status":"planned","progress":0,"deliverable":"游客痛点和搜索意图库","report":"runtime/task_results/R015/ROUND_SUMMARY.md"},
-    {"id":"R016","phase":"Phase 2","name":"JAG 内容主题池","status":"planned","progress":0,"deliverable":"主题、标题、脚本、SEO 关键词","report":"runtime/task_results/R016/ROUND_SUMMARY.md"},
-    {"id":"R017","phase":"Phase 2","name":"JAG 自然回复模板","status":"planned","progress":0,"deliverable":"非硬广回复和评论引导","report":"runtime/task_results/R017/ROUND_SUMMARY.md"},
-    {"id":"R018","phase":"Phase 2","name":"JAG 增长报告","status":"planned","progress":0,"deliverable":"JAG 日报、周报、优化建议","report":"runtime/task_results/R018/ROUND_SUMMARY.md"},
-    {"id":"R019","phase":"Phase 2","name":"JAG 自动化闭环","status":"planned","progress":0,"deliverable":"痛点到内容到回复到报告闭环","report":"runtime/task_results/R019/ROUND_SUMMARY.md"},
-    {"id":"R020","phase":"Phase 2","name":"JAG 推广验证","status":"planned","progress":0,"deliverable":"首个垂直行业样板验收","report":"runtime/task_results/R020/ROUND_SUMMARY.md"},
-    {"id":"R021","phase":"Phase 3","name":"欧美用户画像","status":"planned","progress":0,"deliverable":"欧美市场画像和痛点差异","report":"runtime/task_results/R021/ROUND_SUMMARY.md"},
-    {"id":"R022","phase":"Phase 3","name":"英文痛点雷达","status":"planned","progress":0,"deliverable":"Reddit、Quora、SEO 痛点库","report":"runtime/task_results/R022/ROUND_SUMMARY.md"},
-    {"id":"R023","phase":"Phase 3","name":"英文内容工厂","status":"planned","progress":0,"deliverable":"英文图文、短视频、长内容","report":"runtime/task_results/R023/ROUND_SUMMARY.md"},
-    {"id":"R024","phase":"Phase 3","name":"Reddit / Quora 回复工作流","status":"planned","progress":0,"deliverable":"自然讨论回复和线索引导","report":"runtime/task_results/R024/ROUND_SUMMARY.md"},
-    {"id":"R025","phase":"Phase 3","name":"Instagram / TikTok 英文短视频","status":"planned","progress":0,"deliverable":"Hook、脚本、镜头建议","report":"runtime/task_results/R025/ROUND_SUMMARY.md"},
-    {"id":"R026","phase":"Phase 3","name":"YouTube 长内容策略","status":"planned","progress":0,"deliverable":"路线讲解、避坑指南、AI 演示","report":"runtime/task_results/R026/ROUND_SUMMARY.md"},
-    {"id":"R027","phase":"Phase 3","name":"英文增长报告","status":"planned","progress":0,"deliverable":"英文市场周报和优化建议","report":"runtime/task_results/R027/ROUND_SUMMARY.md"},
-    {"id":"R028","phase":"Phase 3","name":"欧美趋势预测","status":"planned","progress":0,"deliverable":"趋势信号和内容建议","report":"runtime/task_results/R028/ROUND_SUMMARY.md"},
-    {"id":"R029","phase":"Phase 3","name":"英文平台适配器","status":"planned","progress":0,"deliverable":"同一痛点多平台表达","report":"runtime/task_results/R029/ROUND_SUMMARY.md"},
-    {"id":"R030","phase":"Phase 3","name":"欧美市场验证","status":"planned","progress":0,"deliverable":"第二市场验证报告","report":"runtime/task_results/R030/ROUND_SUMMARY.md"},
-    {"id":"R031","phase":"Phase 4","name":"韩国用户画像","status":"planned","progress":0,"deliverable":"韩语市场用户画像","report":"runtime/task_results/R031/ROUND_SUMMARY.md"},
-    {"id":"R032","phase":"Phase 4","name":"韩语内容模板","status":"planned","progress":0,"deliverable":"韩语短视频和图文模板","report":"runtime/task_results/R032/ROUND_SUMMARY.md"},
-    {"id":"R033","phase":"Phase 4","name":"韩国视觉内容策略","status":"planned","progress":0,"deliverable":"视觉内容和本地语气","report":"runtime/task_results/R033/ROUND_SUMMARY.md"},
-    {"id":"R034","phase":"Phase 4","name":"台湾用户画像","status":"planned","progress":0,"deliverable":"繁中市场用户画像","report":"runtime/task_results/R034/ROUND_SUMMARY.md"},
-    {"id":"R035","phase":"Phase 4","name":"繁中内容模板","status":"planned","progress":0,"deliverable":"繁中深度攻略和短内容","report":"runtime/task_results/R035/ROUND_SUMMARY.md"},
-    {"id":"R036","phase":"Phase 4","name":"韩台痛点库","status":"planned","progress":0,"deliverable":"韩语和繁中痛点收集","report":"runtime/task_results/R036/ROUND_SUMMARY.md"},
-    {"id":"R037","phase":"Phase 4","name":"韩台回复工作流","status":"planned","progress":0,"deliverable":"本地化自然回复","report":"runtime/task_results/R037/ROUND_SUMMARY.md"},
-    {"id":"R038","phase":"Phase 4","name":"季节内容系统","status":"planned","progress":0,"deliverable":"樱花、红叶、温泉、祭典内容","report":"runtime/task_results/R038/ROUND_SUMMARY.md"},
-    {"id":"R039","phase":"Phase 4","name":"韩台数据报告","status":"planned","progress":0,"deliverable":"本地市场报告","report":"runtime/task_results/R039/ROUND_SUMMARY.md"},
-    {"id":"R040","phase":"Phase 4","name":"韩台市场验证","status":"planned","progress":0,"deliverable":"多语言区域验证","report":"runtime/task_results/R040/ROUND_SUMMARY.md"},
-    {"id":"R041","phase":"Phase 5","name":"东南亚国家优先级","status":"planned","progress":0,"deliverable":"新加坡、泰国、马来、印尼优先级","report":"runtime/task_results/R041/ROUND_SUMMARY.md"},
-    {"id":"R042","phase":"Phase 5","name":"东南亚痛点标签","status":"planned","progress":0,"deliverable":"预算、家庭、清真、购物、季节标签","report":"runtime/task_results/R042/ROUND_SUMMARY.md"},
-    {"id":"R043","phase":"Phase 5","name":"新加坡高端客模型","status":"planned","progress":0,"deliverable":"高端家庭和服务型内容","report":"runtime/task_results/R043/ROUND_SUMMARY.md"},
-    {"id":"R044","phase":"Phase 5","name":"泰国年轻客内容模板","status":"planned","progress":0,"deliverable":"泰语内容与短视频模板","report":"runtime/task_results/R044/ROUND_SUMMARY.md"},
-    {"id":"R045","phase":"Phase 5","name":"马来 / 印尼家庭模型","status":"planned","progress":0,"deliverable":"家庭便利和清真内容","report":"runtime/task_results/R045/ROUND_SUMMARY.md"},
-    {"id":"R046","phase":"Phase 5","name":"东南亚多语言内容工厂","status":"planned","progress":0,"deliverable":"英语、泰语、印尼语、马来语模板","report":"runtime/task_results/R046/ROUND_SUMMARY.md"},
-    {"id":"R047","phase":"Phase 5","name":"东南亚报告系统","status":"planned","progress":0,"deliverable":"国家、平台、内容维度分析","report":"runtime/task_results/R047/ROUND_SUMMARY.md"},
-    {"id":"R048","phase":"Phase 5","name":"东南亚市场验证","status":"planned","progress":0,"deliverable":"第三市场扩展验证","report":"runtime/task_results/R048/ROUND_SUMMARY.md"},
-    {"id":"R049","phase":"Phase 6","name":"SaaS 客户管理中心","status":"planned","progress":0,"deliverable":"客户列表、Workspace、套餐、AI 活跃度","report":"runtime/task_results/R049/ROUND_SUMMARY.md"},
-    {"id":"R050","phase":"Phase 6","name":"客户分析看板","status":"planned","progress":0,"deliverable":"客户内容、回复、增长、建议","report":"runtime/task_results/R050/ROUND_SUMMARY.md"},
-    {"id":"R051","phase":"Phase 6","name":"订阅与账单中心","status":"planned","progress":0,"deliverable":"月付、季付、年付、账单历史","report":"runtime/task_results/R051/ROUND_SUMMARY.md"},
-    {"id":"R052","phase":"Phase 6","name":"权限与角色系统","status":"planned","progress":0,"deliverable":"管理员、运营、财务、审核、只读","report":"runtime/task_results/R052/ROUND_SUMMARY.md"},
-    {"id":"R053","phase":"Phase 6","name":"AI 安全与风控","status":"planned","progress":0,"deliverable":"内容审核、频率限制、品牌保护","report":"runtime/task_results/R053/ROUND_SUMMARY.md"},
-    {"id":"R054","phase":"Phase 6","name":"SaaS 商业化验证","status":"planned","progress":0,"deliverable":"套餐、权限、账单、客户报告验收","report":"runtime/task_results/R054/ROUND_SUMMARY.md"},
-    {"id":"R055","phase":"Phase 7","name":"AI 趋势反馈引擎","status":"planned","progress":0,"deliverable":"趋势信号和需求变化反馈","report":"runtime/task_results/R055/ROUND_SUMMARY.md"},
-    {"id":"R056","phase":"Phase 7","name":"AI 内容策略智能体","status":"planned","progress":0,"deliverable":"每日内容计划和优先级","report":"runtime/task_results/R056/ROUND_SUMMARY.md"},
-    {"id":"R057","phase":"Phase 7","name":"AI 回复质量风控","status":"planned","progress":0,"deliverable":"不机械、不误导、不硬广检查","report":"runtime/task_results/R057/ROUND_SUMMARY.md"},
-    {"id":"R058","phase":"Phase 7","name":"AI 增长复盘引擎","status":"planned","progress":0,"deliverable":"内容、回复、线索、转化复盘","report":"runtime/task_results/R058/ROUND_SUMMARY.md"},
-    {"id":"R059","phase":"Phase 7","name":"多市场运营总控台","status":"planned","progress":0,"deliverable":"多客户、多产品、多市场、多平台总览","report":"runtime/task_results/R059/ROUND_SUMMARY.md"},
-    {"id":"R060","phase":"Phase 7","name":"AI Growth OS 最终验收","status":"planned","progress":0,"deliverable":"长期自动增长基础设施验收","report":"runtime/task_results/R060/ROUND_SUMMARY.md"}
+    {
+      "id": "R001",
+      "phase": "Phase 1",
+      "name": "通用 AI Growth OS 蓝图",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "HTML 控制中心、60 Round 执行任务词、本地 Git 初始化和 R001 报告",
+      "report": "runtime/task_results/R001/ROUND_SUMMARY.md",
+      "summary": "R001 已完成 AGOS 的项目神经中枢。实际交付包括控制中心 HTML、60 Round 执行协议、Git 本地版本记录、Round 点击摘要浮层和正式 R001 报告。后续每一轮都要先验证上一轮结果，再更新控制中心和对应报告。"
+    },
+    {
+      "id": "R002",
+      "phase": "Phase 1",
+      "name": "Product Workspace 架构",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "Workspace 数据结构、schema 校验、文件存储服务、SaaS 入口说明和隔离 smoke test",
+      "report": "runtime/task_results/R002/ROUND_SUMMARY.md",
+      "summary": "R002 已完成 Product Workspace 架构。实际交付包括 Workspace 领域模型、schema 校验、文件存储服务、SaaS 入口说明和 smoke test。系统现在有了客户/产品级隔离边界，后续知识库、痛点、内容、回复、报告和 AI 配置都必须绑定 workspace_id。"
+    },
+    {
+      "id": "R003",
+      "phase": "Phase 1",
+      "name": "客户知识库系统",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "Workspace 级品牌语气、产品资料、FAQ、行业资料和内容模板",
+      "report": "runtime/task_results/R003/ROUND_SUMMARY.md",
+      "summary": "R003 已完成客户知识库系统。实际交付包括 KnowledgeBase 模型、schema 校验、Workspace 绑定服务、SaaS 入口说明和知识库 CRUD/隔离测试。每个客户知识库都必须绑定到已有 workspace_id，后续内容生成不能绕过该边界。"
+    },
+    {
+      "id": "R004",
+      "phase": "Phase 1",
+      "name": "官方账号矩阵中心",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "Workspace 级多平台账号档案、内容策略、账号状态和风险状态",
+      "report": "runtime/task_results/R004/ROUND_SUMMARY.md",
+      "summary": "R004 已完成官方账号矩阵中心。实际交付包括 AccountProfile 模型、平台/状态/risk schema 校验、Workspace 绑定服务、SaaS 入口说明和账号矩阵 smoke test。系统支持 TikTok、Instagram、X、YouTube、Reddit、Threads、SEO，并明确禁止保存密码、cookie、token 或 API key。"
+    },
+    {
+      "id": "R005",
+      "phase": "Phase 1",
+      "name": "全网痛点雷达",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "Workspace 级痛点样例导入、分类、趋势分数、优先级排序和筛选",
+      "report": "runtime/task_results/R005/ROUND_SUMMARY.md",
+      "summary": "R005 已完成全网痛点雷达基础系统。实际交付包括 PainPoint 模型、schema 校验、本地样例导入、平台/分类筛选、priority_score 排序和 smoke test。当前没有真实网站抓取，所有痛点均来自本地样例数据。"
+    },
+    {
+      "id": "R006",
+      "phase": "Phase 1",
+      "name": "AI 内容工厂 MVP",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "Workspace 级多平台待审核内容草稿生成",
+      "report": "runtime/task_results/R006/ROUND_SUMMARY.md",
+      "summary": "R006 已完成 AI 内容工厂 MVP。实际交付包括 ContentDraft 模型、schema 校验、内容草稿服务、SaaS 入口说明和内容生成 smoke test。系统可从 Workspace 知识库和高优先级痛点生成 TikTok、Instagram、Reddit、YouTube、SEO 五类草稿，所有草稿默认 needs_review，不自动发布。"
+    },
+    {
+      "id": "R007",
+      "phase": "Phase 1",
+      "name": "回复工作流 MVP",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "Workspace 级自然回复草稿、人审状态、风险标记和回复记录",
+      "report": "runtime/task_results/R007/ROUND_SUMMARY.md",
+      "summary": "R007 已完成 AI 回复工作流 MVP。实际交付包括 ReplyDraft 模型、schema 校验、回复生成服务、SaaS 入口说明和回复 smoke test。系统只生成待审核回复草稿，并可标记硬广和冒充风险；不接入真实评论区，不自动发送。"
+    },
+    {
+      "id": "R008",
+      "phase": "Phase 1",
+      "name": "AI 学习与复盘系统",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "Workspace 级反馈事件、推荐排序和本地复盘信号",
+      "report": "runtime/task_results/R008/ROUND_SUMMARY.md",
+      "summary": "R008 已完成 AI 学习与复盘系统。实际交付包括 LearningEvent 模型、schema 校验、学习事件服务、SaaS 入口说明和学习 smoke test。系统可记录收藏、忽略、转化、正负回复等样例反馈，并生成下一步推荐排序；不训练真实模型，不使用真实隐私数据。"
+    },
+    {
+      "id": "R009",
+      "phase": "Phase 1",
+      "name": "报告系统 MVP",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "Workspace 级日报、周报、月报样例报告生成",
+      "report": "runtime/task_results/R009/ROUND_SUMMARY.md",
+      "summary": "R009 已完成报告系统 MVP。实际交付包括 GrowthReport 模型、schema 校验、报告生成服务、SaaS 入口说明和报告 smoke test。系统可基于样例痛点、内容、回复和学习事件生成日报、周报、月报，并明确标记为样例数据。"
+    },
+    {
+      "id": "R010",
+      "phase": "Phase 1",
+      "name": "AI Provider 基础桥接",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "Mock-only AI Provider 配置、能力路由、额度字段和密钥字段拦截",
+      "report": "runtime/task_results/R010/ROUND_SUMMARY.md",
+      "summary": "R010 已完成 AI Provider 基础桥接。实际交付包括 AIProviderConfig 模型、schema 校验、mock-only 路由服务、无密钥 sample 配置和 provider smoke test。当前不写入真实 API Key，不进行真实付费调用。"
+    },
+    {
+      "id": "R011",
+      "phase": "Phase 1",
+      "name": "Skill Marketplace 基础结构",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "Skill 包、套餐权限、启用/禁用和越权拦截",
+      "report": "runtime/task_results/R011/ROUND_SUMMARY.md",
+      "summary": "R011 已完成 Skill Marketplace 基础结构。实际交付包括 SkillDefinition 模型、schema 校验、Skill 权限服务、SaaS 入口说明和 Skill smoke test。系统可按 Starter/Growth/Premium 等套餐判断 Skill 可用性，禁用 Skill 不可调用，不实现真实付费扣费。"
+    },
+    {
+      "id": "R012",
+      "phase": "Phase 1",
+      "name": "通用增长 MVP 验收",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "Phase 1 通用增长 MVP 阶段验收报告和完整 smoke test 验证",
+      "report": "runtime/task_results/R012/ROUND_SUMMARY.md",
+      "summary": "R012 已完成 Phase 1 阶段验收。R001-R011 报告齐全，Python 语法检查通过，Workspace、知识库、账号矩阵、痛点、内容、回复、学习、报告、Provider、Skill 全部 smoke test 通过。当前必须等待用户验收，不能自动进入 R013。"
+    },
+    {
+      "id": "R013",
+      "phase": "Phase 2",
+      "name": "Japan AI Guide 推广画像",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "JAG workspace profile and workspace isolation contract",
+      "report": "runtime/task_results/R013/ROUND_SUMMARY.md",
+      "summary": "JAG workspace profile completed: target personas, target markets, and promotion goal are defined in a dedicated workspace."
+    },
+    {
+      "id": "R014",
+      "phase": "Phase 2",
+      "name": "JAG 平台账号矩阵",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "JAG account matrix for TikTok, Instagram, Reddit, YouTube, and SEO",
+      "report": "runtime/task_results/R014/ROUND_SUMMARY.md",
+      "summary": "JAG account matrix completed for TikTok, Instagram, Reddit, YouTube, and SEO. Reddit remains review-gated."
+    },
+    {
+      "id": "R015",
+      "phase": "Phase 2",
+      "name": "JAG 痛点库",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "JAG pain radar seed records",
+      "report": "runtime/task_results/R015/ROUND_SUMMARY.md",
+      "summary": "JAG pain radar completed with train transfer and food language pain points, priorities, keywords, and audience mapping."
+    },
+    {
+      "id": "R016",
+      "phase": "Phase 2",
+      "name": "JAG 内容主题池",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "JAG platform content drafts",
+      "report": "runtime/task_results/R016/ROUND_SUMMARY.md",
+      "summary": "JAG content factory completed with platform-specific drafts for TikTok, Instagram, Reddit, YouTube, and SEO."
+    },
+    {
+      "id": "R017",
+      "phase": "Phase 2",
+      "name": "JAG 自然回复模板",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "JAG reply and review workflow seed",
+      "report": "runtime/task_results/R017/ROUND_SUMMARY.md",
+      "summary": "JAG reply workflow completed. Reddit replies stay in needs_review state before any publishing action."
+    },
+    {
+      "id": "R018",
+      "phase": "Phase 2",
+      "name": "JAG 增长报告",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "JAG daily, weekly, and monthly report data",
+      "report": "runtime/task_results/R018/ROUND_SUMMARY.md",
+      "summary": "JAG report layer completed with daily, weekly, and monthly report objects and KPI summaries."
+    },
+    {
+      "id": "R019",
+      "phase": "Phase 2",
+      "name": "JAG 自动化闭环",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "JAG workspace end-to-end smoke validation",
+      "report": "runtime/task_results/R019/ROUND_SUMMARY.md",
+      "summary": "JAG phase smoke test completed across workspace, knowledge, account matrix, pain, content, reply, learning, and reports."
+    },
+    {
+      "id": "R020",
+      "phase": "Phase 2",
+      "name": "JAG 推广验证",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "JAG Phase 2 gate package",
+      "report": "runtime/task_results/R020/ROUND_SUMMARY.md",
+      "summary": "Phase 2 gate passed. JAG scenario proves the SaaS foundation can support a real workspace without touching guide app APIs."
+    },
+    {
+      "id": "R021",
+      "phase": "Phase 3",
+      "name": "欧美用户画像",
+      "status": "in_progress",
+      "progress": 0,
+      "deliverable": "Europe and US user profile, motivations, budget, travel experience, and content preferences",
+      "report": "runtime/task_results/R021/ROUND_SUMMARY.md",
+      "summary": "Upcoming: define the Europe and US user profile for AGOS targeting, keeping JAG scenario data separated from core SaaS foundation logic."
+    },
+    {
+      "id": "R022",
+      "phase": "Phase 3",
+      "name": "英文痛点雷达",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Reddit、Quora、SEO 痛点库",
+      "report": "runtime/task_results/R022/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R023",
+      "phase": "Phase 3",
+      "name": "英文内容工厂",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "英文图文、短视频、长内容",
+      "report": "runtime/task_results/R023/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R024",
+      "phase": "Phase 3",
+      "name": "Reddit / Quora 回复工作流",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "自然讨论回复和线索引导",
+      "report": "runtime/task_results/R024/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R025",
+      "phase": "Phase 3",
+      "name": "Instagram / TikTok 英文短视频",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Hook、脚本、镜头建议",
+      "report": "runtime/task_results/R025/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R026",
+      "phase": "Phase 3",
+      "name": "YouTube 长内容策略",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "路线讲解、避坑指南、AI 演示",
+      "report": "runtime/task_results/R026/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R027",
+      "phase": "Phase 3",
+      "name": "英文增长报告",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "英文市场周报和优化建议",
+      "report": "runtime/task_results/R027/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R028",
+      "phase": "Phase 3",
+      "name": "欧美趋势预测",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "趋势信号和内容建议",
+      "report": "runtime/task_results/R028/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R029",
+      "phase": "Phase 3",
+      "name": "英文平台适配器",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "同一痛点多平台表达",
+      "report": "runtime/task_results/R029/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R030",
+      "phase": "Phase 3",
+      "name": "欧美市场验证",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "第二市场验证报告",
+      "report": "runtime/task_results/R030/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R031",
+      "phase": "Phase 4",
+      "name": "韩国用户画像",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "韩语市场用户画像",
+      "report": "runtime/task_results/R031/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R032",
+      "phase": "Phase 4",
+      "name": "韩语内容模板",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "韩语短视频和图文模板",
+      "report": "runtime/task_results/R032/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R033",
+      "phase": "Phase 4",
+      "name": "韩国视觉内容策略",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "视觉内容和本地语气",
+      "report": "runtime/task_results/R033/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R034",
+      "phase": "Phase 4",
+      "name": "台湾用户画像",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "繁中市场用户画像",
+      "report": "runtime/task_results/R034/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R035",
+      "phase": "Phase 4",
+      "name": "繁中内容模板",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "繁中深度攻略和短内容",
+      "report": "runtime/task_results/R035/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R036",
+      "phase": "Phase 4",
+      "name": "韩台痛点库",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "韩语和繁中痛点收集",
+      "report": "runtime/task_results/R036/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R037",
+      "phase": "Phase 4",
+      "name": "韩台回复工作流",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "本地化自然回复",
+      "report": "runtime/task_results/R037/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R038",
+      "phase": "Phase 4",
+      "name": "季节内容系统",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "樱花、红叶、温泉、祭典内容",
+      "report": "runtime/task_results/R038/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R039",
+      "phase": "Phase 4",
+      "name": "韩台数据报告",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "本地市场报告",
+      "report": "runtime/task_results/R039/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R040",
+      "phase": "Phase 4",
+      "name": "韩台市场验证",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "多语言区域验证",
+      "report": "runtime/task_results/R040/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R041",
+      "phase": "Phase 5",
+      "name": "东南亚国家优先级",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "新加坡、泰国、马来、印尼优先级",
+      "report": "runtime/task_results/R041/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R042",
+      "phase": "Phase 5",
+      "name": "东南亚痛点标签",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "预算、家庭、清真、购物、季节标签",
+      "report": "runtime/task_results/R042/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R043",
+      "phase": "Phase 5",
+      "name": "新加坡高端客模型",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "高端家庭和服务型内容",
+      "report": "runtime/task_results/R043/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R044",
+      "phase": "Phase 5",
+      "name": "泰国年轻客内容模板",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "泰语内容与短视频模板",
+      "report": "runtime/task_results/R044/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R045",
+      "phase": "Phase 5",
+      "name": "马来 / 印尼家庭模型",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "家庭便利和清真内容",
+      "report": "runtime/task_results/R045/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R046",
+      "phase": "Phase 5",
+      "name": "东南亚多语言内容工厂",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "英语、泰语、印尼语、马来语模板",
+      "report": "runtime/task_results/R046/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R047",
+      "phase": "Phase 5",
+      "name": "东南亚报告系统",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "国家、平台、内容维度分析",
+      "report": "runtime/task_results/R047/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R048",
+      "phase": "Phase 5",
+      "name": "东南亚市场验证",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "第三市场扩展验证",
+      "report": "runtime/task_results/R048/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R049",
+      "phase": "Phase 6",
+      "name": "SaaS 客户管理中心",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "客户列表、Workspace、套餐、AI 活跃度",
+      "report": "runtime/task_results/R049/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R050",
+      "phase": "Phase 6",
+      "name": "客户分析看板",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "客户内容、回复、增长、建议",
+      "report": "runtime/task_results/R050/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R051",
+      "phase": "Phase 6",
+      "name": "订阅与账单中心",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "月付、季付、年付、账单历史",
+      "report": "runtime/task_results/R051/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R052",
+      "phase": "Phase 6",
+      "name": "权限与角色系统",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "管理员、运营、财务、审核、只读",
+      "report": "runtime/task_results/R052/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R053",
+      "phase": "Phase 6",
+      "name": "AI 安全与风控",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "内容审核、频率限制、品牌保护",
+      "report": "runtime/task_results/R053/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R054",
+      "phase": "Phase 6",
+      "name": "SaaS 商业化验证",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "套餐、权限、账单、客户报告验收",
+      "report": "runtime/task_results/R054/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R055",
+      "phase": "Phase 7",
+      "name": "AI 趋势反馈引擎",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "趋势信号和需求变化反馈",
+      "report": "runtime/task_results/R055/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R056",
+      "phase": "Phase 7",
+      "name": "AI 内容策略智能体",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "每日内容计划和优先级",
+      "report": "runtime/task_results/R056/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R057",
+      "phase": "Phase 7",
+      "name": "AI 回复质量风控",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "不机械、不误导、不硬广检查",
+      "report": "runtime/task_results/R057/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R058",
+      "phase": "Phase 7",
+      "name": "AI 增长复盘引擎",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "内容、回复、线索、转化复盘",
+      "report": "runtime/task_results/R058/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R059",
+      "phase": "Phase 7",
+      "name": "多市场运营总控台",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "多客户、多产品、多市场、多平台总览",
+      "report": "runtime/task_results/R059/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "R060",
+      "phase": "Phase 7",
+      "name": "AI Growth OS 最终验收",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "长期自动增长基础设施验收",
+      "report": "runtime/task_results/R060/ROUND_SUMMARY.md"
+    }
   ]
 }
   </script>
