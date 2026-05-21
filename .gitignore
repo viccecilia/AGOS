@@ -1,0 +1,10 @@
+# Local preview server logs
+docs/.control_center_server.*.log
+
+# Python caches
+__pycache__/
+*.pyc
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

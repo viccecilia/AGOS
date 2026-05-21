@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AGOS Project Control Center</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --surface: #ffffff;
+      --surface-2: #f8fafc;
+      --ink: #101828;
+      --muted: #667085;
+      --line: #d9e2ef;
+      --blue: #2563eb;
+      --green: #16a34a;
+      --amber: #d97706;
+      --red: #dc2626;
+      --violet: #7c3aed;
+      --cyan: #0891b2;
+      --shadow: 0 18px 45px rgba(16, 24, 40, .08);
+      --radius: 8px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--bg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+    }
+    a { color: inherit; }
+    button, input, select, textarea { font: inherit; }
+    .layout {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      min-height: 100vh;
+    }
+    .side {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      padding: 22px 18px;
+      background: #0f172a;
+      color: #e5edf8;
+      overflow: auto;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+    .mark {
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      background: #2563eb;
+      color: #fff;
+      font-weight: 900;
+    }
+    .brand strong { display: block; font-size: 15px; }
+    .brand span { display: block; color: #aab7cf; font-size: 12px; margin-top: 2px; }
+    .nav-title {
+      margin: 20px 0 8px;
+      color: #94a3b8;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+    .nav a {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px 11px;
+      margin: 3px 0;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #dbe6f6;
+      font-size: 14px;
+    }
+    .nav a:hover { background: rgba(255,255,255,.08); }
+    .nav small { color: #9fb0c9; }
+    .content {
+      padding: 28px;
+      max-width: 1500px;
+      width: 100%;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .hero-main { padding: 30px; }
+    .hero-aside { padding: 24px; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { font-size: 34px; line-height: 1.18; letter-spacing: 0; margin-bottom: 14px; }
+    h2 { font-size: 22px; margin-bottom: 14px; }
+    h3 { font-size: 16px; margin-bottom: 8px; }
+    p { color: var(--muted); line-height: 1.7; }
+    .hero-main p { max-width: 980px; }
+    .topline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+    .badge, .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      min-height: 26px;
+      padding: 5px 9px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .b-blue { color: #1d4ed8; background: #dbeafe; }
+    .b-green { color: #15803d; background: #dcfce7; }
+    .b-amber { color: #b45309; background: #fef3c7; }
+    .b-red { color: #b91c1c; background: #fee2e2; }
+    .b-violet { color: #6d28d9; background: #ede9fe; }
+    .b-cyan { color: #0e7490; background: #cffafe; }
+    .git-corner {
+      display: grid;
+      gap: 8px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface-2);
+    }
+    .git-corner code {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #344054;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .metric {
+      padding: 18px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+    .metric span { color: var(--muted); font-size: 13px; }
+    .metric strong { display: block; margin-top: 8px; font-size: 28px; }
+    .section {
+      padding: 22px;
+      margin-bottom: 18px;
+    }
+    .section-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 16px;
+    }
+    .section-head p { margin-bottom: 0; max-width: 900px; }
+    .grid {
+      display: grid;
+      gap: 14px;
+    }
+    .grid.two { grid-template-columns: repeat(2, 1fr); }
+    .grid.three { grid-template-columns: repeat(3, 1fr); }
+    .grid.four { grid-template-columns: repeat(4, 1fr); }
+    .card {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+    .card p { font-size: 13px; margin-bottom: 0; }
+    .bar {
+      height: 9px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: #e7edf6;
+      margin: 11px 0 8px;
+    }
+    .bar > i {
+      display: block;
+      height: 100%;
+      width: var(--value);
+      background: linear-gradient(90deg, var(--blue), var(--cyan));
+    }
+    .table-wrap { overflow: auto; border: 1px solid var(--line); border-radius: 8px; }
+    table { width: 100%; border-collapse: collapse; background: #fff; }
+    th, td {
+      padding: 12px 13px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    th { background: #f8fafc; color: #344054; font-weight: 900; white-space: nowrap; }
+    tr:last-child td { border-bottom: 0; }
+    code {
+      padding: 2px 5px;
+      border-radius: 5px;
+      background: #eef2f7;
+      color: #344054;
+      font-family: Consolas, "SFMono-Regular", monospace;
+      font-size: 12px;
+    }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .toolbar button, .action, .copy-btn {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 9px 11px;
+      background: #fff;
+      color: #344054;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .toolbar button.active, .action.primary {
+      border-color: #2563eb;
+      background: #2563eb;
+      color: #fff;
+    }
+    .round-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    .round-card {
+      display: grid;
+      gap: 10px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      min-height: 190px;
+    }
+    .round-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .round-title { margin: 0; font-size: 15px; line-height: 1.35; }
+    .round-card ul {
+      margin: 0;
+      padding-left: 18px;
+      color: #475467;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    .muted { color: var(--muted); }
+    .callout {
+      padding: 14px 16px;
+      border-left: 4px solid var(--blue);
+      border-radius: 8px;
+      background: #eff6ff;
+      color: #344054;
+      line-height: 1.7;
+    }
+    .version-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      margin-bottom: 10px;
+    }
+    .version-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+    .input-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    label { display: grid; gap: 6px; color: #344054; font-size: 13px; font-weight: 800; }
+    input, textarea, select {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px 11px;
+      background: #fff;
+      color: var(--ink);
+    }
+    textarea { min-height: 86px; resize: vertical; }
+    .footer {
+      padding: 20px;
+      color: #667085;
+      text-align: center;
+      font-size: 13px;
+    }
+    @media (max-width: 1180px) {
+      .layout { grid-template-columns: 1fr; }
+      .side { position: static; height: auto; }
+      .hero, .metrics, .grid.two, .grid.three, .grid.four, .round-list, .input-grid {
+        grid-template-columns: 1fr;
+      }
+      .content { padding: 16px; }
+      h1 { font-size: 28px; }
+      .version-row { grid-template-columns: 1fr; }
+      .version-actions { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <script id="project-state" type="application/json">
+{
+  "project": {
+    "name": "AI Growth Operating System SaaS",
+    "shortName": "AGOS",
+    "controlCenterVersion": "0.1.0",
+    "lastUpdated": "2026-05-21",
+    "currentPhase": "Phase 1 / SaaS Foundation",
+    "currentRound": "ROUND-SAAS-001",
+    "nextRound": "ROUND-SAAS-002",
+    "overallProgress": 8,
+    "activeFocus": "把战略蓝图升级为项目导航、完成度追踪、Git 版本入口和 Round 报告中枢。"
+  },
+  "git": {
+    "status": "not_initialized",
+    "repositoryUrl": "",
+    "branch": "",
+    "latestCommit": "",
+    "latestCommitUrl": "",
+    "uploadLocationLabel": "Git 尚未初始化",
+    "note": "初始化仓库并推送后，把 repositoryUrl、branch、latestCommit、latestCommitUrl 填入这里，右上角会变成可追踪版本角标。"
+  },
+  "metrics": {
+    "roundsPlanned": 60,
+    "roundsCompleted": 0,
+    "roundsInProgress": 1,
+    "reportsEmbedded": 1
+  },
+  "modules": [
+    {"name": "Project Control Center", "progress": 60, "status": "in_progress", "ownerPath": "docs/project_control_center.html", "next": "接入真实 Git commit 与 Round 报告"},
+    {"name": "Product Workspace", "progress": 15, "status": "planned", "ownerPath": "portal_saas/workspace/", "next": "定义 Workspace 数据模型"},
+    {"name": "Customer Knowledge Base", "progress": 10, "status": "planned", "ownerPath": "portal_saas/customer_knowledge/", "next": "客户资料、FAQ、语气、产品资料分层"},
+    {"name": "Pain Point Radar", "progress": 10, "status": "planned", "ownerPath": "services/pain_point_engine.py", "next": "问题收集、痛点聚类、趋势标签"},
+    {"name": "AI Content Factory", "progress": 12, "status": "planned", "ownerPath": "services/content_engine.py", "next": "图文、短视频、Hook、SEO 模板"},
+    {"name": "AI Reply Workflow", "progress": 8, "status": "planned", "ownerPath": "services/reply_engine.py", "next": "自然回复、人审、避免硬广"},
+    {"name": "AI Learning Loop", "progress": 8, "status": "planned", "ownerPath": "services/learning_engine.py", "next": "收藏、转化、忽略、复盘学习"},
+    {"name": "Report Engine", "progress": 10, "status": "planned", "ownerPath": "services/report_engine.py", "next": "日报、周报、月报"},
+    {"name": "SaaS Customer Management", "progress": 8, "status": "planned", "ownerPath": "portal_saas/customer_management/", "next": "客户、套餐、Workspace、AI 活跃度"},
+    {"name": "Subscription Engine", "progress": 8, "status": "planned", "ownerPath": "services/subscription_engine.py", "next": "月付、季付、年付、企业版"},
+    {"name": "AI Provider Bridge", "progress": 8, "status": "planned", "ownerPath": "services/ai_provider_engine.py", "next": "OpenAI、DeepSeek、Claude、客户自有 Key"},
+    {"name": "Skill Marketplace", "progress": 8, "status": "planned", "ownerPath": "portal_saas/skill_marketplace/", "next": "SEO、TikTok、Reddit、X Trend、行业包"}
+  ],
+  "paths": [
+    {"path": "docs/project_control_center.html", "purpose": "项目导航中枢、Round 入口、Git 版本角标、报告嵌入页"},
+    {"path": "runtime/task_results/", "purpose": "每个 Round 的结果、验证、总结和交付证据"},
+    {"path": "portal_saas/", "purpose": "SaaS 管理端、客户管理、订阅、Skill 市场"},
+    {"path": "services/", "purpose": "AI 内容、报告、订阅、权限、风控、优化建议等核心服务"},
+    {"path": "schemas/", "purpose": "结构化数据契约"},
+    {"path": "models/", "purpose": "业务模型和持久化模型"},
+    {"path": "config/", "purpose": "AI Provider、套餐、运行配置"},
+    {"path": "tests/", "purpose": "Round 验证和回归测试"}
+  ],
+  "reports": [
+    {
+      "id": "ROUND-SAAS-001",
+      "title": "项目控制中心增强版",
+      "status": "in_progress",
+      "date": "2026-05-21",
+      "summary": "把原始 HTML 蓝图升级为项目神经中枢：增加完成度导航、Round 状态、Git 角标、历史版本下载、报告嵌入和新增 Round 模板。",
+      "files": ["docs/project_control_center.html"],
+      "verification": ["HTML 文件可直接打开", "项目数据集中在 project-state JSON 中维护", "Git 当前状态显示为未初始化"]
+    }
+  ],
+  "versions": [
+    {
+      "id": "control-center-v0.1.0",
+      "label": "Control Center v0.1.0",
+      "date": "2026-05-21",
+      "gitRef": "local-draft",
+      "location": "docs/project_control_center.html",
+      "notes": "首版项目控制中心。Git 仓库尚未初始化，上传后可把 commit URL 写入 project-state.git。",
+      "snapshot": "AGOS Project Control Center v0.1.0\\nPath: docs/project_control_center.html\\nDate: 2026-05-21\\nStatus: local draft before Git initialization.\\n"
+    }
+  ],
+  "rounds": [
+    {"id":"R001","phase":"Phase 1","name":"通用 AI Growth OS 蓝图","status":"in_progress","progress":60,"deliverable":"HTML 控制中心与项目路线图","report":"docs/project_control_center.html"},
+    {"id":"R002","phase":"Phase 1","name":"Product Workspace 架构","status":"planned","progress":0,"deliverable":"Workspace 数据结构与页面入口","report":"runtime/task_results/R002/ROUND_SUMMARY.md"},
+    {"id":"R003","phase":"Phase 1","name":"客户知识库系统","status":"planned","progress":0,"deliverable":"FAQ、产品资料、语气、行业资料","report":"runtime/task_results/R003/ROUND_SUMMARY.md"},
+    {"id":"R004","phase":"Phase 1","name":"官方账号矩阵中心","status":"planned","progress":0,"deliverable":"平台账号、内容策略、账号状态","report":"runtime/task_results/R004/ROUND_SUMMARY.md"},
+    {"id":"R005","phase":"Phase 1","name":"全网痛点雷达","status":"planned","progress":0,"deliverable":"痛点收集、聚类、趋势标签","report":"runtime/task_results/R005/ROUND_SUMMARY.md"},
+    {"id":"R006","phase":"Phase 1","name":"AI 内容工厂 MVP","status":"planned","progress":0,"deliverable":"图文、短视频、Hook、SEO 输出","report":"runtime/task_results/R006/ROUND_SUMMARY.md"},
+    {"id":"R007","phase":"Phase 1","name":"回复工作流 MVP","status":"planned","progress":0,"deliverable":"自然回复草稿、人审、回复记录","report":"runtime/task_results/R007/ROUND_SUMMARY.md"},
+    {"id":"R008","phase":"Phase 1","name":"AI 学习与复盘系统","status":"planned","progress":0,"deliverable":"反馈、收藏、忽略、转化学习","report":"runtime/task_results/R008/ROUND_SUMMARY.md"},
+    {"id":"R009","phase":"Phase 1","name":"报告系统 MVP","status":"planned","progress":0,"deliverable":"日报、周报、月报","report":"runtime/task_results/R009/ROUND_SUMMARY.md"},
+    {"id":"R010","phase":"Phase 1","name":"AI Provider 基础桥接","status":"planned","progress":0,"deliverable":"多模型配置和客户自有 Key","report":"runtime/task_results/R010/ROUND_SUMMARY.md"},
+    {"id":"R011","phase":"Phase 1","name":"Skill Marketplace 基础结构","status":"planned","progress":0,"deliverable":"Skill 包、权限、套餐绑定","report":"runtime/task_results/R011/ROUND_SUMMARY.md"},
+    {"id":"R012","phase":"Phase 1","name":"通用增长 MVP 验收","status":"planned","progress":0,"deliverable":"首个可闭环增长工作台","report":"runtime/task_results/R012/ROUND_SUMMARY.md"},
+    {"id":"R013","phase":"Phase 2","name":"Japan AI Guide 推广画像","status":"planned","progress":0,"deliverable":"JAG 首个真实推广 Workspace","report":"runtime/task_results/R013/ROUND_SUMMARY.md"},
+    {"id":"R014","phase":"Phase 2","name":"JAG 平台账号矩阵","status":"planned","progress":0,"deliverable":"TikTok、IG、X、YouTube、SEO 账号策略","report":"runtime/task_results/R014/ROUND_SUMMARY.md"},
+    {"id":"R015","phase":"Phase 2","name":"JAG 痛点库","status":"planned","progress":0,"deliverable":"游客痛点和搜索意图库","report":"runtime/task_results/R015/ROUND_SUMMARY.md"},
+    {"id":"R016","phase":"Phase 2","name":"JAG 内容主题池","status":"planned","progress":0,"deliverable":"主题、标题、脚本、SEO 关键词","report":"runtime/task_results/R016/ROUND_SUMMARY.md"},
+    {"id":"R017","phase":"Phase 2","name":"JAG 自然回复模板","status":"planned","progress":0,"deliverable":"非硬广回复和评论引导","report":"runtime/task_results/R017/ROUND_SUMMARY.md"},
+    {"id":"R018","phase":"Phase 2","name":"JAG 增长报告","status":"planned","progress":0,"deliverable":"JAG 日报、周报、优化建议","report":"runtime/task_results/R018/ROUND_SUMMARY.md"},
+    {"id":"R019","phase":"Phase 2","name":"JAG 自动化闭环","status":"planned","progress":0,"deliverable":"痛点到内容到回复到报告闭环","report":"runtime/task_results/R019/ROUND_SUMMARY.md"},
+    {"id":"R020","phase":"Phase 2","name":"JAG 推广验证","status":"planned","progress":0,"deliverable":"首个垂直行业样板验收","report":"runtime/task_results/R020/ROUND_SUMMARY.md"},
+    {"id":"R021","phase":"Phase 3","name":"欧美用户画像","status":"planned","progress":0,"deliverable":"欧美市场画像和痛点差异","report":"runtime/task_results/R021/ROUND_SUMMARY.md"},
+    {"id":"R022","phase":"Phase 3","name":"英文痛点雷达","status":"planned","progress":0,"deliverable":"Reddit、Quora、SEO 痛点库","report":"runtime/task_results/R022/ROUND_SUMMARY.md"},
+    {"id":"R023","phase":"Phase 3","name":"英文内容工厂","status":"planned","progress":0,"deliverable":"英文图文、短视频、长内容","report":"runtime/task_results/R023/ROUND_SUMMARY.md"},
+    {"id":"R024","phase":"Phase 3","name":"Reddit / Quora 回复工作流","status":"planned","progress":0,"deliverable":"自然讨论回复和线索引导","report":"runtime/task_results/R024/ROUND_SUMMARY.md"},
+    {"id":"R025","phase":"Phase 3","name":"Instagram / TikTok 英文短视频","status":"planned","progress":0,"deliverable":"Hook、脚本、镜头建议","report":"runtime/task_results/R025/ROUND_SUMMARY.md"},
+    {"id":"R026","phase":"Phase 3","name":"YouTube 长内容策略","status":"planned","progress":0,"deliverable":"路线讲解、避坑指南、AI 演示","report":"runtime/task_results/R026/ROUND_SUMMARY.md"},
+    {"id":"R027","phase":"Phase 3","name":"英文增长报告","status":"planned","progress":0,"deliverable":"英文市场周报和优化建议","report":"runtime/task_results/R027/ROUND_SUMMARY.md"},
+    {"id":"R028","phase":"Phase 3","name":"欧美趋势预测","status":"planned","progress":0,"deliverable":"趋势信号和内容建议","report":"runtime/task_results/R028/ROUND_SUMMARY.md"},
+    {"id":"R029","phase":"Phase 3","name":"英文平台适配器","status":"planned","progress":0,"deliverable":"同一痛点多平台表达","report":"runtime/task_results/R029/ROUND_SUMMARY.md"},
+    {"id":"R030","phase":"Phase 3","name":"欧美市场验证","status":"planned","progress":0,"deliverable":"第二市场验证报告","report":"runtime/task_results/R030/ROUND_SUMMARY.md"},
+    {"id":"R031","phase":"Phase 4","name":"韩国用户画像","status":"planned","progress":0,"deliverable":"韩语市场用户画像","report":"runtime/task_results/R031/ROUND_SUMMARY.md"},
+    {"id":"R032","phase":"Phase 4","name":"韩语内容模板","status":"planned","progress":0,"deliverable":"韩语短视频和图文模板","report":"runtime/task_results/R032/ROUND_SUMMARY.md"},
+    {"id":"R033","phase":"Phase 4","name":"韩国视觉内容策略","status":"planned","progress":0,"deliverable":"视觉内容和本地语气","report":"runtime/task_results/R033/ROUND_SUMMARY.md"},
+    {"id":"R034","phase":"Phase 4","name":"台湾用户画像","status":"planned","progress":0,"deliverable":"繁中市场用户画像","report":"runtime/task_results/R034/ROUND_SUMMARY.md"},
+    {"id":"R035","phase":"Phase 4","name":"繁中内容模板","status":"planned","progress":0,"deliverable":"繁中深度攻略和短内容","report":"runtime/task_results/R035/ROUND_SUMMARY.md"},
+    {"id":"R036","phase":"Phase 4","name":"韩台痛点库","status":"planned","progress":0,"deliverable":"韩语和繁中痛点收集","report":"runtime/task_results/R036/ROUND_SUMMARY.md"},
+    {"id":"R037","phase":"Phase 4","name":"韩台回复工作流","status":"planned","progress":0,"deliverable":"本地化自然回复","report":"runtime/task_results/R037/ROUND_SUMMARY.md"},
+    {"id":"R038","phase":"Phase 4","name":"季节内容系统","status":"planned","progress":0,"deliverable":"樱花、红叶、温泉、祭典内容","report":"runtime/task_results/R038/ROUND_SUMMARY.md"},
+    {"id":"R039","phase":"Phase 4","name":"韩台数据报告","status":"planned","progress":0,"deliverable":"本地市场报告","report":"runtime/task_results/R039/ROUND_SUMMARY.md"},
+    {"id":"R040","phase":"Phase 4","name":"韩台市场验证","status":"planned","progress":0,"deliverable":"多语言区域验证","report":"runtime/task_results/R040/ROUND_SUMMARY.md"},
+    {"id":"R041","phase":"Phase 5","name":"东南亚国家优先级","status":"planned","progress":0,"deliverable":"新加坡、泰国、马来、印尼优先级","report":"runtime/task_results/R041/ROUND_SUMMARY.md"},
+    {"id":"R042","phase":"Phase 5","name":"东南亚痛点标签","status":"planned","progress":0,"deliverable":"预算、家庭、清真、购物、季节标签","report":"runtime/task_results/R042/ROUND_SUMMARY.md"},
+    {"id":"R043","phase":"Phase 5","name":"新加坡高端客模型","status":"planned","progress":0,"deliverable":"高端家庭和服务型内容","report":"runtime/task_results/R043/ROUND_SUMMARY.md"},
+    {"id":"R044","phase":"Phase 5","name":"泰国年轻客内容模板","status":"planned","progress":0,"deliverable":"泰语内容与短视频模板","report":"runtime/task_results/R044/ROUND_SUMMARY.md"},
+    {"id":"R045","phase":"Phase 5","name":"马来 / 印尼家庭模型","status":"planned","progress":0,"deliverable":"家庭便利和清真内容","report":"runtime/task_results/R045/ROUND_SUMMARY.md"},
+    {"id":"R046","phase":"Phase 5","name":"东南亚多语言内容工厂","status":"planned","progress":0,"deliverable":"英语、泰语、印尼语、马来语模板","report":"runtime/task_results/R046/ROUND_SUMMARY.md"},
+    {"id":"R047","phase":"Phase 5","name":"东南亚报告系统","status":"planned","progress":0,"deliverable":"国家、平台、内容维度分析","report":"runtime/task_results/R047/ROUND_SUMMARY.md"},
+    {"id":"R048","phase":"Phase 5","name":"东南亚市场验证","status":"planned","progress":0,"deliverable":"第三市场扩展验证","report":"runtime/task_results/R048/ROUND_SUMMARY.md"},
+    {"id":"R049","phase":"Phase 6","name":"SaaS 客户管理中心","status":"planned","progress":0,"deliverable":"客户列表、Workspace、套餐、AI 活跃度","report":"runtime/task_results/R049/ROUND_SUMMARY.md"},
+    {"id":"R050","phase":"Phase 6","name":"客户分析看板","status":"planned","progress":0,"deliverable":"客户内容、回复、增长、建议","report":"runtime/task_results/R050/ROUND_SUMMARY.md"},
+    {"id":"R051","phase":"Phase 6","name":"订阅与账单中心","status":"planned","progress":0,"deliverable":"月付、季付、年付、账单历史","report":"runtime/task_results/R051/ROUND_SUMMARY.md"},
+    {"id":"R052","phase":"Phase 6","name":"权限与角色系统","status":"planned","progress":0,"deliverable":"管理员、运营、财务、审核、只读","report":"runtime/task_results/R052/ROUND_SUMMARY.md"},
+    {"id":"R053","phase":"Phase 6","name":"AI 安全与风控","status":"planned","progress":0,"deliverable":"内容审核、频率限制、品牌保护","report":"runtime/task_results/R053/ROUND_SUMMARY.md"},
+    {"id":"R054","phase":"Phase 6","name":"SaaS 商业化验证","status":"planned","progress":0,"deliverable":"套餐、权限、账单、客户报告验收","report":"runtime/task_results/R054/ROUND_SUMMARY.md"},
+    {"id":"R055","phase":"Phase 7","name":"AI 趋势反馈引擎","status":"planned","progress":0,"deliverable":"趋势信号和需求变化反馈","report":"runtime/task_results/R055/ROUND_SUMMARY.md"},
+    {"id":"R056","phase":"Phase 7","name":"AI 内容策略智能体","status":"planned","progress":0,"deliverable":"每日内容计划和优先级","report":"runtime/task_results/R056/ROUND_SUMMARY.md"},
+    {"id":"R057","phase":"Phase 7","name":"AI 回复质量风控","status":"planned","progress":0,"deliverable":"不机械、不误导、不硬广检查","report":"runtime/task_results/R057/ROUND_SUMMARY.md"},
+    {"id":"R058","phase":"Phase 7","name":"AI 增长复盘引擎","status":"planned","progress":0,"deliverable":"内容、回复、线索、转化复盘","report":"runtime/task_results/R058/ROUND_SUMMARY.md"},
+    {"id":"R059","phase":"Phase 7","name":"多市场运营总控台","status":"planned","progress":0,"deliverable":"多客户、多产品、多市场、多平台总览","report":"runtime/task_results/R059/ROUND_SUMMARY.md"},
+    {"id":"R060","phase":"Phase 7","name":"AI Growth OS 最终验收","status":"planned","progress":0,"deliverable":"长期自动增长基础设施验收","report":"runtime/task_results/R060/ROUND_SUMMARY.md"}
+  ]
+}
+  </script>
+
+  <div class="layout">
+    <aside class="side">
+      <div class="brand">
+        <div class="mark">AI</div>
+        <div>
+          <strong>AGOS Control Center</strong>
+          <span>项目导航 / Round / Git / 报告</span>
+        </div>
+      </div>
+      <nav class="nav">
+        <div class="nav-title">导航</div>
+        <a href="#overview">项目总览 <small id="nav-version"></small></a>
+        <a href="#completion">AI 完成度 <small id="nav-progress"></small></a>
+        <a href="#rounds">Round 路线图 <small>60</small></a>
+        <a href="#reports">报告嵌入 <small id="nav-reports"></small></a>
+        <a href="#git">Git 版本 <small id="nav-git"></small></a>
+        <a href="#paths">文件导航 <small>paths</small></a>
+        <a href="#add-round">新增 Round <small>template</small></a>
+      </nav>
+      <div class="nav-title">维护原则</div>
+      <p class="muted" style="font-size:13px;line-height:1.65">后续新增 Round、报告、Git 版本时，优先修改页面顶部的 <code>project-state</code> JSON 数据区。页面结构保持稳定。</p>
+    </aside>
+
+    <main class="content">
+      <section id="overview" class="hero">
+        <div class="panel hero-main">
+          <div class="topline">
+            <span class="badge b-blue" id="project-version-badge">Control Center</span>
+            <span class="badge b-amber" id="current-round-badge">Current Round</span>
+          </div>
+          <h1 id="project-title">AI Growth Operating System SaaS</h1>
+          <p id="project-summary"></p>
+          <div class="grid three">
+            <div class="card">
+              <h3>当前阶段</h3>
+              <p id="current-phase"></p>
+            </div>
+            <div class="card">
+              <h3>下一轮</h3>
+              <p id="next-round"></p>
+            </div>
+            <div class="card">
+              <h3>维护方式</h3>
+              <p>新增 Round、Git 版本、报告摘要都写入 <code>project-state</code>，Codex 后续可稳定读取和更新。</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel hero-aside">
+          <h2>Git 版本角标</h2>
+          <div class="git-corner">
+            <span class="badge b-amber" id="git-status-badge">Git 未初始化</span>
+            <code id="git-location">repository: pending</code>
+            <code id="git-branch">branch: pending</code>
+            <code id="git-commit">commit: pending</code>
+            <a class="action primary" id="git-link" href="#git">查看版本区</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics" aria-label="项目指标">
+        <div class="metric"><span>总体完成度</span><strong id="metric-progress">0%</strong></div>
+        <div class="metric"><span>规划 Round</span><strong id="metric-rounds">60</strong></div>
+        <div class="metric"><span>进行中</span><strong id="metric-active">1</strong></div>
+        <div class="metric"><span>已嵌入报告</span><strong id="metric-reports">0</strong></div>
+      </section>
+
+      <section id="completion" class="panel section">
+        <div class="section-head">
+          <div>
+            <h2>AI 完成程度导航</h2>
+            <p>这里按能力模块追踪完成度。后续每个 Round 完成时，只需要更新对应模块的百分比、状态和路径。</p>
+          </div>
+          <span class="badge b-cyan">module progress</span>
+        </div>
+        <div class="grid four" id="module-grid"></div>
+      </section>
+
+      <section id="rounds" class="panel section">
+        <div class="section-head">
+          <div>
+            <h2>60 Round 路线图</h2>
+            <p>Round 是项目推进的最小治理单位。每个卡片都应该最终对应一个报告路径、验证结果和 Git 版本。</p>
+          </div>
+          <span class="badge b-green">roadmap</span>
+        </div>
+        <div class="toolbar" id="round-filters">
+          <button class="active" data-filter="all">全部</button>
+          <button data-filter="in_progress">进行中</button>
+          <button data-filter="done">已完成</button>
+          <button data-filter="planned">未开始</button>
+          <button data-filter="blocked">阻塞</button>
+          <button data-filter="Phase 1">Phase 1</button>
+          <button data-filter="Phase 6">SaaS</button>
+          <button data-filter="Phase 7">AI 自动化</button>
+        </div>
+        <div class="round-list" id="round-list"></div>
+      </section>
+
+      <section id="reports" class="panel section">
+        <div class="section-head">
+          <div>
+            <h2>Round 报告嵌入区</h2>
+            <p>每轮结束后，把摘要、修改文件、验证命令和剩余风险写入这里。这个区是判断“是否真的完成”的证据入口。</p>
+          </div>
+          <span class="badge b-blue">evidence</span>
+        </div>
+        <div id="report-list"></div>
+      </section>
+
+      <section id="git" class="panel section">
+        <div class="section-head">
+          <div>
+            <h2>Git 版本控制与历史下载</h2>
+            <p>上传 Git 后，在 <code>project-state.git</code> 中填入仓库、分支、commit 和 commit URL。历史版本可以保存为快照；浏览器支持时可选择指定保存位置，不支持时使用默认下载。</p>
+          </div>
+          <span class="badge b-amber">version control</span>
+        </div>
+        <div class="callout" id="git-note"></div>
+        <div style="height:14px"></div>
+        <div id="version-list"></div>
+      </section>
+
+      <section id="paths" class="panel section">
+        <div class="section-head">
+          <div>
+            <h2>项目文件导航</h2>
+            <p>这些路径是后续 Codex 执行 Round 时优先检查和写入的位置。真实代码落地后，继续补充更细路径。</p>
+          </div>
+          <span class="badge b-violet">source map</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>路径</th><th>用途</th><th>操作</th></tr></thead>
+            <tbody id="path-table"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="add-round" class="panel section">
+        <div class="section-head">
+          <div>
+            <h2>新增 Round 模板</h2>
+            <p>这个模板用于保持新增 Round 的格式一致。填好后复制生成的 JSON 对象，放入 <code>project-state.rounds</code>。</p>
+          </div>
+          <span class="badge b-cyan">template</span>
+        </div>
+        <div class="input-grid">
+          <label>Round ID<input id="new-id" value="ROUND-SAAS-002" /></label>
+          <label>Phase<input id="new-phase" value="Phase 1" /></label>
+          <label>Round 名称<input id="new-name" value="SaaS 管理端基础导航" /></label>
+          <label>状态
+            <select id="new-status">
+              <option value="planned">planned</option>
+              <option value="in_progress">in_progress</option>
+              <option value="done">done</option>
+              <option value="blocked">blocked</option>
+            </select>
+          </label>
+          <label>交付物<textarea id="new-deliverable">建立 SaaS 管理端导航、客户入口、报告入口和控制中心回链。</textarea></label>
+          <label>报告路径<textarea id="new-report">runtime/task_results/ROUND-SAAS-002/ROUND_SUMMARY.md</textarea></label>
+        </div>
+        <div style="height:12px"></div>
+        <button class="action primary" id="generate-round">生成 Round JSON</button>
+        <div style="height:12px"></div>
+        <textarea id="round-output" readonly></textarea>
+      </section>
+
+      <div class="footer">AGOS Project Control Center. This file is designed to be the first page Codex reads before project editing.</div>
+    </main>
+  </div>
+
+  <script>
+    const state = JSON.parse(document.getElementById("project-state").textContent);
+
+    const statusLabel = {
+      planned: "未开始",
+      in_progress: "进行中",
+      done: "已完成",
+      blocked: "阻塞",
+      not_initialized: "Git 未初始化",
+      clean: "已上传 Git",
+      dirty: "本地有改动"
+    };
+    const statusClass = {
+      planned: "b-violet",
+      in_progress: "b-amber",
+      done: "b-green",
+      blocked: "b-red",
+      not_initialized: "b-amber",
+      clean: "b-green",
+      dirty: "b-amber"
+    };
+
+    function el(id) { return document.getElementById(id); }
+    function esc(value) {
+      return String(value ?? "").replace(/[&<>"']/g, ch => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+      }[ch]));
+    }
+    function badge(status) {
+      return `<span class="badge ${statusClass[status] || "b-blue"}">${statusLabel[status] || status}</span>`;
+    }
+    function copyText(text) {
+      navigator.clipboard?.writeText(text).catch(() => {});
+    }
+    async function saveSnapshot(version) {
+      const content = version.snapshot || `Version: ${version.label}\nGit: ${version.gitRef}\nLocation: ${version.location}\n`;
+      const filename = `${version.id}.txt`;
+      if (window.showSaveFilePicker) {
+        const handle = await window.showSaveFilePicker({
+          suggestedName: filename,
+          types: [{ description: "Text snapshot", accept: { "text/plain": [".txt"] } }]
+        });
+        const writable = await handle.createWritable();
+        await writable.write(content);
+        await writable.close();
+        return;
+      }
+      const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    }
+
+    function renderOverview() {
+      el("project-title").textContent = `${state.project.name} 控制中心`;
+      el("project-summary").textContent = state.project.activeFocus;
+      el("current-phase").textContent = state.project.currentPhase;
+      el("next-round").textContent = state.project.nextRound;
+      el("project-version-badge").textContent = `Control Center v${state.project.controlCenterVersion}`;
+      el("current-round-badge").textContent = `当前 ${state.project.currentRound}`;
+      el("metric-progress").textContent = `${state.project.overallProgress}%`;
+      el("metric-rounds").textContent = state.metrics.roundsPlanned;
+      el("metric-active").textContent = state.metrics.roundsInProgress;
+      el("metric-reports").textContent = state.metrics.reportsEmbedded;
+      el("nav-version").textContent = `v${state.project.controlCenterVersion}`;
+      el("nav-progress").textContent = `${state.project.overallProgress}%`;
+      el("nav-reports").textContent = state.metrics.reportsEmbedded;
+      el("nav-git").textContent = state.git.status === "not_initialized" ? "pending" : state.git.latestCommit;
+    }
+
+    function renderGit() {
+      const git = state.git;
+      el("git-status-badge").className = `badge ${statusClass[git.status] || "b-blue"}`;
+      el("git-status-badge").textContent = statusLabel[git.status] || git.status;
+      el("git-location").textContent = `repository: ${git.repositoryUrl || git.uploadLocationLabel}`;
+      el("git-branch").textContent = `branch: ${git.branch || "pending"}`;
+      el("git-commit").textContent = `commit: ${git.latestCommit || "pending"}`;
+      el("git-note").innerHTML = esc(git.note);
+      if (git.latestCommitUrl) {
+        el("git-link").href = git.latestCommitUrl;
+        el("git-link").textContent = "打开当前 commit";
+      }
+    }
+
+    function renderModules() {
+      el("module-grid").innerHTML = state.modules.map(item => `
+        <article class="card">
+          <div class="topline">
+            <h3>${esc(item.name)}</h3>
+            ${badge(item.status)}
+          </div>
+          <div class="bar" style="--value:${Number(item.progress) || 0}%"><i></i></div>
+          <p><strong>${Number(item.progress) || 0}%</strong> · <code>${esc(item.ownerPath)}</code></p>
+          <p>${esc(item.next)}</p>
+        </article>
+      `).join("");
+    }
+
+    function renderRounds(filter = "all") {
+      const rounds = state.rounds.filter(r => filter === "all" || r.status === filter || r.phase === filter);
+      el("round-list").innerHTML = rounds.map(r => `
+        <article class="round-card">
+          <div class="round-top">
+            <h3 class="round-title">${esc(r.id)} · ${esc(r.name)}</h3>
+            ${badge(r.status)}
+          </div>
+          <div class="bar" style="--value:${Number(r.progress) || 0}%"><i></i></div>
+          <ul>
+            <li>${esc(r.phase)}</li>
+            <li>交付物：${esc(r.deliverable)}</li>
+            <li>报告：<code>${esc(r.report)}</code></li>
+          </ul>
+        </article>
+      `).join("");
+    }
+
+    function renderReports() {
+      el("report-list").innerHTML = state.reports.map(report => `
+        <article class="card" style="margin-bottom:12px">
+          <div class="topline">
+            <h3>${esc(report.id)} · ${esc(report.title)}</h3>
+            ${badge(report.status)}
+          </div>
+          <p>${esc(report.date)} · ${esc(report.summary)}</p>
+          <div class="table-wrap">
+            <table>
+              <tbody>
+                <tr><th>修改文件</th><td>${report.files.map(f => `<code>${esc(f)}</code>`).join(" ")}</td></tr>
+                <tr><th>验证结果</th><td>${report.verification.map(v => esc(v)).join("；")}</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    function renderVersions() {
+      el("version-list").innerHTML = state.versions.map((version, index) => `
+        <div class="version-row">
+          <div>
+            <h3>${esc(version.label)}</h3>
+            <p>${esc(version.date)} · Git: <code>${esc(version.gitRef)}</code> · 位置：<code>${esc(version.location)}</code></p>
+            <p>${esc(version.notes)}</p>
+          </div>
+          <div class="version-actions">
+            <button class="action primary" data-version="${index}">保存快照</button>
+            <button class="copy-btn" data-copy="${esc(version.location)}">复制位置</button>
+          </div>
+        </div>
+      `).join("");
+      document.querySelectorAll("[data-version]").forEach(btn => {
+        btn.addEventListener("click", () => saveSnapshot(state.versions[Number(btn.dataset.version)]));
+      });
+      document.querySelectorAll("[data-copy]").forEach(btn => {
+        btn.addEventListener("click", () => copyText(btn.dataset.copy));
+      });
+    }
+
+    function renderPaths() {
+      el("path-table").innerHTML = state.paths.map(item => `
+        <tr>
+          <td><code>${esc(item.path)}</code></td>
+          <td>${esc(item.purpose)}</td>
+          <td><button class="copy-btn" data-copy="${esc(item.path)}">复制路径</button></td>
+        </tr>
+      `).join("");
+      document.querySelectorAll("#path-table [data-copy]").forEach(btn => {
+        btn.addEventListener("click", () => copyText(btn.dataset.copy));
+      });
+    }
+
+    function bindFilters() {
+      el("round-filters").addEventListener("click", event => {
+        const button = event.target.closest("button[data-filter]");
+        if (!button) return;
+        document.querySelectorAll("#round-filters button").forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+        renderRounds(button.dataset.filter);
+      });
+    }
+
+    function bindRoundTemplate() {
+      el("generate-round").addEventListener("click", () => {
+        const data = {
+          id: el("new-id").value.trim(),
+          phase: el("new-phase").value.trim(),
+          name: el("new-name").value.trim(),
+          status: el("new-status").value,
+          progress: el("new-status").value === "done" ? 100 : 0,
+          deliverable: el("new-deliverable").value.trim(),
+          report: el("new-report").value.trim()
+        };
+        el("round-output").value = JSON.stringify(data, null, 2);
+      });
+    }
+
+    renderOverview();
+    renderGit();
+    renderModules();
+    renderRounds();
+    renderReports();
+    renderVersions();
+    renderPaths();
+    bindFilters();
+    bindRoundTemplate();
+  </script>
+</body>
+</html>
