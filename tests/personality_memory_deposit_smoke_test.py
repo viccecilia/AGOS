@@ -14,11 +14,12 @@ from services.personality_memory_deposit import PersonalityMemoryDeposit
 def main() -> None:
     root = Path("runtime/test_personality_memory")
     reviews = Path("runtime/test_personality_reviews")
-    for path in [root, reviews]:
+    long_term = Path("runtime/test_personality_memory_long_term")
+    for path in [root, reviews, long_term]:
         if path.exists():
             shutil.rmtree(path)
 
-    deposit = PersonalityMemoryDeposit(root, reviews)
+    deposit = PersonalityMemoryDeposit(root, reviews, long_term)
     approved = deposit.deposit(
         {
             "category": "approved_personality",
@@ -47,10 +48,17 @@ def main() -> None:
     assert status["bestPersonality"]["tone"] == "trusted_guide"
     assert status["failedPersonality"]["tone"] == "aggressive_hook"
     assert status["personalityDrift"] == "needs_human_review"
+    assert status["personalityTimeline"], "Personality Timeline must be created"
     assert (reviews / "PERSONALITY_REVIEW_REPORT.json").exists()
+    assert (long_term / "best_tone.json").exists()
+    assert (long_term / "best_style.json").exists()
+    assert (long_term / "failed_personality.json").exists()
+    assert (long_term / "approved_personality.json").exists()
+    assert (long_term / "personality_timeline.json").exists()
 
     shutil.rmtree(root)
     shutil.rmtree(reviews)
+    shutil.rmtree(long_term)
     print("personality_memory_deposit_smoke_test passed")
 
 

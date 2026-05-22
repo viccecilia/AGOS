@@ -11,10 +11,21 @@ from services.runtime_persistence import utc_now_iso
 
 
 class PersonalityMemoryDeposit:
-    def __init__(self, root: str | Path = "runtime/personality", reviews_root: str | Path = "runtime/personality_reviews") -> None:
+    def __init__(
+        self,
+        root: str | Path = "runtime/personality",
+        reviews_root: str | Path = "runtime/personality_reviews",
+        long_term_root: str | Path = "runtime/personality_memory",
+    ) -> None:
         self.root = Path(root)
         self.reviews_root = Path(reviews_root)
+        self.long_term_root = Path(long_term_root)
         self.memory_path = self.root / "personality_memory.json"
+        self.best_tone_path = self.long_term_root / "best_tone.json"
+        self.best_style_path = self.long_term_root / "best_style.json"
+        self.failed_personality_path = self.long_term_root / "failed_personality.json"
+        self.approved_personality_path = self.long_term_root / "approved_personality.json"
+        self.timeline_path = self.long_term_root / "personality_timeline.json"
 
     def deposit(self, signal: dict[str, Any]) -> dict[str, Any]:
         memory = self.load()
@@ -39,6 +50,7 @@ class PersonalityMemoryDeposit:
         memory["updated_at"] = utc_now_iso()
         self.root.mkdir(parents=True, exist_ok=True)
         self.memory_path.write_text(json.dumps(memory, ensure_ascii=False, indent=2, sort_keys=True), encoding="utf-8")
+        self.write_long_term_memory(category, payload)
         self.write_review_report(memory)
         return payload
 
@@ -91,8 +103,49 @@ class PersonalityMemoryDeposit:
             "rejectedTone": memory.get("rejected_tone", [])[-5:],
             "approvedPersonality": memory.get("approved_personality", [])[-5:],
             "rejectedPersonality": memory.get("rejected_personality", [])[-5:],
+            "personalityTimeline": self.load_timeline()[-20:],
             "personalityDrift": "needs_human_review" if memory.get("failed_personality") else "clear",
         }
+
+    def write_long_term_memory(self, category: str, payload: dict[str, Any]) -> None:
+        self.long_term_root.mkdir(parents=True, exist_ok=True)
+        if category in {"approved_personality", "best_personality", "approved_tone"}:
+            self._append_json(self.best_tone_path, payload)
+            self._append_json(self.best_style_path, payload)
+            self._append_json(self.approved_personality_path, payload)
+            timeline_type = "approved_personality"
+        elif category in {"rejected_personality", "failed_personality", "rejected_tone"}:
+            self._append_json(self.failed_personality_path, payload)
+            timeline_type = "failed_personality"
+        else:
+            timeline_type = category
+        self._append_json(
+            self.timeline_path,
+            {
+                "timeline_id": f"personality_timeline_{utc_now_iso().replace(':', '-')}",
+                "type": timeline_type,
+                "tone": payload.get("tone", ""),
+                "platform": payload.get("platform", ""),
+                "market": payload.get("market", ""),
+                "style": payload.get("style", []),
+                "reason": payload.get("reason", ""),
+                "created_at": utc_now_iso(),
+            },
+        )
+
+    def load_timeline(self) -> list[dict[str, Any]]:
+        if not self.timeline_path.exists():
+            return []
+        return json.loads(self.timeline_path.read_text(encoding="utf-8"))
+
+    @staticmethod
+    def _append_json(path: Path, payload: dict[str, Any]) -> None:
+        items: list[dict[str, Any]] = []
+        if path.exists():
+            items = json.loads(path.read_text(encoding="utf-8"))
+        items.append(payload)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(items, ensure_ascii=False, indent=2, sort_keys=True), encoding="utf-8")
 
     def write_review_report(self, memory: dict[str, Any]) -> Path:
         self.reviews_root.mkdir(parents=True, exist_ok=True)
