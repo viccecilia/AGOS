@@ -1,0 +1,176 @@
+{
+  "correctionCenter": [
+    {
+      "action": "Approve, reject, or modify before continuing.",
+      "issue": "Human Review Gate",
+      "severity": "high",
+      "signal": "0 pending review items",
+      "status": "clear"
+    },
+    {
+      "action": "Run runtime smoke tests when errors appear.",
+      "issue": "Code Check",
+      "severity": "medium",
+      "signal": "no current error",
+      "status": "clear"
+    },
+    {
+      "action": "Validate locally before any external integration.",
+      "issue": "Runtime Validation",
+      "severity": "medium",
+      "signal": "Local runtime only; no platform automation.",
+      "status": "needs_runtime_validation"
+    }
+  ],
+  "current_runtime_stage": "Analyze",
+  "learningDeposits": [],
+  "reviewQueue": [],
+  "runtimePipeline": [
+    {
+      "id": "Scout",
+      "label": "Scout",
+      "note": "发现候选问题",
+      "status": "done"
+    },
+    {
+      "id": "Collect",
+      "label": "Collect",
+      "note": "收集问题与来源",
+      "status": "done"
+    },
+    {
+      "id": "Analyze",
+      "label": "Analyze",
+      "note": "分析痛点和情绪",
+      "status": "current"
+    },
+    {
+      "id": "Classify",
+      "label": "Classify",
+      "note": "分类到库",
+      "status": "waiting"
+    },
+    {
+      "id": "Prioritize",
+      "label": "Prioritize",
+      "note": "排序高价值机会",
+      "status": "waiting"
+    },
+    {
+      "id": "Strategy",
+      "label": "Strategy",
+      "note": "生成策略",
+      "status": "waiting"
+    },
+    {
+      "id": "Generate",
+      "label": "Generate",
+      "note": "生成回复/内容",
+      "status": "waiting"
+    },
+    {
+      "id": "Human Review",
+      "label": "Human Review",
+      "note": "等待人工 Gate",
+      "status": "waiting"
+    },
+    {
+      "id": "Learn",
+      "label": "Learn",
+      "note": "学习反馈",
+      "status": "waiting"
+    },
+    {
+      "id": "Deposit",
+      "label": "Deposit",
+      "note": "沉淀记忆",
+      "status": "waiting"
+    }
+  ],
+  "runtimeQueue": [
+    {
+      "attempts": 0,
+      "created_at": "2026-05-22T04:49:57+00:00",
+      "payload": {
+        "cycle": "CYCLE-0045",
+        "stage": "Scout",
+        "workspace": "jag_app_growth"
+      },
+      "queue_id": "CYCLE-0045_analyze",
+      "status": "pending",
+      "type": "待分析",
+      "updated_at": "2026-05-22T04:49:57+00:00"
+    }
+  ],
+  "runtimeStatus": "RUNNING",
+  "runtimeWorkspace": {
+    "focusPainPoint": "stage_advanced_to_Analyze",
+    "focusPlatforms": [
+      "Local Runtime"
+    ],
+    "industryPack": "Travel Pack",
+    "riskStatus": "running",
+    "targetMarket": "local",
+    "todayGoal": "Run local Runtime Engine safely.",
+    "workspace": "jag_app_growth",
+    "workspaceStatus": "running"
+  },
+  "socialRuntimeMatrix": [],
+  "systemControl": {
+    "buttons": [
+      "启动",
+      "停止"
+    ],
+    "currentCycle": "CYCLE-0045",
+    "currentIndustryPack": "Travel Pack",
+    "currentWorkspace": "jag_app_growth",
+    "lastRunTime": "2026-05-22T04:53:31+00:00",
+    "status": "RUNNING"
+  },
+  "warRoomFeed": [
+    {
+      "aiAction": "Runtime initialized",
+      "audience": "jag_app_growth",
+      "country": "local",
+      "emotion": "n/a",
+      "language": "n/a",
+      "sourcePlatform": "Local Runtime",
+      "status": "running",
+      "time": "04:49:57",
+      "type": "initialize"
+    },
+    {
+      "aiAction": "Runtime entered running state",
+      "audience": "jag_app_growth",
+      "country": "local",
+      "emotion": "n/a",
+      "language": "n/a",
+      "sourcePlatform": "Local Runtime",
+      "status": "running",
+      "time": "04:49:57",
+      "type": "start"
+    },
+    {
+      "aiAction": "Runtime advanced to Collect",
+      "audience": "jag_app_growth",
+      "country": "local",
+      "emotion": "n/a",
+      "language": "n/a",
+      "sourcePlatform": "Local Runtime",
+      "status": "running",
+      "time": "04:49:57",
+      "type": "Collect"
+    },
+    {
+      "aiAction": "Runtime advanced to Analyze",
+      "audience": "jag_app_growth",
+      "country": "local",
+      "emotion": "n/a",
+      "language": "n/a",
+      "sourcePlatform": "Local Runtime",
+      "status": "running",
+      "time": "04:52:13",
+      "type": "Analyze"
+    }
+  ]
+}

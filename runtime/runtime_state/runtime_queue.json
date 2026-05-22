@@ -1,0 +1,15 @@
+[
+  {
+    "attempts": 0,
+    "created_at": "2026-05-22T04:49:57+00:00",
+    "payload": {
+      "cycle": "CYCLE-0045",
+      "stage": "Scout",
+      "workspace": "jag_app_growth"
+    },
+    "queue_id": "CYCLE-0045_analyze",
+    "status": "pending",
+    "type": "待分析",
+    "updated_at": "2026-05-22T04:49:57+00:00"
+  }
+]

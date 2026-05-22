@@ -525,28 +525,28 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.45",
+    "controlCenterVersion": "0.1.46",
     "lastUpdated": "2026-05-22",
-    "currentPhase": "AI War Room / Runtime OS",
-    "currentRound": "ROUND-WAR-ROOM-UI-001",
-    "nextRound": "等待用户验收浅色 Runtime OS UI",
-    "overallProgress": 84,
-    "activeFocus": "AGOS 战情室已重构为 AI Runtime Operating System：顶部 Runtime Bar、Pipeline、实时战情流、Workspace Card、Social Matrix、Cycle Timeline、Strategy Evolution 和 Correction Center 形成一个运行态指挥界面。"
+    "currentPhase": "Runtime OS / Real Operation",
+    "currentRound": "ROUND-RUNTIME-ENGINE-001",
+    "nextRound": "Human acceptance for Local Runtime Engine foundation",
+    "overallProgress": 86,
+    "activeFocus": "AGOS 已从 Runtime UI 模拟升级为真正的本地 Runtime Engine：状态机、队列、持久化、事件日志、人工审核 Gate、记忆沉淀和 HTML Runtime Bridge 已落地。"
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.45 Lighten AGOS runtime OS UI",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.45",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.45",
-    "note": "Runtime OS UI changed from dark command-screen styling to a light professional control-console theme."
+    "latestCommit": "agos-v0.1.46 Add local runtime engine foundation",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.46",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.46",
+    "note": "Local Runtime Engine foundation mapped to GitHub tag agos-v0.1.46. Runtime is local-only and does not automate external platforms."
   },
   "metrics": {
-    "roundsPlanned": 99,
-    "roundsCompleted": 43,
+    "roundsPlanned": 100,
+    "roundsCompleted": 44,
     "roundsInProgress": 0,
-    "reportsEmbedded": 49
+    "reportsEmbedded": 50
   },
   "modules": [
     {
@@ -680,6 +680,38 @@
     }
   ],
   "reports": [
+    {
+      "id": "ROUND-RUNTIME-ENGINE-001",
+      "title": "AGOS Local Runtime Engine Foundation",
+      "date": "2026-05-22",
+      "status": "done",
+      "summary": "新增真正可运行的本地 Runtime Engine，支持状态切换、Pipeline 节点流转、JSON 持久化、事件日志、Queue、Human Review Gate、Memory Deposit 和 HTML Runtime Bridge。",
+      "files": [
+        "services/runtime_engine.py",
+        "services/runtime_state_machine.py",
+        "services/runtime_persistence.py",
+        "services/runtime_queue.py",
+        "services/human_review_runtime.py",
+        "services/runtime_memory_deposit.py",
+        "services/runtime_ui_bridge.py",
+        "runtime/runtime_state/",
+        "runtime/runtime_logs/",
+        "tests/runtime_engine_smoke_test.py",
+        "tests/runtime_queue_smoke_test.py",
+        "tests/runtime_memory_deposit_smoke_test.py",
+        "tests/runtime_ui_bridge_smoke_test.py",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "passed: python -m compileall services tests",
+        "passed: python tests\\runtime_engine_smoke_test.py",
+        "passed: python tests\\runtime_queue_smoke_test.py",
+        "passed: python tests\\runtime_memory_deposit_smoke_test.py",
+        "passed: python tests\\runtime_ui_bridge_smoke_test.py",
+        "passed: python tests\\war_room_runtime_ui_smoke_test.py",
+        "passed: browser runtime bridge update Collect -> Analyze"
+      ]
+    },
     {
       "id": "ROUND-WAR-ROOM-UI-001",
       "title": "AGOS Runtime OS UI Reconstruction",
@@ -1590,6 +1622,15 @@
     }
   ],
   "versions": [
+    {
+      "id": "agos-v0.1.46-runtime-engine",
+      "label": "Control Center v0.1.46",
+      "date": "2026-05-22",
+      "gitRef": "agos-v0.1.46",
+      "location": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.46",
+      "notes": "Adds local Runtime Engine foundation with JSON state, event logs, queue, review gate, memory deposit, and HTML bridge.",
+      "snapshot": "AGOS Project Control Center v0.1.46\nRound: ROUND-RUNTIME-ENGINE-001 completed\nStatus: Local Runtime Engine foundation added\nNo external platform automation enabled.\n"
+    },
     {
       "id": "agos-v0.1.45-runtime-os-light",
       "label": "Control Center v0.1.45",
@@ -2976,6 +3017,16 @@
       "deliverable": "Runtime OS UI with fixed runtime bar, pipeline, feed stream, runtime workspace card, social matrix, collapsed cycle timeline, strategy evolution timeline, and correction center.",
       "report": "runtime/task_results/ROUND-WAR-ROOM-UI-001/ROUND_SUMMARY.md",
       "summary": "This round does not add real automation. It reconstructs the War Room page into an AI Runtime Operating System UI so the user can immediately see what AGOS is doing, which runtime stage is active, what needs human/code/runtime review, and whether learning drift is occurring."
+    },
+    {
+      "id": "ROUND-RUNTIME-ENGINE-001",
+      "phase": "RUNTIME_OS / REAL_OPERATION",
+      "name": "AGOS_LOCAL_RUNTIME_ENGINE_FOUNDATION",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "Local Runtime Engine, Runtime State Machine, JSON persistence, event logs, runtime queue, human review gate, memory deposit, and HTML runtime bridge.",
+      "report": "runtime/task_results/ROUND-RUNTIME-ENGINE-001/ROUND_SUMMARY.md",
+      "summary": "This round upgrades AGOS from static Runtime UI simulation to a local Runtime Engine that can start, stop, advance nodes, write runtime state, append event logs, manage queues, pause at Human Review, deposit local memory, and export runtime state for the HTML bridge."
     }
   ],
   "realGrowthVerification": {
@@ -4443,6 +4494,18 @@
       return 'b-amber';
     }
 
+    function mergeRuntimeBridgeData(runtimeData) {
+      if (!runtimeData || typeof runtimeData !== 'object') return;
+      state.warRoomGrowth = {
+        ...(state.warRoomGrowth || {}),
+        ...runtimeData,
+        systemControl: {
+          ...((state.warRoomGrowth || {}).systemControl || {}),
+          ...(runtimeData.systemControl || {})
+        }
+      };
+    }
+
     function renderWarRoomGrowth() {
       const wr = state.warRoomGrowth || {};
       const control = wr.systemControl || {};
@@ -4461,8 +4524,14 @@
         '<div class="runtime-actions"><button class="primary" type="button" data-runtime-action="start">启动</button><button class="danger" type="button" data-runtime-action="stop">停止</button></div>';
       el('war-room-control-panel').querySelectorAll('[data-runtime-action]').forEach(button => {
         button.addEventListener('click', () => {
-          el('war-room-status').textContent = button.dataset.runtimeAction === 'start' ? 'RUNNING' : 'STOPPED';
-          el('war-room-status').className = 'badge ' + runtimeBadgeClass(el('war-room-status').textContent);
+          const nextStatus = button.dataset.runtimeAction === 'start' ? 'RUNNING' : 'STOPPED';
+          mergeRuntimeBridgeData({
+            runtimeStatus: nextStatus,
+            current_runtime_stage: button.dataset.runtimeAction === 'start' ? (wr.current_runtime_stage || 'Scout') : (wr.current_runtime_stage || 'Scout'),
+            systemControl: { status: nextStatus }
+          });
+          renderWarRoomGrowth();
+          fetchRuntimeBridgeState();
         });
       });
       el('runtime-drift-banner').textContent = wr.isLearningDrifting ? 'AGOS 正在学歪风险：需要人工审核样例结论，禁止把样例当成真实反馈。' : 'AGOS 学习方向正常。';
@@ -4499,6 +4568,19 @@
       ).join('');
       el('war-room-intelligence-trace').textContent = JSON.stringify(wr.intelligenceCollectionTrace || []);
       el('war-room-learning-deposit').textContent = JSON.stringify(wr.learningDepositTrace || []);
+    }
+
+    async function fetchRuntimeBridgeState() {
+      if (location.protocol !== "http:" && location.protocol !== "https:") return;
+      try {
+        const response = await fetch(`runtime/runtime_state/ui_state.json?runtime_bridge=${Date.now()}`, { cache: "no-store" });
+        if (!response.ok) return;
+        const runtimeData = await response.json();
+        mergeRuntimeBridgeData(runtimeData);
+        renderWarRoomGrowth();
+      } catch (error) {
+        console.warn("Runtime bridge state fetch failed", error);
+      }
     }
 
 
@@ -4712,6 +4794,7 @@
     renderRealGrowth();
     renderPhaseBlueprint();
     renderWarRoomGrowth();
+    fetchRuntimeBridgeState();
     renderGit();
     renderModules();
     renderRounds();
@@ -4738,6 +4821,7 @@
     }
 
     setInterval(checkForControlCenterUpdate, 5000);
+    setInterval(fetchRuntimeBridgeState, 2500);
   </script>
 </body>
 </html>

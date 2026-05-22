@@ -1,0 +1,131 @@
+{
+  "correction_alerts": [],
+  "current_error": null,
+  "current_event": "stage_advanced_to_Analyze",
+  "current_stage": "Analyze",
+  "cycle": "CYCLE-0045",
+  "human_review": null,
+  "industry_pack": "Travel Pack",
+  "learning_deposits": [],
+  "learning_result": null,
+  "next_stage": "Classify",
+  "pipeline": [
+    {
+      "id": "Scout",
+      "label": "Scout",
+      "note": "发现候选问题",
+      "status": "done"
+    },
+    {
+      "id": "Collect",
+      "label": "Collect",
+      "note": "收集问题与来源",
+      "status": "done"
+    },
+    {
+      "id": "Analyze",
+      "label": "Analyze",
+      "note": "分析痛点和情绪",
+      "status": "current"
+    },
+    {
+      "id": "Classify",
+      "label": "Classify",
+      "note": "分类到库",
+      "status": "waiting"
+    },
+    {
+      "id": "Prioritize",
+      "label": "Prioritize",
+      "note": "排序高价值机会",
+      "status": "waiting"
+    },
+    {
+      "id": "Strategy",
+      "label": "Strategy",
+      "note": "生成策略",
+      "status": "waiting"
+    },
+    {
+      "id": "Generate",
+      "label": "Generate",
+      "note": "生成回复/内容",
+      "status": "waiting"
+    },
+    {
+      "id": "Human Review",
+      "label": "Human Review",
+      "note": "等待人工 Gate",
+      "status": "waiting"
+    },
+    {
+      "id": "Learn",
+      "label": "Learn",
+      "note": "学习反馈",
+      "status": "waiting"
+    },
+    {
+      "id": "Deposit",
+      "label": "Deposit",
+      "note": "沉淀记忆",
+      "status": "waiting"
+    }
+  ],
+  "review_queue": [],
+  "runtime_feed": [
+    {
+      "cycle": "CYCLE-0045",
+      "event": "initialize",
+      "industry_pack": "Travel Pack",
+      "result": "Runtime initialized",
+      "stage": "Scout",
+      "timestamp": "2026-05-22T04:49:57+00:00",
+      "workspace": "jag_app_growth"
+    },
+    {
+      "cycle": "CYCLE-0045",
+      "event": "start",
+      "industry_pack": "Travel Pack",
+      "result": "Runtime entered running state",
+      "stage": "Scout",
+      "timestamp": "2026-05-22T04:49:57+00:00",
+      "workspace": "jag_app_growth"
+    },
+    {
+      "cycle": "CYCLE-0045",
+      "event": "Collect",
+      "industry_pack": "Travel Pack",
+      "result": "Runtime advanced to Collect",
+      "stage": "Collect",
+      "timestamp": "2026-05-22T04:49:57+00:00",
+      "workspace": "jag_app_growth"
+    },
+    {
+      "cycle": "CYCLE-0045",
+      "event": "Analyze",
+      "industry_pack": "Travel Pack",
+      "result": "Runtime advanced to Analyze",
+      "stage": "Analyze",
+      "timestamp": "2026-05-22T04:52:13+00:00",
+      "workspace": "jag_app_growth"
+    }
+  ],
+  "runtime_queue": [
+    {
+      "attempts": 0,
+      "created_at": "2026-05-22T04:49:57+00:00",
+      "payload": {
+        "cycle": "CYCLE-0045",
+        "stage": "Scout",
+        "workspace": "jag_app_growth"
+      },
+      "queue_id": "CYCLE-0045_analyze",
+      "status": "pending",
+      "type": "待分析",
+      "updated_at": "2026-05-22T04:49:57+00:00"
+    }
+  ],
+  "status": "running",
+  "updated_at": "2026-05-22T04:53:31+00:00",
+  "workspace": "jag_app_growth"
+}
