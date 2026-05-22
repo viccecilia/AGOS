@@ -1,0 +1,13 @@
+{
+  "content": {
+    "cycle": "JAG-LAB-CYCLE-0001",
+    "learning": "sample data must not become real feedback",
+    "runtime_status": "running",
+    "stage": "Scout"
+  },
+  "created_at": "2026-05-22T06:06:42+00:00",
+  "deposit_id": "JAG-LAB_learning_events_2026-05-22T06-06-42+00-00",
+  "library": "Learning Events",
+  "reason": "Runtime recorded learning boundary.",
+  "workspace": "JAG-LAB"
+}

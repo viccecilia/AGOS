@@ -12,6 +12,7 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from services.runtime_engine import RuntimeEngine
 from services.runtime_persistence import RuntimePersistence
+from services.runtime_review_session import RuntimeReviewSession
 from services.runtime_ui_bridge import RuntimeUIBridge
 
 
@@ -24,7 +25,12 @@ def main() -> None:
         shutil.rmtree(root)
 
     persistence = RuntimePersistence(root / "state", root / "logs")
-    bridge = RuntimeUIBridge(RuntimeEngine(persistence=persistence))
+    bridge = RuntimeUIBridge(
+        RuntimeEngine(
+            persistence=persistence,
+            review_session=RuntimeReviewSession(root / "reviews"),
+        )
+    )
     state = bridge.engine.initialize(workspace="jag_app_growth", industry_pack="Travel Pack", cycle="CYCLE-0044")
     assert state["status"] == "idle"
 
@@ -49,6 +55,13 @@ def main() -> None:
     assert "fetchRuntimeBridgeState" in html
     assert "runtime/runtime_state/ui_state.json" in html
     assert re.search(r"setInterval\(fetchRuntimeBridgeState,\s*2500\)", html)
+
+    training_state = bridge.engine.run_training_cycle()
+    training_ui = bridge.export_ui_state()
+    assert training_state["workspace"] == "JAG-LAB"
+    assert training_ui["opportunityRanking"]
+    assert training_ui["runtimeIntelligenceFeed"]["best_answer"]
+    assert any(item["status"] in {"needs_human_review", "rejected"} for item in training_ui["correctionCenter"])
 
     shutil.rmtree(root)
     print("runtime ui bridge smoke test passed")

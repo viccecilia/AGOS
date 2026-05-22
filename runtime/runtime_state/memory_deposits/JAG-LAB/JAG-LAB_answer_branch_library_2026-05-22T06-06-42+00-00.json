@@ -1,0 +1,13 @@
+{
+  "content": {
+    "branch": "helpful rescue answer",
+    "cycle": "JAG-LAB-CYCLE-0001",
+    "runtime_status": "running",
+    "stage": "Scout"
+  },
+  "created_at": "2026-05-22T06:06:42+00:00",
+  "deposit_id": "JAG-LAB_answer_branch_library_2026-05-22T06-06-42+00-00",
+  "library": "Answer Branch Library",
+  "reason": "Runtime prepared answer branch direction.",
+  "workspace": "JAG-LAB"
+}

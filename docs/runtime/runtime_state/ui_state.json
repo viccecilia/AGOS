@@ -1,11 +1,23 @@
 {
   "correctionCenter": [
     {
+      "correction_id": "correction_2026-05-22T06-06-42+00-00",
+      "created_at": "2026-05-22T06:06:42+00:00",
+      "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+      "rejected_learning": {
+        "bad_style": "short promotional CTA",
+        "platform": "reddit"
+      },
+      "status": "rejected",
+      "target_id": "jag_lab_tokyo_transport_001",
+      "target_type": "platform_style"
+    },
+    {
       "action": "Approve, reject, or modify before continuing.",
       "issue": "Human Review Gate",
       "severity": "high",
-      "signal": "0 pending review items",
-      "status": "clear"
+      "signal": "1 pending review items",
+      "status": "needs_human_review"
     },
     {
       "action": "Run runtime smoke tests when errors appear.",
@@ -22,9 +34,215 @@
       "status": "needs_runtime_validation"
     }
   ],
-  "current_runtime_stage": "Analyze",
-  "learningDeposits": [],
-  "reviewQueue": [],
+  "current_runtime_stage": "Deposit",
+  "learningDeposits": [
+    {
+      "content": {
+        "branch": "helpful rescue answer",
+        "cycle": "JAG-LAB-CYCLE-0001",
+        "runtime_status": "running",
+        "stage": "Scout"
+      },
+      "created_at": "2026-05-22T06:06:42+00:00",
+      "deposit_id": "JAG-LAB_answer_branch_library_2026-05-22T06-06-42+00-00",
+      "library": "Answer Branch Library",
+      "reason": "Runtime prepared answer branch direction.",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "content": {
+        "cycle": "JAG-LAB-CYCLE-0001",
+        "industry_pack": "Travel Pack / Lab",
+        "runtime_status": "running",
+        "stage": "Scout"
+      },
+      "created_at": "2026-05-22T06:06:42+00:00",
+      "deposit_id": "JAG-LAB_industry_pack_memory_2026-05-22T06-06-42+00-00",
+      "library": "Industry Pack Memory",
+      "reason": "Runtime preserved industry pack scope.",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "content": {
+        "cycle": "JAG-LAB-CYCLE-0001",
+        "learning": "sample data must not become real feedback",
+        "runtime_status": "running",
+        "stage": "Scout"
+      },
+      "created_at": "2026-05-22T06:06:42+00:00",
+      "deposit_id": "JAG-LAB_learning_events_2026-05-22T06-06-42+00-00",
+      "library": "Learning Events",
+      "reason": "Runtime recorded learning boundary.",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "content": {
+        "cycle": "JAG-LAB-CYCLE-0001",
+        "pain_point": "Tokyo transport anxiety",
+        "runtime_status": "running",
+        "stage": "Scout"
+      },
+      "created_at": "2026-05-22T06:06:42+00:00",
+      "deposit_id": "JAG-LAB_pain_point_library_2026-05-22T06-06-42+00-00",
+      "library": "Pain Point Library",
+      "reason": "Runtime detected a pain cluster.",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "content": {
+        "cycle": "JAG-LAB-CYCLE-0001",
+        "runtime_status": "running",
+        "signal": "runtime question candidate",
+        "stage": "Scout"
+      },
+      "created_at": "2026-05-22T06:06:42+00:00",
+      "deposit_id": "JAG-LAB_question_inbox_2026-05-22T06-06-42+00-00",
+      "library": "Question Inbox",
+      "reason": "Runtime cycle captured candidate question context.",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "content": {
+        "cycle": "JAG-LAB-CYCLE-0001",
+        "runtime_status": "running",
+        "stage": "Scout",
+        "strategy": "rescue-first helpful answer"
+      },
+      "created_at": "2026-05-22T06:06:42+00:00",
+      "deposit_id": "JAG-LAB_strategy_memory_2026-05-22T06-06-42+00-00",
+      "library": "Strategy Memory",
+      "reason": "Runtime deposited strategy direction.",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "content": {
+        "cycle": "JAG-LAB-CYCLE-0001",
+        "runtime_status": "running",
+        "stage": "Scout",
+        "workspace_scope": "JAG-LAB"
+      },
+      "created_at": "2026-05-22T06:06:42+00:00",
+      "deposit_id": "JAG-LAB_workspace_memory_2026-05-22T06-06-42+00-00",
+      "library": "Workspace Memory",
+      "reason": "Runtime preserved workspace scope.",
+      "workspace": "JAG-LAB"
+    }
+  ],
+  "mislearningAlerts": [
+    {
+      "correction_id": "correction_2026-05-22T06-06-42+00-00",
+      "created_at": "2026-05-22T06:06:42+00:00",
+      "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+      "rejected_learning": {
+        "bad_style": "short promotional CTA",
+        "platform": "reddit"
+      },
+      "status": "rejected",
+      "target_id": "jag_lab_tokyo_transport_001",
+      "target_type": "platform_style"
+    }
+  ],
+  "opportunityRanking": [
+    {
+      "dimensions": {
+        "content_potential": 0.82,
+        "conversion_potential": 0.55,
+        "cross_platform_potential": 0.68,
+        "engagement_potential": 0.78,
+        "pain_strength": 0.85,
+        "reply_potential": 0.76
+      },
+      "question_id": "jag_lab_tokyo_transport_001",
+      "reasons": [
+        "痛点强：用户有明确焦虑或求助信号",
+        "内容潜力高：交通和路线问题适合多平台解释",
+        "回复潜力高：问题可直接给出帮助型答案"
+      ],
+      "total_score": 0.74,
+      "verdict": "high_value"
+    }
+  ],
+  "platformStyleDrift": [],
+  "reviewQueue": [
+    {
+      "content": {
+        "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
+        "reply_text": "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple.",
+        "strategy": "rescue-first helpful answer"
+      },
+      "created_at": "2026-05-22T06:06:42+00:00",
+      "cycle": "JAG-LAB-CYCLE-0001",
+      "review_id": "review_0001",
+      "stage": "Human Review",
+      "status": "needs_human_review",
+      "target_type": "runtime_training",
+      "updated_at": "2026-05-22T06:06:42+00:00",
+      "workspace": "JAG-LAB"
+    }
+  ],
+  "runtimeDrift": "needs_human_review",
+  "runtimeIntelligenceFeed": {
+    "best_answer": [
+      "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple."
+    ],
+    "best_hook": [
+      "用强场景开头，例如：第一次到东京站别先做这件事"
+    ],
+    "best_platform_style": [
+      {
+        "avoid": [
+          "标题党",
+          "硬广",
+          "过短回复"
+        ],
+        "cta": "弱 CTA 或无 CTA",
+        "hook": "先承认具体问题，再给可执行步骤",
+        "length": "long",
+        "platform": "reddit",
+        "question_id": "jag_lab_tokyo_transport_001",
+        "recommended_angle": "先承认具体问题，再给可执行步骤；围绕 I am confused about Tokyo train transfers and worr",
+        "style": "深度、真实、长回复"
+      },
+      {
+        "avoid": [
+          "长段解释",
+          "学术语气"
+        ],
+        "cta": "轻引导保存或评论",
+        "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
+        "length": "short",
+        "platform": "tiktok",
+        "question_id": "jag_lab_tokyo_transport_001",
+        "recommended_angle": "用强场景开头，例如：第一次到东京站别先做这件事；围绕 I am confused about Tokyo train transfers and worr",
+        "style": "Hook、情绪、短节奏"
+      },
+      {
+        "avoid": [
+          "无观点罗列",
+          "过度情绪"
+        ],
+        "cta": "引导讨论",
+        "hook": "一句观点先行，再给 2-3 个判断",
+        "length": "short-thread",
+        "platform": "x",
+        "question_id": "jag_lab_tokyo_transport_001",
+        "recommended_angle": "一句观点先行，再给 2-3 个判断；围绕 I am confused about Tokyo train transfers and worr",
+        "style": "快速、观点、趋势"
+      }
+    ],
+    "best_timing": [
+      "manual review before posting"
+    ],
+    "failed_hook": [
+      "same hook repeated"
+    ],
+    "failed_reply": [
+      "generic marketing reply"
+    ],
+    "failed_strategy": [
+      "short promotional CTA on Reddit"
+    ]
+  },
   "runtimePipeline": [
     {
       "id": "Scout",
@@ -42,49 +260,49 @@
       "id": "Analyze",
       "label": "Analyze",
       "note": "分析痛点和情绪",
-      "status": "current"
+      "status": "done"
     },
     {
       "id": "Classify",
       "label": "Classify",
       "note": "分类到库",
-      "status": "waiting"
+      "status": "done"
     },
     {
       "id": "Prioritize",
       "label": "Prioritize",
       "note": "排序高价值机会",
-      "status": "waiting"
+      "status": "done"
     },
     {
       "id": "Strategy",
       "label": "Strategy",
       "note": "生成策略",
-      "status": "waiting"
+      "status": "done"
     },
     {
       "id": "Generate",
       "label": "Generate",
       "note": "生成回复/内容",
-      "status": "waiting"
+      "status": "done"
     },
     {
       "id": "Human Review",
       "label": "Human Review",
       "note": "等待人工 Gate",
-      "status": "waiting"
+      "status": "done"
     },
     {
       "id": "Learn",
       "label": "Learn",
       "note": "学习反馈",
-      "status": "waiting"
+      "status": "done"
     },
     {
       "id": "Deposit",
       "label": "Deposit",
       "note": "沉淀记忆",
-      "status": "waiting"
+      "status": "current"
     }
   ],
   "runtimeQueue": [
@@ -100,19 +318,153 @@
       "status": "pending",
       "type": "待分析",
       "updated_at": "2026-05-22T04:49:57+00:00"
+    },
+    {
+      "attempts": 0,
+      "created_at": "2026-05-22T06:01:01+00:00",
+      "payload": {
+        "cycle": "JAG-LAB-CYCLE-0001",
+        "stage": "Scout",
+        "workspace": "JAG-LAB"
+      },
+      "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+      "status": "pending",
+      "type": "待分析",
+      "updated_at": "2026-05-22T06:01:01+00:00"
+    },
+    {
+      "attempts": 0,
+      "created_at": "2026-05-22T06:02:21+00:00",
+      "payload": {
+        "cycle": "JAG-LAB-CYCLE-0001",
+        "stage": "Scout",
+        "workspace": "JAG-LAB"
+      },
+      "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+      "status": "pending",
+      "type": "待分析",
+      "updated_at": "2026-05-22T06:02:21+00:00"
+    },
+    {
+      "attempts": 0,
+      "created_at": "2026-05-22T06:04:15+00:00",
+      "payload": {
+        "cycle": "JAG-LAB-CYCLE-0001",
+        "stage": "Scout",
+        "workspace": "JAG-LAB"
+      },
+      "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+      "status": "pending",
+      "type": "待分析",
+      "updated_at": "2026-05-22T06:04:15+00:00"
+    },
+    {
+      "attempts": 0,
+      "created_at": "2026-05-22T06:05:45+00:00",
+      "payload": {
+        "cycle": "JAG-LAB-CYCLE-0001",
+        "stage": "Scout",
+        "workspace": "JAG-LAB"
+      },
+      "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+      "status": "pending",
+      "type": "待分析",
+      "updated_at": "2026-05-22T06:05:45+00:00"
+    },
+    {
+      "attempts": 0,
+      "created_at": "2026-05-22T06:05:59+00:00",
+      "payload": {
+        "cycle": "JAG-LAB-CYCLE-0001",
+        "stage": "Scout",
+        "workspace": "JAG-LAB"
+      },
+      "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+      "status": "pending",
+      "type": "待分析",
+      "updated_at": "2026-05-22T06:05:59+00:00"
+    },
+    {
+      "attempts": 0,
+      "created_at": "2026-05-22T06:06:12+00:00",
+      "payload": {
+        "cycle": "JAG-LAB-CYCLE-0001",
+        "stage": "Scout",
+        "workspace": "JAG-LAB"
+      },
+      "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+      "status": "pending",
+      "type": "待分析",
+      "updated_at": "2026-05-22T06:06:12+00:00"
+    },
+    {
+      "attempts": 0,
+      "created_at": "2026-05-22T06:06:42+00:00",
+      "payload": {
+        "cycle": "JAG-LAB-CYCLE-0001",
+        "stage": "Scout",
+        "workspace": "JAG-LAB"
+      },
+      "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+      "status": "pending",
+      "type": "待分析",
+      "updated_at": "2026-05-22T06:06:42+00:00"
     }
   ],
+  "runtimeReviewReport": {
+    "created_at": "2026-05-22T06:06:42+00:00",
+    "cycle": "JAG-LAB-CYCLE-0001",
+    "effective": [
+      "用强场景开头，例如：第一次到东京站别先做这件事"
+    ],
+    "ineffective": [
+      "short promotional CTA on Reddit"
+    ],
+    "learned": [
+      "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple."
+    ],
+    "mislearned": [
+      {
+        "correction_id": "correction_2026-05-22T06-06-42+00-00",
+        "created_at": "2026-05-22T06:06:42+00:00",
+        "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+        "rejected_learning": {
+          "bad_style": "short promotional CTA",
+          "platform": "reddit"
+        },
+        "status": "rejected",
+        "target_id": "jag_lab_tokyo_transport_001",
+        "target_type": "platform_style"
+      }
+    ],
+    "needs_human_correction": [
+      {
+        "correction_id": "correction_2026-05-22T06-06-42+00-00",
+        "created_at": "2026-05-22T06:06:42+00:00",
+        "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+        "rejected_learning": {
+          "bad_style": "short promotional CTA",
+          "platform": "reddit"
+        },
+        "status": "rejected",
+        "target_id": "jag_lab_tokyo_transport_001",
+        "target_type": "platform_style"
+      }
+    ],
+    "review_id": "review_JAG-LAB-CYCLE-0001_2026-05-22T06-06-42+00-00",
+    "workspace": "JAG-LAB"
+  },
   "runtimeStatus": "RUNNING",
   "runtimeWorkspace": {
-    "focusPainPoint": "stage_advanced_to_Analyze",
+    "focusPainPoint": "runtime_training_cycle_completed",
     "focusPlatforms": [
       "Local Runtime"
     ],
-    "industryPack": "Travel Pack",
+    "industryPack": "Travel Pack / Lab",
     "riskStatus": "running",
     "targetMarket": "local",
     "todayGoal": "Run local Runtime Engine safely.",
-    "workspace": "jag_app_growth",
+    "workspace": "JAG-LAB",
     "workspaceStatus": "running"
   },
   "socialRuntimeMatrix": [],
@@ -121,56 +473,406 @@
       "启动",
       "停止"
     ],
-    "currentCycle": "CYCLE-0045",
-    "currentIndustryPack": "Travel Pack",
-    "currentWorkspace": "jag_app_growth",
-    "lastRunTime": "2026-05-22T04:53:31+00:00",
+    "currentCycle": "JAG-LAB-CYCLE-0001",
+    "currentIndustryPack": "Travel Pack / Lab",
+    "currentWorkspace": "JAG-LAB",
+    "lastRunTime": "2026-05-22T06:06:42+00:00",
     "status": "RUNNING"
   },
+  "trainingExplanations": [
+    {
+      "generated": null,
+      "platform_styles": null,
+      "question_id": "jag_lab_tokyo_transport_001",
+      "score": null,
+      "stage": "Scout",
+      "why": "发现问题包含明确迷路焦虑，适合进入训练沙盒。"
+    },
+    {
+      "generated": null,
+      "platform_styles": null,
+      "question_id": "jag_lab_tokyo_transport_001",
+      "score": null,
+      "stage": "Collect",
+      "why": "问题带有市场、平台和痛点字段，可以用于独立 JAG-LAB 训练。"
+    },
+    {
+      "generated": null,
+      "platform_styles": null,
+      "question_id": "jag_lab_tokyo_transport_001",
+      "score": {
+        "dimensions": {
+          "content_potential": 0.82,
+          "conversion_potential": 0.55,
+          "cross_platform_potential": 0.68,
+          "engagement_potential": 0.78,
+          "pain_strength": 0.85,
+          "reply_potential": 0.76
+        },
+        "question_id": "jag_lab_tokyo_transport_001",
+        "reasons": [
+          "痛点强：用户有明确焦虑或求助信号",
+          "内容潜力高：交通和路线问题适合多平台解释",
+          "回复潜力高：问题可直接给出帮助型答案"
+        ],
+        "total_score": 0.74,
+        "verdict": "high_value"
+      },
+      "stage": "Analyze",
+      "why": "痛点强度和回复潜力达到训练阈值。"
+    },
+    {
+      "generated": null,
+      "platform_styles": null,
+      "question_id": "jag_lab_tokyo_transport_001",
+      "score": null,
+      "stage": "Classify",
+      "why": "问题应归入交通焦虑、首次旅行和路线救援。"
+    },
+    {
+      "generated": null,
+      "platform_styles": null,
+      "question_id": "jag_lab_tokyo_transport_001",
+      "score": {
+        "dimensions": {
+          "content_potential": 0.82,
+          "conversion_potential": 0.55,
+          "cross_platform_potential": 0.68,
+          "engagement_potential": 0.78,
+          "pain_strength": 0.85,
+          "reply_potential": 0.76
+        },
+        "question_id": "jag_lab_tokyo_transport_001",
+        "reasons": [
+          "痛点强：用户有明确焦虑或求助信号",
+          "内容潜力高：交通和路线问题适合多平台解释",
+          "回复潜力高：问题可直接给出帮助型答案"
+        ],
+        "total_score": 0.74,
+        "verdict": "high_value"
+      },
+      "stage": "Prioritize",
+      "why": "Opportunity verdict=high_value，不是所有问题都会自动高价值。"
+    },
+    {
+      "generated": null,
+      "platform_styles": [
+        {
+          "avoid": [
+            "标题党",
+            "硬广",
+            "过短回复"
+          ],
+          "cta": "弱 CTA 或无 CTA",
+          "hook": "先承认具体问题，再给可执行步骤",
+          "length": "long",
+          "platform": "reddit",
+          "question_id": "jag_lab_tokyo_transport_001",
+          "recommended_angle": "先承认具体问题，再给可执行步骤；围绕 I am confused about Tokyo train transfers and worr",
+          "style": "深度、真实、长回复"
+        },
+        {
+          "avoid": [
+            "长段解释",
+            "学术语气"
+          ],
+          "cta": "轻引导保存或评论",
+          "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
+          "length": "short",
+          "platform": "tiktok",
+          "question_id": "jag_lab_tokyo_transport_001",
+          "recommended_angle": "用强场景开头，例如：第一次到东京站别先做这件事；围绕 I am confused about Tokyo train transfers and worr",
+          "style": "Hook、情绪、短节奏"
+        },
+        {
+          "avoid": [
+            "无观点罗列",
+            "过度情绪"
+          ],
+          "cta": "引导讨论",
+          "hook": "一句观点先行，再给 2-3 个判断",
+          "length": "short-thread",
+          "platform": "x",
+          "question_id": "jag_lab_tokyo_transport_001",
+          "recommended_angle": "一句观点先行，再给 2-3 个判断；围绕 I am confused about Tokyo train transfers and worr",
+          "style": "快速、观点、趋势"
+        }
+      ],
+      "question_id": "jag_lab_tokyo_transport_001",
+      "score": null,
+      "stage": "Strategy",
+      "why": "策略选择救援式回答，因为用户处于旅途中不确定状态。"
+    },
+    {
+      "generated": {
+        "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
+        "reply_text": "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple.",
+        "strategy": "rescue-first helpful answer"
+      },
+      "platform_styles": [
+        {
+          "avoid": [
+            "标题党",
+            "硬广",
+            "过短回复"
+          ],
+          "cta": "弱 CTA 或无 CTA",
+          "hook": "先承认具体问题，再给可执行步骤",
+          "length": "long",
+          "platform": "reddit",
+          "question_id": "jag_lab_tokyo_transport_001",
+          "recommended_angle": "先承认具体问题，再给可执行步骤；围绕 I am confused about Tokyo train transfers and worr",
+          "style": "深度、真实、长回复"
+        },
+        {
+          "avoid": [
+            "长段解释",
+            "学术语气"
+          ],
+          "cta": "轻引导保存或评论",
+          "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
+          "length": "short",
+          "platform": "tiktok",
+          "question_id": "jag_lab_tokyo_transport_001",
+          "recommended_angle": "用强场景开头，例如：第一次到东京站别先做这件事；围绕 I am confused about Tokyo train transfers and worr",
+          "style": "Hook、情绪、短节奏"
+        },
+        {
+          "avoid": [
+            "无观点罗列",
+            "过度情绪"
+          ],
+          "cta": "引导讨论",
+          "hook": "一句观点先行，再给 2-3 个判断",
+          "length": "short-thread",
+          "platform": "x",
+          "question_id": "jag_lab_tokyo_transport_001",
+          "recommended_angle": "一句观点先行，再给 2-3 个判断；围绕 I am confused about Tokyo train transfers and worr",
+          "style": "快速、观点、趋势"
+        }
+      ],
+      "question_id": "jag_lab_tokyo_transport_001",
+      "score": null,
+      "stage": "Generate",
+      "why": "回答生成遵循平台人格，Reddit 深度真实，TikTok 短 Hook，X 快速观点。"
+    },
+    {
+      "generated": null,
+      "platform_styles": null,
+      "question_id": "jag_lab_tokyo_transport_001",
+      "score": null,
+      "stage": "Human Review",
+      "why": "任何回答、策略和学习结论必须先进入人工 Gate。"
+    },
+    {
+      "generated": null,
+      "platform_styles": null,
+      "question_id": "jag_lab_tokyo_transport_001",
+      "score": null,
+      "stage": "Learn",
+      "why": "只学习被批准的方向，并记录错误学习被拒绝的原因。"
+    },
+    {
+      "generated": null,
+      "platform_styles": null,
+      "question_id": "jag_lab_tokyo_transport_001",
+      "score": null,
+      "stage": "Deposit",
+      "why": "沉淀 Best Answer、Best Hook、Failed Strategy 等 Runtime Intelligence。"
+    }
+  ],
   "warRoomFeed": [
     {
       "aiAction": "Runtime initialized",
-      "audience": "jag_app_growth",
+      "audience": "JAG-LAB",
       "country": "local",
       "emotion": "n/a",
       "language": "n/a",
       "sourcePlatform": "Local Runtime",
       "status": "running",
       "time": "04:49:57",
-      "type": "initialize"
+      "type": "initialize",
+      "why": "Runtime initialized"
     },
     {
       "aiAction": "Runtime entered running state",
-      "audience": "jag_app_growth",
+      "audience": "JAG-LAB",
       "country": "local",
       "emotion": "n/a",
       "language": "n/a",
       "sourcePlatform": "Local Runtime",
       "status": "running",
       "time": "04:49:57",
-      "type": "start"
+      "type": "start",
+      "why": "Runtime entered running state"
     },
     {
       "aiAction": "Runtime advanced to Collect",
-      "audience": "jag_app_growth",
+      "audience": "JAG-LAB",
       "country": "local",
       "emotion": "n/a",
       "language": "n/a",
       "sourcePlatform": "Local Runtime",
       "status": "running",
       "time": "04:49:57",
-      "type": "Collect"
+      "type": "Collect",
+      "why": "Runtime advanced to Collect"
     },
     {
       "aiAction": "Runtime advanced to Analyze",
-      "audience": "jag_app_growth",
+      "audience": "JAG-LAB",
       "country": "local",
       "emotion": "n/a",
       "language": "n/a",
       "sourcePlatform": "Local Runtime",
       "status": "running",
       "time": "04:52:13",
-      "type": "Analyze"
+      "type": "Analyze",
+      "why": "Runtime advanced to Analyze"
+    },
+    {
+      "aiAction": "Runtime initialized",
+      "audience": "JAG-LAB",
+      "country": "local",
+      "emotion": "n/a",
+      "language": "n/a",
+      "sourcePlatform": "Local Runtime",
+      "status": "running",
+      "time": "06:06:42",
+      "type": "initialize",
+      "why": "Runtime initialized"
+    },
+    {
+      "aiAction": "Runtime entered running state",
+      "audience": "JAG-LAB",
+      "country": "local",
+      "emotion": "n/a",
+      "language": "n/a",
+      "sourcePlatform": "Local Runtime",
+      "status": "running",
+      "time": "06:06:42",
+      "type": "start",
+      "why": "Runtime entered running state"
+    },
+    {
+      "aiAction": "发现问题包含明确迷路焦虑，适合进入训练沙盒。",
+      "audience": "JAG-LAB",
+      "country": "local",
+      "emotion": "n/a",
+      "language": "n/a",
+      "sourcePlatform": "Local Runtime",
+      "status": "running",
+      "time": "06:06:42",
+      "type": "Scout",
+      "why": "发现问题包含明确迷路焦虑，适合进入训练沙盒。"
+    },
+    {
+      "aiAction": "问题带有市场、平台和痛点字段，可以用于独立 JAG-LAB 训练。",
+      "audience": "JAG-LAB",
+      "country": "local",
+      "emotion": "n/a",
+      "language": "n/a",
+      "sourcePlatform": "Local Runtime",
+      "status": "running",
+      "time": "06:06:42",
+      "type": "Collect",
+      "why": "问题带有市场、平台和痛点字段，可以用于独立 JAG-LAB 训练。"
+    },
+    {
+      "aiAction": "痛点强度和回复潜力达到训练阈值。",
+      "audience": "JAG-LAB",
+      "country": "local",
+      "emotion": "n/a",
+      "language": "n/a",
+      "sourcePlatform": "Local Runtime",
+      "status": "running",
+      "time": "06:06:42",
+      "type": "Analyze",
+      "why": "痛点强度和回复潜力达到训练阈值。"
+    },
+    {
+      "aiAction": "问题应归入交通焦虑、首次旅行和路线救援。",
+      "audience": "JAG-LAB",
+      "country": "local",
+      "emotion": "n/a",
+      "language": "n/a",
+      "sourcePlatform": "Local Runtime",
+      "status": "running",
+      "time": "06:06:42",
+      "type": "Classify",
+      "why": "问题应归入交通焦虑、首次旅行和路线救援。"
+    },
+    {
+      "aiAction": "Opportunity verdict=high_value，不是所有问题都会自动高价值。",
+      "audience": "JAG-LAB",
+      "country": "local",
+      "emotion": "n/a",
+      "language": "n/a",
+      "sourcePlatform": "Local Runtime",
+      "status": "running",
+      "time": "06:06:42",
+      "type": "Prioritize",
+      "why": "Opportunity verdict=high_value，不是所有问题都会自动高价值。"
+    },
+    {
+      "aiAction": "策略选择救援式回答，因为用户处于旅途中不确定状态。",
+      "audience": "JAG-LAB",
+      "country": "local",
+      "emotion": "n/a",
+      "language": "n/a",
+      "sourcePlatform": "Local Runtime",
+      "status": "running",
+      "time": "06:06:42",
+      "type": "Strategy",
+      "why": "策略选择救援式回答，因为用户处于旅途中不确定状态。"
+    },
+    {
+      "aiAction": "回答生成遵循平台人格，Reddit 深度真实，TikTok 短 Hook，X 快速观点。",
+      "audience": "JAG-LAB",
+      "country": "local",
+      "emotion": "n/a",
+      "language": "n/a",
+      "sourcePlatform": "Local Runtime",
+      "status": "running",
+      "time": "06:06:42",
+      "type": "Generate",
+      "why": "回答生成遵循平台人格，Reddit 深度真实，TikTok 短 Hook，X 快速观点。"
+    },
+    {
+      "aiAction": "任何回答、策略和学习结论必须先进入人工 Gate。",
+      "audience": "JAG-LAB",
+      "country": "local",
+      "emotion": "n/a",
+      "language": "n/a",
+      "sourcePlatform": "Local Runtime",
+      "status": "running",
+      "time": "06:06:42",
+      "type": "Human Review",
+      "why": "任何回答、策略和学习结论必须先进入人工 Gate。"
+    },
+    {
+      "aiAction": "只学习被批准的方向，并记录错误学习被拒绝的原因。",
+      "audience": "JAG-LAB",
+      "country": "local",
+      "emotion": "n/a",
+      "language": "n/a",
+      "sourcePlatform": "Local Runtime",
+      "status": "running",
+      "time": "06:06:42",
+      "type": "Learn",
+      "why": "只学习被批准的方向，并记录错误学习被拒绝的原因。"
+    },
+    {
+      "aiAction": "沉淀 Best Answer、Best Hook、Failed Strategy 等 Runtime Intelligence。",
+      "audience": "JAG-LAB",
+      "country": "local",
+      "emotion": "n/a",
+      "language": "n/a",
+      "sourcePlatform": "Local Runtime",
+      "status": "running",
+      "time": "06:06:42",
+      "type": "Deposit",
+      "why": "沉淀 Best Answer、Best Hook、Failed Strategy 等 Runtime Intelligence。"
     }
   ]
 }

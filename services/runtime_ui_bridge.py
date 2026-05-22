@@ -49,6 +49,30 @@ class RuntimeUIBridge:
             "needs_code_check": "PAUSED",
             "needs_runtime_validation": "PAUSED",
         }.get(status, "STOPPED")
+        base_corrections = [
+            {
+                "issue": "Human Review Gate",
+                "status": "needs_human_review" if state.get("review_queue") else "clear",
+                "severity": "high",
+                "signal": f"{len(state.get('review_queue', []))} pending review items",
+                "action": "Approve, reject, or modify before continuing.",
+            },
+            {
+                "issue": "Code Check",
+                "status": "needs_code_check" if state.get("current_error") else "clear",
+                "severity": "medium",
+                "signal": state.get("current_error") or "no current error",
+                "action": "Run runtime smoke tests when errors appear.",
+            },
+            {
+                "issue": "Runtime Validation",
+                "status": "needs_runtime_validation",
+                "severity": "medium",
+                "signal": "Local runtime only; no platform automation.",
+                "action": "Validate locally before any external integration.",
+            },
+        ]
+        correction_center = list(state.get("mislearning_alerts", [])) + base_corrections
         return {
             "runtimeStatus": runtime_status,
             "current_runtime_stage": state.get("current_stage", "Scout"),
@@ -72,6 +96,7 @@ class RuntimeUIBridge:
                     "emotion": "n/a",
                     "status": state.get("status", "idle"),
                     "aiAction": event.get("result", ""),
+                    "why": event.get("result", ""),
                 }
                 for event in state.get("runtime_feed", [])
             ],
@@ -86,32 +111,19 @@ class RuntimeUIBridge:
                 "workspaceStatus": state.get("status", "idle"),
             },
             "socialRuntimeMatrix": [],
-            "correctionCenter": [
-                {
-                    "issue": "Human Review Gate",
-                    "status": "needs_human_review" if state.get("review_queue") else "clear",
-                    "severity": "high",
-                    "signal": f"{len(state.get('review_queue', []))} pending review items",
-                    "action": "Approve, reject, or modify before continuing.",
-                },
-                {
-                    "issue": "Code Check",
-                    "status": "needs_code_check" if state.get("current_error") else "clear",
-                    "severity": "medium",
-                    "signal": state.get("current_error") or "no current error",
-                    "action": "Run runtime smoke tests when errors appear.",
-                },
-                {
-                    "issue": "Runtime Validation",
-                    "status": "needs_runtime_validation",
-                    "severity": "medium",
-                    "signal": "Local runtime only; no platform automation.",
-                    "action": "Validate locally before any external integration.",
-                },
-            ],
+            "correctionCenter": correction_center,
             "reviewQueue": state.get("review_queue", []),
             "runtimeQueue": state.get("runtime_queue", []),
             "learningDeposits": state.get("learning_deposits", []),
+            "mislearningAlerts": state.get("mislearning_alerts", []),
+            "runtimeDrift": "needs_human_review" if state.get("mislearning_alerts") else "clear",
+            "platformStyleDrift": [
+                item for item in state.get("mislearning_alerts", []) if "平台" in item.get("issue", "") or "Tone" in item.get("issue", "")
+            ],
+            "opportunityRanking": [state["opportunity_score"]] if state.get("opportunity_score") else [],
+            "runtimeIntelligenceFeed": state.get("runtime_intelligence", {}),
+            "trainingExplanations": state.get("training_explanations", []),
+            "runtimeReviewReport": state.get("runtime_review_report"),
         }
 
 

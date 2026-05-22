@@ -525,28 +525,28 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.46",
+    "controlCenterVersion": "0.1.47",
     "lastUpdated": "2026-05-22",
-    "currentPhase": "Runtime OS / Real Operation",
-    "currentRound": "ROUND-RUNTIME-ENGINE-001",
-    "nextRound": "Human acceptance for Local Runtime Engine foundation",
-    "overallProgress": 86,
-    "activeFocus": "AGOS 已从 Runtime UI 模拟升级为真正的本地 Runtime Engine：状态机、队列、持久化、事件日志、人工审核 Gate、记忆沉淀和 HTML Runtime Bridge 已落地。"
+    "currentPhase": "Real Operation / AI Growth Training",
+    "currentRound": "ROUND-RUNTIME-TRAINING-001",
+    "nextRound": "Human acceptance for Runtime Training Stage",
+    "overallProgress": 88,
+    "activeFocus": "AGOS 已进入 Runtime Training Stage：JAG-LAB 沙盒、机会评分、平台人格训练、学歪检测、人工纠偏、Runtime Review 和 Intelligence Deposit 已开始训练 AGOS 的判断能力。"
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.46 Add local runtime engine foundation",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.46",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.46",
-    "note": "Local Runtime Engine foundation mapped to GitHub tag agos-v0.1.46. Runtime is local-only and does not automate external platforms."
+    "latestCommit": "agos-v0.1.47 Add runtime intelligence training stage",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.47",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.47",
+    "note": "Runtime Training Stage mapped to GitHub tag agos-v0.1.47. Training remains local and uses JAG-LAB sandbox only."
   },
   "metrics": {
-    "roundsPlanned": 100,
-    "roundsCompleted": 44,
+    "roundsPlanned": 101,
+    "roundsCompleted": 45,
     "roundsInProgress": 0,
-    "reportsEmbedded": 50
+    "reportsEmbedded": 51
   },
   "modules": [
     {
@@ -680,6 +680,39 @@
     }
   ],
   "reports": [
+    {
+      "id": "ROUND-RUNTIME-TRAINING-001",
+      "title": "AGOS Runtime Training Stage",
+      "date": "2026-05-22",
+      "status": "done",
+      "summary": "新增 JAG-LAB 训练沙盒、机会评分、平台人格训练、Human Correction Runtime、学歪检测、Runtime Review 和 Intelligence Deposit。",
+      "files": [
+        "services/opportunity_scoring_engine.py",
+        "services/platform_personality_engine.py",
+        "services/runtime_correction_engine.py",
+        "services/runtime_review_session.py",
+        "services/runtime_engine.py",
+        "services/runtime_ui_bridge.py",
+        "runtime/runtime_reviews/",
+        "runtime/runtime_state/",
+        "docs/project_control_center.html",
+        "tests/runtime_training_cycle_smoke_test.py",
+        "tests/opportunity_scoring_smoke_test.py",
+        "tests/platform_personality_smoke_test.py",
+        "tests/runtime_mislearning_smoke_test.py",
+        "tests/runtime_review_report_smoke_test.py"
+      ],
+      "verification": [
+        "passed: python -m compileall services tests",
+        "passed: python tests\\runtime_engine_smoke_test.py",
+        "passed: python tests\\runtime_training_cycle_smoke_test.py",
+        "passed: python tests\\opportunity_scoring_smoke_test.py",
+        "passed: python tests\\platform_personality_smoke_test.py",
+        "passed: python tests\\runtime_mislearning_smoke_test.py",
+        "passed: python tests\\runtime_review_report_smoke_test.py",
+        "passed: browser JAG-LAB training UI shows Deposit, opportunity ranking, intelligence feed, correction alerts"
+      ]
+    },
     {
       "id": "ROUND-RUNTIME-ENGINE-001",
       "title": "AGOS Local Runtime Engine Foundation",
@@ -1622,6 +1655,15 @@
     }
   ],
   "versions": [
+    {
+      "id": "agos-v0.1.47-runtime-training",
+      "label": "Control Center v0.1.47",
+      "date": "2026-05-22",
+      "gitRef": "agos-v0.1.47",
+      "location": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.47",
+      "notes": "Adds Runtime Intelligence Training with JAG-LAB, opportunity scoring, platform personality, correction, review report, and intelligence deposit.",
+      "snapshot": "AGOS Project Control Center v0.1.47\nRound: ROUND-RUNTIME-TRAINING-001 completed\nStatus: Runtime Training Stage added\nNo external platform automation enabled.\n"
+    },
     {
       "id": "agos-v0.1.46-runtime-engine",
       "label": "Control Center v0.1.46",
@@ -3027,6 +3069,16 @@
       "deliverable": "Local Runtime Engine, Runtime State Machine, JSON persistence, event logs, runtime queue, human review gate, memory deposit, and HTML runtime bridge.",
       "report": "runtime/task_results/ROUND-RUNTIME-ENGINE-001/ROUND_SUMMARY.md",
       "summary": "This round upgrades AGOS from static Runtime UI simulation to a local Runtime Engine that can start, stop, advance nodes, write runtime state, append event logs, manage queues, pause at Human Review, deposit local memory, and export runtime state for the HTML bridge."
+    },
+    {
+      "id": "ROUND-RUNTIME-TRAINING-001",
+      "phase": "REAL_OPERATION / AI_GROWTH_TRAINING",
+      "name": "AGOS_REAL_RUNTIME_TRAINING_STAGE",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "JAG-LAB training workspace, daily runtime training cycle, opportunity scoring, platform personality training, mislearning detection, human correction runtime, review reports, and runtime intelligence deposit.",
+      "report": "runtime/task_results/ROUND-RUNTIME-TRAINING-001/ROUND_SUMMARY.md",
+      "summary": "This round moves AGOS from a runnable local Runtime Engine into Runtime Intelligence Training. The system now scores opportunities, explains why signals matter, trains platform style differences, detects mislearning, records human correction, deposits intelligence, and generates runtime review reports in an isolated JAG-LAB sandbox."
     }
   ],
   "realGrowthVerification": {
@@ -4236,6 +4288,16 @@
             <div class="runtime-title-row"><h3>AI Correction Center</h3><p>AGOS 是否正在学歪</p></div>
             <div class="correction-grid" id="war-room-correction-panel"></div>
           </div>
+          <div class="runtime-grid">
+            <div class="runtime-panel">
+              <div class="runtime-title-row"><h3>Opportunity Ranking</h3><p>什么值得运营</p></div>
+              <div class="feed-stream" id="runtime-opportunity-ranking"></div>
+            </div>
+            <div class="runtime-panel">
+              <div class="runtime-title-row"><h3>Runtime Intelligence Feed</h3><p>真正沉淀的训练资产</p></div>
+              <div class="feed-stream" id="runtime-intelligence-feed"></div>
+            </div>
+          </div>
           <div class="runtime-grid" style="display:none">
             <div id="war-room-intelligence-trace"></div>
             <div id="war-room-learning-deposit"></div>
@@ -4566,6 +4628,17 @@
       el('war-room-correction-panel').innerHTML = (wr.correctionCenter || []).map(item =>
         '<div class="correction-card"><strong>' + esc(item.issue) + '</strong><span class="badge ' + (item.status === 'needs_code_check' || item.status === 'needs_runtime_validation' ? 'b-red' : item.status === 'needs_human_review' ? 'b-amber' : 'b-blue') + '">' + esc(item.status) + '</span><p>' + esc(item.signal) + '</p><p>' + esc(item.action) + '</p></div>'
       ).join('');
+      el('runtime-opportunity-ranking').innerHTML = (wr.opportunityRanking || []).map(item =>
+        '<div class="feed-item"><time>' + esc(item.verdict) + '</time><div class="feed-main"><strong>' + esc(item.question_id) + ' · score ' + esc(item.total_score) + '</strong><span>' + esc((item.reasons || []).join(' / ')) + '</span></div><span class="badge b-green">训练判断</span></div>'
+      ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>等待训练评分</strong><span>Runtime Training 尚未写入 opportunityRanking。</span></div><span class="badge b-amber">pending</span></div>';
+      const intelligence = wr.runtimeIntelligenceFeed || {};
+      const intelligenceItems = ['best_answer', 'best_hook', 'best_platform_style', 'best_timing', 'failed_strategy', 'failed_reply', 'failed_hook'].map(key => ({
+        key,
+        value: intelligence[key]
+      })).filter(item => item.value && item.value.length !== 0);
+      el('runtime-intelligence-feed').innerHTML = intelligenceItems.map(item =>
+        '<div class="feed-item"><time>' + esc(item.key) + '</time><div class="feed-main"><strong>' + esc(item.key.replaceAll('_', ' ')) + '</strong><span>' + esc(JSON.stringify(item.value)) + '</span></div><span class="badge b-blue">deposit</span></div>'
+      ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>等待 Intelligence Deposit</strong><span>Best Answer / Best Hook / Failed Strategy 尚未写入。</span></div><span class="badge b-amber">pending</span></div>';
       el('war-room-intelligence-trace').textContent = JSON.stringify(wr.intelligenceCollectionTrace || []);
       el('war-room-learning-deposit').textContent = JSON.stringify(wr.learningDepositTrace || []);
     }

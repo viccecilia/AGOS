@@ -10,9 +10,13 @@ from __future__ import annotations
 from typing import Any
 
 from services.human_review_runtime import HumanReviewRuntime
+from services.opportunity_scoring_engine import OpportunityScoringEngine
+from services.platform_personality_engine import PlatformPersonalityEngine
+from services.runtime_correction_engine import RuntimeCorrectionEngine
 from services.runtime_memory_deposit import RuntimeMemoryDeposit
 from services.runtime_persistence import RuntimePersistence
 from services.runtime_queue import RuntimeQueue
+from services.runtime_review_session import RuntimeReviewSession
 from services.runtime_state_machine import RuntimeStateMachine
 
 
@@ -34,11 +38,16 @@ class RuntimeEngine:
         queue: RuntimeQueue | None = None,
         review: HumanReviewRuntime | None = None,
         memory: RuntimeMemoryDeposit | None = None,
+        review_session: RuntimeReviewSession | None = None,
     ) -> None:
         self.persistence = persistence or RuntimePersistence()
         self.queue = queue or RuntimeQueue(self.persistence.root)
         self.review = review or HumanReviewRuntime(self.persistence.root)
         self.memory = memory or RuntimeMemoryDeposit(self.persistence.root)
+        self.scoring = OpportunityScoringEngine()
+        self.personality = PlatformPersonalityEngine()
+        self.correction = RuntimeCorrectionEngine(self.persistence.root)
+        self.review_session = review_session or RuntimeReviewSession()
 
     def initialize(
         self,
@@ -179,6 +188,121 @@ class RuntimeEngine:
 
     def current_state(self) -> dict[str, Any]:
         return self._save_with_related(self._state_or_default())
+
+    def run_training_cycle(self, question: dict | None = None, platforms: list[str] | None = None) -> dict[str, Any]:
+        question = question or {
+            "question_id": "jag_lab_tokyo_transport_001",
+            "platform": "reddit",
+            "platforms": ["reddit", "tiktok", "x"],
+            "market": "Japan",
+            "question_text": "I am confused about Tokyo train transfers and worried I will get lost. What should I check first?",
+            "pain_points": ["Tokyo transport anxiety", "first trip confusion"],
+        }
+        platforms = platforms or ["reddit", "tiktok", "x"]
+        state = self.initialize(workspace="JAG-LAB", industry_pack="Travel Pack / Lab", cycle="JAG-LAB-CYCLE-0001")
+        state = self.start()
+
+        explanations: list[dict[str, Any]] = []
+        score = self.scoring.score(question).to_dict()
+        style_plans = [self.personality.generate_style_plan(platform, question) for platform in platforms]
+        generated = {
+            "reply_text": "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple.",
+            "hook": style_plans[1]["hook"],
+            "strategy": "rescue-first helpful answer",
+        }
+        alerts = self.correction.detect_mislearning(generated)
+        if score["verdict"] == "low_value":
+            alerts.append(
+                {
+                    "issue": "错误高价值判断",
+                    "status": "needs_human_review",
+                    "severity": "medium",
+                    "signal": "Opportunity score is low; do not reply by default.",
+                    "action": "Reject high-value label.",
+                }
+            )
+        correction_record = self.correction.reject(
+            {
+                "target_type": "platform_style",
+                "target_id": question["question_id"],
+                "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+                "rejected_learning": {"platform": "reddit", "bad_style": "short promotional CTA"},
+            }
+        )
+        alerts.append(correction_record)
+
+        for stage in ["Scout", "Collect", "Analyze", "Classify", "Prioritize", "Strategy", "Generate", "Human Review", "Learn", "Deposit"]:
+            explanation = self._training_explanation(stage, question, score, style_plans, generated)
+            explanations.append(explanation)
+            self._event(state, stage, explanation["why"])
+            if stage == "Analyze":
+                state["opportunity_score"] = score
+            if stage == "Strategy":
+                state["platform_personality"] = style_plans
+            if stage == "Human Review":
+                state["status"] = "needs_human_review"
+                state["human_review"] = self.review.request_review(
+                    {
+                        "workspace": "JAG-LAB",
+                        "cycle": state["cycle"],
+                        "stage": "Human Review",
+                        "target_type": "runtime_training",
+                        "content": generated,
+                    }
+                )
+            if stage == "Learn":
+                state["status"] = "running"
+                state["mislearning_alerts"] = alerts
+                state["correction_alerts"] = alerts
+            if stage == "Deposit":
+                state["runtime_intelligence"] = {
+                    "best_answer": [generated["reply_text"]],
+                    "best_hook": [style_plans[1]["hook"]],
+                    "best_platform_style": style_plans,
+                    "best_timing": ["manual review before posting"],
+                    "failed_strategy": ["short promotional CTA on Reddit"],
+                    "failed_reply": ["generic marketing reply"],
+                    "failed_hook": ["same hook repeated"],
+                }
+                state["learning_deposits"] = self.memory.deposit_runtime_result(state)
+        state["training_explanations"] = explanations
+        state["runtime_review_report"] = self.review_session.generate(state, alerts)
+        state["current_stage"] = "Deposit"
+        state["next_stage"] = None
+        state["pipeline"] = [
+            {
+                "id": stage,
+                "label": stage,
+                "status": "current" if stage == "Deposit" else "done",
+                "note": RuntimeStateMachine._stage_note(stage),
+            }
+            for stage in ["Scout", "Collect", "Analyze", "Classify", "Prioritize", "Strategy", "Generate", "Human Review", "Learn", "Deposit"]
+        ]
+        state["current_event"] = "runtime_training_cycle_completed"
+        return self._save_with_related(state)
+
+    @staticmethod
+    def _training_explanation(stage: str, question: dict, score: dict, style_plans: list[dict], generated: dict) -> dict:
+        reasons = {
+            "Scout": "发现问题包含明确迷路焦虑，适合进入训练沙盒。",
+            "Collect": "问题带有市场、平台和痛点字段，可以用于独立 JAG-LAB 训练。",
+            "Analyze": "痛点强度和回复潜力达到训练阈值。",
+            "Classify": "问题应归入交通焦虑、首次旅行和路线救援。",
+            "Prioritize": f"Opportunity verdict={score['verdict']}，不是所有问题都会自动高价值。",
+            "Strategy": "策略选择救援式回答，因为用户处于旅途中不确定状态。",
+            "Generate": "回答生成遵循平台人格，Reddit 深度真实，TikTok 短 Hook，X 快速观点。",
+            "Human Review": "任何回答、策略和学习结论必须先进入人工 Gate。",
+            "Learn": "只学习被批准的方向，并记录错误学习被拒绝的原因。",
+            "Deposit": "沉淀 Best Answer、Best Hook、Failed Strategy 等 Runtime Intelligence。",
+        }
+        return {
+            "stage": stage,
+            "question_id": question["question_id"],
+            "why": reasons[stage],
+            "score": score if stage in {"Analyze", "Prioritize"} else None,
+            "platform_styles": style_plans if stage in {"Strategy", "Generate"} else None,
+            "generated": generated if stage == "Generate" else None,
+        }
 
     def _state_or_default(self) -> dict[str, Any]:
         state = self.persistence.load_state()
