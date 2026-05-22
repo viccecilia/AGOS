@@ -390,28 +390,28 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.41",
+    "controlCenterVersion": "0.1.42",
     "lastUpdated": "2026-05-22",
-    "currentPhase": "Phase Blueprint System Added",
-    "currentRound": "ROUND-REAL-GROWTH-001",
-    "nextRound": "R041 after acceptance",
-    "overallProgress": 80,
-    "activeFocus": "Phase Blueprint rounds are now visible in the main Round roadmap. The original 60 Round structure is preserved and Phase B-G blueprint rounds are appended for future execution."
+    "currentPhase": "AI War Room / Self Supervised Growth",
+    "currentRound": "ROUND-WAR-ROOM-GROWTH-001",
+    "nextRound": "Human acceptance for War Room Growth visualization",
+    "overallProgress": 82,
+    "activeFocus": "AGOS Control Center now visualizes the growth cycle: intelligence collection, analysis, classification, learning deposit, strategy planning, correction checks, and the JAG App promotion workspace."
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.41 Show blueprint rounds in roadmap",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.41",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.41",
-    "note": "Blueprint rounds are now visible in the main roadmap and mapped to GitHub tag agos-v0.1.41."
+    "latestCommit": "agos-v0.1.42 Add AGOS growth visualization war room",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.42",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.42",
+    "note": "War Room Growth visualization is mapped to GitHub tag agos-v0.1.42 after commit and push. The new data is sample/simulated and does not represent live platform automation."
   },
   "metrics": {
-    "roundsPlanned": 97,
-    "roundsCompleted": 40,
+    "roundsPlanned": 98,
+    "roundsCompleted": 42,
     "roundsInProgress": 0,
-    "reportsEmbedded": 47
+    "reportsEmbedded": 48
   },
   "modules": [
     {
@@ -545,6 +545,27 @@
     }
   ],
   "reports": [
+    {
+      "id": "ROUND-WAR-ROOM-GROWTH-001",
+      "title": "AGOS Growth Visualization War Room",
+      "date": "2026-05-22",
+      "status": "done",
+      "summary": "Added a simulated War Room view for AGOS growth cycles, 10-cycle stages, system controls, JAG App promotion workspace, social homepage matrix, intelligence traces, learning deposit traces, and correction checks.",
+      "files": [
+        "docs/project_control_center.html",
+        "tests/control_center_war_room_growth_smoke_test.py",
+        "runtime/task_results/ROUND-WAR-ROOM-GROWTH-001/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "passed: python -m compileall services schemas models tests",
+        "passed: python tests\\real_growth_workflow_smoke_test.py",
+        "passed: python tests\\learning_smoke_test.py",
+        "passed: python tests\\eu_us_phase3_e2e_test.py",
+        "passed: python tests\\korea_taiwan_phase4_e2e_test.py",
+        "passed: python tests\\control_center_war_room_growth_smoke_test.py",
+        "passed: browser render check at http://127.0.0.1:8765/project_control_center.html#war-room-growth"
+      ]
+    },
     {
       "id": "ROUND-SAAS-001",
       "title": "项目控制中心增强版",
@@ -1418,6 +1439,15 @@
     }
   ],
   "versions": [
+    {
+      "id": "agos-v0.1.42-war-room-growth",
+      "label": "Control Center v0.1.42",
+      "date": "2026-05-22",
+      "gitRef": "agos-v0.1.42",
+      "location": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.42",
+      "notes": "Adds AGOS Growth Visualization War Room for sample growth cycles, JAG App promotion workspace, collection traces, learning deposits, and correction checks.",
+      "snapshot": "AGOS Project Control Center v0.1.42\nRound: ROUND-WAR-ROOM-GROWTH-001 completed\nStatus: War Room Growth visualization added\nSample data only; no real platform automation.\n"
+    },
     {
       "version": "0.1.41",
       "date": "2026-05-22",
@@ -2748,6 +2778,16 @@
       "deliverable": "Validate the autonomous growth system end to end",
       "report": "runtime/task_results/ROUND-AUTO-006/ROUND_SUMMARY.md",
       "summary": "Planned blueprint round for Phase G / AUTONOMOUS GROWTH. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-WAR-ROOM-GROWTH-001",
+      "phase": "AI_WAR_ROOM / SELF_SUPERVISED_GROWTH",
+      "name": "AGOS_GROWTH_VISUALIZATION_WAR_ROOM",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "War Room Growth Cycle visualization, JAG App promotion workspace, social homepage matrix, intelligence trace, learning deposit trace, and correction panel in the control center.",
+      "report": "runtime/task_results/ROUND-WAR-ROOM-GROWTH-001/ROUND_SUMMARY.md",
+      "summary": "This round upgrades the control center from project status tracking into a growth visualization war room. It shows how AGOS collects signals, analyzes them, deposits learning, creates strategy, checks for drift, and prepares the next scout cycle for the JAG App workspace. The controls are simulated only and do not call real platform APIs or automate posting."
     }
   ],
   "realGrowthVerification": {
@@ -2930,6 +2970,522 @@
     },
     "legacyRoundsPreserved": 60,
     "blueprintRoundsAppended": 37
+  },
+  "warRoomGrowth": {
+    "schemaVersion": "1.0",
+    "sampleDataOnly": true,
+    "automationEnabled": false,
+    "noPlatformApiAccess": true,
+    "noAutoPosting": true,
+    "noAutoRegistration": true,
+    "systemControl": {
+      "status": "needs_human_review",
+      "statusEnum": [
+        "idle",
+        "scouting",
+        "analyzing",
+        "classifying",
+        "learning",
+        "planning",
+        "paused",
+        "stopped",
+        "needs_human_review",
+        "needs_code_check"
+      ],
+      "currentMode": "simulated_control_panel",
+      "currentWorkspace": "jag_app_growth",
+      "currentIndustryPack": "Travel Pack",
+      "currentCycle": "CYCLE-001",
+      "lastRunTime": "2026-05-22 12:30 Asia/Tokyo",
+      "buttons": [
+        "Start Scout Cycle",
+        "Pause Scout Cycle",
+        "Stop Operation",
+        "Run Analysis",
+        "Generate Strategy",
+        "Save Learning",
+        "Export Evidence Pack"
+      ],
+      "controlNote": "Buttons are UI-state simulation only in this round. They do not trigger APIs, posting, replies, account registration, or scraping."
+    },
+    "jagWorkspace": {
+      "product": "Japan AI Guide App",
+      "workspace_id": "jag_app_growth",
+      "industryPack": "Travel Pack",
+      "targetMarkets": [
+        "Japan",
+        "Europe / US",
+        "Korea",
+        "Taiwan",
+        "Southeast Asia"
+      ],
+      "positioning": "AI travel companion for Japan trips, focused on context-aware guidance, local discovery, itinerary confidence, and multilingual traveler support.",
+      "coreSellingPoints": [
+        "Japan-specific travel intelligence",
+        "Companion-style guidance",
+        "Pain-point-driven answers",
+        "Market-adapted content and replies",
+        "Human-reviewed growth workflow"
+      ],
+      "promotionPhase": "War Room visualization and manual account setup preparation",
+      "focusMarket": "Japan first, then Europe / US and Korea/Taiwan localization",
+      "focusPlatforms": [
+        "TikTok",
+        "Instagram",
+        "YouTube",
+        "Reddit",
+        "SEO / Website"
+      ],
+      "todayGoal": "Prepare account matrix, collect first manual travel pain points, and design the first human-reviewed answer branches."
+    },
+    "socialHomepages": [
+      {
+        "platform": "TikTok",
+        "homepageUrl": "needs_account_url",
+        "accountStatus": "pending_setup",
+        "todayContentPlan": "Short clips around first-time Japan trip anxiety and station navigation confusion.",
+        "todayReplyPlan": "Manual review only; no automated replies.",
+        "riskStatus": "needs_human_check",
+        "needsHumanCheck": true
+      },
+      {
+        "platform": "Instagram",
+        "homepageUrl": "needs_account_url",
+        "accountStatus": "pending_setup",
+        "todayContentPlan": "Carousel draft for itinerary confidence and local etiquette tips.",
+        "todayReplyPlan": "Collect common comment questions for Question Inbox.",
+        "riskStatus": "needs_human_check",
+        "needsHumanCheck": true
+      },
+      {
+        "platform": "X",
+        "homepageUrl": "needs_account_url",
+        "accountStatus": "pending_setup",
+        "todayContentPlan": "Thread concepts for Japan travel mistakes and quick rescue tips.",
+        "todayReplyPlan": "Manual replies only after approval.",
+        "riskStatus": "needs_human_check",
+        "needsHumanCheck": true
+      },
+      {
+        "platform": "YouTube",
+        "homepageUrl": "needs_account_url",
+        "accountStatus": "pending_setup",
+        "todayContentPlan": "Long-form outline: what an AI Japan travel companion should solve.",
+        "todayReplyPlan": "No posting or reply automation.",
+        "riskStatus": "low_until_account_exists",
+        "needsHumanCheck": true
+      },
+      {
+        "platform": "Reddit",
+        "homepageUrl": "needs_account_url",
+        "accountStatus": "pending_setup",
+        "todayContentPlan": "No promotional posting; collect allowed public question patterns manually.",
+        "todayReplyPlan": "Draft helpful answers with soft CTA removed until human approval.",
+        "riskStatus": "high_policy_sensitivity",
+        "needsHumanCheck": true
+      },
+      {
+        "platform": "Threads",
+        "homepageUrl": "needs_account_url",
+        "accountStatus": "pending_setup",
+        "todayContentPlan": "Short conversational travel insight drafts.",
+        "todayReplyPlan": "Manual review only.",
+        "riskStatus": "needs_human_check",
+        "needsHumanCheck": true
+      },
+      {
+        "platform": "SEO / Website",
+        "homepageUrl": "pending_setup",
+        "accountStatus": "pending_setup",
+        "todayContentPlan": "Landing article outline for Japan travel planning pain points.",
+        "todayReplyPlan": "Not applicable; collect search intent and support questions.",
+        "riskStatus": "low",
+        "needsHumanCheck": true
+      }
+    ],
+    "growthCycles": [
+      {
+        "cycleId": "CYCLE-001",
+        "currentRound": "ROUND-WAR-ROOM-GROWTH-001",
+        "status": "needs_human_review",
+        "startTime": "2026-05-22 12:00 Asia/Tokyo",
+        "endTime": "pending_manual_acceptance",
+        "collectionSources": [
+          "manual question import",
+          "public travel forum link import placeholder",
+          "keyword seed list"
+        ],
+        "collectionMethod": "Manual-only sample collection plan; no scraping and no login-required access.",
+        "collectedQuestions": [
+          "How do I avoid getting lost in Japanese train stations?",
+          "What should I do when restaurant menus are only in Japanese?",
+          "Can an AI guide help me change plans when weather disrupts my itinerary?"
+        ],
+        "analysisMethod": "Pain point clustering by traveler anxiety, urgency, language barrier, and decision friction.",
+        "analysisConclusion": "First-time travelers need rescue-style guidance more than generic destination recommendations.",
+        "classificationResults": [
+          "navigation_confusion",
+          "language_barrier",
+          "itinerary_disruption"
+        ],
+        "depositLibrary": [
+          "Question Inbox",
+          "Pain Point Library",
+          "Workspace Memory"
+        ],
+        "generatedStrategy": "Lead with helpful rescue answers, then build platform-specific content around anxiety relief and confidence.",
+        "nextCollectionPlan": "Collect 10 more manual questions from Japan itinerary, transport, food, and emergency-planning scenarios."
+      },
+      {
+        "cycleId": "CYCLE-002",
+        "currentRound": "planned_next_scout_cycle",
+        "status": "planning",
+        "startTime": "pending",
+        "endTime": "pending",
+        "collectionSources": [
+          "CSV import",
+          "JSON import",
+          "RSS/API only if allowed"
+        ],
+        "collectionMethod": "Import-first discovery with source URL and language labels preserved.",
+        "collectedQuestions": [
+          "pending_sample_batch"
+        ],
+        "analysisMethod": "Market and language split: Japan, Europe/US, Korea, Taiwan, Southeast Asia.",
+        "analysisConclusion": "Different markets need different trust hooks: local confidence for Japan, planning assurance for Europe/US, platform-native tone for Korea/Taiwan.",
+        "classificationResults": [
+          "market_segment",
+          "language_segment",
+          "platform_fit"
+        ],
+        "depositLibrary": [
+          "Industry Pack Memory",
+          "Content Strategy Memory"
+        ],
+        "generatedStrategy": "Create localized answer branches before publishing any content.",
+        "nextCollectionPlan": "Prepare 5 market-specific question imports and review them manually."
+      },
+      {
+        "cycleId": "CYCLE-003",
+        "currentRound": "future_feedback_cycle",
+        "status": "idle",
+        "startTime": "pending",
+        "endTime": "pending",
+        "collectionSources": [
+          "manual engagement feedback",
+          "approved reply attempt records"
+        ],
+        "collectionMethod": "Feedback from human-approved attempts only.",
+        "collectedQuestions": [
+          "Which reply tone received saves?",
+          "Which platform ignored the answer?",
+          "Which CTA felt too promotional?"
+        ],
+        "analysisMethod": "Compare engagement, ignore, save, and reply signals by platform tone.",
+        "analysisConclusion": "Learning must prefer helpful answer quality over promotional frequency.",
+        "classificationResults": [
+          "best_answer_candidate",
+          "ignored_answer_pattern",
+          "cta_risk"
+        ],
+        "depositLibrary": [
+          "Answer Branch Library",
+          "Learning Events",
+          "Content Strategy Memory"
+        ],
+        "generatedStrategy": "Promote best branches and suppress repeated or over-marketing patterns.",
+        "nextCollectionPlan": "Review first real attempts only after human-approved posting exists."
+      }
+    ],
+    "growthStages": [
+      {
+        "id": "STAGE-001-010",
+        "cycleRange": "Cycle 001-010",
+        "name": "Learning to Walk",
+        "stageGoal": "Prove the manual growth loop can record questions, answer branches, reviews, attempts, and learning evidence.",
+        "collectionCount": 10,
+        "learningEvents": [
+          "First pain-point taxonomy",
+          "Human review default enforced"
+        ],
+        "strategyChanges": [
+          "Rescue-first helpful answer strategy"
+        ],
+        "failureCases": [
+          "No live platform evidence yet"
+        ],
+        "correctionConclusion": "Keep all controls simulated until account setup and human approval exist.",
+        "nextFocus": "Collect enough manually verified questions to move from sample to real operations."
+      },
+      {
+        "id": "STAGE-011-020",
+        "cycleRange": "Cycle 011-020",
+        "name": "Finding Signals",
+        "stageGoal": "Find repeatable traveler pain signals across markets and platforms.",
+        "collectionCount": 0,
+        "learningEvents": [
+          "planned"
+        ],
+        "strategyChanges": [
+          "planned"
+        ],
+        "failureCases": [
+          "planned"
+        ],
+        "correctionConclusion": "Do not treat weak single-platform hints as strategy.",
+        "nextFocus": "Build signal confidence and source evidence."
+      },
+      {
+        "id": "STAGE-021-030",
+        "cycleRange": "Cycle 021-030",
+        "name": "Strategy Formation",
+        "stageGoal": "Turn repeated signals into platform-specific growth strategy.",
+        "collectionCount": 0,
+        "learningEvents": [
+          "planned"
+        ],
+        "strategyChanges": [
+          "planned"
+        ],
+        "failureCases": [
+          "planned"
+        ],
+        "correctionConclusion": "Reject generic marketing claims without question evidence.",
+        "nextFocus": "Create answer and content branches by platform."
+      },
+      {
+        "id": "STAGE-031-040",
+        "cycleRange": "Cycle 031-040",
+        "name": "Cross Platform Expansion",
+        "stageGoal": "Expand validated messages across TikTok, Instagram, YouTube, Reddit, X, Threads, and SEO.",
+        "collectionCount": 0,
+        "learningEvents": [
+          "planned"
+        ],
+        "strategyChanges": [
+          "planned"
+        ],
+        "failureCases": [
+          "planned"
+        ],
+        "correctionConclusion": "Maintain platform tone boundaries and source attribution.",
+        "nextFocus": "Track platform-specific fit and risk."
+      },
+      {
+        "id": "STAGE-041-050",
+        "cycleRange": "Cycle 041-050",
+        "name": "Self Correction",
+        "stageGoal": "Detect drift, repetition, wrong conclusions, and workspace contamination.",
+        "collectionCount": 0,
+        "learningEvents": [
+          "planned"
+        ],
+        "strategyChanges": [
+          "planned"
+        ],
+        "failureCases": [
+          "planned"
+        ],
+        "correctionConclusion": "Gate strategy changes behind correction evidence.",
+        "nextFocus": "Improve drift checks and human review points."
+      },
+      {
+        "id": "STAGE-051-060",
+        "cycleRange": "Cycle 051-060",
+        "name": "Autonomous Growth",
+        "stageGoal": "Prepare safe autonomous recommendations without autonomous posting or platform bypass.",
+        "collectionCount": 0,
+        "learningEvents": [
+          "planned"
+        ],
+        "strategyChanges": [
+          "planned"
+        ],
+        "failureCases": [
+          "planned"
+        ],
+        "correctionConclusion": "Autonomy means recommendation and scheduling under review gates, not uncontrolled execution.",
+        "nextFocus": "Define human-approved autonomous operating envelope."
+      }
+    ],
+    "intelligenceCollectionTrace": [
+      {
+        "source": "manual question import",
+        "keywords": [
+          "Japan train station",
+          "lost in Tokyo station",
+          "Japan itinerary change"
+        ],
+        "language": "English",
+        "industryPack": "Travel Pack",
+        "discoveredProblem": "Travelers fear losing time and confidence when transit plans fail.",
+        "importanceReason": "High anxiety, high frequency, clear fit for an AI guide companion.",
+        "classifiedTo": [
+          "Question Inbox",
+          "Pain Point Library"
+        ],
+        "enteredQuestionInbox": true,
+        "enteredPainPointLibrary": true,
+        "generatedAnswerBranch": true,
+        "generatedContentStrategy": true,
+        "enteredNextScoutPlan": true
+      },
+      {
+        "source": "manual public post link placeholder",
+        "keywords": [
+          "restaurant menu Japanese",
+          "food allergy Japan",
+          "ordering food Japan"
+        ],
+        "language": "English",
+        "industryPack": "Travel Pack",
+        "discoveredProblem": "Food ordering causes language and safety uncertainty.",
+        "importanceReason": "Creates urgent in-trip demand and supports short-form helpful content.",
+        "classifiedTo": [
+          "Pain Point Library",
+          "Answer Branch Library"
+        ],
+        "enteredQuestionInbox": true,
+        "enteredPainPointLibrary": true,
+        "generatedAnswerBranch": true,
+        "generatedContentStrategy": true,
+        "enteredNextScoutPlan": true
+      },
+      {
+        "source": "market seed list",
+        "keywords": [
+          "Japan trip Korea traveler",
+          "Taiwan traveler Japan AI guide"
+        ],
+        "language": "Korean / Traditional Chinese seed",
+        "industryPack": "Travel Pack",
+        "discoveredProblem": "Non-English markets need localized tone and platform-native trust signals.",
+        "importanceReason": "Prevents one-market answer style from polluting another market.",
+        "classifiedTo": [
+          "Industry Pack Memory",
+          "Workspace Memory"
+        ],
+        "enteredQuestionInbox": false,
+        "enteredPainPointLibrary": true,
+        "generatedAnswerBranch": false,
+        "generatedContentStrategy": true,
+        "enteredNextScoutPlan": true
+      }
+    ],
+    "learningDepositTrace": [
+      {
+        "library": "Question Inbox",
+        "source": "CYCLE-001 manual questions",
+        "reason": "Store candidate problems before any reply or content action.",
+        "depositedContent": "Three Japan traveler pain-point questions with workspace, market, language, and platform placeholders.",
+        "impactedStrategy": "Forces strategy to start from concrete questions.",
+        "needsHumanReview": true
+      },
+      {
+        "library": "Pain Point Library",
+        "source": "CYCLE-001 analysis",
+        "reason": "Cluster repeated traveler anxieties into reusable pain points.",
+        "depositedContent": "navigation_confusion, language_barrier, itinerary_disruption.",
+        "impactedStrategy": "Prioritizes rescue-style content and answer branches.",
+        "needsHumanReview": true
+      },
+      {
+        "library": "Answer Branch Library",
+        "source": "CYCLE-001 generated strategy",
+        "reason": "Prepare platform-specific replies before any posting attempt.",
+        "depositedContent": "Draft branch directions for Reddit helpful answer, TikTok hook, Instagram carousel, and SEO support answer.",
+        "impactedStrategy": "Separates tone, hook, length, and CTA by platform.",
+        "needsHumanReview": true
+      },
+      {
+        "library": "Learning Events",
+        "source": "Future approved reply attempts",
+        "reason": "Only learn from reviewed attempts and recorded feedback.",
+        "depositedContent": "Pending real feedback; sample panel only.",
+        "impactedStrategy": "Prevents sample data from being treated as real performance.",
+        "needsHumanReview": true
+      },
+      {
+        "library": "Content Strategy Memory",
+        "source": "CYCLE-001 strategy",
+        "reason": "Keep next content plan tied to actual collected questions.",
+        "depositedContent": "Rescue-first content theme for JAG App promotion.",
+        "impactedStrategy": "Reduces generic SaaS UI drift.",
+        "needsHumanReview": true
+      },
+      {
+        "library": "Industry Pack Memory",
+        "source": "Travel Pack segmentation",
+        "reason": "Preserve travel-specific constraints and market differences.",
+        "depositedContent": "Travel anxiety, itinerary disruption, language barrier, market-specific tone risk.",
+        "impactedStrategy": "Prevents industry-pack contamination.",
+        "needsHumanReview": true
+      },
+      {
+        "library": "Workspace Memory",
+        "source": "jag_app_growth workspace",
+        "reason": "Keep JAG App learning isolated from unrelated workspaces.",
+        "depositedContent": "JAG-specific promotion scope, markets, platform matrix, and no-automation boundaries.",
+        "impactedStrategy": "Blocks cross-workspace learning bleed.",
+        "needsHumanReview": true
+      }
+    ],
+    "correctionPanel": [
+      {
+        "check": "too_marketing",
+        "status": "watch",
+        "evidence": "Soft CTA and promotion claims must stay behind human review.",
+        "action": "Prefer helpful rescue answers before product mention."
+      },
+      {
+        "check": "content_repetition",
+        "status": "watch",
+        "evidence": "Sample cycles currently repeat travel-confidence themes.",
+        "action": "Require new source question evidence before creating more variants."
+      },
+      {
+        "check": "wrong_platform_tone",
+        "status": "needs_human_review",
+        "evidence": "Reddit, TikTok, Instagram, and SEO require different tone and CTA rules.",
+        "action": "Use answer branches per platform and review before posting."
+      },
+      {
+        "check": "industry_pack_contamination",
+        "status": "passed",
+        "evidence": "All War Room sample data is scoped to Travel Pack.",
+        "action": "Keep non-travel products out of this workspace memory."
+      },
+      {
+        "check": "workspace_cross_contamination",
+        "status": "passed",
+        "evidence": "Workspace ID remains jag_app_growth across War Room data.",
+        "action": "Block reuse in unrelated product workspaces without explicit export."
+      },
+      {
+        "check": "wrong_learning_conclusion",
+        "status": "watch",
+        "evidence": "No real feedback exists yet; all conclusions are planning hypotheses.",
+        "action": "Do not mark sample findings as real performance learning."
+      },
+      {
+        "check": "needs_human_correction",
+        "status": "yes",
+        "evidence": "Account URLs and first source set require user confirmation.",
+        "action": "Stop at human acceptance before real operations."
+      },
+      {
+        "check": "needs_code_check",
+        "status": "yes",
+        "evidence": "HTML/JSON smoke test and existing workflow tests must pass.",
+        "action": "Run required validation commands."
+      },
+      {
+        "check": "needs_real_runtime_verification",
+        "status": "yes",
+        "evidence": "This round is visualization only; no live platform run was performed.",
+        "action": "Next phase should import real questions manually and record evidence."
+      }
+    ]
   }
 }
   </script>
@@ -2948,6 +3504,7 @@
         <a href="#overview">项目总览 <small id="nav-version"></small></a>
         <a href="#real-growth">Real Growth <small>MVP</small></a>
         <a href="#phase-blueprint">Blueprint <small>phases</small></a>
+        <a href="#war-room-growth">War Room <small>growth</small></a>
         <a href="#completion">AI 完成度 <small id="nav-progress"></small></a>
         <a href="#rounds">Round 路线图 <small>60</small></a>
         <a href="#reports">报告嵌入 <small id="nav-reports"></small></a>
@@ -3033,6 +3590,32 @@
           <div class="topline"><h3>Round Execution Request Template</h3><span class="badge b-cyan">standard</span></div>
           <div id="round-template-summary"></div>
         </div>
+      </section>
+
+
+      <section id="war-room-growth" class="panel section">
+        <div class="section-head">
+          <div>
+            <h2>AGOS Growth Visualization War Room</h2>
+            <p>Visualizes how AGOS collects intelligence, analyzes signals, classifies pain points, deposits learning, creates strategy, checks correction risks, and prepares the next scout cycle. Current controls are simulated only.</p>
+          </div>
+          <span class="badge b-violet" id="war-room-status">war room</span>
+        </div>
+        <div class="callout" id="war-room-safety-note"></div>
+        <div style="height:14px"></div>
+        <div class="grid two"><div class="card" id="war-room-control-panel"></div><div class="card" id="war-room-jag-workspace"></div></div>
+        <div style="height:14px"></div>
+        <div class="card"><div class="topline"><h3>JAG Social Homepages</h3><span class="badge b-amber">manual setup</span></div><div class="table-wrap"><table><thead><tr><th>Platform</th><th>Homepage URL</th><th>Status</th><th>Today Plan</th><th>Risk</th><th>Human Check</th></tr></thead><tbody id="war-room-social-homepages"></tbody></table></div></div>
+        <div style="height:14px"></div>
+        <div class="section-head compact"><div><h2>War Room Growth Cycle</h2><p>Each cycle records source, method, question, analysis, library deposit, strategy, and next collection plan.</p></div><span class="badge b-blue">cycle trace</span></div>
+        <div class="grid three" id="war-room-growth-cycles"></div>
+        <div style="height:14px"></div>
+        <div class="section-head compact"><div><h2>10-Cycle Growth Stages</h2><p>Every 10 cycles form one stage checkpoint for collection count, learning events, strategy change, failures, and correction conclusion.</p></div><span class="badge b-cyan">stage review</span></div>
+        <div class="grid two" id="war-room-growth-stages"></div>
+        <div style="height:14px"></div>
+        <div class="grid two"><div class="card"><div class="topline"><h3>Intelligence Collection Trace</h3><span class="badge b-blue">evidence-first</span></div><div id="war-room-intelligence-trace"></div></div><div class="card"><div class="topline"><h3>Learning Deposit Trace</h3><span class="badge b-green">memory path</span></div><div id="war-room-learning-deposit"></div></div></div>
+        <div style="height:14px"></div>
+        <div class="card"><div class="topline"><h3>Correction Panel</h3><span class="badge b-red">drift check</span></div><div class="grid three" id="war-room-correction-panel"></div></div>
       </section>
 
       <section id="completion" class="panel section">
@@ -3277,6 +3860,32 @@
       `).join('');
     }
 
+
+    function renderWarRoomGrowth() {
+      const wr = state.warRoomGrowth || {};
+      const control = wr.systemControl || {};
+      const workspace = wr.jagWorkspace || {};
+      const status = control.status || 'idle';
+      const statusClassName = status === 'needs_human_review' || status === 'needs_code_check' ? 'b-amber' : status === 'stopped' ? 'b-red' : status === 'scouting' || status === 'analyzing' ? 'b-blue' : 'b-green';
+      el('war-room-status').className = 'badge ' + statusClassName;
+      el('war-room-status').textContent = status;
+      el('war-room-safety-note').innerHTML = '<strong>Safety boundary:</strong> sampleDataOnly=' + esc(wr.sampleDataOnly) + ', automationEnabled=' + esc(wr.automationEnabled) + ', noAutoPosting=' + esc(wr.noAutoPosting) + ', noAutoRegistration=' + esc(wr.noAutoRegistration) + '. ' + esc(control.controlNote || '');
+      el('war-room-control-panel').innerHTML = '<div class="topline"><h3>System Control Panel</h3><span class="badge ' + statusClassName + '">' + esc(status) + '</span></div>' +
+        '<div class="grid two"><p><strong>Mode</strong><br>' + esc(control.currentMode) + '</p><p><strong>Workspace</strong><br>' + esc(control.currentWorkspace) + '</p><p><strong>Industry Pack</strong><br>' + esc(control.currentIndustryPack) + '</p><p><strong>Current Cycle</strong><br>' + esc(control.currentCycle) + '</p></div>' +
+        '<p><strong>Last run</strong><br>' + esc(control.lastRunTime) + '</p><div class="toolbar">' + (control.buttons || []).map(label => '<button type="button" data-war-room-action="' + esc(label) + '">' + esc(label) + '</button>').join('') + '</div>';
+      el('war-room-control-panel').querySelectorAll('[data-war-room-action]').forEach(button => button.addEventListener('click', () => { el('war-room-status').textContent = 'simulated: ' + button.dataset.warRoomAction; }));
+      el('war-room-jag-workspace').innerHTML = '<div class="topline"><h3>JAG App Promotion Workspace</h3><span class="badge b-green">' + esc(workspace.workspace_id) + '</span></div>' +
+        '<p><strong>Product</strong><br>' + esc(workspace.product) + '</p><p><strong>Positioning</strong><br>' + esc(workspace.positioning) + '</p><p><strong>Markets</strong><br>' + (workspace.targetMarkets || []).map(esc).join(' / ') + '</p>' +
+        '<p><strong>Current phase</strong><br>' + esc(workspace.promotionPhase) + '</p><p><strong>Focus platforms</strong><br>' + (workspace.focusPlatforms || []).map(esc).join(', ') + '</p><p><strong>Today goal</strong><br>' + esc(workspace.todayGoal) + '</p><ul>' + (workspace.coreSellingPoints || []).map(item => '<li>' + esc(item) + '</li>').join('') + '</ul>';
+      el('war-room-social-homepages').innerHTML = (wr.socialHomepages || []).map(item => '<tr><td>' + esc(item.platform) + '</td><td><code>' + esc(item.homepageUrl) + '</code></td><td>' + esc(item.accountStatus) + '</td><td>' + esc(item.todayContentPlan) + '<br><span class="muted">Reply: ' + esc(item.todayReplyPlan) + '</span></td><td>' + esc(item.riskStatus) + '</td><td>' + (item.needsHumanCheck ? 'yes' : 'no') + '</td></tr>').join('');
+      el('war-room-growth-cycles').innerHTML = (wr.growthCycles || []).map(cycle => '<article class="card"><div class="topline"><h3>' + esc(cycle.cycleId) + '</h3><span class="badge b-blue">' + esc(cycle.status) + '</span></div><p><strong>Round</strong><br>' + esc(cycle.currentRound) + '</p><p><strong>Time</strong><br>' + esc(cycle.startTime) + ' -> ' + esc(cycle.endTime) + '</p><p><strong>Sources</strong><br>' + (cycle.collectionSources || []).map(esc).join(', ') + '</p><p><strong>Method</strong><br>' + esc(cycle.collectionMethod) + '</p><p><strong>Questions</strong></p><ul>' + (cycle.collectedQuestions || []).map(q => '<li>' + esc(q) + '</li>').join('') + '</ul><p><strong>Analysis</strong><br>' + esc(cycle.analysisMethod) + '<br>' + esc(cycle.analysisConclusion) + '</p><p><strong>Classified</strong><br>' + (cycle.classificationResults || []).map(esc).join(', ') + '</p><p><strong>Deposit</strong><br>' + (cycle.depositLibrary || []).map(esc).join(', ') + '</p><p><strong>Strategy</strong><br>' + esc(cycle.generatedStrategy) + '</p><p><strong>Next collection</strong><br>' + esc(cycle.nextCollectionPlan) + '</p></article>').join('');
+      el('war-room-growth-stages').innerHTML = (wr.growthStages || []).map(stage => '<article class="card"><div class="topline"><h3>' + esc(stage.cycleRange) + '</h3><span class="badge b-cyan">' + esc(stage.name) + '</span></div><p><strong>Goal</strong><br>' + esc(stage.stageGoal) + '</p><p><strong>Collection count</strong> ' + esc(stage.collectionCount) + '</p><p><strong>Learning events</strong><br>' + (stage.learningEvents || []).map(esc).join(', ') + '</p><p><strong>Strategy changes</strong><br>' + (stage.strategyChanges || []).map(esc).join(', ') + '</p><p><strong>Failures</strong><br>' + (stage.failureCases || []).map(esc).join(', ') + '</p><p><strong>Correction</strong><br>' + esc(stage.correctionConclusion) + '</p><p><strong>Next focus</strong><br>' + esc(stage.nextFocus) + '</p></article>').join('');
+      el('war-room-intelligence-trace').innerHTML = (wr.intelligenceCollectionTrace || []).map(trace => '<div class="detail-box" style="margin-bottom:10px"><h3>' + esc(trace.source) + '</h3><p><strong>Keywords</strong>: ' + (trace.keywords || []).map(esc).join(', ') + '</p><p><strong>Language / Pack</strong>: ' + esc(trace.language) + ' / ' + esc(trace.industryPack) + '</p><p><strong>Problem</strong>: ' + esc(trace.discoveredProblem) + '</p><p><strong>Why important</strong>: ' + esc(trace.importanceReason) + '</p><p><strong>Classified to</strong>: ' + (trace.classifiedTo || []).map(esc).join(', ') + '</p><p><strong>Flow</strong>: inbox=' + esc(trace.enteredQuestionInbox) + ', pain=' + esc(trace.enteredPainPointLibrary) + ', branch=' + esc(trace.generatedAnswerBranch) + ', strategy=' + esc(trace.generatedContentStrategy) + ', next=' + esc(trace.enteredNextScoutPlan) + '</p></div>').join('');
+      el('war-room-learning-deposit').innerHTML = (wr.learningDepositTrace || []).map(item => '<div class="detail-box" style="margin-bottom:10px"><h3>' + esc(item.library) + '</h3><p><strong>Source</strong>: ' + esc(item.source) + '</p><p><strong>Reason</strong>: ' + esc(item.reason) + '</p><p><strong>Deposited</strong>: ' + esc(item.depositedContent) + '</p><p><strong>Impacted strategy</strong>: ' + esc(item.impactedStrategy) + '</p><p><strong>Human review</strong>: ' + (item.needsHumanReview ? 'yes' : 'no') + '</p></div>').join('');
+      el('war-room-correction-panel').innerHTML = (wr.correctionPanel || []).map(item => '<article class="card"><div class="topline"><h3>' + esc(item.check) + '</h3><span class="badge ' + (item.status === 'passed' ? 'b-green' : item.status === 'yes' || item.status === 'needs_human_review' ? 'b-amber' : 'b-blue') + '">' + esc(item.status) + '</span></div><p><strong>Evidence</strong><br>' + esc(item.evidence) + '</p><p><strong>Action</strong><br>' + esc(item.action) + '</p></article>').join('');
+    }
+
+
     function renderGit() {
       const git = state.git;
       el("git-status-badge").className = `badge ${statusClass[git.status] || "b-blue"}`;
@@ -3486,6 +4095,7 @@
     renderOverview();
     renderRealGrowth();
     renderPhaseBlueprint();
+    renderWarRoomGrowth();
     renderGit();
     renderModules();
     renderRounds();
