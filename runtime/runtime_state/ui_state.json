@@ -1827,6 +1827,198 @@
     "workspaceStatus": "stopped"
   },
   "socialRuntimeMatrix": [],
+  "strategyPersonality": {
+    "platformOperatingPhilosophies": {
+      "reddit": "Earn trust through depth, specificity, and community-first answers.",
+      "tiktok": "Win attention quickly, then convert anxiety into a simple visual action.",
+      "x": "Use sharp observations to join live conversations and expose hidden travel friction.",
+      "youtube": "Build durable trust through searchable explanations and proof-rich travel guidance."
+    },
+    "strategyPersonalityFeed": [
+      {
+        "action": "Write a detailed, non-promotional answer that solves 'Tokyo transport anxiety' with route steps and caveats.",
+        "goal": "Turn high-intent travel questions into helpful expert replies.",
+        "philosophy": "Earn trust through depth, specificity, and community-first answers.",
+        "platform": "reddit",
+        "status": "ready_for_review",
+        "success_signal": "Replies, saves, follow-up questions, and positive community acceptance."
+      },
+      {
+        "action": "Create a short hook showing 'Tokyo transport anxiety' as a visual moment and ask viewers to save the fix.",
+        "goal": "Transform travel confusion into short hooks and save-worthy clips.",
+        "philosophy": "Win attention quickly, then convert anxiety into a simple visual action.",
+        "platform": "tiktok",
+        "status": "ready_for_review",
+        "success_signal": "Watch retention, saves, shares, comment questions, and repeated hook performance."
+      },
+      {
+        "action": "Post a concise observation about 'Tokyo transport anxiety' and invite replies with similar travel friction.",
+        "goal": "Create concise opinions, micro-threads, and trend reactions that earn discussion.",
+        "philosophy": "Use sharp observations to join live conversations and expose hidden travel friction.",
+        "platform": "x",
+        "status": "ready_for_review",
+        "success_signal": "Replies, reposts, quote posts, profile clicks, and thread completion."
+      },
+      {
+        "action": "Plan an evergreen walkthrough video that demonstrates how to avoid 'Tokyo transport anxiety' in real context.",
+        "goal": "Convert repeated travel anxiety into evergreen videos and Shorts funnels.",
+        "philosophy": "Build durable trust through searchable explanations and proof-rich travel guidance.",
+        "platform": "youtube",
+        "status": "ready_for_review",
+        "success_signal": "Search impressions, retention, comments with use cases, saves, and returning viewers."
+      }
+    ],
+    "strategyPersonalityMatrix": [
+      {
+        "avoid": [
+          "hard sell",
+          "generic tips",
+          "copy-paste reply",
+          "fake personal experience"
+        ],
+        "cadence": "Low frequency, high relevance, reply only when the question is a real pain point.",
+        "content_shape": "Long-form answer with context, tradeoffs, and practical steps.",
+        "created_at": "2026-05-22T09:19:50+00:00",
+        "current_pain_point": "Tokyo transport anxiety",
+        "human_review_status": "needs_human_review",
+        "industry_pack": "Travel Pack / Lab",
+        "interaction_style": "Transparent, non-promotional, experience-based, and ready for follow-up discussion.",
+        "market": "Japan",
+        "operating_philosophy": "Earn trust through depth, specificity, and community-first answers.",
+        "platform": "reddit",
+        "recommended_actions": [
+          "Find detailed pain questions before replying.",
+          "Answer the concrete situation first, then softly mention JAG if relevant.",
+          "Store follow-up objections as learning events."
+        ],
+        "sample_strategy": "Write a detailed, non-promotional answer that solves 'Tokyo transport anxiety' with route steps and caveats.",
+        "strategy_goal": "Turn high-intent travel questions into helpful expert replies.",
+        "strategy_id": "strategy_personality_reddit",
+        "success_signal": "Replies, saves, follow-up questions, and positive community acceptance.",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "avoid": [
+          "overdramatic fear",
+          "long explanation",
+          "platform-inappropriate depth",
+          "spammy CTA"
+        ],
+        "cadence": "Higher frequency experiments with tight hook variation and fast feedback.",
+        "content_shape": "Short hook, one visible pain scene, one practical payoff, one soft save CTA.",
+        "created_at": "2026-05-22T09:19:50+00:00",
+        "current_pain_point": "Tokyo transport anxiety",
+        "human_review_status": "needs_human_review",
+        "industry_pack": "Travel Pack / Lab",
+        "interaction_style": "Fast, emotional, visual, and concrete without becoming clickbait.",
+        "market": "Japan",
+        "operating_philosophy": "Win attention quickly, then convert anxiety into a simple visual action.",
+        "platform": "tiktok",
+        "recommended_actions": [
+          "Turn one pain point into three hook variants.",
+          "Prioritize first three seconds and visual proof.",
+          "Reject hooks that exaggerate risk beyond the real travel pain."
+        ],
+        "sample_strategy": "Create a short hook showing 'Tokyo transport anxiety' as a visual moment and ask viewers to save the fix.",
+        "strategy_goal": "Transform travel confusion into short hooks and save-worthy clips.",
+        "strategy_id": "strategy_personality_tiktok",
+        "success_signal": "Watch retention, saves, shares, comment questions, and repeated hook performance.",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "avoid": [
+          "empty hot take",
+          "slow generic advice",
+          "excessive hashtags",
+          "brand-like announcement"
+        ],
+        "cadence": "Timely posting around trend windows and question bursts.",
+        "content_shape": "One strong claim, two supporting details, one practical takeaway or thread.",
+        "created_at": "2026-05-22T09:19:50+00:00",
+        "current_pain_point": "Tokyo transport anxiety",
+        "human_review_status": "needs_human_review",
+        "industry_pack": "Travel Pack / Lab",
+        "interaction_style": "Fast, opinionated, useful, and conversational.",
+        "market": "Japan",
+        "operating_philosophy": "Use sharp observations to join live conversations and expose hidden travel friction.",
+        "platform": "x",
+        "recommended_actions": [
+          "Connect travel pain to a current conversation.",
+          "Keep the first line opinionated but useful.",
+          "Use replies to test which pain framing deserves deeper content."
+        ],
+        "sample_strategy": "Post a concise observation about 'Tokyo transport anxiety' and invite replies with similar travel friction.",
+        "strategy_goal": "Create concise opinions, micro-threads, and trend reactions that earn discussion.",
+        "strategy_id": "strategy_personality_x",
+        "success_signal": "Replies, reposts, quote posts, profile clicks, and thread completion.",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "avoid": [
+          "thin Shorts-only strategy",
+          "vague travel inspiration",
+          "unsupported claims",
+          "overly salesy demo"
+        ],
+        "cadence": "Lower frequency evergreen videos supported by Shorts extracted from high-friction moments.",
+        "content_shape": "Searchable title, structured chapters, visual walkthrough, recap, and next-step CTA.",
+        "created_at": "2026-05-22T09:19:50+00:00",
+        "current_pain_point": "Tokyo transport anxiety",
+        "human_review_status": "needs_human_review",
+        "industry_pack": "Travel Pack / Lab",
+        "interaction_style": "Calm, expert, demonstrative, and credibility-led.",
+        "market": "Japan",
+        "operating_philosophy": "Build durable trust through searchable explanations and proof-rich travel guidance.",
+        "platform": "youtube",
+        "recommended_actions": [
+          "Promote high-repeat questions into evergreen explainers.",
+          "Use Shorts to test hooks before long-form production.",
+          "Deposit comments into the Question Inbox for future scripts."
+        ],
+        "sample_strategy": "Plan an evergreen walkthrough video that demonstrates how to avoid 'Tokyo transport anxiety' in real context.",
+        "strategy_goal": "Convert repeated travel anxiety into evergreen videos and Shorts funnels.",
+        "strategy_id": "strategy_personality_youtube",
+        "success_signal": "Search impressions, retention, comments with use cases, saves, and returning viewers.",
+        "workspace": "JAG-LAB"
+      }
+    ],
+    "updated_at": "2026-05-22T09:19:50+00:00",
+    "workspace": "JAG-LAB"
+  },
+  "strategyPersonalityFeed": [
+    {
+      "action": "Write a detailed, non-promotional answer that solves 'Tokyo transport anxiety' with route steps and caveats.",
+      "goal": "Turn high-intent travel questions into helpful expert replies.",
+      "philosophy": "Earn trust through depth, specificity, and community-first answers.",
+      "platform": "reddit",
+      "status": "ready_for_review",
+      "success_signal": "Replies, saves, follow-up questions, and positive community acceptance."
+    },
+    {
+      "action": "Create a short hook showing 'Tokyo transport anxiety' as a visual moment and ask viewers to save the fix.",
+      "goal": "Transform travel confusion into short hooks and save-worthy clips.",
+      "philosophy": "Win attention quickly, then convert anxiety into a simple visual action.",
+      "platform": "tiktok",
+      "status": "ready_for_review",
+      "success_signal": "Watch retention, saves, shares, comment questions, and repeated hook performance."
+    },
+    {
+      "action": "Post a concise observation about 'Tokyo transport anxiety' and invite replies with similar travel friction.",
+      "goal": "Create concise opinions, micro-threads, and trend reactions that earn discussion.",
+      "philosophy": "Use sharp observations to join live conversations and expose hidden travel friction.",
+      "platform": "x",
+      "status": "ready_for_review",
+      "success_signal": "Replies, reposts, quote posts, profile clicks, and thread completion."
+    },
+    {
+      "action": "Plan an evergreen walkthrough video that demonstrates how to avoid 'Tokyo transport anxiety' in real context.",
+      "goal": "Convert repeated travel anxiety into evergreen videos and Shorts funnels.",
+      "philosophy": "Build durable trust through searchable explanations and proof-rich travel guidance.",
+      "platform": "youtube",
+      "status": "ready_for_review",
+      "success_signal": "Search impressions, retention, comments with use cases, saves, and returning viewers."
+    }
+  ],
   "systemControl": {
     "buttons": [
       "启动",
@@ -1835,7 +2027,7 @@
     "currentCycle": "JAG-LAB-CYCLE-0001",
     "currentIndustryPack": "Travel Pack / Lab",
     "currentWorkspace": "JAG-LAB",
-    "lastRunTime": "2026-05-22T09:11:50+00:00",
+    "lastRunTime": "2026-05-22T09:19:50+00:00",
     "status": "STOPPED"
   },
   "trainingExplanations": [

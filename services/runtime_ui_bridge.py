@@ -12,6 +12,7 @@ from services.personality_memory_deposit import PersonalityMemoryDeposit
 from services.runtime_drift_monitor import RuntimeDriftMonitor
 from services.runtime_engine import RuntimeEngine
 from services.runtime_persistence import RuntimePersistence
+from services.runtime_strategy_personality import RuntimeStrategyPersonalityEngine
 
 
 class RuntimeUIBridge:
@@ -49,6 +50,16 @@ class RuntimeUIBridge:
         personality_status = PersonalityMemoryDeposit().status()
         personality_drift = PersonalityDriftEngine().summary()
         personality_training = HumanPersonalityTraining().summary()
+        current_event = state.get("current_event") or ""
+        strategy_pain_point = current_event if current_event and not current_event.startswith("human_personality_") else "Tokyo transport anxiety"
+        strategy_personality = RuntimeStrategyPersonalityEngine().build_all(
+            {
+                "workspace": state.get("workspace", "JAG-LAB"),
+                "industry_pack": state.get("industry_pack", "Travel Pack / Lab"),
+                "market": "Japan",
+                "pain_point": strategy_pain_point,
+            }
+        )
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -169,6 +180,8 @@ class RuntimeUIBridge:
                     "status": personality_drift.get("personalityDriftStatus") if personality_drift.get("personalityDriftAlerts") else personality_status.get("personalityDrift", "clear"),
                 },
             ],
+            "strategyPersonality": strategy_personality,
+            "strategyPersonalityFeed": strategy_personality.get("strategyPersonalityFeed", []),
         }
 
 
