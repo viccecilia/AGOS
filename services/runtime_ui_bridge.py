@@ -8,6 +8,7 @@ from typing import Any
 from services.human_feedback_learning import HumanFeedbackLearning
 from services.human_personality_training import HumanPersonalityTraining
 from services.personality_drift_engine import PersonalityDriftEngine
+from services.personality_isolation_engine import PersonalityIsolationEngine
 from services.personality_memory_deposit import PersonalityMemoryDeposit
 from services.runtime_drift_monitor import RuntimeDriftMonitor
 from services.runtime_engine import RuntimeEngine
@@ -49,6 +50,7 @@ class RuntimeUIBridge:
         drift_summary = RuntimeDriftMonitor().summary()
         personality_status = PersonalityMemoryDeposit().status()
         personality_drift = PersonalityDriftEngine().summary()
+        personality_isolation = PersonalityIsolationEngine().run_check()
         personality_training = HumanPersonalityTraining().summary()
         current_event = state.get("current_event") or ""
         strategy_pain_point = current_event if current_event and not current_event.startswith("human_personality_") else "Tokyo transport anxiety"
@@ -163,6 +165,21 @@ class RuntimeUIBridge:
             "personalityDriftAlerts": personality_drift.get("personalityDriftAlerts", []),
             "personalityDriftStatus": personality_drift.get("personalityDriftStatus", "clear"),
             "personalityDriftReason": personality_drift.get("latestDriftReason", ""),
+            "personalityIsolationReport": personality_isolation,
+            "personalityIsolationFeed": [
+                {
+                    "dimension": key,
+                    "status": personality_isolation.get(key, {}).get("status", "unknown"),
+                    "scopes": personality_isolation.get(key, {}).get("scopes_checked", []),
+                    "contexts_checked": personality_isolation.get(key, {}).get("contexts_checked", 0),
+                    "violations": len(personality_isolation.get(key, {}).get("violations", [])),
+                }
+                for key in (
+                    "workspacePersonalityPollution",
+                    "marketPersonalityPollution",
+                    "platformPersonalityPollution",
+                )
+            ],
             "personalityRuntimeFeed": [
                 {
                     "type": "current_personality",

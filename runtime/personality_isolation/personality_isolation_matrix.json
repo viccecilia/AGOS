@@ -1,0 +1,82 @@
+[
+  {
+    "allowed_traits": [
+      "trusted",
+      "precise",
+      "guide-like",
+      "non-promotional",
+      "deep answer"
+    ],
+    "blocked_traits": [
+      "appliance",
+      "sales demo",
+      "k-beauty mood",
+      "tiktok hook spam"
+    ],
+    "market": "Japan",
+    "platform": "reddit",
+    "scope_id": "JAG-LAB_japan_reddit",
+    "voice": "calm guide",
+    "workspace": "JAG-LAB"
+  },
+  {
+    "allowed_traits": [
+      "visual",
+      "short rhythm",
+      "hook",
+      "save-worthy",
+      "clean"
+    ],
+    "blocked_traits": [
+      "long reddit essay",
+      "appliance",
+      "taiwan slow-life tone",
+      "hard sell"
+    ],
+    "market": "Korea",
+    "platform": "tiktok",
+    "scope_id": "JAG-LAB_korea_tiktok",
+    "voice": "clean visual guide",
+    "workspace": "JAG-LAB"
+  },
+  {
+    "allowed_traits": [
+      "warm",
+      "daily-life",
+      "caption",
+      "soft visual",
+      "slow pace"
+    ],
+    "blocked_traits": [
+      "x hot take",
+      "youtube chapters",
+      "appliance",
+      "aggressive urgency"
+    ],
+    "market": "Taiwan",
+    "platform": "instagram",
+    "scope_id": "JAG-LAB_taiwan_instagram",
+    "voice": "warm daily-life guide",
+    "workspace": "JAG-LAB"
+  },
+  {
+    "allowed_traits": [
+      "demonstration",
+      "proof",
+      "comparison",
+      "clear setup",
+      "durable trust"
+    ],
+    "blocked_traits": [
+      "japan train transfer",
+      "travel guide",
+      "tokyo anxiety",
+      "route rescue"
+    ],
+    "market": "Europe / US",
+    "platform": "youtube",
+    "scope_id": "PHILIPS-LAB_us_youtube",
+    "voice": "product proof explainer",
+    "workspace": "PHILIPS-LAB"
+  }
+]

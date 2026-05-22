@@ -1,0 +1,21 @@
+{
+  "round_id": "ROUND-RUNTIME-PERSONALITY-006",
+  "status": "passed",
+  "checks": [
+    "workspace personality pollution",
+    "market personality pollution",
+    "platform personality pollution"
+  ],
+  "report": "runtime/personality_isolation/PERSONALITY_ISOLATION_REPORT.json",
+  "verification": [
+    "python -m compileall services tests passed",
+    "python tests\\cross_market_personality_isolation_smoke_test.py passed",
+    "python tests\\war_room_runtime_ui_smoke_test.py passed"
+  ],
+  "safety_boundary": {
+    "local_runtime_only": true,
+    "cross_workspace_memory_sharing": false,
+    "external_platform_api": false,
+    "auto_posting": false
+  }
+}
