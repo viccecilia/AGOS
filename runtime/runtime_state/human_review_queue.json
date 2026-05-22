@@ -7,11 +7,15 @@
     },
     "created_at": "2026-05-22T06:06:42+00:00",
     "cycle": "JAG-LAB-CYCLE-0001",
+    "modified_content": {
+      "human_modified_version": "Human optimized output: keep the answer practical, calm, and non-promotional.",
+      "modified_text": "Human optimized output: keep the answer practical, calm, and non-promotional."
+    },
     "review_id": "review_0001",
     "stage": "Human Review",
-    "status": "needs_human_review",
+    "status": "modified",
     "target_type": "runtime_training",
-    "updated_at": "2026-05-22T06:06:42+00:00",
+    "updated_at": "2026-05-22T08:36:02+00:00",
     "workspace": "JAG-LAB"
   },
   {
@@ -40,11 +44,12 @@
     },
     "created_at": "2026-05-22T06:22:18+00:00",
     "cycle": "JAG-LAB-CYCLE-0001",
+    "reason": "Reject: this strategy is too promotional for a travel help answer.",
     "review_id": "review_0003",
     "stage": "Human Review",
-    "status": "needs_human_review",
+    "status": "rejected",
     "target_type": "runtime_training",
-    "updated_at": "2026-05-22T06:22:18+00:00",
+    "updated_at": "2026-05-22T08:36:26+00:00",
     "workspace": "JAG-LAB"
   },
   {
@@ -117,6 +122,106 @@
     "status": "modified",
     "target_type": "runtime_training",
     "updated_at": "2026-05-22T06:25:33+00:00",
+    "workspace": "JAG-LAB"
+  },
+  {
+    "ai_reason": "Opportunity score and platform style plan require human approval before AGOS learns this answer branch.",
+    "content": {
+      "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
+      "reply_text": "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple.",
+      "strategy": "rescue-first helpful answer"
+    },
+    "country": "Japan",
+    "created_at": "2026-05-22T08:35:14+00:00",
+    "cycle": "JAG-LAB-CYCLE-0001",
+    "generated_at": "2026-05-22T08:35:14+00:00",
+    "language": "en",
+    "modified_content": {
+      "human_modified_version": "Keep the reply useful and non-promotional.",
+      "modified_text": "Keep the reply useful and non-promotional."
+    },
+    "pain_point": "Tokyo transport anxiety, first trip confusion",
+    "review_id": "review_0008",
+    "risk_level": "medium",
+    "source_platform": "reddit",
+    "stage": "Human Review",
+    "status": "modified",
+    "target_type": "runtime_training",
+    "updated_at": "2026-05-22T08:35:14+00:00",
+    "workspace": "JAG-LAB"
+  },
+  {
+    "ai_reason": "Opportunity score and platform style plan require human approval before AGOS learns this answer branch.",
+    "content": {
+      "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
+      "reply_text": "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple.",
+      "strategy": "rescue-first helpful answer"
+    },
+    "country": "Japan",
+    "created_at": "2026-05-22T08:35:49+00:00",
+    "cycle": "JAG-LAB-CYCLE-0001",
+    "generated_at": "2026-05-22T08:35:49+00:00",
+    "language": "en",
+    "pain_point": "Tokyo transport anxiety, first trip confusion",
+    "review_id": "review_0009",
+    "risk_level": "medium",
+    "source_platform": "reddit",
+    "stage": "Human Review",
+    "status": "approved",
+    "target_type": "runtime_training",
+    "updated_at": "2026-05-22T08:36:27+00:00",
+    "workspace": "JAG-LAB"
+  },
+  {
+    "ai_reason": "Opportunity score and platform style plan require human approval before AGOS learns this answer branch.",
+    "content": {
+      "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
+      "reply_text": "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple.",
+      "strategy": "rescue-first helpful answer"
+    },
+    "country": "Japan",
+    "created_at": "2026-05-22T08:36:57+00:00",
+    "cycle": "JAG-LAB-CYCLE-0001",
+    "generated_at": "2026-05-22T08:36:57+00:00",
+    "language": "en",
+    "modified_content": {
+      "human_modified_version": "Keep the reply useful and non-promotional.",
+      "modified_text": "Keep the reply useful and non-promotional."
+    },
+    "pain_point": "Tokyo transport anxiety, first trip confusion",
+    "review_id": "review_0010",
+    "risk_level": "medium",
+    "source_platform": "reddit",
+    "stage": "Human Review",
+    "status": "modified",
+    "target_type": "runtime_training",
+    "updated_at": "2026-05-22T08:36:57+00:00",
+    "workspace": "JAG-LAB"
+  },
+  {
+    "ai_reason": "Opportunity score and platform style plan require human approval before AGOS learns this answer branch.",
+    "content": {
+      "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
+      "reply_text": "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple.",
+      "strategy": "rescue-first helpful answer"
+    },
+    "country": "Japan",
+    "created_at": "2026-05-22T08:38:56+00:00",
+    "cycle": "JAG-LAB-CYCLE-0001",
+    "generated_at": "2026-05-22T08:38:56+00:00",
+    "language": "en",
+    "modified_content": {
+      "human_modified_version": "Keep the reply useful and non-promotional.",
+      "modified_text": "Keep the reply useful and non-promotional."
+    },
+    "pain_point": "Tokyo transport anxiety, first trip confusion",
+    "review_id": "review_0011",
+    "risk_level": "medium",
+    "source_platform": "reddit",
+    "stage": "Human Review",
+    "status": "modified",
+    "target_type": "runtime_training",
+    "updated_at": "2026-05-22T08:38:56+00:00",
     "workspace": "JAG-LAB"
   }
 ]

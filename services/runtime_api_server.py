@@ -19,8 +19,10 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
+from services.human_feedback_learning import HumanFeedbackLearning
 from services.human_review_runtime import HumanReviewRuntime
 from services.runtime_correction_engine import RuntimeCorrectionEngine
+from services.runtime_drift_monitor import RuntimeDriftMonitor
 from services.runtime_engine import RuntimeEngine
 from services.runtime_persistence import RuntimePersistence
 from services.runtime_review_session import RuntimeReviewSession
@@ -54,6 +56,8 @@ class RuntimeApiController:
         self.bridge = RuntimeUIBridge(self.engine)
         self.review = HumanReviewRuntime(self.persistence.root)
         self.correction = RuntimeCorrectionEngine(self.persistence.root)
+        self.feedback = HumanFeedbackLearning()
+        self.drift = RuntimeDriftMonitor()
 
     def status(self) -> dict[str, Any]:
         ui_state = self._load_or_export_ui_state()
@@ -97,16 +101,29 @@ class RuntimeApiController:
     def correction_record(self, body: dict[str, Any]) -> dict[str, Any]:
         correction = self.correction.reject(
             {
-                "target_type": body.get("target_type", "learning"),
+                "target_type": body.get("correction_type", body.get("target_type", "learning")),
                 "target_id": body.get("target_id", "unknown"),
-                "reason": body.get("reason", ""),
+                "reason": body.get("correction_reason", body.get("reason", "")),
                 "rejected_learning": {
                     "workspace": body.get("workspace", "JAG-LAB"),
                     "decision": body.get("decision", "reject"),
+                    "industry_pack": body.get("industry_pack", "Travel Pack / Lab"),
+                    "affected_runtime_stage": body.get("affected_runtime_stage", "Human Review"),
                 },
             }
         )
+        correction_decision = self.feedback.record_correction(
+            correction,
+            {
+                "workspace": body.get("workspace", "JAG-LAB"),
+                "industry_pack": body.get("industry_pack", "Travel Pack / Lab"),
+                "affected_runtime_stage": body.get("affected_runtime_stage", "Human Review"),
+                "correction_type": body.get("correction_type", body.get("target_type", "learning")),
+                "correction_reason": body.get("correction_reason", body.get("reason", "")),
+            },
+        )
         state = self.engine.current_state()
+        drift_events = self.drift.detect({**body, **correction})
         alerts = list(state.get("mislearning_alerts", []))
         alert = {
             "issue": f"Human Correction: {correction['target_type']}",
@@ -118,8 +135,11 @@ class RuntimeApiController:
             "correction_id": correction.get("correction_id"),
         }
         alerts.append(alert)
+        alerts.extend(drift_events)
         state["mislearning_alerts"] = alerts
         state["correction_alerts"] = list(state.get("correction_alerts", [])) + [alert]
+        state["runtime_drift_events"] = self.drift.history()
+        state["human_feedback_summary"] = self.feedback.summary()
         state["current_event"] = "human_correction_recorded"
         self.engine.persistence.append_event(
             {
@@ -128,12 +148,19 @@ class RuntimeApiController:
                 "cycle": state.get("cycle", "JAG-LAB-CYCLE-0001"),
                 "stage": state.get("current_stage", "Human Review"),
                 "event": "human_correction",
-                "result": body.get("reason", "Human correction recorded"),
+                "result": body.get("correction_reason", body.get("reason", "Human correction recorded")),
             }
         )
         self.engine.persistence.save_state(state)
         ui_state = self.bridge.export_ui_state()
-        return {"ok": True, "status": self._runtime_status(ui_state), "correction": correction, "ui_state": ui_state}
+        return {
+            "ok": True,
+            "status": self._runtime_status(ui_state),
+            "correction": correction,
+            "correction_decision": correction_decision,
+            "drift_events": drift_events,
+            "ui_state": ui_state,
+        }
 
     def review_decision(self, body: dict[str, Any]) -> dict[str, Any]:
         review_id = body.get("review_id")
@@ -143,20 +170,50 @@ class RuntimeApiController:
         if decision == "approve":
             review = self.review.approve(review_id)
         elif decision == "reject":
-            review = self.review.reject(review_id, body.get("reason", "Rejected by human review"))
+            review = self.review.reject(review_id, body.get("reject_reason", body.get("reason", "Rejected by human review")))
         elif decision == "modify":
-            review = self.review.modify(review_id, {"modified_text": body.get("modified_text", "")})
+            review = self.review.modify(
+                review_id,
+                {
+                    "modified_text": body.get("human_modified_version", body.get("modified_text", "")),
+                    "human_modified_version": body.get("human_modified_version", body.get("modified_text", "")),
+                },
+            )
         else:
             raise ValueError("decision must be approve, reject, or modify")
 
+        feedback_decision = self.feedback.record_review_decision(
+            review,
+            decision,
+            {
+                "reason": body.get("reject_reason", body.get("reason", "")),
+                "human_modified_version": body.get("human_modified_version", body.get("modified_text", "")),
+            },
+        )
         state = self.engine.current_state()
         state["human_review"] = review
         state["review_queue"] = self.review.pending()
         state["current_event"] = f"human_review_{decision}"
+        intelligence = dict(state.get("runtime_intelligence", {}))
         if decision in {"reject", "modify"}:
             state["status"] = "needs_human_review"
+        if decision == "reject":
+            intelligence.setdefault("failed_strategy", []).append(body.get("reject_reason", body.get("reason", "Rejected by human review")))
+            intelligence.setdefault("failed_reply", []).append(str(review.get("content", {})))
+        if decision == "modify":
+            intelligence.setdefault("human_optimized_output", []).append(body.get("human_modified_version", body.get("modified_text", "")))
+            state["status"] = "running"
         elif state.get("status") == "needs_human_review":
             state["status"] = "running"
+        if decision == "approve":
+            intelligence.setdefault("approved_by_human", []).append(review.get("target_type", "strategy"))
+        state["runtime_intelligence"] = intelligence
+        drift_events = self.drift.detect({"decision": decision, "review": review, "body": body})
+        if drift_events:
+            state["status"] = "needs_human_review"
+            state["mislearning_alerts"] = list(state.get("mislearning_alerts", [])) + drift_events
+        state["runtime_drift_events"] = self.drift.history()
+        state["human_feedback_summary"] = self.feedback.summary()
         self.engine.persistence.append_event(
             {
                 "workspace": state.get("workspace", "JAG-LAB"),
@@ -169,7 +226,14 @@ class RuntimeApiController:
         )
         self.engine.persistence.save_state(state)
         ui_state = self.bridge.export_ui_state()
-        return {"ok": True, "status": self._runtime_status(ui_state), "review": review, "ui_state": ui_state}
+        return {
+            "ok": True,
+            "status": self._runtime_status(ui_state),
+            "review": review,
+            "feedback_decision": feedback_decision,
+            "drift_events": drift_events,
+            "ui_state": ui_state,
+        }
 
     def _load_or_export_ui_state(self) -> dict[str, Any]:
         if self.persistence.ui_state_file.exists():

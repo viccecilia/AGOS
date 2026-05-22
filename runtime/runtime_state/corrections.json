@@ -142,5 +142,123 @@
     "status": "rejected",
     "target_id": "OPP-001",
     "target_type": "opportunity"
+  },
+  {
+    "correction_id": "correction_2026-05-22T08-35-14+00-00",
+    "created_at": "2026-05-22T08:35:14+00:00",
+    "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+    "rejected_learning": {
+      "bad_style": "short promotional CTA",
+      "platform": "reddit"
+    },
+    "status": "rejected",
+    "target_id": "jag_lab_tokyo_transport_001",
+    "target_type": "platform_style"
+  },
+  {
+    "correction_id": "correction_2026-05-22T08-35-14+00-00",
+    "created_at": "2026-05-22T08:35:14+00:00",
+    "reason": "This is normal chatter, not a high-value travel pain point.",
+    "rejected_learning": {
+      "affected_runtime_stage": "Human Review",
+      "decision": "reject",
+      "industry_pack": "Travel Pack / Lab",
+      "workspace": "JAG-LAB"
+    },
+    "status": "rejected",
+    "target_id": "OPP-001",
+    "target_type": "opportunity"
+  },
+  {
+    "correction_id": "correction_2026-05-22T08-35-49+00-00",
+    "created_at": "2026-05-22T08:35:49+00:00",
+    "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+    "rejected_learning": {
+      "bad_style": "short promotional CTA",
+      "platform": "reddit"
+    },
+    "status": "rejected",
+    "target_id": "jag_lab_tokyo_transport_001",
+    "target_type": "platform_style"
+  },
+  {
+    "correction_id": "correction_2026-05-22T08-36-12+00-00",
+    "created_at": "2026-05-22T08:36:12+00:00",
+    "reason": "TikTok emotional spam pattern is too aggressive and should not become the best style.",
+    "rejected_learning": {
+      "affected_runtime_stage": "Human Review",
+      "decision": "reject",
+      "industry_pack": "Travel Pack / Lab",
+      "workspace": "JAG-LAB"
+    },
+    "status": "rejected",
+    "target_id": "manual_1779438972656",
+    "target_type": "错误机会判断"
+  },
+  {
+    "correction_id": "correction_2026-05-22T08-36-57+00-00",
+    "created_at": "2026-05-22T08:36:57+00:00",
+    "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+    "rejected_learning": {
+      "bad_style": "short promotional CTA",
+      "platform": "reddit"
+    },
+    "status": "rejected",
+    "target_id": "jag_lab_tokyo_transport_001",
+    "target_type": "platform_style"
+  },
+  {
+    "correction_id": "correction_2026-05-22T08-36-57+00-00",
+    "created_at": "2026-05-22T08:36:57+00:00",
+    "reason": "This is normal chatter, not a high-value travel pain point.",
+    "rejected_learning": {
+      "affected_runtime_stage": "Human Review",
+      "decision": "reject",
+      "industry_pack": "Travel Pack / Lab",
+      "workspace": "JAG-LAB"
+    },
+    "status": "rejected",
+    "target_id": "OPP-001",
+    "target_type": "opportunity"
+  },
+  {
+    "correction_id": "correction_2026-05-22T08-37-06+00-00",
+    "created_at": "2026-05-22T08:37:06+00:00",
+    "reason": "TikTok emotional spam pattern is too aggressive and should trigger platform drift review.",
+    "rejected_learning": {
+      "affected_runtime_stage": "Generate",
+      "decision": "reject",
+      "industry_pack": "Travel Pack / Lab",
+      "workspace": "JAG-LAB"
+    },
+    "status": "rejected",
+    "target_id": "UI-DRIFT-VALIDATION",
+    "target_type": "??????"
+  },
+  {
+    "correction_id": "correction_2026-05-22T08-38-56+00-00",
+    "created_at": "2026-05-22T08:38:56+00:00",
+    "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+    "rejected_learning": {
+      "bad_style": "short promotional CTA",
+      "platform": "reddit"
+    },
+    "status": "rejected",
+    "target_id": "jag_lab_tokyo_transport_001",
+    "target_type": "platform_style"
+  },
+  {
+    "correction_id": "correction_2026-05-22T08-38-56+00-00",
+    "created_at": "2026-05-22T08:38:56+00:00",
+    "reason": "This is normal chatter, not a high-value travel pain point.",
+    "rejected_learning": {
+      "affected_runtime_stage": "Human Review",
+      "decision": "reject",
+      "industry_pack": "Travel Pack / Lab",
+      "workspace": "JAG-LAB"
+    },
+    "status": "rejected",
+    "target_id": "OPP-001",
+    "target_type": "opportunity"
   }
 ]

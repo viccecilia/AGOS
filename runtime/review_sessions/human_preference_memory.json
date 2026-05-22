@@ -1,0 +1,39 @@
+{
+  "approved": {
+    "runtime_training": 1
+  },
+  "corrected": {
+    "opportunity": 3,
+    "错误平台风格": 1,
+    "错误机会判断": 1
+  },
+  "modified": {
+    "runtime_training": 4
+  },
+  "rejected": {
+    "runtime_training": 1
+  },
+  "top_corrected_mistakes": [
+    {
+      "count": 3,
+      "reason": "This is normal chatter, not a high-value travel pain point.",
+      "target_type": "opportunity"
+    },
+    {
+      "count": 1,
+      "reason": "TikTok emotional spam pattern is too aggressive and should trigger platform drift review.",
+      "target_type": "错误平台风格"
+    },
+    {
+      "count": 1,
+      "reason": "Reject: this strategy is too promotional for a travel help answer.",
+      "target_type": "runtime_training"
+    },
+    {
+      "count": 1,
+      "reason": "TikTok emotional spam pattern is too aggressive and should not become the best style.",
+      "target_type": "错误机会判断"
+    }
+  ],
+  "updated_at": "2026-05-22T08:38:56+00:00"
+}

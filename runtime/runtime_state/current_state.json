@@ -1,8 +1,8 @@
 {
   "correction_alerts": [
     {
-      "correction_id": "correction_2026-05-22T06-25-33+00-00",
-      "created_at": "2026-05-22T06:25:33+00:00",
+      "correction_id": "correction_2026-05-22T08-38-56+00-00",
+      "created_at": "2026-05-22T08:38:56+00:00",
       "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
       "rejected_learning": {
         "bad_style": "short promotional CTA",
@@ -14,7 +14,7 @@
     },
     {
       "action": "Correction recorded; do not learn this branch as best answer.",
-      "correction_id": "correction_2026-05-22T06-25-33+00-00",
+      "correction_id": "correction_2026-05-22T08-38-56+00-00",
       "issue": "Human Correction: opportunity",
       "severity": "high",
       "signal": "This is normal chatter, not a high-value travel pain point.",
@@ -26,22 +26,153 @@
   "current_event": "runtime_stopped",
   "current_stage": "Deposit",
   "cycle": "JAG-LAB-CYCLE-0001",
+  "human_feedback_summary": {
+    "correctionHistory": [
+      {
+        "affected_runtime_stage": "Human Review",
+        "correction_id": "correction_2026-05-22T08-35-14+00-00",
+        "correction_reason": "This is normal chatter, not a high-value travel pain point.",
+        "correction_type": "opportunity",
+        "created_at": "2026-05-22T08:35:14+00:00",
+        "industry_pack": "Travel Pack / Lab",
+        "status": "rejected",
+        "target_id": "OPP-001",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "affected_runtime_stage": "Human Review",
+        "correction_id": "correction_2026-05-22T08-36-12+00-00",
+        "correction_reason": "TikTok emotional spam pattern is too aggressive and should not become the best style.",
+        "correction_type": "错误机会判断",
+        "created_at": "2026-05-22T08:36:12+00:00",
+        "industry_pack": "Travel Pack / Lab",
+        "status": "rejected",
+        "target_id": "manual_1779438972656",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "affected_runtime_stage": "Human Review",
+        "correction_id": "correction_2026-05-22T08-36-57+00-00",
+        "correction_reason": "This is normal chatter, not a high-value travel pain point.",
+        "correction_type": "opportunity",
+        "created_at": "2026-05-22T08:36:57+00:00",
+        "industry_pack": "Travel Pack / Lab",
+        "status": "rejected",
+        "target_id": "OPP-001",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "affected_runtime_stage": "Generate",
+        "correction_id": "correction_2026-05-22T08-37-06+00-00",
+        "correction_reason": "TikTok emotional spam pattern is too aggressive and should trigger platform drift review.",
+        "correction_type": "错误平台风格",
+        "created_at": "2026-05-22T08:37:06+00:00",
+        "industry_pack": "Travel Pack / Lab",
+        "status": "rejected",
+        "target_id": "UI-DRIFT-VALIDATION",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "affected_runtime_stage": "Human Review",
+        "correction_id": "correction_2026-05-22T08-38-56+00-00",
+        "correction_reason": "This is normal chatter, not a high-value travel pain point.",
+        "correction_type": "opportunity",
+        "created_at": "2026-05-22T08:38:56+00:00",
+        "industry_pack": "Travel Pack / Lab",
+        "status": "rejected",
+        "target_id": "OPP-001",
+        "workspace": "JAG-LAB"
+      }
+    ],
+    "humanDecisionsToday": 6,
+    "humanPreferenceMemory": {
+      "approved": {
+        "runtime_training": 1
+      },
+      "corrected": {
+        "opportunity": 3,
+        "错误平台风格": 1,
+        "错误机会判断": 1
+      },
+      "modified": {
+        "runtime_training": 4
+      },
+      "rejected": {
+        "runtime_training": 1
+      },
+      "top_corrected_mistakes": [
+        {
+          "count": 3,
+          "reason": "This is normal chatter, not a high-value travel pain point.",
+          "target_type": "opportunity"
+        },
+        {
+          "count": 1,
+          "reason": "TikTok emotional spam pattern is too aggressive and should trigger platform drift review.",
+          "target_type": "错误平台风格"
+        },
+        {
+          "count": 1,
+          "reason": "Reject: this strategy is too promotional for a travel help answer.",
+          "target_type": "runtime_training"
+        },
+        {
+          "count": 1,
+          "reason": "TikTok emotional spam pattern is too aggressive and should not become the best style.",
+          "target_type": "错误机会判断"
+        }
+      ],
+      "updated_at": "2026-05-22T08:38:56+00:00"
+    },
+    "mostApprovedReplyStyle": "runtime_training",
+    "mostRejectedStrategy": "runtime_training",
+    "topCorrectedMistakes": [
+      {
+        "count": 3,
+        "reason": "This is normal chatter, not a high-value travel pain point.",
+        "target_type": "opportunity"
+      },
+      {
+        "count": 1,
+        "reason": "TikTok emotional spam pattern is too aggressive and should trigger platform drift review.",
+        "target_type": "错误平台风格"
+      },
+      {
+        "count": 1,
+        "reason": "Reject: this strategy is too promotional for a travel help answer.",
+        "target_type": "runtime_training"
+      },
+      {
+        "count": 1,
+        "reason": "TikTok emotional spam pattern is too aggressive and should not become the best style.",
+        "target_type": "错误机会判断"
+      }
+    ]
+  },
   "human_review": {
+    "ai_reason": "Opportunity score and platform style plan require human approval before AGOS learns this answer branch.",
     "content": {
       "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
       "reply_text": "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple.",
       "strategy": "rescue-first helpful answer"
     },
-    "created_at": "2026-05-22T06:25:33+00:00",
+    "country": "Japan",
+    "created_at": "2026-05-22T08:38:56+00:00",
     "cycle": "JAG-LAB-CYCLE-0001",
+    "generated_at": "2026-05-22T08:38:56+00:00",
+    "language": "en",
     "modified_content": {
+      "human_modified_version": "Keep the reply useful and non-promotional.",
       "modified_text": "Keep the reply useful and non-promotional."
     },
-    "review_id": "review_0007",
+    "pain_point": "Tokyo transport anxiety, first trip confusion",
+    "review_id": "review_0011",
+    "risk_level": "medium",
+    "source_platform": "reddit",
     "stage": "Human Review",
     "status": "modified",
     "target_type": "runtime_training",
-    "updated_at": "2026-05-22T06:25:33+00:00",
+    "updated_at": "2026-05-22T08:38:56+00:00",
     "workspace": "JAG-LAB"
   },
   "industry_pack": "Travel Pack / Lab",
@@ -144,188 +275,6 @@
         "runtime_status": "running",
         "stage": "Scout"
       },
-      "created_at": "2026-05-22T06:24:24+00:00",
-      "deposit_id": "JAG-LAB_answer_branch_library_2026-05-22T06-24-24+00-00",
-      "library": "Answer Branch Library",
-      "reason": "Runtime prepared answer branch direction.",
-      "workspace": "JAG-LAB"
-    },
-    {
-      "content": {
-        "cycle": "JAG-LAB-CYCLE-0001",
-        "industry_pack": "Travel Pack / Lab",
-        "runtime_status": "running",
-        "stage": "Scout"
-      },
-      "created_at": "2026-05-22T06:24:24+00:00",
-      "deposit_id": "JAG-LAB_industry_pack_memory_2026-05-22T06-24-24+00-00",
-      "library": "Industry Pack Memory",
-      "reason": "Runtime preserved industry pack scope.",
-      "workspace": "JAG-LAB"
-    },
-    {
-      "content": {
-        "cycle": "JAG-LAB-CYCLE-0001",
-        "learning": "sample data must not become real feedback",
-        "runtime_status": "running",
-        "stage": "Scout"
-      },
-      "created_at": "2026-05-22T06:24:24+00:00",
-      "deposit_id": "JAG-LAB_learning_events_2026-05-22T06-24-24+00-00",
-      "library": "Learning Events",
-      "reason": "Runtime recorded learning boundary.",
-      "workspace": "JAG-LAB"
-    },
-    {
-      "content": {
-        "cycle": "JAG-LAB-CYCLE-0001",
-        "pain_point": "Tokyo transport anxiety",
-        "runtime_status": "running",
-        "stage": "Scout"
-      },
-      "created_at": "2026-05-22T06:24:24+00:00",
-      "deposit_id": "JAG-LAB_pain_point_library_2026-05-22T06-24-24+00-00",
-      "library": "Pain Point Library",
-      "reason": "Runtime detected a pain cluster.",
-      "workspace": "JAG-LAB"
-    },
-    {
-      "content": {
-        "cycle": "JAG-LAB-CYCLE-0001",
-        "runtime_status": "running",
-        "signal": "runtime question candidate",
-        "stage": "Scout"
-      },
-      "created_at": "2026-05-22T06:24:24+00:00",
-      "deposit_id": "JAG-LAB_question_inbox_2026-05-22T06-24-24+00-00",
-      "library": "Question Inbox",
-      "reason": "Runtime cycle captured candidate question context.",
-      "workspace": "JAG-LAB"
-    },
-    {
-      "content": {
-        "cycle": "JAG-LAB-CYCLE-0001",
-        "runtime_status": "running",
-        "stage": "Scout",
-        "strategy": "rescue-first helpful answer"
-      },
-      "created_at": "2026-05-22T06:24:24+00:00",
-      "deposit_id": "JAG-LAB_strategy_memory_2026-05-22T06-24-24+00-00",
-      "library": "Strategy Memory",
-      "reason": "Runtime deposited strategy direction.",
-      "workspace": "JAG-LAB"
-    },
-    {
-      "content": {
-        "cycle": "JAG-LAB-CYCLE-0001",
-        "runtime_status": "running",
-        "stage": "Scout",
-        "workspace_scope": "JAG-LAB"
-      },
-      "created_at": "2026-05-22T06:24:24+00:00",
-      "deposit_id": "JAG-LAB_workspace_memory_2026-05-22T06-24-24+00-00",
-      "library": "Workspace Memory",
-      "reason": "Runtime preserved workspace scope.",
-      "workspace": "JAG-LAB"
-    },
-    {
-      "content": {
-        "branch": "helpful rescue answer",
-        "cycle": "JAG-LAB-CYCLE-0001",
-        "runtime_status": "running",
-        "stage": "Scout"
-      },
-      "created_at": "2026-05-22T06:25:19+00:00",
-      "deposit_id": "JAG-LAB_answer_branch_library_2026-05-22T06-25-19+00-00",
-      "library": "Answer Branch Library",
-      "reason": "Runtime prepared answer branch direction.",
-      "workspace": "JAG-LAB"
-    },
-    {
-      "content": {
-        "cycle": "JAG-LAB-CYCLE-0001",
-        "industry_pack": "Travel Pack / Lab",
-        "runtime_status": "running",
-        "stage": "Scout"
-      },
-      "created_at": "2026-05-22T06:25:19+00:00",
-      "deposit_id": "JAG-LAB_industry_pack_memory_2026-05-22T06-25-19+00-00",
-      "library": "Industry Pack Memory",
-      "reason": "Runtime preserved industry pack scope.",
-      "workspace": "JAG-LAB"
-    },
-    {
-      "content": {
-        "cycle": "JAG-LAB-CYCLE-0001",
-        "learning": "sample data must not become real feedback",
-        "runtime_status": "running",
-        "stage": "Scout"
-      },
-      "created_at": "2026-05-22T06:25:19+00:00",
-      "deposit_id": "JAG-LAB_learning_events_2026-05-22T06-25-19+00-00",
-      "library": "Learning Events",
-      "reason": "Runtime recorded learning boundary.",
-      "workspace": "JAG-LAB"
-    },
-    {
-      "content": {
-        "cycle": "JAG-LAB-CYCLE-0001",
-        "pain_point": "Tokyo transport anxiety",
-        "runtime_status": "running",
-        "stage": "Scout"
-      },
-      "created_at": "2026-05-22T06:25:19+00:00",
-      "deposit_id": "JAG-LAB_pain_point_library_2026-05-22T06-25-19+00-00",
-      "library": "Pain Point Library",
-      "reason": "Runtime detected a pain cluster.",
-      "workspace": "JAG-LAB"
-    },
-    {
-      "content": {
-        "cycle": "JAG-LAB-CYCLE-0001",
-        "runtime_status": "running",
-        "signal": "runtime question candidate",
-        "stage": "Scout"
-      },
-      "created_at": "2026-05-22T06:25:19+00:00",
-      "deposit_id": "JAG-LAB_question_inbox_2026-05-22T06-25-19+00-00",
-      "library": "Question Inbox",
-      "reason": "Runtime cycle captured candidate question context.",
-      "workspace": "JAG-LAB"
-    },
-    {
-      "content": {
-        "cycle": "JAG-LAB-CYCLE-0001",
-        "runtime_status": "running",
-        "stage": "Scout",
-        "strategy": "rescue-first helpful answer"
-      },
-      "created_at": "2026-05-22T06:25:19+00:00",
-      "deposit_id": "JAG-LAB_strategy_memory_2026-05-22T06-25-19+00-00",
-      "library": "Strategy Memory",
-      "reason": "Runtime deposited strategy direction.",
-      "workspace": "JAG-LAB"
-    },
-    {
-      "content": {
-        "cycle": "JAG-LAB-CYCLE-0001",
-        "runtime_status": "running",
-        "stage": "Scout",
-        "workspace_scope": "JAG-LAB"
-      },
-      "created_at": "2026-05-22T06:25:19+00:00",
-      "deposit_id": "JAG-LAB_workspace_memory_2026-05-22T06-25-19+00-00",
-      "library": "Workspace Memory",
-      "reason": "Runtime preserved workspace scope.",
-      "workspace": "JAG-LAB"
-    },
-    {
-      "content": {
-        "branch": "helpful rescue answer",
-        "cycle": "JAG-LAB-CYCLE-0001",
-        "runtime_status": "running",
-        "stage": "Scout"
-      },
       "created_at": "2026-05-22T06:25:33+00:00",
       "deposit_id": "JAG-LAB_answer_branch_library_2026-05-22T06-25-33+00-00",
       "library": "Answer Branch Library",
@@ -409,13 +358,104 @@
       "library": "Workspace Memory",
       "reason": "Runtime preserved workspace scope.",
       "workspace": "JAG-LAB"
+    },
+    {
+      "content": {
+        "branch": "helpful rescue answer",
+        "cycle": "JAG-LAB-CYCLE-0001",
+        "runtime_status": "running",
+        "stage": "Scout"
+      },
+      "created_at": "2026-05-22T08:38:56+00:00",
+      "deposit_id": "JAG-LAB_answer_branch_library_2026-05-22T08-38-56+00-00",
+      "library": "Answer Branch Library",
+      "reason": "Runtime prepared answer branch direction.",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "content": {
+        "cycle": "JAG-LAB-CYCLE-0001",
+        "industry_pack": "Travel Pack / Lab",
+        "runtime_status": "running",
+        "stage": "Scout"
+      },
+      "created_at": "2026-05-22T08:38:56+00:00",
+      "deposit_id": "JAG-LAB_industry_pack_memory_2026-05-22T08-38-56+00-00",
+      "library": "Industry Pack Memory",
+      "reason": "Runtime preserved industry pack scope.",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "content": {
+        "cycle": "JAG-LAB-CYCLE-0001",
+        "learning": "sample data must not become real feedback",
+        "runtime_status": "running",
+        "stage": "Scout"
+      },
+      "created_at": "2026-05-22T08:38:56+00:00",
+      "deposit_id": "JAG-LAB_learning_events_2026-05-22T08-38-56+00-00",
+      "library": "Learning Events",
+      "reason": "Runtime recorded learning boundary.",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "content": {
+        "cycle": "JAG-LAB-CYCLE-0001",
+        "pain_point": "Tokyo transport anxiety",
+        "runtime_status": "running",
+        "stage": "Scout"
+      },
+      "created_at": "2026-05-22T08:38:56+00:00",
+      "deposit_id": "JAG-LAB_pain_point_library_2026-05-22T08-38-56+00-00",
+      "library": "Pain Point Library",
+      "reason": "Runtime detected a pain cluster.",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "content": {
+        "cycle": "JAG-LAB-CYCLE-0001",
+        "runtime_status": "running",
+        "signal": "runtime question candidate",
+        "stage": "Scout"
+      },
+      "created_at": "2026-05-22T08:38:56+00:00",
+      "deposit_id": "JAG-LAB_question_inbox_2026-05-22T08-38-56+00-00",
+      "library": "Question Inbox",
+      "reason": "Runtime cycle captured candidate question context.",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "content": {
+        "cycle": "JAG-LAB-CYCLE-0001",
+        "runtime_status": "running",
+        "stage": "Scout",
+        "strategy": "rescue-first helpful answer"
+      },
+      "created_at": "2026-05-22T08:38:56+00:00",
+      "deposit_id": "JAG-LAB_strategy_memory_2026-05-22T08-38-56+00-00",
+      "library": "Strategy Memory",
+      "reason": "Runtime deposited strategy direction.",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "content": {
+        "cycle": "JAG-LAB-CYCLE-0001",
+        "runtime_status": "running",
+        "stage": "Scout",
+        "workspace_scope": "JAG-LAB"
+      },
+      "created_at": "2026-05-22T08:38:56+00:00",
+      "deposit_id": "JAG-LAB_workspace_memory_2026-05-22T08-38-56+00-00",
+      "library": "Workspace Memory",
+      "reason": "Runtime preserved workspace scope.",
+      "workspace": "JAG-LAB"
     }
   ],
   "learning_result": null,
   "mislearning_alerts": [
     {
-      "correction_id": "correction_2026-05-22T06-25-33+00-00",
-      "created_at": "2026-05-22T06:25:33+00:00",
+      "correction_id": "correction_2026-05-22T08-38-56+00-00",
+      "created_at": "2026-05-22T08:38:56+00:00",
       "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
       "rejected_learning": {
         "bad_style": "short promotional CTA",
@@ -427,7 +467,7 @@
     },
     {
       "action": "Correction recorded; do not learn this branch as best answer.",
-      "correction_id": "correction_2026-05-22T06-25-33+00-00",
+      "correction_id": "correction_2026-05-22T08-38-56+00-00",
       "issue": "Human Correction: opportunity",
       "severity": "high",
       "signal": "This is normal chatter, not a high-value travel pain point.",
@@ -558,55 +598,26 @@
       "style": "快速、观点、趋势"
     }
   ],
-  "review_queue": [
+  "review_queue": [],
+  "runtime_drift_events": [
     {
-      "content": {
-        "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
-        "reply_text": "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple.",
-        "strategy": "rescue-first helpful answer"
-      },
-      "created_at": "2026-05-22T06:06:42+00:00",
-      "cycle": "JAG-LAB-CYCLE-0001",
-      "review_id": "review_0001",
-      "stage": "Human Review",
-      "status": "needs_human_review",
-      "target_type": "runtime_training",
-      "updated_at": "2026-05-22T06:06:42+00:00",
-      "workspace": "JAG-LAB"
-    },
-    {
-      "content": {
-        "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
-        "reply_text": "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple.",
-        "strategy": "rescue-first helpful answer"
-      },
-      "created_at": "2026-05-22T06:22:18+00:00",
-      "cycle": "JAG-LAB-CYCLE-0001",
-      "review_id": "review_0003",
-      "stage": "Human Review",
-      "status": "needs_human_review",
-      "target_type": "runtime_training",
-      "updated_at": "2026-05-22T06:22:18+00:00",
-      "workspace": "JAG-LAB"
+      "action": "Send to human review before learning or publishing.",
+      "created_at": "2026-05-22T08:37:06+00:00",
+      "drift_id": "drift_2026-05-22T08-37-06+00-00_1",
+      "issue": "platform personality drift",
+      "severity": "medium",
+      "signal": "Detected platform personality drift",
+      "status": "needs_human_review"
     }
   ],
   "runtime_feed": [
-    {
-      "cycle": "JAG-LAB-CYCLE-0001",
-      "event": "Learn",
-      "industry_pack": "Travel Pack / Lab",
-      "result": "只学习被批准的方向，并记录错误学习被拒绝的原因。",
-      "stage": "Scout",
-      "timestamp": "2026-05-22T06:25:19+00:00",
-      "workspace": "JAG-LAB"
-    },
     {
       "cycle": "JAG-LAB-CYCLE-0001",
       "event": "Deposit",
       "industry_pack": "Travel Pack / Lab",
       "result": "沉淀 Best Answer、Best Hook、Failed Strategy 等 Runtime Intelligence。",
       "stage": "Scout",
-      "timestamp": "2026-05-22T06:25:19+00:00",
+      "timestamp": "2026-05-22T08:36:57+00:00",
       "workspace": "JAG-LAB"
     },
     {
@@ -615,16 +626,16 @@
       "industry_pack": "Travel Pack / Lab",
       "result": "This is normal chatter, not a high-value travel pain point.",
       "stage": "Deposit",
-      "timestamp": "2026-05-22T06:25:19+00:00",
+      "timestamp": "2026-05-22T08:36:57+00:00",
       "workspace": "JAG-LAB"
     },
     {
       "cycle": "JAG-LAB-CYCLE-0001",
       "event": "human_review_modify",
       "industry_pack": "Travel Pack / Lab",
-      "result": "review_0006",
+      "result": "review_0010",
       "stage": "Human Review",
-      "timestamp": "2026-05-22T06:25:19+00:00",
+      "timestamp": "2026-05-22T08:36:57+00:00",
       "workspace": "JAG-LAB"
     },
     {
@@ -633,7 +644,16 @@
       "industry_pack": "Travel Pack / Lab",
       "result": "Runtime stopped locally",
       "stage": "Deposit",
-      "timestamp": "2026-05-22T06:25:19+00:00",
+      "timestamp": "2026-05-22T08:36:57+00:00",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "cycle": "JAG-LAB-CYCLE-0001",
+      "event": "human_correction",
+      "industry_pack": "Travel Pack / Lab",
+      "result": "TikTok emotional spam pattern is too aggressive and should trigger platform drift review.",
+      "stage": "Deposit",
+      "timestamp": "2026-05-22T08:37:06+00:00",
       "workspace": "JAG-LAB"
     },
     {
@@ -642,7 +662,7 @@
       "industry_pack": "Travel Pack / Lab",
       "result": "Runtime initialized",
       "stage": "Scout",
-      "timestamp": "2026-05-22T06:25:33+00:00",
+      "timestamp": "2026-05-22T08:38:56+00:00",
       "workspace": "JAG-LAB"
     },
     {
@@ -651,7 +671,7 @@
       "industry_pack": "Travel Pack / Lab",
       "result": "Runtime entered running state",
       "stage": "Scout",
-      "timestamp": "2026-05-22T06:25:33+00:00",
+      "timestamp": "2026-05-22T08:38:56+00:00",
       "workspace": "JAG-LAB"
     },
     {
@@ -660,7 +680,7 @@
       "industry_pack": "Travel Pack / Lab",
       "result": "发现问题包含明确迷路焦虑，适合进入训练沙盒。",
       "stage": "Scout",
-      "timestamp": "2026-05-22T06:25:33+00:00",
+      "timestamp": "2026-05-22T08:38:56+00:00",
       "workspace": "JAG-LAB"
     },
     {
@@ -669,7 +689,7 @@
       "industry_pack": "Travel Pack / Lab",
       "result": "问题带有市场、平台和痛点字段，可以用于独立 JAG-LAB 训练。",
       "stage": "Scout",
-      "timestamp": "2026-05-22T06:25:33+00:00",
+      "timestamp": "2026-05-22T08:38:56+00:00",
       "workspace": "JAG-LAB"
     },
     {
@@ -678,7 +698,7 @@
       "industry_pack": "Travel Pack / Lab",
       "result": "痛点强度和回复潜力达到训练阈值。",
       "stage": "Scout",
-      "timestamp": "2026-05-22T06:25:33+00:00",
+      "timestamp": "2026-05-22T08:38:56+00:00",
       "workspace": "JAG-LAB"
     },
     {
@@ -687,7 +707,7 @@
       "industry_pack": "Travel Pack / Lab",
       "result": "问题应归入交通焦虑、首次旅行和路线救援。",
       "stage": "Scout",
-      "timestamp": "2026-05-22T06:25:33+00:00",
+      "timestamp": "2026-05-22T08:38:56+00:00",
       "workspace": "JAG-LAB"
     },
     {
@@ -696,7 +716,7 @@
       "industry_pack": "Travel Pack / Lab",
       "result": "Opportunity verdict=high_value，不是所有问题都会自动高价值。",
       "stage": "Scout",
-      "timestamp": "2026-05-22T06:25:33+00:00",
+      "timestamp": "2026-05-22T08:38:56+00:00",
       "workspace": "JAG-LAB"
     },
     {
@@ -705,7 +725,7 @@
       "industry_pack": "Travel Pack / Lab",
       "result": "策略选择救援式回答，因为用户处于旅途中不确定状态。",
       "stage": "Scout",
-      "timestamp": "2026-05-22T06:25:33+00:00",
+      "timestamp": "2026-05-22T08:38:56+00:00",
       "workspace": "JAG-LAB"
     },
     {
@@ -714,7 +734,7 @@
       "industry_pack": "Travel Pack / Lab",
       "result": "回答生成遵循平台人格，Reddit 深度真实，TikTok 短 Hook，X 快速观点。",
       "stage": "Scout",
-      "timestamp": "2026-05-22T06:25:33+00:00",
+      "timestamp": "2026-05-22T08:38:56+00:00",
       "workspace": "JAG-LAB"
     },
     {
@@ -723,7 +743,7 @@
       "industry_pack": "Travel Pack / Lab",
       "result": "任何回答、策略和学习结论必须先进入人工 Gate。",
       "stage": "Scout",
-      "timestamp": "2026-05-22T06:25:33+00:00",
+      "timestamp": "2026-05-22T08:38:56+00:00",
       "workspace": "JAG-LAB"
     },
     {
@@ -732,7 +752,7 @@
       "industry_pack": "Travel Pack / Lab",
       "result": "只学习被批准的方向，并记录错误学习被拒绝的原因。",
       "stage": "Scout",
-      "timestamp": "2026-05-22T06:25:33+00:00",
+      "timestamp": "2026-05-22T08:38:56+00:00",
       "workspace": "JAG-LAB"
     },
     {
@@ -741,7 +761,7 @@
       "industry_pack": "Travel Pack / Lab",
       "result": "沉淀 Best Answer、Best Hook、Failed Strategy 等 Runtime Intelligence。",
       "stage": "Scout",
-      "timestamp": "2026-05-22T06:25:33+00:00",
+      "timestamp": "2026-05-22T08:38:56+00:00",
       "workspace": "JAG-LAB"
     },
     {
@@ -750,16 +770,16 @@
       "industry_pack": "Travel Pack / Lab",
       "result": "This is normal chatter, not a high-value travel pain point.",
       "stage": "Deposit",
-      "timestamp": "2026-05-22T06:25:33+00:00",
+      "timestamp": "2026-05-22T08:38:56+00:00",
       "workspace": "JAG-LAB"
     },
     {
       "cycle": "JAG-LAB-CYCLE-0001",
       "event": "human_review_modify",
       "industry_pack": "Travel Pack / Lab",
-      "result": "review_0007",
+      "result": "review_0011",
       "stage": "Human Review",
-      "timestamp": "2026-05-22T06:25:33+00:00",
+      "timestamp": "2026-05-22T08:38:56+00:00",
       "workspace": "JAG-LAB"
     },
     {
@@ -768,7 +788,7 @@
       "industry_pack": "Travel Pack / Lab",
       "result": "Runtime stopped locally",
       "stage": "Deposit",
-      "timestamp": "2026-05-22T06:25:33+00:00",
+      "timestamp": "2026-05-22T08:38:56+00:00",
       "workspace": "JAG-LAB"
     }
   ],
@@ -832,6 +852,9 @@
     ],
     "failed_strategy": [
       "short promotional CTA on Reddit"
+    ],
+    "human_optimized_output": [
+      "Keep the reply useful and non-promotional."
     ]
   },
   "runtime_queue": [
@@ -1016,10 +1039,62 @@
       "status": "pending",
       "type": "待分析",
       "updated_at": "2026-05-22T06:25:33+00:00"
+    },
+    {
+      "attempts": 0,
+      "created_at": "2026-05-22T08:35:14+00:00",
+      "payload": {
+        "cycle": "JAG-LAB-CYCLE-0001",
+        "stage": "Scout",
+        "workspace": "JAG-LAB"
+      },
+      "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+      "status": "pending",
+      "type": "待分析",
+      "updated_at": "2026-05-22T08:35:14+00:00"
+    },
+    {
+      "attempts": 0,
+      "created_at": "2026-05-22T08:35:49+00:00",
+      "payload": {
+        "cycle": "JAG-LAB-CYCLE-0001",
+        "stage": "Scout",
+        "workspace": "JAG-LAB"
+      },
+      "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+      "status": "pending",
+      "type": "待分析",
+      "updated_at": "2026-05-22T08:35:49+00:00"
+    },
+    {
+      "attempts": 0,
+      "created_at": "2026-05-22T08:36:57+00:00",
+      "payload": {
+        "cycle": "JAG-LAB-CYCLE-0001",
+        "stage": "Scout",
+        "workspace": "JAG-LAB"
+      },
+      "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+      "status": "pending",
+      "type": "待分析",
+      "updated_at": "2026-05-22T08:36:57+00:00"
+    },
+    {
+      "attempts": 0,
+      "created_at": "2026-05-22T08:38:56+00:00",
+      "payload": {
+        "cycle": "JAG-LAB-CYCLE-0001",
+        "stage": "Scout",
+        "workspace": "JAG-LAB"
+      },
+      "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+      "status": "pending",
+      "type": "待分析",
+      "updated_at": "2026-05-22T08:38:56+00:00"
     }
   ],
   "runtime_review_report": {
-    "created_at": "2026-05-22T06:25:33+00:00",
+    "created_at": "2026-05-22T08:38:56+00:00",
     "cycle": "JAG-LAB-CYCLE-0001",
     "effective": [
       "用强场景开头，例如：第一次到东京站别先做这件事"
@@ -1032,8 +1107,8 @@
     ],
     "mislearned": [
       {
-        "correction_id": "correction_2026-05-22T06-25-33+00-00",
-        "created_at": "2026-05-22T06:25:33+00:00",
+        "correction_id": "correction_2026-05-22T08-38-56+00-00",
+        "created_at": "2026-05-22T08:38:56+00:00",
         "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
         "rejected_learning": {
           "bad_style": "short promotional CTA",
@@ -1046,8 +1121,8 @@
     ],
     "needs_human_correction": [
       {
-        "correction_id": "correction_2026-05-22T06-25-33+00-00",
-        "created_at": "2026-05-22T06:25:33+00:00",
+        "correction_id": "correction_2026-05-22T08-38-56+00-00",
+        "created_at": "2026-05-22T08:38:56+00:00",
         "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
         "rejected_learning": {
           "bad_style": "short promotional CTA",
@@ -1058,7 +1133,7 @@
         "target_type": "platform_style"
       }
     ],
-    "review_id": "review_JAG-LAB-CYCLE-0001_2026-05-22T06-25-33+00-00",
+    "review_id": "review_JAG-LAB-CYCLE-0001_2026-05-22T08-38-56+00-00",
     "workspace": "JAG-LAB"
   },
   "status": "stopped",
@@ -1264,6 +1339,6 @@
       "why": "沉淀 Best Answer、Best Hook、Failed Strategy 等 Runtime Intelligence。"
     }
   ],
-  "updated_at": "2026-05-22T06:25:33+00:00",
+  "updated_at": "2026-05-22T08:40:54+00:00",
   "workspace": "JAG-LAB"
 }

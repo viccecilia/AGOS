@@ -5,6 +5,8 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
+from services.human_feedback_learning import HumanFeedbackLearning
+from services.runtime_drift_monitor import RuntimeDriftMonitor
 from services.runtime_engine import RuntimeEngine
 from services.runtime_persistence import RuntimePersistence
 
@@ -39,6 +41,8 @@ class RuntimeUIBridge:
 
     @staticmethod
     def to_war_room_growth(state: dict[str, Any]) -> dict[str, Any]:
+        feedback_summary = HumanFeedbackLearning().summary()
+        drift_summary = RuntimeDriftMonitor().summary()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -72,7 +76,8 @@ class RuntimeUIBridge:
                 "action": "Validate locally before any external integration.",
             },
         ]
-        correction_center = list(state.get("mislearning_alerts", [])) + base_corrections
+        correction_center = list(state.get("mislearning_alerts", [])) + drift_summary.get("runtimeDriftEvents", []) + base_corrections
+        review_queue = state.get("review_queue", [])
         return {
             "runtimeStatus": runtime_status,
             "current_runtime_stage": state.get("current_stage", "Scout"),
@@ -112,7 +117,7 @@ class RuntimeUIBridge:
             },
             "socialRuntimeMatrix": [],
             "correctionCenter": correction_center,
-            "reviewQueue": state.get("review_queue", []),
+            "reviewQueue": review_queue,
             "runtimeQueue": state.get("runtime_queue", []),
             "learningDeposits": state.get("learning_deposits", []),
             "mislearningAlerts": state.get("mislearning_alerts", []),
@@ -124,6 +129,18 @@ class RuntimeUIBridge:
             "runtimeIntelligenceFeed": state.get("runtime_intelligence", {}),
             "trainingExplanations": state.get("training_explanations", []),
             "runtimeReviewReport": state.get("runtime_review_report"),
+            "runtimeDriftEvents": drift_summary.get("runtimeDriftEvents", []),
+            "humanFeedbackSummary": feedback_summary,
+            "correctionHistory": feedback_summary.get("correctionHistory", []),
+            "humanPreferenceMemory": feedback_summary.get("humanPreferenceMemory", {}),
+            "runtimeUiStats": {
+                "pendingReviews": len(review_queue),
+                "correctionAlerts": len(correction_center),
+                "humanDecisionsToday": feedback_summary.get("humanDecisionsToday", 0),
+                "topCorrectedMistakes": feedback_summary.get("topCorrectedMistakes", []),
+                "mostRejectedStrategy": feedback_summary.get("mostRejectedStrategy", "none"),
+                "mostApprovedReplyStyle": feedback_summary.get("mostApprovedReplyStyle", "none"),
+            },
         }
 
 

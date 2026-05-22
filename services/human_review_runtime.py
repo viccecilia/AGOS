@@ -21,9 +21,16 @@ class HumanReviewRuntime:
             "cycle": item.get("cycle", "CYCLE-001"),
             "stage": item.get("stage", "Human Review"),
             "target_type": item.get("target_type", "strategy"),
+            "source_platform": item.get("source_platform", item.get("platform", "Local Runtime")),
+            "country": item.get("country", item.get("market", "local")),
+            "language": item.get("language", "n/a"),
+            "pain_point": item.get("pain_point", ""),
+            "ai_reason": item.get("ai_reason", "AGOS marked this item as requiring human review before learning."),
+            "risk_level": item.get("risk_level", "medium"),
             "content": item.get("content", {}),
             "status": "needs_human_review",
             "created_at": utc_now_iso(),
+            "generated_at": item.get("generated_at", utc_now_iso()),
             "updated_at": utc_now_iso(),
         }
         queue.append(payload)

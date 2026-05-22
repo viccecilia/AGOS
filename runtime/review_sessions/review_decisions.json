@@ -1,0 +1,98 @@
+[
+  {
+    "ai_output": {
+      "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
+      "reply_text": "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple.",
+      "strategy": "rescue-first helpful answer"
+    },
+    "created_at": "2026-05-22T08:35:14+00:00",
+    "cycle": "JAG-LAB-CYCLE-0001",
+    "decision": "modify",
+    "decision_id": "decision_2026-05-22T08-35-14+00-00",
+    "human_modified_version": "Keep the reply useful and non-promotional.",
+    "reason": "",
+    "review_id": "review_0008",
+    "target_type": "runtime_training",
+    "workspace": "JAG-LAB"
+  },
+  {
+    "ai_output": {
+      "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
+      "reply_text": "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple.",
+      "strategy": "rescue-first helpful answer"
+    },
+    "created_at": "2026-05-22T08:36:02+00:00",
+    "cycle": "JAG-LAB-CYCLE-0001",
+    "decision": "modify",
+    "decision_id": "decision_2026-05-22T08-36-02+00-00",
+    "human_modified_version": "Human optimized output: keep the answer practical, calm, and non-promotional.",
+    "reason": "",
+    "review_id": "review_0001",
+    "target_type": "runtime_training",
+    "workspace": "JAG-LAB"
+  },
+  {
+    "ai_output": {
+      "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
+      "reply_text": "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple.",
+      "strategy": "rescue-first helpful answer"
+    },
+    "created_at": "2026-05-22T08:36:26+00:00",
+    "cycle": "JAG-LAB-CYCLE-0001",
+    "decision": "reject",
+    "decision_id": "decision_2026-05-22T08-36-26+00-00",
+    "human_modified_version": "",
+    "reason": "Reject: this strategy is too promotional for a travel help answer.",
+    "review_id": "review_0003",
+    "target_type": "runtime_training",
+    "workspace": "JAG-LAB"
+  },
+  {
+    "ai_output": {
+      "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
+      "reply_text": "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple.",
+      "strategy": "rescue-first helpful answer"
+    },
+    "created_at": "2026-05-22T08:36:27+00:00",
+    "cycle": "JAG-LAB-CYCLE-0001",
+    "decision": "approve",
+    "decision_id": "decision_2026-05-22T08-36-27+00-00",
+    "human_modified_version": "",
+    "reason": "",
+    "review_id": "review_0009",
+    "target_type": "runtime_training",
+    "workspace": "JAG-LAB"
+  },
+  {
+    "ai_output": {
+      "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
+      "reply_text": "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple.",
+      "strategy": "rescue-first helpful answer"
+    },
+    "created_at": "2026-05-22T08:36:57+00:00",
+    "cycle": "JAG-LAB-CYCLE-0001",
+    "decision": "modify",
+    "decision_id": "decision_2026-05-22T08-36-57+00-00",
+    "human_modified_version": "Keep the reply useful and non-promotional.",
+    "reason": "",
+    "review_id": "review_0010",
+    "target_type": "runtime_training",
+    "workspace": "JAG-LAB"
+  },
+  {
+    "ai_output": {
+      "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
+      "reply_text": "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple.",
+      "strategy": "rescue-first helpful answer"
+    },
+    "created_at": "2026-05-22T08:38:56+00:00",
+    "cycle": "JAG-LAB-CYCLE-0001",
+    "decision": "modify",
+    "decision_id": "decision_2026-05-22T08-38-56+00-00",
+    "human_modified_version": "Keep the reply useful and non-promotional.",
+    "reason": "",
+    "review_id": "review_0011",
+    "target_type": "runtime_training",
+    "workspace": "JAG-LAB"
+  }
+]

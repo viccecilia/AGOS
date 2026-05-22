@@ -247,6 +247,12 @@ class RuntimeEngine:
                         "cycle": state["cycle"],
                         "stage": "Human Review",
                         "target_type": "runtime_training",
+                        "source_platform": question.get("platform", "reddit"),
+                        "country": question.get("market", "Japan"),
+                        "language": "en",
+                        "pain_point": ", ".join(question.get("pain_points", [])),
+                        "ai_reason": "Opportunity score and platform style plan require human approval before AGOS learns this answer branch.",
+                        "risk_level": "medium",
                         "content": generated,
                     }
                 )

@@ -525,28 +525,28 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.48",
+    "controlCenterVersion": "0.1.49",
     "lastUpdated": "2026-05-22",
     "currentPhase": "Real Operation / AI Growth Training",
-    "currentRound": "ROUND-RUNTIME-API-001",
-    "nextRound": "Human acceptance for Local Runtime API Server",
+    "currentRound": "ROUND-RUNTIME-REVIEW-UI-001",
+    "nextRound": "Human acceptance for Human-Gated Runtime Intelligence",
     "overallProgress": 88,
-    "activeFocus": "Local Runtime API Server: browser-controlled JAG-LAB Runtime Training via 127.0.0.1:8766."
+    "activeFocus": "Human-Gated Runtime Intelligence: War Room can approve, reject, modify, correct, and train AGOS through the local Runtime API."
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.48 Add local runtime API server",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.48",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.48",
-    "note": "Local Runtime API Server mapped to GitHub tag agos-v0.1.48. Runtime remains local-only and uses JAG-LAB sandbox; no external platform automation is enabled."
+    "latestCommit": "agos-v0.1.49 Add human review and correction UI",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.49",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.49",
+    "note": "Human Review and Correction UI mapped to GitHub tag agos-v0.1.49. Runtime remains local-only and uses JAG-LAB sandbox; no external platform automation is enabled."
   },
   "metrics": {
     "roundsPlanned": 101,
     "roundsCompleted": 45,
     "roundsInProgress": 0,
-    "reportsEmbedded": 52
+    "reportsEmbedded": 53
   },
   "modules": [
     {
@@ -680,6 +680,36 @@
     }
   ],
   "reports": [
+    {
+      "id": "ROUND-RUNTIME-REVIEW-UI-001",
+      "title": "AGOS Human Review and Correction UI",
+      "date": "2026-05-22",
+      "status": "done",
+      "summary": "Added Human Review Queue UI, Approve/Reject/Modify controls, Correction Submission Panel, Runtime Drift Monitor, Correction History Timeline, Human Feedback Learning memory, and review-session evidence packs for local JAG-LAB Runtime training.",
+      "files": [
+        "services/human_feedback_learning.py",
+        "services/runtime_drift_monitor.py",
+        "services/human_review_runtime.py",
+        "services/runtime_api_server.py",
+        "services/runtime_ui_bridge.py",
+        "docs/project_control_center.html",
+        "tests/runtime_review_queue_smoke_test.py",
+        "tests/runtime_correction_panel_smoke_test.py",
+        "tests/human_feedback_learning_smoke_test.py",
+        "tests/runtime_drift_monitor_smoke_test.py",
+        "runtime/task_results/ROUND-RUNTIME-REVIEW-UI-001/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "python -m compileall services tests passed",
+        "python tests\\runtime_review_queue_smoke_test.py passed",
+        "python tests\\runtime_correction_panel_smoke_test.py passed",
+        "python tests\\human_feedback_learning_smoke_test.py passed",
+        "python tests\\runtime_drift_monitor_smoke_test.py passed",
+        "python tests\\runtime_api_server_smoke_test.py passed",
+        "python tests\\war_room_runtime_ui_smoke_test.py passed",
+        "Browser check: Modify, Correct, Reject, and Approve updated Runtime state and Human Feedback statistics"
+      ]
+    },
     {
       "id": "ROUND-RUNTIME-API-001",
       "title": "AGOS Local Runtime API Server",
@@ -1677,6 +1707,15 @@
     }
   ],
   "versions": [
+    {
+      "id": "agos_control_center_v0.1.49",
+      "label": "v0.1.49 - Human Review and Correction UI",
+      "date": "2026-05-22",
+      "gitRef": "agos-v0.1.49",
+      "location": "docs/project_control_center.html",
+      "notes": "ROUND-RUNTIME-REVIEW-UI-001 completed locally and mapped to GitHub tag agos-v0.1.49. War Room can now approve, reject, modify, and correct Runtime decisions through the local API.",
+      "snapshot": "AGOS Project Control Center v0.1.49\nRound: ROUND-RUNTIME-REVIEW-UI-001 completed\nGit: agos-v0.1.49\nStatus: Human Review and Correction UI added\nNo external platform automation enabled.\n"
+    },
     {
       "id": "agos_control_center_v0.1.48",
       "label": "v0.1.48 - Local Runtime API Server",
@@ -3120,6 +3159,16 @@
       "deliverable": "Local-only Runtime API Server with status/start/stop/correction/review endpoints and browser Runtime Bar integration.",
       "report": "runtime/task_results/ROUND-RUNTIME-API-001/ROUND_SUMMARY.md",
       "summary": "This round upgrades AGOS from HTML-readable Runtime JSON to a browser-controllable Local Runtime OS. The control center now polls 127.0.0.1:8766, can start and stop JAG-LAB Runtime Training, shows API connection status, and records review/correction actions locally without touching real social platforms."
+    },
+    {
+      "id": "ROUND-RUNTIME-REVIEW-UI-001",
+      "phase": "RUNTIME_OS / HUMAN_GATED_RUNTIME",
+      "name": "AGOS_HUMAN_REVIEW_AND_CORRECTION_UI",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "Human Review Queue UI, Approve/Reject/Modify controls, Correction Submission Panel, Runtime Drift Monitor, Human Feedback Learning, and review-session evidence packs.",
+      "report": "runtime/task_results/ROUND-RUNTIME-REVIEW-UI-001/ROUND_SUMMARY.md",
+      "summary": "This round upgrades AGOS from browser-startable Runtime to browser-trainable Runtime. Humans can now approve, reject, modify, and correct AGOS decisions inside the War Room; those decisions are written to local review sessions and Human Preference Memory."
     }
   ],
   "realGrowthVerification": {
@@ -4332,6 +4381,47 @@
           </div>
           <div class="runtime-grid">
             <div class="runtime-panel">
+              <div class="runtime-title-row"><h3>Human Review Queue</h3><p>Approve / Reject / Modify</p></div>
+              <div class="feed-stream" id="runtime-review-queue"></div>
+            </div>
+            <div class="runtime-panel">
+              <div class="runtime-title-row"><h3>Correction Submission Panel</h3><p>Correct AGOS mislearning</p></div>
+              <div class="input-grid">
+                <label>Correction Type
+                  <select id="runtime-correction-type">
+                    <option value="错误机会判断">错误机会判断</option>
+                    <option value="错误平台风格">错误平台风格</option>
+                    <option value="错误痛点分类">错误痛点分类</option>
+                    <option value="错误趋势判断">错误趋势判断</option>
+                    <option value="错误行业包">错误行业包</option>
+                    <option value="错误语气">错误语气</option>
+                  </select>
+                </label>
+                <label>Workspace<input id="runtime-correction-workspace" value="JAG-LAB" /></label>
+                <label>Industry Pack<input id="runtime-correction-industry" value="Travel Pack / Lab" /></label>
+                <label>Affected Stage<input id="runtime-correction-stage" value="Human Review" /></label>
+                <label>Correction Reason<textarea id="runtime-correction-reason">This judgment should not be learned as a best branch.</textarea></label>
+              </div>
+              <div style="height:10px"></div>
+              <button class="action primary" type="button" id="runtime-submit-correction">Submit Correction</button>
+            </div>
+          </div>
+          <div class="runtime-grid">
+            <div class="runtime-panel">
+              <div class="runtime-title-row"><h3>Runtime Drift Monitor</h3><p>spam / platform drift / workspace pollution</p></div>
+              <div class="correction-grid" id="runtime-drift-monitor"></div>
+            </div>
+            <div class="runtime-panel">
+              <div class="runtime-title-row"><h3>Correction History Timeline</h3><p>Human feedback evidence</p></div>
+              <div class="feed-stream" id="runtime-correction-history"></div>
+            </div>
+          </div>
+          <div class="runtime-panel">
+            <div class="runtime-title-row"><h3>Human Feedback Learning</h3><p>Top corrected mistakes and preference memory</p></div>
+            <div class="runtime-stat-grid" id="runtime-human-feedback-summary"></div>
+          </div>
+          <div class="runtime-grid">
+            <div class="runtime-panel">
               <div class="runtime-title-row"><h3>Opportunity Ranking</h3><p>什么值得运营</p></div>
               <div class="feed-stream" id="runtime-opportunity-ranking"></div>
             </div>
@@ -4678,10 +4768,71 @@
       }
     }
 
+    async function callRuntimeReview(reviewId, decision) {
+      const rejectReason = el(`reject_reason_${reviewId}`)?.value || "";
+      const humanModifiedVersion = el(`modify_text_${reviewId}`)?.value || "";
+      if (decision === "reject" && !rejectReason.trim()) {
+        runtimeApiState.last_error = "Reject requires reject_reason";
+        renderRuntimeApiBanner();
+        return;
+      }
+      runtimeApiState.last_runtime_action = `review:${decision}`;
+      const payload = {
+        review_id: reviewId,
+        decision,
+        reject_reason: rejectReason,
+        human_modified_version: humanModifiedVersion
+      };
+      try {
+        const response = await fetch(`${runtimeApiBase}/api/runtime/review`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        mergeRuntimeApiPayload(await response.json());
+        renderRuntimeApiBanner();
+        renderWarRoomGrowth();
+      } catch (error) {
+        runtimeApiState.connected = false;
+        runtimeApiState.last_error = "Review API failed";
+        renderRuntimeApiBanner();
+      }
+    }
+
+    async function submitRuntimeCorrection() {
+      const payload = {
+        workspace: el("runtime-correction-workspace")?.value || "JAG-LAB",
+        industry_pack: el("runtime-correction-industry")?.value || "Travel Pack / Lab",
+        affected_runtime_stage: el("runtime-correction-stage")?.value || "Human Review",
+        correction_type: el("runtime-correction-type")?.value || "错误机会判断",
+        target_id: `manual_${Date.now()}`,
+        decision: "reject",
+        correction_reason: el("runtime-correction-reason")?.value || "Human correction submitted from War Room."
+      };
+      runtimeApiState.last_runtime_action = "correction:submit";
+      try {
+        const response = await fetch(`${runtimeApiBase}/api/runtime/correction`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        mergeRuntimeApiPayload(await response.json());
+        renderRuntimeApiBanner();
+        renderWarRoomGrowth();
+      } catch (error) {
+        runtimeApiState.connected = false;
+        runtimeApiState.last_error = "Correction API failed";
+        renderRuntimeApiBanner();
+      }
+    }
+
     function renderWarRoomGrowth() {
       const wr = state.warRoomGrowth || {};
       const control = wr.systemControl || {};
       const workspace = wr.runtimeWorkspace || wr.jagWorkspace || {};
+      const topStats = wr.runtimeUiStats || {};
       const runtimeStatus = wr.runtimeStatus || control.status || 'STOPPED';
       const currentStage = wr.current_runtime_stage || 'Scout';
       el('war-room-status').className = 'badge ' + runtimeBadgeClass(runtimeStatus);
@@ -4694,6 +4845,9 @@
         '<div class="runtime-kv"><span>已运行时间</span><strong>' + esc(wr.runtimeElapsed || '00:00:00') + '</strong></div>' +
         '<div class="runtime-kv"><span>Workspace</span><strong>' + esc(control.currentWorkspace || workspace.workspace || 'jag_app_growth') + '</strong></div>' +
         '<div class="runtime-kv"><span>Runtime API</span><strong>' + esc(runtimeApiState.connected ? 'connected' : 'disconnected') + '</strong></div>' +
+        '<div class="runtime-kv"><span>Pending Reviews</span><strong>' + esc(topStats.pendingReviews ?? 0) + '</strong></div>' +
+        '<div class="runtime-kv"><span>Correction Alerts</span><strong>' + esc(topStats.correctionAlerts ?? 0) + '</strong></div>' +
+        '<div class="runtime-kv"><span>Human Decisions Today</span><strong>' + esc(topStats.humanDecisionsToday ?? 0) + '</strong></div>' +
         '<div class="runtime-actions"><button class="primary" type="button" data-runtime-action="start">启动</button><button class="danger" type="button" data-runtime-action="stop">停止</button></div>';
       el('war-room-control-panel').querySelectorAll('[data-runtime-action]').forEach(button => {
         button.addEventListener('click', () => {
@@ -4733,6 +4887,35 @@
       el('war-room-correction-panel').innerHTML = (wr.correctionCenter || []).map(item =>
         '<div class="correction-card"><strong>' + esc(item.issue) + '</strong><span class="badge ' + (item.status === 'needs_code_check' || item.status === 'needs_runtime_validation' ? 'b-red' : item.status === 'needs_human_review' ? 'b-amber' : 'b-blue') + '">' + esc(item.status) + '</span><p>' + esc(item.signal) + '</p><p>' + esc(item.action) + '</p></div>'
       ).join('');
+      const runtimeStats = wr.runtimeUiStats || {};
+      const reviewQueue = wr.reviewQueue || [];
+      el('runtime-review-queue').innerHTML = reviewQueue.map(item => {
+        const contentText = JSON.stringify(item.content || {});
+        const reason = item.ai_reason || 'AGOS requires human review before learning this output.';
+        return '<div class="feed-item review-item"><time>' + esc(item.risk_level || 'medium') + '</time><div class="feed-main"><strong>' + esc(item.review_id) + ' · ' + esc(item.target_type || 'Review') + '</strong><span>' + esc(item.source_platform || 'Local Runtime') + ' · ' + esc(item.country || 'local') + ' · ' + esc(item.language || 'n/a') + ' · ' + esc(item.pain_point || 'pain point pending') + '</span><span>Reasoning: ' + esc(reason) + '</span><span>Generated: ' + esc(item.generated_at || item.created_at || '') + '</span><span>AI Output: ' + esc(contentText) + '</span><textarea id="reject_reason_' + esc(item.review_id) + '" placeholder="reject_reason"></textarea><textarea id="modify_text_' + esc(item.review_id) + '" placeholder="human_modified_version"></textarea><div class="runtime-actions"><button class="primary" type="button" data-review-id="' + esc(item.review_id) + '" data-review-decision="approve">Approve</button><button class="danger" type="button" data-review-id="' + esc(item.review_id) + '" data-review-decision="reject">Reject</button><button type="button" data-review-id="' + esc(item.review_id) + '" data-review-decision="modify">Modify</button></div></div><span class="badge b-amber">' + esc(item.status || 'needs_human_review') + '</span></div>';
+      }).join('') || '<div class="feed-item"><time>0</time><div class="feed-main"><strong>No pending review items</strong><span>Start Runtime to generate review items, or wait for the next Human Review gate.</span></div><span class="badge b-green">clear</span></div>';
+      document.querySelectorAll('[data-review-id]').forEach(button => {
+        button.addEventListener('click', () => callRuntimeReview(button.dataset.reviewId, button.dataset.reviewDecision));
+      });
+      const correctionButton = el('runtime-submit-correction');
+      if (correctionButton && !correctionButton.dataset.bound) {
+        correctionButton.dataset.bound = "1";
+        correctionButton.addEventListener('click', submitRuntimeCorrection);
+      }
+      el('runtime-drift-monitor').innerHTML = (wr.runtimeDriftEvents || []).map(item =>
+        '<div class="correction-card"><strong>' + esc(item.issue) + '</strong><span class="badge ' + (item.status === 'needs_code_check' ? 'b-red' : 'b-amber') + '">' + esc(item.status) + '</span><p>' + esc(item.signal) + '</p><p>' + esc(item.action) + '</p></div>'
+      ).join('') || '<div class="correction-card"><strong>Runtime Drift</strong><span class="badge b-green">clear</span><p>No active drift event.</p><p>Continue monitoring platform style, repetition, over-marketing, and workspace pollution.</p></div>';
+      el('runtime-correction-history').innerHTML = (wr.correctionHistory || []).map(item =>
+        '<div class="feed-item"><time>' + esc(item.created_at || '') + '</time><div class="feed-main"><strong>' + esc(item.correction_type || item.target_type || 'correction') + '</strong><span>' + esc(item.workspace || 'JAG-LAB') + ' · ' + esc(item.industry_pack || '') + ' · ' + esc(item.affected_runtime_stage || '') + '</span><span>Reason: ' + esc(item.correction_reason || item.reason || '') + '</span></div><span class="badge b-amber">' + esc(item.status || 'recorded') + '</span></div>'
+      ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>No correction history yet</strong><span>Submit a correction to create review evidence.</span></div><span class="badge b-amber">pending</span></div>';
+      const topMistakes = (runtimeStats.topCorrectedMistakes || []).map(item => item.target_type + ': ' + item.reason).join(' / ') || 'none';
+      el('runtime-human-feedback-summary').innerHTML =
+        '<div class="runtime-stat"><span>Pending Reviews</span><strong>' + esc(runtimeStats.pendingReviews ?? reviewQueue.length) + '</strong></div>' +
+        '<div class="runtime-stat"><span>Correction Alerts</span><strong>' + esc(runtimeStats.correctionAlerts ?? (wr.correctionCenter || []).length) + '</strong></div>' +
+        '<div class="runtime-stat"><span>Human Decisions Today</span><strong>' + esc(runtimeStats.humanDecisionsToday ?? 0) + '</strong></div>' +
+        '<div class="runtime-stat"><span>Top Corrected Mistakes</span><strong>' + esc(topMistakes) + '</strong></div>' +
+        '<div class="runtime-stat"><span>Most Rejected Strategy</span><strong>' + esc(runtimeStats.mostRejectedStrategy || 'none') + '</strong></div>' +
+        '<div class="runtime-stat"><span>Most Approved Reply Style</span><strong>' + esc(runtimeStats.mostApprovedReplyStyle || 'none') + '</strong></div>';
       el('runtime-opportunity-ranking').innerHTML = (wr.opportunityRanking || []).map(item =>
         '<div class="feed-item"><time>' + esc(item.verdict) + '</time><div class="feed-main"><strong>' + esc(item.question_id) + ' · score ' + esc(item.total_score) + '</strong><span>' + esc((item.reasons || []).join(' / ')) + '</span></div><span class="badge b-green">训练判断</span></div>'
       ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>等待训练评分</strong><span>Runtime Training 尚未写入 opportunityRanking。</span></div><span class="badge b-amber">pending</span></div>';

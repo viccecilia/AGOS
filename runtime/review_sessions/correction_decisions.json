@@ -1,0 +1,57 @@
+[
+  {
+    "affected_runtime_stage": "Human Review",
+    "correction_id": "correction_2026-05-22T08-35-14+00-00",
+    "correction_reason": "This is normal chatter, not a high-value travel pain point.",
+    "correction_type": "opportunity",
+    "created_at": "2026-05-22T08:35:14+00:00",
+    "industry_pack": "Travel Pack / Lab",
+    "status": "rejected",
+    "target_id": "OPP-001",
+    "workspace": "JAG-LAB"
+  },
+  {
+    "affected_runtime_stage": "Human Review",
+    "correction_id": "correction_2026-05-22T08-36-12+00-00",
+    "correction_reason": "TikTok emotional spam pattern is too aggressive and should not become the best style.",
+    "correction_type": "错误机会判断",
+    "created_at": "2026-05-22T08:36:12+00:00",
+    "industry_pack": "Travel Pack / Lab",
+    "status": "rejected",
+    "target_id": "manual_1779438972656",
+    "workspace": "JAG-LAB"
+  },
+  {
+    "affected_runtime_stage": "Human Review",
+    "correction_id": "correction_2026-05-22T08-36-57+00-00",
+    "correction_reason": "This is normal chatter, not a high-value travel pain point.",
+    "correction_type": "opportunity",
+    "created_at": "2026-05-22T08:36:57+00:00",
+    "industry_pack": "Travel Pack / Lab",
+    "status": "rejected",
+    "target_id": "OPP-001",
+    "workspace": "JAG-LAB"
+  },
+  {
+    "affected_runtime_stage": "Generate",
+    "correction_id": "correction_2026-05-22T08-37-06+00-00",
+    "correction_reason": "TikTok emotional spam pattern is too aggressive and should trigger platform drift review.",
+    "correction_type": "错误平台风格",
+    "created_at": "2026-05-22T08:37:06+00:00",
+    "industry_pack": "Travel Pack / Lab",
+    "status": "rejected",
+    "target_id": "UI-DRIFT-VALIDATION",
+    "workspace": "JAG-LAB"
+  },
+  {
+    "affected_runtime_stage": "Human Review",
+    "correction_id": "correction_2026-05-22T08-38-56+00-00",
+    "correction_reason": "This is normal chatter, not a high-value travel pain point.",
+    "correction_type": "opportunity",
+    "created_at": "2026-05-22T08:38:56+00:00",
+    "industry_pack": "Travel Pack / Lab",
+    "status": "rejected",
+    "target_id": "OPP-001",
+    "workspace": "JAG-LAB"
+  }
+]
