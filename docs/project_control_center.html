@@ -374,12 +374,12 @@
     .runtime-os {
       position: relative;
       overflow: visible;
-      background: #0b1220;
-      color: #e5edf8;
-      border-color: #17233a;
-      box-shadow: 0 20px 55px rgba(2, 6, 23, .22);
+      background: #f8fafc;
+      color: var(--ink);
+      border-color: #d9e2ef;
+      box-shadow: var(--shadow);
     }
-    .runtime-os p, .runtime-os .muted { color: #94a3b8; }
+    .runtime-os p, .runtime-os .muted { color: var(--muted); }
     .runtime-shell { display: grid; gap: 14px; }
     .runtime-bar {
       position: sticky;
@@ -391,35 +391,36 @@
       align-items: center;
       min-height: 58px;
       padding: 10px 12px;
-      border: 1px solid #24344f;
+      border: 1px solid #d9e2ef;
       border-radius: 8px;
-      background: #111827;
+      background: #ffffff;
+      box-shadow: 0 10px 28px rgba(16, 24, 40, .08);
     }
     .runtime-brand { font-weight: 900; letter-spacing: .02em; }
-    .runtime-kv { display: grid; gap: 2px; font-size: 12px; color: #94a3b8; }
-    .runtime-kv strong { color: #e5edf8; font-size: 13px; }
+    .runtime-kv { display: grid; gap: 2px; font-size: 12px; color: #667085; }
+    .runtime-kv strong { color: #101828; font-size: 13px; }
     .runtime-actions { display: flex; gap: 8px; justify-content: flex-end; }
     .runtime-actions button {
-      border: 1px solid #334155;
+      border: 1px solid #d9e2ef;
       border-radius: 8px;
       padding: 8px 12px;
-      background: #0f172a;
-      color: #e5edf8;
+      background: #ffffff;
+      color: #344054;
       font-weight: 900;
       cursor: pointer;
     }
     .runtime-actions button.primary { background: #16a34a; border-color: #16a34a; color: #fff; }
     .runtime-actions button.danger { background: #991b1b; border-color: #991b1b; color: #fff; }
-    .rt-running { color: #bbf7d0; background: rgba(22, 163, 74, .22); }
-    .rt-paused { color: #fde68a; background: rgba(217, 119, 6, .22); }
-    .rt-stopped { color: #fecaca; background: rgba(220, 38, 38, .22); }
+    .rt-running { color: #15803d; background: #dcfce7; }
+    .rt-paused { color: #b45309; background: #fef3c7; }
+    .rt-stopped { color: #b91c1c; background: #fee2e2; }
     .runtime-panel {
-      border: 1px solid #24344f;
+      border: 1px solid #d9e2ef;
       border-radius: 8px;
-      background: #0f172a;
+      background: #ffffff;
       padding: 14px;
     }
-    .runtime-panel h3 { color: #f8fafc; }
+    .runtime-panel h3 { color: #101828; }
     .runtime-title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
     .runtime-title-row p { margin: 0; font-size: 12px; }
     .pipeline {
@@ -433,18 +434,18 @@
       gap: 5px;
       min-height: 82px;
       padding: 10px;
-      border: 1px solid #334155;
+      border: 1px solid #d9e2ef;
       border-radius: 8px;
-      background: #111827;
-      color: #cbd5e1;
+      background: #f8fafc;
+      color: #344054;
     }
-    .pipeline-node strong { color: #f8fafc; font-size: 13px; }
-    .pipeline-node span { font-size: 11px; color: #94a3b8; }
-    .node-done { border-color: #16a34a; background: rgba(22, 163, 74, .15); }
-    .node-current { border-color: #38bdf8; box-shadow: 0 0 0 2px rgba(56, 189, 248, .22); }
+    .pipeline-node strong { color: #101828; font-size: 13px; }
+    .pipeline-node span { font-size: 11px; color: #667085; }
+    .node-done { border-color: #16a34a; background: #ecfdf3; }
+    .node-current { border-color: #2563eb; background: #eff6ff; box-shadow: 0 0 0 2px rgba(37, 99, 235, .14); }
     .node-waiting, .node-pending { opacity: .62; }
-    .node-error { border-color: #ef4444; background: rgba(239, 68, 68, .18); }
-    .node-human_review { border-color: #d97706; background: rgba(217, 119, 6, .18); }
+    .node-error { border-color: #dc2626; background: #fef2f2; }
+    .node-human_review { border-color: #d97706; background: #fffbeb; }
     .runtime-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 14px; }
     .feed-stream { display: grid; gap: 8px; }
     .feed-item {
@@ -453,30 +454,30 @@
       gap: 10px;
       align-items: center;
       padding: 10px;
-      border: 1px solid #24344f;
+      border: 1px solid #d9e2ef;
       border-radius: 8px;
-      background: #111827;
+      background: #f8fafc;
     }
-    .feed-item time { color: #38bdf8; font-weight: 900; font-size: 12px; }
-    .feed-main strong { display: block; color: #f8fafc; font-size: 13px; }
-    .feed-main span { color: #94a3b8; font-size: 12px; }
+    .feed-item time { color: #2563eb; font-weight: 900; font-size: 12px; }
+    .feed-main strong { display: block; color: #101828; font-size: 13px; }
+    .feed-main span { color: #667085; font-size: 12px; }
     .runtime-stat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
-    .runtime-stat { padding: 10px; border: 1px solid #24344f; border-radius: 8px; background: #111827; }
-    .runtime-stat span { display: block; color: #94a3b8; font-size: 12px; }
-    .runtime-stat strong { display: block; color: #f8fafc; margin-top: 4px; font-size: 13px; }
+    .runtime-stat { padding: 10px; border: 1px solid #d9e2ef; border-radius: 8px; background: #f8fafc; }
+    .runtime-stat span { display: block; color: #667085; font-size: 12px; }
+    .runtime-stat strong { display: block; color: #101828; margin-top: 4px; font-size: 13px; }
     .social-runtime {
       display: grid;
       grid-template-columns: repeat(7, minmax(120px, 1fr));
       gap: 8px;
     }
-    .social-cell { padding: 10px; border: 1px solid #24344f; border-radius: 8px; background: #111827; }
-    .social-cell strong { color: #f8fafc; display: block; margin-bottom: 6px; }
-    .social-cell span { display: block; color: #94a3b8; font-size: 12px; line-height: 1.5; }
+    .social-cell { padding: 10px; border: 1px solid #d9e2ef; border-radius: 8px; background: #f8fafc; }
+    .social-cell strong { color: #101828; display: block; margin-bottom: 6px; }
+    .social-cell span { display: block; color: #667085; font-size: 12px; line-height: 1.5; }
     .timeline-list { display: grid; gap: 8px; }
     details.runtime-details {
-      border: 1px solid #24344f;
+      border: 1px solid #d9e2ef;
       border-radius: 8px;
-      background: #111827;
+      background: #f8fafc;
       overflow: hidden;
     }
     details.runtime-details summary {
@@ -486,24 +487,24 @@
       align-items: center;
       padding: 12px;
       cursor: pointer;
-      color: #f8fafc;
+      color: #101828;
       font-weight: 900;
     }
     .mini-steps { display: flex; flex-wrap: wrap; gap: 6px; }
-    .mini-step { padding: 4px 7px; border-radius: 999px; background: #1e293b; color: #cbd5e1; font-size: 11px; }
-    .mini-step.done { background: rgba(22, 163, 74, .28); color: #bbf7d0; }
-    .mini-step.waiting { background: rgba(217, 119, 6, .25); color: #fde68a; }
+    .mini-step { padding: 4px 7px; border-radius: 999px; background: #eef2f7; color: #344054; font-size: 11px; }
+    .mini-step.done { background: #dcfce7; color: #15803d; }
+    .mini-step.waiting { background: #fef3c7; color: #b45309; }
     .mini-step.pending { opacity: .58; }
-    .runtime-detail-body { padding: 0 12px 12px; display: grid; gap: 8px; color: #cbd5e1; font-size: 13px; }
+    .runtime-detail-body { padding: 0 12px 12px; display: grid; gap: 8px; color: #344054; font-size: 13px; }
     .strategy-timeline { display: grid; grid-template-columns: repeat(6, minmax(150px, 1fr)); gap: 8px; }
-    .strategy-stage { border: 1px solid #24344f; border-radius: 8px; background: #111827; overflow: hidden; }
-    .strategy-stage summary { padding: 11px; cursor: pointer; color: #f8fafc; font-weight: 900; }
-    .strategy-stage div { padding: 0 11px 11px; color: #cbd5e1; font-size: 12px; line-height: 1.55; }
+    .strategy-stage { border: 1px solid #d9e2ef; border-radius: 8px; background: #f8fafc; overflow: hidden; }
+    .strategy-stage summary { padding: 11px; cursor: pointer; color: #101828; font-weight: 900; }
+    .strategy-stage div { padding: 0 11px 11px; color: #344054; font-size: 12px; line-height: 1.55; }
     .correction-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
-    .correction-card { padding: 12px; border: 1px solid #24344f; border-radius: 8px; background: #111827; }
-    .correction-card strong { display: block; color: #f8fafc; margin-bottom: 8px; }
+    .correction-card { padding: 12px; border: 1px solid #d9e2ef; border-radius: 8px; background: #f8fafc; }
+    .correction-card strong { display: block; color: #101828; margin-bottom: 8px; }
     .correction-card p { margin: 8px 0 0; font-size: 12px; line-height: 1.45; }
-    .drift-banner { border: 1px solid #d97706; background: rgba(217, 119, 6, .18); color: #fde68a; border-radius: 8px; padding: 11px 12px; font-weight: 900; }
+    .drift-banner { border: 1px solid #f59e0b; background: #fffbeb; color: #92400e; border-radius: 8px; padding: 11px 12px; font-weight: 900; }
 
     @media (max-width: 1180px) {
       .layout { grid-template-columns: 1fr; }
@@ -524,11 +525,11 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.44",
+    "controlCenterVersion": "0.1.45",
     "lastUpdated": "2026-05-22",
     "currentPhase": "AI War Room / Runtime OS",
     "currentRound": "ROUND-WAR-ROOM-UI-001",
-    "nextRound": "等待用户验收 Runtime OS UI",
+    "nextRound": "等待用户验收浅色 Runtime OS UI",
     "overallProgress": 84,
     "activeFocus": "AGOS 战情室已重构为 AI Runtime Operating System：顶部 Runtime Bar、Pipeline、实时战情流、Workspace Card、Social Matrix、Cycle Timeline、Strategy Evolution 和 Correction Center 形成一个运行态指挥界面。"
   },
@@ -536,10 +537,10 @@
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.44 Reconstruct AGOS runtime OS UI",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.44",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.44",
-    "note": "Runtime OS UI 重构映射到 GitHub tag agos-v0.1.44。当前仍是模拟 Runtime UI，不启动真实平台 API、daemon、自动发帖或自动回复。"
+    "latestCommit": "agos-v0.1.45 Lighten AGOS runtime OS UI",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.45",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.45",
+    "note": "Runtime OS UI changed from dark command-screen styling to a light professional control-console theme."
   },
   "metrics": {
     "roundsPlanned": 99,
@@ -1589,6 +1590,15 @@
     }
   ],
   "versions": [
+    {
+      "id": "agos-v0.1.45-runtime-os-light",
+      "label": "Control Center v0.1.45",
+      "date": "2026-05-22",
+      "gitRef": "agos-v0.1.45",
+      "location": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.45",
+      "notes": "Runtime OS UI light theme: removed dark War Room background while preserving Runtime Bar, Pipeline, Feed, Timeline, and Correction Center.",
+      "snapshot": "AGOS Project Control Center v0.1.45\nChange: Runtime OS UI light theme\nStatus: dark War Room background removed\n"
+    },
     {
       "id": "agos-v0.1.44-runtime-os-ui",
       "label": "Control Center v0.1.44",
