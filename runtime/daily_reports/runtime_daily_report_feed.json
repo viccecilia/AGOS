@@ -1,0 +1,38 @@
+[
+  {
+    "detail": "Daily Question Import completed.",
+    "title": "今天导入问题",
+    "type": "imported_questions",
+    "value": 12
+  },
+  {
+    "detail": "Reply drafts generated and waiting for human review.",
+    "title": "今天回复",
+    "type": "reply_drafts",
+    "value": 18
+  },
+  {
+    "detail": "Feedback events with liked/replied/saved/shared.",
+    "title": "今天高互动",
+    "type": "high_engagement",
+    "value": 4
+  },
+  {
+    "detail": "Feedback events marked ignored without positive signal.",
+    "title": "今天被忽视",
+    "type": "ignored",
+    "value": 1
+  },
+  {
+    "detail": "detailed, calm, non-promotional",
+    "title": "今天最佳内容",
+    "type": "best_content",
+    "value": "make payment decision simple"
+  },
+  {
+    "detail": "specific checklist or reusable route tip",
+    "title": "今天最佳回复",
+    "type": "best_reply",
+    "value": "20260522-Q002-reddit-reply"
+  }
+]

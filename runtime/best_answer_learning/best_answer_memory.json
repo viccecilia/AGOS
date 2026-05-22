@@ -1,0 +1,63 @@
+{
+  "bestAnswer": {
+    "answer_pattern": "specific checklist or reusable route tip",
+    "captured_at": "2026-05-22T11:33:02+00:00",
+    "feedback_id": "feedback_0004",
+    "feedback_note": "Reusable route tip.",
+    "feedback_score": 9,
+    "has_negative_feedback": false,
+    "has_positive_feedback": true,
+    "hook_pattern": "make payment decision simple",
+    "ignored": false,
+    "learned_at": "2026-05-22T11:33:02+00:00",
+    "liked": true,
+    "platform": "Reddit",
+    "platform_style": "longer practical explanation",
+    "question_id": "20260522-Q002",
+    "question_text": "Is it worth buying a Suica card if I only stay in Tokyo for three days?",
+    "replied": false,
+    "reply_attempt_id": "20260522-Q002-reddit-reply",
+    "reply_text": "For Is it worth buying a Suica card if I only stay in Tokyo for three days?, I would keep the route simple first: pick one main station, check transfer count, and save the route offline before leaving. This is a draft answer for human review, not an automatic reply.",
+    "safety_boundary": "manual_feedback_record_only",
+    "saved": true,
+    "shared": true,
+    "status": "captured",
+    "tone": "detailed, calm, non-promotional"
+  },
+  "bestHook": "make payment decision simple",
+  "bestPlatformStyle": "longer practical explanation",
+  "bestTone": "detailed, calm, non-promotional",
+  "failedAnswers": [
+    {
+      "answer_pattern": "low-response answer",
+      "captured_at": "2026-05-22T11:33:02+00:00",
+      "feedback_id": "feedback_0003",
+      "feedback_note": "No visible response after review window.",
+      "feedback_score": -2,
+      "has_negative_feedback": true,
+      "has_positive_feedback": false,
+      "hook_pattern": "reduce transit uncertainty first",
+      "ignored": true,
+      "learned_at": "2026-05-22T11:33:02+00:00",
+      "liked": false,
+      "platform": "X",
+      "platform_style": "compact advice thread",
+      "question_id": "20260522-Q001",
+      "question_text": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
+      "replied": false,
+      "reply_attempt_id": "20260522-Q001-x-reply",
+      "reply_text": "Draft X reply: For How do I avoid getting lost at Shinjuku station on my first Tokyo trip?, reduce uncertainty with one clear route, one backup, and one saved map. Needs human review before any real reply.",
+      "safety_boundary": "manual_feedback_record_only",
+      "saved": false,
+      "shared": false,
+      "status": "captured",
+      "tone": "concise, useful, low-hype"
+    }
+  ],
+  "failedHooks": [
+    "reduce transit uncertainty first"
+  ],
+  "failedStrategies": [
+    "generic answer without visible follow-up"
+  ]
+}

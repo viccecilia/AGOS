@@ -1,0 +1,5 @@
+{
+  "round_id": "ROUND-OPS-004",
+  "status": "passed",
+  "safety_boundary": "local_learning_from_feedback_only"
+}

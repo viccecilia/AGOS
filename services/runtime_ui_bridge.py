@@ -5,8 +5,10 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
+from services.best_answer_learning_engine import BestAnswerLearningEngine
 from services.cross_platform_expansion_engine import CrossPlatformExpansionEngine
 from services.daily_question_import_engine import DailyQuestionImportEngine
+from services.daily_operations_report_engine import DailyOperationsReportEngine
 from services.human_feedback_learning import HumanFeedbackLearning
 from services.human_personality_training import HumanPersonalityTraining
 from services.heat_detection_engine import HeatDetectionEngine
@@ -90,6 +92,8 @@ class RuntimeUIBridge:
         daily_question_import = DailyQuestionImportEngine().import_today()
         real_reply_attempts = RealReplyAttemptEngine().generate_attempts(daily_question_import.get("dailyQuestions", []))
         real_feedback_capture = RealFeedbackCaptureEngine().capture()
+        best_answer_learning = BestAnswerLearningEngine().learn()
+        daily_operations_report = DailyOperationsReportEngine().generate()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -263,6 +267,12 @@ class RuntimeUIBridge:
             "feedbackEvents": real_feedback_capture.get("feedbackEvents", []),
             "feedbackTimeline": real_feedback_capture.get("feedbackTimeline", []),
             "feedbackSummary": real_feedback_capture.get("feedbackSummary", {}),
+            "bestAnswerLearning": best_answer_learning,
+            "bestAnswerMemory": best_answer_learning.get("bestAnswerLearning", {}),
+            "answerLearningTimeline": best_answer_learning.get("answerLearningTimeline", []),
+            "dailyOperationsReport": daily_operations_report,
+            "runtimeDailyReportFeed": daily_operations_report.get("runtimeDailyReportFeed", []),
+            "dailyOperationsSummary": daily_operations_report.get("dailyOperationsSummary", {}),
         }
 
 

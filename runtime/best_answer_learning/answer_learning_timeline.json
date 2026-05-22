@@ -1,0 +1,47 @@
+[
+  {
+    "learned": "specific checklist or reusable route tip",
+    "platform": "Reddit",
+    "reply_attempt_id": "20260522-Q002-reddit-reply",
+    "score": 9,
+    "status": "learned",
+    "time": "2026-05-22T11:33:02+00:00",
+    "type": "best_answer_learning"
+  },
+  {
+    "learned": "reply that invites a practical follow-up",
+    "platform": "Reddit",
+    "reply_attempt_id": "20260522-Q001-reddit-reply",
+    "score": 5,
+    "status": "learned",
+    "time": "2026-05-22T11:33:02+00:00",
+    "type": "best_answer_learning"
+  },
+  {
+    "learned": "specific checklist or reusable route tip",
+    "platform": "TikTok",
+    "reply_attempt_id": "20260522-Q001-tiktok-reply",
+    "score": 5,
+    "status": "learned",
+    "time": "2026-05-22T11:33:02+00:00",
+    "type": "best_answer_learning"
+  },
+  {
+    "learned": "reply that invites a practical follow-up",
+    "platform": "TikTok",
+    "reply_attempt_id": "20260522-Q002-tiktok-reply",
+    "score": 3,
+    "status": "learned",
+    "time": "2026-05-22T11:33:02+00:00",
+    "type": "best_answer_learning"
+  },
+  {
+    "learned": "Avoid low-specificity replies that get ignored.",
+    "platform": "X",
+    "reply_attempt_id": "20260522-Q001-x-reply",
+    "score": -2,
+    "status": "failed",
+    "time": "2026-05-22T11:33:02+00:00",
+    "type": "failed_answer_learning"
+  }
+]
