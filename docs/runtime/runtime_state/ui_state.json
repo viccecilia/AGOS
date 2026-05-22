@@ -590,6 +590,83 @@
       "verdict": "high_value"
     }
   ],
+  "personalityDriftAlerts": [
+    {
+      "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+      "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_1",
+      "created_at": "2026-05-22T09:02:14+00:00",
+      "issue": "过度营销",
+      "matched_tokens": [
+        "buy now"
+      ],
+      "reason": "Detected personality drift tokens: buy now",
+      "severity": "high",
+      "status": "needs_human_review"
+    },
+    {
+      "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+      "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_2",
+      "created_at": "2026-05-22T09:02:14+00:00",
+      "issue": "过度情绪化",
+      "matched_tokens": [
+        "panic"
+      ],
+      "reason": "Detected personality drift tokens: panic",
+      "severity": "medium",
+      "status": "needs_human_review"
+    },
+    {
+      "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+      "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_3",
+      "created_at": "2026-05-22T09:02:14+00:00",
+      "issue": "平台人格错乱",
+      "matched_tokens": [
+        "reddit short hook"
+      ],
+      "reason": "Detected personality drift tokens: reddit short hook",
+      "severity": "high",
+      "status": "needs_human_review"
+    },
+    {
+      "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+      "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_4",
+      "created_at": "2026-05-22T09:02:14+00:00",
+      "issue": "clickbait",
+      "matched_tokens": [
+        "you won't believe",
+        "secret trick"
+      ],
+      "reason": "Detected personality drift tokens: you won't believe, secret trick",
+      "severity": "medium",
+      "status": "needs_human_review"
+    },
+    {
+      "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+      "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_5",
+      "created_at": "2026-05-22T09:02:14+00:00",
+      "issue": "机械回复",
+      "matched_tokens": [
+        "generic reply"
+      ],
+      "reason": "Detected personality drift tokens: generic reply",
+      "severity": "medium",
+      "status": "needs_human_review"
+    },
+    {
+      "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+      "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_6",
+      "created_at": "2026-05-22T09:02:14+00:00",
+      "issue": "内容重复",
+      "matched_tokens": [
+        "same hook repeated"
+      ],
+      "reason": "Detected personality drift tokens: same hook repeated",
+      "severity": "medium",
+      "status": "needs_human_review"
+    }
+  ],
+  "personalityDriftReason": "Detected personality drift tokens: same hook repeated",
+  "personalityDriftStatus": "needs_human_review",
   "personalityRuntimeFeed": [
     {
       "status": "active",
@@ -604,14 +681,14 @@
           "tone": "precise guide"
         },
         "platformPersonality": {
-          "pace": "long-form",
-          "platform": "reddit",
+          "pace": "thread",
+          "platform": "x",
           "style": [
-            "深度",
-            "真实",
-            "不硬广"
+            "快速",
+            "观点",
+            "趋势"
           ],
-          "tone": "helpful expert"
+          "tone": "sharp but useful"
         },
         "tonePersonality": {
           "avoid": [
@@ -625,7 +702,7 @@
             "可执行"
           ]
         },
-        "updated_at": "2026-05-22T08:54:38+00:00",
+        "updated_at": "2026-05-22T08:56:18+00:00",
         "workspacePersonality": {
           "avoid": [
             "硬广",
@@ -749,14 +826,14 @@
         "tone": "precise guide"
       },
       "platformPersonality": {
-        "pace": "long-form",
-        "platform": "reddit",
+        "pace": "thread",
+        "platform": "x",
         "style": [
-          "深度",
-          "真实",
-          "不硬广"
+          "快速",
+          "观点",
+          "趋势"
         ],
-        "tone": "helpful expert"
+        "tone": "sharp but useful"
       },
       "tonePersonality": {
         "avoid": [
@@ -770,7 +847,7 @@
           "可执行"
         ]
       },
-      "updated_at": "2026-05-22T08:54:38+00:00",
+      "updated_at": "2026-05-22T08:56:18+00:00",
       "workspacePersonality": {
         "avoid": [
           "硬广",
@@ -1308,7 +1385,7 @@
     "currentCycle": "JAG-LAB-CYCLE-0001",
     "currentIndustryPack": "Travel Pack / Lab",
     "currentWorkspace": "JAG-LAB",
-    "lastRunTime": "2026-05-22T08:54:38+00:00",
+    "lastRunTime": "2026-05-22T09:02:14+00:00",
     "status": "STOPPED"
   },
   "trainingExplanations": [

@@ -1,0 +1,18 @@
+{
+  "round_id": "ROUND-RUNTIME-PERSONALITY-002",
+  "status": "passed",
+  "detected_drift_types": [
+    "过度营销",
+    "过度情绪化",
+    "平台人格错乱",
+    "clickbait",
+    "机械回复",
+    "内容重复"
+  ],
+  "runtime_output": "runtime/personality_drift/personality_drift_alerts.json",
+  "browser_verification": {
+    "personality_drift_alerts_visible": true,
+    "needs_human_review_visible": true,
+    "drift_reasons_visible": true
+  }
+}
