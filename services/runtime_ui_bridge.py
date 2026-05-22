@@ -13,6 +13,7 @@ from services.failure_analysis_engine import FailureAnalysisEngine
 from services.human_feedback_learning import HumanFeedbackLearning
 from services.human_personality_training import HumanPersonalityTraining
 from services.heat_detection_engine import HeatDetectionEngine
+from services.long_term_strategy_memory import LongTermStrategyMemory
 from services.personality_drift_engine import PersonalityDriftEngine
 from services.personality_isolation_engine import PersonalityIsolationEngine
 from services.personality_memory_deposit import PersonalityMemoryDeposit
@@ -98,6 +99,7 @@ class RuntimeUIBridge:
         daily_operations_report = DailyOperationsReportEngine().generate()
         failure_analysis = FailureAnalysisEngine().analyze()
         real_growth_validation = RealGrowthValidationEngine().validate()
+        long_term_strategy_memory = LongTermStrategyMemory().build()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -285,6 +287,14 @@ class RuntimeUIBridge:
             "realGrowthValidationChecks": real_growth_validation.get("validationChecks", []),
             "runtimeIntelligenceReview": real_growth_validation.get("runtimeIntelligenceReview", {}),
             "realGrowthValidationSummary": real_growth_validation.get("realGrowthValidationSummary", {}),
+            "longTermStrategyMemory": long_term_strategy_memory,
+            "longTermEffectiveStrategies": long_term_strategy_memory.get("longTermEffectiveStrategies", []),
+            "shortTermEffectiveStrategies": long_term_strategy_memory.get("shortTermEffectiveStrategies", []),
+            "longTermFailedStrategies": long_term_strategy_memory.get("longTermFailedStrategies", []),
+            "platformLongTermTrends": long_term_strategy_memory.get("platformLongTermTrends", []),
+            "marketLongTermTrends": long_term_strategy_memory.get("marketLongTermTrends", []),
+            "strategyMemoryTimeline": long_term_strategy_memory.get("strategyMemoryTimeline", []),
+            "strategyHorizonClassification": long_term_strategy_memory.get("strategyHorizonClassification", {}),
         }
 
 

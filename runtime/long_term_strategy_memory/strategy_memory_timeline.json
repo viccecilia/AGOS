@@ -1,0 +1,58 @@
+[
+  {
+    "platform": "reddit",
+    "status": "stored",
+    "summary": "Answer high-intent travel anxiety with detailed, non-promotional guidance.",
+    "time": "2026-05-22T11:55:11+00:00",
+    "type": "long_term_growth_memory"
+  },
+  {
+    "platform": "youtube",
+    "status": "stored",
+    "summary": "Build evergreen walkthroughs for repeated travel pain points.",
+    "time": "2026-05-22T11:55:11+00:00",
+    "type": "long_term_growth_memory"
+  },
+  {
+    "platform": "tiktok",
+    "status": "experimental",
+    "summary": "Test fast Tokyo transport hooks for save-worthy short videos.",
+    "time": "2026-05-22T11:55:11+00:00",
+    "type": "short_term_traffic_memory"
+  },
+  {
+    "platform": "x",
+    "status": "experimental",
+    "summary": "React to travel trend bursts with concise observations.",
+    "time": "2026-05-22T11:55:11+00:00",
+    "type": "short_term_traffic_memory"
+  },
+  {
+    "platform": "X",
+    "status": "avoid_without_review",
+    "summary": "Reply did not produce visible engagement in the feedback window.",
+    "time": "2026-05-22T11:55:11+00:00",
+    "type": "failed_strategy_memory"
+  },
+  {
+    "platform": "X",
+    "status": "avoid_without_review",
+    "summary": "Answer produced no positive feedback and should not be learned as a best pattern.",
+    "time": "2026-05-22T11:55:11+00:00",
+    "type": "failed_strategy_memory"
+  },
+  {
+    "platform": "unknown",
+    "status": "avoid_without_review",
+    "summary": "Hook failed because it did not make the practical travel payoff visible fast enough.",
+    "time": "2026-05-22T11:55:11+00:00",
+    "type": "failed_strategy_memory"
+  },
+  {
+    "platform": "unknown",
+    "status": "avoid_without_review",
+    "summary": "Strategy failed because it produced weak feedback or could not be tied to a clear user pain signal.",
+    "time": "2026-05-22T11:55:11+00:00",
+    "type": "failed_strategy_memory"
+  }
+]

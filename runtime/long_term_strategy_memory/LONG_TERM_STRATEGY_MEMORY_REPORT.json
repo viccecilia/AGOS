@@ -1,0 +1,250 @@
+{
+  "created_at": "2026-05-22T11:55:11+00:00",
+  "longTermEffectiveStrategies": [
+    {
+      "durable_score": 0.757,
+      "human_review_status": "needs_human_review",
+      "memory_id": "long_term_effective_reddit_trust_answer",
+      "memory_type": "long_term_effective",
+      "next_action": "Promote into durable operating memory and retest over multiple cycles.",
+      "platform": "reddit",
+      "reason": "Durable trust and learning value are stronger than traffic spike.",
+      "risk": 0.18,
+      "spike_score": 0.222,
+      "strategy": "Answer high-intent travel anxiety with detailed, non-promotional guidance.",
+      "time_horizon": "long_term_growth"
+    },
+    {
+      "durable_score": 0.743,
+      "human_review_status": "needs_human_review",
+      "memory_id": "long_term_effective_youtube_evergreen_walkthrough",
+      "memory_type": "long_term_effective",
+      "next_action": "Promote into durable operating memory and retest over multiple cycles.",
+      "platform": "youtube",
+      "reason": "Durable trust and learning value are stronger than traffic spike.",
+      "risk": 0.2,
+      "spike_score": 0.312,
+      "strategy": "Build evergreen walkthroughs for repeated travel pain points.",
+      "time_horizon": "long_term_growth"
+    }
+  ],
+  "longTermFailedStrategies": [
+    {
+      "avoid_rule": "Try a clearer hook and stronger practical detail.",
+      "failed_pattern": "Draft X reply: For How do I avoid getting lost at Shinjuku station on my first Tokyo trip?, reduce uncertainty with one clear route, one backup, and one saved map. Needs human review before any real reply.",
+      "failure_type": "ignored_reply",
+      "human_review_status": "needs_human_review",
+      "memory_id": "failed_failure_feedback_0003",
+      "memory_type": "long_term_failed_strategy",
+      "platform": "X",
+      "why_failed": "Reply did not produce visible engagement in the feedback window."
+    },
+    {
+      "avoid_rule": "Make the answer more specific, reduce generic phrasing, and require human review before reuse.",
+      "failed_pattern": "Draft X reply: For How do I avoid getting lost at Shinjuku station on my first Tokyo trip?, reduce uncertainty with one clear route, one backup, and one saved map. Needs human review before any real reply.",
+      "failure_type": "failed_answer",
+      "human_review_status": "needs_human_review",
+      "memory_id": "failed_failure_learning_20260522-Q001-x-reply",
+      "memory_type": "long_term_failed_strategy",
+      "platform": "X",
+      "why_failed": "Answer produced no positive feedback and should not be learned as a best pattern."
+    },
+    {
+      "avoid_rule": "Name the concrete pain point in the first phrase and promise one useful next step.",
+      "failed_pattern": "reduce transit uncertainty first",
+      "failure_type": "failed_hook",
+      "human_review_status": "needs_human_review",
+      "memory_id": "failed_failure_hook_56974",
+      "memory_type": "long_term_failed_strategy",
+      "platform": "unknown",
+      "why_failed": "Hook failed because it did not make the practical travel payoff visible fast enough."
+    },
+    {
+      "avoid_rule": "Retest with a narrower audience, clearer pain point, and explicit human review.",
+      "failed_pattern": "generic answer without visible follow-up",
+      "failure_type": "failed_strategy",
+      "human_review_status": "needs_human_review",
+      "memory_id": "failed_failure_strategy_32763",
+      "memory_type": "long_term_failed_strategy",
+      "platform": "unknown",
+      "why_failed": "Strategy failed because it produced weak feedback or could not be tied to a clear user pain signal."
+    }
+  ],
+  "marketLongTermTrends": [
+    {
+      "hot_signal_count": 2,
+      "long_term_trend": "travel anxiety and local navigation confidence",
+      "market": "Japan",
+      "reason": "Repeated travel pain points are stable enough for evergreen guidance and trust-building content.",
+      "trend_count": 4
+    }
+  ],
+  "platformLongTermTrends": [
+    {
+      "dominant_trends": [
+        "Tokyo rainy day travel friction"
+      ],
+      "long_term_signal": "watch",
+      "platform": "Instagram",
+      "positive_feedback_count": 0,
+      "trend_count": 1
+    },
+    {
+      "dominant_trends": [
+        "Tokyo transport anxiety"
+      ],
+      "long_term_signal": "watch",
+      "platform": "Manual",
+      "positive_feedback_count": 0,
+      "trend_count": 1
+    },
+    {
+      "dominant_trends": [
+        "Tokyo transport anxiety"
+      ],
+      "long_term_signal": "watch",
+      "platform": "RSS",
+      "positive_feedback_count": 0,
+      "trend_count": 1
+    },
+    {
+      "dominant_trends": [
+        "Tokyo transport anxiety",
+        "Tokyo rainy day travel friction"
+      ],
+      "long_term_signal": "durable",
+      "platform": "Reddit",
+      "positive_feedback_count": 2,
+      "trend_count": 2
+    },
+    {
+      "dominant_trends": [
+        "Tokyo transport anxiety"
+      ],
+      "long_term_signal": "watch",
+      "platform": "Threads",
+      "positive_feedback_count": 0,
+      "trend_count": 1
+    },
+    {
+      "dominant_trends": [
+        "Tokyo rainy day travel friction",
+        "Air fryer cleaning friction"
+      ],
+      "long_term_signal": "durable",
+      "platform": "TikTok",
+      "positive_feedback_count": 2,
+      "trend_count": 2
+    },
+    {
+      "dominant_trends": [
+        "Tokyo rainy day travel friction",
+        "Vacuum performance anxiety"
+      ],
+      "long_term_signal": "durable",
+      "platform": "YouTube",
+      "positive_feedback_count": 0,
+      "trend_count": 2
+    }
+  ],
+  "report_id": "LONG_TERM_STRATEGY_MEMORY_REPORT",
+  "scope": "local_autonomous_growth_preparation_only",
+  "shortTermEffectiveStrategies": [
+    {
+      "durable_score": 0.389,
+      "human_review_status": "needs_human_review",
+      "memory_id": "short_term_effective_tiktok_hook_spike",
+      "memory_type": "short_term_effective",
+      "next_action": "Keep as an experiment; do not let traffic spikes override long-term trust.",
+      "platform": "tiktok",
+      "reason": "Traffic spike is stronger than durable learning value; keep it as an experiment.",
+      "risk": 0.42,
+      "spike_score": 0.742,
+      "strategy": "Test fast Tokyo transport hooks for save-worthy short videos.",
+      "time_horizon": "short_term_traffic"
+    },
+    {
+      "durable_score": 0.424,
+      "human_review_status": "needs_human_review",
+      "memory_id": "short_term_effective_x_trend_reaction",
+      "memory_type": "short_term_effective",
+      "next_action": "Keep as an experiment; do not let traffic spikes override long-term trust.",
+      "platform": "x",
+      "reason": "Traffic spike is stronger than durable learning value; keep it as an experiment.",
+      "risk": 0.35,
+      "spike_score": 0.623,
+      "strategy": "React to travel trend bursts with concise observations.",
+      "time_horizon": "short_term_traffic"
+    }
+  ],
+  "status": "forming_long_term_memory",
+  "strategyHorizonClassification": {
+    "avoid_overweighting": [
+      "tiktok",
+      "x"
+    ],
+    "can_distinguish_short_vs_long": true,
+    "long_term_failure_count": 4,
+    "long_term_growth_count": 2,
+    "primary_long_term_direction": "reddit: Answer high-intent travel anxiety with detailed, non-promotional guidance.",
+    "short_term_traffic_count": 2
+  },
+  "strategyMemoryTimeline": [
+    {
+      "platform": "reddit",
+      "status": "stored",
+      "summary": "Answer high-intent travel anxiety with detailed, non-promotional guidance.",
+      "time": "2026-05-22T11:55:11+00:00",
+      "type": "long_term_growth_memory"
+    },
+    {
+      "platform": "youtube",
+      "status": "stored",
+      "summary": "Build evergreen walkthroughs for repeated travel pain points.",
+      "time": "2026-05-22T11:55:11+00:00",
+      "type": "long_term_growth_memory"
+    },
+    {
+      "platform": "tiktok",
+      "status": "experimental",
+      "summary": "Test fast Tokyo transport hooks for save-worthy short videos.",
+      "time": "2026-05-22T11:55:11+00:00",
+      "type": "short_term_traffic_memory"
+    },
+    {
+      "platform": "x",
+      "status": "experimental",
+      "summary": "React to travel trend bursts with concise observations.",
+      "time": "2026-05-22T11:55:11+00:00",
+      "type": "short_term_traffic_memory"
+    },
+    {
+      "platform": "X",
+      "status": "avoid_without_review",
+      "summary": "Reply did not produce visible engagement in the feedback window.",
+      "time": "2026-05-22T11:55:11+00:00",
+      "type": "failed_strategy_memory"
+    },
+    {
+      "platform": "X",
+      "status": "avoid_without_review",
+      "summary": "Answer produced no positive feedback and should not be learned as a best pattern.",
+      "time": "2026-05-22T11:55:11+00:00",
+      "type": "failed_strategy_memory"
+    },
+    {
+      "platform": "unknown",
+      "status": "avoid_without_review",
+      "summary": "Hook failed because it did not make the practical travel payoff visible fast enough.",
+      "time": "2026-05-22T11:55:11+00:00",
+      "type": "failed_strategy_memory"
+    },
+    {
+      "platform": "unknown",
+      "status": "avoid_without_review",
+      "summary": "Strategy failed because it produced weak feedback or could not be tied to a clear user pain signal.",
+      "time": "2026-05-22T11:55:11+00:00",
+      "type": "failed_strategy_memory"
+    }
+  ]
+}
