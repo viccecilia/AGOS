@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import Any
 
 from services.human_feedback_learning import HumanFeedbackLearning
+from services.human_personality_training import HumanPersonalityTraining
 from services.personality_drift_engine import PersonalityDriftEngine
 from services.personality_memory_deposit import PersonalityMemoryDeposit
 from services.runtime_drift_monitor import RuntimeDriftMonitor
@@ -47,6 +48,7 @@ class RuntimeUIBridge:
         drift_summary = RuntimeDriftMonitor().summary()
         personality_status = PersonalityMemoryDeposit().status()
         personality_drift = PersonalityDriftEngine().summary()
+        personality_training = HumanPersonalityTraining().summary()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -146,6 +148,7 @@ class RuntimeUIBridge:
                 "mostApprovedReplyStyle": feedback_summary.get("mostApprovedReplyStyle", "none"),
             },
             "personalityStatus": personality_status,
+            "humanPersonalityTraining": personality_training,
             "personalityDriftAlerts": personality_drift.get("personalityDriftAlerts", []),
             "personalityDriftStatus": personality_drift.get("personalityDriftStatus", "clear"),
             "personalityDriftReason": personality_drift.get("latestDriftReason", ""),

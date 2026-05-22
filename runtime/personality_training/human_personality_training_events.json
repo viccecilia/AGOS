@@ -1,0 +1,111 @@
+[
+  {
+    "created_at": "2026-05-22T09:06:52+00:00",
+    "decision": "approve",
+    "event_id": "human_personality_2026-05-22T09-06-52+00-00",
+    "market": "Japan",
+    "modified_personality": {},
+    "original_personality": {
+      "market": "Japan",
+      "platform": "reddit",
+      "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+      "style": [
+        "真实",
+        "可信",
+        "专业",
+        "像导游",
+        "不营销"
+      ],
+      "tone": "trusted_guide",
+      "workspace": "JAG-LAB"
+    },
+    "platform": "reddit",
+    "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+    "style": [
+      "真实",
+      "可信",
+      "专业",
+      "像导游",
+      "不营销"
+    ],
+    "tone": "trusted_guide",
+    "workspace": "JAG-LAB"
+  },
+  {
+    "created_at": "2026-05-22T09:06:54+00:00",
+    "decision": "reject",
+    "event_id": "human_personality_2026-05-22T09-06-54+00-00",
+    "market": "Japan",
+    "modified_personality": {},
+    "original_personality": {
+      "market": "Japan",
+      "platform": "reddit",
+      "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+      "style": [
+        "真实",
+        "可信",
+        "专业",
+        "像导游",
+        "不营销"
+      ],
+      "tone": "trusted_guide",
+      "workspace": "JAG-LAB"
+    },
+    "platform": "reddit",
+    "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+    "style": [
+      "真实",
+      "可信",
+      "专业",
+      "像导游",
+      "不营销"
+    ],
+    "tone": "trusted_guide",
+    "workspace": "JAG-LAB"
+  },
+  {
+    "created_at": "2026-05-22T09:06:56+00:00",
+    "decision": "modify",
+    "event_id": "human_personality_2026-05-22T09-06-56+00-00",
+    "market": "Japan",
+    "modified_personality": {
+      "market": "Japan",
+      "platform": "reddit",
+      "reason": "Human modified personality from War Room.",
+      "style": [
+        "真实",
+        "可信",
+        "专业",
+        "克制",
+        "不营销"
+      ],
+      "tone": "trusted_guide",
+      "workspace": "JAG-LAB"
+    },
+    "original_personality": {
+      "market": "Japan",
+      "platform": "reddit",
+      "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+      "style": [
+        "真实",
+        "可信",
+        "专业",
+        "像导游",
+        "不营销"
+      ],
+      "tone": "trusted_guide",
+      "workspace": "JAG-LAB"
+    },
+    "platform": "reddit",
+    "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+    "style": [
+      "真实",
+      "可信",
+      "专业",
+      "像导游",
+      "不营销"
+    ],
+    "tone": "trusted_guide",
+    "workspace": "JAG-LAB"
+  }
+]

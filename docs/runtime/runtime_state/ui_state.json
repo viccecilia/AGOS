@@ -233,6 +233,176 @@
       }
     ]
   },
+  "humanPersonalityTraining": {
+    "events": [
+      {
+        "created_at": "2026-05-22T09:06:52+00:00",
+        "decision": "approve",
+        "event_id": "human_personality_2026-05-22T09-06-52+00-00",
+        "market": "Japan",
+        "modified_personality": {},
+        "original_personality": {
+          "market": "Japan",
+          "platform": "reddit",
+          "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+          "style": [
+            "真实",
+            "可信",
+            "专业",
+            "像导游",
+            "不营销"
+          ],
+          "tone": "trusted_guide",
+          "workspace": "JAG-LAB"
+        },
+        "platform": "reddit",
+        "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+        "style": [
+          "真实",
+          "可信",
+          "专业",
+          "像导游",
+          "不营销"
+        ],
+        "tone": "trusted_guide",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "created_at": "2026-05-22T09:06:54+00:00",
+        "decision": "reject",
+        "event_id": "human_personality_2026-05-22T09-06-54+00-00",
+        "market": "Japan",
+        "modified_personality": {},
+        "original_personality": {
+          "market": "Japan",
+          "platform": "reddit",
+          "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+          "style": [
+            "真实",
+            "可信",
+            "专业",
+            "像导游",
+            "不营销"
+          ],
+          "tone": "trusted_guide",
+          "workspace": "JAG-LAB"
+        },
+        "platform": "reddit",
+        "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+        "style": [
+          "真实",
+          "可信",
+          "专业",
+          "像导游",
+          "不营销"
+        ],
+        "tone": "trusted_guide",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "created_at": "2026-05-22T09:06:56+00:00",
+        "decision": "modify",
+        "event_id": "human_personality_2026-05-22T09-06-56+00-00",
+        "market": "Japan",
+        "modified_personality": {
+          "market": "Japan",
+          "platform": "reddit",
+          "reason": "Human modified personality from War Room.",
+          "style": [
+            "真实",
+            "可信",
+            "专业",
+            "克制",
+            "不营销"
+          ],
+          "tone": "trusted_guide",
+          "workspace": "JAG-LAB"
+        },
+        "original_personality": {
+          "market": "Japan",
+          "platform": "reddit",
+          "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+          "style": [
+            "真实",
+            "可信",
+            "专业",
+            "像导游",
+            "不营销"
+          ],
+          "tone": "trusted_guide",
+          "workspace": "JAG-LAB"
+        },
+        "platform": "reddit",
+        "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+        "style": [
+          "真实",
+          "可信",
+          "专业",
+          "像导游",
+          "不营销"
+        ],
+        "tone": "trusted_guide",
+        "workspace": "JAG-LAB"
+      }
+    ],
+    "preferenceMemory": {
+      "approved_personality": {
+        "JAG-LAB::reddit::trusted_guide": 1
+      },
+      "last_decision": {
+        "created_at": "2026-05-22T09:06:56+00:00",
+        "decision": "modify",
+        "event_id": "human_personality_2026-05-22T09-06-56+00-00",
+        "market": "Japan",
+        "modified_personality": {
+          "market": "Japan",
+          "platform": "reddit",
+          "reason": "Human modified personality from War Room.",
+          "style": [
+            "真实",
+            "可信",
+            "专业",
+            "克制",
+            "不营销"
+          ],
+          "tone": "trusted_guide",
+          "workspace": "JAG-LAB"
+        },
+        "original_personality": {
+          "market": "Japan",
+          "platform": "reddit",
+          "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+          "style": [
+            "真实",
+            "可信",
+            "专业",
+            "像导游",
+            "不营销"
+          ],
+          "tone": "trusted_guide",
+          "workspace": "JAG-LAB"
+        },
+        "platform": "reddit",
+        "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+        "style": [
+          "真实",
+          "可信",
+          "专业",
+          "像导游",
+          "不营销"
+        ],
+        "tone": "trusted_guide",
+        "workspace": "JAG-LAB"
+      },
+      "modified_personality": {
+        "JAG-LAB::reddit::trusted_guide": 1
+      },
+      "rejected_personality": {
+        "JAG-LAB::reddit::trusted_guide": 1
+      },
+      "updated_at": "2026-05-22T09:06:56+00:00"
+    }
+  },
   "humanPreferenceMemory": {
     "approved": {
       "runtime_training": 1
@@ -726,16 +896,16 @@
     {
       "status": "approved",
       "summary": {
-        "created_at": "2026-05-22T08:54:38+00:00",
+        "created_at": "2026-05-22T09:06:56+00:00",
         "market": "Japan",
-        "personality_id": "personality_2026-05-22T08-54-38+00-00",
+        "personality_id": "personality_2026-05-22T09-06-56+00-00",
         "platform": "reddit",
-        "reason": "JAG should sound real, credible, professional, guide-like, and non-promotional.",
+        "reason": "Human modified personality from War Room.",
         "style": [
           "真实",
           "可信",
           "专业",
-          "像导游",
+          "克制",
           "不营销"
         ],
         "tone": "trusted_guide",
@@ -746,17 +916,19 @@
     {
       "status": "needs_human_review",
       "summary": {
-        "created_at": "2026-05-22T08:54:38+00:00",
+        "created_at": "2026-05-22T09:06:54+00:00",
         "market": "Japan",
-        "personality_id": "personality_2026-05-22T08-54-38+00-00",
-        "platform": "tiktok",
-        "reason": "Aggressive emotional hook creates platform personality drift.",
+        "personality_id": "personality_2026-05-22T09-06-54+00-00",
+        "platform": "reddit",
+        "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
         "style": [
-          "过度情绪",
-          "硬广",
-          "标题党"
+          "真实",
+          "可信",
+          "专业",
+          "像导游",
+          "不营销"
         ],
-        "tone": "aggressive_hook",
+        "tone": "trusted_guide",
         "workspace": "JAG-LAB"
       },
       "type": "failed_personality"
@@ -779,19 +951,81 @@
         ],
         "tone": "trusted_guide",
         "workspace": "JAG-LAB"
+      },
+      {
+        "created_at": "2026-05-22T09:06:17+00:00",
+        "market": "Japan",
+        "personality_id": "personality_2026-05-22T09-06-17+00-00",
+        "platform": "reddit",
+        "reason": "This personality fits JAG operating style.",
+        "style": [
+          "真实",
+          "可信",
+          "专业",
+          "像导游",
+          "不营销"
+        ],
+        "tone": "trusted_guide",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "created_at": "2026-05-22T09:06:17+00:00",
+        "market": "Japan",
+        "personality_id": "personality_2026-05-22T09-06-17+00-00",
+        "platform": "reddit",
+        "reason": "This personality fits JAG operating style.",
+        "style": [
+          "真实",
+          "耐心",
+          "不营销"
+        ],
+        "tone": "community_helper",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "created_at": "2026-05-22T09:06:52+00:00",
+        "market": "Japan",
+        "personality_id": "personality_2026-05-22T09-06-52+00-00",
+        "platform": "reddit",
+        "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+        "style": [
+          "真实",
+          "可信",
+          "专业",
+          "像导游",
+          "不营销"
+        ],
+        "tone": "trusted_guide",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "created_at": "2026-05-22T09:06:56+00:00",
+        "market": "Japan",
+        "personality_id": "personality_2026-05-22T09-06-56+00-00",
+        "platform": "reddit",
+        "reason": "Human modified personality from War Room.",
+        "style": [
+          "真实",
+          "可信",
+          "专业",
+          "克制",
+          "不营销"
+        ],
+        "tone": "trusted_guide",
+        "workspace": "JAG-LAB"
       }
     ],
     "bestPersonality": {
-      "created_at": "2026-05-22T08:54:38+00:00",
+      "created_at": "2026-05-22T09:06:56+00:00",
       "market": "Japan",
-      "personality_id": "personality_2026-05-22T08-54-38+00-00",
+      "personality_id": "personality_2026-05-22T09-06-56+00-00",
       "platform": "reddit",
-      "reason": "JAG should sound real, credible, professional, guide-like, and non-promotional.",
+      "reason": "Human modified personality from War Room.",
       "style": [
         "真实",
         "可信",
         "专业",
-        "像导游",
+        "克制",
         "不营销"
       ],
       "tone": "trusted_guide",
@@ -809,6 +1043,68 @@
           "可信",
           "专业",
           "像导游",
+          "不营销"
+        ],
+        "tone": "trusted_guide",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "created_at": "2026-05-22T09:06:17+00:00",
+        "market": "Japan",
+        "personality_id": "personality_2026-05-22T09-06-17+00-00",
+        "platform": "reddit",
+        "reason": "This personality fits JAG operating style.",
+        "style": [
+          "真实",
+          "可信",
+          "专业",
+          "像导游",
+          "不营销"
+        ],
+        "tone": "trusted_guide",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "created_at": "2026-05-22T09:06:17+00:00",
+        "market": "Japan",
+        "personality_id": "personality_2026-05-22T09-06-17+00-00",
+        "platform": "reddit",
+        "reason": "This personality fits JAG operating style.",
+        "style": [
+          "真实",
+          "耐心",
+          "不营销"
+        ],
+        "tone": "community_helper",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "created_at": "2026-05-22T09:06:52+00:00",
+        "market": "Japan",
+        "personality_id": "personality_2026-05-22T09-06-52+00-00",
+        "platform": "reddit",
+        "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+        "style": [
+          "真实",
+          "可信",
+          "专业",
+          "像导游",
+          "不营销"
+        ],
+        "tone": "trusted_guide",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "created_at": "2026-05-22T09:06:56+00:00",
+        "market": "Japan",
+        "personality_id": "personality_2026-05-22T09-06-56+00-00",
+        "platform": "reddit",
+        "reason": "Human modified personality from War Room.",
+        "style": [
+          "真实",
+          "可信",
+          "专业",
+          "克制",
           "不营销"
         ],
         "tone": "trusted_guide",
@@ -867,17 +1163,19 @@
       }
     },
     "failedPersonality": {
-      "created_at": "2026-05-22T08:54:38+00:00",
+      "created_at": "2026-05-22T09:06:54+00:00",
       "market": "Japan",
-      "personality_id": "personality_2026-05-22T08-54-38+00-00",
-      "platform": "tiktok",
-      "reason": "Aggressive emotional hook creates platform personality drift.",
+      "personality_id": "personality_2026-05-22T09-06-54+00-00",
+      "platform": "reddit",
+      "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
       "style": [
-        "过度情绪",
-        "硬广",
-        "标题党"
+        "真实",
+        "可信",
+        "专业",
+        "像导游",
+        "不营销"
       ],
-      "tone": "aggressive_hook",
+      "tone": "trusted_guide",
       "workspace": "JAG-LAB"
     },
     "personalityDrift": "needs_human_review",
@@ -895,6 +1193,38 @@
         ],
         "tone": "aggressive_hook",
         "workspace": "JAG-LAB"
+      },
+      {
+        "created_at": "2026-05-22T09:06:17+00:00",
+        "market": "Japan",
+        "personality_id": "personality_2026-05-22T09-06-17+00-00",
+        "platform": "reddit",
+        "reason": "Too promotional.",
+        "style": [
+          "真实",
+          "可信",
+          "专业",
+          "像导游",
+          "不营销"
+        ],
+        "tone": "aggressive_hook",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "created_at": "2026-05-22T09:06:54+00:00",
+        "market": "Japan",
+        "personality_id": "personality_2026-05-22T09-06-54+00-00",
+        "platform": "reddit",
+        "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+        "style": [
+          "真实",
+          "可信",
+          "专业",
+          "像导游",
+          "不营销"
+        ],
+        "tone": "trusted_guide",
+        "workspace": "JAG-LAB"
       }
     ],
     "rejectedTone": [
@@ -910,6 +1240,38 @@
           "标题党"
         ],
         "tone": "aggressive_hook",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "created_at": "2026-05-22T09:06:17+00:00",
+        "market": "Japan",
+        "personality_id": "personality_2026-05-22T09-06-17+00-00",
+        "platform": "reddit",
+        "reason": "Too promotional.",
+        "style": [
+          "真实",
+          "可信",
+          "专业",
+          "像导游",
+          "不营销"
+        ],
+        "tone": "aggressive_hook",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "created_at": "2026-05-22T09:06:54+00:00",
+        "market": "Japan",
+        "personality_id": "personality_2026-05-22T09-06-54+00-00",
+        "platform": "reddit",
+        "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+        "style": [
+          "真实",
+          "可信",
+          "专业",
+          "像导游",
+          "不营销"
+        ],
+        "tone": "trusted_guide",
         "workspace": "JAG-LAB"
       }
     ]
@@ -1365,7 +1727,7 @@
     ]
   },
   "runtimeWorkspace": {
-    "focusPainPoint": "runtime_stopped",
+    "focusPainPoint": "human_personality_modify",
     "focusPlatforms": [
       "Local Runtime"
     ],
@@ -1385,7 +1747,7 @@
     "currentCycle": "JAG-LAB-CYCLE-0001",
     "currentIndustryPack": "Travel Pack / Lab",
     "currentWorkspace": "JAG-LAB",
-    "lastRunTime": "2026-05-22T09:02:14+00:00",
+    "lastRunTime": "2026-05-22T09:06:56+00:00",
     "status": "STOPPED"
   },
   "trainingExplanations": [
@@ -1592,42 +1954,6 @@
   ],
   "warRoomFeed": [
     {
-      "aiAction": "沉淀 Best Answer、Best Hook、Failed Strategy 等 Runtime Intelligence。",
-      "audience": "JAG-LAB",
-      "country": "local",
-      "emotion": "n/a",
-      "language": "n/a",
-      "sourcePlatform": "Local Runtime",
-      "status": "stopped",
-      "time": "08:36:57",
-      "type": "Deposit",
-      "why": "沉淀 Best Answer、Best Hook、Failed Strategy 等 Runtime Intelligence。"
-    },
-    {
-      "aiAction": "This is normal chatter, not a high-value travel pain point.",
-      "audience": "JAG-LAB",
-      "country": "local",
-      "emotion": "n/a",
-      "language": "n/a",
-      "sourcePlatform": "Local Runtime",
-      "status": "stopped",
-      "time": "08:36:57",
-      "type": "human_correction",
-      "why": "This is normal chatter, not a high-value travel pain point."
-    },
-    {
-      "aiAction": "review_0010",
-      "audience": "JAG-LAB",
-      "country": "local",
-      "emotion": "n/a",
-      "language": "n/a",
-      "sourcePlatform": "Local Runtime",
-      "status": "stopped",
-      "time": "08:36:57",
-      "type": "human_review_modify",
-      "why": "review_0010"
-    },
-    {
       "aiAction": "Runtime stopped locally",
       "audience": "JAG-LAB",
       "country": "local",
@@ -1830,6 +2156,42 @@
       "time": "08:38:56",
       "type": "stop",
       "why": "Runtime stopped locally"
+    },
+    {
+      "aiAction": "Prefer a real, credible, guide-like and non-promotional personality.",
+      "audience": "JAG-LAB",
+      "country": "local",
+      "emotion": "n/a",
+      "language": "n/a",
+      "sourcePlatform": "Local Runtime",
+      "status": "stopped",
+      "time": "09:06:52",
+      "type": "human_personality_approve",
+      "why": "Prefer a real, credible, guide-like and non-promotional personality."
+    },
+    {
+      "aiAction": "Prefer a real, credible, guide-like and non-promotional personality.",
+      "audience": "JAG-LAB",
+      "country": "local",
+      "emotion": "n/a",
+      "language": "n/a",
+      "sourcePlatform": "Local Runtime",
+      "status": "stopped",
+      "time": "09:06:54",
+      "type": "human_personality_reject",
+      "why": "Prefer a real, credible, guide-like and non-promotional personality."
+    },
+    {
+      "aiAction": "Prefer a real, credible, guide-like and non-promotional personality.",
+      "audience": "JAG-LAB",
+      "country": "local",
+      "emotion": "n/a",
+      "language": "n/a",
+      "sourcePlatform": "Local Runtime",
+      "status": "stopped",
+      "time": "09:06:56",
+      "type": "human_personality_modify",
+      "why": "Prefer a real, credible, guide-like and non-promotional personality."
     }
   ]
 }

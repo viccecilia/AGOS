@@ -20,6 +20,7 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from services.human_feedback_learning import HumanFeedbackLearning
+from services.human_personality_training import HumanPersonalityTraining
 from services.human_review_runtime import HumanReviewRuntime
 from services.runtime_correction_engine import RuntimeCorrectionEngine
 from services.runtime_drift_monitor import RuntimeDriftMonitor
@@ -57,6 +58,7 @@ class RuntimeApiController:
         self.review = HumanReviewRuntime(self.persistence.root)
         self.correction = RuntimeCorrectionEngine(self.persistence.root)
         self.feedback = HumanFeedbackLearning()
+        self.personality_training = HumanPersonalityTraining()
         self.drift = RuntimeDriftMonitor()
 
     def status(self) -> dict[str, Any]:
@@ -235,6 +237,41 @@ class RuntimeApiController:
             "ui_state": ui_state,
         }
 
+    def personality_training_decision(self, body: dict[str, Any]) -> dict[str, Any]:
+        decision = body.get("decision", "approve")
+        personality = {
+            "workspace": body.get("workspace", "JAG-LAB"),
+            "platform": body.get("platform", "reddit"),
+            "market": body.get("market", "Japan"),
+            "tone": body.get("tone", "trusted_guide"),
+            "style": body.get("style", []),
+            "reason": body.get("reason", ""),
+        }
+        if decision == "approve":
+            event = self.personality_training.approve(personality)
+        elif decision == "reject":
+            event = self.personality_training.reject(personality)
+        elif decision == "modify":
+            event = self.personality_training.modify(personality, body.get("modified_personality", personality))
+        else:
+            raise ValueError("decision must be approve, reject, or modify")
+        state = self.engine.current_state()
+        state["human_personality_training"] = self.personality_training.summary()
+        state["current_event"] = f"human_personality_{decision}"
+        self.engine.persistence.append_event(
+            {
+                "workspace": personality["workspace"],
+                "industry_pack": state.get("industry_pack", "Travel Pack / Lab"),
+                "cycle": state.get("cycle", "JAG-LAB-CYCLE-0001"),
+                "stage": "Personality Training",
+                "event": f"human_personality_{decision}",
+                "result": personality.get("reason", ""),
+            }
+        )
+        self.engine.persistence.save_state(state)
+        ui_state = self.bridge.export_ui_state()
+        return {"ok": True, "status": self._runtime_status(ui_state), "event": event, "ui_state": ui_state}
+
     def _load_or_export_ui_state(self) -> dict[str, Any]:
         if self.persistence.ui_state_file.exists():
             try:
@@ -283,6 +320,9 @@ class RuntimeApiHandler(BaseHTTPRequestHandler):
                 return
             if path == "/api/runtime/review":
                 self._send_json(self.controller.review_decision(body))
+                return
+            if path == "/api/runtime/personality":
+                self._send_json(self.controller.personality_training_decision(body))
                 return
             self._send_json({"ok": False, "error": "not_found"}, status=404)
         except KeyError as exc:
