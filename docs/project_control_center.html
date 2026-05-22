@@ -390,22 +390,22 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.42",
+    "controlCenterVersion": "0.1.43",
     "lastUpdated": "2026-05-22",
-    "currentPhase": "AI War Room / Self Supervised Growth",
+    "currentPhase": "AI 战情室 / 自监督增长",
     "currentRound": "ROUND-WAR-ROOM-GROWTH-001",
-    "nextRound": "Human acceptance for War Room Growth visualization",
+    "nextRound": "等待用户验收汉化版 War Room Growth 控制台",
     "overallProgress": 82,
-    "activeFocus": "AGOS Control Center now visualizes the growth cycle: intelligence collection, analysis, classification, learning deposit, strategy planning, correction checks, and the JAG App promotion workspace."
+    "activeFocus": "AGOS 控制中心已汉化成长可视化战情室：情报收集、信号分析、痛点分类、学习沉淀、策略生成、纠偏检查和 JAG App 推广工作区都可以在一个页面查看。"
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.42 Add AGOS growth visualization war room",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.42",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.42",
-    "note": "War Room Growth visualization is mapped to GitHub tag agos-v0.1.42 after commit and push. The new data is sample/simulated and does not represent live platform automation."
+    "latestCommit": "agos-v0.1.43 Localize AGOS war room growth view",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.43",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.43",
+    "note": "War Room Growth 汉化版映射到 GitHub tag agos-v0.1.43。当前仍是样例/模拟数据，不代表真实平台自动化运行结果。"
   },
   "metrics": {
     "roundsPlanned": 98,
@@ -547,23 +547,19 @@
   "reports": [
     {
       "id": "ROUND-WAR-ROOM-GROWTH-001",
-      "title": "AGOS Growth Visualization War Room",
+      "title": "AGOS 成长可视化战情室汉化版",
       "date": "2026-05-22",
       "status": "done",
-      "summary": "Added a simulated War Room view for AGOS growth cycles, 10-cycle stages, system controls, JAG App promotion workspace, social homepage matrix, intelligence traces, learning deposit traces, and correction checks.",
+      "summary": "将 War Room Growth 可视化区域汉化，保留机器可读字段和安全边界。",
       "files": [
         "docs/project_control_center.html",
         "tests/control_center_war_room_growth_smoke_test.py",
         "runtime/task_results/ROUND-WAR-ROOM-GROWTH-001/ROUND_SUMMARY.md"
       ],
       "verification": [
-        "passed: python -m compileall services schemas models tests",
-        "passed: python tests\\real_growth_workflow_smoke_test.py",
-        "passed: python tests\\learning_smoke_test.py",
-        "passed: python tests\\eu_us_phase3_e2e_test.py",
-        "passed: python tests\\korea_taiwan_phase4_e2e_test.py",
         "passed: python tests\\control_center_war_room_growth_smoke_test.py",
-        "passed: browser render check at http://127.0.0.1:8765/project_control_center.html#war-room-growth"
+        "passed: python -m compileall tests",
+        "passed: browser render check for Chinese War Room view with cache-busting URL"
       ]
     },
     {
@@ -1439,6 +1435,15 @@
     }
   ],
   "versions": [
+    {
+      "id": "agos-v0.1.43-war-room-growth-zh",
+      "label": "Control Center v0.1.43",
+      "date": "2026-05-22",
+      "gitRef": "agos-v0.1.43",
+      "location": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.43",
+      "notes": "War Room Growth 汉化版：中文字段、中文样例内容、中文纠偏说明，保留安全边界和占位 URL。",
+      "snapshot": "AGOS Project Control Center v0.1.43\nRound: ROUND-WAR-ROOM-GROWTH-001 localization\nStatus: War Room Growth Chinese view added\nSample data only; no real platform automation.\n"
+    },
     {
       "id": "agos-v0.1.42-war-room-growth",
       "label": "Control Center v0.1.42",
@@ -2992,43 +2997,43 @@
         "needs_human_review",
         "needs_code_check"
       ],
-      "currentMode": "simulated_control_panel",
+      "currentMode": "模拟控制面板",
       "currentWorkspace": "jag_app_growth",
-      "currentIndustryPack": "Travel Pack",
+      "currentIndustryPack": "Travel Pack / 旅行行业包",
       "currentCycle": "CYCLE-001",
       "lastRunTime": "2026-05-22 12:30 Asia/Tokyo",
       "buttons": [
-        "Start Scout Cycle",
-        "Pause Scout Cycle",
-        "Stop Operation",
-        "Run Analysis",
-        "Generate Strategy",
-        "Save Learning",
-        "Export Evidence Pack"
+        "启动侦察循环",
+        "暂停侦察循环",
+        "停止运营",
+        "运行分析",
+        "生成策略",
+        "保存学习",
+        "导出证据包"
       ],
-      "controlNote": "Buttons are UI-state simulation only in this round. They do not trigger APIs, posting, replies, account registration, or scraping."
+      "controlNote": "本轮按钮只模拟前端状态，不会触发 API、发帖、回复、注册账号或抓取数据。"
     },
     "jagWorkspace": {
       "product": "Japan AI Guide App",
       "workspace_id": "jag_app_growth",
-      "industryPack": "Travel Pack",
+      "industryPack": "Travel Pack / 旅行行业包",
       "targetMarkets": [
-        "Japan",
-        "Europe / US",
-        "Korea",
-        "Taiwan",
-        "Southeast Asia"
+        "日本",
+        "欧洲 / 美国",
+        "韩国",
+        "台湾",
+        "东南亚"
       ],
-      "positioning": "AI travel companion for Japan trips, focused on context-aware guidance, local discovery, itinerary confidence, and multilingual traveler support.",
+      "positioning": "面向日本旅行的 AI 旅行陪伴应用，重点解决行程不确定、当地信息不足、路线焦虑、语言障碍和多语种游客支持。",
       "coreSellingPoints": [
-        "Japan-specific travel intelligence",
-        "Companion-style guidance",
-        "Pain-point-driven answers",
-        "Market-adapted content and replies",
-        "Human-reviewed growth workflow"
+        "日本旅行专用情报",
+        "陪伴式旅行指导",
+        "围绕真实痛点生成回答",
+        "按市场和平台调整内容语气",
+        "所有增长动作默认人工审核"
       ],
-      "promotionPhase": "War Room visualization and manual account setup preparation",
-      "focusMarket": "Japan first, then Europe / US and Korea/Taiwan localization",
+      "promotionPhase": "战情室可视化与人工账号矩阵准备阶段",
+      "focusMarket": "先聚焦日本市场，再扩展欧洲 / 美国与韩国 / 台湾本地化",
       "focusPlatforms": [
         "TikTok",
         "Instagram",
@@ -3036,70 +3041,70 @@
         "Reddit",
         "SEO / Website"
       ],
-      "todayGoal": "Prepare account matrix, collect first manual travel pain points, and design the first human-reviewed answer branches."
+      "todayGoal": "准备账号矩阵，录入第一批真实旅行痛点，设计第一批需要人工审核的回答分支。"
     },
     "socialHomepages": [
       {
         "platform": "TikTok",
         "homepageUrl": "needs_account_url",
         "accountStatus": "pending_setup",
-        "todayContentPlan": "Short clips around first-time Japan trip anxiety and station navigation confusion.",
-        "todayReplyPlan": "Manual review only; no automated replies.",
-        "riskStatus": "needs_human_check",
+        "todayContentPlan": "围绕首次日本旅行焦虑、车站迷路、临时改行程制作短视频主题。",
+        "todayReplyPlan": "仅人工审核，不自动回复。",
+        "riskStatus": "需要人工检查",
         "needsHumanCheck": true
       },
       {
         "platform": "Instagram",
         "homepageUrl": "needs_account_url",
         "accountStatus": "pending_setup",
-        "todayContentPlan": "Carousel draft for itinerary confidence and local etiquette tips.",
-        "todayReplyPlan": "Collect common comment questions for Question Inbox.",
-        "riskStatus": "needs_human_check",
+        "todayContentPlan": "制作行程信心、当地礼仪、路线救援类 carousel 草稿。",
+        "todayReplyPlan": "收集评论中的常见问题进入 Question Inbox。",
+        "riskStatus": "需要人工检查",
         "needsHumanCheck": true
       },
       {
         "platform": "X",
         "homepageUrl": "needs_account_url",
         "accountStatus": "pending_setup",
-        "todayContentPlan": "Thread concepts for Japan travel mistakes and quick rescue tips.",
-        "todayReplyPlan": "Manual replies only after approval.",
-        "riskStatus": "needs_human_check",
+        "todayContentPlan": "规划日本旅行避坑和快速救援提示 thread。",
+        "todayReplyPlan": "批准后才允许人工回复。",
+        "riskStatus": "需要人工检查",
         "needsHumanCheck": true
       },
       {
         "platform": "YouTube",
         "homepageUrl": "needs_account_url",
         "accountStatus": "pending_setup",
-        "todayContentPlan": "Long-form outline: what an AI Japan travel companion should solve.",
-        "todayReplyPlan": "No posting or reply automation.",
-        "riskStatus": "low_until_account_exists",
+        "todayContentPlan": "长视频大纲：AI 日本旅行陪伴应该解决什么问题。",
+        "todayReplyPlan": "不做自动发布或自动回复。",
+        "riskStatus": "账号建立前低风险",
         "needsHumanCheck": true
       },
       {
         "platform": "Reddit",
         "homepageUrl": "needs_account_url",
         "accountStatus": "pending_setup",
-        "todayContentPlan": "No promotional posting; collect allowed public question patterns manually.",
-        "todayReplyPlan": "Draft helpful answers with soft CTA removed until human approval.",
-        "riskStatus": "high_policy_sensitivity",
+        "todayContentPlan": "不做宣传贴；只手动收集允许范围内的公开问题模式。",
+        "todayReplyPlan": "先写有帮助的回答草稿，软 CTA 必须人工确认。",
+        "riskStatus": "平台规则敏感，需要高强度人工检查",
         "needsHumanCheck": true
       },
       {
         "platform": "Threads",
         "homepageUrl": "needs_account_url",
         "accountStatus": "pending_setup",
-        "todayContentPlan": "Short conversational travel insight drafts.",
-        "todayReplyPlan": "Manual review only.",
-        "riskStatus": "needs_human_check",
+        "todayContentPlan": "短对话式旅行洞察草稿。",
+        "todayReplyPlan": "仅人工审核。",
+        "riskStatus": "需要人工检查",
         "needsHumanCheck": true
       },
       {
         "platform": "SEO / Website",
         "homepageUrl": "pending_setup",
         "accountStatus": "pending_setup",
-        "todayContentPlan": "Landing article outline for Japan travel planning pain points.",
-        "todayReplyPlan": "Not applicable; collect search intent and support questions.",
-        "riskStatus": "low",
+        "todayContentPlan": "日本旅行痛点落地页文章大纲。",
+        "todayReplyPlan": "不适用；收集搜索意图和支持问题。",
+        "riskStatus": "低风险",
         "needsHumanCheck": true
       }
     ],
@@ -3109,220 +3114,220 @@
         "currentRound": "ROUND-WAR-ROOM-GROWTH-001",
         "status": "needs_human_review",
         "startTime": "2026-05-22 12:00 Asia/Tokyo",
-        "endTime": "pending_manual_acceptance",
+        "endTime": "等待人工验收",
         "collectionSources": [
-          "manual question import",
-          "public travel forum link import placeholder",
-          "keyword seed list"
+          "手动问题录入",
+          "公开旅行帖子链接占位导入",
+          "关键词种子表"
         ],
-        "collectionMethod": "Manual-only sample collection plan; no scraping and no login-required access.",
+        "collectionMethod": "仅手动样例收集计划；不抓取登录内容，不绕过平台限制。",
         "collectedQuestions": [
-          "How do I avoid getting lost in Japanese train stations?",
-          "What should I do when restaurant menus are only in Japanese?",
-          "Can an AI guide help me change plans when weather disrupts my itinerary?"
+          "如何避免在日本大型车站迷路？",
+          "餐厅菜单只有日文时应该怎么办？",
+          "天气打乱行程时，AI 导游能不能帮我临时改计划？"
         ],
-        "analysisMethod": "Pain point clustering by traveler anxiety, urgency, language barrier, and decision friction.",
-        "analysisConclusion": "First-time travelers need rescue-style guidance more than generic destination recommendations.",
+        "analysisMethod": "按旅行者焦虑、紧急程度、语言障碍和决策阻力进行痛点聚类。",
+        "analysisConclusion": "首次赴日游客更需要救援式指导，而不是泛泛的景点推荐。",
         "classificationResults": [
-          "navigation_confusion",
-          "language_barrier",
-          "itinerary_disruption"
+          "路线迷失",
+          "语言障碍",
+          "行程中断"
         ],
         "depositLibrary": [
-          "Question Inbox",
-          "Pain Point Library",
-          "Workspace Memory"
+          "Question Inbox / 问题候选池",
+          "Pain Point Library / 痛点库",
+          "Workspace Memory / 工作区记忆"
         ],
-        "generatedStrategy": "Lead with helpful rescue answers, then build platform-specific content around anxiety relief and confidence.",
-        "nextCollectionPlan": "Collect 10 more manual questions from Japan itinerary, transport, food, and emergency-planning scenarios."
+        "generatedStrategy": "先提供有帮助的救援式回答，再围绕降低焦虑和增强旅行信心做平台化内容。",
+        "nextCollectionPlan": "继续手动收集 10 个日本行程、交通、餐饮、紧急预案相关问题。"
       },
       {
         "cycleId": "CYCLE-002",
-        "currentRound": "planned_next_scout_cycle",
+        "currentRound": "下一轮侦察计划",
         "status": "planning",
-        "startTime": "pending",
-        "endTime": "pending",
+        "startTime": "待开始",
+        "endTime": "待开始",
         "collectionSources": [
-          "CSV import",
-          "JSON import",
-          "RSS/API only if allowed"
+          "CSV 导入",
+          "JSON 导入",
+          "RSS/API（仅限允许来源）"
         ],
-        "collectionMethod": "Import-first discovery with source URL and language labels preserved.",
+        "collectionMethod": "优先导入，保留 source_url、语言、市场和平台标签。",
         "collectedQuestions": [
-          "pending_sample_batch"
+          "待导入样例批次"
         ],
-        "analysisMethod": "Market and language split: Japan, Europe/US, Korea, Taiwan, Southeast Asia.",
-        "analysisConclusion": "Different markets need different trust hooks: local confidence for Japan, planning assurance for Europe/US, platform-native tone for Korea/Taiwan.",
+        "analysisMethod": "按日本、欧美、韩国、台湾、东南亚拆分市场和语言。",
+        "analysisConclusion": "不同市场需要不同信任钩子：日本强调当地确定性，欧美强调计划可靠性，韩国/台湾强调平台原生语气。",
         "classificationResults": [
-          "market_segment",
-          "language_segment",
-          "platform_fit"
+          "市场分层",
+          "语言分层",
+          "平台适配"
         ],
         "depositLibrary": [
-          "Industry Pack Memory",
-          "Content Strategy Memory"
+          "Industry Pack Memory / 行业包记忆",
+          "Content Strategy Memory / 内容策略记忆"
         ],
-        "generatedStrategy": "Create localized answer branches before publishing any content.",
-        "nextCollectionPlan": "Prepare 5 market-specific question imports and review them manually."
+        "generatedStrategy": "先创建本地化回答分支，再考虑发布任何内容。",
+        "nextCollectionPlan": "准备 5 组市场专属问题导入，并逐条人工复核。"
       },
       {
         "cycleId": "CYCLE-003",
-        "currentRound": "future_feedback_cycle",
+        "currentRound": "未来反馈循环",
         "status": "idle",
-        "startTime": "pending",
-        "endTime": "pending",
+        "startTime": "待开始",
+        "endTime": "待开始",
         "collectionSources": [
-          "manual engagement feedback",
-          "approved reply attempt records"
+          "人工录入互动反馈",
+          "已批准回复尝试记录"
         ],
-        "collectionMethod": "Feedback from human-approved attempts only.",
+        "collectionMethod": "只从人工批准后的回复尝试中学习反馈。",
         "collectedQuestions": [
-          "Which reply tone received saves?",
-          "Which platform ignored the answer?",
-          "Which CTA felt too promotional?"
+          "哪种回复语气更容易被收藏？",
+          "哪个平台忽略了回答？",
+          "哪个 CTA 显得太营销？"
         ],
-        "analysisMethod": "Compare engagement, ignore, save, and reply signals by platform tone.",
-        "analysisConclusion": "Learning must prefer helpful answer quality over promotional frequency.",
+        "analysisMethod": "按平台语气比较互动、忽略、收藏和回复信号。",
+        "analysisConclusion": "学习引擎应优先学习“有帮助的回答质量”，而不是促销频率。",
         "classificationResults": [
-          "best_answer_candidate",
-          "ignored_answer_pattern",
-          "cta_risk"
+          "最佳回答候选",
+          "被忽视回答模式",
+          "CTA 风险"
         ],
         "depositLibrary": [
-          "Answer Branch Library",
-          "Learning Events",
-          "Content Strategy Memory"
+          "Answer Branch Library / 回答分支库",
+          "Learning Events / 学习事件",
+          "Content Strategy Memory / 内容策略记忆"
         ],
-        "generatedStrategy": "Promote best branches and suppress repeated or over-marketing patterns.",
-        "nextCollectionPlan": "Review first real attempts only after human-approved posting exists."
+        "generatedStrategy": "提升最佳回答分支，压制重复和过度营销内容。",
+        "nextCollectionPlan": "只有真实人工批准发布后，才复盘第一批真实尝试。"
       }
     ],
     "growthStages": [
       {
         "id": "STAGE-001-010",
         "cycleRange": "Cycle 001-010",
-        "name": "Learning to Walk",
-        "stageGoal": "Prove the manual growth loop can record questions, answer branches, reviews, attempts, and learning evidence.",
+        "name": "Learning to Walk / 学会走路",
+        "stageGoal": "证明手动增长闭环能记录问题、回答分支、人工审核、回复尝试和学习证据。",
         "collectionCount": 10,
         "learningEvents": [
-          "First pain-point taxonomy",
-          "Human review default enforced"
+          "首次痛点分类法",
+          "默认人工审核已启用"
         ],
         "strategyChanges": [
-          "Rescue-first helpful answer strategy"
+          "救援式有帮助回答优先"
         ],
         "failureCases": [
-          "No live platform evidence yet"
+          "暂时没有真实平台运营证据"
         ],
-        "correctionConclusion": "Keep all controls simulated until account setup and human approval exist.",
-        "nextFocus": "Collect enough manually verified questions to move from sample to real operations."
+        "correctionConclusion": "账号设置和人工验收完成前，所有控制都保持模拟。",
+        "nextFocus": "收集足够的人工验证问题，从样例转向真实运营。"
       },
       {
         "id": "STAGE-011-020",
         "cycleRange": "Cycle 011-020",
-        "name": "Finding Signals",
-        "stageGoal": "Find repeatable traveler pain signals across markets and platforms.",
+        "name": "Finding Signals / 发现信号",
+        "stageGoal": "跨市场和平台发现可重复的旅行痛点信号。",
         "collectionCount": 0,
         "learningEvents": [
-          "planned"
+          "计划中"
         ],
         "strategyChanges": [
-          "planned"
+          "计划中"
         ],
         "failureCases": [
-          "planned"
+          "计划中"
         ],
-        "correctionConclusion": "Do not treat weak single-platform hints as strategy.",
-        "nextFocus": "Build signal confidence and source evidence."
+        "correctionConclusion": "不要把单个平台的弱信号当成战略。",
+        "nextFocus": "建立信号置信度和来源证据。"
       },
       {
         "id": "STAGE-021-030",
         "cycleRange": "Cycle 021-030",
-        "name": "Strategy Formation",
-        "stageGoal": "Turn repeated signals into platform-specific growth strategy.",
+        "name": "Strategy Formation / 策略成形",
+        "stageGoal": "把重复信号转成平台专属增长策略。",
         "collectionCount": 0,
         "learningEvents": [
-          "planned"
+          "计划中"
         ],
         "strategyChanges": [
-          "planned"
+          "计划中"
         ],
         "failureCases": [
-          "planned"
+          "计划中"
         ],
-        "correctionConclusion": "Reject generic marketing claims without question evidence.",
-        "nextFocus": "Create answer and content branches by platform."
+        "correctionConclusion": "没有问题证据的泛营销主张必须拒绝。",
+        "nextFocus": "按平台创建回答分支和内容分支。"
       },
       {
         "id": "STAGE-031-040",
         "cycleRange": "Cycle 031-040",
-        "name": "Cross Platform Expansion",
-        "stageGoal": "Expand validated messages across TikTok, Instagram, YouTube, Reddit, X, Threads, and SEO.",
+        "name": "Cross Platform Expansion / 跨平台扩展",
+        "stageGoal": "把已验证信息扩展到 TikTok、Instagram、YouTube、Reddit、X、Threads 和 SEO。",
         "collectionCount": 0,
         "learningEvents": [
-          "planned"
+          "计划中"
         ],
         "strategyChanges": [
-          "planned"
+          "计划中"
         ],
         "failureCases": [
-          "planned"
+          "计划中"
         ],
-        "correctionConclusion": "Maintain platform tone boundaries and source attribution.",
-        "nextFocus": "Track platform-specific fit and risk."
+        "correctionConclusion": "保持平台语气边界和来源证据。",
+        "nextFocus": "追踪平台适配度和风险。"
       },
       {
         "id": "STAGE-041-050",
         "cycleRange": "Cycle 041-050",
-        "name": "Self Correction",
-        "stageGoal": "Detect drift, repetition, wrong conclusions, and workspace contamination.",
+        "name": "Self Correction / 自我纠偏",
+        "stageGoal": "检测跑偏、重复、错误结论和工作区污染。",
         "collectionCount": 0,
         "learningEvents": [
-          "planned"
+          "计划中"
         ],
         "strategyChanges": [
-          "planned"
+          "计划中"
         ],
         "failureCases": [
-          "planned"
+          "计划中"
         ],
-        "correctionConclusion": "Gate strategy changes behind correction evidence.",
-        "nextFocus": "Improve drift checks and human review points."
+        "correctionConclusion": "所有策略变化必须经过纠偏证据 Gate。",
+        "nextFocus": "增强漂移检测和人工审核点。"
       },
       {
         "id": "STAGE-051-060",
         "cycleRange": "Cycle 051-060",
-        "name": "Autonomous Growth",
-        "stageGoal": "Prepare safe autonomous recommendations without autonomous posting or platform bypass.",
+        "name": "Autonomous Growth / 自主增长",
+        "stageGoal": "准备安全的自主建议，但不自动发帖、不绕过平台限制。",
         "collectionCount": 0,
         "learningEvents": [
-          "planned"
+          "计划中"
         ],
         "strategyChanges": [
-          "planned"
+          "计划中"
         ],
         "failureCases": [
-          "planned"
+          "计划中"
         ],
-        "correctionConclusion": "Autonomy means recommendation and scheduling under review gates, not uncontrolled execution.",
-        "nextFocus": "Define human-approved autonomous operating envelope."
+        "correctionConclusion": "自主增长指的是在审核 Gate 下推荐和排程，不是无控制执行。",
+        "nextFocus": "定义人工批准下的自主运营边界。"
       }
     ],
     "intelligenceCollectionTrace": [
       {
-        "source": "manual question import",
+        "source": "手动问题录入",
         "keywords": [
-          "Japan train station",
-          "lost in Tokyo station",
-          "Japan itinerary change"
+          "日本车站",
+          "东京站迷路",
+          "日本行程临时变更"
         ],
-        "language": "English",
-        "industryPack": "Travel Pack",
-        "discoveredProblem": "Travelers fear losing time and confidence when transit plans fail.",
-        "importanceReason": "High anxiety, high frequency, clear fit for an AI guide companion.",
+        "language": "英语",
+        "industryPack": "Travel Pack / 旅行行业包",
+        "discoveredProblem": "旅行者害怕交通计划失败后浪费时间和失去信心。",
+        "importanceReason": "焦虑强、频率高、与 AI 旅行陪伴定位高度匹配。",
         "classifiedTo": [
-          "Question Inbox",
-          "Pain Point Library"
+          "Question Inbox / 问题候选池",
+          "Pain Point Library / 痛点库"
         ],
         "enteredQuestionInbox": true,
         "enteredPainPointLibrary": true,
@@ -3331,19 +3336,19 @@
         "enteredNextScoutPlan": true
       },
       {
-        "source": "manual public post link placeholder",
+        "source": "公开帖子链接占位导入",
         "keywords": [
-          "restaurant menu Japanese",
-          "food allergy Japan",
-          "ordering food Japan"
+          "日文餐厅菜单",
+          "日本食物过敏",
+          "日本点餐"
         ],
-        "language": "English",
-        "industryPack": "Travel Pack",
-        "discoveredProblem": "Food ordering causes language and safety uncertainty.",
-        "importanceReason": "Creates urgent in-trip demand and supports short-form helpful content.",
+        "language": "英语",
+        "industryPack": "Travel Pack / 旅行行业包",
+        "discoveredProblem": "点餐场景会造成语言和安全不确定性。",
+        "importanceReason": "这是旅途中紧急需求，也适合短内容和帮助型回答。",
         "classifiedTo": [
-          "Pain Point Library",
-          "Answer Branch Library"
+          "Pain Point Library / 痛点库",
+          "Answer Branch Library / 回答分支库"
         ],
         "enteredQuestionInbox": true,
         "enteredPainPointLibrary": true,
@@ -3352,18 +3357,18 @@
         "enteredNextScoutPlan": true
       },
       {
-        "source": "market seed list",
+        "source": "市场种子词表",
         "keywords": [
-          "Japan trip Korea traveler",
-          "Taiwan traveler Japan AI guide"
+          "韩国游客日本旅行",
+          "台湾游客日本 AI 导游"
         ],
-        "language": "Korean / Traditional Chinese seed",
-        "industryPack": "Travel Pack",
-        "discoveredProblem": "Non-English markets need localized tone and platform-native trust signals.",
-        "importanceReason": "Prevents one-market answer style from polluting another market.",
+        "language": "韩语 / 繁体中文种子词",
+        "industryPack": "Travel Pack / 旅行行业包",
+        "discoveredProblem": "非英语市场需要本地化语气和平台原生信任信号。",
+        "importanceReason": "防止一个市场的回答风格污染另一个市场。",
         "classifiedTo": [
-          "Industry Pack Memory",
-          "Workspace Memory"
+          "Industry Pack Memory / 行业包记忆",
+          "Workspace Memory / 工作区记忆"
         ],
         "enteredQuestionInbox": false,
         "enteredPainPointLibrary": true,
@@ -3374,116 +3379,116 @@
     ],
     "learningDepositTrace": [
       {
-        "library": "Question Inbox",
-        "source": "CYCLE-001 manual questions",
-        "reason": "Store candidate problems before any reply or content action.",
-        "depositedContent": "Three Japan traveler pain-point questions with workspace, market, language, and platform placeholders.",
-        "impactedStrategy": "Forces strategy to start from concrete questions.",
+        "library": "Question Inbox / 问题候选池",
+        "source": "CYCLE-001 手动问题",
+        "reason": "在任何回复或内容动作前，先保存候选问题。",
+        "depositedContent": "3 个带 workspace、market、language 和 platform 占位标签的日本旅行痛点问题。",
+        "impactedStrategy": "强制策略从具体问题开始。",
         "needsHumanReview": true
       },
       {
-        "library": "Pain Point Library",
-        "source": "CYCLE-001 analysis",
-        "reason": "Cluster repeated traveler anxieties into reusable pain points.",
-        "depositedContent": "navigation_confusion, language_barrier, itinerary_disruption.",
-        "impactedStrategy": "Prioritizes rescue-style content and answer branches.",
+        "library": "Pain Point Library / 痛点库",
+        "source": "CYCLE-001 分析结果",
+        "reason": "把重复旅行焦虑聚类成可复用痛点。",
+        "depositedContent": "路线迷失、语言障碍、行程中断。",
+        "impactedStrategy": "优先救援式内容和回答分支。",
         "needsHumanReview": true
       },
       {
-        "library": "Answer Branch Library",
-        "source": "CYCLE-001 generated strategy",
-        "reason": "Prepare platform-specific replies before any posting attempt.",
-        "depositedContent": "Draft branch directions for Reddit helpful answer, TikTok hook, Instagram carousel, and SEO support answer.",
-        "impactedStrategy": "Separates tone, hook, length, and CTA by platform.",
+        "library": "Answer Branch Library / 回答分支库",
+        "source": "CYCLE-001 生成策略",
+        "reason": "在任何发布尝试前，先准备平台专属回复。",
+        "depositedContent": "Reddit 帮助型回答、TikTok Hook、Instagram carousel、SEO 支持回答的分支方向。",
+        "impactedStrategy": "按平台拆分语气、Hook、长度和 CTA。",
         "needsHumanReview": true
       },
       {
-        "library": "Learning Events",
-        "source": "Future approved reply attempts",
-        "reason": "Only learn from reviewed attempts and recorded feedback.",
-        "depositedContent": "Pending real feedback; sample panel only.",
-        "impactedStrategy": "Prevents sample data from being treated as real performance.",
+        "library": "Learning Events / 学习事件",
+        "source": "未来已批准回复尝试",
+        "reason": "只从已审核尝试和记录反馈中学习。",
+        "depositedContent": "等待真实反馈；当前仅为样例面板。",
+        "impactedStrategy": "防止把样例数据当成真实表现。",
         "needsHumanReview": true
       },
       {
-        "library": "Content Strategy Memory",
-        "source": "CYCLE-001 strategy",
-        "reason": "Keep next content plan tied to actual collected questions.",
-        "depositedContent": "Rescue-first content theme for JAG App promotion.",
-        "impactedStrategy": "Reduces generic SaaS UI drift.",
+        "library": "Content Strategy Memory / 内容策略记忆",
+        "source": "CYCLE-001 策略",
+        "reason": "让下一步内容计划始终绑定真实收集问题。",
+        "depositedContent": "JAG App 推广的救援式内容主题。",
+        "impactedStrategy": "减少继续堆泛 SaaS UI 的偏移。",
         "needsHumanReview": true
       },
       {
-        "library": "Industry Pack Memory",
-        "source": "Travel Pack segmentation",
-        "reason": "Preserve travel-specific constraints and market differences.",
-        "depositedContent": "Travel anxiety, itinerary disruption, language barrier, market-specific tone risk.",
-        "impactedStrategy": "Prevents industry-pack contamination.",
+        "library": "Industry Pack Memory / 行业包记忆",
+        "source": "Travel Pack 分层",
+        "reason": "保存旅行行业约束和市场差异。",
+        "depositedContent": "旅行焦虑、行程中断、语言障碍、市场语气风险。",
+        "impactedStrategy": "防止行业包污染。",
         "needsHumanReview": true
       },
       {
-        "library": "Workspace Memory",
-        "source": "jag_app_growth workspace",
-        "reason": "Keep JAG App learning isolated from unrelated workspaces.",
-        "depositedContent": "JAG-specific promotion scope, markets, platform matrix, and no-automation boundaries.",
-        "impactedStrategy": "Blocks cross-workspace learning bleed.",
+        "library": "Workspace Memory / 工作区记忆",
+        "source": "jag_app_growth 工作区",
+        "reason": "让 JAG App 学习与无关工作区隔离。",
+        "depositedContent": "JAG 专属推广范围、目标市场、平台矩阵和禁止自动化边界。",
+        "impactedStrategy": "阻止跨工作区学习串库。",
         "needsHumanReview": true
       }
     ],
     "correctionPanel": [
       {
-        "check": "too_marketing",
-        "status": "watch",
-        "evidence": "Soft CTA and promotion claims must stay behind human review.",
-        "action": "Prefer helpful rescue answers before product mention."
+        "check": "是否太营销",
+        "status": "观察中",
+        "evidence": "软 CTA 和产品推广必须留在人工审核之后。",
+        "action": "先提供有帮助的救援式回答，再考虑产品提及。"
       },
       {
-        "check": "content_repetition",
-        "status": "watch",
-        "evidence": "Sample cycles currently repeat travel-confidence themes.",
-        "action": "Require new source question evidence before creating more variants."
+        "check": "内容是否重复",
+        "status": "观察中",
+        "evidence": "样例循环目前重复“旅行信心”主题。",
+        "action": "没有新问题来源证据时，不生成更多变体。"
       },
       {
-        "check": "wrong_platform_tone",
-        "status": "needs_human_review",
-        "evidence": "Reddit, TikTok, Instagram, and SEO require different tone and CTA rules.",
-        "action": "Use answer branches per platform and review before posting."
+        "check": "平台语气是否错误",
+        "status": "需要人工审核",
+        "evidence": "Reddit、TikTok、Instagram、SEO 的语气和 CTA 规则不同。",
+        "action": "按平台使用回答分支，发布前人工审核。"
       },
       {
-        "check": "industry_pack_contamination",
-        "status": "passed",
-        "evidence": "All War Room sample data is scoped to Travel Pack.",
-        "action": "Keep non-travel products out of this workspace memory."
+        "check": "行业包是否污染",
+        "status": "通过",
+        "evidence": "War Room 样例数据全部限定在 Travel Pack。",
+        "action": "非旅行产品不得写入此工作区记忆。"
       },
       {
-        "check": "workspace_cross_contamination",
-        "status": "passed",
-        "evidence": "Workspace ID remains jag_app_growth across War Room data.",
-        "action": "Block reuse in unrelated product workspaces without explicit export."
+        "check": "Workspace 是否串库",
+        "status": "通过",
+        "evidence": "War Room 数据统一保持 workspace_id=jag_app_growth。",
+        "action": "未经显式导出，不复用到其他产品工作区。"
       },
       {
-        "check": "wrong_learning_conclusion",
-        "status": "watch",
-        "evidence": "No real feedback exists yet; all conclusions are planning hypotheses.",
-        "action": "Do not mark sample findings as real performance learning."
+        "check": "是否学习了错误结论",
+        "status": "观察中",
+        "evidence": "目前没有真实反馈，所有结论只是计划假设。",
+        "action": "不要把样例发现标记为真实表现学习。"
       },
       {
-        "check": "needs_human_correction",
-        "status": "yes",
-        "evidence": "Account URLs and first source set require user confirmation.",
-        "action": "Stop at human acceptance before real operations."
+        "check": "是否需要人工纠偏",
+        "status": "需要",
+        "evidence": "账号 URL 和第一批来源需要用户确认。",
+        "action": "进入真实运营前停在人工验收点。"
       },
       {
-        "check": "needs_code_check",
-        "status": "yes",
-        "evidence": "HTML/JSON smoke test and existing workflow tests must pass.",
-        "action": "Run required validation commands."
+        "check": "是否需要代码检查",
+        "status": "需要",
+        "evidence": "HTML/JSON 烟测和已有工作流测试必须通过。",
+        "action": "运行规定验证命令。"
       },
       {
-        "check": "needs_real_runtime_verification",
-        "status": "yes",
-        "evidence": "This round is visualization only; no live platform run was performed.",
-        "action": "Next phase should import real questions manually and record evidence."
+        "check": "是否需要真实运行验证",
+        "status": "需要",
+        "evidence": "本轮只是可视化，没有真实平台运行。",
+        "action": "下一阶段应手动导入真实问题并记录证据。"
       }
     ]
   }
@@ -3504,7 +3509,7 @@
         <a href="#overview">项目总览 <small id="nav-version"></small></a>
         <a href="#real-growth">Real Growth <small>MVP</small></a>
         <a href="#phase-blueprint">Blueprint <small>phases</small></a>
-        <a href="#war-room-growth">War Room <small>growth</small></a>
+        <a href="#war-room-growth">战情室 <small>growth</small></a>
         <a href="#completion">AI 完成度 <small id="nav-progress"></small></a>
         <a href="#rounds">Round 路线图 <small>60</small></a>
         <a href="#reports">报告嵌入 <small id="nav-reports"></small></a>
@@ -3596,8 +3601,8 @@
       <section id="war-room-growth" class="panel section">
         <div class="section-head">
           <div>
-            <h2>AGOS Growth Visualization War Room</h2>
-            <p>Visualizes how AGOS collects intelligence, analyzes signals, classifies pain points, deposits learning, creates strategy, checks correction risks, and prepares the next scout cycle. Current controls are simulated only.</p>
+            <h2>AGOS 成长可视化战情室</h2>
+            <p>用于查看 AGOS 如何收集情报、分析信号、分类痛点、沉淀学习、生成策略、检查纠偏风险，并准备下一轮侦察。当前控制按钮仅为前端模拟。</p>
           </div>
           <span class="badge b-violet" id="war-room-status">war room</span>
         </div>
@@ -3605,17 +3610,17 @@
         <div style="height:14px"></div>
         <div class="grid two"><div class="card" id="war-room-control-panel"></div><div class="card" id="war-room-jag-workspace"></div></div>
         <div style="height:14px"></div>
-        <div class="card"><div class="topline"><h3>JAG Social Homepages</h3><span class="badge b-amber">manual setup</span></div><div class="table-wrap"><table><thead><tr><th>Platform</th><th>Homepage URL</th><th>Status</th><th>Today Plan</th><th>Risk</th><th>Human Check</th></tr></thead><tbody id="war-room-social-homepages"></tbody></table></div></div>
+        <div class="card"><div class="topline"><h3>JAG 社交主页矩阵</h3><span class="badge b-amber">人工设置</span></div><div class="table-wrap"><table><thead><tr><th>平台</th><th>主页 URL</th><th>账号状态</th><th>今日计划</th><th>风险</th><th>人工检查</th></tr></thead><tbody id="war-room-social-homepages"></tbody></table></div></div>
         <div style="height:14px"></div>
-        <div class="section-head compact"><div><h2>War Room Growth Cycle</h2><p>Each cycle records source, method, question, analysis, library deposit, strategy, and next collection plan.</p></div><span class="badge b-blue">cycle trace</span></div>
+        <div class="section-head compact"><div><h2>成长循环可视化</h2><p>每个 cycle 记录来源、方法、问题、分析、沉淀库、生成策略和下一轮收集计划。</p></div><span class="badge b-blue">循环追踪</span></div>
         <div class="grid three" id="war-room-growth-cycles"></div>
         <div style="height:14px"></div>
-        <div class="section-head compact"><div><h2>10-Cycle Growth Stages</h2><p>Every 10 cycles form one stage checkpoint for collection count, learning events, strategy change, failures, and correction conclusion.</p></div><span class="badge b-cyan">stage review</span></div>
+        <div class="section-head compact"><div><h2>10 轮成长阶段视图</h2><p>每 10 个 cycle 形成一个阶段验收点，用来查看收集数量、学习事件、策略变化、失败案例和纠偏结论。</p></div><span class="badge b-cyan">阶段复盘</span></div>
         <div class="grid two" id="war-room-growth-stages"></div>
         <div style="height:14px"></div>
-        <div class="grid two"><div class="card"><div class="topline"><h3>Intelligence Collection Trace</h3><span class="badge b-blue">evidence-first</span></div><div id="war-room-intelligence-trace"></div></div><div class="card"><div class="topline"><h3>Learning Deposit Trace</h3><span class="badge b-green">memory path</span></div><div id="war-room-learning-deposit"></div></div></div>
+        <div class="grid two"><div class="card"><div class="topline"><h3>情报收集追踪</h3><span class="badge b-blue">证据优先</span></div><div id="war-room-intelligence-trace"></div></div><div class="card"><div class="topline"><h3>学习沉淀追踪</h3><span class="badge b-green">记忆路径</span></div><div id="war-room-learning-deposit"></div></div></div>
         <div style="height:14px"></div>
-        <div class="card"><div class="topline"><h3>Correction Panel</h3><span class="badge b-red">drift check</span></div><div class="grid three" id="war-room-correction-panel"></div></div>
+        <div class="card"><div class="topline"><h3>纠偏检测面板</h3><span class="badge b-red">防跑偏</span></div><div class="grid three" id="war-room-correction-panel"></div></div>
       </section>
 
       <section id="completion" class="panel section">
@@ -3869,20 +3874,20 @@
       const statusClassName = status === 'needs_human_review' || status === 'needs_code_check' ? 'b-amber' : status === 'stopped' ? 'b-red' : status === 'scouting' || status === 'analyzing' ? 'b-blue' : 'b-green';
       el('war-room-status').className = 'badge ' + statusClassName;
       el('war-room-status').textContent = status;
-      el('war-room-safety-note').innerHTML = '<strong>Safety boundary:</strong> sampleDataOnly=' + esc(wr.sampleDataOnly) + ', automationEnabled=' + esc(wr.automationEnabled) + ', noAutoPosting=' + esc(wr.noAutoPosting) + ', noAutoRegistration=' + esc(wr.noAutoRegistration) + '. ' + esc(control.controlNote || '');
-      el('war-room-control-panel').innerHTML = '<div class="topline"><h3>System Control Panel</h3><span class="badge ' + statusClassName + '">' + esc(status) + '</span></div>' +
-        '<div class="grid two"><p><strong>Mode</strong><br>' + esc(control.currentMode) + '</p><p><strong>Workspace</strong><br>' + esc(control.currentWorkspace) + '</p><p><strong>Industry Pack</strong><br>' + esc(control.currentIndustryPack) + '</p><p><strong>Current Cycle</strong><br>' + esc(control.currentCycle) + '</p></div>' +
-        '<p><strong>Last run</strong><br>' + esc(control.lastRunTime) + '</p><div class="toolbar">' + (control.buttons || []).map(label => '<button type="button" data-war-room-action="' + esc(label) + '">' + esc(label) + '</button>').join('') + '</div>';
-      el('war-room-control-panel').querySelectorAll('[data-war-room-action]').forEach(button => button.addEventListener('click', () => { el('war-room-status').textContent = 'simulated: ' + button.dataset.warRoomAction; }));
-      el('war-room-jag-workspace').innerHTML = '<div class="topline"><h3>JAG App Promotion Workspace</h3><span class="badge b-green">' + esc(workspace.workspace_id) + '</span></div>' +
-        '<p><strong>Product</strong><br>' + esc(workspace.product) + '</p><p><strong>Positioning</strong><br>' + esc(workspace.positioning) + '</p><p><strong>Markets</strong><br>' + (workspace.targetMarkets || []).map(esc).join(' / ') + '</p>' +
-        '<p><strong>Current phase</strong><br>' + esc(workspace.promotionPhase) + '</p><p><strong>Focus platforms</strong><br>' + (workspace.focusPlatforms || []).map(esc).join(', ') + '</p><p><strong>Today goal</strong><br>' + esc(workspace.todayGoal) + '</p><ul>' + (workspace.coreSellingPoints || []).map(item => '<li>' + esc(item) + '</li>').join('') + '</ul>';
-      el('war-room-social-homepages').innerHTML = (wr.socialHomepages || []).map(item => '<tr><td>' + esc(item.platform) + '</td><td><code>' + esc(item.homepageUrl) + '</code></td><td>' + esc(item.accountStatus) + '</td><td>' + esc(item.todayContentPlan) + '<br><span class="muted">Reply: ' + esc(item.todayReplyPlan) + '</span></td><td>' + esc(item.riskStatus) + '</td><td>' + (item.needsHumanCheck ? 'yes' : 'no') + '</td></tr>').join('');
-      el('war-room-growth-cycles').innerHTML = (wr.growthCycles || []).map(cycle => '<article class="card"><div class="topline"><h3>' + esc(cycle.cycleId) + '</h3><span class="badge b-blue">' + esc(cycle.status) + '</span></div><p><strong>Round</strong><br>' + esc(cycle.currentRound) + '</p><p><strong>Time</strong><br>' + esc(cycle.startTime) + ' -> ' + esc(cycle.endTime) + '</p><p><strong>Sources</strong><br>' + (cycle.collectionSources || []).map(esc).join(', ') + '</p><p><strong>Method</strong><br>' + esc(cycle.collectionMethod) + '</p><p><strong>Questions</strong></p><ul>' + (cycle.collectedQuestions || []).map(q => '<li>' + esc(q) + '</li>').join('') + '</ul><p><strong>Analysis</strong><br>' + esc(cycle.analysisMethod) + '<br>' + esc(cycle.analysisConclusion) + '</p><p><strong>Classified</strong><br>' + (cycle.classificationResults || []).map(esc).join(', ') + '</p><p><strong>Deposit</strong><br>' + (cycle.depositLibrary || []).map(esc).join(', ') + '</p><p><strong>Strategy</strong><br>' + esc(cycle.generatedStrategy) + '</p><p><strong>Next collection</strong><br>' + esc(cycle.nextCollectionPlan) + '</p></article>').join('');
-      el('war-room-growth-stages').innerHTML = (wr.growthStages || []).map(stage => '<article class="card"><div class="topline"><h3>' + esc(stage.cycleRange) + '</h3><span class="badge b-cyan">' + esc(stage.name) + '</span></div><p><strong>Goal</strong><br>' + esc(stage.stageGoal) + '</p><p><strong>Collection count</strong> ' + esc(stage.collectionCount) + '</p><p><strong>Learning events</strong><br>' + (stage.learningEvents || []).map(esc).join(', ') + '</p><p><strong>Strategy changes</strong><br>' + (stage.strategyChanges || []).map(esc).join(', ') + '</p><p><strong>Failures</strong><br>' + (stage.failureCases || []).map(esc).join(', ') + '</p><p><strong>Correction</strong><br>' + esc(stage.correctionConclusion) + '</p><p><strong>Next focus</strong><br>' + esc(stage.nextFocus) + '</p></article>').join('');
-      el('war-room-intelligence-trace').innerHTML = (wr.intelligenceCollectionTrace || []).map(trace => '<div class="detail-box" style="margin-bottom:10px"><h3>' + esc(trace.source) + '</h3><p><strong>Keywords</strong>: ' + (trace.keywords || []).map(esc).join(', ') + '</p><p><strong>Language / Pack</strong>: ' + esc(trace.language) + ' / ' + esc(trace.industryPack) + '</p><p><strong>Problem</strong>: ' + esc(trace.discoveredProblem) + '</p><p><strong>Why important</strong>: ' + esc(trace.importanceReason) + '</p><p><strong>Classified to</strong>: ' + (trace.classifiedTo || []).map(esc).join(', ') + '</p><p><strong>Flow</strong>: inbox=' + esc(trace.enteredQuestionInbox) + ', pain=' + esc(trace.enteredPainPointLibrary) + ', branch=' + esc(trace.generatedAnswerBranch) + ', strategy=' + esc(trace.generatedContentStrategy) + ', next=' + esc(trace.enteredNextScoutPlan) + '</p></div>').join('');
-      el('war-room-learning-deposit').innerHTML = (wr.learningDepositTrace || []).map(item => '<div class="detail-box" style="margin-bottom:10px"><h3>' + esc(item.library) + '</h3><p><strong>Source</strong>: ' + esc(item.source) + '</p><p><strong>Reason</strong>: ' + esc(item.reason) + '</p><p><strong>Deposited</strong>: ' + esc(item.depositedContent) + '</p><p><strong>Impacted strategy</strong>: ' + esc(item.impactedStrategy) + '</p><p><strong>Human review</strong>: ' + (item.needsHumanReview ? 'yes' : 'no') + '</p></div>').join('');
-      el('war-room-correction-panel').innerHTML = (wr.correctionPanel || []).map(item => '<article class="card"><div class="topline"><h3>' + esc(item.check) + '</h3><span class="badge ' + (item.status === 'passed' ? 'b-green' : item.status === 'yes' || item.status === 'needs_human_review' ? 'b-amber' : 'b-blue') + '">' + esc(item.status) + '</span></div><p><strong>Evidence</strong><br>' + esc(item.evidence) + '</p><p><strong>Action</strong><br>' + esc(item.action) + '</p></article>').join('');
+      el('war-room-safety-note').innerHTML = '<strong>安全边界：</strong>样例数据=' + esc(wr.sampleDataOnly) + '，自动化启用=' + esc(wr.automationEnabled) + '，禁止自动发布=' + esc(wr.noAutoPosting) + '，禁止自动注册=' + esc(wr.noAutoRegistration) + '。' + esc(control.controlNote || '');
+      el('war-room-control-panel').innerHTML = '<div class="topline"><h3>系统控制面板</h3><span class="badge ' + statusClassName + '">' + esc(status) + '</span></div>' +
+        '<div class="grid two"><p><strong>当前运行模式</strong><br>' + esc(control.currentMode) + '</p><p><strong>当前 Workspace</strong><br>' + esc(control.currentWorkspace) + '</p><p><strong>当前行业包</strong><br>' + esc(control.currentIndustryPack) + '</p><p><strong>当前 Cycle</strong><br>' + esc(control.currentCycle) + '</p></div>' +
+        '<p><strong>最后一次运行时间</strong><br>' + esc(control.lastRunTime) + '</p><div class="toolbar">' + (control.buttons || []).map(label => '<button type="button" data-war-room-action="' + esc(label) + '">' + esc(label) + '</button>').join('') + '</div>';
+      el('war-room-control-panel').querySelectorAll('[data-war-room-action]').forEach(button => button.addEventListener('click', () => { el('war-room-status').textContent = '模拟操作：' + button.dataset.warRoomAction; }));
+      el('war-room-jag-workspace').innerHTML = '<div class="topline"><h3>JAG App 推广工作区</h3><span class="badge b-green">' + esc(workspace.workspace_id) + '</span></div>' +
+        '<p><strong>推广对象</strong><br>' + esc(workspace.product) + '</p><p><strong>App 定位</strong><br>' + esc(workspace.positioning) + '</p><p><strong>目标市场</strong><br>' + (workspace.targetMarkets || []).map(esc).join(' / ') + '</p>' +
+        '<p><strong>当前推广阶段</strong><br>' + esc(workspace.promotionPhase) + '</p><p><strong>当前重点平台</strong><br>' + (workspace.focusPlatforms || []).map(esc).join(', ') + '</p><p><strong>今日推广目标</strong><br>' + esc(workspace.todayGoal) + '</p><ul>' + (workspace.coreSellingPoints || []).map(item => '<li>' + esc(item) + '</li>').join('') + '</ul>';
+      el('war-room-social-homepages').innerHTML = (wr.socialHomepages || []).map(item => '<tr><td>' + esc(item.platform) + '</td><td><code>' + esc(item.homepageUrl) + '</code></td><td>' + esc(item.accountStatus) + '</td><td>' + esc(item.todayContentPlan) + '<br><span class="muted">回复计划：' + esc(item.todayReplyPlan) + '</span></td><td>' + esc(item.riskStatus) + '</td><td>' + (item.needsHumanCheck ? 'yes' : 'no') + '</td></tr>').join('');
+      el('war-room-growth-cycles').innerHTML = (wr.growthCycles || []).map(cycle => '<article class="card"><div class="topline"><h3>' + esc(cycle.cycleId) + '</h3><span class="badge b-blue">' + esc(cycle.status) + '</span></div><p><strong>当前轮次</strong><br>' + esc(cycle.currentRound) + '</p><p><strong>时间</strong><br>' + esc(cycle.startTime) + ' -> ' + esc(cycle.endTime) + '</p><p><strong>收集来源</strong><br>' + (cycle.collectionSources || []).map(esc).join(', ') + '</p><p><strong>收集方法</strong><br>' + esc(cycle.collectionMethod) + '</p><p><strong>收集到的问题</strong></p><ul>' + (cycle.collectedQuestions || []).map(q => '<li>' + esc(q) + '</li>').join('') + '</ul><p><strong>分析方法 / 结论</strong><br>' + esc(cycle.analysisMethod) + '<br>' + esc(cycle.analysisConclusion) + '</p><p><strong>分类结果</strong><br>' + (cycle.classificationResults || []).map(esc).join(', ') + '</p><p><strong>沉淀到哪个库</strong><br>' + (cycle.depositLibrary || []).map(esc).join(', ') + '</p><p><strong>生成策略</strong><br>' + esc(cycle.generatedStrategy) + '</p><p><strong>下一轮收集计划</strong><br>' + esc(cycle.nextCollectionPlan) + '</p></article>').join('');
+      el('war-room-growth-stages').innerHTML = (wr.growthStages || []).map(stage => '<article class="card"><div class="topline"><h3>' + esc(stage.cycleRange) + '</h3><span class="badge b-cyan">' + esc(stage.name) + '</span></div><p><strong>阶段目标</strong><br>' + esc(stage.stageGoal) + '</p><p><strong>阶段收集数量</strong> ' + esc(stage.collectionCount) + '</p><p><strong>阶段学习事件</strong><br>' + (stage.learningEvents || []).map(esc).join(', ') + '</p><p><strong>阶段策略变化</strong><br>' + (stage.strategyChanges || []).map(esc).join(', ') + '</p><p><strong>阶段失败案例</strong><br>' + (stage.failureCases || []).map(esc).join(', ') + '</p><p><strong>阶段纠偏结论</strong><br>' + esc(stage.correctionConclusion) + '</p><p><strong>下一阶段重点</strong><br>' + esc(stage.nextFocus) + '</p></article>').join('');
+      el('war-room-intelligence-trace').innerHTML = (wr.intelligenceCollectionTrace || []).map(trace => '<div class="detail-box" style="margin-bottom:10px"><h3>' + esc(trace.source) + '</h3><p><strong>关键词</strong>：' + (trace.keywords || []).map(esc).join(', ') + '</p><p><strong>语言 / 行业包</strong>：' + esc(trace.language) + ' / ' + esc(trace.industryPack) + '</p><p><strong>发现的问题</strong>：' + esc(trace.discoveredProblem) + '</p><p><strong>为什么重要</strong>：' + esc(trace.importanceReason) + '</p><p><strong>分类到哪里</strong>：' + (trace.classifiedTo || []).map(esc).join(', ') + '</p><p><strong>进入流程</strong>：问题池=' + esc(trace.enteredQuestionInbox) + '，痛点库=' + esc(trace.enteredPainPointLibrary) + '，回答分支=' + esc(trace.generatedAnswerBranch) + '，内容策略=' + esc(trace.generatedContentStrategy) + '，下一轮计划=' + esc(trace.enteredNextScoutPlan) + '</p></div>').join('');
+      el('war-room-learning-deposit').innerHTML = (wr.learningDepositTrace || []).map(item => '<div class="detail-box" style="margin-bottom:10px"><h3>' + esc(item.library) + '</h3><p><strong>来源</strong>：' + esc(item.source) + '</p><p><strong>原因</strong>：' + esc(item.reason) + '</p><p><strong>沉淀内容</strong>：' + esc(item.depositedContent) + '</p><p><strong>影响策略</strong>：' + esc(item.impactedStrategy) + '</p><p><strong>是否需要人工审核</strong>：' + (item.needsHumanReview ? 'yes' : 'no') + '</p></div>').join('');
+      el('war-room-correction-panel').innerHTML = (wr.correctionPanel || []).map(item => '<article class="card"><div class="topline"><h3>' + esc(item.check) + '</h3><span class="badge ' + (item.status === '通过' ? 'b-green' : item.status === '需要' || item.status === '需要人工审核' ? 'b-amber' : 'b-blue') + '">' + esc(item.status) + '</span></div><p><strong>检测证据</strong><br>' + esc(item.evidence) + '</p><p><strong>处理动作</strong><br>' + esc(item.action) + '</p></article>').join('');
     }
 
 

@@ -11,6 +11,7 @@
 
 - Added `warRoomGrowth` to `docs/project_control_center.html` project-state JSON.
 - Added an `AGOS Growth Visualization War Room` section to the control center.
+- Localized the War Room user-facing view into Chinese while preserving machine-readable project-state fields.
 - Added simulated system controls, JAG App promotion workspace, social homepage matrix, growth cycles, 10-cycle stages, intelligence traces, learning deposit traces, and correction checks.
 - Added `tests/control_center_war_room_growth_smoke_test.py`.
 
@@ -43,6 +44,9 @@
 - Passed: `python tests\korea_taiwan_phase4_e2e_test.py`
 - Passed: `python tests\control_center_war_room_growth_smoke_test.py`
 - Passed: browser render check at `http://127.0.0.1:8765/project_control_center.html#war-room-growth`
+- Passed: localization rerun with `python tests\control_center_war_room_growth_smoke_test.py`
+- Passed: `python -m compileall tests`
+- Passed: browser render check for Chinese War Room view with cache-busting URL.
 
 ## Collaboration Acceptance Result
 

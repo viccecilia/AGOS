@@ -34,7 +34,7 @@ def main():
     workspace = war_room.get("jagWorkspace") or {}
     assert workspace.get("product") == "Japan AI Guide App", "JAG App workspace panel data missing"
     assert workspace.get("workspace_id") == "jag_app_growth", "JAG workspace_id is incorrect"
-    assert workspace.get("industryPack") == "Travel Pack", "JAG industry pack is incorrect"
+    assert "Travel Pack" in workspace.get("industryPack", ""), "JAG industry pack is incorrect"
 
     allowed_placeholders = {"pending_setup", "needs_account_url"}
     social_homepages = war_room.get("socialHomepages") or []
@@ -75,6 +75,10 @@ def main():
     ]
     for marker in required_ids:
         assert marker in html, f"HTML marker missing: {marker}"
+
+    assert "AGOS 成长可视化战情室" in html, "Chinese War Room title is required"
+    assert "JAG 社交主页矩阵" in html, "Chinese JAG social homepage section is required"
+    assert "纠偏检测面板" in html, "Chinese correction panel title is required"
 
     assert state.get("realGrowthVerification"), "realGrowthVerification must be preserved"
     assert state.get("phaseBlueprint"), "phaseBlueprint must be preserved"
