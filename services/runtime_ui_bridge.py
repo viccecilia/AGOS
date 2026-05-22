@@ -10,11 +10,13 @@ from services.human_personality_training import HumanPersonalityTraining
 from services.personality_drift_engine import PersonalityDriftEngine
 from services.personality_isolation_engine import PersonalityIsolationEngine
 from services.personality_memory_deposit import PersonalityMemoryDeposit
+from services.personality_evolution_gate import PersonalityEvolutionGate
 from services.personality_review_session import PersonalityReviewSession
 from services.runtime_drift_monitor import RuntimeDriftMonitor
 from services.runtime_engine import RuntimeEngine
 from services.runtime_persistence import RuntimePersistence
 from services.runtime_strategy_personality import RuntimeStrategyPersonalityEngine
+from services.runtime_trainer_dashboard import RuntimeTrainerDashboard
 from services.strategy_evolution_engine import StrategyEvolutionEngine
 
 
@@ -66,6 +68,8 @@ class RuntimeUIBridge:
             }
         )
         strategy_evolution = StrategyEvolutionEngine().evaluate()
+        trainer_dashboard = RuntimeTrainerDashboard().build()
+        personality_evolution_gate = PersonalityEvolutionGate().evaluate()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -207,6 +211,10 @@ class RuntimeUIBridge:
             "strategyPersonalityFeed": strategy_personality.get("strategyPersonalityFeed", []),
             "strategyEvolution": strategy_evolution,
             "strategyEvolutionFeed": strategy_evolution.get("evolutionFeed", []),
+            "runtimeTrainerDashboard": trainer_dashboard,
+            "runtimeTrainerFeed": trainer_dashboard.get("recentLearning", []),
+            "personalityEvolutionGate": personality_evolution_gate,
+            "personalityEvolutionGateChecks": personality_evolution_gate.get("checks", []),
         }
 
 

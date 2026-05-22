@@ -1,0 +1,23 @@
+{
+  "round_id": "ROUND-RUNTIME-PERSONALITY-010",
+  "status": "passed",
+  "report": "runtime/personality_evolution_gate/PERSONALITY_EVOLUTION_REPORT.json",
+  "checks": [
+    "workspace personality",
+    "platform personality",
+    "market personality",
+    "strategy personality",
+    "operating team behavior"
+  ],
+  "verification": [
+    "python -m compileall services tests passed",
+    "python tests\\personality_evolution_gate_smoke_test.py passed",
+    "python tests\\war_room_runtime_ui_smoke_test.py passed"
+  ],
+  "safety_boundary": {
+    "local_runtime_only": true,
+    "external_platform_api": false,
+    "auto_posting": false,
+    "auto_replying": false
+  }
+}

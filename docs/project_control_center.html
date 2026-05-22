@@ -525,28 +525,28 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.57",
+    "controlCenterVersion": "0.1.59",
     "lastUpdated": "2026-05-22",
     "currentPhase": "Runtime Personality / AI Growth Training",
-    "currentRound": "ROUND-RUNTIME-PERSONALITY-008",
-    "nextRound": "Human acceptance for Strategy Evolution Engine",
-    "overallProgress": 92,
-    "activeFocus": "Strategy Evolution Engine: AGOS distinguishes long-term growth strategy from short-term traffic tactics and stores evolution memory."
+    "currentRound": "ROUND-RUNTIME-PERSONALITY-010",
+    "nextRound": "Human acceptance for Personality Evolution Phase completion",
+    "overallProgress": 94,
+    "activeFocus": "Runtime Trainer Console and Personality Evolution Gate: AGOS can be trained like an AI and its stable operating personality can be reviewed."
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.57 Add strategy evolution engine",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.57",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.57",
-    "note": "Strategy Evolution Engine mapped to GitHub tag agos-v0.1.57. Runtime remains local-only; no external platform automation is enabled."
+    "latestCommit": "agos-v0.1.59 Add trainer dashboard and personality evolution gate",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.59",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.59",
+    "note": "Runtime Trainer Console and Personality Evolution Gate mapped to GitHub tag agos-v0.1.59. Runtime remains local-only; no external platform automation is enabled."
   },
   "metrics": {
     "roundsPlanned": 101,
-    "roundsCompleted": 49,
+    "roundsCompleted": 51,
     "roundsInProgress": 0,
-    "reportsEmbedded": 61
+    "reportsEmbedded": 63
   },
   "modules": [
     {
@@ -680,6 +680,48 @@
     }
   ],
   "reports": [
+    {
+      "id": "ROUND-RUNTIME-PERSONALITY-010",
+      "title": "AGOS Personality Evolution Gate",
+      "date": "2026-05-22",
+      "status": "done",
+      "summary": "Added Personality Evolution Gate validating Workspace, Platform, Market, Strategy Personality and whether AGOS behaves like a stable operating team.",
+      "files": [
+        "services/personality_evolution_gate.py",
+        "services/runtime_ui_bridge.py",
+        "docs/project_control_center.html",
+        "tests/personality_evolution_gate_smoke_test.py",
+        "runtime/personality_evolution_gate/PERSONALITY_EVOLUTION_REPORT.json",
+        "runtime/task_results/ROUND-RUNTIME-PERSONALITY-010/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "python -m compileall services tests passed",
+        "python tests\\personality_evolution_gate_smoke_test.py passed",
+        "python tests\\war_room_runtime_ui_smoke_test.py passed",
+        "Browser check: Personality Evolution Gate shows passed validation checks"
+      ]
+    },
+    {
+      "id": "ROUND-RUNTIME-PERSONALITY-009",
+      "title": "AGOS Runtime Trainer Dashboard",
+      "date": "2026-05-22",
+      "status": "done",
+      "summary": "Added Runtime Trainer Console showing best personality, worst personality, drift alerts, correction frequency, strategy changes, and recent AGOS learning.",
+      "files": [
+        "services/runtime_trainer_dashboard.py",
+        "services/runtime_ui_bridge.py",
+        "docs/project_control_center.html",
+        "tests/runtime_trainer_dashboard_smoke_test.py",
+        "runtime/trainer_dashboard/RUNTIME_TRAINER_DASHBOARD.json",
+        "runtime/task_results/ROUND-RUNTIME-PERSONALITY-009/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "python -m compileall services tests passed",
+        "python tests\\runtime_trainer_dashboard_smoke_test.py passed",
+        "python tests\\war_room_runtime_ui_smoke_test.py passed",
+        "Browser check: Runtime Trainer Console shows recent learning signals"
+      ]
+    },
     {
       "id": "ROUND-RUNTIME-PERSONALITY-008",
       "title": "AGOS Strategy Evolution Engine",
@@ -1887,6 +1929,15 @@
     }
   ],
   "versions": [
+    {
+      "id": "agos_control_center_v0.1.59",
+      "label": "v0.1.59 - Trainer Dashboard + Evolution Gate",
+      "date": "2026-05-22",
+      "gitRef": "agos-v0.1.59",
+      "location": "docs/project_control_center.html",
+      "notes": "ROUND-RUNTIME-PERSONALITY-009 and 010 completed locally and mapped to GitHub tag agos-v0.1.59. War Room now shows Runtime Trainer Console and Personality Evolution Gate.",
+      "snapshot": "AGOS Project Control Center v0.1.59\nRounds: ROUND-RUNTIME-PERSONALITY-009 and 010 completed\nGit: agos-v0.1.59\nStatus: Trainer Console and Personality Evolution Gate added\nNo external platform automation enabled.\n"
+    },
     {
       "id": "agos_control_center_v0.1.57",
       "label": "v0.1.57 - Strategy Evolution Engine",
@@ -3501,6 +3552,26 @@
       "deliverable": "Strategy Evolution Engine and Memory for long-term growth direction.",
       "report": "runtime/task_results/ROUND-RUNTIME-PERSONALITY-008/ROUND_SUMMARY.md",
       "summary": "AGOS can now judge long-term strategy versus short-term traffic and persist the primary growth direction in Strategy Evolution Memory."
+    },
+    {
+      "id": "ROUND-RUNTIME-PERSONALITY-009",
+      "phase": "RUNTIME_PERSONALITY / AI_GROWTH_TRAINING",
+      "name": "AGOS_RUNTIME_TRAINER_DASHBOARD",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "Runtime Trainer Console for training AGOS personality and strategy behavior.",
+      "report": "runtime/task_results/ROUND-RUNTIME-PERSONALITY-009/ROUND_SUMMARY.md",
+      "summary": "AGOS now exposes a trainer console with best/worst personality, drift alerts, correction frequency, strategy changes, and recent learning."
+    },
+    {
+      "id": "ROUND-RUNTIME-PERSONALITY-010",
+      "phase": "RUNTIME_PERSONALITY / AI_GROWTH_TRAINING",
+      "name": "AGOS_PERSONALITY_EVOLUTION_GATE",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "Personality Evolution Report validating stable operating personality.",
+      "report": "runtime/task_results/ROUND-RUNTIME-PERSONALITY-010/ROUND_SUMMARY.md",
+      "summary": "AGOS now validates Workspace, Platform, Market, and Strategy Personality and can report whether the Personality Evolution Phase is complete."
     }
   ],
   "realGrowthVerification": {
@@ -5392,6 +5463,303 @@
         "score": 0.623,
         "strategy": "React to travel trend bursts with concise observations."
       }
+    ],
+    "runtimeTrainerDashboard": {
+      "bestPersonality": {
+        "created_at": "2026-05-22T09:11:50+00:00",
+        "market": "Japan",
+        "personality_id": "personality_2026-05-22T09-11-50+00-00",
+        "platform": "reddit",
+        "reason": "Best long-term JAG guide personality: useful, credible, calm, and non-promotional.",
+        "style": [
+          "??",
+          "??",
+          "??",
+          "???",
+          "???"
+        ],
+        "tone": "trusted_guide",
+        "workspace": "JAG-LAB"
+      },
+      "correctionFrequency": {
+        "correction_count": 5,
+        "human_decisions_today": 6,
+        "top_corrected_mistakes": [
+          {
+            "count": 3,
+            "reason": "This is normal chatter, not a high-value travel pain point.",
+            "target_type": "opportunity"
+          },
+          {
+            "count": 1,
+            "reason": "TikTok emotional spam pattern is too aggressive and should trigger platform drift review.",
+            "target_type": "错误平台风格"
+          },
+          {
+            "count": 1,
+            "reason": "Reject: this strategy is too promotional for a travel help answer.",
+            "target_type": "runtime_training"
+          },
+          {
+            "count": 1,
+            "reason": "TikTok emotional spam pattern is too aggressive and should not become the best style.",
+            "target_type": "错误机会判断"
+          }
+        ]
+      },
+      "created_at": "2026-05-22T09:38:40+00:00",
+      "dashboard_id": "RUNTIME_TRAINER_DASHBOARD",
+      "driftAlerts": [
+        {
+          "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+          "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_1",
+          "created_at": "2026-05-22T09:02:14+00:00",
+          "issue": "过度营销",
+          "matched_tokens": [
+            "buy now"
+          ],
+          "reason": "Detected personality drift tokens: buy now",
+          "severity": "high",
+          "status": "needs_human_review"
+        },
+        {
+          "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+          "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_2",
+          "created_at": "2026-05-22T09:02:14+00:00",
+          "issue": "过度情绪化",
+          "matched_tokens": [
+            "panic"
+          ],
+          "reason": "Detected personality drift tokens: panic",
+          "severity": "medium",
+          "status": "needs_human_review"
+        },
+        {
+          "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+          "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_3",
+          "created_at": "2026-05-22T09:02:14+00:00",
+          "issue": "平台人格错乱",
+          "matched_tokens": [
+            "reddit short hook"
+          ],
+          "reason": "Detected personality drift tokens: reddit short hook",
+          "severity": "high",
+          "status": "needs_human_review"
+        },
+        {
+          "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+          "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_4",
+          "created_at": "2026-05-22T09:02:14+00:00",
+          "issue": "clickbait",
+          "matched_tokens": [
+            "you won't believe",
+            "secret trick"
+          ],
+          "reason": "Detected personality drift tokens: you won't believe, secret trick",
+          "severity": "medium",
+          "status": "needs_human_review"
+        },
+        {
+          "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+          "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_5",
+          "created_at": "2026-05-22T09:02:14+00:00",
+          "issue": "机械回复",
+          "matched_tokens": [
+            "generic reply"
+          ],
+          "reason": "Detected personality drift tokens: generic reply",
+          "severity": "medium",
+          "status": "needs_human_review"
+        },
+        {
+          "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+          "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_6",
+          "created_at": "2026-05-22T09:02:14+00:00",
+          "issue": "内容重复",
+          "matched_tokens": [
+            "same hook repeated"
+          ],
+          "reason": "Detected personality drift tokens: same hook repeated",
+          "severity": "medium",
+          "status": "needs_human_review"
+        }
+      ],
+      "recentLearning": [
+        {
+          "evidence": "Best long-term JAG guide personality: useful, credible, calm, and non-promotional.",
+          "summary": "trusted_guide",
+          "type": "best_personality"
+        },
+        {
+          "evidence": "Recent drift exists. Keep trusted_guide as the preferred personality and review failed tone aggressive_hook.",
+          "summary": "aggressive_hook",
+          "type": "failed_tone"
+        },
+        {
+          "evidence": "Promote strategies with durable trust, repeatable learning, and low drift risk.",
+          "summary": "reddit: Answer high-intent travel anxiety with detailed, non-promotional guidance.",
+          "type": "strategy_direction"
+        },
+        {
+          "evidence": "Human feedback is part of Runtime training memory.",
+          "summary": "6 human decisions today",
+          "type": "human_correction"
+        }
+      ],
+      "status": "needs_training_attention",
+      "strategyChanges": [
+        {
+          "classification": "long_term_growth",
+          "platform": "reddit",
+          "reason": "Durable trust and learning value are stronger than traffic spike.",
+          "score": 0.757,
+          "strategy": "Answer high-intent travel anxiety with detailed, non-promotional guidance."
+        },
+        {
+          "classification": "short_term_traffic",
+          "platform": "tiktok",
+          "reason": "Traffic spike is stronger than durable learning value; keep it as an experiment.",
+          "score": 0.742,
+          "strategy": "Test fast Tokyo transport hooks for save-worthy short videos."
+        },
+        {
+          "classification": "long_term_growth",
+          "platform": "youtube",
+          "reason": "Durable trust and learning value are stronger than traffic spike.",
+          "score": 0.743,
+          "strategy": "Build evergreen walkthroughs for repeated travel pain points."
+        },
+        {
+          "classification": "short_term_traffic",
+          "platform": "x",
+          "reason": "Traffic spike is stronger than durable learning value; keep it as an experiment.",
+          "score": 0.623,
+          "strategy": "React to travel trend bursts with concise observations."
+        }
+      ],
+      "trainerActions": [
+        "Approve stable personality signals.",
+        "Reject drift-heavy tones before they enter long-term memory.",
+        "Promote long-term growth strategies over short-term traffic spikes.",
+        "Review correction frequency before changing active personality."
+      ],
+      "worstPersonality": {
+        "created_at": "2026-05-22T09:11:50+00:00",
+        "market": "Japan",
+        "personality_id": "personality_2026-05-22T09-11-50+00-00",
+        "platform": "tiktok",
+        "reason": "Failed personality: aggressive hook drifts away from trusted guide style.",
+        "style": [
+          "????",
+          "???",
+          "??"
+        ],
+        "tone": "aggressive_hook",
+        "workspace": "JAG-LAB"
+      }
+    },
+    "runtimeTrainerFeed": [
+      {
+        "evidence": "Best long-term JAG guide personality: useful, credible, calm, and non-promotional.",
+        "summary": "trusted_guide",
+        "type": "best_personality"
+      },
+      {
+        "evidence": "Recent drift exists. Keep trusted_guide as the preferred personality and review failed tone aggressive_hook.",
+        "summary": "aggressive_hook",
+        "type": "failed_tone"
+      },
+      {
+        "evidence": "Promote strategies with durable trust, repeatable learning, and low drift risk.",
+        "summary": "reddit: Answer high-intent travel anxiety with detailed, non-promotional guidance.",
+        "type": "strategy_direction"
+      },
+      {
+        "evidence": "Human feedback is part of Runtime training memory.",
+        "summary": "6 human decisions today",
+        "type": "human_correction"
+      }
+    ],
+    "personalityEvolutionGate": {
+      "checks": [
+        {
+          "evidence": "validated",
+          "name": "Workspace Personality",
+          "status": "passed"
+        },
+        {
+          "evidence": "validated",
+          "name": "Platform Personality",
+          "status": "passed"
+        },
+        {
+          "evidence": "validated",
+          "name": "Market Personality",
+          "status": "passed"
+        },
+        {
+          "evidence": "validated",
+          "name": "Strategy Personality",
+          "status": "passed"
+        },
+        {
+          "evidence": "validated",
+          "name": "Operating Team Behavior",
+          "status": "passed"
+        }
+      ],
+      "created_at": "2026-05-22T09:38:40+00:00",
+      "marketIsolationStatus": "clear",
+      "personalityEvolutionSummary": "AGOS has formed a stable operating personality with workspace, platform, market, and strategy layers.",
+      "platformPersonalityCount": 4,
+      "report_id": "PERSONALITY_EVOLUTION_REPORT",
+      "stableOperatingPersonality": true,
+      "status": "passed",
+      "strategyPersonalityStatus": "forming_long_term_strategy",
+      "workspacePersonality": {
+        "avoid": [
+          "硬广",
+          "标题党",
+          "过度情绪",
+          "虚假承诺"
+        ],
+        "personality": [
+          "真实",
+          "可信",
+          "专业",
+          "像导游",
+          "不营销"
+        ],
+        "voice": "calm guide",
+        "workspace": "JAG-LAB"
+      }
+    },
+    "personalityEvolutionGateChecks": [
+      {
+        "evidence": "validated",
+        "name": "Workspace Personality",
+        "status": "passed"
+      },
+      {
+        "evidence": "validated",
+        "name": "Platform Personality",
+        "status": "passed"
+      },
+      {
+        "evidence": "validated",
+        "name": "Market Personality",
+        "status": "passed"
+      },
+      {
+        "evidence": "validated",
+        "name": "Strategy Personality",
+        "status": "passed"
+      },
+      {
+        "evidence": "validated",
+        "name": "Operating Team Behavior",
+        "status": "passed"
+      }
     ]
   }
 }
@@ -5595,6 +5963,12 @@
             <div style="height:10px"></div>
             <div class="runtime-title-row"><h3>Strategy Evolution Engine</h3><p>Long-term growth vs short-term traffic</p></div>
             <div class="feed-stream" id="runtime-strategy-evolution"></div>
+            <div style="height:10px"></div>
+            <div class="runtime-title-row"><h3>Runtime Trainer Console</h3><p>Best / worst personality, drift, correction, learning</p></div>
+            <div class="feed-stream" id="runtime-trainer-dashboard"></div>
+            <div style="height:10px"></div>
+            <div class="runtime-title-row"><h3>Personality Evolution Gate</h3><p>Workspace / Platform / Market / Strategy validation</p></div>
+            <div class="feed-stream" id="runtime-personality-evolution-gate"></div>
             <div style="height:10px"></div>
             <div class="runtime-title-row"><h3>Personality Isolation Report</h3><p>Workspace / Market / Platform pollution guard</p></div>
             <div class="feed-stream" id="runtime-personality-isolation"></div>
@@ -6180,6 +6554,14 @@
       el('runtime-strategy-evolution').innerHTML = (wr.strategyEvolutionFeed || []).map(item =>
         '<div class="feed-item"><time>' + esc(item.platform) + '</time><div class="feed-main"><strong>' + esc(item.classification) + ' · score ' + esc(item.score) + '</strong><span>' + esc(item.strategy) + '</span><span>' + esc(item.reason) + '</span></div><span class="badge ' + (item.classification === 'long_term_growth' ? 'b-green' : 'b-amber') + '">' + esc(item.classification) + '</span></div>'
       ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Strategy Evolution pending</strong><span>Runtime will classify long-term growth strategy versus short-term traffic tactics.</span></div><span class="badge b-amber">pending</span></div>';
+      const trainer = wr.runtimeTrainerDashboard || {};
+      el('runtime-trainer-dashboard').innerHTML = (wr.runtimeTrainerFeed || []).map(item =>
+        '<div class="feed-item"><time>' + esc(item.type) + '</time><div class="feed-main"><strong>' + esc(item.summary) + '</strong><span>' + esc(item.evidence) + '</span></div><span class="badge ' + (trainer.status === 'training_stable' ? 'b-green' : 'b-amber') + '">' + esc(trainer.status || 'training') + '</span></div>'
+      ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Runtime Trainer Console pending</strong><span>Runtime will show best personality, worst personality, drift alerts, correction frequency, strategy changes, and recent learning.</span></div><span class="badge b-amber">pending</span></div>';
+      const gate = wr.personalityEvolutionGate || {};
+      el('runtime-personality-evolution-gate').innerHTML = (wr.personalityEvolutionGateChecks || []).map(item =>
+        '<div class="feed-item"><time>' + esc(item.name) + '</time><div class="feed-main"><strong>' + esc(item.status) + '</strong><span>' + esc(item.evidence) + '</span><span>' + esc(gate.personalityEvolutionSummary || '') + '</span></div><span class="badge ' + (item.status === 'passed' ? 'b-green' : 'b-amber') + '">' + esc(item.status) + '</span></div>'
+      ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Personality Evolution Gate pending</strong><span>Runtime will validate workspace, platform, market, and strategy personality stability.</span></div><span class="badge b-amber">pending</span></div>';
       el('runtime-personality-isolation').innerHTML = (wr.personalityIsolationFeed || []).map(item =>
         '<div class="feed-item"><time>' + esc(item.dimension) + '</time><div class="feed-main"><strong>' + esc(item.status) + '</strong><span>Scopes: ' + esc((item.scopes || []).join(' / ')) + '</span><span>Contexts checked: ' + esc(item.contexts_checked) + ' | Violations: ' + esc(item.violations) + '</span></div><span class="badge ' + (item.status === 'clear' ? 'b-green' : 'b-amber') + '">' + esc(item.status) + '</span></div>'
       ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Personality Isolation Report pending</strong><span>Runtime will verify workspace, market, and platform personalities do not cross-pollute.</span></div><span class="badge b-amber">pending</span></div>';

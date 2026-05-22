@@ -1,0 +1,194 @@
+{
+  "bestPersonality": {
+    "created_at": "2026-05-22T09:11:50+00:00",
+    "market": "Japan",
+    "personality_id": "personality_2026-05-22T09-11-50+00-00",
+    "platform": "reddit",
+    "reason": "Best long-term JAG guide personality: useful, credible, calm, and non-promotional.",
+    "style": [
+      "??",
+      "??",
+      "??",
+      "???",
+      "???"
+    ],
+    "tone": "trusted_guide",
+    "workspace": "JAG-LAB"
+  },
+  "correctionFrequency": {
+    "correction_count": 5,
+    "human_decisions_today": 6,
+    "top_corrected_mistakes": [
+      {
+        "count": 3,
+        "reason": "This is normal chatter, not a high-value travel pain point.",
+        "target_type": "opportunity"
+      },
+      {
+        "count": 1,
+        "reason": "TikTok emotional spam pattern is too aggressive and should trigger platform drift review.",
+        "target_type": "错误平台风格"
+      },
+      {
+        "count": 1,
+        "reason": "Reject: this strategy is too promotional for a travel help answer.",
+        "target_type": "runtime_training"
+      },
+      {
+        "count": 1,
+        "reason": "TikTok emotional spam pattern is too aggressive and should not become the best style.",
+        "target_type": "错误机会判断"
+      }
+    ]
+  },
+  "created_at": "2026-05-22T09:38:40+00:00",
+  "dashboard_id": "RUNTIME_TRAINER_DASHBOARD",
+  "driftAlerts": [
+    {
+      "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+      "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_1",
+      "created_at": "2026-05-22T09:02:14+00:00",
+      "issue": "过度营销",
+      "matched_tokens": [
+        "buy now"
+      ],
+      "reason": "Detected personality drift tokens: buy now",
+      "severity": "high",
+      "status": "needs_human_review"
+    },
+    {
+      "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+      "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_2",
+      "created_at": "2026-05-22T09:02:14+00:00",
+      "issue": "过度情绪化",
+      "matched_tokens": [
+        "panic"
+      ],
+      "reason": "Detected personality drift tokens: panic",
+      "severity": "medium",
+      "status": "needs_human_review"
+    },
+    {
+      "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+      "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_3",
+      "created_at": "2026-05-22T09:02:14+00:00",
+      "issue": "平台人格错乱",
+      "matched_tokens": [
+        "reddit short hook"
+      ],
+      "reason": "Detected personality drift tokens: reddit short hook",
+      "severity": "high",
+      "status": "needs_human_review"
+    },
+    {
+      "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+      "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_4",
+      "created_at": "2026-05-22T09:02:14+00:00",
+      "issue": "clickbait",
+      "matched_tokens": [
+        "you won't believe",
+        "secret trick"
+      ],
+      "reason": "Detected personality drift tokens: you won't believe, secret trick",
+      "severity": "medium",
+      "status": "needs_human_review"
+    },
+    {
+      "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+      "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_5",
+      "created_at": "2026-05-22T09:02:14+00:00",
+      "issue": "机械回复",
+      "matched_tokens": [
+        "generic reply"
+      ],
+      "reason": "Detected personality drift tokens: generic reply",
+      "severity": "medium",
+      "status": "needs_human_review"
+    },
+    {
+      "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+      "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_6",
+      "created_at": "2026-05-22T09:02:14+00:00",
+      "issue": "内容重复",
+      "matched_tokens": [
+        "same hook repeated"
+      ],
+      "reason": "Detected personality drift tokens: same hook repeated",
+      "severity": "medium",
+      "status": "needs_human_review"
+    }
+  ],
+  "recentLearning": [
+    {
+      "evidence": "Best long-term JAG guide personality: useful, credible, calm, and non-promotional.",
+      "summary": "trusted_guide",
+      "type": "best_personality"
+    },
+    {
+      "evidence": "Recent drift exists. Keep trusted_guide as the preferred personality and review failed tone aggressive_hook.",
+      "summary": "aggressive_hook",
+      "type": "failed_tone"
+    },
+    {
+      "evidence": "Promote strategies with durable trust, repeatable learning, and low drift risk.",
+      "summary": "reddit: Answer high-intent travel anxiety with detailed, non-promotional guidance.",
+      "type": "strategy_direction"
+    },
+    {
+      "evidence": "Human feedback is part of Runtime training memory.",
+      "summary": "6 human decisions today",
+      "type": "human_correction"
+    }
+  ],
+  "status": "needs_training_attention",
+  "strategyChanges": [
+    {
+      "classification": "long_term_growth",
+      "platform": "reddit",
+      "reason": "Durable trust and learning value are stronger than traffic spike.",
+      "score": 0.757,
+      "strategy": "Answer high-intent travel anxiety with detailed, non-promotional guidance."
+    },
+    {
+      "classification": "short_term_traffic",
+      "platform": "tiktok",
+      "reason": "Traffic spike is stronger than durable learning value; keep it as an experiment.",
+      "score": 0.742,
+      "strategy": "Test fast Tokyo transport hooks for save-worthy short videos."
+    },
+    {
+      "classification": "long_term_growth",
+      "platform": "youtube",
+      "reason": "Durable trust and learning value are stronger than traffic spike.",
+      "score": 0.743,
+      "strategy": "Build evergreen walkthroughs for repeated travel pain points."
+    },
+    {
+      "classification": "short_term_traffic",
+      "platform": "x",
+      "reason": "Traffic spike is stronger than durable learning value; keep it as an experiment.",
+      "score": 0.623,
+      "strategy": "React to travel trend bursts with concise observations."
+    }
+  ],
+  "trainerActions": [
+    "Approve stable personality signals.",
+    "Reject drift-heavy tones before they enter long-term memory.",
+    "Promote long-term growth strategies over short-term traffic spikes.",
+    "Review correction frequency before changing active personality."
+  ],
+  "worstPersonality": {
+    "created_at": "2026-05-22T09:11:50+00:00",
+    "market": "Japan",
+    "personality_id": "personality_2026-05-22T09-11-50+00-00",
+    "platform": "tiktok",
+    "reason": "Failed personality: aggressive hook drifts away from trusted guide style.",
+    "style": [
+      "????",
+      "???",
+      "??"
+    ],
+    "tone": "aggressive_hook",
+    "workspace": "JAG-LAB"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "checks": [
+    {
+      "evidence": "validated",
+      "name": "Workspace Personality",
+      "status": "passed"
+    },
+    {
+      "evidence": "validated",
+      "name": "Platform Personality",
+      "status": "passed"
+    },
+    {
+      "evidence": "validated",
+      "name": "Market Personality",
+      "status": "passed"
+    },
+    {
+      "evidence": "validated",
+      "name": "Strategy Personality",
+      "status": "passed"
+    },
+    {
+      "evidence": "validated",
+      "name": "Operating Team Behavior",
+      "status": "passed"
+    }
+  ],
+  "created_at": "2026-05-22T09:38:40+00:00",
+  "marketIsolationStatus": "clear",
+  "personalityEvolutionSummary": "AGOS has formed a stable operating personality with workspace, platform, market, and strategy layers.",
+  "platformPersonalityCount": 4,
+  "report_id": "PERSONALITY_EVOLUTION_REPORT",
+  "stableOperatingPersonality": true,
+  "status": "passed",
+  "strategyPersonalityStatus": "forming_long_term_strategy",
+  "workspacePersonality": {
+    "avoid": [
+      "硬广",
+      "标题党",
+      "过度情绪",
+      "虚假承诺"
+    ],
+    "personality": [
+      "真实",
+      "可信",
+      "专业",
+      "像导游",
+      "不营销"
+    ],
+    "voice": "calm guide",
+    "workspace": "JAG-LAB"
+  }
+}
