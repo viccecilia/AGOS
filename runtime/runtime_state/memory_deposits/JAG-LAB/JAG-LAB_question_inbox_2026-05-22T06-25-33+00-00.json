@@ -1,0 +1,13 @@
+{
+  "content": {
+    "cycle": "JAG-LAB-CYCLE-0001",
+    "runtime_status": "running",
+    "signal": "runtime question candidate",
+    "stage": "Scout"
+  },
+  "created_at": "2026-05-22T06:25:33+00:00",
+  "deposit_id": "JAG-LAB_question_inbox_2026-05-22T06-25-33+00-00",
+  "library": "Question Inbox",
+  "reason": "Runtime cycle captured candidate question context.",
+  "workspace": "JAG-LAB"
+}

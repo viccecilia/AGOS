@@ -1,0 +1,13 @@
+{
+  "content": {
+    "cycle": "JAG-LAB-CYCLE-0001",
+    "industry_pack": "Travel Pack / Lab",
+    "runtime_status": "running",
+    "stage": "Scout"
+  },
+  "created_at": "2026-05-22T06:25:33+00:00",
+  "deposit_id": "JAG-LAB_industry_pack_memory_2026-05-22T06-25-33+00-00",
+  "library": "Industry Pack Memory",
+  "reason": "Runtime preserved industry pack scope.",
+  "workspace": "JAG-LAB"
+}

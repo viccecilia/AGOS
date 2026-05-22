@@ -1,0 +1,31 @@
+{
+  "round_id": "ROUND-RUNTIME-API-001",
+  "status": "passed",
+  "api_host": "127.0.0.1",
+  "api_port": 8766,
+  "endpoints_verified": [
+    "GET /api/runtime/status",
+    "POST /api/runtime/start",
+    "POST /api/runtime/stop",
+    "POST /api/runtime/correction",
+    "POST /api/runtime/review"
+  ],
+  "browser_verification": {
+    "runtime_api_status": "connected",
+    "start_result": "RUNNING",
+    "stop_result": "STOPPED",
+    "runtime_feed_visible": true,
+    "opportunity_ranking_visible": true,
+    "runtime_intelligence_feed_visible": true,
+    "correction_center_visible": true
+  },
+  "safety_boundary": {
+    "local_only": true,
+    "public_bind": false,
+    "social_platform_api": false,
+    "auto_posting": false,
+    "auto_replying": false,
+    "auto_registration": false,
+    "social_login": false
+  }
+}

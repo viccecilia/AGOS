@@ -525,28 +525,28 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.47",
+    "controlCenterVersion": "0.1.48",
     "lastUpdated": "2026-05-22",
     "currentPhase": "Real Operation / AI Growth Training",
-    "currentRound": "ROUND-RUNTIME-TRAINING-001",
-    "nextRound": "Human acceptance for Runtime Training Stage",
+    "currentRound": "ROUND-RUNTIME-API-001",
+    "nextRound": "Human acceptance for Local Runtime API Server",
     "overallProgress": 88,
-    "activeFocus": "AGOS 已进入 Runtime Training Stage：JAG-LAB 沙盒、机会评分、平台人格训练、学歪检测、人工纠偏、Runtime Review 和 Intelligence Deposit 已开始训练 AGOS 的判断能力。"
+    "activeFocus": "Local Runtime API Server: browser-controlled JAG-LAB Runtime Training via 127.0.0.1:8766."
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.47 Add runtime intelligence training stage",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.47",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.47",
-    "note": "Runtime Training Stage mapped to GitHub tag agos-v0.1.47. Training remains local and uses JAG-LAB sandbox only."
+    "latestCommit": "agos-v0.1.48 Add local runtime API server",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.48",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.48",
+    "note": "Local Runtime API Server mapped to GitHub tag agos-v0.1.48. Runtime remains local-only and uses JAG-LAB sandbox; no external platform automation is enabled."
   },
   "metrics": {
     "roundsPlanned": 101,
     "roundsCompleted": 45,
     "roundsInProgress": 0,
-    "reportsEmbedded": 51
+    "reportsEmbedded": 52
   },
   "modules": [
     {
@@ -680,6 +680,28 @@
     }
   ],
   "reports": [
+    {
+      "id": "ROUND-RUNTIME-API-001",
+      "title": "AGOS Local Runtime API Server",
+      "date": "2026-05-22",
+      "status": "done",
+      "summary": "Added a local-only Runtime API Server on 127.0.0.1:8766 so the control center can start, stop, poll, review, and correct the JAG-LAB Runtime Training cycle from the browser without any real platform automation.",
+      "files": [
+        "services/runtime_api_server.py",
+        "docs/project_control_center.html",
+        "docs/README_RUNTIME_API.md",
+        "tests/runtime_api_server_smoke_test.py",
+        "runtime/task_results/ROUND-RUNTIME-API-001/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "python -m compileall services tests passed",
+        "python tests\\runtime_api_server_smoke_test.py passed",
+        "python tests\\runtime_engine_smoke_test.py passed",
+        "python tests\\runtime_training_cycle_smoke_test.py passed",
+        "python tests\\war_room_runtime_ui_smoke_test.py passed",
+        "Browser check: Runtime API connected; start -> RUNNING; stop -> STOPPED"
+      ]
+    },
     {
       "id": "ROUND-RUNTIME-TRAINING-001",
       "title": "AGOS Runtime Training Stage",
@@ -1655,6 +1677,15 @@
     }
   ],
   "versions": [
+    {
+      "id": "agos_control_center_v0.1.48",
+      "label": "v0.1.48 - Local Runtime API Server",
+      "date": "2026-05-22",
+      "gitRef": "agos-v0.1.48",
+      "location": "docs/project_control_center.html",
+      "notes": "ROUND-RUNTIME-API-001 completed locally and mapped to GitHub tag agos-v0.1.48. Control center buttons call the local Runtime API on 127.0.0.1:8766 and show clear offline instructions when disconnected.",
+      "snapshot": "AGOS Project Control Center v0.1.48\nRound: ROUND-RUNTIME-API-001 completed\nGit: agos-v0.1.48\nStatus: Local Runtime API Server added\nNo external platform automation enabled.\n"
+    },
     {
       "id": "agos-v0.1.47-runtime-training",
       "label": "Control Center v0.1.47",
@@ -3079,6 +3110,16 @@
       "deliverable": "JAG-LAB training workspace, daily runtime training cycle, opportunity scoring, platform personality training, mislearning detection, human correction runtime, review reports, and runtime intelligence deposit.",
       "report": "runtime/task_results/ROUND-RUNTIME-TRAINING-001/ROUND_SUMMARY.md",
       "summary": "This round moves AGOS from a runnable local Runtime Engine into Runtime Intelligence Training. The system now scores opportunities, explains why signals matter, trains platform style differences, detects mislearning, records human correction, deposits intelligence, and generates runtime review reports in an isolated JAG-LAB sandbox."
+    },
+    {
+      "id": "ROUND-RUNTIME-API-001",
+      "phase": "RUNTIME_OS / AI_GROWTH_TRAINING",
+      "name": "AGOS_LOCAL_RUNTIME_API_SERVER",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "Local-only Runtime API Server with status/start/stop/correction/review endpoints and browser Runtime Bar integration.",
+      "report": "runtime/task_results/ROUND-RUNTIME-API-001/ROUND_SUMMARY.md",
+      "summary": "This round upgrades AGOS from HTML-readable Runtime JSON to a browser-controllable Local Runtime OS. The control center now polls 127.0.0.1:8766, can start and stop JAG-LAB Runtime Training, shows API connection status, and records review/correction actions locally without touching real social platforms."
     }
   ],
   "realGrowthVerification": {
@@ -4258,6 +4299,7 @@
             </div>
             <span class="badge rt-running" id="war-room-status">RUNNING</span>
           </div>
+          <div class="drift-banner" id="runtime-api-banner">Runtime API 未连接。请运行：python services/runtime_api_server.py</div>
           <div class="drift-banner" id="runtime-drift-banner"></div>
           <div class="runtime-panel">
             <div class="runtime-title-row"><h3>Runtime Pipeline</h3><p id="runtime-pipeline-note"></p></div>
@@ -4420,6 +4462,13 @@
 
   <script>
     const state = JSON.parse(document.getElementById("project-state").textContent);
+    const runtimeApiBase = "http://127.0.0.1:8766";
+    const runtimeApiState = {
+      connected: false,
+      last_api_ping: "never",
+      last_runtime_action: "none",
+      last_error: "Runtime API 未连接"
+    };
 
     const statusLabel = {
       planned: "未开始",
@@ -4568,6 +4617,67 @@
       };
     }
 
+    function mergeRuntimeApiPayload(payload) {
+      if (!payload || typeof payload !== 'object') return;
+      mergeRuntimeBridgeData(payload.ui_state || payload);
+      runtimeApiState.connected = true;
+      runtimeApiState.last_api_ping = new Date().toLocaleTimeString();
+      runtimeApiState.last_error = "";
+      if (payload.status && state.warRoomGrowth) {
+        state.warRoomGrowth.runtimeStatus = String(payload.status).toUpperCase();
+      }
+    }
+
+    function renderRuntimeApiBanner() {
+      const banner = el('runtime-api-banner');
+      if (!banner) return;
+      const status = runtimeApiState.connected ? "connected" : "disconnected";
+      banner.innerHTML =
+        '<strong>Runtime API: ' + esc(status) + '</strong>' +
+        ' · last_api_ping: ' + esc(runtimeApiState.last_api_ping) +
+        ' · last_runtime_action: ' + esc(runtimeApiState.last_runtime_action) +
+        (runtimeApiState.last_error ? ' · last_error: ' + esc(runtimeApiState.last_error) : '');
+    }
+
+    async function fetchRuntimeApiStatus() {
+      if (location.protocol !== "http:" && location.protocol !== "https:") return false;
+      try {
+        const response = await fetch(`${runtimeApiBase}/api/runtime/status?runtime_api=${Date.now()}`, { cache: "no-store" });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const payload = await response.json();
+        mergeRuntimeApiPayload(payload);
+        renderRuntimeApiBanner();
+        renderWarRoomGrowth();
+        return true;
+      } catch (error) {
+        runtimeApiState.connected = false;
+        runtimeApiState.last_error = "Runtime API 未连接。请运行：python services/runtime_api_server.py";
+        renderRuntimeApiBanner();
+        return false;
+      }
+    }
+
+    async function callRuntimeApi(action) {
+      runtimeApiState.last_runtime_action = action;
+      try {
+        const response = await fetch(`${runtimeApiBase}/api/runtime/${action}`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: "{}"
+        });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const payload = await response.json();
+        mergeRuntimeApiPayload(payload);
+        renderRuntimeApiBanner();
+        renderWarRoomGrowth();
+      } catch (error) {
+        runtimeApiState.connected = false;
+        runtimeApiState.last_error = "Runtime API 未连接。请运行：python services/runtime_api_server.py";
+        renderRuntimeApiBanner();
+        await fetchRuntimeBridgeState();
+      }
+    }
+
     function renderWarRoomGrowth() {
       const wr = state.warRoomGrowth || {};
       const control = wr.systemControl || {};
@@ -4583,19 +4693,14 @@
         '<div class="runtime-kv"><span>当前节点</span><strong>' + esc(currentStage) + '</strong></div>' +
         '<div class="runtime-kv"><span>已运行时间</span><strong>' + esc(wr.runtimeElapsed || '00:00:00') + '</strong></div>' +
         '<div class="runtime-kv"><span>Workspace</span><strong>' + esc(control.currentWorkspace || workspace.workspace || 'jag_app_growth') + '</strong></div>' +
+        '<div class="runtime-kv"><span>Runtime API</span><strong>' + esc(runtimeApiState.connected ? 'connected' : 'disconnected') + '</strong></div>' +
         '<div class="runtime-actions"><button class="primary" type="button" data-runtime-action="start">启动</button><button class="danger" type="button" data-runtime-action="stop">停止</button></div>';
       el('war-room-control-panel').querySelectorAll('[data-runtime-action]').forEach(button => {
         button.addEventListener('click', () => {
-          const nextStatus = button.dataset.runtimeAction === 'start' ? 'RUNNING' : 'STOPPED';
-          mergeRuntimeBridgeData({
-            runtimeStatus: nextStatus,
-            current_runtime_stage: button.dataset.runtimeAction === 'start' ? (wr.current_runtime_stage || 'Scout') : (wr.current_runtime_stage || 'Scout'),
-            systemControl: { status: nextStatus }
-          });
-          renderWarRoomGrowth();
-          fetchRuntimeBridgeState();
+          callRuntimeApi(button.dataset.runtimeAction);
         });
       });
+      renderRuntimeApiBanner();
       el('runtime-drift-banner').textContent = wr.isLearningDrifting ? 'AGOS 正在学歪风险：需要人工审核样例结论，禁止把样例当成真实反馈。' : 'AGOS 学习方向正常。';
       el('runtime-pipeline-note').textContent = 'current_runtime_stage = ' + currentStage;
       el('runtime-pipeline').innerHTML = (wr.runtimePipeline || []).map(node => {
@@ -4645,6 +4750,7 @@
 
     async function fetchRuntimeBridgeState() {
       if (location.protocol !== "http:" && location.protocol !== "https:") return;
+      if (runtimeApiState.connected) return;
       try {
         const response = await fetch(`runtime/runtime_state/ui_state.json?runtime_bridge=${Date.now()}`, { cache: "no-store" });
         if (!response.ok) return;
@@ -4867,6 +4973,7 @@
     renderRealGrowth();
     renderPhaseBlueprint();
     renderWarRoomGrowth();
+    fetchRuntimeApiStatus();
     fetchRuntimeBridgeState();
     renderGit();
     renderModules();
@@ -4894,6 +5001,7 @@
     }
 
     setInterval(checkForControlCenterUpdate, 5000);
+    setInterval(fetchRuntimeApiStatus, 2500);
     setInterval(fetchRuntimeBridgeState, 2500);
   </script>
 </body>

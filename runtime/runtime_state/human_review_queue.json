@@ -13,5 +13,110 @@
     "target_type": "runtime_training",
     "updated_at": "2026-05-22T06:06:42+00:00",
     "workspace": "JAG-LAB"
+  },
+  {
+    "content": {
+      "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
+      "reply_text": "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple.",
+      "strategy": "rescue-first helpful answer"
+    },
+    "created_at": "2026-05-22T06:21:22+00:00",
+    "cycle": "JAG-LAB-CYCLE-0001",
+    "modified_content": {
+      "modified_text": "Keep the reply useful and non-promotional."
+    },
+    "review_id": "review_0002",
+    "stage": "Human Review",
+    "status": "modified",
+    "target_type": "runtime_training",
+    "updated_at": "2026-05-22T06:21:22+00:00",
+    "workspace": "JAG-LAB"
+  },
+  {
+    "content": {
+      "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
+      "reply_text": "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple.",
+      "strategy": "rescue-first helpful answer"
+    },
+    "created_at": "2026-05-22T06:22:18+00:00",
+    "cycle": "JAG-LAB-CYCLE-0001",
+    "review_id": "review_0003",
+    "stage": "Human Review",
+    "status": "needs_human_review",
+    "target_type": "runtime_training",
+    "updated_at": "2026-05-22T06:22:18+00:00",
+    "workspace": "JAG-LAB"
+  },
+  {
+    "content": {
+      "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
+      "reply_text": "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple.",
+      "strategy": "rescue-first helpful answer"
+    },
+    "created_at": "2026-05-22T06:23:59+00:00",
+    "cycle": "JAG-LAB-CYCLE-0001",
+    "modified_content": {
+      "modified_text": "Keep the reply useful and non-promotional."
+    },
+    "review_id": "review_0004",
+    "stage": "Human Review",
+    "status": "modified",
+    "target_type": "runtime_training",
+    "updated_at": "2026-05-22T06:23:59+00:00",
+    "workspace": "JAG-LAB"
+  },
+  {
+    "content": {
+      "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
+      "reply_text": "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple.",
+      "strategy": "rescue-first helpful answer"
+    },
+    "created_at": "2026-05-22T06:24:24+00:00",
+    "cycle": "JAG-LAB-CYCLE-0001",
+    "modified_content": {
+      "modified_text": "Keep the reply useful and non-promotional."
+    },
+    "review_id": "review_0005",
+    "stage": "Human Review",
+    "status": "modified",
+    "target_type": "runtime_training",
+    "updated_at": "2026-05-22T06:24:25+00:00",
+    "workspace": "JAG-LAB"
+  },
+  {
+    "content": {
+      "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
+      "reply_text": "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple.",
+      "strategy": "rescue-first helpful answer"
+    },
+    "created_at": "2026-05-22T06:25:19+00:00",
+    "cycle": "JAG-LAB-CYCLE-0001",
+    "modified_content": {
+      "modified_text": "Keep the reply useful and non-promotional."
+    },
+    "review_id": "review_0006",
+    "stage": "Human Review",
+    "status": "modified",
+    "target_type": "runtime_training",
+    "updated_at": "2026-05-22T06:25:19+00:00",
+    "workspace": "JAG-LAB"
+  },
+  {
+    "content": {
+      "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
+      "reply_text": "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple.",
+      "strategy": "rescue-first helpful answer"
+    },
+    "created_at": "2026-05-22T06:25:33+00:00",
+    "cycle": "JAG-LAB-CYCLE-0001",
+    "modified_content": {
+      "modified_text": "Keep the reply useful and non-promotional."
+    },
+    "review_id": "review_0007",
+    "stage": "Human Review",
+    "status": "modified",
+    "target_type": "runtime_training",
+    "updated_at": "2026-05-22T06:25:33+00:00",
+    "workspace": "JAG-LAB"
   }
 ]
