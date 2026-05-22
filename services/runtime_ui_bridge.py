@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import Any
 
 from services.best_answer_learning_engine import BestAnswerLearningEngine
+from services.autonomous_growth_preparation_gate import AutonomousGrowthPreparationGate
 from services.cross_platform_expansion_engine import CrossPlatformExpansionEngine
 from services.daily_question_import_engine import DailyQuestionImportEngine
 from services.daily_operations_report_engine import DailyOperationsReportEngine
@@ -106,6 +107,7 @@ class RuntimeUIBridge:
         runtime_priority = RuntimePriorityEngine().evolve()
         growth_signal_correlation = GrowthSignalCorrelationEngine().correlate()
         runtime_strategy_simulation = RuntimeStrategySimulation().simulate()
+        autonomous_growth_preparation_gate = AutonomousGrowthPreparationGate().evaluate()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -317,6 +319,11 @@ class RuntimeUIBridge:
             "strategySimulationScenarios": runtime_strategy_simulation.get("strategySimulationScenarios", []),
             "strategySimulationFeed": runtime_strategy_simulation.get("strategySimulationFeed", []),
             "simulationSummary": runtime_strategy_simulation.get("simulationSummary", {}),
+            "autonomousGrowthPreparationGate": autonomous_growth_preparation_gate,
+            "autonomousGrowthPreparationChecks": autonomous_growth_preparation_gate.get("checks", []),
+            "autonomousGrowthPreparationCapability": autonomous_growth_preparation_gate.get("autonomousGrowthPreparationCapability", {}),
+            "autonomousGrowthPreparationSummary": autonomous_growth_preparation_gate.get("autonomousGrowthPreparationSummary", {}),
+            "autonomousRuntimeIntelligenceReview": autonomous_growth_preparation_gate.get("runtimeIntelligenceReview", {}),
         }
 
 

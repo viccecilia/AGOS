@@ -1,0 +1,27 @@
+[
+  {
+    "evidence": "Runtime state machine, current stage, and pipeline are available.",
+    "name": "Runtime Intelligence",
+    "status": "passed"
+  },
+  {
+    "evidence": "Personality Evolution Gate passed with stable operating personality.",
+    "name": "Personality Intelligence",
+    "status": "passed"
+  },
+  {
+    "evidence": "Scout produced trend clusters, heat signals, and opportunity ranking.",
+    "name": "Scout Intelligence",
+    "status": "passed"
+  },
+  {
+    "evidence": "Real Operations loop passed local validation.",
+    "name": "Real Ops Intelligence",
+    "status": "passed"
+  },
+  {
+    "evidence": "Long-term memory, priority evolution, signal correlation, and strategy simulation are active.",
+    "name": "Strategy Intelligence",
+    "status": "passed"
+  }
+]
