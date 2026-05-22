@@ -1,6 +1,8 @@
-"""Platform personality training rules."""
+"""Platform personality training rules integrated with Personality Layer."""
 
 from __future__ import annotations
+
+from services.personality_engine import PersonalityEngine
 
 
 class PlatformPersonalityEngine:
@@ -17,7 +19,7 @@ class PlatformPersonalityEngine:
             "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
             "length": "short",
             "cta": "轻引导保存或评论",
-            "avoid": ["长段解释", "学术语气"],
+            "avoid": ["长段解释", "学术语气", "恐吓式情绪"],
         },
         "x": {
             "style": "快速、观点、趋势",
@@ -31,9 +33,12 @@ class PlatformPersonalityEngine:
             "hook": "以画面和情绪作为开头",
             "length": "caption",
             "cta": "保存清单",
-            "avoid": ["密集技术说明"],
+            "avoid": ["密集技术说明", "硬广"],
         },
     }
+
+    def __init__(self, personality: PersonalityEngine | None = None) -> None:
+        self.personality = personality or PersonalityEngine()
 
     def profile(self, platform: str) -> dict:
         key = platform.lower()
@@ -41,8 +46,22 @@ class PlatformPersonalityEngine:
 
     def generate_style_plan(self, platform: str, question: dict) -> dict:
         profile = self.profile(platform)
+        context = self.personality.build_context(
+            workspace=question.get("workspace", "JAG-LAB"),
+            platform=platform,
+            market=question.get("market", "Japan"),
+            tone=question.get("tone", "trusted_guide"),
+        )
         return {
             **profile,
             "question_id": question.get("question_id"),
             "recommended_angle": f"{profile['hook']}；围绕 {question.get('question_text', '')[:50]}",
+            "workspace_personality": context["workspacePersonality"],
+            "market_personality": context["marketPersonality"],
+            "tone_personality": context["tonePersonality"],
+            "personality_instruction": (
+                f"Use {context['workspacePersonality']['voice']} with "
+                f"{context['marketPersonality']['tone']} market tone; avoid "
+                f"{', '.join(context['workspacePersonality']['avoid'])}."
+            ),
         }

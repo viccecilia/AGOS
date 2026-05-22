@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import Any
 
 from services.human_feedback_learning import HumanFeedbackLearning
+from services.personality_memory_deposit import PersonalityMemoryDeposit
 from services.runtime_drift_monitor import RuntimeDriftMonitor
 from services.runtime_engine import RuntimeEngine
 from services.runtime_persistence import RuntimePersistence
@@ -43,6 +44,7 @@ class RuntimeUIBridge:
     def to_war_room_growth(state: dict[str, Any]) -> dict[str, Any]:
         feedback_summary = HumanFeedbackLearning().summary()
         drift_summary = RuntimeDriftMonitor().summary()
+        personality_status = PersonalityMemoryDeposit().status()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -141,6 +143,24 @@ class RuntimeUIBridge:
                 "mostRejectedStrategy": feedback_summary.get("mostRejectedStrategy", "none"),
                 "mostApprovedReplyStyle": feedback_summary.get("mostApprovedReplyStyle", "none"),
             },
+            "personalityStatus": personality_status,
+            "personalityRuntimeFeed": [
+                {
+                    "type": "current_personality",
+                    "summary": personality_status.get("currentPersonality", {}),
+                    "status": "active",
+                },
+                {
+                    "type": "best_personality",
+                    "summary": personality_status.get("bestPersonality", {}),
+                    "status": "approved",
+                },
+                {
+                    "type": "failed_personality",
+                    "summary": personality_status.get("failedPersonality", {}),
+                    "status": personality_status.get("personalityDrift", "clear"),
+                },
+            ],
         }
 
 

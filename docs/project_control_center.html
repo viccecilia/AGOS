@@ -525,28 +525,28 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.49",
+    "controlCenterVersion": "0.1.50",
     "lastUpdated": "2026-05-22",
     "currentPhase": "Real Operation / AI Growth Training",
-    "currentRound": "ROUND-RUNTIME-REVIEW-UI-001",
-    "nextRound": "Human acceptance for Human-Gated Runtime Intelligence",
+    "currentRound": "ROUND-RUNTIME-PERSONALITY-001",
+    "nextRound": "Human acceptance for Personality Layer Foundation",
     "overallProgress": 88,
-    "activeFocus": "Human-Gated Runtime Intelligence: War Room can approve, reject, modify, correct, and train AGOS through the local Runtime API."
+    "activeFocus": "Personality Layer Foundation: AGOS now tracks workspace, platform, market, and tone personality for stable operating style."
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.49 Add human review and correction UI",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.49",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.49",
-    "note": "Human Review and Correction UI mapped to GitHub tag agos-v0.1.49. Runtime remains local-only and uses JAG-LAB sandbox; no external platform automation is enabled."
+    "latestCommit": "agos-v0.1.50 Add personality layer foundation",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.50",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.50",
+    "note": "Personality Layer Foundation mapped to GitHub tag agos-v0.1.50. Runtime remains local-only and uses JAG-LAB sandbox; no external platform automation is enabled."
   },
   "metrics": {
     "roundsPlanned": 101,
     "roundsCompleted": 45,
     "roundsInProgress": 0,
-    "reportsEmbedded": 53
+    "reportsEmbedded": 54
   },
   "modules": [
     {
@@ -680,6 +680,32 @@
     }
   ],
   "reports": [
+    {
+      "id": "ROUND-RUNTIME-PERSONALITY-001",
+      "title": "AGOS Personality Layer Foundation",
+      "date": "2026-05-22",
+      "status": "done",
+      "summary": "Added Workspace, Platform, Market, and Tone Personality management, personality memory deposit, personality review report, platform generation integration, and Personality Runtime Feed in the War Room.",
+      "files": [
+        "services/personality_engine.py",
+        "services/personality_memory_deposit.py",
+        "services/platform_personality_engine.py",
+        "services/runtime_ui_bridge.py",
+        "docs/project_control_center.html",
+        "tests/personality_engine_smoke_test.py",
+        "tests/platform_personality_smoke_test.py",
+        "tests/personality_memory_deposit_smoke_test.py",
+        "runtime/task_results/ROUND-RUNTIME-PERSONALITY-001/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "python -m compileall services tests passed",
+        "python tests\\personality_engine_smoke_test.py passed",
+        "python tests\\platform_personality_smoke_test.py passed",
+        "python tests\\personality_memory_deposit_smoke_test.py passed",
+        "python tests\\war_room_runtime_ui_smoke_test.py passed",
+        "Browser check: Personality Runtime Feed displayed current, best, rejected, and drift status"
+      ]
+    },
     {
       "id": "ROUND-RUNTIME-REVIEW-UI-001",
       "title": "AGOS Human Review and Correction UI",
@@ -1707,6 +1733,15 @@
     }
   ],
   "versions": [
+    {
+      "id": "agos_control_center_v0.1.50",
+      "label": "v0.1.50 - Personality Layer Foundation",
+      "date": "2026-05-22",
+      "gitRef": "agos-v0.1.50",
+      "location": "docs/project_control_center.html",
+      "notes": "ROUND-RUNTIME-PERSONALITY-001 completed locally and mapped to GitHub tag agos-v0.1.50. War Room now shows current personality, drift, best personality, and rejected personality.",
+      "snapshot": "AGOS Project Control Center v0.1.50\nRound: ROUND-RUNTIME-PERSONALITY-001 completed\nGit: agos-v0.1.50\nStatus: Personality Layer Foundation added\nNo external platform automation enabled.\n"
+    },
     {
       "id": "agos_control_center_v0.1.49",
       "label": "v0.1.49 - Human Review and Correction UI",
@@ -3169,6 +3204,16 @@
       "deliverable": "Human Review Queue UI, Approve/Reject/Modify controls, Correction Submission Panel, Runtime Drift Monitor, Human Feedback Learning, and review-session evidence packs.",
       "report": "runtime/task_results/ROUND-RUNTIME-REVIEW-UI-001/ROUND_SUMMARY.md",
       "summary": "This round upgrades AGOS from browser-startable Runtime to browser-trainable Runtime. Humans can now approve, reject, modify, and correct AGOS decisions inside the War Room; those decisions are written to local review sessions and Human Preference Memory."
+    },
+    {
+      "id": "ROUND-RUNTIME-PERSONALITY-001",
+      "phase": "RUNTIME_PERSONALITY / AI_GROWTH_TRAINING",
+      "name": "AGOS_PERSONALITY_LAYER_FOUNDATION",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "Workspace, Platform, Market, and Tone Personality Layer with memory deposit, review report, platform generation integration, and War Room Personality Runtime Feed.",
+      "report": "runtime/task_results/ROUND-RUNTIME-PERSONALITY-001/ROUND_SUMMARY.md",
+      "summary": "This round gives AGOS a Personality Layer. It now tracks current workspace personality, platform personality, market personality, tone personality, best personality, rejected personality, and personality drift so growth outputs can become stable, credible, and non-promotional."
     }
   ],
   "realGrowthVerification": {
@@ -4395,6 +4440,7 @@
                     <option value="错误趋势判断">错误趋势判断</option>
                     <option value="错误行业包">错误行业包</option>
                     <option value="错误语气">错误语气</option>
+                    <option value="错误人格">错误人格</option>
                   </select>
                 </label>
                 <label>Workspace<input id="runtime-correction-workspace" value="JAG-LAB" /></label>
@@ -4419,6 +4465,12 @@
           <div class="runtime-panel">
             <div class="runtime-title-row"><h3>Human Feedback Learning</h3><p>Top corrected mistakes and preference memory</p></div>
             <div class="runtime-stat-grid" id="runtime-human-feedback-summary"></div>
+          </div>
+          <div class="runtime-panel">
+            <div class="runtime-title-row"><h3>Personality Status</h3><p>Workspace / Platform / Market / Tone</p></div>
+            <div class="runtime-stat-grid" id="runtime-personality-status"></div>
+            <div style="height:10px"></div>
+            <div class="feed-stream" id="runtime-personality-feed"></div>
           </div>
           <div class="runtime-grid">
             <div class="runtime-panel">
@@ -4916,6 +4968,23 @@
         '<div class="runtime-stat"><span>Top Corrected Mistakes</span><strong>' + esc(topMistakes) + '</strong></div>' +
         '<div class="runtime-stat"><span>Most Rejected Strategy</span><strong>' + esc(runtimeStats.mostRejectedStrategy || 'none') + '</strong></div>' +
         '<div class="runtime-stat"><span>Most Approved Reply Style</span><strong>' + esc(runtimeStats.mostApprovedReplyStyle || 'none') + '</strong></div>';
+      const personality = wr.personalityStatus || {};
+      const currentPersonality = personality.currentPersonality || {};
+      const workspacePersonality = currentPersonality.workspacePersonality || {};
+      const platformPersonality = currentPersonality.platformPersonality || {};
+      const marketPersonality = currentPersonality.marketPersonality || {};
+      const tonePersonality = currentPersonality.tonePersonality || {};
+      el('runtime-personality-status').innerHTML =
+        '<div class="runtime-stat"><span>当前人格</span><strong>' + esc((workspacePersonality.personality || []).join(' / ') || workspacePersonality.voice || 'pending') + '</strong></div>' +
+        '<div class="runtime-stat"><span>Platform Personality</span><strong>' + esc(platformPersonality.platform || 'pending') + ' · ' + esc((platformPersonality.style || []).join(' / ') || platformPersonality.tone || '') + '</strong></div>' +
+        '<div class="runtime-stat"><span>Market Personality</span><strong>' + esc(marketPersonality.market || 'pending') + ' · ' + esc((marketPersonality.style || []).join(' / ')) + '</strong></div>' +
+        '<div class="runtime-stat"><span>Tone Personality</span><strong>' + esc(tonePersonality.tone || 'pending') + ' · ' + esc((tonePersonality.traits || []).join(' / ')) + '</strong></div>' +
+        '<div class="runtime-stat"><span>最佳人格</span><strong>' + esc((personality.bestPersonality || {}).tone || 'pending') + '</strong></div>' +
+        '<div class="runtime-stat"><span>最常被 Reject 的人格</span><strong>' + esc((personality.failedPersonality || {}).tone || 'none') + '</strong></div>' +
+        '<div class="runtime-stat"><span>最近人格漂移</span><strong>' + esc(personality.personalityDrift || 'clear') + '</strong></div>';
+      el('runtime-personality-feed').innerHTML = (wr.personalityRuntimeFeed || []).map(item =>
+        '<div class="feed-item"><time>' + esc(item.type) + '</time><div class="feed-main"><strong>' + esc(item.status) + '</strong><span>' + esc(JSON.stringify(item.summary || {})) + '</span></div><span class="badge ' + (item.status === 'needs_human_review' ? 'b-amber' : 'b-blue') + '">' + esc(item.status) + '</span></div>'
+      ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Personality Runtime Feed pending</strong><span>Start Runtime or export personality state.</span></div><span class="badge b-amber">pending</span></div>';
       el('runtime-opportunity-ranking').innerHTML = (wr.opportunityRanking || []).map(item =>
         '<div class="feed-item"><time>' + esc(item.verdict) + '</time><div class="feed-main"><strong>' + esc(item.question_id) + ' · score ' + esc(item.total_score) + '</strong><span>' + esc((item.reasons || []).join(' / ')) + '</span></div><span class="badge b-green">训练判断</span></div>'
       ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>等待训练评分</strong><span>Runtime Training 尚未写入 opportunityRanking。</span></div><span class="badge b-amber">pending</span></div>';

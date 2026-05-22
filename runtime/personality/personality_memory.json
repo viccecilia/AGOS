@@ -1,0 +1,101 @@
+{
+  "approved_personality": [
+    {
+      "created_at": "2026-05-22T08:54:38+00:00",
+      "market": "Japan",
+      "personality_id": "personality_2026-05-22T08-54-38+00-00",
+      "platform": "reddit",
+      "reason": "JAG should sound real, credible, professional, guide-like, and non-promotional.",
+      "style": [
+        "真实",
+        "可信",
+        "专业",
+        "像导游",
+        "不营销"
+      ],
+      "tone": "trusted_guide",
+      "workspace": "JAG-LAB"
+    }
+  ],
+  "best_personality": {
+    "created_at": "2026-05-22T08:54:38+00:00",
+    "market": "Japan",
+    "personality_id": "personality_2026-05-22T08-54-38+00-00",
+    "platform": "reddit",
+    "reason": "JAG should sound real, credible, professional, guide-like, and non-promotional.",
+    "style": [
+      "真实",
+      "可信",
+      "专业",
+      "像导游",
+      "不营销"
+    ],
+    "tone": "trusted_guide",
+    "workspace": "JAG-LAB"
+  },
+  "best_tone": [
+    {
+      "created_at": "2026-05-22T08:54:38+00:00",
+      "market": "Japan",
+      "personality_id": "personality_2026-05-22T08-54-38+00-00",
+      "platform": "reddit",
+      "reason": "JAG should sound real, credible, professional, guide-like, and non-promotional.",
+      "style": [
+        "真实",
+        "可信",
+        "专业",
+        "像导游",
+        "不营销"
+      ],
+      "tone": "trusted_guide",
+      "workspace": "JAG-LAB"
+    }
+  ],
+  "failed_personality": {
+    "created_at": "2026-05-22T08:54:38+00:00",
+    "market": "Japan",
+    "personality_id": "personality_2026-05-22T08-54-38+00-00",
+    "platform": "tiktok",
+    "reason": "Aggressive emotional hook creates platform personality drift.",
+    "style": [
+      "过度情绪",
+      "硬广",
+      "标题党"
+    ],
+    "tone": "aggressive_hook",
+    "workspace": "JAG-LAB"
+  },
+  "rejected_personality": [
+    {
+      "created_at": "2026-05-22T08:54:38+00:00",
+      "market": "Japan",
+      "personality_id": "personality_2026-05-22T08-54-38+00-00",
+      "platform": "tiktok",
+      "reason": "Aggressive emotional hook creates platform personality drift.",
+      "style": [
+        "过度情绪",
+        "硬广",
+        "标题党"
+      ],
+      "tone": "aggressive_hook",
+      "workspace": "JAG-LAB"
+    }
+  ],
+  "rejected_tone": [
+    {
+      "created_at": "2026-05-22T08:54:38+00:00",
+      "market": "Japan",
+      "personality_id": "personality_2026-05-22T08-54-38+00-00",
+      "platform": "tiktok",
+      "reason": "Aggressive emotional hook creates platform personality drift.",
+      "style": [
+        "过度情绪",
+        "硬广",
+        "标题党"
+      ],
+      "tone": "aggressive_hook",
+      "workspace": "JAG-LAB"
+    }
+  ],
+  "updated_at": "2026-05-22T08:54:38+00:00"
+}

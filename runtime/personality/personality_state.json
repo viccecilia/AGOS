@@ -1,0 +1,51 @@
+{
+  "marketPersonality": {
+    "market": "Japan",
+    "style": [
+      "细节",
+      "可信",
+      "安静专业"
+    ],
+    "tone": "precise guide"
+  },
+  "platformPersonality": {
+    "pace": "thread",
+    "platform": "x",
+    "style": [
+      "快速",
+      "观点",
+      "趋势"
+    ],
+    "tone": "sharp but useful"
+  },
+  "tonePersonality": {
+    "avoid": [
+      "夸张",
+      "催促"
+    ],
+    "tone": "trusted_guide",
+    "traits": [
+      "专业",
+      "克制",
+      "可执行"
+    ]
+  },
+  "updated_at": "2026-05-22T08:56:18+00:00",
+  "workspacePersonality": {
+    "avoid": [
+      "硬广",
+      "标题党",
+      "过度情绪",
+      "虚假承诺"
+    ],
+    "personality": [
+      "真实",
+      "可信",
+      "专业",
+      "像导游",
+      "不营销"
+    ],
+    "voice": "calm guide",
+    "workspace": "JAG-LAB"
+  }
+}

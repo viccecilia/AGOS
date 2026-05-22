@@ -12,7 +12,12 @@ from services.platform_personality_engine import PlatformPersonalityEngine
 
 def main() -> None:
     engine = PlatformPersonalityEngine()
-    question = {"question_id": "q1", "question_text": "How do I avoid getting lost in Tokyo station?"}
+    question = {
+        "question_id": "q1",
+        "workspace": "JAG-LAB",
+        "market": "Japan",
+        "question_text": "How do I avoid getting lost in Tokyo station?",
+    }
     reddit = engine.generate_style_plan("reddit", question)
     tiktok = engine.generate_style_plan("tiktok", question)
     x_plan = engine.generate_style_plan("x", question)
@@ -22,6 +27,10 @@ def main() -> None:
     assert x_plan["style"] != reddit["style"]
     assert "深度" in reddit["style"]
     assert "Hook" in tiktok["style"]
+    assert reddit["workspace_personality"]["workspace"] == "JAG-LAB"
+    assert reddit["market_personality"]["market"] == "Japan"
+    assert reddit["tone_personality"]["tone"] == "trusted_guide"
+    assert "personality_instruction" in reddit
 
     print("platform personality smoke test passed")
 
