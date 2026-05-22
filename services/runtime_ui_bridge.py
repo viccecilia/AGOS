@@ -15,6 +15,7 @@ from services.personality_isolation_engine import PersonalityIsolationEngine
 from services.personality_memory_deposit import PersonalityMemoryDeposit
 from services.personality_evolution_gate import PersonalityEvolutionGate
 from services.personality_review_session import PersonalityReviewSession
+from services.real_feedback_capture_engine import RealFeedbackCaptureEngine
 from services.real_reply_attempt_engine import RealReplyAttemptEngine
 from services.patrol_group_engine import PatrolGroupEngine
 from services.keyword_expansion_engine import KeywordExpansionEngine
@@ -88,6 +89,7 @@ class RuntimeUIBridge:
         cross_platform_expansion = CrossPlatformExpansionEngine().expand()
         daily_question_import = DailyQuestionImportEngine().import_today()
         real_reply_attempts = RealReplyAttemptEngine().generate_attempts(daily_question_import.get("dailyQuestions", []))
+        real_feedback_capture = RealFeedbackCaptureEngine().capture()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -257,6 +259,10 @@ class RuntimeUIBridge:
             "replyAttempts": real_reply_attempts.get("replyAttempts", []),
             "replyReviewQueue": real_reply_attempts.get("replyReviewQueue", []),
             "replyAttemptSummary": real_reply_attempts.get("replyAttemptSummary", {}),
+            "realFeedbackCapture": real_feedback_capture,
+            "feedbackEvents": real_feedback_capture.get("feedbackEvents", []),
+            "feedbackTimeline": real_feedback_capture.get("feedbackTimeline", []),
+            "feedbackSummary": real_feedback_capture.get("feedbackSummary", {}),
         }
 
 

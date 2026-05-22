@@ -452,7 +452,7 @@
     }
   ],
   "crossPlatformExpansion": {
-    "created_at": "2026-05-22T11:23:44+00:00",
+    "created_at": "2026-05-22T11:27:54+00:00",
     "crossPlatformExpansionFeed": [
       {
         "cluster_name": "Tokyo transport anxiety",
@@ -467,7 +467,7 @@
           "X",
           "SEO"
         ],
-        "time": "2026-05-22T11:23:44+00:00",
+        "time": "2026-05-22T11:27:54+00:00",
         "type": "cross_platform_expansion"
       },
       {
@@ -483,7 +483,7 @@
           "X",
           "SEO"
         ],
-        "time": "2026-05-22T11:23:44+00:00",
+        "time": "2026-05-22T11:27:54+00:00",
         "type": "cross_platform_expansion"
       },
       {
@@ -499,7 +499,7 @@
           "X",
           "SEO"
         ],
-        "time": "2026-05-22T11:23:44+00:00",
+        "time": "2026-05-22T11:27:54+00:00",
         "type": "cross_platform_expansion"
       },
       {
@@ -515,7 +515,7 @@
           "X",
           "SEO"
         ],
-        "time": "2026-05-22T11:23:44+00:00",
+        "time": "2026-05-22T11:27:54+00:00",
         "type": "cross_platform_expansion"
       }
     ],
@@ -866,7 +866,7 @@
         "X",
         "SEO"
       ],
-      "time": "2026-05-22T11:23:44+00:00",
+      "time": "2026-05-22T11:27:54+00:00",
       "type": "cross_platform_expansion"
     },
     {
@@ -882,7 +882,7 @@
         "X",
         "SEO"
       ],
-      "time": "2026-05-22T11:23:44+00:00",
+      "time": "2026-05-22T11:27:54+00:00",
       "type": "cross_platform_expansion"
     },
     {
@@ -898,7 +898,7 @@
         "X",
         "SEO"
       ],
-      "time": "2026-05-22T11:23:44+00:00",
+      "time": "2026-05-22T11:27:54+00:00",
       "type": "cross_platform_expansion"
     },
     {
@@ -914,7 +914,7 @@
         "X",
         "SEO"
       ],
-      "time": "2026-05-22T11:23:44+00:00",
+      "time": "2026-05-22T11:27:54+00:00",
       "type": "cross_platform_expansion"
     }
   ],
@@ -947,7 +947,7 @@
     "total_imported": 12
   },
   "dailyQuestionImport": {
-    "created_at": "2026-05-22T11:23:44+00:00",
+    "created_at": "2026-05-22T11:27:54+00:00",
     "dailyImportSummary": {
       "languages": [
         "en"
@@ -979,7 +979,7 @@
       {
         "canonical_pain_point": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
         "import_date": "2026-05-22",
-        "imported_at": "2026-05-22T11:23:44+00:00",
+        "imported_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "RSS",
@@ -995,7 +995,7 @@
       {
         "canonical_pain_point": "Is it worth buying a Suica card if I only stay in Tokyo for three days?",
         "import_date": "2026-05-22",
-        "imported_at": "2026-05-22T11:23:44+00:00",
+        "imported_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "Manual",
@@ -1011,7 +1011,7 @@
       {
         "canonical_pain_point": "What should I do in Tokyo when it rains all day and my outdoor plan is ruined?",
         "import_date": "2026-05-22",
-        "imported_at": "2026-05-22T11:23:44+00:00",
+        "imported_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "Reddit",
@@ -1027,7 +1027,7 @@
       {
         "canonical_pain_point": "Why is Tokyo subway transfer so stressful for first-time visitors?",
         "import_date": "2026-05-22",
-        "imported_at": "2026-05-22T11:23:44+00:00",
+        "imported_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "TikTok",
@@ -1043,7 +1043,7 @@
       {
         "canonical_pain_point": "Where should I stay in Tokyo if I want easy airport access and simple train routes?",
         "import_date": "2026-05-22",
-        "imported_at": "2026-05-22T11:23:44+00:00",
+        "imported_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "LocalText",
@@ -1059,7 +1059,7 @@
       {
         "canonical_pain_point": "How can I plan a Tokyo day without walking too much with kids?",
         "import_date": "2026-05-22",
-        "imported_at": "2026-05-22T11:23:44+00:00",
+        "imported_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "Manual",
@@ -1075,7 +1075,7 @@
       {
         "canonical_pain_point": "Can I visit Kyoto as a day trip from Tokyo or is it too tiring?",
         "import_date": "2026-05-22",
-        "imported_at": "2026-05-22T11:23:44+00:00",
+        "imported_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "YouTube",
@@ -1091,7 +1091,7 @@
       {
         "canonical_pain_point": "What is a calm Tokyo itinerary for someone who hates crowded tourist spots?",
         "import_date": "2026-05-22",
-        "imported_at": "2026-05-22T11:23:44+00:00",
+        "imported_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "Instagram",
@@ -1107,7 +1107,7 @@
       {
         "canonical_pain_point": "Which Tokyo train app is easiest for tourists who do not speak Japanese?",
         "import_date": "2026-05-22",
-        "imported_at": "2026-05-22T11:23:44+00:00",
+        "imported_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "RSS",
@@ -1123,7 +1123,7 @@
       {
         "canonical_pain_point": "How do I choose between Shibuya, Shinjuku, and Ueno for a first hotel?",
         "import_date": "2026-05-22",
-        "imported_at": "2026-05-22T11:23:44+00:00",
+        "imported_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "Manual",
@@ -1139,7 +1139,7 @@
       {
         "canonical_pain_point": "What should I book in advance for Japan and what can wait until I arrive?",
         "import_date": "2026-05-22",
-        "imported_at": "2026-05-22T11:23:44+00:00",
+        "imported_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "LocalText",
@@ -1155,7 +1155,7 @@
       {
         "canonical_pain_point": "How much cash do I really need for a one-week Japan trip?",
         "import_date": "2026-05-22",
-        "imported_at": "2026-05-22T11:23:44+00:00",
+        "imported_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "Threads",
@@ -1185,7 +1185,7 @@
     {
       "canonical_pain_point": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
       "import_date": "2026-05-22",
-      "imported_at": "2026-05-22T11:23:44+00:00",
+      "imported_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "RSS",
@@ -1201,7 +1201,7 @@
     {
       "canonical_pain_point": "Is it worth buying a Suica card if I only stay in Tokyo for three days?",
       "import_date": "2026-05-22",
-      "imported_at": "2026-05-22T11:23:44+00:00",
+      "imported_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "Manual",
@@ -1217,7 +1217,7 @@
     {
       "canonical_pain_point": "What should I do in Tokyo when it rains all day and my outdoor plan is ruined?",
       "import_date": "2026-05-22",
-      "imported_at": "2026-05-22T11:23:44+00:00",
+      "imported_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "Reddit",
@@ -1233,7 +1233,7 @@
     {
       "canonical_pain_point": "Why is Tokyo subway transfer so stressful for first-time visitors?",
       "import_date": "2026-05-22",
-      "imported_at": "2026-05-22T11:23:44+00:00",
+      "imported_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "TikTok",
@@ -1249,7 +1249,7 @@
     {
       "canonical_pain_point": "Where should I stay in Tokyo if I want easy airport access and simple train routes?",
       "import_date": "2026-05-22",
-      "imported_at": "2026-05-22T11:23:44+00:00",
+      "imported_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "LocalText",
@@ -1265,7 +1265,7 @@
     {
       "canonical_pain_point": "How can I plan a Tokyo day without walking too much with kids?",
       "import_date": "2026-05-22",
-      "imported_at": "2026-05-22T11:23:44+00:00",
+      "imported_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "Manual",
@@ -1281,7 +1281,7 @@
     {
       "canonical_pain_point": "Can I visit Kyoto as a day trip from Tokyo or is it too tiring?",
       "import_date": "2026-05-22",
-      "imported_at": "2026-05-22T11:23:44+00:00",
+      "imported_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "YouTube",
@@ -1297,7 +1297,7 @@
     {
       "canonical_pain_point": "What is a calm Tokyo itinerary for someone who hates crowded tourist spots?",
       "import_date": "2026-05-22",
-      "imported_at": "2026-05-22T11:23:44+00:00",
+      "imported_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "Instagram",
@@ -1313,7 +1313,7 @@
     {
       "canonical_pain_point": "Which Tokyo train app is easiest for tourists who do not speak Japanese?",
       "import_date": "2026-05-22",
-      "imported_at": "2026-05-22T11:23:44+00:00",
+      "imported_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "RSS",
@@ -1329,7 +1329,7 @@
     {
       "canonical_pain_point": "How do I choose between Shibuya, Shinjuku, and Ueno for a first hotel?",
       "import_date": "2026-05-22",
-      "imported_at": "2026-05-22T11:23:44+00:00",
+      "imported_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "Manual",
@@ -1345,7 +1345,7 @@
     {
       "canonical_pain_point": "What should I book in advance for Japan and what can wait until I arrive?",
       "import_date": "2026-05-22",
-      "imported_at": "2026-05-22T11:23:44+00:00",
+      "imported_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "LocalText",
@@ -1361,7 +1361,7 @@
     {
       "canonical_pain_point": "How much cash do I really need for a one-week Japan trip?",
       "import_date": "2026-05-22",
-      "imported_at": "2026-05-22T11:23:44+00:00",
+      "imported_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "Threads",
@@ -1747,8 +1747,223 @@
       ]
     }
   ],
+  "feedbackEvents": [
+    {
+      "captured_at": "2026-05-22T11:27:54+00:00",
+      "feedback_id": "feedback_0001",
+      "feedback_note": "User asked a follow-up route question.",
+      "has_negative_feedback": false,
+      "has_positive_feedback": true,
+      "ignored": false,
+      "liked": true,
+      "platform": "Reddit",
+      "question_id": "20260522-Q001",
+      "question_text": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
+      "replied": true,
+      "reply_attempt_id": "20260522-Q001-reddit-reply",
+      "reply_text": "For How do I avoid getting lost at Shinjuku station on my first Tokyo trip?, I would keep the route simple first: pick one main station, check transfer count, and save the route offline before leaving. This is a draft answer for human review, not an automatic reply.",
+      "safety_boundary": "manual_feedback_record_only",
+      "saved": false,
+      "shared": false,
+      "status": "captured"
+    },
+    {
+      "captured_at": "2026-05-22T11:27:54+00:00",
+      "feedback_id": "feedback_0002",
+      "feedback_note": "Helpful checklist style.",
+      "has_negative_feedback": false,
+      "has_positive_feedback": true,
+      "ignored": false,
+      "liked": true,
+      "platform": "TikTok",
+      "question_id": "20260522-Q001",
+      "question_text": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
+      "replied": false,
+      "reply_attempt_id": "20260522-Q001-tiktok-reply",
+      "reply_text": "Draft comment: If how do i avoid getting lost at shinjuku station on my first tokyo trip? is stressing you out, simplify the plan to one area, one backup route, and one offline map. Human review required before posting.",
+      "safety_boundary": "manual_feedback_record_only",
+      "saved": true,
+      "shared": false,
+      "status": "captured"
+    },
+    {
+      "captured_at": "2026-05-22T11:27:54+00:00",
+      "feedback_id": "feedback_0003",
+      "feedback_note": "No visible response after review window.",
+      "has_negative_feedback": true,
+      "has_positive_feedback": false,
+      "ignored": true,
+      "liked": false,
+      "platform": "X",
+      "question_id": "20260522-Q001",
+      "question_text": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
+      "replied": false,
+      "reply_attempt_id": "20260522-Q001-x-reply",
+      "reply_text": "Draft X reply: For How do I avoid getting lost at Shinjuku station on my first Tokyo trip?, reduce uncertainty with one clear route, one backup, and one saved map. Needs human review before any real reply.",
+      "safety_boundary": "manual_feedback_record_only",
+      "saved": false,
+      "shared": false,
+      "status": "captured"
+    },
+    {
+      "captured_at": "2026-05-22T11:27:54+00:00",
+      "feedback_id": "feedback_0004",
+      "feedback_note": "Reusable route tip.",
+      "has_negative_feedback": false,
+      "has_positive_feedback": true,
+      "ignored": false,
+      "liked": true,
+      "platform": "Reddit",
+      "question_id": "20260522-Q002",
+      "question_text": "Is it worth buying a Suica card if I only stay in Tokyo for three days?",
+      "replied": false,
+      "reply_attempt_id": "20260522-Q002-reddit-reply",
+      "reply_text": "For Is it worth buying a Suica card if I only stay in Tokyo for three days?, I would keep the route simple first: pick one main station, check transfer count, and save the route offline before leaving. This is a draft answer for human review, not an automatic reply.",
+      "safety_boundary": "manual_feedback_record_only",
+      "saved": true,
+      "shared": true,
+      "status": "captured"
+    },
+    {
+      "captured_at": "2026-05-22T11:27:54+00:00",
+      "feedback_id": "feedback_0005",
+      "feedback_note": "Needs more precise station detail.",
+      "has_negative_feedback": false,
+      "has_positive_feedback": true,
+      "ignored": false,
+      "liked": false,
+      "platform": "TikTok",
+      "question_id": "20260522-Q002",
+      "question_text": "Is it worth buying a Suica card if I only stay in Tokyo for three days?",
+      "replied": true,
+      "reply_attempt_id": "20260522-Q002-tiktok-reply",
+      "reply_text": "Draft comment: If is it worth buying a suica card if i only stay in tokyo for three days? is stressing you out, simplify the plan to one area, one backup route, and one offline map. Human review required before posting.",
+      "safety_boundary": "manual_feedback_record_only",
+      "saved": false,
+      "shared": false,
+      "status": "captured"
+    }
+  ],
+  "feedbackSummary": {
+    "ignored": 1,
+    "ignored_feedback": 1,
+    "liked": 3,
+    "platforms_with_feedback": [
+      "Reddit",
+      "TikTok",
+      "X"
+    ],
+    "positive_feedback": 4,
+    "replied": 2,
+    "saved": 2,
+    "shared": 1,
+    "top_feedback_attempts": [
+      "20260522-Q001-reddit-reply",
+      "20260522-Q001-tiktok-reply",
+      "20260522-Q002-reddit-reply",
+      "20260522-Q002-tiktok-reply"
+    ],
+    "total_feedback_events": 5
+  },
+  "feedbackTimeline": [
+    {
+      "captured_at": "2026-05-22T11:27:54+00:00",
+      "feedback_id": "feedback_0001",
+      "feedback_note": "User asked a follow-up route question.",
+      "has_negative_feedback": false,
+      "has_positive_feedback": true,
+      "ignored": false,
+      "liked": true,
+      "platform": "Reddit",
+      "question_id": "20260522-Q001",
+      "question_text": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
+      "replied": true,
+      "reply_attempt_id": "20260522-Q001-reddit-reply",
+      "reply_text": "For How do I avoid getting lost at Shinjuku station on my first Tokyo trip?, I would keep the route simple first: pick one main station, check transfer count, and save the route offline before leaving. This is a draft answer for human review, not an automatic reply.",
+      "safety_boundary": "manual_feedback_record_only",
+      "saved": false,
+      "shared": false,
+      "status": "captured"
+    },
+    {
+      "captured_at": "2026-05-22T11:27:54+00:00",
+      "feedback_id": "feedback_0002",
+      "feedback_note": "Helpful checklist style.",
+      "has_negative_feedback": false,
+      "has_positive_feedback": true,
+      "ignored": false,
+      "liked": true,
+      "platform": "TikTok",
+      "question_id": "20260522-Q001",
+      "question_text": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
+      "replied": false,
+      "reply_attempt_id": "20260522-Q001-tiktok-reply",
+      "reply_text": "Draft comment: If how do i avoid getting lost at shinjuku station on my first tokyo trip? is stressing you out, simplify the plan to one area, one backup route, and one offline map. Human review required before posting.",
+      "safety_boundary": "manual_feedback_record_only",
+      "saved": true,
+      "shared": false,
+      "status": "captured"
+    },
+    {
+      "captured_at": "2026-05-22T11:27:54+00:00",
+      "feedback_id": "feedback_0003",
+      "feedback_note": "No visible response after review window.",
+      "has_negative_feedback": true,
+      "has_positive_feedback": false,
+      "ignored": true,
+      "liked": false,
+      "platform": "X",
+      "question_id": "20260522-Q001",
+      "question_text": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
+      "replied": false,
+      "reply_attempt_id": "20260522-Q001-x-reply",
+      "reply_text": "Draft X reply: For How do I avoid getting lost at Shinjuku station on my first Tokyo trip?, reduce uncertainty with one clear route, one backup, and one saved map. Needs human review before any real reply.",
+      "safety_boundary": "manual_feedback_record_only",
+      "saved": false,
+      "shared": false,
+      "status": "captured"
+    },
+    {
+      "captured_at": "2026-05-22T11:27:54+00:00",
+      "feedback_id": "feedback_0004",
+      "feedback_note": "Reusable route tip.",
+      "has_negative_feedback": false,
+      "has_positive_feedback": true,
+      "ignored": false,
+      "liked": true,
+      "platform": "Reddit",
+      "question_id": "20260522-Q002",
+      "question_text": "Is it worth buying a Suica card if I only stay in Tokyo for three days?",
+      "replied": false,
+      "reply_attempt_id": "20260522-Q002-reddit-reply",
+      "reply_text": "For Is it worth buying a Suica card if I only stay in Tokyo for three days?, I would keep the route simple first: pick one main station, check transfer count, and save the route offline before leaving. This is a draft answer for human review, not an automatic reply.",
+      "safety_boundary": "manual_feedback_record_only",
+      "saved": true,
+      "shared": true,
+      "status": "captured"
+    },
+    {
+      "captured_at": "2026-05-22T11:27:54+00:00",
+      "feedback_id": "feedback_0005",
+      "feedback_note": "Needs more precise station detail.",
+      "has_negative_feedback": false,
+      "has_positive_feedback": true,
+      "ignored": false,
+      "liked": false,
+      "platform": "TikTok",
+      "question_id": "20260522-Q002",
+      "question_text": "Is it worth buying a Suica card if I only stay in Tokyo for three days?",
+      "replied": true,
+      "reply_attempt_id": "20260522-Q002-tiktok-reply",
+      "reply_text": "Draft comment: If is it worth buying a suica card if i only stay in tokyo for three days? is stressing you out, simplify the plan to one area, one backup route, and one offline map. Human review required before posting.",
+      "safety_boundary": "manual_feedback_record_only",
+      "saved": false,
+      "shared": false,
+      "status": "captured"
+    }
+  ],
   "heatDetection": {
-    "created_at": "2026-05-22T11:23:44+00:00",
+    "created_at": "2026-05-22T11:27:54+00:00",
     "heatDimensions": [
       "rising_trend",
       "high_engagement_trend",
@@ -2515,7 +2730,7 @@
       "Tokyo transport anxiety",
       "Vacuum performance anxiety"
     ],
-    "created_at": "2026-05-22T11:23:44+00:00",
+    "created_at": "2026-05-22T11:27:54+00:00",
     "keywordExpansions": [
       {
         "canonical_pain_point": "Air fryer cleaning friction",
@@ -4010,7 +4225,7 @@
         "workspace": "PHILIPS-LAB"
       }
     ],
-    "created_at": "2026-05-22T11:23:44+00:00",
+    "created_at": "2026-05-22T11:27:54+00:00",
     "industryPackPatrolGroups": {
       "Home Appliance Pack": [
         {
@@ -4836,7 +5051,7 @@
         "status": "passed"
       }
     ],
-    "created_at": "2026-05-22T11:23:44+00:00",
+    "created_at": "2026-05-22T11:27:54+00:00",
     "marketIsolationStatus": "clear",
     "personalityEvolutionSummary": "AGOS has formed a stable operating personality with workspace, platform, market, and strategy layers.",
     "platformPersonalityCount": 4,
@@ -4926,7 +5141,7 @@
     }
   ],
   "personalityIsolationReport": {
-    "created_at": "2026-05-22T11:23:44+00:00",
+    "created_at": "2026-05-22T11:27:54+00:00",
     "isolationMatrix": [
       {
         "allowed_traits": [
@@ -5227,7 +5442,7 @@
     }
   },
   "personalityReviewSession": {
-    "created_at": "2026-05-22T11:23:44+00:00",
+    "created_at": "2026-05-22T11:27:54+00:00",
     "driftEventsReviewed": 6,
     "personalityTrend": [
       {
@@ -5909,8 +6124,236 @@
     ]
   },
   "platformStyleDrift": [],
+  "realFeedbackCapture": {
+    "created_at": "2026-05-22T11:27:54+00:00",
+    "feedbackEvents": [
+      {
+        "captured_at": "2026-05-22T11:27:54+00:00",
+        "feedback_id": "feedback_0001",
+        "feedback_note": "User asked a follow-up route question.",
+        "has_negative_feedback": false,
+        "has_positive_feedback": true,
+        "ignored": false,
+        "liked": true,
+        "platform": "Reddit",
+        "question_id": "20260522-Q001",
+        "question_text": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
+        "replied": true,
+        "reply_attempt_id": "20260522-Q001-reddit-reply",
+        "reply_text": "For How do I avoid getting lost at Shinjuku station on my first Tokyo trip?, I would keep the route simple first: pick one main station, check transfer count, and save the route offline before leaving. This is a draft answer for human review, not an automatic reply.",
+        "safety_boundary": "manual_feedback_record_only",
+        "saved": false,
+        "shared": false,
+        "status": "captured"
+      },
+      {
+        "captured_at": "2026-05-22T11:27:54+00:00",
+        "feedback_id": "feedback_0002",
+        "feedback_note": "Helpful checklist style.",
+        "has_negative_feedback": false,
+        "has_positive_feedback": true,
+        "ignored": false,
+        "liked": true,
+        "platform": "TikTok",
+        "question_id": "20260522-Q001",
+        "question_text": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
+        "replied": false,
+        "reply_attempt_id": "20260522-Q001-tiktok-reply",
+        "reply_text": "Draft comment: If how do i avoid getting lost at shinjuku station on my first tokyo trip? is stressing you out, simplify the plan to one area, one backup route, and one offline map. Human review required before posting.",
+        "safety_boundary": "manual_feedback_record_only",
+        "saved": true,
+        "shared": false,
+        "status": "captured"
+      },
+      {
+        "captured_at": "2026-05-22T11:27:54+00:00",
+        "feedback_id": "feedback_0003",
+        "feedback_note": "No visible response after review window.",
+        "has_negative_feedback": true,
+        "has_positive_feedback": false,
+        "ignored": true,
+        "liked": false,
+        "platform": "X",
+        "question_id": "20260522-Q001",
+        "question_text": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
+        "replied": false,
+        "reply_attempt_id": "20260522-Q001-x-reply",
+        "reply_text": "Draft X reply: For How do I avoid getting lost at Shinjuku station on my first Tokyo trip?, reduce uncertainty with one clear route, one backup, and one saved map. Needs human review before any real reply.",
+        "safety_boundary": "manual_feedback_record_only",
+        "saved": false,
+        "shared": false,
+        "status": "captured"
+      },
+      {
+        "captured_at": "2026-05-22T11:27:54+00:00",
+        "feedback_id": "feedback_0004",
+        "feedback_note": "Reusable route tip.",
+        "has_negative_feedback": false,
+        "has_positive_feedback": true,
+        "ignored": false,
+        "liked": true,
+        "platform": "Reddit",
+        "question_id": "20260522-Q002",
+        "question_text": "Is it worth buying a Suica card if I only stay in Tokyo for three days?",
+        "replied": false,
+        "reply_attempt_id": "20260522-Q002-reddit-reply",
+        "reply_text": "For Is it worth buying a Suica card if I only stay in Tokyo for three days?, I would keep the route simple first: pick one main station, check transfer count, and save the route offline before leaving. This is a draft answer for human review, not an automatic reply.",
+        "safety_boundary": "manual_feedback_record_only",
+        "saved": true,
+        "shared": true,
+        "status": "captured"
+      },
+      {
+        "captured_at": "2026-05-22T11:27:54+00:00",
+        "feedback_id": "feedback_0005",
+        "feedback_note": "Needs more precise station detail.",
+        "has_negative_feedback": false,
+        "has_positive_feedback": true,
+        "ignored": false,
+        "liked": false,
+        "platform": "TikTok",
+        "question_id": "20260522-Q002",
+        "question_text": "Is it worth buying a Suica card if I only stay in Tokyo for three days?",
+        "replied": true,
+        "reply_attempt_id": "20260522-Q002-tiktok-reply",
+        "reply_text": "Draft comment: If is it worth buying a suica card if i only stay in tokyo for three days? is stressing you out, simplify the plan to one area, one backup route, and one offline map. Human review required before posting.",
+        "safety_boundary": "manual_feedback_record_only",
+        "saved": false,
+        "shared": false,
+        "status": "captured"
+      }
+    ],
+    "feedbackSignals": [
+      "liked",
+      "replied",
+      "ignored",
+      "saved",
+      "shared"
+    ],
+    "feedbackSummary": {
+      "ignored": 1,
+      "ignored_feedback": 1,
+      "liked": 3,
+      "platforms_with_feedback": [
+        "Reddit",
+        "TikTok",
+        "X"
+      ],
+      "positive_feedback": 4,
+      "replied": 2,
+      "saved": 2,
+      "shared": 1,
+      "top_feedback_attempts": [
+        "20260522-Q001-reddit-reply",
+        "20260522-Q001-tiktok-reply",
+        "20260522-Q002-reddit-reply",
+        "20260522-Q002-tiktok-reply"
+      ],
+      "total_feedback_events": 5
+    },
+    "feedbackTimeline": [
+      {
+        "captured_at": "2026-05-22T11:27:54+00:00",
+        "feedback_id": "feedback_0001",
+        "feedback_note": "User asked a follow-up route question.",
+        "has_negative_feedback": false,
+        "has_positive_feedback": true,
+        "ignored": false,
+        "liked": true,
+        "platform": "Reddit",
+        "question_id": "20260522-Q001",
+        "question_text": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
+        "replied": true,
+        "reply_attempt_id": "20260522-Q001-reddit-reply",
+        "reply_text": "For How do I avoid getting lost at Shinjuku station on my first Tokyo trip?, I would keep the route simple first: pick one main station, check transfer count, and save the route offline before leaving. This is a draft answer for human review, not an automatic reply.",
+        "safety_boundary": "manual_feedback_record_only",
+        "saved": false,
+        "shared": false,
+        "status": "captured"
+      },
+      {
+        "captured_at": "2026-05-22T11:27:54+00:00",
+        "feedback_id": "feedback_0002",
+        "feedback_note": "Helpful checklist style.",
+        "has_negative_feedback": false,
+        "has_positive_feedback": true,
+        "ignored": false,
+        "liked": true,
+        "platform": "TikTok",
+        "question_id": "20260522-Q001",
+        "question_text": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
+        "replied": false,
+        "reply_attempt_id": "20260522-Q001-tiktok-reply",
+        "reply_text": "Draft comment: If how do i avoid getting lost at shinjuku station on my first tokyo trip? is stressing you out, simplify the plan to one area, one backup route, and one offline map. Human review required before posting.",
+        "safety_boundary": "manual_feedback_record_only",
+        "saved": true,
+        "shared": false,
+        "status": "captured"
+      },
+      {
+        "captured_at": "2026-05-22T11:27:54+00:00",
+        "feedback_id": "feedback_0003",
+        "feedback_note": "No visible response after review window.",
+        "has_negative_feedback": true,
+        "has_positive_feedback": false,
+        "ignored": true,
+        "liked": false,
+        "platform": "X",
+        "question_id": "20260522-Q001",
+        "question_text": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
+        "replied": false,
+        "reply_attempt_id": "20260522-Q001-x-reply",
+        "reply_text": "Draft X reply: For How do I avoid getting lost at Shinjuku station on my first Tokyo trip?, reduce uncertainty with one clear route, one backup, and one saved map. Needs human review before any real reply.",
+        "safety_boundary": "manual_feedback_record_only",
+        "saved": false,
+        "shared": false,
+        "status": "captured"
+      },
+      {
+        "captured_at": "2026-05-22T11:27:54+00:00",
+        "feedback_id": "feedback_0004",
+        "feedback_note": "Reusable route tip.",
+        "has_negative_feedback": false,
+        "has_positive_feedback": true,
+        "ignored": false,
+        "liked": true,
+        "platform": "Reddit",
+        "question_id": "20260522-Q002",
+        "question_text": "Is it worth buying a Suica card if I only stay in Tokyo for three days?",
+        "replied": false,
+        "reply_attempt_id": "20260522-Q002-reddit-reply",
+        "reply_text": "For Is it worth buying a Suica card if I only stay in Tokyo for three days?, I would keep the route simple first: pick one main station, check transfer count, and save the route offline before leaving. This is a draft answer for human review, not an automatic reply.",
+        "safety_boundary": "manual_feedback_record_only",
+        "saved": true,
+        "shared": true,
+        "status": "captured"
+      },
+      {
+        "captured_at": "2026-05-22T11:27:54+00:00",
+        "feedback_id": "feedback_0005",
+        "feedback_note": "Needs more precise station detail.",
+        "has_negative_feedback": false,
+        "has_positive_feedback": true,
+        "ignored": false,
+        "liked": false,
+        "platform": "TikTok",
+        "question_id": "20260522-Q002",
+        "question_text": "Is it worth buying a Suica card if I only stay in Tokyo for three days?",
+        "replied": true,
+        "reply_attempt_id": "20260522-Q002-tiktok-reply",
+        "reply_text": "Draft comment: If is it worth buying a suica card if i only stay in tokyo for three days? is stressing you out, simplify the plan to one area, one backup route, and one offline map. Human review required before posting.",
+        "safety_boundary": "manual_feedback_record_only",
+        "saved": false,
+        "shared": false,
+        "status": "captured"
+      }
+    ],
+    "report_id": "REAL_FEEDBACK_CAPTURE_REPORT",
+    "scope": "local_feedback_record_only_no_platform_api",
+    "status": "active"
+  },
   "realReplyAttempts": {
-    "created_at": "2026-05-22T11:23:44+00:00",
+    "created_at": "2026-05-22T11:27:54+00:00",
     "replyAttemptSummary": {
       "needs_human_review": 18,
       "platforms": [
@@ -5925,7 +6368,7 @@
       {
         "ai_reason": "AGOS generated a Reddit draft because the imported question is review-ready and related to How do I avoid getting lost at Shinjuku station on my first Tokyo trip?. The draft stays local until approved.",
         "canonical_pain_point": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "Reddit",
@@ -5947,7 +6390,7 @@
       {
         "ai_reason": "AGOS generated a TikTok draft because the imported question is review-ready and related to How do I avoid getting lost at Shinjuku station on my first Tokyo trip?. The draft stays local until approved.",
         "canonical_pain_point": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "TikTok",
@@ -5969,7 +6412,7 @@
       {
         "ai_reason": "AGOS generated a X draft because the imported question is review-ready and related to How do I avoid getting lost at Shinjuku station on my first Tokyo trip?. The draft stays local until approved.",
         "canonical_pain_point": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "X",
@@ -5991,7 +6434,7 @@
       {
         "ai_reason": "AGOS generated a Reddit draft because the imported question is review-ready and related to Is it worth buying a Suica card if I only stay in Tokyo for three days?. The draft stays local until approved.",
         "canonical_pain_point": "Is it worth buying a Suica card if I only stay in Tokyo for three days?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "Reddit",
@@ -6013,7 +6456,7 @@
       {
         "ai_reason": "AGOS generated a TikTok draft because the imported question is review-ready and related to Is it worth buying a Suica card if I only stay in Tokyo for three days?. The draft stays local until approved.",
         "canonical_pain_point": "Is it worth buying a Suica card if I only stay in Tokyo for three days?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "TikTok",
@@ -6035,7 +6478,7 @@
       {
         "ai_reason": "AGOS generated a X draft because the imported question is review-ready and related to Is it worth buying a Suica card if I only stay in Tokyo for three days?. The draft stays local until approved.",
         "canonical_pain_point": "Is it worth buying a Suica card if I only stay in Tokyo for three days?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "X",
@@ -6057,7 +6500,7 @@
       {
         "ai_reason": "AGOS generated a Reddit draft because the imported question is review-ready and related to What should I do in Tokyo when it rains all day and my outdoor plan is ruined?. The draft stays local until approved.",
         "canonical_pain_point": "What should I do in Tokyo when it rains all day and my outdoor plan is ruined?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "Reddit",
@@ -6079,7 +6522,7 @@
       {
         "ai_reason": "AGOS generated a TikTok draft because the imported question is review-ready and related to What should I do in Tokyo when it rains all day and my outdoor plan is ruined?. The draft stays local until approved.",
         "canonical_pain_point": "What should I do in Tokyo when it rains all day and my outdoor plan is ruined?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "TikTok",
@@ -6101,7 +6544,7 @@
       {
         "ai_reason": "AGOS generated a X draft because the imported question is review-ready and related to What should I do in Tokyo when it rains all day and my outdoor plan is ruined?. The draft stays local until approved.",
         "canonical_pain_point": "What should I do in Tokyo when it rains all day and my outdoor plan is ruined?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "X",
@@ -6123,7 +6566,7 @@
       {
         "ai_reason": "AGOS generated a Reddit draft because the imported question is review-ready and related to Why is Tokyo subway transfer so stressful for first-time visitors?. The draft stays local until approved.",
         "canonical_pain_point": "Why is Tokyo subway transfer so stressful for first-time visitors?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "Reddit",
@@ -6145,7 +6588,7 @@
       {
         "ai_reason": "AGOS generated a TikTok draft because the imported question is review-ready and related to Why is Tokyo subway transfer so stressful for first-time visitors?. The draft stays local until approved.",
         "canonical_pain_point": "Why is Tokyo subway transfer so stressful for first-time visitors?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "TikTok",
@@ -6167,7 +6610,7 @@
       {
         "ai_reason": "AGOS generated a X draft because the imported question is review-ready and related to Why is Tokyo subway transfer so stressful for first-time visitors?. The draft stays local until approved.",
         "canonical_pain_point": "Why is Tokyo subway transfer so stressful for first-time visitors?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "X",
@@ -6189,7 +6632,7 @@
       {
         "ai_reason": "AGOS generated a Reddit draft because the imported question is review-ready and related to Where should I stay in Tokyo if I want easy airport access and simple train routes?. The draft stays local until approved.",
         "canonical_pain_point": "Where should I stay in Tokyo if I want easy airport access and simple train routes?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "Reddit",
@@ -6211,7 +6654,7 @@
       {
         "ai_reason": "AGOS generated a TikTok draft because the imported question is review-ready and related to Where should I stay in Tokyo if I want easy airport access and simple train routes?. The draft stays local until approved.",
         "canonical_pain_point": "Where should I stay in Tokyo if I want easy airport access and simple train routes?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "TikTok",
@@ -6233,7 +6676,7 @@
       {
         "ai_reason": "AGOS generated a X draft because the imported question is review-ready and related to Where should I stay in Tokyo if I want easy airport access and simple train routes?. The draft stays local until approved.",
         "canonical_pain_point": "Where should I stay in Tokyo if I want easy airport access and simple train routes?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "X",
@@ -6255,7 +6698,7 @@
       {
         "ai_reason": "AGOS generated a Reddit draft because the imported question is review-ready and related to How can I plan a Tokyo day without walking too much with kids?. The draft stays local until approved.",
         "canonical_pain_point": "How can I plan a Tokyo day without walking too much with kids?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "Reddit",
@@ -6277,7 +6720,7 @@
       {
         "ai_reason": "AGOS generated a TikTok draft because the imported question is review-ready and related to How can I plan a Tokyo day without walking too much with kids?. The draft stays local until approved.",
         "canonical_pain_point": "How can I plan a Tokyo day without walking too much with kids?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "TikTok",
@@ -6299,7 +6742,7 @@
       {
         "ai_reason": "AGOS generated a X draft because the imported question is review-ready and related to How can I plan a Tokyo day without walking too much with kids?. The draft stays local until approved.",
         "canonical_pain_point": "How can I plan a Tokyo day without walking too much with kids?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "X",
@@ -6323,7 +6766,7 @@
       {
         "ai_reason": "AGOS generated a Reddit draft because the imported question is review-ready and related to How do I avoid getting lost at Shinjuku station on my first Tokyo trip?. The draft stays local until approved.",
         "canonical_pain_point": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "Reddit",
@@ -6345,7 +6788,7 @@
       {
         "ai_reason": "AGOS generated a TikTok draft because the imported question is review-ready and related to How do I avoid getting lost at Shinjuku station on my first Tokyo trip?. The draft stays local until approved.",
         "canonical_pain_point": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "TikTok",
@@ -6367,7 +6810,7 @@
       {
         "ai_reason": "AGOS generated a X draft because the imported question is review-ready and related to How do I avoid getting lost at Shinjuku station on my first Tokyo trip?. The draft stays local until approved.",
         "canonical_pain_point": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "X",
@@ -6389,7 +6832,7 @@
       {
         "ai_reason": "AGOS generated a Reddit draft because the imported question is review-ready and related to Is it worth buying a Suica card if I only stay in Tokyo for three days?. The draft stays local until approved.",
         "canonical_pain_point": "Is it worth buying a Suica card if I only stay in Tokyo for three days?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "Reddit",
@@ -6411,7 +6854,7 @@
       {
         "ai_reason": "AGOS generated a TikTok draft because the imported question is review-ready and related to Is it worth buying a Suica card if I only stay in Tokyo for three days?. The draft stays local until approved.",
         "canonical_pain_point": "Is it worth buying a Suica card if I only stay in Tokyo for three days?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "TikTok",
@@ -6433,7 +6876,7 @@
       {
         "ai_reason": "AGOS generated a X draft because the imported question is review-ready and related to Is it worth buying a Suica card if I only stay in Tokyo for three days?. The draft stays local until approved.",
         "canonical_pain_point": "Is it worth buying a Suica card if I only stay in Tokyo for three days?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "X",
@@ -6455,7 +6898,7 @@
       {
         "ai_reason": "AGOS generated a Reddit draft because the imported question is review-ready and related to What should I do in Tokyo when it rains all day and my outdoor plan is ruined?. The draft stays local until approved.",
         "canonical_pain_point": "What should I do in Tokyo when it rains all day and my outdoor plan is ruined?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "Reddit",
@@ -6477,7 +6920,7 @@
       {
         "ai_reason": "AGOS generated a TikTok draft because the imported question is review-ready and related to What should I do in Tokyo when it rains all day and my outdoor plan is ruined?. The draft stays local until approved.",
         "canonical_pain_point": "What should I do in Tokyo when it rains all day and my outdoor plan is ruined?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "TikTok",
@@ -6499,7 +6942,7 @@
       {
         "ai_reason": "AGOS generated a X draft because the imported question is review-ready and related to What should I do in Tokyo when it rains all day and my outdoor plan is ruined?. The draft stays local until approved.",
         "canonical_pain_point": "What should I do in Tokyo when it rains all day and my outdoor plan is ruined?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "X",
@@ -6521,7 +6964,7 @@
       {
         "ai_reason": "AGOS generated a Reddit draft because the imported question is review-ready and related to Why is Tokyo subway transfer so stressful for first-time visitors?. The draft stays local until approved.",
         "canonical_pain_point": "Why is Tokyo subway transfer so stressful for first-time visitors?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "Reddit",
@@ -6543,7 +6986,7 @@
       {
         "ai_reason": "AGOS generated a TikTok draft because the imported question is review-ready and related to Why is Tokyo subway transfer so stressful for first-time visitors?. The draft stays local until approved.",
         "canonical_pain_point": "Why is Tokyo subway transfer so stressful for first-time visitors?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "TikTok",
@@ -6565,7 +7008,7 @@
       {
         "ai_reason": "AGOS generated a X draft because the imported question is review-ready and related to Why is Tokyo subway transfer so stressful for first-time visitors?. The draft stays local until approved.",
         "canonical_pain_point": "Why is Tokyo subway transfer so stressful for first-time visitors?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "X",
@@ -6587,7 +7030,7 @@
       {
         "ai_reason": "AGOS generated a Reddit draft because the imported question is review-ready and related to Where should I stay in Tokyo if I want easy airport access and simple train routes?. The draft stays local until approved.",
         "canonical_pain_point": "Where should I stay in Tokyo if I want easy airport access and simple train routes?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "Reddit",
@@ -6609,7 +7052,7 @@
       {
         "ai_reason": "AGOS generated a TikTok draft because the imported question is review-ready and related to Where should I stay in Tokyo if I want easy airport access and simple train routes?. The draft stays local until approved.",
         "canonical_pain_point": "Where should I stay in Tokyo if I want easy airport access and simple train routes?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "TikTok",
@@ -6631,7 +7074,7 @@
       {
         "ai_reason": "AGOS generated a X draft because the imported question is review-ready and related to Where should I stay in Tokyo if I want easy airport access and simple train routes?. The draft stays local until approved.",
         "canonical_pain_point": "Where should I stay in Tokyo if I want easy airport access and simple train routes?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "X",
@@ -6653,7 +7096,7 @@
       {
         "ai_reason": "AGOS generated a Reddit draft because the imported question is review-ready and related to How can I plan a Tokyo day without walking too much with kids?. The draft stays local until approved.",
         "canonical_pain_point": "How can I plan a Tokyo day without walking too much with kids?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "Reddit",
@@ -6675,7 +7118,7 @@
       {
         "ai_reason": "AGOS generated a TikTok draft because the imported question is review-ready and related to How can I plan a Tokyo day without walking too much with kids?. The draft stays local until approved.",
         "canonical_pain_point": "How can I plan a Tokyo day without walking too much with kids?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "TikTok",
@@ -6697,7 +7140,7 @@
       {
         "ai_reason": "AGOS generated a X draft because the imported question is review-ready and related to How can I plan a Tokyo day without walking too much with kids?. The draft stays local until approved.",
         "canonical_pain_point": "How can I plan a Tokyo day without walking too much with kids?",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "language": "en",
         "market": "Japan",
         "platform": "X",
@@ -6740,7 +7183,7 @@
     {
       "ai_reason": "AGOS generated a Reddit draft because the imported question is review-ready and related to How do I avoid getting lost at Shinjuku station on my first Tokyo trip?. The draft stays local until approved.",
       "canonical_pain_point": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "Reddit",
@@ -6762,7 +7205,7 @@
     {
       "ai_reason": "AGOS generated a TikTok draft because the imported question is review-ready and related to How do I avoid getting lost at Shinjuku station on my first Tokyo trip?. The draft stays local until approved.",
       "canonical_pain_point": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "TikTok",
@@ -6784,7 +7227,7 @@
     {
       "ai_reason": "AGOS generated a X draft because the imported question is review-ready and related to How do I avoid getting lost at Shinjuku station on my first Tokyo trip?. The draft stays local until approved.",
       "canonical_pain_point": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "X",
@@ -6806,7 +7249,7 @@
     {
       "ai_reason": "AGOS generated a Reddit draft because the imported question is review-ready and related to Is it worth buying a Suica card if I only stay in Tokyo for three days?. The draft stays local until approved.",
       "canonical_pain_point": "Is it worth buying a Suica card if I only stay in Tokyo for three days?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "Reddit",
@@ -6828,7 +7271,7 @@
     {
       "ai_reason": "AGOS generated a TikTok draft because the imported question is review-ready and related to Is it worth buying a Suica card if I only stay in Tokyo for three days?. The draft stays local until approved.",
       "canonical_pain_point": "Is it worth buying a Suica card if I only stay in Tokyo for three days?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "TikTok",
@@ -6850,7 +7293,7 @@
     {
       "ai_reason": "AGOS generated a X draft because the imported question is review-ready and related to Is it worth buying a Suica card if I only stay in Tokyo for three days?. The draft stays local until approved.",
       "canonical_pain_point": "Is it worth buying a Suica card if I only stay in Tokyo for three days?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "X",
@@ -6872,7 +7315,7 @@
     {
       "ai_reason": "AGOS generated a Reddit draft because the imported question is review-ready and related to What should I do in Tokyo when it rains all day and my outdoor plan is ruined?. The draft stays local until approved.",
       "canonical_pain_point": "What should I do in Tokyo when it rains all day and my outdoor plan is ruined?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "Reddit",
@@ -6894,7 +7337,7 @@
     {
       "ai_reason": "AGOS generated a TikTok draft because the imported question is review-ready and related to What should I do in Tokyo when it rains all day and my outdoor plan is ruined?. The draft stays local until approved.",
       "canonical_pain_point": "What should I do in Tokyo when it rains all day and my outdoor plan is ruined?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "TikTok",
@@ -6916,7 +7359,7 @@
     {
       "ai_reason": "AGOS generated a X draft because the imported question is review-ready and related to What should I do in Tokyo when it rains all day and my outdoor plan is ruined?. The draft stays local until approved.",
       "canonical_pain_point": "What should I do in Tokyo when it rains all day and my outdoor plan is ruined?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "X",
@@ -6938,7 +7381,7 @@
     {
       "ai_reason": "AGOS generated a Reddit draft because the imported question is review-ready and related to Why is Tokyo subway transfer so stressful for first-time visitors?. The draft stays local until approved.",
       "canonical_pain_point": "Why is Tokyo subway transfer so stressful for first-time visitors?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "Reddit",
@@ -6960,7 +7403,7 @@
     {
       "ai_reason": "AGOS generated a TikTok draft because the imported question is review-ready and related to Why is Tokyo subway transfer so stressful for first-time visitors?. The draft stays local until approved.",
       "canonical_pain_point": "Why is Tokyo subway transfer so stressful for first-time visitors?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "TikTok",
@@ -6982,7 +7425,7 @@
     {
       "ai_reason": "AGOS generated a X draft because the imported question is review-ready and related to Why is Tokyo subway transfer so stressful for first-time visitors?. The draft stays local until approved.",
       "canonical_pain_point": "Why is Tokyo subway transfer so stressful for first-time visitors?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "X",
@@ -7004,7 +7447,7 @@
     {
       "ai_reason": "AGOS generated a Reddit draft because the imported question is review-ready and related to Where should I stay in Tokyo if I want easy airport access and simple train routes?. The draft stays local until approved.",
       "canonical_pain_point": "Where should I stay in Tokyo if I want easy airport access and simple train routes?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "Reddit",
@@ -7026,7 +7469,7 @@
     {
       "ai_reason": "AGOS generated a TikTok draft because the imported question is review-ready and related to Where should I stay in Tokyo if I want easy airport access and simple train routes?. The draft stays local until approved.",
       "canonical_pain_point": "Where should I stay in Tokyo if I want easy airport access and simple train routes?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "TikTok",
@@ -7048,7 +7491,7 @@
     {
       "ai_reason": "AGOS generated a X draft because the imported question is review-ready and related to Where should I stay in Tokyo if I want easy airport access and simple train routes?. The draft stays local until approved.",
       "canonical_pain_point": "Where should I stay in Tokyo if I want easy airport access and simple train routes?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "X",
@@ -7070,7 +7513,7 @@
     {
       "ai_reason": "AGOS generated a Reddit draft because the imported question is review-ready and related to How can I plan a Tokyo day without walking too much with kids?. The draft stays local until approved.",
       "canonical_pain_point": "How can I plan a Tokyo day without walking too much with kids?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "Reddit",
@@ -7092,7 +7535,7 @@
     {
       "ai_reason": "AGOS generated a TikTok draft because the imported question is review-ready and related to How can I plan a Tokyo day without walking too much with kids?. The draft stays local until approved.",
       "canonical_pain_point": "How can I plan a Tokyo day without walking too much with kids?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "TikTok",
@@ -7114,7 +7557,7 @@
     {
       "ai_reason": "AGOS generated a X draft because the imported question is review-ready and related to How can I plan a Tokyo day without walking too much with kids?. The draft stays local until approved.",
       "canonical_pain_point": "How can I plan a Tokyo day without walking too much with kids?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "X",
@@ -7138,7 +7581,7 @@
     {
       "ai_reason": "AGOS generated a Reddit draft because the imported question is review-ready and related to How do I avoid getting lost at Shinjuku station on my first Tokyo trip?. The draft stays local until approved.",
       "canonical_pain_point": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "Reddit",
@@ -7160,7 +7603,7 @@
     {
       "ai_reason": "AGOS generated a TikTok draft because the imported question is review-ready and related to How do I avoid getting lost at Shinjuku station on my first Tokyo trip?. The draft stays local until approved.",
       "canonical_pain_point": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "TikTok",
@@ -7182,7 +7625,7 @@
     {
       "ai_reason": "AGOS generated a X draft because the imported question is review-ready and related to How do I avoid getting lost at Shinjuku station on my first Tokyo trip?. The draft stays local until approved.",
       "canonical_pain_point": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "X",
@@ -7204,7 +7647,7 @@
     {
       "ai_reason": "AGOS generated a Reddit draft because the imported question is review-ready and related to Is it worth buying a Suica card if I only stay in Tokyo for three days?. The draft stays local until approved.",
       "canonical_pain_point": "Is it worth buying a Suica card if I only stay in Tokyo for three days?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "Reddit",
@@ -7226,7 +7669,7 @@
     {
       "ai_reason": "AGOS generated a TikTok draft because the imported question is review-ready and related to Is it worth buying a Suica card if I only stay in Tokyo for three days?. The draft stays local until approved.",
       "canonical_pain_point": "Is it worth buying a Suica card if I only stay in Tokyo for three days?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "TikTok",
@@ -7248,7 +7691,7 @@
     {
       "ai_reason": "AGOS generated a X draft because the imported question is review-ready and related to Is it worth buying a Suica card if I only stay in Tokyo for three days?. The draft stays local until approved.",
       "canonical_pain_point": "Is it worth buying a Suica card if I only stay in Tokyo for three days?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "X",
@@ -7270,7 +7713,7 @@
     {
       "ai_reason": "AGOS generated a Reddit draft because the imported question is review-ready and related to What should I do in Tokyo when it rains all day and my outdoor plan is ruined?. The draft stays local until approved.",
       "canonical_pain_point": "What should I do in Tokyo when it rains all day and my outdoor plan is ruined?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "Reddit",
@@ -7292,7 +7735,7 @@
     {
       "ai_reason": "AGOS generated a TikTok draft because the imported question is review-ready and related to What should I do in Tokyo when it rains all day and my outdoor plan is ruined?. The draft stays local until approved.",
       "canonical_pain_point": "What should I do in Tokyo when it rains all day and my outdoor plan is ruined?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "TikTok",
@@ -7314,7 +7757,7 @@
     {
       "ai_reason": "AGOS generated a X draft because the imported question is review-ready and related to What should I do in Tokyo when it rains all day and my outdoor plan is ruined?. The draft stays local until approved.",
       "canonical_pain_point": "What should I do in Tokyo when it rains all day and my outdoor plan is ruined?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "X",
@@ -7336,7 +7779,7 @@
     {
       "ai_reason": "AGOS generated a Reddit draft because the imported question is review-ready and related to Why is Tokyo subway transfer so stressful for first-time visitors?. The draft stays local until approved.",
       "canonical_pain_point": "Why is Tokyo subway transfer so stressful for first-time visitors?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "Reddit",
@@ -7358,7 +7801,7 @@
     {
       "ai_reason": "AGOS generated a TikTok draft because the imported question is review-ready and related to Why is Tokyo subway transfer so stressful for first-time visitors?. The draft stays local until approved.",
       "canonical_pain_point": "Why is Tokyo subway transfer so stressful for first-time visitors?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "TikTok",
@@ -7380,7 +7823,7 @@
     {
       "ai_reason": "AGOS generated a X draft because the imported question is review-ready and related to Why is Tokyo subway transfer so stressful for first-time visitors?. The draft stays local until approved.",
       "canonical_pain_point": "Why is Tokyo subway transfer so stressful for first-time visitors?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "X",
@@ -7402,7 +7845,7 @@
     {
       "ai_reason": "AGOS generated a Reddit draft because the imported question is review-ready and related to Where should I stay in Tokyo if I want easy airport access and simple train routes?. The draft stays local until approved.",
       "canonical_pain_point": "Where should I stay in Tokyo if I want easy airport access and simple train routes?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "Reddit",
@@ -7424,7 +7867,7 @@
     {
       "ai_reason": "AGOS generated a TikTok draft because the imported question is review-ready and related to Where should I stay in Tokyo if I want easy airport access and simple train routes?. The draft stays local until approved.",
       "canonical_pain_point": "Where should I stay in Tokyo if I want easy airport access and simple train routes?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "TikTok",
@@ -7446,7 +7889,7 @@
     {
       "ai_reason": "AGOS generated a X draft because the imported question is review-ready and related to Where should I stay in Tokyo if I want easy airport access and simple train routes?. The draft stays local until approved.",
       "canonical_pain_point": "Where should I stay in Tokyo if I want easy airport access and simple train routes?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "X",
@@ -7468,7 +7911,7 @@
     {
       "ai_reason": "AGOS generated a Reddit draft because the imported question is review-ready and related to How can I plan a Tokyo day without walking too much with kids?. The draft stays local until approved.",
       "canonical_pain_point": "How can I plan a Tokyo day without walking too much with kids?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "Reddit",
@@ -7490,7 +7933,7 @@
     {
       "ai_reason": "AGOS generated a TikTok draft because the imported question is review-ready and related to How can I plan a Tokyo day without walking too much with kids?. The draft stays local until approved.",
       "canonical_pain_point": "How can I plan a Tokyo day without walking too much with kids?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "TikTok",
@@ -7512,7 +7955,7 @@
     {
       "ai_reason": "AGOS generated a X draft because the imported question is review-ready and related to How can I plan a Tokyo day without walking too much with kids?. The draft stays local until approved.",
       "canonical_pain_point": "How can I plan a Tokyo day without walking too much with kids?",
-      "created_at": "2026-05-22T11:23:44+00:00",
+      "created_at": "2026-05-22T11:27:54+00:00",
       "language": "en",
       "market": "Japan",
       "platform": "X",
@@ -7995,7 +8438,7 @@
         }
       ]
     },
-    "created_at": "2026-05-22T11:23:44+00:00",
+    "created_at": "2026-05-22T11:27:54+00:00",
     "dashboard_id": "RUNTIME_TRAINER_DASHBOARD",
     "driftAlerts": [
       {
@@ -8220,7 +8663,7 @@
       "reply_direction": "Draft a concise helpful reply with empathy, specific steps, and a soft CTA; require human approval.",
       "risk_level": "medium",
       "status": "interpreted",
-      "time": "2026-05-22T11:23:44+00:00",
+      "time": "2026-05-22T11:27:54+00:00",
       "type": "strategic_interpretation",
       "why": "Tokyo transport anxiety matters because AGOS detected rising_trend, high_engagement_trend, high_emotion_trend, high_spread_trend with opportunity score 0.925. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
     },
@@ -8233,7 +8676,7 @@
       "reply_direction": "Draft a concise helpful reply with empathy, specific steps, and a soft CTA; require human approval.",
       "risk_level": "medium",
       "status": "interpreted",
-      "time": "2026-05-22T11:23:44+00:00",
+      "time": "2026-05-22T11:27:54+00:00",
       "type": "strategic_interpretation",
       "why": "Tokyo rainy day travel friction matters because AGOS detected rising_trend, high_engagement_trend, high_emotion_trend, high_spread_trend with opportunity score 0.91. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
     },
@@ -8246,7 +8689,7 @@
       "reply_direction": "Do not reply yet; collect more examples.",
       "risk_level": "low",
       "status": "interpreted",
-      "time": "2026-05-22T11:23:44+00:00",
+      "time": "2026-05-22T11:27:54+00:00",
       "type": "strategic_interpretation",
       "why": "Air fryer cleaning friction matters because AGOS detected high_emotion_trend with opportunity score 0.357. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
     },
@@ -8259,13 +8702,13 @@
       "reply_direction": "Do not reply yet; collect more examples.",
       "risk_level": "low",
       "status": "interpreted",
-      "time": "2026-05-22T11:23:44+00:00",
+      "time": "2026-05-22T11:27:54+00:00",
       "type": "strategic_interpretation",
       "why": "Vacuum performance anxiety matters because AGOS detected watch_signal with opportunity score 0.342. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
     }
   ],
   "strategicInterpretation": {
-    "created_at": "2026-05-22T11:23:44+00:00",
+    "created_at": "2026-05-22T11:27:54+00:00",
     "interpretationDimensions": [
       "why_trend_matters",
       "risk",
@@ -8287,7 +8730,7 @@
         "reply_direction": "Draft a concise helpful reply with empathy, specific steps, and a soft CTA; require human approval.",
         "risk_level": "medium",
         "status": "interpreted",
-        "time": "2026-05-22T11:23:44+00:00",
+        "time": "2026-05-22T11:27:54+00:00",
         "type": "strategic_interpretation",
         "why": "Tokyo transport anxiety matters because AGOS detected rising_trend, high_engagement_trend, high_emotion_trend, high_spread_trend with opportunity score 0.925. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
       },
@@ -8300,7 +8743,7 @@
         "reply_direction": "Draft a concise helpful reply with empathy, specific steps, and a soft CTA; require human approval.",
         "risk_level": "medium",
         "status": "interpreted",
-        "time": "2026-05-22T11:23:44+00:00",
+        "time": "2026-05-22T11:27:54+00:00",
         "type": "strategic_interpretation",
         "why": "Tokyo rainy day travel friction matters because AGOS detected rising_trend, high_engagement_trend, high_emotion_trend, high_spread_trend with opportunity score 0.91. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
       },
@@ -8313,7 +8756,7 @@
         "reply_direction": "Do not reply yet; collect more examples.",
         "risk_level": "low",
         "status": "interpreted",
-        "time": "2026-05-22T11:23:44+00:00",
+        "time": "2026-05-22T11:27:54+00:00",
         "type": "strategic_interpretation",
         "why": "Air fryer cleaning friction matters because AGOS detected high_emotion_trend with opportunity score 0.357. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
       },
@@ -8326,7 +8769,7 @@
         "reply_direction": "Do not reply yet; collect more examples.",
         "risk_level": "low",
         "status": "interpreted",
-        "time": "2026-05-22T11:23:44+00:00",
+        "time": "2026-05-22T11:27:54+00:00",
         "type": "strategic_interpretation",
         "why": "Vacuum performance anxiety matters because AGOS detected watch_signal with opportunity score 0.342. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
       }
@@ -8595,7 +9038,7 @@
     }
   ],
   "strategyEvolution": {
-    "created_at": "2026-05-22T11:23:44+00:00",
+    "created_at": "2026-05-22T11:27:54+00:00",
     "evolutionFeed": [
       {
         "classification": "long_term_growth",
@@ -8792,7 +9235,7 @@
         ],
         "cadence": "Low frequency, high relevance, reply only when the question is a real pain point.",
         "content_shape": "Long-form answer with context, tradeoffs, and practical steps.",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "current_pain_point": "Tokyo transport anxiety",
         "human_review_status": "needs_human_review",
         "industry_pack": "Travel Pack / Lab",
@@ -8820,7 +9263,7 @@
         ],
         "cadence": "Higher frequency experiments with tight hook variation and fast feedback.",
         "content_shape": "Short hook, one visible pain scene, one practical payoff, one soft save CTA.",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "current_pain_point": "Tokyo transport anxiety",
         "human_review_status": "needs_human_review",
         "industry_pack": "Travel Pack / Lab",
@@ -8848,7 +9291,7 @@
         ],
         "cadence": "Timely posting around trend windows and question bursts.",
         "content_shape": "One strong claim, two supporting details, one practical takeaway or thread.",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "current_pain_point": "Tokyo transport anxiety",
         "human_review_status": "needs_human_review",
         "industry_pack": "Travel Pack / Lab",
@@ -8876,7 +9319,7 @@
         ],
         "cadence": "Lower frequency evergreen videos supported by Shorts extracted from high-friction moments.",
         "content_shape": "Searchable title, structured chapters, visual walkthrough, recap, and next-step CTA.",
-        "created_at": "2026-05-22T11:23:44+00:00",
+        "created_at": "2026-05-22T11:27:54+00:00",
         "current_pain_point": "Tokyo transport anxiety",
         "human_review_status": "needs_human_review",
         "industry_pack": "Travel Pack / Lab",
@@ -8896,7 +9339,7 @@
         "workspace": "JAG-LAB"
       }
     ],
-    "updated_at": "2026-05-22T11:23:44+00:00",
+    "updated_at": "2026-05-22T11:27:54+00:00",
     "workspace": "JAG-LAB"
   },
   "strategyPersonalityFeed": [
@@ -8941,11 +9384,11 @@
     "currentCycle": "JAG-LAB-CYCLE-0001",
     "currentIndustryPack": "Travel Pack / Lab",
     "currentWorkspace": "JAG-LAB",
-    "lastRunTime": "2026-05-22T11:23:44+00:00",
+    "lastRunTime": "2026-05-22T11:27:54+00:00",
     "status": "STOPPED"
   },
   "topicDiscovery": {
-    "created_at": "2026-05-22T11:23:44+00:00",
+    "created_at": "2026-05-22T11:27:54+00:00",
     "discoveredTopics": [
       {
         "canonical_pain_point": "Tokyo transport anxiety",
@@ -9319,7 +9762,7 @@
       ],
       "total_clusters": 4
     },
-    "created_at": "2026-05-22T11:23:44+00:00",
+    "created_at": "2026-05-22T11:27:54+00:00",
     "report_id": "TREND_CLUSTERING_REPORT",
     "scope": "local_only_no_external_platform_access",
     "status": "active",
