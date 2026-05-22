@@ -1,0 +1,1064 @@
+{
+  "activePatrolGroups": [
+    {
+      "audience": "independent travelers planning or solving Japan trip problems",
+      "collection_mode": "manual_import_or_public_api_only",
+      "group_id": "patrol_jag_lab_travel_pack_reddit",
+      "industry_pack": "Travel Pack",
+      "keywords": [
+        "tokyo transfer",
+        "japan itinerary",
+        "osaka transport",
+        "lost in station"
+      ],
+      "markets": [
+        "Japan",
+        "Europe / US",
+        "Korea",
+        "Taiwan",
+        "Southeast Asia"
+      ],
+      "next_action": "Monitor Reddit for public questions matching Travel Pack pain points.",
+      "platform": "Reddit",
+      "safety_boundary": [
+        "no login scraping",
+        "no automated posting",
+        "no automated replying",
+        "no platform limit bypass"
+      ],
+      "status": "active",
+      "targets": [
+        "JapanTravel",
+        "Tokyo",
+        "Osaka",
+        "travelhacks"
+      ],
+      "workspace": "JAG-LAB"
+    },
+    {
+      "audience": "independent travelers planning or solving Japan trip problems",
+      "collection_mode": "manual_import_or_public_api_only",
+      "group_id": "patrol_jag_lab_travel_pack_tiktok",
+      "industry_pack": "Travel Pack",
+      "keywords": [
+        "tokyo transfer",
+        "japan itinerary",
+        "osaka transport",
+        "lost in station"
+      ],
+      "markets": [
+        "Japan",
+        "Europe / US",
+        "Korea",
+        "Taiwan",
+        "Southeast Asia"
+      ],
+      "next_action": "Monitor TikTok for public questions matching Travel Pack pain points.",
+      "platform": "TikTok",
+      "safety_boundary": [
+        "no login scraping",
+        "no automated posting",
+        "no automated replying",
+        "no platform limit bypass"
+      ],
+      "status": "active",
+      "targets": [
+        "JapanTravel",
+        "Tokyo",
+        "Osaka",
+        "travelhacks"
+      ],
+      "workspace": "JAG-LAB"
+    },
+    {
+      "audience": "independent travelers planning or solving Japan trip problems",
+      "collection_mode": "manual_import_or_public_api_only",
+      "group_id": "patrol_jag_lab_travel_pack_x",
+      "industry_pack": "Travel Pack",
+      "keywords": [
+        "tokyo transfer",
+        "japan itinerary",
+        "osaka transport",
+        "lost in station"
+      ],
+      "markets": [
+        "Japan",
+        "Europe / US",
+        "Korea",
+        "Taiwan",
+        "Southeast Asia"
+      ],
+      "next_action": "Monitor X for public questions matching Travel Pack pain points.",
+      "platform": "X",
+      "safety_boundary": [
+        "no login scraping",
+        "no automated posting",
+        "no automated replying",
+        "no platform limit bypass"
+      ],
+      "status": "active",
+      "targets": [
+        "JapanTravel",
+        "Tokyo",
+        "Osaka",
+        "travelhacks"
+      ],
+      "workspace": "JAG-LAB"
+    },
+    {
+      "audience": "independent travelers planning or solving Japan trip problems",
+      "collection_mode": "manual_import_or_public_api_only",
+      "group_id": "patrol_jag_lab_travel_pack_youtube",
+      "industry_pack": "Travel Pack",
+      "keywords": [
+        "tokyo transfer",
+        "japan itinerary",
+        "osaka transport",
+        "lost in station"
+      ],
+      "markets": [
+        "Japan",
+        "Europe / US",
+        "Korea",
+        "Taiwan",
+        "Southeast Asia"
+      ],
+      "next_action": "Monitor YouTube for public questions matching Travel Pack pain points.",
+      "platform": "YouTube",
+      "safety_boundary": [
+        "no login scraping",
+        "no automated posting",
+        "no automated replying",
+        "no platform limit bypass"
+      ],
+      "status": "active",
+      "targets": [
+        "JapanTravel",
+        "Tokyo",
+        "Osaka",
+        "travelhacks"
+      ],
+      "workspace": "JAG-LAB"
+    },
+    {
+      "audience": "independent travelers planning or solving Japan trip problems",
+      "collection_mode": "manual_import_or_public_api_only",
+      "group_id": "patrol_jag_lab_travel_pack_threads",
+      "industry_pack": "Travel Pack",
+      "keywords": [
+        "tokyo transfer",
+        "japan itinerary",
+        "osaka transport",
+        "lost in station"
+      ],
+      "markets": [
+        "Japan",
+        "Europe / US",
+        "Korea",
+        "Taiwan",
+        "Southeast Asia"
+      ],
+      "next_action": "Monitor Threads for public questions matching Travel Pack pain points.",
+      "platform": "Threads",
+      "safety_boundary": [
+        "no login scraping",
+        "no automated posting",
+        "no automated replying",
+        "no platform limit bypass"
+      ],
+      "status": "active",
+      "targets": [
+        "JapanTravel",
+        "Tokyo",
+        "Osaka",
+        "travelhacks"
+      ],
+      "workspace": "JAG-LAB"
+    },
+    {
+      "audience": "home appliance buyers and troubleshooting users",
+      "collection_mode": "manual_import_or_public_api_only",
+      "group_id": "patrol_philips_lab_home_appliance_pack_reddit",
+      "industry_pack": "Home Appliance Pack",
+      "keywords": [
+        "air fryer cleaning",
+        "vacuum suction",
+        "smart home setup",
+        "kitchen appliance problem"
+      ],
+      "markets": [
+        "Europe / US",
+        "Japan",
+        "Korea",
+        "Taiwan"
+      ],
+      "next_action": "Monitor Reddit for public questions matching Home Appliance Pack pain points.",
+      "platform": "Reddit",
+      "safety_boundary": [
+        "no login scraping",
+        "no automated posting",
+        "no automated replying",
+        "no platform limit bypass"
+      ],
+      "status": "active",
+      "targets": [
+        "SmartHome",
+        "AirFryer",
+        "Vacuum"
+      ],
+      "workspace": "PHILIPS-LAB"
+    },
+    {
+      "audience": "home appliance buyers and troubleshooting users",
+      "collection_mode": "manual_import_or_public_api_only",
+      "group_id": "patrol_philips_lab_home_appliance_pack_tiktok",
+      "industry_pack": "Home Appliance Pack",
+      "keywords": [
+        "air fryer cleaning",
+        "vacuum suction",
+        "smart home setup",
+        "kitchen appliance problem"
+      ],
+      "markets": [
+        "Europe / US",
+        "Japan",
+        "Korea",
+        "Taiwan"
+      ],
+      "next_action": "Monitor TikTok for public questions matching Home Appliance Pack pain points.",
+      "platform": "TikTok",
+      "safety_boundary": [
+        "no login scraping",
+        "no automated posting",
+        "no automated replying",
+        "no platform limit bypass"
+      ],
+      "status": "active",
+      "targets": [
+        "SmartHome",
+        "AirFryer",
+        "Vacuum"
+      ],
+      "workspace": "PHILIPS-LAB"
+    },
+    {
+      "audience": "home appliance buyers and troubleshooting users",
+      "collection_mode": "manual_import_or_public_api_only",
+      "group_id": "patrol_philips_lab_home_appliance_pack_x",
+      "industry_pack": "Home Appliance Pack",
+      "keywords": [
+        "air fryer cleaning",
+        "vacuum suction",
+        "smart home setup",
+        "kitchen appliance problem"
+      ],
+      "markets": [
+        "Europe / US",
+        "Japan",
+        "Korea",
+        "Taiwan"
+      ],
+      "next_action": "Monitor X for public questions matching Home Appliance Pack pain points.",
+      "platform": "X",
+      "safety_boundary": [
+        "no login scraping",
+        "no automated posting",
+        "no automated replying",
+        "no platform limit bypass"
+      ],
+      "status": "active",
+      "targets": [
+        "SmartHome",
+        "AirFryer",
+        "Vacuum"
+      ],
+      "workspace": "PHILIPS-LAB"
+    },
+    {
+      "audience": "home appliance buyers and troubleshooting users",
+      "collection_mode": "manual_import_or_public_api_only",
+      "group_id": "patrol_philips_lab_home_appliance_pack_youtube",
+      "industry_pack": "Home Appliance Pack",
+      "keywords": [
+        "air fryer cleaning",
+        "vacuum suction",
+        "smart home setup",
+        "kitchen appliance problem"
+      ],
+      "markets": [
+        "Europe / US",
+        "Japan",
+        "Korea",
+        "Taiwan"
+      ],
+      "next_action": "Monitor YouTube for public questions matching Home Appliance Pack pain points.",
+      "platform": "YouTube",
+      "safety_boundary": [
+        "no login scraping",
+        "no automated posting",
+        "no automated replying",
+        "no platform limit bypass"
+      ],
+      "status": "active",
+      "targets": [
+        "SmartHome",
+        "AirFryer",
+        "Vacuum"
+      ],
+      "workspace": "PHILIPS-LAB"
+    },
+    {
+      "audience": "home appliance buyers and troubleshooting users",
+      "collection_mode": "manual_import_or_public_api_only",
+      "group_id": "patrol_philips_lab_home_appliance_pack_threads",
+      "industry_pack": "Home Appliance Pack",
+      "keywords": [
+        "air fryer cleaning",
+        "vacuum suction",
+        "smart home setup",
+        "kitchen appliance problem"
+      ],
+      "markets": [
+        "Europe / US",
+        "Japan",
+        "Korea",
+        "Taiwan"
+      ],
+      "next_action": "Monitor Threads for public questions matching Home Appliance Pack pain points.",
+      "platform": "Threads",
+      "safety_boundary": [
+        "no login scraping",
+        "no automated posting",
+        "no automated replying",
+        "no platform limit bypass"
+      ],
+      "status": "active",
+      "targets": [
+        "SmartHome",
+        "AirFryer",
+        "Vacuum"
+      ],
+      "workspace": "PHILIPS-LAB"
+    }
+  ],
+  "created_at": "2026-05-22T09:47:40+00:00",
+  "industryPackPatrolGroups": {
+    "Home Appliance Pack": [
+      {
+        "audience": "home appliance buyers and troubleshooting users",
+        "collection_mode": "manual_import_or_public_api_only",
+        "group_id": "patrol_philips_lab_home_appliance_pack_reddit",
+        "industry_pack": "Home Appliance Pack",
+        "keywords": [
+          "air fryer cleaning",
+          "vacuum suction",
+          "smart home setup",
+          "kitchen appliance problem"
+        ],
+        "markets": [
+          "Europe / US",
+          "Japan",
+          "Korea",
+          "Taiwan"
+        ],
+        "next_action": "Monitor Reddit for public questions matching Home Appliance Pack pain points.",
+        "platform": "Reddit",
+        "safety_boundary": [
+          "no login scraping",
+          "no automated posting",
+          "no automated replying",
+          "no platform limit bypass"
+        ],
+        "status": "active",
+        "targets": [
+          "SmartHome",
+          "AirFryer",
+          "Vacuum"
+        ],
+        "workspace": "PHILIPS-LAB"
+      },
+      {
+        "audience": "home appliance buyers and troubleshooting users",
+        "collection_mode": "manual_import_or_public_api_only",
+        "group_id": "patrol_philips_lab_home_appliance_pack_tiktok",
+        "industry_pack": "Home Appliance Pack",
+        "keywords": [
+          "air fryer cleaning",
+          "vacuum suction",
+          "smart home setup",
+          "kitchen appliance problem"
+        ],
+        "markets": [
+          "Europe / US",
+          "Japan",
+          "Korea",
+          "Taiwan"
+        ],
+        "next_action": "Monitor TikTok for public questions matching Home Appliance Pack pain points.",
+        "platform": "TikTok",
+        "safety_boundary": [
+          "no login scraping",
+          "no automated posting",
+          "no automated replying",
+          "no platform limit bypass"
+        ],
+        "status": "active",
+        "targets": [
+          "SmartHome",
+          "AirFryer",
+          "Vacuum"
+        ],
+        "workspace": "PHILIPS-LAB"
+      },
+      {
+        "audience": "home appliance buyers and troubleshooting users",
+        "collection_mode": "manual_import_or_public_api_only",
+        "group_id": "patrol_philips_lab_home_appliance_pack_x",
+        "industry_pack": "Home Appliance Pack",
+        "keywords": [
+          "air fryer cleaning",
+          "vacuum suction",
+          "smart home setup",
+          "kitchen appliance problem"
+        ],
+        "markets": [
+          "Europe / US",
+          "Japan",
+          "Korea",
+          "Taiwan"
+        ],
+        "next_action": "Monitor X for public questions matching Home Appliance Pack pain points.",
+        "platform": "X",
+        "safety_boundary": [
+          "no login scraping",
+          "no automated posting",
+          "no automated replying",
+          "no platform limit bypass"
+        ],
+        "status": "active",
+        "targets": [
+          "SmartHome",
+          "AirFryer",
+          "Vacuum"
+        ],
+        "workspace": "PHILIPS-LAB"
+      },
+      {
+        "audience": "home appliance buyers and troubleshooting users",
+        "collection_mode": "manual_import_or_public_api_only",
+        "group_id": "patrol_philips_lab_home_appliance_pack_youtube",
+        "industry_pack": "Home Appliance Pack",
+        "keywords": [
+          "air fryer cleaning",
+          "vacuum suction",
+          "smart home setup",
+          "kitchen appliance problem"
+        ],
+        "markets": [
+          "Europe / US",
+          "Japan",
+          "Korea",
+          "Taiwan"
+        ],
+        "next_action": "Monitor YouTube for public questions matching Home Appliance Pack pain points.",
+        "platform": "YouTube",
+        "safety_boundary": [
+          "no login scraping",
+          "no automated posting",
+          "no automated replying",
+          "no platform limit bypass"
+        ],
+        "status": "active",
+        "targets": [
+          "SmartHome",
+          "AirFryer",
+          "Vacuum"
+        ],
+        "workspace": "PHILIPS-LAB"
+      },
+      {
+        "audience": "home appliance buyers and troubleshooting users",
+        "collection_mode": "manual_import_or_public_api_only",
+        "group_id": "patrol_philips_lab_home_appliance_pack_threads",
+        "industry_pack": "Home Appliance Pack",
+        "keywords": [
+          "air fryer cleaning",
+          "vacuum suction",
+          "smart home setup",
+          "kitchen appliance problem"
+        ],
+        "markets": [
+          "Europe / US",
+          "Japan",
+          "Korea",
+          "Taiwan"
+        ],
+        "next_action": "Monitor Threads for public questions matching Home Appliance Pack pain points.",
+        "platform": "Threads",
+        "safety_boundary": [
+          "no login scraping",
+          "no automated posting",
+          "no automated replying",
+          "no platform limit bypass"
+        ],
+        "status": "active",
+        "targets": [
+          "SmartHome",
+          "AirFryer",
+          "Vacuum"
+        ],
+        "workspace": "PHILIPS-LAB"
+      }
+    ],
+    "Travel Pack": [
+      {
+        "audience": "independent travelers planning or solving Japan trip problems",
+        "collection_mode": "manual_import_or_public_api_only",
+        "group_id": "patrol_jag_lab_travel_pack_reddit",
+        "industry_pack": "Travel Pack",
+        "keywords": [
+          "tokyo transfer",
+          "japan itinerary",
+          "osaka transport",
+          "lost in station"
+        ],
+        "markets": [
+          "Japan",
+          "Europe / US",
+          "Korea",
+          "Taiwan",
+          "Southeast Asia"
+        ],
+        "next_action": "Monitor Reddit for public questions matching Travel Pack pain points.",
+        "platform": "Reddit",
+        "safety_boundary": [
+          "no login scraping",
+          "no automated posting",
+          "no automated replying",
+          "no platform limit bypass"
+        ],
+        "status": "active",
+        "targets": [
+          "JapanTravel",
+          "Tokyo",
+          "Osaka",
+          "travelhacks"
+        ],
+        "workspace": "JAG-LAB"
+      },
+      {
+        "audience": "independent travelers planning or solving Japan trip problems",
+        "collection_mode": "manual_import_or_public_api_only",
+        "group_id": "patrol_jag_lab_travel_pack_tiktok",
+        "industry_pack": "Travel Pack",
+        "keywords": [
+          "tokyo transfer",
+          "japan itinerary",
+          "osaka transport",
+          "lost in station"
+        ],
+        "markets": [
+          "Japan",
+          "Europe / US",
+          "Korea",
+          "Taiwan",
+          "Southeast Asia"
+        ],
+        "next_action": "Monitor TikTok for public questions matching Travel Pack pain points.",
+        "platform": "TikTok",
+        "safety_boundary": [
+          "no login scraping",
+          "no automated posting",
+          "no automated replying",
+          "no platform limit bypass"
+        ],
+        "status": "active",
+        "targets": [
+          "JapanTravel",
+          "Tokyo",
+          "Osaka",
+          "travelhacks"
+        ],
+        "workspace": "JAG-LAB"
+      },
+      {
+        "audience": "independent travelers planning or solving Japan trip problems",
+        "collection_mode": "manual_import_or_public_api_only",
+        "group_id": "patrol_jag_lab_travel_pack_x",
+        "industry_pack": "Travel Pack",
+        "keywords": [
+          "tokyo transfer",
+          "japan itinerary",
+          "osaka transport",
+          "lost in station"
+        ],
+        "markets": [
+          "Japan",
+          "Europe / US",
+          "Korea",
+          "Taiwan",
+          "Southeast Asia"
+        ],
+        "next_action": "Monitor X for public questions matching Travel Pack pain points.",
+        "platform": "X",
+        "safety_boundary": [
+          "no login scraping",
+          "no automated posting",
+          "no automated replying",
+          "no platform limit bypass"
+        ],
+        "status": "active",
+        "targets": [
+          "JapanTravel",
+          "Tokyo",
+          "Osaka",
+          "travelhacks"
+        ],
+        "workspace": "JAG-LAB"
+      },
+      {
+        "audience": "independent travelers planning or solving Japan trip problems",
+        "collection_mode": "manual_import_or_public_api_only",
+        "group_id": "patrol_jag_lab_travel_pack_youtube",
+        "industry_pack": "Travel Pack",
+        "keywords": [
+          "tokyo transfer",
+          "japan itinerary",
+          "osaka transport",
+          "lost in station"
+        ],
+        "markets": [
+          "Japan",
+          "Europe / US",
+          "Korea",
+          "Taiwan",
+          "Southeast Asia"
+        ],
+        "next_action": "Monitor YouTube for public questions matching Travel Pack pain points.",
+        "platform": "YouTube",
+        "safety_boundary": [
+          "no login scraping",
+          "no automated posting",
+          "no automated replying",
+          "no platform limit bypass"
+        ],
+        "status": "active",
+        "targets": [
+          "JapanTravel",
+          "Tokyo",
+          "Osaka",
+          "travelhacks"
+        ],
+        "workspace": "JAG-LAB"
+      },
+      {
+        "audience": "independent travelers planning or solving Japan trip problems",
+        "collection_mode": "manual_import_or_public_api_only",
+        "group_id": "patrol_jag_lab_travel_pack_threads",
+        "industry_pack": "Travel Pack",
+        "keywords": [
+          "tokyo transfer",
+          "japan itinerary",
+          "osaka transport",
+          "lost in station"
+        ],
+        "markets": [
+          "Japan",
+          "Europe / US",
+          "Korea",
+          "Taiwan",
+          "Southeast Asia"
+        ],
+        "next_action": "Monitor Threads for public questions matching Travel Pack pain points.",
+        "platform": "Threads",
+        "safety_boundary": [
+          "no login scraping",
+          "no automated posting",
+          "no automated replying",
+          "no platform limit bypass"
+        ],
+        "status": "active",
+        "targets": [
+          "JapanTravel",
+          "Tokyo",
+          "Osaka",
+          "travelhacks"
+        ],
+        "workspace": "JAG-LAB"
+      }
+    ]
+  },
+  "patrolSummary": {
+    "industry_packs": [
+      "Home Appliance Pack",
+      "Travel Pack"
+    ],
+    "platforms": [
+      "Reddit",
+      "TikTok",
+      "X",
+      "YouTube",
+      "Threads"
+    ],
+    "total_groups": 10,
+    "workspaces": [
+      "JAG-LAB",
+      "PHILIPS-LAB"
+    ]
+  },
+  "state_id": "PATROL_GROUPS_STATE",
+  "status": "active",
+  "supportedPlatforms": [
+    "Reddit",
+    "TikTok",
+    "X",
+    "YouTube",
+    "Threads"
+  ],
+  "workspacePatrolGroups": {
+    "JAG-LAB": [
+      {
+        "audience": "independent travelers planning or solving Japan trip problems",
+        "collection_mode": "manual_import_or_public_api_only",
+        "group_id": "patrol_jag_lab_travel_pack_reddit",
+        "industry_pack": "Travel Pack",
+        "keywords": [
+          "tokyo transfer",
+          "japan itinerary",
+          "osaka transport",
+          "lost in station"
+        ],
+        "markets": [
+          "Japan",
+          "Europe / US",
+          "Korea",
+          "Taiwan",
+          "Southeast Asia"
+        ],
+        "next_action": "Monitor Reddit for public questions matching Travel Pack pain points.",
+        "platform": "Reddit",
+        "safety_boundary": [
+          "no login scraping",
+          "no automated posting",
+          "no automated replying",
+          "no platform limit bypass"
+        ],
+        "status": "active",
+        "targets": [
+          "JapanTravel",
+          "Tokyo",
+          "Osaka",
+          "travelhacks"
+        ],
+        "workspace": "JAG-LAB"
+      },
+      {
+        "audience": "independent travelers planning or solving Japan trip problems",
+        "collection_mode": "manual_import_or_public_api_only",
+        "group_id": "patrol_jag_lab_travel_pack_tiktok",
+        "industry_pack": "Travel Pack",
+        "keywords": [
+          "tokyo transfer",
+          "japan itinerary",
+          "osaka transport",
+          "lost in station"
+        ],
+        "markets": [
+          "Japan",
+          "Europe / US",
+          "Korea",
+          "Taiwan",
+          "Southeast Asia"
+        ],
+        "next_action": "Monitor TikTok for public questions matching Travel Pack pain points.",
+        "platform": "TikTok",
+        "safety_boundary": [
+          "no login scraping",
+          "no automated posting",
+          "no automated replying",
+          "no platform limit bypass"
+        ],
+        "status": "active",
+        "targets": [
+          "JapanTravel",
+          "Tokyo",
+          "Osaka",
+          "travelhacks"
+        ],
+        "workspace": "JAG-LAB"
+      },
+      {
+        "audience": "independent travelers planning or solving Japan trip problems",
+        "collection_mode": "manual_import_or_public_api_only",
+        "group_id": "patrol_jag_lab_travel_pack_x",
+        "industry_pack": "Travel Pack",
+        "keywords": [
+          "tokyo transfer",
+          "japan itinerary",
+          "osaka transport",
+          "lost in station"
+        ],
+        "markets": [
+          "Japan",
+          "Europe / US",
+          "Korea",
+          "Taiwan",
+          "Southeast Asia"
+        ],
+        "next_action": "Monitor X for public questions matching Travel Pack pain points.",
+        "platform": "X",
+        "safety_boundary": [
+          "no login scraping",
+          "no automated posting",
+          "no automated replying",
+          "no platform limit bypass"
+        ],
+        "status": "active",
+        "targets": [
+          "JapanTravel",
+          "Tokyo",
+          "Osaka",
+          "travelhacks"
+        ],
+        "workspace": "JAG-LAB"
+      },
+      {
+        "audience": "independent travelers planning or solving Japan trip problems",
+        "collection_mode": "manual_import_or_public_api_only",
+        "group_id": "patrol_jag_lab_travel_pack_youtube",
+        "industry_pack": "Travel Pack",
+        "keywords": [
+          "tokyo transfer",
+          "japan itinerary",
+          "osaka transport",
+          "lost in station"
+        ],
+        "markets": [
+          "Japan",
+          "Europe / US",
+          "Korea",
+          "Taiwan",
+          "Southeast Asia"
+        ],
+        "next_action": "Monitor YouTube for public questions matching Travel Pack pain points.",
+        "platform": "YouTube",
+        "safety_boundary": [
+          "no login scraping",
+          "no automated posting",
+          "no automated replying",
+          "no platform limit bypass"
+        ],
+        "status": "active",
+        "targets": [
+          "JapanTravel",
+          "Tokyo",
+          "Osaka",
+          "travelhacks"
+        ],
+        "workspace": "JAG-LAB"
+      },
+      {
+        "audience": "independent travelers planning or solving Japan trip problems",
+        "collection_mode": "manual_import_or_public_api_only",
+        "group_id": "patrol_jag_lab_travel_pack_threads",
+        "industry_pack": "Travel Pack",
+        "keywords": [
+          "tokyo transfer",
+          "japan itinerary",
+          "osaka transport",
+          "lost in station"
+        ],
+        "markets": [
+          "Japan",
+          "Europe / US",
+          "Korea",
+          "Taiwan",
+          "Southeast Asia"
+        ],
+        "next_action": "Monitor Threads for public questions matching Travel Pack pain points.",
+        "platform": "Threads",
+        "safety_boundary": [
+          "no login scraping",
+          "no automated posting",
+          "no automated replying",
+          "no platform limit bypass"
+        ],
+        "status": "active",
+        "targets": [
+          "JapanTravel",
+          "Tokyo",
+          "Osaka",
+          "travelhacks"
+        ],
+        "workspace": "JAG-LAB"
+      }
+    ],
+    "PHILIPS-LAB": [
+      {
+        "audience": "home appliance buyers and troubleshooting users",
+        "collection_mode": "manual_import_or_public_api_only",
+        "group_id": "patrol_philips_lab_home_appliance_pack_reddit",
+        "industry_pack": "Home Appliance Pack",
+        "keywords": [
+          "air fryer cleaning",
+          "vacuum suction",
+          "smart home setup",
+          "kitchen appliance problem"
+        ],
+        "markets": [
+          "Europe / US",
+          "Japan",
+          "Korea",
+          "Taiwan"
+        ],
+        "next_action": "Monitor Reddit for public questions matching Home Appliance Pack pain points.",
+        "platform": "Reddit",
+        "safety_boundary": [
+          "no login scraping",
+          "no automated posting",
+          "no automated replying",
+          "no platform limit bypass"
+        ],
+        "status": "active",
+        "targets": [
+          "SmartHome",
+          "AirFryer",
+          "Vacuum"
+        ],
+        "workspace": "PHILIPS-LAB"
+      },
+      {
+        "audience": "home appliance buyers and troubleshooting users",
+        "collection_mode": "manual_import_or_public_api_only",
+        "group_id": "patrol_philips_lab_home_appliance_pack_tiktok",
+        "industry_pack": "Home Appliance Pack",
+        "keywords": [
+          "air fryer cleaning",
+          "vacuum suction",
+          "smart home setup",
+          "kitchen appliance problem"
+        ],
+        "markets": [
+          "Europe / US",
+          "Japan",
+          "Korea",
+          "Taiwan"
+        ],
+        "next_action": "Monitor TikTok for public questions matching Home Appliance Pack pain points.",
+        "platform": "TikTok",
+        "safety_boundary": [
+          "no login scraping",
+          "no automated posting",
+          "no automated replying",
+          "no platform limit bypass"
+        ],
+        "status": "active",
+        "targets": [
+          "SmartHome",
+          "AirFryer",
+          "Vacuum"
+        ],
+        "workspace": "PHILIPS-LAB"
+      },
+      {
+        "audience": "home appliance buyers and troubleshooting users",
+        "collection_mode": "manual_import_or_public_api_only",
+        "group_id": "patrol_philips_lab_home_appliance_pack_x",
+        "industry_pack": "Home Appliance Pack",
+        "keywords": [
+          "air fryer cleaning",
+          "vacuum suction",
+          "smart home setup",
+          "kitchen appliance problem"
+        ],
+        "markets": [
+          "Europe / US",
+          "Japan",
+          "Korea",
+          "Taiwan"
+        ],
+        "next_action": "Monitor X for public questions matching Home Appliance Pack pain points.",
+        "platform": "X",
+        "safety_boundary": [
+          "no login scraping",
+          "no automated posting",
+          "no automated replying",
+          "no platform limit bypass"
+        ],
+        "status": "active",
+        "targets": [
+          "SmartHome",
+          "AirFryer",
+          "Vacuum"
+        ],
+        "workspace": "PHILIPS-LAB"
+      },
+      {
+        "audience": "home appliance buyers and troubleshooting users",
+        "collection_mode": "manual_import_or_public_api_only",
+        "group_id": "patrol_philips_lab_home_appliance_pack_youtube",
+        "industry_pack": "Home Appliance Pack",
+        "keywords": [
+          "air fryer cleaning",
+          "vacuum suction",
+          "smart home setup",
+          "kitchen appliance problem"
+        ],
+        "markets": [
+          "Europe / US",
+          "Japan",
+          "Korea",
+          "Taiwan"
+        ],
+        "next_action": "Monitor YouTube for public questions matching Home Appliance Pack pain points.",
+        "platform": "YouTube",
+        "safety_boundary": [
+          "no login scraping",
+          "no automated posting",
+          "no automated replying",
+          "no platform limit bypass"
+        ],
+        "status": "active",
+        "targets": [
+          "SmartHome",
+          "AirFryer",
+          "Vacuum"
+        ],
+        "workspace": "PHILIPS-LAB"
+      },
+      {
+        "audience": "home appliance buyers and troubleshooting users",
+        "collection_mode": "manual_import_or_public_api_only",
+        "group_id": "patrol_philips_lab_home_appliance_pack_threads",
+        "industry_pack": "Home Appliance Pack",
+        "keywords": [
+          "air fryer cleaning",
+          "vacuum suction",
+          "smart home setup",
+          "kitchen appliance problem"
+        ],
+        "markets": [
+          "Europe / US",
+          "Japan",
+          "Korea",
+          "Taiwan"
+        ],
+        "next_action": "Monitor Threads for public questions matching Home Appliance Pack pain points.",
+        "platform": "Threads",
+        "safety_boundary": [
+          "no login scraping",
+          "no automated posting",
+          "no automated replying",
+          "no platform limit bypass"
+        ],
+        "status": "active",
+        "targets": [
+          "SmartHome",
+          "AirFryer",
+          "Vacuum"
+        ],
+        "workspace": "PHILIPS-LAB"
+      }
+    ]
+  }
+}
