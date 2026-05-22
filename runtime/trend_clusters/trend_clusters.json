@@ -1,0 +1,133 @@
+[
+  {
+    "canonical_pain_point": "Tokyo transport anxiety",
+    "cluster_id": "trend_cluster_tokyo_transport_anxiety",
+    "cluster_name": "Tokyo transport anxiety",
+    "cluster_type": "cross_platform_high_emotion",
+    "cross_platform": true,
+    "emotion_tags": [
+      "uncertainty",
+      "high_emotion",
+      "travel anxiety"
+    ],
+    "frequency": 4,
+    "max_emotion_score": 0.9,
+    "next_action": "Prioritize answer branch and short-form content strategy for human review.",
+    "platforms": [
+      "Manual",
+      "RSS",
+      "Reddit",
+      "Threads"
+    ],
+    "similar_questions": [
+      "Tokyo subway confusing for first time Japan trip. I am worried I will get lost.",
+      "东京地铁复杂，第一次去日本很怕换乘错。",
+      "Lost in station at Shinjuku, cannot find platform and panic."
+    ],
+    "similar_trends": [
+      "station maze",
+      "first-time transfer anxiety",
+      "route confidence gap"
+    ],
+    "source_topics": [
+      "Tokyo transport anxiety"
+    ],
+    "status": "clustered"
+  },
+  {
+    "canonical_pain_point": "Tokyo rainy day itinerary anxiety",
+    "cluster_id": "trend_cluster_tokyo_rainy_day",
+    "cluster_name": "Tokyo rainy day travel friction",
+    "cluster_type": "cross_platform_trend",
+    "cross_platform": true,
+    "emotion_tags": [
+      "uncertainty",
+      "planning anxiety",
+      "weather frustration"
+    ],
+    "frequency": 4,
+    "max_emotion_score": 0.84,
+    "next_action": "Generate rain-safe Tokyo route strategy for JAG-LAB review.",
+    "platforms": [
+      "Reddit",
+      "TikTok",
+      "YouTube",
+      "Instagram"
+    ],
+    "similar_questions": [
+      "What should I do in Tokyo when it rains all day?",
+      "Tokyo rainy day itinerary for first-time visitors",
+      "Is Shibuya still worth visiting during heavy rain?"
+    ],
+    "similar_trends": [
+      "indoor Tokyo itinerary",
+      "rain-safe food and shopping route",
+      "first-time visitor weather anxiety"
+    ],
+    "source_topics": [
+      "Tokyo rain itinerary",
+      "Tokyo indoor plan",
+      "rain in Tokyo trip"
+    ],
+    "status": "clustered"
+  },
+  {
+    "canonical_pain_point": "Air fryer cleaning friction",
+    "cluster_id": "trend_cluster_air_fryer_cleaning_friction",
+    "cluster_name": "Air fryer cleaning friction",
+    "cluster_type": "high_emotion_cluster",
+    "cross_platform": false,
+    "emotion_tags": [
+      "uncertainty",
+      "high_emotion",
+      "frustration"
+    ],
+    "frequency": 1,
+    "max_emotion_score": 0.78,
+    "next_action": "Validate pain strength before generating a reply branch.",
+    "platforms": [
+      "TikTok"
+    ],
+    "similar_questions": [
+      "Air fryer cleaning is frustrating, grease is everywhere."
+    ],
+    "similar_trends": [
+      "grease cleanup",
+      "post-cooking maintenance",
+      "kitchen appliance frustration"
+    ],
+    "source_topics": [
+      "Air fryer cleaning friction"
+    ],
+    "status": "clustered"
+  },
+  {
+    "canonical_pain_point": "Vacuum performance anxiety",
+    "cluster_id": "trend_cluster_vacuum_performance_anxiety",
+    "cluster_name": "Vacuum performance anxiety",
+    "cluster_type": "single_platform_signal",
+    "cross_platform": false,
+    "emotion_tags": [
+      "uncertainty",
+      "frustration"
+    ],
+    "frequency": 1,
+    "max_emotion_score": 0.72,
+    "next_action": "Keep monitoring until repeated across more sources.",
+    "platforms": [
+      "YouTube"
+    ],
+    "similar_questions": [
+      "Vacuum lost suction and dust is still there after cleaning."
+    ],
+    "similar_trends": [
+      "lost suction",
+      "cleaning performance doubt",
+      "maintenance confusion"
+    ],
+    "source_topics": [
+      "Vacuum performance anxiety"
+    ],
+    "status": "clustered"
+  }
+]

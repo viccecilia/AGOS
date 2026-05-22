@@ -384,7 +384,7 @@
       "issue": "Code Check",
       "severity": "medium",
       "signal": "no current error",
-      "status": "clear"
+      "status": "needs_code_check"
     },
     {
       "action": "Validate locally before any external integration.",
@@ -860,7 +860,7 @@
       "Tokyo transport anxiety",
       "Vacuum performance anxiety"
     ],
-    "created_at": "2026-05-22T09:57:42+00:00",
+    "created_at": "2026-05-22T10:06:01+00:00",
     "keywordExpansions": [
       {
         "canonical_pain_point": "Air fryer cleaning friction",
@@ -2273,7 +2273,7 @@
         "workspace": "PHILIPS-LAB"
       }
     ],
-    "created_at": "2026-05-22T09:57:42+00:00",
+    "created_at": "2026-05-22T10:06:01+00:00",
     "industryPackPatrolGroups": {
       "Home Appliance Pack": [
         {
@@ -3099,7 +3099,7 @@
         "status": "passed"
       }
     ],
-    "created_at": "2026-05-22T09:57:42+00:00",
+    "created_at": "2026-05-22T10:06:01+00:00",
     "marketIsolationStatus": "clear",
     "personalityEvolutionSummary": "AGOS has formed a stable operating personality with workspace, platform, market, and strategy layers.",
     "platformPersonalityCount": 4,
@@ -3189,7 +3189,7 @@
     }
   ],
   "personalityIsolationReport": {
-    "created_at": "2026-05-22T09:57:42+00:00",
+    "created_at": "2026-05-22T10:06:01+00:00",
     "isolationMatrix": [
       {
         "allowed_traits": [
@@ -3490,7 +3490,7 @@
     }
   },
   "personalityReviewSession": {
-    "created_at": "2026-05-22T09:57:42+00:00",
+    "created_at": "2026-05-22T10:06:01+00:00",
     "driftEventsReviewed": 6,
     "personalityTrend": [
       {
@@ -4635,7 +4635,7 @@
         }
       ]
     },
-    "created_at": "2026-05-22T09:57:42+00:00",
+    "created_at": "2026-05-22T10:06:01+00:00",
     "dashboard_id": "RUNTIME_TRAINER_DASHBOARD",
     "driftAlerts": [
       {
@@ -4851,7 +4851,7 @@
   },
   "socialRuntimeMatrix": [],
   "strategyEvolution": {
-    "created_at": "2026-05-22T09:57:42+00:00",
+    "created_at": "2026-05-22T10:06:01+00:00",
     "evolutionFeed": [
       {
         "classification": "long_term_growth",
@@ -5048,7 +5048,7 @@
         ],
         "cadence": "Low frequency, high relevance, reply only when the question is a real pain point.",
         "content_shape": "Long-form answer with context, tradeoffs, and practical steps.",
-        "created_at": "2026-05-22T09:57:42+00:00",
+        "created_at": "2026-05-22T10:06:01+00:00",
         "current_pain_point": "Tokyo transport anxiety",
         "human_review_status": "needs_human_review",
         "industry_pack": "Travel Pack / Lab",
@@ -5076,7 +5076,7 @@
         ],
         "cadence": "Higher frequency experiments with tight hook variation and fast feedback.",
         "content_shape": "Short hook, one visible pain scene, one practical payoff, one soft save CTA.",
-        "created_at": "2026-05-22T09:57:42+00:00",
+        "created_at": "2026-05-22T10:06:01+00:00",
         "current_pain_point": "Tokyo transport anxiety",
         "human_review_status": "needs_human_review",
         "industry_pack": "Travel Pack / Lab",
@@ -5104,7 +5104,7 @@
         ],
         "cadence": "Timely posting around trend windows and question bursts.",
         "content_shape": "One strong claim, two supporting details, one practical takeaway or thread.",
-        "created_at": "2026-05-22T09:57:42+00:00",
+        "created_at": "2026-05-22T10:06:01+00:00",
         "current_pain_point": "Tokyo transport anxiety",
         "human_review_status": "needs_human_review",
         "industry_pack": "Travel Pack / Lab",
@@ -5132,7 +5132,7 @@
         ],
         "cadence": "Lower frequency evergreen videos supported by Shorts extracted from high-friction moments.",
         "content_shape": "Searchable title, structured chapters, visual walkthrough, recap, and next-step CTA.",
-        "created_at": "2026-05-22T09:57:42+00:00",
+        "created_at": "2026-05-22T10:06:01+00:00",
         "current_pain_point": "Tokyo transport anxiety",
         "human_review_status": "needs_human_review",
         "industry_pack": "Travel Pack / Lab",
@@ -5152,7 +5152,7 @@
         "workspace": "JAG-LAB"
       }
     ],
-    "updated_at": "2026-05-22T09:57:42+00:00",
+    "updated_at": "2026-05-22T10:06:01+00:00",
     "workspace": "JAG-LAB"
   },
   "strategyPersonalityFeed": [
@@ -5197,11 +5197,11 @@
     "currentCycle": "JAG-LAB-CYCLE-0001",
     "currentIndustryPack": "Travel Pack / Lab",
     "currentWorkspace": "JAG-LAB",
-    "lastRunTime": "2026-05-22T09:57:42+00:00",
+    "lastRunTime": "2026-05-22T10:06:01+00:00",
     "status": "STOPPED"
   },
   "topicDiscovery": {
-    "created_at": "2026-05-22T09:57:42+00:00",
+    "created_at": "2026-05-22T10:06:01+00:00",
     "discoveredTopics": [
       {
         "canonical_pain_point": "Tokyo transport anxiety",
@@ -5556,6 +5556,294 @@
       "score": null,
       "stage": "Deposit",
       "why": "沉淀 Best Answer、Best Hook、Failed Strategy 等 Runtime Intelligence。"
+    }
+  ],
+  "trendClustering": {
+    "clusterDimensions": [
+      "similar_questions",
+      "similar_trends",
+      "cross_platform_discussion",
+      "similar_emotion"
+    ],
+    "clusterSummary": {
+      "cross_platform_clusters": 2,
+      "high_emotion_clusters": 3,
+      "top_clusters": [
+        "Tokyo transport anxiety",
+        "Tokyo rainy day travel friction",
+        "Air fryer cleaning friction"
+      ],
+      "total_clusters": 4
+    },
+    "created_at": "2026-05-22T10:06:01+00:00",
+    "report_id": "TREND_CLUSTERING_REPORT",
+    "scope": "local_only_no_external_platform_access",
+    "status": "active",
+    "trendClusters": [
+      {
+        "canonical_pain_point": "Tokyo transport anxiety",
+        "cluster_id": "trend_cluster_tokyo_transport_anxiety",
+        "cluster_name": "Tokyo transport anxiety",
+        "cluster_type": "cross_platform_high_emotion",
+        "cross_platform": true,
+        "emotion_tags": [
+          "uncertainty",
+          "high_emotion",
+          "travel anxiety"
+        ],
+        "frequency": 4,
+        "max_emotion_score": 0.9,
+        "next_action": "Prioritize answer branch and short-form content strategy for human review.",
+        "platforms": [
+          "Manual",
+          "RSS",
+          "Reddit",
+          "Threads"
+        ],
+        "similar_questions": [
+          "Tokyo subway confusing for first time Japan trip. I am worried I will get lost.",
+          "东京地铁复杂，第一次去日本很怕换乘错。",
+          "Lost in station at Shinjuku, cannot find platform and panic."
+        ],
+        "similar_trends": [
+          "station maze",
+          "first-time transfer anxiety",
+          "route confidence gap"
+        ],
+        "source_topics": [
+          "Tokyo transport anxiety"
+        ],
+        "status": "clustered"
+      },
+      {
+        "canonical_pain_point": "Tokyo rainy day itinerary anxiety",
+        "cluster_id": "trend_cluster_tokyo_rainy_day",
+        "cluster_name": "Tokyo rainy day travel friction",
+        "cluster_type": "cross_platform_trend",
+        "cross_platform": true,
+        "emotion_tags": [
+          "uncertainty",
+          "planning anxiety",
+          "weather frustration"
+        ],
+        "frequency": 4,
+        "max_emotion_score": 0.84,
+        "next_action": "Generate rain-safe Tokyo route strategy for JAG-LAB review.",
+        "platforms": [
+          "Reddit",
+          "TikTok",
+          "YouTube",
+          "Instagram"
+        ],
+        "similar_questions": [
+          "What should I do in Tokyo when it rains all day?",
+          "Tokyo rainy day itinerary for first-time visitors",
+          "Is Shibuya still worth visiting during heavy rain?"
+        ],
+        "similar_trends": [
+          "indoor Tokyo itinerary",
+          "rain-safe food and shopping route",
+          "first-time visitor weather anxiety"
+        ],
+        "source_topics": [
+          "Tokyo rain itinerary",
+          "Tokyo indoor plan",
+          "rain in Tokyo trip"
+        ],
+        "status": "clustered"
+      },
+      {
+        "canonical_pain_point": "Air fryer cleaning friction",
+        "cluster_id": "trend_cluster_air_fryer_cleaning_friction",
+        "cluster_name": "Air fryer cleaning friction",
+        "cluster_type": "high_emotion_cluster",
+        "cross_platform": false,
+        "emotion_tags": [
+          "uncertainty",
+          "high_emotion",
+          "frustration"
+        ],
+        "frequency": 1,
+        "max_emotion_score": 0.78,
+        "next_action": "Validate pain strength before generating a reply branch.",
+        "platforms": [
+          "TikTok"
+        ],
+        "similar_questions": [
+          "Air fryer cleaning is frustrating, grease is everywhere."
+        ],
+        "similar_trends": [
+          "grease cleanup",
+          "post-cooking maintenance",
+          "kitchen appliance frustration"
+        ],
+        "source_topics": [
+          "Air fryer cleaning friction"
+        ],
+        "status": "clustered"
+      },
+      {
+        "canonical_pain_point": "Vacuum performance anxiety",
+        "cluster_id": "trend_cluster_vacuum_performance_anxiety",
+        "cluster_name": "Vacuum performance anxiety",
+        "cluster_type": "single_platform_signal",
+        "cross_platform": false,
+        "emotion_tags": [
+          "uncertainty",
+          "frustration"
+        ],
+        "frequency": 1,
+        "max_emotion_score": 0.72,
+        "next_action": "Keep monitoring until repeated across more sources.",
+        "platforms": [
+          "YouTube"
+        ],
+        "similar_questions": [
+          "Vacuum lost suction and dust is still there after cleaning."
+        ],
+        "similar_trends": [
+          "lost suction",
+          "cleaning performance doubt",
+          "maintenance confusion"
+        ],
+        "source_topics": [
+          "Vacuum performance anxiety"
+        ],
+        "status": "clustered"
+      }
+    ]
+  },
+  "trendClusters": [
+    {
+      "canonical_pain_point": "Tokyo transport anxiety",
+      "cluster_id": "trend_cluster_tokyo_transport_anxiety",
+      "cluster_name": "Tokyo transport anxiety",
+      "cluster_type": "cross_platform_high_emotion",
+      "cross_platform": true,
+      "emotion_tags": [
+        "uncertainty",
+        "high_emotion",
+        "travel anxiety"
+      ],
+      "frequency": 4,
+      "max_emotion_score": 0.9,
+      "next_action": "Prioritize answer branch and short-form content strategy for human review.",
+      "platforms": [
+        "Manual",
+        "RSS",
+        "Reddit",
+        "Threads"
+      ],
+      "similar_questions": [
+        "Tokyo subway confusing for first time Japan trip. I am worried I will get lost.",
+        "东京地铁复杂，第一次去日本很怕换乘错。",
+        "Lost in station at Shinjuku, cannot find platform and panic."
+      ],
+      "similar_trends": [
+        "station maze",
+        "first-time transfer anxiety",
+        "route confidence gap"
+      ],
+      "source_topics": [
+        "Tokyo transport anxiety"
+      ],
+      "status": "clustered"
+    },
+    {
+      "canonical_pain_point": "Tokyo rainy day itinerary anxiety",
+      "cluster_id": "trend_cluster_tokyo_rainy_day",
+      "cluster_name": "Tokyo rainy day travel friction",
+      "cluster_type": "cross_platform_trend",
+      "cross_platform": true,
+      "emotion_tags": [
+        "uncertainty",
+        "planning anxiety",
+        "weather frustration"
+      ],
+      "frequency": 4,
+      "max_emotion_score": 0.84,
+      "next_action": "Generate rain-safe Tokyo route strategy for JAG-LAB review.",
+      "platforms": [
+        "Reddit",
+        "TikTok",
+        "YouTube",
+        "Instagram"
+      ],
+      "similar_questions": [
+        "What should I do in Tokyo when it rains all day?",
+        "Tokyo rainy day itinerary for first-time visitors",
+        "Is Shibuya still worth visiting during heavy rain?"
+      ],
+      "similar_trends": [
+        "indoor Tokyo itinerary",
+        "rain-safe food and shopping route",
+        "first-time visitor weather anxiety"
+      ],
+      "source_topics": [
+        "Tokyo rain itinerary",
+        "Tokyo indoor plan",
+        "rain in Tokyo trip"
+      ],
+      "status": "clustered"
+    },
+    {
+      "canonical_pain_point": "Air fryer cleaning friction",
+      "cluster_id": "trend_cluster_air_fryer_cleaning_friction",
+      "cluster_name": "Air fryer cleaning friction",
+      "cluster_type": "high_emotion_cluster",
+      "cross_platform": false,
+      "emotion_tags": [
+        "uncertainty",
+        "high_emotion",
+        "frustration"
+      ],
+      "frequency": 1,
+      "max_emotion_score": 0.78,
+      "next_action": "Validate pain strength before generating a reply branch.",
+      "platforms": [
+        "TikTok"
+      ],
+      "similar_questions": [
+        "Air fryer cleaning is frustrating, grease is everywhere."
+      ],
+      "similar_trends": [
+        "grease cleanup",
+        "post-cooking maintenance",
+        "kitchen appliance frustration"
+      ],
+      "source_topics": [
+        "Air fryer cleaning friction"
+      ],
+      "status": "clustered"
+    },
+    {
+      "canonical_pain_point": "Vacuum performance anxiety",
+      "cluster_id": "trend_cluster_vacuum_performance_anxiety",
+      "cluster_name": "Vacuum performance anxiety",
+      "cluster_type": "single_platform_signal",
+      "cross_platform": false,
+      "emotion_tags": [
+        "uncertainty",
+        "frustration"
+      ],
+      "frequency": 1,
+      "max_emotion_score": 0.72,
+      "next_action": "Keep monitoring until repeated across more sources.",
+      "platforms": [
+        "YouTube"
+      ],
+      "similar_questions": [
+        "Vacuum lost suction and dust is still there after cleaning."
+      ],
+      "similar_trends": [
+        "lost suction",
+        "cleaning performance doubt",
+        "maintenance confusion"
+      ],
+      "source_topics": [
+        "Vacuum performance anxiety"
+      ],
+      "status": "clustered"
     }
   ],
   "warRoomFeed": [

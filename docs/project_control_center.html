@@ -525,28 +525,28 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.62",
+    "controlCenterVersion": "0.1.63",
     "lastUpdated": "2026-05-22",
     "currentPhase": "Scout Intelligence / AI Scout Network",
-    "currentRound": "ROUND-SCOUT-003",
-    "nextRound": "ROUND-SCOUT-004 Trend Clustering",
-    "overallProgress": 97,
-    "activeFocus": "Topic Discovery Engine: AGOS discovers frequent, repeated, emerging, and high-emotion questions from RSS, manual import, JSON, CSV, and local text sources."
+    "currentRound": "ROUND-SCOUT-004",
+    "nextRound": "ROUND-SCOUT-005 Heat Detection",
+    "overallProgress": 98,
+    "activeFocus": "Trend Clustering Engine: AGOS clusters similar questions, similar trends, cross-platform discussions, and similar emotions into local trend clusters."
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.62 Add topic discovery engine",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.62",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.62",
-    "note": "Topic Discovery Engine mapped to GitHub tag agos-v0.1.62. Discovery is local-only; no external platform automation is enabled."
+    "latestCommit": "agos-v0.1.63 Add trend clustering engine",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.63",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.63",
+    "note": "Trend Clustering Engine mapped to GitHub tag agos-v0.1.63. Clustering is local-only; no external platform automation is enabled."
   },
   "metrics": {
     "roundsPlanned": 101,
-    "roundsCompleted": 54,
+    "roundsCompleted": 55,
     "roundsInProgress": 0,
-    "reportsEmbedded": 66
+    "reportsEmbedded": 67
   },
   "modules": [
     {
@@ -680,6 +680,27 @@
     }
   ],
   "reports": [
+    {
+      "id": "ROUND-SCOUT-004",
+      "title": "AGOS Trend Clustering Engine",
+      "date": "2026-05-22",
+      "status": "done",
+      "summary": "Added Trend Clustering Engine to group similar questions, similar trends, cross-platform discussions, and similar emotions into local trend clusters.",
+      "files": [
+        "services/trend_clustering_engine.py",
+        "services/runtime_ui_bridge.py",
+        "docs/project_control_center.html",
+        "tests/trend_clustering_smoke_test.py",
+        "runtime/trend_clusters/TREND_CLUSTERING_REPORT.json",
+        "runtime/task_results/ROUND-SCOUT-004/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "python -m compileall services tests passed",
+        "python tests\\trend_clustering_smoke_test.py passed",
+        "python tests\\war_room_runtime_ui_smoke_test.py passed",
+        "Browser check: Trend Clustering Engine shows Tokyo transport and Tokyo rainy day cross-platform clusters"
+      ]
+    },
     {
       "id": "ROUND-SCOUT-003",
       "title": "AGOS Topic Discovery Engine",
@@ -1993,6 +2014,15 @@
   ],
   "versions": [
     {
+      "id": "agos_control_center_v0.1.63",
+      "label": "v0.1.63 - Trend Clustering Engine",
+      "date": "2026-05-22",
+      "gitRef": "agos-v0.1.63",
+      "location": "docs/project_control_center.html",
+      "notes": "ROUND-SCOUT-004 completed locally and mapped to GitHub tag agos-v0.1.63. War Room now shows Trend Clustering Engine.",
+      "snapshot": "AGOS Project Control Center v0.1.63\nRound: ROUND-SCOUT-004 completed\nGit: agos-v0.1.63\nStatus: Trend Clustering Engine added\nNo external platform automation enabled.\n"
+    },
+    {
       "id": "agos_control_center_v0.1.62",
       "label": "v0.1.62 - Topic Discovery Engine",
       "date": "2026-05-22",
@@ -3234,16 +3264,6 @@
       "summary": "Planned blueprint round for Phase C / AI WAR ROOM. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
     },
     {
-      "id": "ROUND-SCOUT-004",
-      "phase": "Phase D / AI SCOUT NETWORK",
-      "name": "Trend Clustering",
-      "status": "planned",
-      "progress": 0,
-      "deliverable": "Cluster discovered topics into trends and opportunity groups",
-      "report": "runtime/task_results/ROUND-SCOUT-004/ROUND_SUMMARY.md",
-      "summary": "Planned blueprint round for Phase D / AI SCOUT NETWORK. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
-    },
-    {
       "id": "ROUND-SCOUT-005",
       "phase": "Phase D / AI SCOUT NETWORK",
       "name": "Heat Detection",
@@ -3662,6 +3682,16 @@
       "deliverable": "Topic Discovery Engine for RSS, manual, JSON, CSV, and local text sources.",
       "report": "runtime/task_results/ROUND-SCOUT-003/ROUND_SUMMARY.md",
       "summary": "AGOS can now discover high-frequency, repeated, emerging, and high-emotion question topics from local source inputs."
+    },
+    {
+      "id": "ROUND-SCOUT-004",
+      "phase": "SCOUT_INTELLIGENCE / AI_SCOUT_NETWORK",
+      "name": "AGOS_TREND_CLUSTERING_ENGINE",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "Trend Clustering Engine for similar questions, cross-platform trends, and similar emotion clusters.",
+      "report": "runtime/task_results/ROUND-SCOUT-004/ROUND_SUMMARY.md",
+      "summary": "AGOS can now cluster local cross-platform question signals into trend clusters such as Tokyo transport anxiety and Tokyo rainy day travel friction."
     }
   ],
   "realGrowthVerification": {
@@ -3853,29 +3883,15 @@
     "noAutoPosting": true,
     "noAutoRegistration": true,
     "systemControl": {
-      "status": "RUNNING",
-      "statusEnum": [
-        "idle",
-        "scouting",
-        "analyzing",
-        "classifying",
-        "learning",
-        "planning",
-        "paused",
-        "stopped",
-        "needs_human_review",
-        "needs_code_check"
-      ],
-      "currentMode": "AI Runtime OS / 模拟运行态",
-      "currentWorkspace": "jag_app_growth",
-      "currentIndustryPack": "Travel Pack / 旅行行业包",
-      "currentCycle": "CYCLE-001",
-      "lastRunTime": "2026-05-22 12:42 Asia/Tokyo",
       "buttons": [
         "启动",
         "停止"
       ],
-      "controlNote": "本轮只重构 Runtime UI；启动/停止按钮为前端状态模拟，不会触发真实 daemon、平台 API、发帖或回复。"
+      "currentCycle": "JAG-LAB-CYCLE-0001",
+      "currentIndustryPack": "Travel Pack / Lab",
+      "currentWorkspace": "JAG-LAB",
+      "lastRunTime": "2026-05-22T10:06:01+00:00",
+      "status": "STOPPED"
     },
     "jagWorkspace": {
       "product": "Japan AI Guide App",
@@ -4476,8 +4492,8 @@
       }
     ],
     "runtimeUiVersion": "runtime-os-v1",
-    "runtimeStatus": "RUNNING",
-    "current_runtime_stage": "Analyze",
+    "runtimeStatus": "STOPPED",
+    "current_runtime_stage": "Deposit",
     "runtimeNode": "Analyze",
     "runtimeStartedAt": "2026-05-22 12:00 Asia/Tokyo",
     "runtimeElapsed": "00:42:18",
@@ -4486,241 +4502,370 @@
       {
         "id": "Scout",
         "label": "Scout",
-        "status": "done",
-        "note": "发现问题入口"
+        "note": "发现候选问题",
+        "status": "done"
       },
       {
         "id": "Collect",
         "label": "Collect",
-        "status": "done",
-        "note": "手动录入/导入候选问题"
+        "note": "收集问题与来源",
+        "status": "done"
       },
       {
         "id": "Analyze",
         "label": "Analyze",
-        "status": "current",
-        "note": "当前分析痛点强度"
+        "note": "分析痛点和情绪",
+        "status": "done"
       },
       {
         "id": "Classify",
         "label": "Classify",
-        "status": "waiting",
-        "note": "等待分类写入库"
+        "note": "分类到库",
+        "status": "done"
       },
       {
         "id": "Prioritize",
         "label": "Prioritize",
-        "status": "waiting",
-        "note": "等待优先级评分"
+        "note": "排序高价值机会",
+        "status": "done"
       },
       {
         "id": "Strategy",
         "label": "Strategy",
-        "status": "waiting",
-        "note": "等待策略形成"
+        "note": "生成策略",
+        "status": "done"
       },
       {
         "id": "Generate",
         "label": "Generate",
-        "status": "waiting",
-        "note": "等待回答/内容分支"
+        "note": "生成回复/内容",
+        "status": "done"
       },
       {
         "id": "Human Review",
         "label": "Human Review",
-        "status": "human_review",
-        "note": "人工审核 Gate"
+        "note": "等待人工 Gate",
+        "status": "done"
       },
       {
         "id": "Learn",
         "label": "Learn",
-        "status": "waiting",
-        "note": "等待真实反馈"
+        "note": "学习反馈",
+        "status": "done"
       },
       {
         "id": "Deposit",
         "label": "Deposit",
-        "status": "waiting",
-        "note": "沉淀到记忆库"
+        "note": "沉淀记忆",
+        "status": "current"
       }
     ],
     "warRoomFeed": [
       {
-        "time": "12:40",
-        "type": "最新发现的问题",
-        "sourcePlatform": "Manual Import",
-        "country": "Japan",
-        "language": "EN",
-        "audience": "首次赴日游客",
-        "emotion": "焦虑",
-        "status": "new_signal",
-        "aiAction": "进入 Analyze，检测交通迷路痛点"
-      },
-      {
-        "time": "12:36",
-        "type": "最新高价值痛点",
-        "sourcePlatform": "Question Inbox",
-        "country": "Japan",
-        "language": "EN",
-        "audience": "自由行用户",
-        "emotion": "不确定",
-        "status": "high_value",
-        "aiAction": "标记为路线救援主题"
-      },
-      {
-        "time": "12:31",
-        "type": "最新趋势",
-        "sourcePlatform": "Market Seeds",
-        "country": "Korea/Taiwan",
-        "language": "KO/ZH-TW",
-        "audience": "年轻游客",
-        "emotion": "期待",
-        "status": "watching",
-        "aiAction": "准备本地化语气分支"
-      },
-      {
-        "time": "12:27",
-        "type": "最新失败案例",
-        "sourcePlatform": "Reddit Plan",
-        "country": "US",
-        "language": "EN",
-        "audience": "论坛用户",
-        "emotion": "警惕",
-        "status": "risk",
-        "aiAction": "禁止营销式 CTA，等待人工审核"
-      },
-      {
-        "time": "12:22",
-        "type": "最新学习事件",
-        "sourcePlatform": "Learning Events",
-        "country": "Japan",
-        "language": "EN",
-        "audience": "行程规划者",
-        "emotion": "求稳",
-        "status": "learn_pending",
-        "aiAction": "样例不进入真实效果学习"
-      },
-      {
-        "time": "12:18",
-        "type": "最新纠偏建议",
-        "sourcePlatform": "Correction Center",
-        "country": "All",
-        "language": "Multi",
-        "audience": "All",
+        "aiAction": "Runtime stopped locally",
+        "audience": "JAG-LAB",
+        "country": "local",
         "emotion": "n/a",
-        "status": "needs_human_review",
-        "aiAction": "检查是否过度营销"
+        "language": "n/a",
+        "sourcePlatform": "Local Runtime",
+        "status": "stopped",
+        "time": "08:36:57",
+        "type": "stop",
+        "why": "Runtime stopped locally"
+      },
+      {
+        "aiAction": "TikTok emotional spam pattern is too aggressive and should trigger platform drift review.",
+        "audience": "JAG-LAB",
+        "country": "local",
+        "emotion": "n/a",
+        "language": "n/a",
+        "sourcePlatform": "Local Runtime",
+        "status": "stopped",
+        "time": "08:37:06",
+        "type": "human_correction",
+        "why": "TikTok emotional spam pattern is too aggressive and should trigger platform drift review."
+      },
+      {
+        "aiAction": "Runtime initialized",
+        "audience": "JAG-LAB",
+        "country": "local",
+        "emotion": "n/a",
+        "language": "n/a",
+        "sourcePlatform": "Local Runtime",
+        "status": "stopped",
+        "time": "08:38:56",
+        "type": "initialize",
+        "why": "Runtime initialized"
+      },
+      {
+        "aiAction": "Runtime entered running state",
+        "audience": "JAG-LAB",
+        "country": "local",
+        "emotion": "n/a",
+        "language": "n/a",
+        "sourcePlatform": "Local Runtime",
+        "status": "stopped",
+        "time": "08:38:56",
+        "type": "start",
+        "why": "Runtime entered running state"
+      },
+      {
+        "aiAction": "发现问题包含明确迷路焦虑，适合进入训练沙盒。",
+        "audience": "JAG-LAB",
+        "country": "local",
+        "emotion": "n/a",
+        "language": "n/a",
+        "sourcePlatform": "Local Runtime",
+        "status": "stopped",
+        "time": "08:38:56",
+        "type": "Scout",
+        "why": "发现问题包含明确迷路焦虑，适合进入训练沙盒。"
+      },
+      {
+        "aiAction": "问题带有市场、平台和痛点字段，可以用于独立 JAG-LAB 训练。",
+        "audience": "JAG-LAB",
+        "country": "local",
+        "emotion": "n/a",
+        "language": "n/a",
+        "sourcePlatform": "Local Runtime",
+        "status": "stopped",
+        "time": "08:38:56",
+        "type": "Collect",
+        "why": "问题带有市场、平台和痛点字段，可以用于独立 JAG-LAB 训练。"
+      },
+      {
+        "aiAction": "痛点强度和回复潜力达到训练阈值。",
+        "audience": "JAG-LAB",
+        "country": "local",
+        "emotion": "n/a",
+        "language": "n/a",
+        "sourcePlatform": "Local Runtime",
+        "status": "stopped",
+        "time": "08:38:56",
+        "type": "Analyze",
+        "why": "痛点强度和回复潜力达到训练阈值。"
+      },
+      {
+        "aiAction": "问题应归入交通焦虑、首次旅行和路线救援。",
+        "audience": "JAG-LAB",
+        "country": "local",
+        "emotion": "n/a",
+        "language": "n/a",
+        "sourcePlatform": "Local Runtime",
+        "status": "stopped",
+        "time": "08:38:56",
+        "type": "Classify",
+        "why": "问题应归入交通焦虑、首次旅行和路线救援。"
+      },
+      {
+        "aiAction": "Opportunity verdict=high_value，不是所有问题都会自动高价值。",
+        "audience": "JAG-LAB",
+        "country": "local",
+        "emotion": "n/a",
+        "language": "n/a",
+        "sourcePlatform": "Local Runtime",
+        "status": "stopped",
+        "time": "08:38:56",
+        "type": "Prioritize",
+        "why": "Opportunity verdict=high_value，不是所有问题都会自动高价值。"
+      },
+      {
+        "aiAction": "策略选择救援式回答，因为用户处于旅途中不确定状态。",
+        "audience": "JAG-LAB",
+        "country": "local",
+        "emotion": "n/a",
+        "language": "n/a",
+        "sourcePlatform": "Local Runtime",
+        "status": "stopped",
+        "time": "08:38:56",
+        "type": "Strategy",
+        "why": "策略选择救援式回答，因为用户处于旅途中不确定状态。"
+      },
+      {
+        "aiAction": "回答生成遵循平台人格，Reddit 深度真实，TikTok 短 Hook，X 快速观点。",
+        "audience": "JAG-LAB",
+        "country": "local",
+        "emotion": "n/a",
+        "language": "n/a",
+        "sourcePlatform": "Local Runtime",
+        "status": "stopped",
+        "time": "08:38:56",
+        "type": "Generate",
+        "why": "回答生成遵循平台人格，Reddit 深度真实，TikTok 短 Hook，X 快速观点。"
+      },
+      {
+        "aiAction": "任何回答、策略和学习结论必须先进入人工 Gate。",
+        "audience": "JAG-LAB",
+        "country": "local",
+        "emotion": "n/a",
+        "language": "n/a",
+        "sourcePlatform": "Local Runtime",
+        "status": "stopped",
+        "time": "08:38:56",
+        "type": "Human Review",
+        "why": "任何回答、策略和学习结论必须先进入人工 Gate。"
+      },
+      {
+        "aiAction": "只学习被批准的方向，并记录错误学习被拒绝的原因。",
+        "audience": "JAG-LAB",
+        "country": "local",
+        "emotion": "n/a",
+        "language": "n/a",
+        "sourcePlatform": "Local Runtime",
+        "status": "stopped",
+        "time": "08:38:56",
+        "type": "Learn",
+        "why": "只学习被批准的方向，并记录错误学习被拒绝的原因。"
+      },
+      {
+        "aiAction": "沉淀 Best Answer、Best Hook、Failed Strategy 等 Runtime Intelligence。",
+        "audience": "JAG-LAB",
+        "country": "local",
+        "emotion": "n/a",
+        "language": "n/a",
+        "sourcePlatform": "Local Runtime",
+        "status": "stopped",
+        "time": "08:38:56",
+        "type": "Deposit",
+        "why": "沉淀 Best Answer、Best Hook、Failed Strategy 等 Runtime Intelligence。"
+      },
+      {
+        "aiAction": "This is normal chatter, not a high-value travel pain point.",
+        "audience": "JAG-LAB",
+        "country": "local",
+        "emotion": "n/a",
+        "language": "n/a",
+        "sourcePlatform": "Local Runtime",
+        "status": "stopped",
+        "time": "08:38:56",
+        "type": "human_correction",
+        "why": "This is normal chatter, not a high-value travel pain point."
+      },
+      {
+        "aiAction": "review_0011",
+        "audience": "JAG-LAB",
+        "country": "local",
+        "emotion": "n/a",
+        "language": "n/a",
+        "sourcePlatform": "Local Runtime",
+        "status": "stopped",
+        "time": "08:38:56",
+        "type": "human_review_modify",
+        "why": "review_0011"
+      },
+      {
+        "aiAction": "Runtime stopped locally",
+        "audience": "JAG-LAB",
+        "country": "local",
+        "emotion": "n/a",
+        "language": "n/a",
+        "sourcePlatform": "Local Runtime",
+        "status": "stopped",
+        "time": "08:38:56",
+        "type": "stop",
+        "why": "Runtime stopped locally"
+      },
+      {
+        "aiAction": "Prefer a real, credible, guide-like and non-promotional personality.",
+        "audience": "JAG-LAB",
+        "country": "local",
+        "emotion": "n/a",
+        "language": "n/a",
+        "sourcePlatform": "Local Runtime",
+        "status": "stopped",
+        "time": "09:06:52",
+        "type": "human_personality_approve",
+        "why": "Prefer a real, credible, guide-like and non-promotional personality."
+      },
+      {
+        "aiAction": "Prefer a real, credible, guide-like and non-promotional personality.",
+        "audience": "JAG-LAB",
+        "country": "local",
+        "emotion": "n/a",
+        "language": "n/a",
+        "sourcePlatform": "Local Runtime",
+        "status": "stopped",
+        "time": "09:06:54",
+        "type": "human_personality_reject",
+        "why": "Prefer a real, credible, guide-like and non-promotional personality."
+      },
+      {
+        "aiAction": "Prefer a real, credible, guide-like and non-promotional personality.",
+        "audience": "JAG-LAB",
+        "country": "local",
+        "emotion": "n/a",
+        "language": "n/a",
+        "sourcePlatform": "Local Runtime",
+        "status": "stopped",
+        "time": "09:06:56",
+        "type": "human_personality_modify",
+        "why": "Prefer a real, credible, guide-like and non-promotional personality."
       }
     ],
     "runtimeWorkspace": {
-      "workspace": "jag_app_growth",
-      "industryPack": "Travel Pack / 旅行行业包",
-      "targetMarket": "Japan first",
+      "focusPainPoint": "human_personality_modify",
       "focusPlatforms": [
-        "TikTok",
-        "Instagram",
-        "YouTube",
-        "Reddit",
-        "SEO"
+        "Local Runtime"
       ],
-      "focusPainPoint": "日本车站迷路与临时行程救援",
-      "todayGoal": "完成第一批真实问题人工录入与回答分支审核",
-      "riskStatus": "needs_review",
-      "workspaceStatus": "learning"
+      "industryPack": "Travel Pack / Lab",
+      "riskStatus": "stopped",
+      "targetMarket": "local",
+      "todayGoal": "Run local Runtime Engine safely.",
+      "workspace": "JAG-LAB",
+      "workspaceStatus": "stopped"
     },
-    "socialRuntimeMatrix": [
-      {
-        "platform": "TikTok",
-        "status": "pending_setup",
-        "today": "Tokyo transport hook",
-        "reply": "waiting",
-        "risk": "low",
-        "review": "waiting"
-      },
-      {
-        "platform": "Instagram",
-        "status": "pending_setup",
-        "today": "Itinerary confidence carousel",
-        "reply": "waiting",
-        "risk": "low",
-        "review": "waiting"
-      },
-      {
-        "platform": "X",
-        "status": "pending_setup",
-        "today": "Japan mistake thread",
-        "reply": "waiting",
-        "risk": "medium",
-        "review": "waiting"
-      },
-      {
-        "platform": "YouTube",
-        "status": "pending_setup",
-        "today": "AI travel companion outline",
-        "reply": "n/a",
-        "risk": "low",
-        "review": "waiting"
-      },
-      {
-        "platform": "Reddit",
-        "status": "pending_setup",
-        "today": "No promo; question pattern only",
-        "reply": "blocked",
-        "risk": "high",
-        "review": "required"
-      },
-      {
-        "platform": "Threads",
-        "status": "pending_setup",
-        "today": "Short insight draft",
-        "reply": "waiting",
-        "risk": "low",
-        "review": "waiting"
-      },
-      {
-        "platform": "SEO / Website",
-        "status": "pending_setup",
-        "today": "Pain-point landing outline",
-        "reply": "n/a",
-        "risk": "low",
-        "review": "waiting"
-      }
-    ],
+    "socialRuntimeMatrix": [],
     "correctionCenter": [
       {
-        "issue": "AGOS 是否正在学歪",
-        "status": "needs_human_review",
-        "severity": "high",
-        "signal": "样例结论不能当真实反馈",
-        "action": "人工确认后才进入 Learning Events"
+        "correction_id": "correction_2026-05-22T08-38-56+00-00",
+        "created_at": "2026-05-22T08:38:56+00:00",
+        "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+        "rejected_learning": {
+          "bad_style": "short promotional CTA",
+          "platform": "reddit"
+        },
+        "status": "rejected",
+        "target_id": "jag_lab_tokyo_transport_001",
+        "target_type": "platform_style"
       },
       {
-        "issue": "Reply Tone Drift",
-        "status": "needs_human_review",
+        "action": "Correction recorded; do not learn this branch as best answer.",
+        "correction_id": "correction_2026-05-22T08-38-56+00-00",
+        "issue": "Human Correction: opportunity",
         "severity": "high",
-        "signal": "Reddit 语气可能过度营销",
-        "action": "移除 CTA，保留帮助型回答"
+        "signal": "This is normal chatter, not a high-value travel pain point.",
+        "status": "needs_human_review",
+        "target_id": "OPP-001"
       },
       {
-        "issue": "Repeated Hook Pattern",
-        "status": "needs_analysis",
+        "action": "Send to human review before learning or publishing.",
+        "created_at": "2026-05-22T08:37:06+00:00",
+        "drift_id": "drift_2026-05-22T08-37-06+00-00_1",
+        "issue": "platform personality drift",
         "severity": "medium",
-        "signal": "多个平台重复旅行焦虑 Hook",
-        "action": "下一轮收集更多问题源"
+        "signal": "Detected platform personality drift",
+        "status": "needs_human_review"
       },
       {
-        "issue": "Cross Workspace Pollution Risk",
-        "status": "needs_code_check",
+        "action": "Approve, reject, or modify before continuing.",
+        "issue": "Human Review Gate",
         "severity": "high",
-        "signal": "必须确认 jag_app_growth 不污染其他 workspace",
-        "action": "运行隔离验证"
+        "signal": "0 pending review items",
+        "status": "clear"
       },
       {
-        "issue": "Runtime Evidence Gap",
-        "status": "needs_runtime_validation",
-        "severity": "high",
-        "signal": "当前没有真实运行反馈",
-        "action": "下一轮手动导入真实问题"
+        "action": "Run runtime smoke tests when errors appear.",
+        "issue": "Code Check",
+        "severity": "medium",
+        "signal": "no current error",
+        "status": "needs_code_check"
+      },
+      {
+        "action": "Validate locally before any external integration.",
+        "issue": "Runtime Validation",
+        "severity": "medium",
+        "signal": "Local runtime only; no platform automation.",
+        "status": "needs_runtime_validation"
       }
     ],
     "strategyPersonality": {
@@ -4774,7 +4919,7 @@
           ],
           "cadence": "Low frequency, high relevance, reply only when the question is a real pain point.",
           "content_shape": "Long-form answer with context, tradeoffs, and practical steps.",
-          "created_at": "2026-05-22T09:19:50+00:00",
+          "created_at": "2026-05-22T10:06:01+00:00",
           "current_pain_point": "Tokyo transport anxiety",
           "human_review_status": "needs_human_review",
           "industry_pack": "Travel Pack / Lab",
@@ -4802,7 +4947,7 @@
           ],
           "cadence": "Higher frequency experiments with tight hook variation and fast feedback.",
           "content_shape": "Short hook, one visible pain scene, one practical payoff, one soft save CTA.",
-          "created_at": "2026-05-22T09:19:50+00:00",
+          "created_at": "2026-05-22T10:06:01+00:00",
           "current_pain_point": "Tokyo transport anxiety",
           "human_review_status": "needs_human_review",
           "industry_pack": "Travel Pack / Lab",
@@ -4830,7 +4975,7 @@
           ],
           "cadence": "Timely posting around trend windows and question bursts.",
           "content_shape": "One strong claim, two supporting details, one practical takeaway or thread.",
-          "created_at": "2026-05-22T09:19:50+00:00",
+          "created_at": "2026-05-22T10:06:01+00:00",
           "current_pain_point": "Tokyo transport anxiety",
           "human_review_status": "needs_human_review",
           "industry_pack": "Travel Pack / Lab",
@@ -4858,7 +5003,7 @@
           ],
           "cadence": "Lower frequency evergreen videos supported by Shorts extracted from high-friction moments.",
           "content_shape": "Searchable title, structured chapters, visual walkthrough, recap, and next-step CTA.",
-          "created_at": "2026-05-22T09:19:50+00:00",
+          "created_at": "2026-05-22T10:06:01+00:00",
           "current_pain_point": "Tokyo transport anxiety",
           "human_review_status": "needs_human_review",
           "industry_pack": "Travel Pack / Lab",
@@ -4878,7 +5023,7 @@
           "workspace": "JAG-LAB"
         }
       ],
-      "updated_at": "2026-05-22T09:19:50+00:00",
+      "updated_at": "2026-05-22T10:06:01+00:00",
       "workspace": "JAG-LAB"
     },
     "strategyPersonalityFeed": [
@@ -4916,7 +5061,7 @@
       }
     ],
     "personalityIsolationReport": {
-      "created_at": "2026-05-22T09:25:35+00:00",
+      "created_at": "2026-05-22T10:06:01+00:00",
       "isolationMatrix": [
         {
           "allowed_traits": [
@@ -5253,7 +5398,7 @@
       }
     ],
     "personalityReviewSession": {
-      "created_at": "2026-05-22T09:30:10+00:00",
+      "created_at": "2026-05-22T10:06:01+00:00",
       "driftEventsReviewed": 6,
       "personalityTrend": [
         {
@@ -5408,7 +5553,7 @@
       }
     ],
     "strategyEvolution": {
-      "created_at": "2026-05-22T09:34:27+00:00",
+      "created_at": "2026-05-22T10:06:01+00:00",
       "evolutionFeed": [
         {
           "classification": "long_term_growth",
@@ -5597,7 +5742,7 @@
           }
         ]
       },
-      "created_at": "2026-05-22T09:38:40+00:00",
+      "created_at": "2026-05-22T10:06:01+00:00",
       "dashboard_id": "RUNTIME_TRAINER_DASHBOARD",
       "driftAlerts": [
         {
@@ -5798,7 +5943,7 @@
           "status": "passed"
         }
       ],
-      "created_at": "2026-05-22T09:38:40+00:00",
+      "created_at": "2026-05-22T10:06:01+00:00",
       "marketIsolationStatus": "clear",
       "personalityEvolutionSummary": "AGOS has formed a stable operating personality with workspace, platform, market, and strategy layers.",
       "platformPersonalityCount": 4,
@@ -6194,7 +6339,7 @@
           "workspace": "PHILIPS-LAB"
         }
       ],
-      "created_at": "2026-05-22T09:47:40+00:00",
+      "created_at": "2026-05-22T10:06:01+00:00",
       "industryPackPatrolGroups": {
         "Home Appliance Pack": [
           {
@@ -7267,7 +7412,7 @@
         "Tokyo transport anxiety",
         "Vacuum performance anxiety"
       ],
-      "created_at": "2026-05-22T09:52:48+00:00",
+      "created_at": "2026-05-22T10:06:01+00:00",
       "keywordExpansions": [
         {
           "canonical_pain_point": "Air fryer cleaning friction",
@@ -8020,7 +8165,7 @@
       }
     ],
     "topicDiscovery": {
-      "created_at": "2026-05-22T09:57:42+00:00",
+      "created_at": "2026-05-22T10:06:01+00:00",
       "discoveredTopics": [
         {
           "canonical_pain_point": "Tokyo transport anxiety",
@@ -8240,6 +8385,2194 @@
         "status": "discovered",
         "topic_id": "topic_vacuum_performance_anxiety"
       }
+    ],
+    "correctionHistory": [
+      {
+        "affected_runtime_stage": "Human Review",
+        "correction_id": "correction_2026-05-22T08-35-14+00-00",
+        "correction_reason": "This is normal chatter, not a high-value travel pain point.",
+        "correction_type": "opportunity",
+        "created_at": "2026-05-22T08:35:14+00:00",
+        "industry_pack": "Travel Pack / Lab",
+        "status": "rejected",
+        "target_id": "OPP-001",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "affected_runtime_stage": "Human Review",
+        "correction_id": "correction_2026-05-22T08-36-12+00-00",
+        "correction_reason": "TikTok emotional spam pattern is too aggressive and should not become the best style.",
+        "correction_type": "错误机会判断",
+        "created_at": "2026-05-22T08:36:12+00:00",
+        "industry_pack": "Travel Pack / Lab",
+        "status": "rejected",
+        "target_id": "manual_1779438972656",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "affected_runtime_stage": "Human Review",
+        "correction_id": "correction_2026-05-22T08-36-57+00-00",
+        "correction_reason": "This is normal chatter, not a high-value travel pain point.",
+        "correction_type": "opportunity",
+        "created_at": "2026-05-22T08:36:57+00:00",
+        "industry_pack": "Travel Pack / Lab",
+        "status": "rejected",
+        "target_id": "OPP-001",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "affected_runtime_stage": "Generate",
+        "correction_id": "correction_2026-05-22T08-37-06+00-00",
+        "correction_reason": "TikTok emotional spam pattern is too aggressive and should trigger platform drift review.",
+        "correction_type": "错误平台风格",
+        "created_at": "2026-05-22T08:37:06+00:00",
+        "industry_pack": "Travel Pack / Lab",
+        "status": "rejected",
+        "target_id": "UI-DRIFT-VALIDATION",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "affected_runtime_stage": "Human Review",
+        "correction_id": "correction_2026-05-22T08-38-56+00-00",
+        "correction_reason": "This is normal chatter, not a high-value travel pain point.",
+        "correction_type": "opportunity",
+        "created_at": "2026-05-22T08:38:56+00:00",
+        "industry_pack": "Travel Pack / Lab",
+        "status": "rejected",
+        "target_id": "OPP-001",
+        "workspace": "JAG-LAB"
+      }
+    ],
+    "humanFeedbackSummary": {
+      "correctionHistory": [
+        {
+          "affected_runtime_stage": "Human Review",
+          "correction_id": "correction_2026-05-22T08-35-14+00-00",
+          "correction_reason": "This is normal chatter, not a high-value travel pain point.",
+          "correction_type": "opportunity",
+          "created_at": "2026-05-22T08:35:14+00:00",
+          "industry_pack": "Travel Pack / Lab",
+          "status": "rejected",
+          "target_id": "OPP-001",
+          "workspace": "JAG-LAB"
+        },
+        {
+          "affected_runtime_stage": "Human Review",
+          "correction_id": "correction_2026-05-22T08-36-12+00-00",
+          "correction_reason": "TikTok emotional spam pattern is too aggressive and should not become the best style.",
+          "correction_type": "错误机会判断",
+          "created_at": "2026-05-22T08:36:12+00:00",
+          "industry_pack": "Travel Pack / Lab",
+          "status": "rejected",
+          "target_id": "manual_1779438972656",
+          "workspace": "JAG-LAB"
+        },
+        {
+          "affected_runtime_stage": "Human Review",
+          "correction_id": "correction_2026-05-22T08-36-57+00-00",
+          "correction_reason": "This is normal chatter, not a high-value travel pain point.",
+          "correction_type": "opportunity",
+          "created_at": "2026-05-22T08:36:57+00:00",
+          "industry_pack": "Travel Pack / Lab",
+          "status": "rejected",
+          "target_id": "OPP-001",
+          "workspace": "JAG-LAB"
+        },
+        {
+          "affected_runtime_stage": "Generate",
+          "correction_id": "correction_2026-05-22T08-37-06+00-00",
+          "correction_reason": "TikTok emotional spam pattern is too aggressive and should trigger platform drift review.",
+          "correction_type": "错误平台风格",
+          "created_at": "2026-05-22T08:37:06+00:00",
+          "industry_pack": "Travel Pack / Lab",
+          "status": "rejected",
+          "target_id": "UI-DRIFT-VALIDATION",
+          "workspace": "JAG-LAB"
+        },
+        {
+          "affected_runtime_stage": "Human Review",
+          "correction_id": "correction_2026-05-22T08-38-56+00-00",
+          "correction_reason": "This is normal chatter, not a high-value travel pain point.",
+          "correction_type": "opportunity",
+          "created_at": "2026-05-22T08:38:56+00:00",
+          "industry_pack": "Travel Pack / Lab",
+          "status": "rejected",
+          "target_id": "OPP-001",
+          "workspace": "JAG-LAB"
+        }
+      ],
+      "humanDecisionsToday": 6,
+      "humanPreferenceMemory": {
+        "approved": {
+          "runtime_training": 1
+        },
+        "corrected": {
+          "opportunity": 3,
+          "错误平台风格": 1,
+          "错误机会判断": 1
+        },
+        "modified": {
+          "runtime_training": 4
+        },
+        "rejected": {
+          "runtime_training": 1
+        },
+        "top_corrected_mistakes": [
+          {
+            "count": 3,
+            "reason": "This is normal chatter, not a high-value travel pain point.",
+            "target_type": "opportunity"
+          },
+          {
+            "count": 1,
+            "reason": "TikTok emotional spam pattern is too aggressive and should trigger platform drift review.",
+            "target_type": "错误平台风格"
+          },
+          {
+            "count": 1,
+            "reason": "Reject: this strategy is too promotional for a travel help answer.",
+            "target_type": "runtime_training"
+          },
+          {
+            "count": 1,
+            "reason": "TikTok emotional spam pattern is too aggressive and should not become the best style.",
+            "target_type": "错误机会判断"
+          }
+        ],
+        "updated_at": "2026-05-22T08:38:56+00:00"
+      },
+      "mostApprovedReplyStyle": "runtime_training",
+      "mostRejectedStrategy": "runtime_training",
+      "topCorrectedMistakes": [
+        {
+          "count": 3,
+          "reason": "This is normal chatter, not a high-value travel pain point.",
+          "target_type": "opportunity"
+        },
+        {
+          "count": 1,
+          "reason": "TikTok emotional spam pattern is too aggressive and should trigger platform drift review.",
+          "target_type": "错误平台风格"
+        },
+        {
+          "count": 1,
+          "reason": "Reject: this strategy is too promotional for a travel help answer.",
+          "target_type": "runtime_training"
+        },
+        {
+          "count": 1,
+          "reason": "TikTok emotional spam pattern is too aggressive and should not become the best style.",
+          "target_type": "错误机会判断"
+        }
+      ]
+    },
+    "humanPersonalityTraining": {
+      "events": [
+        {
+          "created_at": "2026-05-22T09:06:52+00:00",
+          "decision": "approve",
+          "event_id": "human_personality_2026-05-22T09-06-52+00-00",
+          "market": "Japan",
+          "modified_personality": {},
+          "original_personality": {
+            "market": "Japan",
+            "platform": "reddit",
+            "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+            "style": [
+              "真实",
+              "可信",
+              "专业",
+              "像导游",
+              "不营销"
+            ],
+            "tone": "trusted_guide",
+            "workspace": "JAG-LAB"
+          },
+          "platform": "reddit",
+          "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+          "style": [
+            "真实",
+            "可信",
+            "专业",
+            "像导游",
+            "不营销"
+          ],
+          "tone": "trusted_guide",
+          "workspace": "JAG-LAB"
+        },
+        {
+          "created_at": "2026-05-22T09:06:54+00:00",
+          "decision": "reject",
+          "event_id": "human_personality_2026-05-22T09-06-54+00-00",
+          "market": "Japan",
+          "modified_personality": {},
+          "original_personality": {
+            "market": "Japan",
+            "platform": "reddit",
+            "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+            "style": [
+              "真实",
+              "可信",
+              "专业",
+              "像导游",
+              "不营销"
+            ],
+            "tone": "trusted_guide",
+            "workspace": "JAG-LAB"
+          },
+          "platform": "reddit",
+          "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+          "style": [
+            "真实",
+            "可信",
+            "专业",
+            "像导游",
+            "不营销"
+          ],
+          "tone": "trusted_guide",
+          "workspace": "JAG-LAB"
+        },
+        {
+          "created_at": "2026-05-22T09:06:56+00:00",
+          "decision": "modify",
+          "event_id": "human_personality_2026-05-22T09-06-56+00-00",
+          "market": "Japan",
+          "modified_personality": {
+            "market": "Japan",
+            "platform": "reddit",
+            "reason": "Human modified personality from War Room.",
+            "style": [
+              "真实",
+              "可信",
+              "专业",
+              "克制",
+              "不营销"
+            ],
+            "tone": "trusted_guide",
+            "workspace": "JAG-LAB"
+          },
+          "original_personality": {
+            "market": "Japan",
+            "platform": "reddit",
+            "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+            "style": [
+              "真实",
+              "可信",
+              "专业",
+              "像导游",
+              "不营销"
+            ],
+            "tone": "trusted_guide",
+            "workspace": "JAG-LAB"
+          },
+          "platform": "reddit",
+          "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+          "style": [
+            "真实",
+            "可信",
+            "专业",
+            "像导游",
+            "不营销"
+          ],
+          "tone": "trusted_guide",
+          "workspace": "JAG-LAB"
+        }
+      ],
+      "preferenceMemory": {
+        "approved_personality": {
+          "JAG-LAB::reddit::trusted_guide": 1
+        },
+        "last_decision": {
+          "created_at": "2026-05-22T09:06:56+00:00",
+          "decision": "modify",
+          "event_id": "human_personality_2026-05-22T09-06-56+00-00",
+          "market": "Japan",
+          "modified_personality": {
+            "market": "Japan",
+            "platform": "reddit",
+            "reason": "Human modified personality from War Room.",
+            "style": [
+              "真实",
+              "可信",
+              "专业",
+              "克制",
+              "不营销"
+            ],
+            "tone": "trusted_guide",
+            "workspace": "JAG-LAB"
+          },
+          "original_personality": {
+            "market": "Japan",
+            "platform": "reddit",
+            "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+            "style": [
+              "真实",
+              "可信",
+              "专业",
+              "像导游",
+              "不营销"
+            ],
+            "tone": "trusted_guide",
+            "workspace": "JAG-LAB"
+          },
+          "platform": "reddit",
+          "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+          "style": [
+            "真实",
+            "可信",
+            "专业",
+            "像导游",
+            "不营销"
+          ],
+          "tone": "trusted_guide",
+          "workspace": "JAG-LAB"
+        },
+        "modified_personality": {
+          "JAG-LAB::reddit::trusted_guide": 1
+        },
+        "rejected_personality": {
+          "JAG-LAB::reddit::trusted_guide": 1
+        },
+        "updated_at": "2026-05-22T09:06:56+00:00"
+      }
+    },
+    "humanPreferenceMemory": {
+      "approved": {
+        "runtime_training": 1
+      },
+      "corrected": {
+        "opportunity": 3,
+        "错误平台风格": 1,
+        "错误机会判断": 1
+      },
+      "modified": {
+        "runtime_training": 4
+      },
+      "rejected": {
+        "runtime_training": 1
+      },
+      "top_corrected_mistakes": [
+        {
+          "count": 3,
+          "reason": "This is normal chatter, not a high-value travel pain point.",
+          "target_type": "opportunity"
+        },
+        {
+          "count": 1,
+          "reason": "TikTok emotional spam pattern is too aggressive and should trigger platform drift review.",
+          "target_type": "错误平台风格"
+        },
+        {
+          "count": 1,
+          "reason": "Reject: this strategy is too promotional for a travel help answer.",
+          "target_type": "runtime_training"
+        },
+        {
+          "count": 1,
+          "reason": "TikTok emotional spam pattern is too aggressive and should not become the best style.",
+          "target_type": "错误机会判断"
+        }
+      ],
+      "updated_at": "2026-05-22T08:38:56+00:00"
+    },
+    "learningDeposits": [
+      {
+        "content": {
+          "branch": "helpful rescue answer",
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "runtime_status": "running",
+          "stage": "Scout"
+        },
+        "created_at": "2026-05-22T06:06:42+00:00",
+        "deposit_id": "JAG-LAB_answer_branch_library_2026-05-22T06-06-42+00-00",
+        "library": "Answer Branch Library",
+        "reason": "Runtime prepared answer branch direction.",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "content": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "industry_pack": "Travel Pack / Lab",
+          "runtime_status": "running",
+          "stage": "Scout"
+        },
+        "created_at": "2026-05-22T06:06:42+00:00",
+        "deposit_id": "JAG-LAB_industry_pack_memory_2026-05-22T06-06-42+00-00",
+        "library": "Industry Pack Memory",
+        "reason": "Runtime preserved industry pack scope.",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "content": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "learning": "sample data must not become real feedback",
+          "runtime_status": "running",
+          "stage": "Scout"
+        },
+        "created_at": "2026-05-22T06:06:42+00:00",
+        "deposit_id": "JAG-LAB_learning_events_2026-05-22T06-06-42+00-00",
+        "library": "Learning Events",
+        "reason": "Runtime recorded learning boundary.",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "content": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "pain_point": "Tokyo transport anxiety",
+          "runtime_status": "running",
+          "stage": "Scout"
+        },
+        "created_at": "2026-05-22T06:06:42+00:00",
+        "deposit_id": "JAG-LAB_pain_point_library_2026-05-22T06-06-42+00-00",
+        "library": "Pain Point Library",
+        "reason": "Runtime detected a pain cluster.",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "content": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "runtime_status": "running",
+          "signal": "runtime question candidate",
+          "stage": "Scout"
+        },
+        "created_at": "2026-05-22T06:06:42+00:00",
+        "deposit_id": "JAG-LAB_question_inbox_2026-05-22T06-06-42+00-00",
+        "library": "Question Inbox",
+        "reason": "Runtime cycle captured candidate question context.",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "content": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "runtime_status": "running",
+          "stage": "Scout",
+          "strategy": "rescue-first helpful answer"
+        },
+        "created_at": "2026-05-22T06:06:42+00:00",
+        "deposit_id": "JAG-LAB_strategy_memory_2026-05-22T06-06-42+00-00",
+        "library": "Strategy Memory",
+        "reason": "Runtime deposited strategy direction.",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "content": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "runtime_status": "running",
+          "stage": "Scout",
+          "workspace_scope": "JAG-LAB"
+        },
+        "created_at": "2026-05-22T06:06:42+00:00",
+        "deposit_id": "JAG-LAB_workspace_memory_2026-05-22T06-06-42+00-00",
+        "library": "Workspace Memory",
+        "reason": "Runtime preserved workspace scope.",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "content": {
+          "branch": "helpful rescue answer",
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "runtime_status": "running",
+          "stage": "Scout"
+        },
+        "created_at": "2026-05-22T06:25:33+00:00",
+        "deposit_id": "JAG-LAB_answer_branch_library_2026-05-22T06-25-33+00-00",
+        "library": "Answer Branch Library",
+        "reason": "Runtime prepared answer branch direction.",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "content": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "industry_pack": "Travel Pack / Lab",
+          "runtime_status": "running",
+          "stage": "Scout"
+        },
+        "created_at": "2026-05-22T06:25:33+00:00",
+        "deposit_id": "JAG-LAB_industry_pack_memory_2026-05-22T06-25-33+00-00",
+        "library": "Industry Pack Memory",
+        "reason": "Runtime preserved industry pack scope.",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "content": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "learning": "sample data must not become real feedback",
+          "runtime_status": "running",
+          "stage": "Scout"
+        },
+        "created_at": "2026-05-22T06:25:33+00:00",
+        "deposit_id": "JAG-LAB_learning_events_2026-05-22T06-25-33+00-00",
+        "library": "Learning Events",
+        "reason": "Runtime recorded learning boundary.",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "content": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "pain_point": "Tokyo transport anxiety",
+          "runtime_status": "running",
+          "stage": "Scout"
+        },
+        "created_at": "2026-05-22T06:25:33+00:00",
+        "deposit_id": "JAG-LAB_pain_point_library_2026-05-22T06-25-33+00-00",
+        "library": "Pain Point Library",
+        "reason": "Runtime detected a pain cluster.",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "content": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "runtime_status": "running",
+          "signal": "runtime question candidate",
+          "stage": "Scout"
+        },
+        "created_at": "2026-05-22T06:25:33+00:00",
+        "deposit_id": "JAG-LAB_question_inbox_2026-05-22T06-25-33+00-00",
+        "library": "Question Inbox",
+        "reason": "Runtime cycle captured candidate question context.",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "content": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "runtime_status": "running",
+          "stage": "Scout",
+          "strategy": "rescue-first helpful answer"
+        },
+        "created_at": "2026-05-22T06:25:33+00:00",
+        "deposit_id": "JAG-LAB_strategy_memory_2026-05-22T06-25-33+00-00",
+        "library": "Strategy Memory",
+        "reason": "Runtime deposited strategy direction.",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "content": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "runtime_status": "running",
+          "stage": "Scout",
+          "workspace_scope": "JAG-LAB"
+        },
+        "created_at": "2026-05-22T06:25:33+00:00",
+        "deposit_id": "JAG-LAB_workspace_memory_2026-05-22T06-25-33+00-00",
+        "library": "Workspace Memory",
+        "reason": "Runtime preserved workspace scope.",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "content": {
+          "branch": "helpful rescue answer",
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "runtime_status": "running",
+          "stage": "Scout"
+        },
+        "created_at": "2026-05-22T08:38:56+00:00",
+        "deposit_id": "JAG-LAB_answer_branch_library_2026-05-22T08-38-56+00-00",
+        "library": "Answer Branch Library",
+        "reason": "Runtime prepared answer branch direction.",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "content": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "industry_pack": "Travel Pack / Lab",
+          "runtime_status": "running",
+          "stage": "Scout"
+        },
+        "created_at": "2026-05-22T08:38:56+00:00",
+        "deposit_id": "JAG-LAB_industry_pack_memory_2026-05-22T08-38-56+00-00",
+        "library": "Industry Pack Memory",
+        "reason": "Runtime preserved industry pack scope.",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "content": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "learning": "sample data must not become real feedback",
+          "runtime_status": "running",
+          "stage": "Scout"
+        },
+        "created_at": "2026-05-22T08:38:56+00:00",
+        "deposit_id": "JAG-LAB_learning_events_2026-05-22T08-38-56+00-00",
+        "library": "Learning Events",
+        "reason": "Runtime recorded learning boundary.",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "content": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "pain_point": "Tokyo transport anxiety",
+          "runtime_status": "running",
+          "stage": "Scout"
+        },
+        "created_at": "2026-05-22T08:38:56+00:00",
+        "deposit_id": "JAG-LAB_pain_point_library_2026-05-22T08-38-56+00-00",
+        "library": "Pain Point Library",
+        "reason": "Runtime detected a pain cluster.",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "content": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "runtime_status": "running",
+          "signal": "runtime question candidate",
+          "stage": "Scout"
+        },
+        "created_at": "2026-05-22T08:38:56+00:00",
+        "deposit_id": "JAG-LAB_question_inbox_2026-05-22T08-38-56+00-00",
+        "library": "Question Inbox",
+        "reason": "Runtime cycle captured candidate question context.",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "content": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "runtime_status": "running",
+          "stage": "Scout",
+          "strategy": "rescue-first helpful answer"
+        },
+        "created_at": "2026-05-22T08:38:56+00:00",
+        "deposit_id": "JAG-LAB_strategy_memory_2026-05-22T08-38-56+00-00",
+        "library": "Strategy Memory",
+        "reason": "Runtime deposited strategy direction.",
+        "workspace": "JAG-LAB"
+      },
+      {
+        "content": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "runtime_status": "running",
+          "stage": "Scout",
+          "workspace_scope": "JAG-LAB"
+        },
+        "created_at": "2026-05-22T08:38:56+00:00",
+        "deposit_id": "JAG-LAB_workspace_memory_2026-05-22T08-38-56+00-00",
+        "library": "Workspace Memory",
+        "reason": "Runtime preserved workspace scope.",
+        "workspace": "JAG-LAB"
+      }
+    ],
+    "mislearningAlerts": [
+      {
+        "correction_id": "correction_2026-05-22T08-38-56+00-00",
+        "created_at": "2026-05-22T08:38:56+00:00",
+        "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+        "rejected_learning": {
+          "bad_style": "short promotional CTA",
+          "platform": "reddit"
+        },
+        "status": "rejected",
+        "target_id": "jag_lab_tokyo_transport_001",
+        "target_type": "platform_style"
+      },
+      {
+        "action": "Correction recorded; do not learn this branch as best answer.",
+        "correction_id": "correction_2026-05-22T08-38-56+00-00",
+        "issue": "Human Correction: opportunity",
+        "severity": "high",
+        "signal": "This is normal chatter, not a high-value travel pain point.",
+        "status": "needs_human_review",
+        "target_id": "OPP-001"
+      }
+    ],
+    "opportunityRanking": [
+      {
+        "dimensions": {
+          "content_potential": 0.82,
+          "conversion_potential": 0.55,
+          "cross_platform_potential": 0.68,
+          "engagement_potential": 0.78,
+          "pain_strength": 0.85,
+          "reply_potential": 0.76
+        },
+        "question_id": "jag_lab_tokyo_transport_001",
+        "reasons": [
+          "痛点强：用户有明确焦虑或求助信号",
+          "内容潜力高：交通和路线问题适合多平台解释",
+          "回复潜力高：问题可直接给出帮助型答案"
+        ],
+        "total_score": 0.74,
+        "verdict": "high_value"
+      }
+    ],
+    "personalityDriftAlerts": [
+      {
+        "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+        "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_1",
+        "created_at": "2026-05-22T09:02:14+00:00",
+        "issue": "过度营销",
+        "matched_tokens": [
+          "buy now"
+        ],
+        "reason": "Detected personality drift tokens: buy now",
+        "severity": "high",
+        "status": "needs_human_review"
+      },
+      {
+        "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+        "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_2",
+        "created_at": "2026-05-22T09:02:14+00:00",
+        "issue": "过度情绪化",
+        "matched_tokens": [
+          "panic"
+        ],
+        "reason": "Detected personality drift tokens: panic",
+        "severity": "medium",
+        "status": "needs_human_review"
+      },
+      {
+        "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+        "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_3",
+        "created_at": "2026-05-22T09:02:14+00:00",
+        "issue": "平台人格错乱",
+        "matched_tokens": [
+          "reddit short hook"
+        ],
+        "reason": "Detected personality drift tokens: reddit short hook",
+        "severity": "high",
+        "status": "needs_human_review"
+      },
+      {
+        "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+        "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_4",
+        "created_at": "2026-05-22T09:02:14+00:00",
+        "issue": "clickbait",
+        "matched_tokens": [
+          "you won't believe",
+          "secret trick"
+        ],
+        "reason": "Detected personality drift tokens: you won't believe, secret trick",
+        "severity": "medium",
+        "status": "needs_human_review"
+      },
+      {
+        "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+        "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_5",
+        "created_at": "2026-05-22T09:02:14+00:00",
+        "issue": "机械回复",
+        "matched_tokens": [
+          "generic reply"
+        ],
+        "reason": "Detected personality drift tokens: generic reply",
+        "severity": "medium",
+        "status": "needs_human_review"
+      },
+      {
+        "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+        "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_6",
+        "created_at": "2026-05-22T09:02:14+00:00",
+        "issue": "内容重复",
+        "matched_tokens": [
+          "same hook repeated"
+        ],
+        "reason": "Detected personality drift tokens: same hook repeated",
+        "severity": "medium",
+        "status": "needs_human_review"
+      }
+    ],
+    "personalityDriftReason": "Detected personality drift tokens: same hook repeated",
+    "personalityDriftStatus": "needs_human_review",
+    "personalityRuntimeFeed": [
+      {
+        "status": "active",
+        "summary": {
+          "marketPersonality": {
+            "market": "Japan",
+            "style": [
+              "细节",
+              "可信",
+              "安静专业"
+            ],
+            "tone": "precise guide"
+          },
+          "platformPersonality": {
+            "pace": "thread",
+            "platform": "x",
+            "style": [
+              "快速",
+              "观点",
+              "趋势"
+            ],
+            "tone": "sharp but useful"
+          },
+          "tonePersonality": {
+            "avoid": [
+              "夸张",
+              "催促"
+            ],
+            "tone": "trusted_guide",
+            "traits": [
+              "专业",
+              "克制",
+              "可执行"
+            ]
+          },
+          "updated_at": "2026-05-22T08:56:18+00:00",
+          "workspacePersonality": {
+            "avoid": [
+              "硬广",
+              "标题党",
+              "过度情绪",
+              "虚假承诺"
+            ],
+            "personality": [
+              "真实",
+              "可信",
+              "专业",
+              "像导游",
+              "不营销"
+            ],
+            "voice": "calm guide",
+            "workspace": "JAG-LAB"
+          }
+        },
+        "type": "current_personality"
+      },
+      {
+        "status": "approved",
+        "summary": {
+          "created_at": "2026-05-22T09:11:50+00:00",
+          "market": "Japan",
+          "personality_id": "personality_2026-05-22T09-11-50+00-00",
+          "platform": "reddit",
+          "reason": "Best long-term JAG guide personality: useful, credible, calm, and non-promotional.",
+          "style": [
+            "??",
+            "??",
+            "??",
+            "???",
+            "???"
+          ],
+          "tone": "trusted_guide",
+          "workspace": "JAG-LAB"
+        },
+        "type": "best_personality"
+      },
+      {
+        "status": "needs_human_review",
+        "summary": {
+          "created_at": "2026-05-22T09:11:50+00:00",
+          "market": "Japan",
+          "personality_id": "personality_2026-05-22T09-11-50+00-00",
+          "platform": "tiktok",
+          "reason": "Failed personality: aggressive hook drifts away from trusted guide style.",
+          "style": [
+            "????",
+            "???",
+            "??"
+          ],
+          "tone": "aggressive_hook",
+          "workspace": "JAG-LAB"
+        },
+        "type": "failed_personality"
+      }
+    ],
+    "personalityStatus": {
+      "approvedPersonality": [
+        {
+          "created_at": "2026-05-22T09:06:52+00:00",
+          "market": "Japan",
+          "personality_id": "personality_2026-05-22T09-06-52+00-00",
+          "platform": "reddit",
+          "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+          "style": [
+            "真实",
+            "可信",
+            "专业",
+            "像导游",
+            "不营销"
+          ],
+          "tone": "trusted_guide",
+          "workspace": "JAG-LAB"
+        },
+        {
+          "created_at": "2026-05-22T09:06:56+00:00",
+          "market": "Japan",
+          "personality_id": "personality_2026-05-22T09-06-56+00-00",
+          "platform": "reddit",
+          "reason": "Human modified personality from War Room.",
+          "style": [
+            "真实",
+            "可信",
+            "专业",
+            "克制",
+            "不营销"
+          ],
+          "tone": "trusted_guide",
+          "workspace": "JAG-LAB"
+        },
+        {
+          "created_at": "2026-05-22T09:08:03+00:00",
+          "market": "Japan",
+          "personality_id": "personality_2026-05-22T09-08-03+00-00",
+          "platform": "reddit",
+          "reason": "This personality fits JAG operating style.",
+          "style": [
+            "真实",
+            "可信",
+            "专业",
+            "像导游",
+            "不营销"
+          ],
+          "tone": "trusted_guide",
+          "workspace": "JAG-LAB"
+        },
+        {
+          "created_at": "2026-05-22T09:08:03+00:00",
+          "market": "Japan",
+          "personality_id": "personality_2026-05-22T09-08-03+00-00",
+          "platform": "reddit",
+          "reason": "This personality fits JAG operating style.",
+          "style": [
+            "真实",
+            "耐心",
+            "不营销"
+          ],
+          "tone": "community_helper",
+          "workspace": "JAG-LAB"
+        },
+        {
+          "created_at": "2026-05-22T09:11:50+00:00",
+          "market": "Japan",
+          "personality_id": "personality_2026-05-22T09-11-50+00-00",
+          "platform": "reddit",
+          "reason": "Best long-term JAG guide personality: useful, credible, calm, and non-promotional.",
+          "style": [
+            "??",
+            "??",
+            "??",
+            "???",
+            "???"
+          ],
+          "tone": "trusted_guide",
+          "workspace": "JAG-LAB"
+        }
+      ],
+      "bestPersonality": {
+        "created_at": "2026-05-22T09:11:50+00:00",
+        "market": "Japan",
+        "personality_id": "personality_2026-05-22T09-11-50+00-00",
+        "platform": "reddit",
+        "reason": "Best long-term JAG guide personality: useful, credible, calm, and non-promotional.",
+        "style": [
+          "??",
+          "??",
+          "??",
+          "???",
+          "???"
+        ],
+        "tone": "trusted_guide",
+        "workspace": "JAG-LAB"
+      },
+      "bestTone": [
+        {
+          "created_at": "2026-05-22T09:06:52+00:00",
+          "market": "Japan",
+          "personality_id": "personality_2026-05-22T09-06-52+00-00",
+          "platform": "reddit",
+          "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+          "style": [
+            "真实",
+            "可信",
+            "专业",
+            "像导游",
+            "不营销"
+          ],
+          "tone": "trusted_guide",
+          "workspace": "JAG-LAB"
+        },
+        {
+          "created_at": "2026-05-22T09:06:56+00:00",
+          "market": "Japan",
+          "personality_id": "personality_2026-05-22T09-06-56+00-00",
+          "platform": "reddit",
+          "reason": "Human modified personality from War Room.",
+          "style": [
+            "真实",
+            "可信",
+            "专业",
+            "克制",
+            "不营销"
+          ],
+          "tone": "trusted_guide",
+          "workspace": "JAG-LAB"
+        },
+        {
+          "created_at": "2026-05-22T09:08:03+00:00",
+          "market": "Japan",
+          "personality_id": "personality_2026-05-22T09-08-03+00-00",
+          "platform": "reddit",
+          "reason": "This personality fits JAG operating style.",
+          "style": [
+            "真实",
+            "可信",
+            "专业",
+            "像导游",
+            "不营销"
+          ],
+          "tone": "trusted_guide",
+          "workspace": "JAG-LAB"
+        },
+        {
+          "created_at": "2026-05-22T09:08:03+00:00",
+          "market": "Japan",
+          "personality_id": "personality_2026-05-22T09-08-03+00-00",
+          "platform": "reddit",
+          "reason": "This personality fits JAG operating style.",
+          "style": [
+            "真实",
+            "耐心",
+            "不营销"
+          ],
+          "tone": "community_helper",
+          "workspace": "JAG-LAB"
+        },
+        {
+          "created_at": "2026-05-22T09:11:50+00:00",
+          "market": "Japan",
+          "personality_id": "personality_2026-05-22T09-11-50+00-00",
+          "platform": "reddit",
+          "reason": "Best long-term JAG guide personality: useful, credible, calm, and non-promotional.",
+          "style": [
+            "??",
+            "??",
+            "??",
+            "???",
+            "???"
+          ],
+          "tone": "trusted_guide",
+          "workspace": "JAG-LAB"
+        }
+      ],
+      "currentPersonality": {
+        "marketPersonality": {
+          "market": "Japan",
+          "style": [
+            "细节",
+            "可信",
+            "安静专业"
+          ],
+          "tone": "precise guide"
+        },
+        "platformPersonality": {
+          "pace": "thread",
+          "platform": "x",
+          "style": [
+            "快速",
+            "观点",
+            "趋势"
+          ],
+          "tone": "sharp but useful"
+        },
+        "tonePersonality": {
+          "avoid": [
+            "夸张",
+            "催促"
+          ],
+          "tone": "trusted_guide",
+          "traits": [
+            "专业",
+            "克制",
+            "可执行"
+          ]
+        },
+        "updated_at": "2026-05-22T08:56:18+00:00",
+        "workspacePersonality": {
+          "avoid": [
+            "硬广",
+            "标题党",
+            "过度情绪",
+            "虚假承诺"
+          ],
+          "personality": [
+            "真实",
+            "可信",
+            "专业",
+            "像导游",
+            "不营销"
+          ],
+          "voice": "calm guide",
+          "workspace": "JAG-LAB"
+        }
+      },
+      "failedPersonality": {
+        "created_at": "2026-05-22T09:11:50+00:00",
+        "market": "Japan",
+        "personality_id": "personality_2026-05-22T09-11-50+00-00",
+        "platform": "tiktok",
+        "reason": "Failed personality: aggressive hook drifts away from trusted guide style.",
+        "style": [
+          "????",
+          "???",
+          "??"
+        ],
+        "tone": "aggressive_hook",
+        "workspace": "JAG-LAB"
+      },
+      "personalityDrift": "needs_human_review",
+      "personalityTimeline": [
+        {
+          "created_at": "2026-05-22T09:11:50+00:00",
+          "market": "Japan",
+          "platform": "reddit",
+          "reason": "Best long-term JAG guide personality: useful, credible, calm, and non-promotional.",
+          "style": [
+            "??",
+            "??",
+            "??",
+            "???",
+            "???"
+          ],
+          "timeline_id": "personality_timeline_2026-05-22T09-11-50+00-00",
+          "tone": "trusted_guide",
+          "type": "approved_personality"
+        },
+        {
+          "created_at": "2026-05-22T09:11:50+00:00",
+          "market": "Japan",
+          "platform": "tiktok",
+          "reason": "Failed personality: aggressive hook drifts away from trusted guide style.",
+          "style": [
+            "????",
+            "???",
+            "??"
+          ],
+          "timeline_id": "personality_timeline_2026-05-22T09-11-50+00-00",
+          "tone": "aggressive_hook",
+          "type": "failed_personality"
+        }
+      ],
+      "rejectedPersonality": [
+        {
+          "created_at": "2026-05-22T08:54:38+00:00",
+          "market": "Japan",
+          "personality_id": "personality_2026-05-22T08-54-38+00-00",
+          "platform": "tiktok",
+          "reason": "Aggressive emotional hook creates platform personality drift.",
+          "style": [
+            "过度情绪",
+            "硬广",
+            "标题党"
+          ],
+          "tone": "aggressive_hook",
+          "workspace": "JAG-LAB"
+        },
+        {
+          "created_at": "2026-05-22T09:06:17+00:00",
+          "market": "Japan",
+          "personality_id": "personality_2026-05-22T09-06-17+00-00",
+          "platform": "reddit",
+          "reason": "Too promotional.",
+          "style": [
+            "真实",
+            "可信",
+            "专业",
+            "像导游",
+            "不营销"
+          ],
+          "tone": "aggressive_hook",
+          "workspace": "JAG-LAB"
+        },
+        {
+          "created_at": "2026-05-22T09:06:54+00:00",
+          "market": "Japan",
+          "personality_id": "personality_2026-05-22T09-06-54+00-00",
+          "platform": "reddit",
+          "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+          "style": [
+            "真实",
+            "可信",
+            "专业",
+            "像导游",
+            "不营销"
+          ],
+          "tone": "trusted_guide",
+          "workspace": "JAG-LAB"
+        },
+        {
+          "created_at": "2026-05-22T09:08:03+00:00",
+          "market": "Japan",
+          "personality_id": "personality_2026-05-22T09-08-03+00-00",
+          "platform": "reddit",
+          "reason": "Too promotional.",
+          "style": [
+            "真实",
+            "可信",
+            "专业",
+            "像导游",
+            "不营销"
+          ],
+          "tone": "aggressive_hook",
+          "workspace": "JAG-LAB"
+        },
+        {
+          "created_at": "2026-05-22T09:11:50+00:00",
+          "market": "Japan",
+          "personality_id": "personality_2026-05-22T09-11-50+00-00",
+          "platform": "tiktok",
+          "reason": "Failed personality: aggressive hook drifts away from trusted guide style.",
+          "style": [
+            "????",
+            "???",
+            "??"
+          ],
+          "tone": "aggressive_hook",
+          "workspace": "JAG-LAB"
+        }
+      ],
+      "rejectedTone": [
+        {
+          "created_at": "2026-05-22T08:54:38+00:00",
+          "market": "Japan",
+          "personality_id": "personality_2026-05-22T08-54-38+00-00",
+          "platform": "tiktok",
+          "reason": "Aggressive emotional hook creates platform personality drift.",
+          "style": [
+            "过度情绪",
+            "硬广",
+            "标题党"
+          ],
+          "tone": "aggressive_hook",
+          "workspace": "JAG-LAB"
+        },
+        {
+          "created_at": "2026-05-22T09:06:17+00:00",
+          "market": "Japan",
+          "personality_id": "personality_2026-05-22T09-06-17+00-00",
+          "platform": "reddit",
+          "reason": "Too promotional.",
+          "style": [
+            "真实",
+            "可信",
+            "专业",
+            "像导游",
+            "不营销"
+          ],
+          "tone": "aggressive_hook",
+          "workspace": "JAG-LAB"
+        },
+        {
+          "created_at": "2026-05-22T09:06:54+00:00",
+          "market": "Japan",
+          "personality_id": "personality_2026-05-22T09-06-54+00-00",
+          "platform": "reddit",
+          "reason": "Prefer a real, credible, guide-like and non-promotional personality.",
+          "style": [
+            "真实",
+            "可信",
+            "专业",
+            "像导游",
+            "不营销"
+          ],
+          "tone": "trusted_guide",
+          "workspace": "JAG-LAB"
+        },
+        {
+          "created_at": "2026-05-22T09:08:03+00:00",
+          "market": "Japan",
+          "personality_id": "personality_2026-05-22T09-08-03+00-00",
+          "platform": "reddit",
+          "reason": "Too promotional.",
+          "style": [
+            "真实",
+            "可信",
+            "专业",
+            "像导游",
+            "不营销"
+          ],
+          "tone": "aggressive_hook",
+          "workspace": "JAG-LAB"
+        },
+        {
+          "created_at": "2026-05-22T09:11:50+00:00",
+          "market": "Japan",
+          "personality_id": "personality_2026-05-22T09-11-50+00-00",
+          "platform": "tiktok",
+          "reason": "Failed personality: aggressive hook drifts away from trusted guide style.",
+          "style": [
+            "????",
+            "???",
+            "??"
+          ],
+          "tone": "aggressive_hook",
+          "workspace": "JAG-LAB"
+        }
+      ]
+    },
+    "platformStyleDrift": [],
+    "reviewQueue": [],
+    "runtimeDrift": "needs_human_review",
+    "runtimeDriftEvents": [
+      {
+        "action": "Send to human review before learning or publishing.",
+        "created_at": "2026-05-22T08:37:06+00:00",
+        "drift_id": "drift_2026-05-22T08-37-06+00-00_1",
+        "issue": "platform personality drift",
+        "severity": "medium",
+        "signal": "Detected platform personality drift",
+        "status": "needs_human_review"
+      }
+    ],
+    "runtimeIntelligenceFeed": {
+      "best_answer": [
+        "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple."
+      ],
+      "best_hook": [
+        "用强场景开头，例如：第一次到东京站别先做这件事"
+      ],
+      "best_platform_style": [
+        {
+          "avoid": [
+            "标题党",
+            "硬广",
+            "过短回复"
+          ],
+          "cta": "弱 CTA 或无 CTA",
+          "hook": "先承认具体问题，再给可执行步骤",
+          "length": "long",
+          "platform": "reddit",
+          "question_id": "jag_lab_tokyo_transport_001",
+          "recommended_angle": "先承认具体问题，再给可执行步骤；围绕 I am confused about Tokyo train transfers and worr",
+          "style": "深度、真实、长回复"
+        },
+        {
+          "avoid": [
+            "长段解释",
+            "学术语气"
+          ],
+          "cta": "轻引导保存或评论",
+          "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
+          "length": "short",
+          "platform": "tiktok",
+          "question_id": "jag_lab_tokyo_transport_001",
+          "recommended_angle": "用强场景开头，例如：第一次到东京站别先做这件事；围绕 I am confused about Tokyo train transfers and worr",
+          "style": "Hook、情绪、短节奏"
+        },
+        {
+          "avoid": [
+            "无观点罗列",
+            "过度情绪"
+          ],
+          "cta": "引导讨论",
+          "hook": "一句观点先行，再给 2-3 个判断",
+          "length": "short-thread",
+          "platform": "x",
+          "question_id": "jag_lab_tokyo_transport_001",
+          "recommended_angle": "一句观点先行，再给 2-3 个判断；围绕 I am confused about Tokyo train transfers and worr",
+          "style": "快速、观点、趋势"
+        }
+      ],
+      "best_timing": [
+        "manual review before posting"
+      ],
+      "failed_hook": [
+        "same hook repeated"
+      ],
+      "failed_reply": [
+        "generic marketing reply"
+      ],
+      "failed_strategy": [
+        "short promotional CTA on Reddit"
+      ],
+      "human_optimized_output": [
+        "Keep the reply useful and non-promotional."
+      ]
+    },
+    "runtimeQueue": [
+      {
+        "attempts": 0,
+        "created_at": "2026-05-22T04:49:57+00:00",
+        "payload": {
+          "cycle": "CYCLE-0045",
+          "stage": "Scout",
+          "workspace": "jag_app_growth"
+        },
+        "queue_id": "CYCLE-0045_analyze",
+        "status": "pending",
+        "type": "待分析",
+        "updated_at": "2026-05-22T04:49:57+00:00"
+      },
+      {
+        "attempts": 0,
+        "created_at": "2026-05-22T06:01:01+00:00",
+        "payload": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "stage": "Scout",
+          "workspace": "JAG-LAB"
+        },
+        "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+        "status": "pending",
+        "type": "待分析",
+        "updated_at": "2026-05-22T06:01:01+00:00"
+      },
+      {
+        "attempts": 0,
+        "created_at": "2026-05-22T06:02:21+00:00",
+        "payload": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "stage": "Scout",
+          "workspace": "JAG-LAB"
+        },
+        "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+        "status": "pending",
+        "type": "待分析",
+        "updated_at": "2026-05-22T06:02:21+00:00"
+      },
+      {
+        "attempts": 0,
+        "created_at": "2026-05-22T06:04:15+00:00",
+        "payload": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "stage": "Scout",
+          "workspace": "JAG-LAB"
+        },
+        "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+        "status": "pending",
+        "type": "待分析",
+        "updated_at": "2026-05-22T06:04:15+00:00"
+      },
+      {
+        "attempts": 0,
+        "created_at": "2026-05-22T06:05:45+00:00",
+        "payload": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "stage": "Scout",
+          "workspace": "JAG-LAB"
+        },
+        "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+        "status": "pending",
+        "type": "待分析",
+        "updated_at": "2026-05-22T06:05:45+00:00"
+      },
+      {
+        "attempts": 0,
+        "created_at": "2026-05-22T06:05:59+00:00",
+        "payload": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "stage": "Scout",
+          "workspace": "JAG-LAB"
+        },
+        "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+        "status": "pending",
+        "type": "待分析",
+        "updated_at": "2026-05-22T06:05:59+00:00"
+      },
+      {
+        "attempts": 0,
+        "created_at": "2026-05-22T06:06:12+00:00",
+        "payload": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "stage": "Scout",
+          "workspace": "JAG-LAB"
+        },
+        "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+        "status": "pending",
+        "type": "待分析",
+        "updated_at": "2026-05-22T06:06:12+00:00"
+      },
+      {
+        "attempts": 0,
+        "created_at": "2026-05-22T06:06:42+00:00",
+        "payload": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "stage": "Scout",
+          "workspace": "JAG-LAB"
+        },
+        "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+        "status": "pending",
+        "type": "待分析",
+        "updated_at": "2026-05-22T06:06:42+00:00"
+      },
+      {
+        "attempts": 0,
+        "created_at": "2026-05-22T06:21:22+00:00",
+        "payload": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "stage": "Scout",
+          "workspace": "JAG-LAB"
+        },
+        "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+        "status": "pending",
+        "type": "待分析",
+        "updated_at": "2026-05-22T06:21:22+00:00"
+      },
+      {
+        "attempts": 0,
+        "created_at": "2026-05-22T06:22:18+00:00",
+        "payload": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "stage": "Scout",
+          "workspace": "JAG-LAB"
+        },
+        "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+        "status": "pending",
+        "type": "待分析",
+        "updated_at": "2026-05-22T06:22:18+00:00"
+      },
+      {
+        "attempts": 0,
+        "created_at": "2026-05-22T06:23:58+00:00",
+        "payload": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "stage": "Scout",
+          "workspace": "JAG-LAB"
+        },
+        "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+        "status": "pending",
+        "type": "待分析",
+        "updated_at": "2026-05-22T06:23:58+00:00"
+      },
+      {
+        "attempts": 0,
+        "created_at": "2026-05-22T06:24:24+00:00",
+        "payload": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "stage": "Scout",
+          "workspace": "JAG-LAB"
+        },
+        "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+        "status": "pending",
+        "type": "待分析",
+        "updated_at": "2026-05-22T06:24:24+00:00"
+      },
+      {
+        "attempts": 0,
+        "created_at": "2026-05-22T06:25:19+00:00",
+        "payload": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "stage": "Scout",
+          "workspace": "JAG-LAB"
+        },
+        "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+        "status": "pending",
+        "type": "待分析",
+        "updated_at": "2026-05-22T06:25:19+00:00"
+      },
+      {
+        "attempts": 0,
+        "created_at": "2026-05-22T06:25:33+00:00",
+        "payload": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "stage": "Scout",
+          "workspace": "JAG-LAB"
+        },
+        "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+        "status": "pending",
+        "type": "待分析",
+        "updated_at": "2026-05-22T06:25:33+00:00"
+      },
+      {
+        "attempts": 0,
+        "created_at": "2026-05-22T08:35:14+00:00",
+        "payload": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "stage": "Scout",
+          "workspace": "JAG-LAB"
+        },
+        "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+        "status": "pending",
+        "type": "待分析",
+        "updated_at": "2026-05-22T08:35:14+00:00"
+      },
+      {
+        "attempts": 0,
+        "created_at": "2026-05-22T08:35:49+00:00",
+        "payload": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "stage": "Scout",
+          "workspace": "JAG-LAB"
+        },
+        "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+        "status": "pending",
+        "type": "待分析",
+        "updated_at": "2026-05-22T08:35:49+00:00"
+      },
+      {
+        "attempts": 0,
+        "created_at": "2026-05-22T08:36:57+00:00",
+        "payload": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "stage": "Scout",
+          "workspace": "JAG-LAB"
+        },
+        "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+        "status": "pending",
+        "type": "待分析",
+        "updated_at": "2026-05-22T08:36:57+00:00"
+      },
+      {
+        "attempts": 0,
+        "created_at": "2026-05-22T08:38:56+00:00",
+        "payload": {
+          "cycle": "JAG-LAB-CYCLE-0001",
+          "stage": "Scout",
+          "workspace": "JAG-LAB"
+        },
+        "queue_id": "JAG-LAB-CYCLE-0001_analyze",
+        "status": "pending",
+        "type": "待分析",
+        "updated_at": "2026-05-22T08:38:56+00:00"
+      }
+    ],
+    "runtimeReviewReport": {
+      "created_at": "2026-05-22T08:38:56+00:00",
+      "cycle": "JAG-LAB-CYCLE-0001",
+      "effective": [
+        "用强场景开头，例如：第一次到东京站别先做这件事"
+      ],
+      "ineffective": [
+        "short promotional CTA on Reddit"
+      ],
+      "learned": [
+        "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple."
+      ],
+      "mislearned": [
+        {
+          "correction_id": "correction_2026-05-22T08-38-56+00-00",
+          "created_at": "2026-05-22T08:38:56+00:00",
+          "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+          "rejected_learning": {
+            "bad_style": "short promotional CTA",
+            "platform": "reddit"
+          },
+          "status": "rejected",
+          "target_id": "jag_lab_tokyo_transport_001",
+          "target_type": "platform_style"
+        }
+      ],
+      "needs_human_correction": [
+        {
+          "correction_id": "correction_2026-05-22T08-38-56+00-00",
+          "created_at": "2026-05-22T08:38:56+00:00",
+          "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+          "rejected_learning": {
+            "bad_style": "short promotional CTA",
+            "platform": "reddit"
+          },
+          "status": "rejected",
+          "target_id": "jag_lab_tokyo_transport_001",
+          "target_type": "platform_style"
+        }
+      ],
+      "review_id": "review_JAG-LAB-CYCLE-0001_2026-05-22T08-38-56+00-00",
+      "workspace": "JAG-LAB"
+    },
+    "runtimeUiStats": {
+      "correctionAlerts": 6,
+      "humanDecisionsToday": 6,
+      "mostApprovedReplyStyle": "runtime_training",
+      "mostRejectedStrategy": "runtime_training",
+      "pendingReviews": 0,
+      "topCorrectedMistakes": [
+        {
+          "count": 3,
+          "reason": "This is normal chatter, not a high-value travel pain point.",
+          "target_type": "opportunity"
+        },
+        {
+          "count": 1,
+          "reason": "TikTok emotional spam pattern is too aggressive and should trigger platform drift review.",
+          "target_type": "错误平台风格"
+        },
+        {
+          "count": 1,
+          "reason": "Reject: this strategy is too promotional for a travel help answer.",
+          "target_type": "runtime_training"
+        },
+        {
+          "count": 1,
+          "reason": "TikTok emotional spam pattern is too aggressive and should not become the best style.",
+          "target_type": "错误机会判断"
+        }
+      ]
+    },
+    "trainingExplanations": [
+      {
+        "generated": null,
+        "platform_styles": null,
+        "question_id": "jag_lab_tokyo_transport_001",
+        "score": null,
+        "stage": "Scout",
+        "why": "发现问题包含明确迷路焦虑，适合进入训练沙盒。"
+      },
+      {
+        "generated": null,
+        "platform_styles": null,
+        "question_id": "jag_lab_tokyo_transport_001",
+        "score": null,
+        "stage": "Collect",
+        "why": "问题带有市场、平台和痛点字段，可以用于独立 JAG-LAB 训练。"
+      },
+      {
+        "generated": null,
+        "platform_styles": null,
+        "question_id": "jag_lab_tokyo_transport_001",
+        "score": {
+          "dimensions": {
+            "content_potential": 0.82,
+            "conversion_potential": 0.55,
+            "cross_platform_potential": 0.68,
+            "engagement_potential": 0.78,
+            "pain_strength": 0.85,
+            "reply_potential": 0.76
+          },
+          "question_id": "jag_lab_tokyo_transport_001",
+          "reasons": [
+            "痛点强：用户有明确焦虑或求助信号",
+            "内容潜力高：交通和路线问题适合多平台解释",
+            "回复潜力高：问题可直接给出帮助型答案"
+          ],
+          "total_score": 0.74,
+          "verdict": "high_value"
+        },
+        "stage": "Analyze",
+        "why": "痛点强度和回复潜力达到训练阈值。"
+      },
+      {
+        "generated": null,
+        "platform_styles": null,
+        "question_id": "jag_lab_tokyo_transport_001",
+        "score": null,
+        "stage": "Classify",
+        "why": "问题应归入交通焦虑、首次旅行和路线救援。"
+      },
+      {
+        "generated": null,
+        "platform_styles": null,
+        "question_id": "jag_lab_tokyo_transport_001",
+        "score": {
+          "dimensions": {
+            "content_potential": 0.82,
+            "conversion_potential": 0.55,
+            "cross_platform_potential": 0.68,
+            "engagement_potential": 0.78,
+            "pain_strength": 0.85,
+            "reply_potential": 0.76
+          },
+          "question_id": "jag_lab_tokyo_transport_001",
+          "reasons": [
+            "痛点强：用户有明确焦虑或求助信号",
+            "内容潜力高：交通和路线问题适合多平台解释",
+            "回复潜力高：问题可直接给出帮助型答案"
+          ],
+          "total_score": 0.74,
+          "verdict": "high_value"
+        },
+        "stage": "Prioritize",
+        "why": "Opportunity verdict=high_value，不是所有问题都会自动高价值。"
+      },
+      {
+        "generated": null,
+        "platform_styles": [
+          {
+            "avoid": [
+              "标题党",
+              "硬广",
+              "过短回复"
+            ],
+            "cta": "弱 CTA 或无 CTA",
+            "hook": "先承认具体问题，再给可执行步骤",
+            "length": "long",
+            "platform": "reddit",
+            "question_id": "jag_lab_tokyo_transport_001",
+            "recommended_angle": "先承认具体问题，再给可执行步骤；围绕 I am confused about Tokyo train transfers and worr",
+            "style": "深度、真实、长回复"
+          },
+          {
+            "avoid": [
+              "长段解释",
+              "学术语气"
+            ],
+            "cta": "轻引导保存或评论",
+            "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
+            "length": "short",
+            "platform": "tiktok",
+            "question_id": "jag_lab_tokyo_transport_001",
+            "recommended_angle": "用强场景开头，例如：第一次到东京站别先做这件事；围绕 I am confused about Tokyo train transfers and worr",
+            "style": "Hook、情绪、短节奏"
+          },
+          {
+            "avoid": [
+              "无观点罗列",
+              "过度情绪"
+            ],
+            "cta": "引导讨论",
+            "hook": "一句观点先行，再给 2-3 个判断",
+            "length": "short-thread",
+            "platform": "x",
+            "question_id": "jag_lab_tokyo_transport_001",
+            "recommended_angle": "一句观点先行，再给 2-3 个判断；围绕 I am confused about Tokyo train transfers and worr",
+            "style": "快速、观点、趋势"
+          }
+        ],
+        "question_id": "jag_lab_tokyo_transport_001",
+        "score": null,
+        "stage": "Strategy",
+        "why": "策略选择救援式回答，因为用户处于旅途中不确定状态。"
+      },
+      {
+        "generated": {
+          "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
+          "reply_text": "Start with station names, transfer count, platform number, and a backup route. Avoid over-planning; keep the first route simple.",
+          "strategy": "rescue-first helpful answer"
+        },
+        "platform_styles": [
+          {
+            "avoid": [
+              "标题党",
+              "硬广",
+              "过短回复"
+            ],
+            "cta": "弱 CTA 或无 CTA",
+            "hook": "先承认具体问题，再给可执行步骤",
+            "length": "long",
+            "platform": "reddit",
+            "question_id": "jag_lab_tokyo_transport_001",
+            "recommended_angle": "先承认具体问题，再给可执行步骤；围绕 I am confused about Tokyo train transfers and worr",
+            "style": "深度、真实、长回复"
+          },
+          {
+            "avoid": [
+              "长段解释",
+              "学术语气"
+            ],
+            "cta": "轻引导保存或评论",
+            "hook": "用强场景开头，例如：第一次到东京站别先做这件事",
+            "length": "short",
+            "platform": "tiktok",
+            "question_id": "jag_lab_tokyo_transport_001",
+            "recommended_angle": "用强场景开头，例如：第一次到东京站别先做这件事；围绕 I am confused about Tokyo train transfers and worr",
+            "style": "Hook、情绪、短节奏"
+          },
+          {
+            "avoid": [
+              "无观点罗列",
+              "过度情绪"
+            ],
+            "cta": "引导讨论",
+            "hook": "一句观点先行，再给 2-3 个判断",
+            "length": "short-thread",
+            "platform": "x",
+            "question_id": "jag_lab_tokyo_transport_001",
+            "recommended_angle": "一句观点先行，再给 2-3 个判断；围绕 I am confused about Tokyo train transfers and worr",
+            "style": "快速、观点、趋势"
+          }
+        ],
+        "question_id": "jag_lab_tokyo_transport_001",
+        "score": null,
+        "stage": "Generate",
+        "why": "回答生成遵循平台人格，Reddit 深度真实，TikTok 短 Hook，X 快速观点。"
+      },
+      {
+        "generated": null,
+        "platform_styles": null,
+        "question_id": "jag_lab_tokyo_transport_001",
+        "score": null,
+        "stage": "Human Review",
+        "why": "任何回答、策略和学习结论必须先进入人工 Gate。"
+      },
+      {
+        "generated": null,
+        "platform_styles": null,
+        "question_id": "jag_lab_tokyo_transport_001",
+        "score": null,
+        "stage": "Learn",
+        "why": "只学习被批准的方向，并记录错误学习被拒绝的原因。"
+      },
+      {
+        "generated": null,
+        "platform_styles": null,
+        "question_id": "jag_lab_tokyo_transport_001",
+        "score": null,
+        "stage": "Deposit",
+        "why": "沉淀 Best Answer、Best Hook、Failed Strategy 等 Runtime Intelligence。"
+      }
+    ],
+    "trendClustering": {
+      "clusterDimensions": [
+        "similar_questions",
+        "similar_trends",
+        "cross_platform_discussion",
+        "similar_emotion"
+      ],
+      "clusterSummary": {
+        "cross_platform_clusters": 2,
+        "high_emotion_clusters": 3,
+        "top_clusters": [
+          "Tokyo transport anxiety",
+          "Tokyo rainy day travel friction",
+          "Air fryer cleaning friction"
+        ],
+        "total_clusters": 4
+      },
+      "created_at": "2026-05-22T10:06:01+00:00",
+      "report_id": "TREND_CLUSTERING_REPORT",
+      "scope": "local_only_no_external_platform_access",
+      "status": "active",
+      "trendClusters": [
+        {
+          "canonical_pain_point": "Tokyo transport anxiety",
+          "cluster_id": "trend_cluster_tokyo_transport_anxiety",
+          "cluster_name": "Tokyo transport anxiety",
+          "cluster_type": "cross_platform_high_emotion",
+          "cross_platform": true,
+          "emotion_tags": [
+            "uncertainty",
+            "high_emotion",
+            "travel anxiety"
+          ],
+          "frequency": 4,
+          "max_emotion_score": 0.9,
+          "next_action": "Prioritize answer branch and short-form content strategy for human review.",
+          "platforms": [
+            "Manual",
+            "RSS",
+            "Reddit",
+            "Threads"
+          ],
+          "similar_questions": [
+            "Tokyo subway confusing for first time Japan trip. I am worried I will get lost.",
+            "东京地铁复杂，第一次去日本很怕换乘错。",
+            "Lost in station at Shinjuku, cannot find platform and panic."
+          ],
+          "similar_trends": [
+            "station maze",
+            "first-time transfer anxiety",
+            "route confidence gap"
+          ],
+          "source_topics": [
+            "Tokyo transport anxiety"
+          ],
+          "status": "clustered"
+        },
+        {
+          "canonical_pain_point": "Tokyo rainy day itinerary anxiety",
+          "cluster_id": "trend_cluster_tokyo_rainy_day",
+          "cluster_name": "Tokyo rainy day travel friction",
+          "cluster_type": "cross_platform_trend",
+          "cross_platform": true,
+          "emotion_tags": [
+            "uncertainty",
+            "planning anxiety",
+            "weather frustration"
+          ],
+          "frequency": 4,
+          "max_emotion_score": 0.84,
+          "next_action": "Generate rain-safe Tokyo route strategy for JAG-LAB review.",
+          "platforms": [
+            "Reddit",
+            "TikTok",
+            "YouTube",
+            "Instagram"
+          ],
+          "similar_questions": [
+            "What should I do in Tokyo when it rains all day?",
+            "Tokyo rainy day itinerary for first-time visitors",
+            "Is Shibuya still worth visiting during heavy rain?"
+          ],
+          "similar_trends": [
+            "indoor Tokyo itinerary",
+            "rain-safe food and shopping route",
+            "first-time visitor weather anxiety"
+          ],
+          "source_topics": [
+            "Tokyo rain itinerary",
+            "Tokyo indoor plan",
+            "rain in Tokyo trip"
+          ],
+          "status": "clustered"
+        },
+        {
+          "canonical_pain_point": "Air fryer cleaning friction",
+          "cluster_id": "trend_cluster_air_fryer_cleaning_friction",
+          "cluster_name": "Air fryer cleaning friction",
+          "cluster_type": "high_emotion_cluster",
+          "cross_platform": false,
+          "emotion_tags": [
+            "uncertainty",
+            "high_emotion",
+            "frustration"
+          ],
+          "frequency": 1,
+          "max_emotion_score": 0.78,
+          "next_action": "Validate pain strength before generating a reply branch.",
+          "platforms": [
+            "TikTok"
+          ],
+          "similar_questions": [
+            "Air fryer cleaning is frustrating, grease is everywhere."
+          ],
+          "similar_trends": [
+            "grease cleanup",
+            "post-cooking maintenance",
+            "kitchen appliance frustration"
+          ],
+          "source_topics": [
+            "Air fryer cleaning friction"
+          ],
+          "status": "clustered"
+        },
+        {
+          "canonical_pain_point": "Vacuum performance anxiety",
+          "cluster_id": "trend_cluster_vacuum_performance_anxiety",
+          "cluster_name": "Vacuum performance anxiety",
+          "cluster_type": "single_platform_signal",
+          "cross_platform": false,
+          "emotion_tags": [
+            "uncertainty",
+            "frustration"
+          ],
+          "frequency": 1,
+          "max_emotion_score": 0.72,
+          "next_action": "Keep monitoring until repeated across more sources.",
+          "platforms": [
+            "YouTube"
+          ],
+          "similar_questions": [
+            "Vacuum lost suction and dust is still there after cleaning."
+          ],
+          "similar_trends": [
+            "lost suction",
+            "cleaning performance doubt",
+            "maintenance confusion"
+          ],
+          "source_topics": [
+            "Vacuum performance anxiety"
+          ],
+          "status": "clustered"
+        }
+      ]
+    },
+    "trendClusters": [
+      {
+        "canonical_pain_point": "Tokyo transport anxiety",
+        "cluster_id": "trend_cluster_tokyo_transport_anxiety",
+        "cluster_name": "Tokyo transport anxiety",
+        "cluster_type": "cross_platform_high_emotion",
+        "cross_platform": true,
+        "emotion_tags": [
+          "uncertainty",
+          "high_emotion",
+          "travel anxiety"
+        ],
+        "frequency": 4,
+        "max_emotion_score": 0.9,
+        "next_action": "Prioritize answer branch and short-form content strategy for human review.",
+        "platforms": [
+          "Manual",
+          "RSS",
+          "Reddit",
+          "Threads"
+        ],
+        "similar_questions": [
+          "Tokyo subway confusing for first time Japan trip. I am worried I will get lost.",
+          "东京地铁复杂，第一次去日本很怕换乘错。",
+          "Lost in station at Shinjuku, cannot find platform and panic."
+        ],
+        "similar_trends": [
+          "station maze",
+          "first-time transfer anxiety",
+          "route confidence gap"
+        ],
+        "source_topics": [
+          "Tokyo transport anxiety"
+        ],
+        "status": "clustered"
+      },
+      {
+        "canonical_pain_point": "Tokyo rainy day itinerary anxiety",
+        "cluster_id": "trend_cluster_tokyo_rainy_day",
+        "cluster_name": "Tokyo rainy day travel friction",
+        "cluster_type": "cross_platform_trend",
+        "cross_platform": true,
+        "emotion_tags": [
+          "uncertainty",
+          "planning anxiety",
+          "weather frustration"
+        ],
+        "frequency": 4,
+        "max_emotion_score": 0.84,
+        "next_action": "Generate rain-safe Tokyo route strategy for JAG-LAB review.",
+        "platforms": [
+          "Reddit",
+          "TikTok",
+          "YouTube",
+          "Instagram"
+        ],
+        "similar_questions": [
+          "What should I do in Tokyo when it rains all day?",
+          "Tokyo rainy day itinerary for first-time visitors",
+          "Is Shibuya still worth visiting during heavy rain?"
+        ],
+        "similar_trends": [
+          "indoor Tokyo itinerary",
+          "rain-safe food and shopping route",
+          "first-time visitor weather anxiety"
+        ],
+        "source_topics": [
+          "Tokyo rain itinerary",
+          "Tokyo indoor plan",
+          "rain in Tokyo trip"
+        ],
+        "status": "clustered"
+      },
+      {
+        "canonical_pain_point": "Air fryer cleaning friction",
+        "cluster_id": "trend_cluster_air_fryer_cleaning_friction",
+        "cluster_name": "Air fryer cleaning friction",
+        "cluster_type": "high_emotion_cluster",
+        "cross_platform": false,
+        "emotion_tags": [
+          "uncertainty",
+          "high_emotion",
+          "frustration"
+        ],
+        "frequency": 1,
+        "max_emotion_score": 0.78,
+        "next_action": "Validate pain strength before generating a reply branch.",
+        "platforms": [
+          "TikTok"
+        ],
+        "similar_questions": [
+          "Air fryer cleaning is frustrating, grease is everywhere."
+        ],
+        "similar_trends": [
+          "grease cleanup",
+          "post-cooking maintenance",
+          "kitchen appliance frustration"
+        ],
+        "source_topics": [
+          "Air fryer cleaning friction"
+        ],
+        "status": "clustered"
+      },
+      {
+        "canonical_pain_point": "Vacuum performance anxiety",
+        "cluster_id": "trend_cluster_vacuum_performance_anxiety",
+        "cluster_name": "Vacuum performance anxiety",
+        "cluster_type": "single_platform_signal",
+        "cross_platform": false,
+        "emotion_tags": [
+          "uncertainty",
+          "frustration"
+        ],
+        "frequency": 1,
+        "max_emotion_score": 0.72,
+        "next_action": "Keep monitoring until repeated across more sources.",
+        "platforms": [
+          "YouTube"
+        ],
+        "similar_questions": [
+          "Vacuum lost suction and dust is still there after cleaning."
+        ],
+        "similar_trends": [
+          "lost suction",
+          "cleaning performance doubt",
+          "maintenance confusion"
+        ],
+        "source_topics": [
+          "Vacuum performance anxiety"
+        ],
+        "status": "clustered"
+      }
     ]
   }
 }
@@ -8458,6 +10791,9 @@
             <div style="height:10px"></div>
             <div class="runtime-title-row"><h3>Topic Discovery Engine</h3><p>Frequent / repeated / emerging / high-emotion questions</p></div>
             <div class="feed-stream" id="runtime-topic-discovery"></div>
+            <div style="height:10px"></div>
+            <div class="runtime-title-row"><h3>Trend Clustering Engine</h3><p>Similar questions / cross-platform trends / emotion clusters</p></div>
+            <div class="feed-stream" id="runtime-trend-clustering"></div>
             <div style="height:10px"></div>
             <div class="runtime-title-row"><h3>Personality Isolation Report</h3><p>Workspace / Market / Platform pollution guard</p></div>
             <div class="feed-stream" id="runtime-personality-isolation"></div>
@@ -9060,6 +11396,9 @@
       el('runtime-topic-discovery').innerHTML = (wr.discoveredTopics || []).map(item =>
         '<div class="feed-item"><time>' + esc(item.frequency) + 'x</time><div class="feed-main"><strong>' + esc(item.canonical_pain_point) + '</strong><span>Types: ' + (item.repeated ? 'repeated ' : '') + (item.emerging ? 'emerging ' : '') + (item.high_emotion ? 'high_emotion' : '') + '</span><span>Sources: ' + esc((item.source_types || []).join(' / ')) + ' · Platforms: ' + esc((item.platforms || []).join(' / ')) + '</span><span>' + esc((item.sample_questions || []).join(' | ')) + '</span></div><span class="badge ' + (item.high_emotion ? 'b-amber' : 'b-blue') + '">' + esc(item.status || 'discovered') + '</span></div>'
       ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Topic Discovery pending</strong><span>Scout Network will discover frequent, repeated, emerging, and high-emotion questions.</span></div><span class="badge b-amber">pending</span></div>';
+      el('runtime-trend-clustering').innerHTML = (wr.trendClusters || []).map(item =>
+        '<div class="feed-item"><time>' + esc((item.platforms || []).join(' / ')) + '</time><div class="feed-main"><strong>' + esc(item.cluster_name) + '</strong><span>Type: ' + esc(item.cluster_type || 'trend_cluster') + ' | Frequency: ' + esc(item.frequency || 0) + ' | Emotion: ' + esc((item.emotion_tags || []).join(' / ')) + '</span><span>Similar trends: ' + esc((item.similar_trends || []).join(' / ')) + '</span><span>Questions: ' + esc((item.similar_questions || []).slice(0, 3).join(' | ')) + '</span><span>' + esc(item.next_action || '') + '</span></div><span class="badge ' + (item.cross_platform ? 'b-green' : 'b-blue') + '">' + esc(item.status || 'clustered') + '</span></div>'
+      ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Trend Clustering pending</strong><span>Scout Network will cluster similar questions, trends, cross-platform discussion, and emotion patterns.</span></div><span class="badge b-amber">pending</span></div>';
       el('runtime-personality-isolation').innerHTML = (wr.personalityIsolationFeed || []).map(item =>
         '<div class="feed-item"><time>' + esc(item.dimension) + '</time><div class="feed-main"><strong>' + esc(item.status) + '</strong><span>Scopes: ' + esc((item.scopes || []).join(' / ')) + '</span><span>Contexts checked: ' + esc(item.contexts_checked) + ' | Violations: ' + esc(item.violations) + '</span></div><span class="badge ' + (item.status === 'clear' ? 'b-green' : 'b-amber') + '">' + esc(item.status) + '</span></div>'
       ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Personality Isolation Report pending</strong><span>Runtime will verify workspace, market, and platform personalities do not cross-pollute.</span></div><span class="badge b-amber">pending</span></div>';

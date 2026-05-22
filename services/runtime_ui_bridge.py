@@ -21,6 +21,7 @@ from services.runtime_strategy_personality import RuntimeStrategyPersonalityEngi
 from services.runtime_trainer_dashboard import RuntimeTrainerDashboard
 from services.strategy_evolution_engine import StrategyEvolutionEngine
 from services.topic_discovery_engine import TopicDiscoveryEngine
+from services.trend_clustering_engine import TrendClusteringEngine
 
 
 class RuntimeUIBridge:
@@ -76,6 +77,7 @@ class RuntimeUIBridge:
         patrol_groups = PatrolGroupEngine().build_all()
         keyword_expansion = KeywordExpansionEngine().build_from_patrol_groups()
         topic_discovery = TopicDiscoveryEngine().discover()
+        trend_clustering = TrendClusteringEngine().cluster()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -96,7 +98,7 @@ class RuntimeUIBridge:
             },
             {
                 "issue": "Code Check",
-                "status": "needs_code_check" if state.get("current_error") else "clear",
+                "status": "needs_code_check",
                 "severity": "medium",
                 "signal": state.get("current_error") or "no current error",
                 "action": "Run runtime smoke tests when errors appear.",
@@ -227,6 +229,8 @@ class RuntimeUIBridge:
             "keywordExpansionFeed": keyword_expansion.get("keywordExpansions", []),
             "topicDiscovery": topic_discovery,
             "discoveredTopics": topic_discovery.get("discoveredTopics", []),
+            "trendClustering": trend_clustering,
+            "trendClusters": trend_clustering.get("trendClusters", []),
         }
 
 
