@@ -29,6 +29,7 @@ from services.runtime_drift_monitor import RuntimeDriftMonitor
 from services.runtime_engine import RuntimeEngine
 from services.runtime_persistence import RuntimePersistence
 from services.runtime_priority_engine import RuntimePriorityEngine
+from services.runtime_strategy_simulation import RuntimeStrategySimulation
 from services.runtime_strategy_personality import RuntimeStrategyPersonalityEngine
 from services.strategic_interpretation_engine import StrategicInterpretationEngine
 from services.runtime_trainer_dashboard import RuntimeTrainerDashboard
@@ -104,6 +105,7 @@ class RuntimeUIBridge:
         long_term_strategy_memory = LongTermStrategyMemory().build()
         runtime_priority = RuntimePriorityEngine().evolve()
         growth_signal_correlation = GrowthSignalCorrelationEngine().correlate()
+        runtime_strategy_simulation = RuntimeStrategySimulation().simulate()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -311,6 +313,10 @@ class RuntimeUIBridge:
             "signalCorrelationMatrix": growth_signal_correlation.get("signalCorrelationMatrix", {}),
             "growthSignalCorrelationFeed": growth_signal_correlation.get("growthSignalCorrelationFeed", []),
             "correlationSummary": growth_signal_correlation.get("correlationSummary", {}),
+            "runtimeStrategySimulation": runtime_strategy_simulation,
+            "strategySimulationScenarios": runtime_strategy_simulation.get("strategySimulationScenarios", []),
+            "strategySimulationFeed": runtime_strategy_simulation.get("strategySimulationFeed", []),
+            "simulationSummary": runtime_strategy_simulation.get("simulationSummary", {}),
         }
 
 

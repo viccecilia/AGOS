@@ -1,0 +1,115 @@
+{
+  "created_at": "2026-05-22T12:07:47+00:00",
+  "report_id": "STRATEGY_SIMULATION_REPORT",
+  "safetyBoundary": "Simulation only informs local planning and human-reviewed strategy candidates.",
+  "scope": "local_strategy_simulation_only",
+  "simulationContext": {
+    "avoid_overweighting": [
+      "tiktok",
+      "x"
+    ],
+    "primary_long_term_direction": "reddit: Answer high-intent travel anxiety with detailed, non-promotional guidance.",
+    "strongest_content_signal": "payment_decision_guidance",
+    "strongest_hook_signal": "make payment decision simple",
+    "strongest_personality_signal": "trusted_guide",
+    "strongest_platform_signal": "Reddit",
+    "top_content": "reddit durable guidance",
+    "top_platform": "reddit",
+    "top_question": "Tokyo transport anxiety"
+  },
+  "simulationSummary": {
+    "best_scenario": "increase_reddit_content",
+    "can_predict_strategy_consequence": true,
+    "highest_risk_scenario": "strengthen_korea_market",
+    "requires_human_review": true
+  },
+  "status": "simulating_strategy_outcomes",
+  "strategySimulationFeed": [
+    {
+      "net_strategy_score": 0.856,
+      "predicted_outcome": "Likely improves trust and reply quality because Reddit is both priority leader and strongest platform signal.",
+      "rank": 1,
+      "recommendation": "Increase human-reviewed Reddit answers around the strongest question focus.",
+      "scenario": "increase_reddit_content",
+      "status": "needs_human_review",
+      "time": "2026-05-22T12:07:47+00:00"
+    },
+    {
+      "net_strategy_score": 0.657,
+      "predicted_outcome": "Likely improves learning quality because failed patterns have already been marked as avoid without review.",
+      "rank": 2,
+      "recommendation": "Block generic reply patterns unless a human rewrites them.",
+      "scenario": "stop_failed_generic_strategy",
+      "status": "needs_human_review",
+      "time": "2026-05-22T12:07:47+00:00"
+    },
+    {
+      "net_strategy_score": 0.51,
+      "predicted_outcome": "Likely reduces short-term traffic exposure but protects long-term trust from over-weighting spike-based tactics.",
+      "rank": 3,
+      "recommendation": "Keep TikTok hooks in test mode and require human review before promotion.",
+      "scenario": "reduce_tiktok_weight",
+      "status": "needs_human_review",
+      "time": "2026-05-22T12:07:47+00:00"
+    },
+    {
+      "net_strategy_score": 0.407,
+      "predicted_outcome": "Potential upside exists, but current strongest local evidence is Japan travel. Korea should stay a controlled expansion test.",
+      "rank": 4,
+      "recommendation": "Create a small Korea-localized test batch before changing main priority.",
+      "scenario": "strengthen_korea_market",
+      "status": "needs_human_review",
+      "time": "2026-05-22T12:07:47+00:00"
+    }
+  ],
+  "strategySimulationScenarios": [
+    {
+      "hypothesis": "If AGOS increases Reddit content with durable guide-style answers.",
+      "net_strategy_score": 0.856,
+      "predicted_growth_score": 0.94,
+      "predicted_outcome": "Likely improves trust and reply quality because Reddit is both priority leader and strongest platform signal.",
+      "recommendation": "Increase human-reviewed Reddit answers around the strongest question focus.",
+      "review_status": "needs_human_review",
+      "risk_score": 0.24,
+      "scenario": "increase_reddit_content",
+      "scenario_id": "SIM-001",
+      "simulation_only": true
+    },
+    {
+      "hypothesis": "If AGOS reduces TikTok weight and keeps it as experiment only.",
+      "net_strategy_score": 0.51,
+      "predicted_growth_score": 0.58,
+      "predicted_outcome": "Likely reduces short-term traffic exposure but protects long-term trust from over-weighting spike-based tactics.",
+      "recommendation": "Keep TikTok hooks in test mode and require human review before promotion.",
+      "review_status": "needs_human_review",
+      "risk_score": 0.2,
+      "scenario": "reduce_tiktok_weight",
+      "scenario_id": "SIM-002",
+      "simulation_only": true
+    },
+    {
+      "hypothesis": "If AGOS strengthens Korea market localization.",
+      "net_strategy_score": 0.407,
+      "predicted_growth_score": 0.54,
+      "predicted_outcome": "Potential upside exists, but current strongest local evidence is Japan travel. Korea should stay a controlled expansion test.",
+      "recommendation": "Create a small Korea-localized test batch before changing main priority.",
+      "review_status": "needs_human_review",
+      "risk_score": 0.38,
+      "scenario": "strengthen_korea_market",
+      "scenario_id": "SIM-003",
+      "simulation_only": true
+    },
+    {
+      "hypothesis": "If AGOS stops generic replies and failed hook reuse.",
+      "net_strategy_score": 0.657,
+      "predicted_growth_score": 0.72,
+      "predicted_outcome": "Likely improves learning quality because failed patterns have already been marked as avoid without review.",
+      "recommendation": "Block generic reply patterns unless a human rewrites them.",
+      "review_status": "needs_human_review",
+      "risk_score": 0.18,
+      "scenario": "stop_failed_generic_strategy",
+      "scenario_id": "SIM-004",
+      "simulation_only": true
+    }
+  ]
+}

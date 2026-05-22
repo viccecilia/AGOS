@@ -1,0 +1,38 @@
+[
+  {
+    "net_strategy_score": 0.856,
+    "predicted_outcome": "Likely improves trust and reply quality because Reddit is both priority leader and strongest platform signal.",
+    "rank": 1,
+    "recommendation": "Increase human-reviewed Reddit answers around the strongest question focus.",
+    "scenario": "increase_reddit_content",
+    "status": "needs_human_review",
+    "time": "2026-05-22T12:07:47+00:00"
+  },
+  {
+    "net_strategy_score": 0.657,
+    "predicted_outcome": "Likely improves learning quality because failed patterns have already been marked as avoid without review.",
+    "rank": 2,
+    "recommendation": "Block generic reply patterns unless a human rewrites them.",
+    "scenario": "stop_failed_generic_strategy",
+    "status": "needs_human_review",
+    "time": "2026-05-22T12:07:47+00:00"
+  },
+  {
+    "net_strategy_score": 0.51,
+    "predicted_outcome": "Likely reduces short-term traffic exposure but protects long-term trust from over-weighting spike-based tactics.",
+    "rank": 3,
+    "recommendation": "Keep TikTok hooks in test mode and require human review before promotion.",
+    "scenario": "reduce_tiktok_weight",
+    "status": "needs_human_review",
+    "time": "2026-05-22T12:07:47+00:00"
+  },
+  {
+    "net_strategy_score": 0.407,
+    "predicted_outcome": "Potential upside exists, but current strongest local evidence is Japan travel. Korea should stay a controlled expansion test.",
+    "rank": 4,
+    "recommendation": "Create a small Korea-localized test batch before changing main priority.",
+    "scenario": "strengthen_korea_market",
+    "status": "needs_human_review",
+    "time": "2026-05-22T12:07:47+00:00"
+  }
+]
