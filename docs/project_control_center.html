@@ -390,28 +390,28 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.40",
+    "controlCenterVersion": "0.1.41",
     "lastUpdated": "2026-05-22",
     "currentPhase": "Phase Blueprint System Added",
     "currentRound": "ROUND-REAL-GROWTH-001",
     "nextRound": "R041 after acceptance",
     "overallProgress": 80,
-    "activeFocus": "AGOS now has a formal Phase / Round / Task Blueprint System: Foundation, Real Growth, War Room, Scout Network, Real Ops, SaaS Commercial, and Autonomous Growth. The original 60 Round structure remains intact."
+    "activeFocus": "Phase Blueprint rounds are now visible in the main Round roadmap. The original 60 Round structure is preserved and Phase B-G blueprint rounds are appended for future execution."
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.40 Add phase blueprint system",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.40",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.40",
-    "note": "Phase / Round / Task Blueprint System is mapped to GitHub tag agos-v0.1.40."
+    "latestCommit": "agos-v0.1.41 Show blueprint rounds in roadmap",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.41",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.41",
+    "note": "Blueprint rounds are now visible in the main roadmap and mapped to GitHub tag agos-v0.1.41."
   },
   "metrics": {
-    "roundsPlanned": 60,
+    "roundsPlanned": 97,
     "roundsCompleted": 40,
     "roundsInProgress": 0,
-    "reportsEmbedded": 45
+    "reportsEmbedded": 47
   },
   "modules": [
     {
@@ -1399,9 +1399,34 @@
         "Phase blueprint rendered in browser",
         "Original 60 Round structure preserved"
       ]
+    },
+    {
+      "id": "BLUEPRINT-ROUND-VISIBILITY-001",
+      "title": "Blueprint Rounds Added To Main Roadmap",
+      "status": "done",
+      "date": "2026-05-22",
+      "summary": "Appended Phase B-G blueprint rounds to the main Round roadmap so the control center shows both phases and individual future rounds. The original 60 Round structure remains preserved.",
+      "files": [
+        "docs/project_control_center.html",
+        "runtime/task_results/BLUEPRINT-ROUND-VISIBILITY-001/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "Control center JSON parsed",
+        "Round count includes original 60 plus blueprint rounds",
+        "Browser roadmap render verified"
+      ]
     }
   ],
   "versions": [
+    {
+      "version": "0.1.41",
+      "date": "2026-05-22",
+      "round": "BLUEPRINT-ROUND-VISIBILITY-001",
+      "type": "blueprint",
+      "location": "docs/project_control_center.html",
+      "downloadTarget": "local working tree before next milestone commit",
+      "notes": "Phase B-G blueprint rounds appended to the main Round roadmap."
+    },
     {
       "version": "0.1.40",
       "date": "2026-05-22",
@@ -2353,6 +2378,376 @@
       "progress": 0,
       "deliverable": "长期自动增长基础设施验收",
       "report": "runtime/task_results/R060/ROUND_SUMMARY.md"
+    },
+    {
+      "id": "ROUND-REAL-GROWTH-001",
+      "phase": "Phase B / REAL GROWTH",
+      "name": "Real Growth Workflow Correction",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "Question intake, answer branches, human review, reply attempt tracking, feedback learning, best-answer update",
+      "report": "runtime/task_results/ROUND-REAL-GROWTH-001/ROUND_SUMMARY.md",
+      "summary": "Completed as the real growth workflow correction round. It proves question intake, answer branches, human review, reply attempts, feedback learning, best-answer update, and workspace isolation."
+    },
+    {
+      "id": "ROUND-REAL-GROWTH-002",
+      "phase": "Phase B / REAL GROWTH",
+      "name": "Answer Branch Evolution",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Improve answer branch scoring, tone variants, length variants, and platform-specific branch evolution",
+      "report": "runtime/task_results/ROUND-REAL-GROWTH-002/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase B / REAL GROWTH. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-REAL-GROWTH-003",
+      "phase": "Phase B / REAL GROWTH",
+      "name": "Feedback Memory",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Persist feedback memory across questions, branches, tones, and platforms",
+      "report": "runtime/task_results/ROUND-REAL-GROWTH-003/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase B / REAL GROWTH. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-REAL-GROWTH-004",
+      "phase": "Phase B / REAL GROWTH",
+      "name": "Human Review Queue",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Create a queue for pending questions, branches, content, replies, and approval decisions",
+      "report": "runtime/task_results/ROUND-REAL-GROWTH-004/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase B / REAL GROWTH. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-REAL-GROWTH-005",
+      "phase": "Phase B / REAL GROWTH",
+      "name": "Real Engagement Tracking",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Track real engagement feedback and connect it to learning recommendations",
+      "report": "runtime/task_results/ROUND-REAL-GROWTH-005/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase B / REAL GROWTH. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-WAR-ROOM-001",
+      "phase": "Phase C / AI WAR ROOM",
+      "name": "AI War Room Foundation",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Build the AI War Room foundation for daily battle visibility and execution governance",
+      "report": "runtime/task_results/ROUND-WAR-ROOM-001/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase C / AI WAR ROOM. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-WAR-ROOM-002",
+      "phase": "Phase C / AI WAR ROOM",
+      "name": "Battle Analysis Center",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Analyze what happened, what worked, what failed, and what needs inspection",
+      "report": "runtime/task_results/ROUND-WAR-ROOM-002/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase C / AI WAR ROOM. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-WAR-ROOM-003",
+      "phase": "Phase C / AI WAR ROOM",
+      "name": "Strategy Center",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Turn battle analysis into concrete strategy and next actions",
+      "report": "runtime/task_results/ROUND-WAR-ROOM-003/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase C / AI WAR ROOM. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-WAR-ROOM-004",
+      "phase": "Phase C / AI WAR ROOM",
+      "name": "Verification & Correction",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Verify strategy execution and correct drift",
+      "report": "runtime/task_results/ROUND-WAR-ROOM-004/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase C / AI WAR ROOM. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-WAR-ROOM-005",
+      "phase": "Phase C / AI WAR ROOM",
+      "name": "Growth Memory Visualization",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Visualize growth memory, reusable lessons, and operational drift",
+      "report": "runtime/task_results/ROUND-WAR-ROOM-005/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase C / AI WAR ROOM. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-SCOUT-001",
+      "phase": "Phase D / AI SCOUT NETWORK",
+      "name": "Patrol Groups",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Define scout patrol groups by platform, language, market, and audience",
+      "report": "runtime/task_results/ROUND-SCOUT-001/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase D / AI SCOUT NETWORK. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-SCOUT-002",
+      "phase": "Phase D / AI SCOUT NETWORK",
+      "name": "Keyword Expansion",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Expand keywords across languages, pain points, and platform search intent",
+      "report": "runtime/task_results/ROUND-SCOUT-002/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase D / AI SCOUT NETWORK. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-SCOUT-003",
+      "phase": "Phase D / AI SCOUT NETWORK",
+      "name": "Topic Discovery",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Discover candidate topics from allowed manual/API/RSS/import sources",
+      "report": "runtime/task_results/ROUND-SCOUT-003/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase D / AI SCOUT NETWORK. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-SCOUT-004",
+      "phase": "Phase D / AI SCOUT NETWORK",
+      "name": "Trend Clustering",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Cluster discovered topics into trends and opportunity groups",
+      "report": "runtime/task_results/ROUND-SCOUT-004/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase D / AI SCOUT NETWORK. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-SCOUT-005",
+      "phase": "Phase D / AI SCOUT NETWORK",
+      "name": "Heat Detection",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Score heat signals and detect what deserves action",
+      "report": "runtime/task_results/ROUND-SCOUT-005/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase D / AI SCOUT NETWORK. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-SCOUT-006",
+      "phase": "Phase D / AI SCOUT NETWORK",
+      "name": "Strategic Interpretation",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Convert trend clusters into strategic growth interpretation",
+      "report": "runtime/task_results/ROUND-SCOUT-006/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase D / AI SCOUT NETWORK. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-SCOUT-007",
+      "phase": "Phase D / AI SCOUT NETWORK",
+      "name": "Cross Platform Expansion",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Translate opportunities into platform-specific expansion plans",
+      "report": "runtime/task_results/ROUND-SCOUT-007/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase D / AI SCOUT NETWORK. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-OPS-001",
+      "phase": "Phase E / REAL OPS",
+      "name": "Daily Question Import",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Run daily real question import for one operating workspace",
+      "report": "runtime/task_results/ROUND-OPS-001/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase E / REAL OPS. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-OPS-002",
+      "phase": "Phase E / REAL OPS",
+      "name": "Real Reply Attempts",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Create review-gated real reply attempts and track outcomes",
+      "report": "runtime/task_results/ROUND-OPS-002/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase E / REAL OPS. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-OPS-003",
+      "phase": "Phase E / REAL OPS",
+      "name": "Real Feedback Capture",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Capture real engagement feedback from approved manual operations",
+      "report": "runtime/task_results/ROUND-OPS-003/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase E / REAL OPS. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-OPS-004",
+      "phase": "Phase E / REAL OPS",
+      "name": "Best Answer Learning",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Update best answer branches from real feedback",
+      "report": "runtime/task_results/ROUND-OPS-004/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase E / REAL OPS. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-OPS-005",
+      "phase": "Phase E / REAL OPS",
+      "name": "Daily Operations Report",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Generate daily operations reports from real workflow activity",
+      "report": "runtime/task_results/ROUND-OPS-005/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase E / REAL OPS. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-OPS-006",
+      "phase": "Phase E / REAL OPS",
+      "name": "Failure Analysis",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Analyze ignored answers, failed attempts, and weak signals",
+      "report": "runtime/task_results/ROUND-OPS-006/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase E / REAL OPS. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-OPS-007",
+      "phase": "Phase E / REAL OPS",
+      "name": "Real Growth Validation",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Validate whether AGOS actually helped one workspace grow",
+      "report": "runtime/task_results/ROUND-OPS-007/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase E / REAL OPS. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-SAAS-001",
+      "phase": "Phase F / SAAS COMMERCIAL",
+      "name": "Customer Management",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Build customer management for commercial SaaS operations",
+      "report": "runtime/task_results/ROUND-SAAS-001/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase F / SAAS COMMERCIAL. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-SAAS-002",
+      "phase": "Phase F / SAAS COMMERCIAL",
+      "name": "Subscription Center",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Build subscription state and plan management",
+      "report": "runtime/task_results/ROUND-SAAS-002/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase F / SAAS COMMERCIAL. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-SAAS-003",
+      "phase": "Phase F / SAAS COMMERCIAL",
+      "name": "Billing Engine",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Build billing records and payment-state workflow",
+      "report": "runtime/task_results/ROUND-SAAS-003/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase F / SAAS COMMERCIAL. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-SAAS-004",
+      "phase": "Phase F / SAAS COMMERCIAL",
+      "name": "Permission System",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Build role and permission boundaries",
+      "report": "runtime/task_results/ROUND-SAAS-004/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase F / SAAS COMMERCIAL. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-SAAS-005",
+      "phase": "Phase F / SAAS COMMERCIAL",
+      "name": "Team Collaboration",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Build team collaboration and review assignment workflow",
+      "report": "runtime/task_results/ROUND-SAAS-005/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase F / SAAS COMMERCIAL. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-SAAS-006",
+      "phase": "Phase F / SAAS COMMERCIAL",
+      "name": "AI Risk Control",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Build AI risk policy, review gates, and unsafe-action blocking",
+      "report": "runtime/task_results/ROUND-SAAS-006/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase F / SAAS COMMERCIAL. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-SAAS-007",
+      "phase": "Phase F / SAAS COMMERCIAL",
+      "name": "SaaS Commercial Validation",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Validate the commercial SaaS layer end to end",
+      "report": "runtime/task_results/ROUND-SAAS-007/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase F / SAAS COMMERCIAL. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-AUTO-001",
+      "phase": "Phase G / AUTONOMOUS GROWTH",
+      "name": "Autonomous Strategy",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Let AGOS propose strategy from operating data and memory",
+      "report": "runtime/task_results/ROUND-AUTO-001/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase G / AUTONOMOUS GROWTH. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-AUTO-002",
+      "phase": "Phase G / AUTONOMOUS GROWTH",
+      "name": "Autonomous Scheduling",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Let AGOS schedule growth actions within safe review gates",
+      "report": "runtime/task_results/ROUND-AUTO-002/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase G / AUTONOMOUS GROWTH. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-AUTO-003",
+      "phase": "Phase G / AUTONOMOUS GROWTH",
+      "name": "Autonomous Optimization",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Let AGOS optimize content and answer strategy from feedback",
+      "report": "runtime/task_results/ROUND-AUTO-003/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase G / AUTONOMOUS GROWTH. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-AUTO-004",
+      "phase": "Phase G / AUTONOMOUS GROWTH",
+      "name": "Autonomous Trend Prediction",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Let AGOS predict trend opportunities from scout and operations data",
+      "report": "runtime/task_results/ROUND-AUTO-004/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase G / AUTONOMOUS GROWTH. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-AUTO-005",
+      "phase": "Phase G / AUTONOMOUS GROWTH",
+      "name": "Autonomous War Room",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Let AGOS operate a self-updating War Room with human checkpoints",
+      "report": "runtime/task_results/ROUND-AUTO-005/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase G / AUTONOMOUS GROWTH. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
+    },
+    {
+      "id": "ROUND-AUTO-006",
+      "phase": "Phase G / AUTONOMOUS GROWTH",
+      "name": "Autonomous Growth Validation",
+      "status": "planned",
+      "progress": 0,
+      "deliverable": "Validate the autonomous growth system end to end",
+      "report": "runtime/task_results/ROUND-AUTO-006/ROUND_SUMMARY.md",
+      "summary": "Planned blueprint round for Phase G / AUTONOMOUS GROWTH. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
     }
   ],
   "realGrowthVerification": {
@@ -2532,7 +2927,9 @@
         "Incomplete items / risks",
         "Next round recommendation"
       ]
-    }
+    },
+    "legacyRoundsPreserved": 60,
+    "blueprintRoundsAppended": 37
   }
 }
   </script>
@@ -2666,6 +3063,13 @@
           <button data-filter="Phase 1">Phase 1</button>
           <button data-filter="Phase 6">SaaS</button>
           <button data-filter="Phase 7">AI 自动化</button>
+
+          <button data-filter="Phase B / REAL GROWTH">Phase B</button>
+          <button data-filter="Phase C / AI WAR ROOM">Phase C</button>
+          <button data-filter="Phase D / AI SCOUT NETWORK">Phase D</button>
+          <button data-filter="Phase E / REAL OPS">Phase E</button>
+          <button data-filter="Phase F / SAAS COMMERCIAL">Phase F</button>
+          <button data-filter="Phase G / AUTONOMOUS GROWTH">Phase G</button>
         </div>
         <div class="round-list" id="round-list"></div>
         <div class="round-detail" id="round-detail" aria-live="polite"></div>
