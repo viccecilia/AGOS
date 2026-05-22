@@ -1,0 +1,101 @@
+[
+  {
+    "ai_action": "Promote into human-reviewed strategy candidate.",
+    "correlation_strength": "strong",
+    "growth_score": 12.0,
+    "rank": 1,
+    "status": "human_review_required",
+    "target": "payment_decision_guidance",
+    "time": "2026-05-22T12:03:50+00:00",
+    "type": "content_to_feedback",
+    "why_it_matters": "payment_decision_guidance produced 2 positive signal(s), 0 ignored signal(s), and score 12.0."
+  },
+  {
+    "ai_action": "Promote into human-reviewed strategy candidate.",
+    "correlation_strength": "medium",
+    "growth_score": 8.0,
+    "rank": 2,
+    "status": "human_review_required",
+    "target": "transport_anxiety_guidance",
+    "time": "2026-05-22T12:03:50+00:00",
+    "type": "content_to_feedback",
+    "why_it_matters": "transport_anxiety_guidance produced 2 positive signal(s), 1 ignored signal(s), and score 8.0."
+  },
+  {
+    "ai_action": "Promote into human-reviewed strategy candidate.",
+    "correlation_strength": "strong",
+    "growth_score": 14.0,
+    "rank": 1,
+    "status": "human_review_required",
+    "target": "Reddit",
+    "time": "2026-05-22T12:03:50+00:00",
+    "type": "platform_to_growth",
+    "why_it_matters": "Reddit produced 2 positive signal(s), 0 ignored signal(s), and score 14.0."
+  },
+  {
+    "ai_action": "Promote into human-reviewed strategy candidate.",
+    "correlation_strength": "strong",
+    "growth_score": 8.0,
+    "rank": 2,
+    "status": "human_review_required",
+    "target": "TikTok",
+    "time": "2026-05-22T12:03:50+00:00",
+    "type": "platform_to_growth",
+    "why_it_matters": "TikTok produced 2 positive signal(s), 0 ignored signal(s), and score 8.0."
+  },
+  {
+    "ai_action": "Revise or avoid before reuse.",
+    "correlation_strength": "negative",
+    "growth_score": -2.0,
+    "rank": 3,
+    "status": "needs_revision",
+    "target": "X",
+    "time": "2026-05-22T12:03:50+00:00",
+    "type": "platform_to_growth",
+    "why_it_matters": "X produced 0 positive signal(s), 1 ignored signal(s), and score -2.0."
+  },
+  {
+    "ai_action": "Promote into human-reviewed strategy candidate.",
+    "correlation_strength": "strong",
+    "growth_score": 1.0,
+    "rank": 1,
+    "status": "human_review_required",
+    "target": "make payment decision simple",
+    "time": "2026-05-22T12:03:50+00:00",
+    "type": "hook_to_interaction",
+    "why_it_matters": "make payment decision simple is associated with the current best answer."
+  },
+  {
+    "ai_action": "Revise or avoid before reuse.",
+    "correlation_strength": "negative",
+    "growth_score": -1.0,
+    "rank": 2,
+    "status": "needs_revision",
+    "target": "reduce transit uncertainty first",
+    "time": "2026-05-22T12:03:50+00:00",
+    "type": "hook_to_interaction",
+    "why_it_matters": "reduce transit uncertainty first appeared in failed or ignored answer learning."
+  },
+  {
+    "ai_action": "Promote into human-reviewed strategy candidate.",
+    "correlation_strength": "strong",
+    "growth_score": 0.9,
+    "rank": 1,
+    "status": "human_review_required",
+    "target": "reddit",
+    "time": "2026-05-22T12:03:50+00:00",
+    "type": "personality_to_result",
+    "why_it_matters": "Best long-term JAG guide personality: useful, credible, calm, and non-promotional."
+  },
+  {
+    "ai_action": "Revise or avoid before reuse.",
+    "correlation_strength": "negative",
+    "growth_score": -0.5,
+    "rank": 2,
+    "status": "needs_revision",
+    "target": "tiktok",
+    "time": "2026-05-22T12:03:50+00:00",
+    "type": "personality_to_result",
+    "why_it_matters": "Failed personality: aggressive hook drifts away from trusted guide style."
+  }
+]

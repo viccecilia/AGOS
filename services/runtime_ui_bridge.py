@@ -10,6 +10,7 @@ from services.cross_platform_expansion_engine import CrossPlatformExpansionEngin
 from services.daily_question_import_engine import DailyQuestionImportEngine
 from services.daily_operations_report_engine import DailyOperationsReportEngine
 from services.failure_analysis_engine import FailureAnalysisEngine
+from services.growth_signal_correlation_engine import GrowthSignalCorrelationEngine
 from services.human_feedback_learning import HumanFeedbackLearning
 from services.human_personality_training import HumanPersonalityTraining
 from services.heat_detection_engine import HeatDetectionEngine
@@ -102,6 +103,7 @@ class RuntimeUIBridge:
         real_growth_validation = RealGrowthValidationEngine().validate()
         long_term_strategy_memory = LongTermStrategyMemory().build()
         runtime_priority = RuntimePriorityEngine().evolve()
+        growth_signal_correlation = GrowthSignalCorrelationEngine().correlate()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -305,6 +307,10 @@ class RuntimeUIBridge:
             "priorityEvolutionHistory": runtime_priority.get("priorityEvolutionHistory", []),
             "runtimePriorityFeed": runtime_priority.get("runtimePriorityFeed", []),
             "prioritySummary": runtime_priority.get("prioritySummary", {}),
+            "growthSignalCorrelation": growth_signal_correlation,
+            "signalCorrelationMatrix": growth_signal_correlation.get("signalCorrelationMatrix", {}),
+            "growthSignalCorrelationFeed": growth_signal_correlation.get("growthSignalCorrelationFeed", []),
+            "correlationSummary": growth_signal_correlation.get("correlationSummary", {}),
         }
 
 
