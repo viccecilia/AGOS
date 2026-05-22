@@ -13,6 +13,7 @@ from services.personality_memory_deposit import PersonalityMemoryDeposit
 from services.personality_evolution_gate import PersonalityEvolutionGate
 from services.personality_review_session import PersonalityReviewSession
 from services.patrol_group_engine import PatrolGroupEngine
+from services.keyword_expansion_engine import KeywordExpansionEngine
 from services.runtime_drift_monitor import RuntimeDriftMonitor
 from services.runtime_engine import RuntimeEngine
 from services.runtime_persistence import RuntimePersistence
@@ -72,6 +73,7 @@ class RuntimeUIBridge:
         trainer_dashboard = RuntimeTrainerDashboard().build()
         personality_evolution_gate = PersonalityEvolutionGate().evaluate()
         patrol_groups = PatrolGroupEngine().build_all()
+        keyword_expansion = KeywordExpansionEngine().build_from_patrol_groups()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -219,6 +221,8 @@ class RuntimeUIBridge:
             "personalityEvolutionGateChecks": personality_evolution_gate.get("checks", []),
             "patrolGroups": patrol_groups,
             "activePatrolGroups": patrol_groups.get("activePatrolGroups", []),
+            "keywordExpansion": keyword_expansion,
+            "keywordExpansionFeed": keyword_expansion.get("keywordExpansions", []),
         }
 
 

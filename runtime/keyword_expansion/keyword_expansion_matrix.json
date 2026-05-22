@@ -1,0 +1,364 @@
+[
+  {
+    "canonical_pain_point": "Air fryer cleaning friction",
+    "emotion_expressions": [
+      "i hate cleaning my air fryer",
+      "air fryer grease is frustrating"
+    ],
+    "expanded_terms": [
+      "air fryer cleaning hack",
+      "air fryer grease is frustrating",
+      "air fryer grease problem",
+      "air fryer smells bad",
+      "air fryer stink",
+      "basket gunk",
+      "before you scrub your air fryer",
+      "clean air fryer basket",
+      "greasy air fryer mess",
+      "i hate cleaning my air fryer",
+      "ノンフライヤー 掃除",
+      "空气炸锅油污",
+      "空气炸锅清洁",
+      "에어프라이어 청소"
+    ],
+    "multilingual": [
+      "空气炸锅清洁",
+      "空气炸锅油污",
+      "ノンフライヤー 掃除",
+      "에어프라이어 청소"
+    ],
+    "platform_lingo": [
+      "air fryer cleaning hack",
+      "before you scrub your air fryer"
+    ],
+    "seed_keyword": "air fryer cleaning",
+    "slang": [
+      "greasy air fryer mess",
+      "basket gunk",
+      "air fryer stink"
+    ],
+    "status": "expanded",
+    "synonyms": [
+      "clean air fryer basket",
+      "air fryer grease problem",
+      "air fryer smells bad"
+    ]
+  },
+  {
+    "canonical_pain_point": "Japan itinerary overwhelm",
+    "emotion_expressions": [
+      "i feel overwhelmed planning japan",
+      "i do not know how many days to spend"
+    ],
+    "expanded_terms": [
+      "first japan trip plan",
+      "i do not know how many days to spend",
+      "i feel overwhelmed planning japan",
+      "itinerary chaos",
+      "japan itinerary hack",
+      "japan planning overload",
+      "japan travel route",
+      "japan trip plan",
+      "save this japan route",
+      "tokyo osaka kyoto itinerary",
+      "too many japan options",
+      "日本旅游路线",
+      "日本旅行 計画 不安",
+      "日本行程怎么安排",
+      "일본 여행 일정 고민"
+    ],
+    "multilingual": [
+      "日本行程怎么安排",
+      "日本旅游路线",
+      "日本旅行 計画 不安",
+      "일본 여행 일정 고민"
+    ],
+    "platform_lingo": [
+      "japan itinerary hack",
+      "save this japan route",
+      "first japan trip plan"
+    ],
+    "seed_keyword": "japan itinerary",
+    "slang": [
+      "japan planning overload",
+      "too many japan options",
+      "itinerary chaos"
+    ],
+    "status": "expanded",
+    "synonyms": [
+      "japan trip plan",
+      "japan travel route",
+      "tokyo osaka kyoto itinerary"
+    ]
+  },
+  {
+    "canonical_pain_point": "Kitchen appliance troubleshooting",
+    "emotion_expressions": [
+      "this appliance is frustrating",
+      "i cannot make it work"
+    ],
+    "expanded_terms": [
+      "appliance stopped working",
+      "appliance troubleshooting tip",
+      "countertop appliance problem",
+      "i cannot make it work",
+      "kitchen gadget fail",
+      "kitchen gadget issue",
+      "small appliance troubleshooting",
+      "this appliance is frustrating",
+      "try this before returning it",
+      "キッチン家電 トラブル",
+      "厨房电器问题",
+      "小家电故障",
+      "주방가전 문제"
+    ],
+    "multilingual": [
+      "厨房电器问题",
+      "小家电故障",
+      "キッチン家電 トラブル",
+      "주방가전 문제"
+    ],
+    "platform_lingo": [
+      "appliance troubleshooting tip",
+      "try this before returning it"
+    ],
+    "seed_keyword": "kitchen appliance problem",
+    "slang": [
+      "kitchen gadget fail",
+      "countertop appliance problem"
+    ],
+    "status": "expanded",
+    "synonyms": [
+      "appliance stopped working",
+      "kitchen gadget issue",
+      "small appliance troubleshooting"
+    ]
+  },
+  {
+    "canonical_pain_point": "Tokyo transport anxiety",
+    "emotion_expressions": [
+      "afraid i will miss my train",
+      "i panic in big stations"
+    ],
+    "expanded_terms": [
+      "afraid i will miss my train",
+      "cannot find platform",
+      "first time japan warning",
+      "i panic in big stations",
+      "lost in tokyo station",
+      "platform panic",
+      "station maze",
+      "station mistake to avoid",
+      "station navigation problem",
+      "tokyo platform tip",
+      "transfer nightmare",
+      "日本车站看不懂",
+      "车站迷路",
+      "駅で迷う",
+      "역에서 길을 잃음"
+    ],
+    "multilingual": [
+      "车站迷路",
+      "日本车站看不懂",
+      "駅で迷う",
+      "역에서 길을 잃음"
+    ],
+    "platform_lingo": [
+      "station mistake to avoid",
+      "tokyo platform tip",
+      "first time japan warning"
+    ],
+    "seed_keyword": "lost in station",
+    "slang": [
+      "station maze",
+      "platform panic",
+      "transfer nightmare"
+    ],
+    "status": "expanded",
+    "synonyms": [
+      "lost in tokyo station",
+      "cannot find platform",
+      "station navigation problem"
+    ]
+  },
+  {
+    "canonical_pain_point": "Kansai transport confusion",
+    "emotion_expressions": [
+      "i am confused by osaka passes",
+      "i worry about choosing the wrong kansai pass"
+    ],
+    "expanded_terms": [
+      "i am confused by osaka passes",
+      "i worry about choosing the wrong kansai pass",
+      "kansai pass headache",
+      "kansai train hack",
+      "kansai train pass",
+      "osaka pass tip",
+      "osaka route mess",
+      "osaka subway confusing",
+      "osaka to kyoto transport",
+      "关西交通券怎么选",
+      "大阪 交通 わからない",
+      "大阪交通复杂",
+      "오사카 교통패스 헷갈림"
+    ],
+    "multilingual": [
+      "大阪交通复杂",
+      "关西交通券怎么选",
+      "大阪 交通 わからない",
+      "오사카 교통패스 헷갈림"
+    ],
+    "platform_lingo": [
+      "osaka pass tip",
+      "kansai train hack"
+    ],
+    "seed_keyword": "osaka transport",
+    "slang": [
+      "kansai pass headache",
+      "osaka route mess"
+    ],
+    "status": "expanded",
+    "synonyms": [
+      "osaka subway confusing",
+      "kansai train pass",
+      "osaka to kyoto transport"
+    ]
+  },
+  {
+    "canonical_pain_point": "Smart home setup confusion",
+    "emotion_expressions": [
+      "i feel dumb setting up smart home devices",
+      "setup keeps failing"
+    ],
+    "expanded_terms": [
+      "before you reset your device",
+      "device refuses to pair",
+      "device will not connect",
+      "i feel dumb setting up smart home devices",
+      "setup keeps failing",
+      "smart home headache",
+      "smart home pairing problem",
+      "smart home setup fix",
+      "wifi smart plug setup",
+      "スマートホーム 設定",
+      "智能家居设置",
+      "智能设备连不上",
+      "스마트홈 연결 문제"
+    ],
+    "multilingual": [
+      "智能家居设置",
+      "智能设备连不上",
+      "スマートホーム 設定",
+      "스마트홈 연결 문제"
+    ],
+    "platform_lingo": [
+      "smart home setup fix",
+      "before you reset your device"
+    ],
+    "seed_keyword": "smart home setup",
+    "slang": [
+      "smart home headache",
+      "device refuses to pair"
+    ],
+    "status": "expanded",
+    "synonyms": [
+      "smart home pairing problem",
+      "device will not connect",
+      "wifi smart plug setup"
+    ]
+  },
+  {
+    "canonical_pain_point": "Tokyo transport anxiety",
+    "emotion_expressions": [
+      "i am scared of getting lost in tokyo",
+      "tokyo subway makes me anxious"
+    ],
+    "expanded_terms": [
+      "i am scared of getting lost in tokyo",
+      "jr metro connection",
+      "lost in shinjuku station",
+      "save this before tokyo",
+      "tokyo station maze",
+      "tokyo station survival tip",
+      "tokyo station transfer",
+      "tokyo subway confusing",
+      "tokyo subway makes me anxious",
+      "tokyo train hack",
+      "tokyo train transfer",
+      "train transfer hell",
+      "东京地铁复杂",
+      "东京换乘看不懂",
+      "東京駅 乗り換え 不安",
+      "도쿄 지하철 환승 어려움"
+    ],
+    "multilingual": [
+      "东京地铁复杂",
+      "东京换乘看不懂",
+      "東京駅 乗り換え 不安",
+      "도쿄 지하철 환승 어려움"
+    ],
+    "platform_lingo": [
+      "tokyo train hack",
+      "tokyo station survival tip",
+      "save this before tokyo"
+    ],
+    "seed_keyword": "tokyo transfer",
+    "slang": [
+      "tokyo station maze",
+      "train transfer hell",
+      "lost in shinjuku station"
+    ],
+    "status": "expanded",
+    "synonyms": [
+      "tokyo subway confusing",
+      "tokyo train transfer",
+      "tokyo station transfer",
+      "jr metro connection"
+    ]
+  },
+  {
+    "canonical_pain_point": "Vacuum performance anxiety",
+    "emotion_expressions": [
+      "my vacuum is driving me crazy",
+      "i regret buying this vacuum"
+    ],
+    "expanded_terms": [
+      "check this before replacing vacuum",
+      "dust still there",
+      "i regret buying this vacuum",
+      "my vacuum is driving me crazy",
+      "suction died",
+      "vacuum is useless",
+      "vacuum lost suction",
+      "vacuum not picking up dust",
+      "vacuum suction fix",
+      "weak vacuum cleaner",
+      "吸尘器不吸灰",
+      "吸尘器吸力弱",
+      "掃除機 吸引力 弱い",
+      "청소기 흡입력 약함"
+    ],
+    "multilingual": [
+      "吸尘器吸力弱",
+      "吸尘器不吸灰",
+      "掃除機 吸引力 弱い",
+      "청소기 흡입력 약함"
+    ],
+    "platform_lingo": [
+      "vacuum suction fix",
+      "check this before replacing vacuum"
+    ],
+    "seed_keyword": "vacuum suction",
+    "slang": [
+      "vacuum is useless",
+      "dust still there",
+      "suction died"
+    ],
+    "status": "expanded",
+    "synonyms": [
+      "vacuum lost suction",
+      "vacuum not picking up dust",
+      "weak vacuum cleaner"
+    ]
+  }
+]
