@@ -452,6 +452,72 @@
     }
   ],
   "current_runtime_stage": "Deposit",
+  "discoveredTopics": [
+    {
+      "canonical_pain_point": "Tokyo transport anxiety",
+      "emerging": true,
+      "frequency": 4,
+      "high_emotion": true,
+      "max_emotion_score": 0.9,
+      "platforms": [
+        "Manual",
+        "RSS",
+        "Reddit",
+        "Threads"
+      ],
+      "repeated": true,
+      "sample_questions": [
+        "Tokyo subway confusing for first time Japan trip. I am worried I will get lost.",
+        "东京地铁复杂，第一次去日本很怕换乘错。",
+        "Lost in station at Shinjuku, cannot find platform and panic."
+      ],
+      "source_types": [
+        "json",
+        "manual_import",
+        "rss"
+      ],
+      "status": "discovered",
+      "topic_id": "topic_tokyo_transport_anxiety"
+    },
+    {
+      "canonical_pain_point": "Air fryer cleaning friction",
+      "emerging": true,
+      "frequency": 1,
+      "high_emotion": true,
+      "max_emotion_score": 0.78,
+      "platforms": [
+        "TikTok"
+      ],
+      "repeated": false,
+      "sample_questions": [
+        "Air fryer cleaning is frustrating, grease is everywhere."
+      ],
+      "source_types": [
+        "csv"
+      ],
+      "status": "discovered",
+      "topic_id": "topic_air_fryer_cleaning_friction"
+    },
+    {
+      "canonical_pain_point": "Vacuum performance anxiety",
+      "emerging": true,
+      "frequency": 1,
+      "high_emotion": false,
+      "max_emotion_score": 0.72,
+      "platforms": [
+        "YouTube"
+      ],
+      "repeated": false,
+      "sample_questions": [
+        "Vacuum lost suction and dust is still there after cleaning."
+      ],
+      "source_types": [
+        "local_text"
+      ],
+      "status": "discovered",
+      "topic_id": "topic_vacuum_performance_anxiety"
+    }
+  ],
   "humanFeedbackSummary": {
     "correctionHistory": [
       {
@@ -794,7 +860,7 @@
       "Tokyo transport anxiety",
       "Vacuum performance anxiety"
     ],
-    "created_at": "2026-05-22T09:52:48+00:00",
+    "created_at": "2026-05-22T09:57:42+00:00",
     "keywordExpansions": [
       {
         "canonical_pain_point": "Air fryer cleaning friction",
@@ -2207,7 +2273,7 @@
         "workspace": "PHILIPS-LAB"
       }
     ],
-    "created_at": "2026-05-22T09:52:48+00:00",
+    "created_at": "2026-05-22T09:57:42+00:00",
     "industryPackPatrolGroups": {
       "Home Appliance Pack": [
         {
@@ -3033,7 +3099,7 @@
         "status": "passed"
       }
     ],
-    "created_at": "2026-05-22T09:52:48+00:00",
+    "created_at": "2026-05-22T09:57:42+00:00",
     "marketIsolationStatus": "clear",
     "personalityEvolutionSummary": "AGOS has formed a stable operating personality with workspace, platform, market, and strategy layers.",
     "platformPersonalityCount": 4,
@@ -3123,7 +3189,7 @@
     }
   ],
   "personalityIsolationReport": {
-    "created_at": "2026-05-22T09:52:48+00:00",
+    "created_at": "2026-05-22T09:57:42+00:00",
     "isolationMatrix": [
       {
         "allowed_traits": [
@@ -3424,7 +3490,7 @@
     }
   },
   "personalityReviewSession": {
-    "created_at": "2026-05-22T09:52:48+00:00",
+    "created_at": "2026-05-22T09:57:42+00:00",
     "driftEventsReviewed": 6,
     "personalityTrend": [
       {
@@ -4569,7 +4635,7 @@
         }
       ]
     },
-    "created_at": "2026-05-22T09:52:48+00:00",
+    "created_at": "2026-05-22T09:57:42+00:00",
     "dashboard_id": "RUNTIME_TRAINER_DASHBOARD",
     "driftAlerts": [
       {
@@ -4785,7 +4851,7 @@
   },
   "socialRuntimeMatrix": [],
   "strategyEvolution": {
-    "created_at": "2026-05-22T09:52:48+00:00",
+    "created_at": "2026-05-22T09:57:42+00:00",
     "evolutionFeed": [
       {
         "classification": "long_term_growth",
@@ -4982,7 +5048,7 @@
         ],
         "cadence": "Low frequency, high relevance, reply only when the question is a real pain point.",
         "content_shape": "Long-form answer with context, tradeoffs, and practical steps.",
-        "created_at": "2026-05-22T09:52:48+00:00",
+        "created_at": "2026-05-22T09:57:42+00:00",
         "current_pain_point": "Tokyo transport anxiety",
         "human_review_status": "needs_human_review",
         "industry_pack": "Travel Pack / Lab",
@@ -5010,7 +5076,7 @@
         ],
         "cadence": "Higher frequency experiments with tight hook variation and fast feedback.",
         "content_shape": "Short hook, one visible pain scene, one practical payoff, one soft save CTA.",
-        "created_at": "2026-05-22T09:52:48+00:00",
+        "created_at": "2026-05-22T09:57:42+00:00",
         "current_pain_point": "Tokyo transport anxiety",
         "human_review_status": "needs_human_review",
         "industry_pack": "Travel Pack / Lab",
@@ -5038,7 +5104,7 @@
         ],
         "cadence": "Timely posting around trend windows and question bursts.",
         "content_shape": "One strong claim, two supporting details, one practical takeaway or thread.",
-        "created_at": "2026-05-22T09:52:48+00:00",
+        "created_at": "2026-05-22T09:57:42+00:00",
         "current_pain_point": "Tokyo transport anxiety",
         "human_review_status": "needs_human_review",
         "industry_pack": "Travel Pack / Lab",
@@ -5066,7 +5132,7 @@
         ],
         "cadence": "Lower frequency evergreen videos supported by Shorts extracted from high-friction moments.",
         "content_shape": "Searchable title, structured chapters, visual walkthrough, recap, and next-step CTA.",
-        "created_at": "2026-05-22T09:52:48+00:00",
+        "created_at": "2026-05-22T09:57:42+00:00",
         "current_pain_point": "Tokyo transport anxiety",
         "human_review_status": "needs_human_review",
         "industry_pack": "Travel Pack / Lab",
@@ -5086,7 +5152,7 @@
         "workspace": "JAG-LAB"
       }
     ],
-    "updated_at": "2026-05-22T09:52:48+00:00",
+    "updated_at": "2026-05-22T09:57:42+00:00",
     "workspace": "JAG-LAB"
   },
   "strategyPersonalityFeed": [
@@ -5131,8 +5197,164 @@
     "currentCycle": "JAG-LAB-CYCLE-0001",
     "currentIndustryPack": "Travel Pack / Lab",
     "currentWorkspace": "JAG-LAB",
-    "lastRunTime": "2026-05-22T09:52:48+00:00",
+    "lastRunTime": "2026-05-22T09:57:42+00:00",
     "status": "STOPPED"
+  },
+  "topicDiscovery": {
+    "created_at": "2026-05-22T09:57:42+00:00",
+    "discoveredTopics": [
+      {
+        "canonical_pain_point": "Tokyo transport anxiety",
+        "emerging": true,
+        "frequency": 4,
+        "high_emotion": true,
+        "max_emotion_score": 0.9,
+        "platforms": [
+          "Manual",
+          "RSS",
+          "Reddit",
+          "Threads"
+        ],
+        "repeated": true,
+        "sample_questions": [
+          "Tokyo subway confusing for first time Japan trip. I am worried I will get lost.",
+          "东京地铁复杂，第一次去日本很怕换乘错。",
+          "Lost in station at Shinjuku, cannot find platform and panic."
+        ],
+        "source_types": [
+          "json",
+          "manual_import",
+          "rss"
+        ],
+        "status": "discovered",
+        "topic_id": "topic_tokyo_transport_anxiety"
+      },
+      {
+        "canonical_pain_point": "Air fryer cleaning friction",
+        "emerging": true,
+        "frequency": 1,
+        "high_emotion": true,
+        "max_emotion_score": 0.78,
+        "platforms": [
+          "TikTok"
+        ],
+        "repeated": false,
+        "sample_questions": [
+          "Air fryer cleaning is frustrating, grease is everywhere."
+        ],
+        "source_types": [
+          "csv"
+        ],
+        "status": "discovered",
+        "topic_id": "topic_air_fryer_cleaning_friction"
+      },
+      {
+        "canonical_pain_point": "Vacuum performance anxiety",
+        "emerging": true,
+        "frequency": 1,
+        "high_emotion": false,
+        "max_emotion_score": 0.72,
+        "platforms": [
+          "YouTube"
+        ],
+        "repeated": false,
+        "sample_questions": [
+          "Vacuum lost suction and dust is still there after cleaning."
+        ],
+        "source_types": [
+          "local_text"
+        ],
+        "status": "discovered",
+        "topic_id": "topic_vacuum_performance_anxiety"
+      }
+    ],
+    "report_id": "DISCOVERED_TOPICS_REPORT",
+    "sourceItems": [
+      {
+        "canonical_pain_point": "Tokyo transport anxiety",
+        "created_at": "2026-05-22T01:00:00+00:00",
+        "emotion_score": 0.86,
+        "item_id": "topic_source_001",
+        "platform": "RSS",
+        "source": "travel_rss_sample",
+        "source_type": "rss",
+        "text": "Tokyo subway confusing for first time Japan trip. I am worried I will get lost."
+      },
+      {
+        "canonical_pain_point": "Tokyo transport anxiety",
+        "created_at": "2026-05-22T02:00:00+00:00",
+        "emotion_score": 0.9,
+        "item_id": "topic_source_002",
+        "platform": "Manual",
+        "source": "operator_note",
+        "source_type": "manual_import",
+        "text": "东京地铁复杂，第一次去日本很怕换乘错。"
+      },
+      {
+        "canonical_pain_point": "Tokyo transport anxiety",
+        "created_at": "2026-05-22T03:00:00+00:00",
+        "emotion_score": 0.88,
+        "item_id": "topic_source_003",
+        "platform": "Reddit",
+        "source": "imported_questions.json",
+        "source_type": "json",
+        "text": "Lost in station at Shinjuku, cannot find platform and panic."
+      },
+      {
+        "canonical_pain_point": "Air fryer cleaning friction",
+        "created_at": "2026-05-22T04:00:00+00:00",
+        "emotion_score": 0.78,
+        "item_id": "topic_source_004",
+        "platform": "TikTok",
+        "source": "questions.csv",
+        "source_type": "csv",
+        "text": "Air fryer cleaning is frustrating, grease is everywhere."
+      },
+      {
+        "canonical_pain_point": "Vacuum performance anxiety",
+        "created_at": "2026-05-22T05:00:00+00:00",
+        "emotion_score": 0.72,
+        "item_id": "topic_source_005",
+        "platform": "YouTube",
+        "source": "local_notes.txt",
+        "source_type": "local_text",
+        "text": "Vacuum lost suction and dust is still there after cleaning."
+      },
+      {
+        "canonical_pain_point": "Tokyo transport anxiety",
+        "created_at": "2026-05-22T06:00:00+00:00",
+        "emotion_score": 0.81,
+        "item_id": "topic_source_006",
+        "platform": "Threads",
+        "source": "operator_note",
+        "source_type": "manual_import",
+        "text": "Tokyo train transfer at Shinjuku is a station maze."
+      }
+    ],
+    "status": "active",
+    "supportedSources": [
+      "RSS",
+      "manual_import",
+      "JSON",
+      "CSV",
+      "local_text"
+    ],
+    "topicSummary": {
+      "emerging_topics": [
+        "Tokyo transport anxiety",
+        "Air fryer cleaning friction",
+        "Vacuum performance anxiety"
+      ],
+      "frequent_topics": [
+        "Tokyo transport anxiety"
+      ],
+      "high_emotion_topics": [
+        "Tokyo transport anxiety",
+        "Air fryer cleaning friction"
+      ],
+      "total_source_items": 6,
+      "total_topics": 3
+    }
   },
   "trainingExplanations": [
     {

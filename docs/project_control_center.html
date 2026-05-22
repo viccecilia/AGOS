@@ -525,28 +525,28 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.61",
+    "controlCenterVersion": "0.1.62",
     "lastUpdated": "2026-05-22",
     "currentPhase": "Scout Intelligence / AI Scout Network",
-    "currentRound": "ROUND-SCOUT-002",
-    "nextRound": "ROUND-SCOUT-003 Topic Discovery",
-    "overallProgress": 96,
-    "activeFocus": "Keyword Expansion Engine: AGOS expands patrol keywords into synonyms, slang, emotion expressions, platform lingo, and multilingual canonical pain points."
+    "currentRound": "ROUND-SCOUT-003",
+    "nextRound": "ROUND-SCOUT-004 Trend Clustering",
+    "overallProgress": 97,
+    "activeFocus": "Topic Discovery Engine: AGOS discovers frequent, repeated, emerging, and high-emotion questions from RSS, manual import, JSON, CSV, and local text sources."
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.61 Add keyword expansion engine",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.61",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.61",
-    "note": "Keyword Expansion Engine mapped to GitHub tag agos-v0.1.61. Expansion is local-only; no external platform automation is enabled."
+    "latestCommit": "agos-v0.1.62 Add topic discovery engine",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.62",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.62",
+    "note": "Topic Discovery Engine mapped to GitHub tag agos-v0.1.62. Discovery is local-only; no external platform automation is enabled."
   },
   "metrics": {
     "roundsPlanned": 101,
-    "roundsCompleted": 53,
+    "roundsCompleted": 54,
     "roundsInProgress": 0,
-    "reportsEmbedded": 65
+    "reportsEmbedded": 66
   },
   "modules": [
     {
@@ -680,6 +680,27 @@
     }
   ],
   "reports": [
+    {
+      "id": "ROUND-SCOUT-003",
+      "title": "AGOS Topic Discovery Engine",
+      "date": "2026-05-22",
+      "status": "done",
+      "summary": "Added Topic Discovery Engine supporting RSS, manual import, JSON, CSV, and local text sources to find frequent, repeated, emerging, and high-emotion questions.",
+      "files": [
+        "services/topic_discovery_engine.py",
+        "services/runtime_ui_bridge.py",
+        "docs/project_control_center.html",
+        "tests/topic_discovery_smoke_test.py",
+        "runtime/discovered_topics/DISCOVERED_TOPICS_REPORT.json",
+        "runtime/task_results/ROUND-SCOUT-003/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "python -m compileall services tests passed",
+        "python tests\\topic_discovery_smoke_test.py passed",
+        "python tests\\war_room_runtime_ui_smoke_test.py passed",
+        "Browser check: Topic Discovery Engine shows discovered topics and question types"
+      ]
+    },
     {
       "id": "ROUND-SCOUT-002",
       "title": "AGOS Keyword Expansion Engine",
@@ -1972,6 +1993,15 @@
   ],
   "versions": [
     {
+      "id": "agos_control_center_v0.1.62",
+      "label": "v0.1.62 - Topic Discovery Engine",
+      "date": "2026-05-22",
+      "gitRef": "agos-v0.1.62",
+      "location": "docs/project_control_center.html",
+      "notes": "ROUND-SCOUT-003 completed locally and mapped to GitHub tag agos-v0.1.62. War Room now shows Topic Discovery Engine.",
+      "snapshot": "AGOS Project Control Center v0.1.62\nRound: ROUND-SCOUT-003 completed\nGit: agos-v0.1.62\nStatus: Topic Discovery Engine added\nNo external platform automation enabled.\n"
+    },
+    {
       "id": "agos_control_center_v0.1.61",
       "label": "v0.1.61 - Keyword Expansion Engine",
       "date": "2026-05-22",
@@ -3204,16 +3234,6 @@
       "summary": "Planned blueprint round for Phase C / AI WAR ROOM. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
     },
     {
-      "id": "ROUND-SCOUT-003",
-      "phase": "Phase D / AI SCOUT NETWORK",
-      "name": "Topic Discovery",
-      "status": "planned",
-      "progress": 0,
-      "deliverable": "Discover candidate topics from allowed manual/API/RSS/import sources",
-      "report": "runtime/task_results/ROUND-SCOUT-003/ROUND_SUMMARY.md",
-      "summary": "Planned blueprint round for Phase D / AI SCOUT NETWORK. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
-    },
-    {
       "id": "ROUND-SCOUT-004",
       "phase": "Phase D / AI SCOUT NETWORK",
       "name": "Trend Clustering",
@@ -3632,6 +3652,16 @@
       "deliverable": "Keyword Expansion Engine with synonym, slang, emotion, platform lingo, and multilingual normalization.",
       "report": "runtime/task_results/ROUND-SCOUT-002/ROUND_SUMMARY.md",
       "summary": "AGOS can now expand patrol keywords and normalize expressions such as Tokyo subway confusing and ?????? into Tokyo transport anxiety."
+    },
+    {
+      "id": "ROUND-SCOUT-003",
+      "phase": "SCOUT_INTELLIGENCE / AI_SCOUT_NETWORK",
+      "name": "AGOS_TOPIC_DISCOVERY_ENGINE",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "Topic Discovery Engine for RSS, manual, JSON, CSV, and local text sources.",
+      "report": "runtime/task_results/ROUND-SCOUT-003/ROUND_SUMMARY.md",
+      "summary": "AGOS can now discover high-frequency, repeated, emerging, and high-emotion question topics from local source inputs."
     }
   ],
   "realGrowthVerification": {
@@ -7988,6 +8018,228 @@
           "weak vacuum cleaner"
         ]
       }
+    ],
+    "topicDiscovery": {
+      "created_at": "2026-05-22T09:57:42+00:00",
+      "discoveredTopics": [
+        {
+          "canonical_pain_point": "Tokyo transport anxiety",
+          "emerging": true,
+          "frequency": 4,
+          "high_emotion": true,
+          "max_emotion_score": 0.9,
+          "platforms": [
+            "Manual",
+            "RSS",
+            "Reddit",
+            "Threads"
+          ],
+          "repeated": true,
+          "sample_questions": [
+            "Tokyo subway confusing for first time Japan trip. I am worried I will get lost.",
+            "东京地铁复杂，第一次去日本很怕换乘错。",
+            "Lost in station at Shinjuku, cannot find platform and panic."
+          ],
+          "source_types": [
+            "json",
+            "manual_import",
+            "rss"
+          ],
+          "status": "discovered",
+          "topic_id": "topic_tokyo_transport_anxiety"
+        },
+        {
+          "canonical_pain_point": "Air fryer cleaning friction",
+          "emerging": true,
+          "frequency": 1,
+          "high_emotion": true,
+          "max_emotion_score": 0.78,
+          "platforms": [
+            "TikTok"
+          ],
+          "repeated": false,
+          "sample_questions": [
+            "Air fryer cleaning is frustrating, grease is everywhere."
+          ],
+          "source_types": [
+            "csv"
+          ],
+          "status": "discovered",
+          "topic_id": "topic_air_fryer_cleaning_friction"
+        },
+        {
+          "canonical_pain_point": "Vacuum performance anxiety",
+          "emerging": true,
+          "frequency": 1,
+          "high_emotion": false,
+          "max_emotion_score": 0.72,
+          "platforms": [
+            "YouTube"
+          ],
+          "repeated": false,
+          "sample_questions": [
+            "Vacuum lost suction and dust is still there after cleaning."
+          ],
+          "source_types": [
+            "local_text"
+          ],
+          "status": "discovered",
+          "topic_id": "topic_vacuum_performance_anxiety"
+        }
+      ],
+      "report_id": "DISCOVERED_TOPICS_REPORT",
+      "sourceItems": [
+        {
+          "canonical_pain_point": "Tokyo transport anxiety",
+          "created_at": "2026-05-22T01:00:00+00:00",
+          "emotion_score": 0.86,
+          "item_id": "topic_source_001",
+          "platform": "RSS",
+          "source": "travel_rss_sample",
+          "source_type": "rss",
+          "text": "Tokyo subway confusing for first time Japan trip. I am worried I will get lost."
+        },
+        {
+          "canonical_pain_point": "Tokyo transport anxiety",
+          "created_at": "2026-05-22T02:00:00+00:00",
+          "emotion_score": 0.9,
+          "item_id": "topic_source_002",
+          "platform": "Manual",
+          "source": "operator_note",
+          "source_type": "manual_import",
+          "text": "东京地铁复杂，第一次去日本很怕换乘错。"
+        },
+        {
+          "canonical_pain_point": "Tokyo transport anxiety",
+          "created_at": "2026-05-22T03:00:00+00:00",
+          "emotion_score": 0.88,
+          "item_id": "topic_source_003",
+          "platform": "Reddit",
+          "source": "imported_questions.json",
+          "source_type": "json",
+          "text": "Lost in station at Shinjuku, cannot find platform and panic."
+        },
+        {
+          "canonical_pain_point": "Air fryer cleaning friction",
+          "created_at": "2026-05-22T04:00:00+00:00",
+          "emotion_score": 0.78,
+          "item_id": "topic_source_004",
+          "platform": "TikTok",
+          "source": "questions.csv",
+          "source_type": "csv",
+          "text": "Air fryer cleaning is frustrating, grease is everywhere."
+        },
+        {
+          "canonical_pain_point": "Vacuum performance anxiety",
+          "created_at": "2026-05-22T05:00:00+00:00",
+          "emotion_score": 0.72,
+          "item_id": "topic_source_005",
+          "platform": "YouTube",
+          "source": "local_notes.txt",
+          "source_type": "local_text",
+          "text": "Vacuum lost suction and dust is still there after cleaning."
+        },
+        {
+          "canonical_pain_point": "Tokyo transport anxiety",
+          "created_at": "2026-05-22T06:00:00+00:00",
+          "emotion_score": 0.81,
+          "item_id": "topic_source_006",
+          "platform": "Threads",
+          "source": "operator_note",
+          "source_type": "manual_import",
+          "text": "Tokyo train transfer at Shinjuku is a station maze."
+        }
+      ],
+      "status": "active",
+      "supportedSources": [
+        "RSS",
+        "manual_import",
+        "JSON",
+        "CSV",
+        "local_text"
+      ],
+      "topicSummary": {
+        "emerging_topics": [
+          "Tokyo transport anxiety",
+          "Air fryer cleaning friction",
+          "Vacuum performance anxiety"
+        ],
+        "frequent_topics": [
+          "Tokyo transport anxiety"
+        ],
+        "high_emotion_topics": [
+          "Tokyo transport anxiety",
+          "Air fryer cleaning friction"
+        ],
+        "total_source_items": 6,
+        "total_topics": 3
+      }
+    },
+    "discoveredTopics": [
+      {
+        "canonical_pain_point": "Tokyo transport anxiety",
+        "emerging": true,
+        "frequency": 4,
+        "high_emotion": true,
+        "max_emotion_score": 0.9,
+        "platforms": [
+          "Manual",
+          "RSS",
+          "Reddit",
+          "Threads"
+        ],
+        "repeated": true,
+        "sample_questions": [
+          "Tokyo subway confusing for first time Japan trip. I am worried I will get lost.",
+          "东京地铁复杂，第一次去日本很怕换乘错。",
+          "Lost in station at Shinjuku, cannot find platform and panic."
+        ],
+        "source_types": [
+          "json",
+          "manual_import",
+          "rss"
+        ],
+        "status": "discovered",
+        "topic_id": "topic_tokyo_transport_anxiety"
+      },
+      {
+        "canonical_pain_point": "Air fryer cleaning friction",
+        "emerging": true,
+        "frequency": 1,
+        "high_emotion": true,
+        "max_emotion_score": 0.78,
+        "platforms": [
+          "TikTok"
+        ],
+        "repeated": false,
+        "sample_questions": [
+          "Air fryer cleaning is frustrating, grease is everywhere."
+        ],
+        "source_types": [
+          "csv"
+        ],
+        "status": "discovered",
+        "topic_id": "topic_air_fryer_cleaning_friction"
+      },
+      {
+        "canonical_pain_point": "Vacuum performance anxiety",
+        "emerging": true,
+        "frequency": 1,
+        "high_emotion": false,
+        "max_emotion_score": 0.72,
+        "platforms": [
+          "YouTube"
+        ],
+        "repeated": false,
+        "sample_questions": [
+          "Vacuum lost suction and dust is still there after cleaning."
+        ],
+        "source_types": [
+          "local_text"
+        ],
+        "status": "discovered",
+        "topic_id": "topic_vacuum_performance_anxiety"
+      }
     ]
   }
 }
@@ -8203,6 +8455,9 @@
             <div style="height:10px"></div>
             <div class="runtime-title-row"><h3>Keyword Expansion Engine</h3><p>Synonyms / slang / emotion / platform lingo / multilingual</p></div>
             <div class="feed-stream" id="runtime-keyword-expansion"></div>
+            <div style="height:10px"></div>
+            <div class="runtime-title-row"><h3>Topic Discovery Engine</h3><p>Frequent / repeated / emerging / high-emotion questions</p></div>
+            <div class="feed-stream" id="runtime-topic-discovery"></div>
             <div style="height:10px"></div>
             <div class="runtime-title-row"><h3>Personality Isolation Report</h3><p>Workspace / Market / Platform pollution guard</p></div>
             <div class="feed-stream" id="runtime-personality-isolation"></div>
@@ -8802,6 +9057,9 @@
       el('runtime-keyword-expansion').innerHTML = (wr.keywordExpansionFeed || []).map(item =>
         '<div class="feed-item"><time>' + esc(item.seed_keyword) + '</time><div class="feed-main"><strong>' + esc(item.canonical_pain_point) + '</strong><span>Synonyms: ' + esc((item.synonyms || []).join(' / ')) + '</span><span>Slang: ' + esc((item.slang || []).join(' / ')) + '</span><span>Emotion: ' + esc((item.emotion_expressions || []).join(' / ')) + '</span><span>Multilingual: ' + esc((item.multilingual || []).join(' / ')) + '</span></div><span class="badge b-blue">' + esc(item.status || 'expanded') + '</span></div>'
       ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Keyword Expansion pending</strong><span>Scout Network will expand synonyms, slang, emotion expressions, platform lingo, and multilingual terms.</span></div><span class="badge b-amber">pending</span></div>';
+      el('runtime-topic-discovery').innerHTML = (wr.discoveredTopics || []).map(item =>
+        '<div class="feed-item"><time>' + esc(item.frequency) + 'x</time><div class="feed-main"><strong>' + esc(item.canonical_pain_point) + '</strong><span>Types: ' + (item.repeated ? 'repeated ' : '') + (item.emerging ? 'emerging ' : '') + (item.high_emotion ? 'high_emotion' : '') + '</span><span>Sources: ' + esc((item.source_types || []).join(' / ')) + ' · Platforms: ' + esc((item.platforms || []).join(' / ')) + '</span><span>' + esc((item.sample_questions || []).join(' | ')) + '</span></div><span class="badge ' + (item.high_emotion ? 'b-amber' : 'b-blue') + '">' + esc(item.status || 'discovered') + '</span></div>'
+      ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Topic Discovery pending</strong><span>Scout Network will discover frequent, repeated, emerging, and high-emotion questions.</span></div><span class="badge b-amber">pending</span></div>';
       el('runtime-personality-isolation').innerHTML = (wr.personalityIsolationFeed || []).map(item =>
         '<div class="feed-item"><time>' + esc(item.dimension) + '</time><div class="feed-main"><strong>' + esc(item.status) + '</strong><span>Scopes: ' + esc((item.scopes || []).join(' / ')) + '</span><span>Contexts checked: ' + esc(item.contexts_checked) + ' | Violations: ' + esc(item.violations) + '</span></div><span class="badge ' + (item.status === 'clear' ? 'b-green' : 'b-amber') + '">' + esc(item.status) + '</span></div>'
       ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Personality Isolation Report pending</strong><span>Runtime will verify workspace, market, and platform personalities do not cross-pollute.</span></div><span class="badge b-amber">pending</span></div>';

@@ -1,0 +1,28 @@
+{
+  "round_id": "ROUND-SCOUT-003",
+  "status": "passed",
+  "report": "runtime/discovered_topics/DISCOVERED_TOPICS_REPORT.json",
+  "checks": [
+    "RSS source support",
+    "manual import support",
+    "JSON source support",
+    "CSV source support",
+    "local text source support",
+    "frequent question detection",
+    "repeated question detection",
+    "emerging question detection",
+    "high emotion question detection"
+  ],
+  "verification": [
+    "python -m compileall services tests passed",
+    "python tests\\topic_discovery_smoke_test.py passed",
+    "python tests\\war_room_runtime_ui_smoke_test.py passed"
+  ],
+  "safety_boundary": {
+    "local_runtime_only": true,
+    "external_platform_api": false,
+    "scraping": false,
+    "auto_posting": false,
+    "auto_replying": false
+  }
+}

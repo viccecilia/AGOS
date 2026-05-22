@@ -20,6 +20,7 @@ from services.runtime_persistence import RuntimePersistence
 from services.runtime_strategy_personality import RuntimeStrategyPersonalityEngine
 from services.runtime_trainer_dashboard import RuntimeTrainerDashboard
 from services.strategy_evolution_engine import StrategyEvolutionEngine
+from services.topic_discovery_engine import TopicDiscoveryEngine
 
 
 class RuntimeUIBridge:
@@ -74,6 +75,7 @@ class RuntimeUIBridge:
         personality_evolution_gate = PersonalityEvolutionGate().evaluate()
         patrol_groups = PatrolGroupEngine().build_all()
         keyword_expansion = KeywordExpansionEngine().build_from_patrol_groups()
+        topic_discovery = TopicDiscoveryEngine().discover()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -223,6 +225,8 @@ class RuntimeUIBridge:
             "activePatrolGroups": patrol_groups.get("activePatrolGroups", []),
             "keywordExpansion": keyword_expansion,
             "keywordExpansionFeed": keyword_expansion.get("keywordExpansions", []),
+            "topicDiscovery": topic_discovery,
+            "discoveredTopics": topic_discovery.get("discoveredTopics", []),
         }
 
 
