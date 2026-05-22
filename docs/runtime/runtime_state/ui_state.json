@@ -451,6 +451,473 @@
       "workspace": "JAG-LAB"
     }
   ],
+  "crossPlatformExpansion": {
+    "created_at": "2026-05-22T10:19:10+00:00",
+    "crossPlatformExpansionFeed": [
+      {
+        "cluster_name": "Tokyo transport anxiety",
+        "review_status": "needs_human_review",
+        "source_platform": "TikTok",
+        "status": "draft_ready",
+        "strategy": "Convert TikTok signal for Tokyo transport anxiety into Reddit, YouTube, Instagram, X, SEO local draft assets, preserving the same pain point while adapting tone and format.",
+        "target_platforms": [
+          "Reddit",
+          "YouTube",
+          "Instagram",
+          "X",
+          "SEO"
+        ],
+        "time": "2026-05-22T10:19:10+00:00",
+        "type": "cross_platform_expansion"
+      },
+      {
+        "cluster_name": "Tokyo rainy day travel friction",
+        "review_status": "needs_human_review",
+        "source_platform": "TikTok",
+        "status": "draft_ready",
+        "strategy": "Convert TikTok signal for Tokyo rainy day travel friction into Reddit, YouTube, Instagram, X, SEO local draft assets, preserving the same pain point while adapting tone and format.",
+        "target_platforms": [
+          "Reddit",
+          "YouTube",
+          "Instagram",
+          "X",
+          "SEO"
+        ],
+        "time": "2026-05-22T10:19:10+00:00",
+        "type": "cross_platform_expansion"
+      },
+      {
+        "cluster_name": "Air fryer cleaning friction",
+        "review_status": "needs_human_review",
+        "source_platform": "TikTok",
+        "status": "watch_only",
+        "strategy": "Convert TikTok signal for Air fryer cleaning friction into Reddit, YouTube, Instagram, X, SEO local draft assets, preserving the same pain point while adapting tone and format.",
+        "target_platforms": [
+          "Reddit",
+          "YouTube",
+          "Instagram",
+          "X",
+          "SEO"
+        ],
+        "time": "2026-05-22T10:19:10+00:00",
+        "type": "cross_platform_expansion"
+      },
+      {
+        "cluster_name": "Vacuum performance anxiety",
+        "review_status": "needs_human_review",
+        "source_platform": "TikTok",
+        "status": "watch_only",
+        "strategy": "Convert TikTok signal for Vacuum performance anxiety into Reddit, YouTube, Instagram, X, SEO local draft assets, preserving the same pain point while adapting tone and format.",
+        "target_platforms": [
+          "Reddit",
+          "YouTube",
+          "Instagram",
+          "X",
+          "SEO"
+        ],
+        "time": "2026-05-22T10:19:10+00:00",
+        "type": "cross_platform_expansion"
+      }
+    ],
+    "expansionStrategies": [
+      {
+        "cluster_name": "Tokyo transport anxiety",
+        "expansion_id": "expansion_tokyo_transport_anxiety",
+        "expansion_strategy": "Convert TikTok signal for Tokyo transport anxiety into Reddit, YouTube, Instagram, X, SEO local draft assets, preserving the same pain point while adapting tone and format.",
+        "heat_level": "hot",
+        "opportunity_score": 0.925,
+        "platform_plans": [
+          {
+            "cluster_name": "Tokyo transport anxiety",
+            "content_format": "helpful reply thread",
+            "draft_prompt": "Write a Reddit-safe answer for Tokyo transport anxiety with practical detail and no hard CTA.",
+            "review_status": "needs_human_review",
+            "rewrite_direction": "Turn the hook into a detailed, non-promotional answer with concrete steps.",
+            "source_platform": "TikTok",
+            "status": "draft_only",
+            "target_platform": "Reddit"
+          },
+          {
+            "cluster_name": "Tokyo transport anxiety",
+            "content_format": "short explainer outline",
+            "draft_prompt": "Create a YouTube explainer outline for Tokyo transport anxiety.",
+            "review_status": "needs_human_review",
+            "rewrite_direction": "Turn the trend into a checklist video outline with problem, fix, and example route.",
+            "source_platform": "TikTok",
+            "status": "draft_only",
+            "target_platform": "YouTube"
+          },
+          {
+            "cluster_name": "Tokyo transport anxiety",
+            "content_format": "carousel card plan",
+            "draft_prompt": "Create an Instagram carousel plan for Tokyo transport anxiety.",
+            "review_status": "needs_human_review",
+            "rewrite_direction": "Turn the trend into visual cards with one pain point per card and a calm guide tone.",
+            "source_platform": "TikTok",
+            "status": "draft_only",
+            "target_platform": "Instagram"
+          },
+          {
+            "cluster_name": "Tokyo transport anxiety",
+            "content_format": "short insight thread",
+            "draft_prompt": "Create an X thread draft for Tokyo transport anxiety.",
+            "review_status": "needs_human_review",
+            "rewrite_direction": "Compress the trend into a crisp observation plus 2-3 practical bullets.",
+            "source_platform": "TikTok",
+            "status": "draft_only",
+            "target_platform": "X"
+          },
+          {
+            "cluster_name": "Tokyo transport anxiety",
+            "content_format": "search article brief",
+            "draft_prompt": "Create an SEO article brief for Tokyo transport anxiety.",
+            "review_status": "needs_human_review",
+            "rewrite_direction": "Turn the trend into a search-intent brief with headings, FAQs, and safe advice.",
+            "source_platform": "TikTok",
+            "status": "draft_only",
+            "target_platform": "SEO"
+          }
+        ],
+        "prohibited_actions": [
+          "no_auto_publish",
+          "no_auto_reply",
+          "no_auto_login",
+          "no_platform_api_access"
+        ],
+        "requires_human_review": true,
+        "source_platform": "TikTok",
+        "status": "draft_ready",
+        "strategy_id": "strategy_tokyo_transport_anxiety",
+        "target_platforms": [
+          "Reddit",
+          "YouTube",
+          "Instagram",
+          "X",
+          "SEO"
+        ]
+      },
+      {
+        "cluster_name": "Tokyo rainy day travel friction",
+        "expansion_id": "expansion_tokyo_rainy_day",
+        "expansion_strategy": "Convert TikTok signal for Tokyo rainy day travel friction into Reddit, YouTube, Instagram, X, SEO local draft assets, preserving the same pain point while adapting tone and format.",
+        "heat_level": "hot",
+        "opportunity_score": 0.91,
+        "platform_plans": [
+          {
+            "cluster_name": "Tokyo rainy day travel friction",
+            "content_format": "helpful reply thread",
+            "draft_prompt": "Write a Reddit-safe answer for Tokyo rainy day travel friction with practical detail and no hard CTA.",
+            "review_status": "needs_human_review",
+            "rewrite_direction": "Turn the hook into a detailed, non-promotional answer with concrete steps.",
+            "source_platform": "TikTok",
+            "status": "draft_only",
+            "target_platform": "Reddit"
+          },
+          {
+            "cluster_name": "Tokyo rainy day travel friction",
+            "content_format": "short explainer outline",
+            "draft_prompt": "Create a YouTube explainer outline for Tokyo rainy day travel friction.",
+            "review_status": "needs_human_review",
+            "rewrite_direction": "Turn the trend into a checklist video outline with problem, fix, and example route.",
+            "source_platform": "TikTok",
+            "status": "draft_only",
+            "target_platform": "YouTube"
+          },
+          {
+            "cluster_name": "Tokyo rainy day travel friction",
+            "content_format": "carousel card plan",
+            "draft_prompt": "Create an Instagram carousel plan for Tokyo rainy day travel friction.",
+            "review_status": "needs_human_review",
+            "rewrite_direction": "Turn the trend into visual cards with one pain point per card and a calm guide tone.",
+            "source_platform": "TikTok",
+            "status": "draft_only",
+            "target_platform": "Instagram"
+          },
+          {
+            "cluster_name": "Tokyo rainy day travel friction",
+            "content_format": "short insight thread",
+            "draft_prompt": "Create an X thread draft for Tokyo rainy day travel friction.",
+            "review_status": "needs_human_review",
+            "rewrite_direction": "Compress the trend into a crisp observation plus 2-3 practical bullets.",
+            "source_platform": "TikTok",
+            "status": "draft_only",
+            "target_platform": "X"
+          },
+          {
+            "cluster_name": "Tokyo rainy day travel friction",
+            "content_format": "search article brief",
+            "draft_prompt": "Create an SEO article brief for Tokyo rainy day travel friction.",
+            "review_status": "needs_human_review",
+            "rewrite_direction": "Turn the trend into a search-intent brief with headings, FAQs, and safe advice.",
+            "source_platform": "TikTok",
+            "status": "draft_only",
+            "target_platform": "SEO"
+          }
+        ],
+        "prohibited_actions": [
+          "no_auto_publish",
+          "no_auto_reply",
+          "no_auto_login",
+          "no_platform_api_access"
+        ],
+        "requires_human_review": true,
+        "source_platform": "TikTok",
+        "status": "draft_ready",
+        "strategy_id": "strategy_tokyo_rainy_day",
+        "target_platforms": [
+          "Reddit",
+          "YouTube",
+          "Instagram",
+          "X",
+          "SEO"
+        ]
+      },
+      {
+        "cluster_name": "Air fryer cleaning friction",
+        "expansion_id": "expansion_air_fryer_cleaning_friction",
+        "expansion_strategy": "Convert TikTok signal for Air fryer cleaning friction into Reddit, YouTube, Instagram, X, SEO local draft assets, preserving the same pain point while adapting tone and format.",
+        "heat_level": "watch",
+        "opportunity_score": 0.357,
+        "platform_plans": [
+          {
+            "cluster_name": "Air fryer cleaning friction",
+            "content_format": "helpful reply thread",
+            "draft_prompt": "Write a Reddit-safe answer for Air fryer cleaning friction with practical detail and no hard CTA.",
+            "review_status": "needs_human_review",
+            "rewrite_direction": "Turn the hook into a detailed, non-promotional answer with concrete steps.",
+            "source_platform": "TikTok",
+            "status": "draft_only",
+            "target_platform": "Reddit"
+          },
+          {
+            "cluster_name": "Air fryer cleaning friction",
+            "content_format": "short explainer outline",
+            "draft_prompt": "Create a YouTube explainer outline for Air fryer cleaning friction.",
+            "review_status": "needs_human_review",
+            "rewrite_direction": "Turn the trend into a checklist video outline with problem, fix, and example route.",
+            "source_platform": "TikTok",
+            "status": "draft_only",
+            "target_platform": "YouTube"
+          },
+          {
+            "cluster_name": "Air fryer cleaning friction",
+            "content_format": "carousel card plan",
+            "draft_prompt": "Create an Instagram carousel plan for Air fryer cleaning friction.",
+            "review_status": "needs_human_review",
+            "rewrite_direction": "Turn the trend into visual cards with one pain point per card and a calm guide tone.",
+            "source_platform": "TikTok",
+            "status": "draft_only",
+            "target_platform": "Instagram"
+          },
+          {
+            "cluster_name": "Air fryer cleaning friction",
+            "content_format": "short insight thread",
+            "draft_prompt": "Create an X thread draft for Air fryer cleaning friction.",
+            "review_status": "needs_human_review",
+            "rewrite_direction": "Compress the trend into a crisp observation plus 2-3 practical bullets.",
+            "source_platform": "TikTok",
+            "status": "draft_only",
+            "target_platform": "X"
+          },
+          {
+            "cluster_name": "Air fryer cleaning friction",
+            "content_format": "search article brief",
+            "draft_prompt": "Create an SEO article brief for Air fryer cleaning friction.",
+            "review_status": "needs_human_review",
+            "rewrite_direction": "Turn the trend into a search-intent brief with headings, FAQs, and safe advice.",
+            "source_platform": "TikTok",
+            "status": "draft_only",
+            "target_platform": "SEO"
+          }
+        ],
+        "prohibited_actions": [
+          "no_auto_publish",
+          "no_auto_reply",
+          "no_auto_login",
+          "no_platform_api_access"
+        ],
+        "requires_human_review": true,
+        "source_platform": "TikTok",
+        "status": "watch_only",
+        "strategy_id": "strategy_air_fryer_cleaning_friction",
+        "target_platforms": [
+          "Reddit",
+          "YouTube",
+          "Instagram",
+          "X",
+          "SEO"
+        ]
+      },
+      {
+        "cluster_name": "Vacuum performance anxiety",
+        "expansion_id": "expansion_vacuum_performance_anxiety",
+        "expansion_strategy": "Convert TikTok signal for Vacuum performance anxiety into Reddit, YouTube, Instagram, X, SEO local draft assets, preserving the same pain point while adapting tone and format.",
+        "heat_level": "watch",
+        "opportunity_score": 0.342,
+        "platform_plans": [
+          {
+            "cluster_name": "Vacuum performance anxiety",
+            "content_format": "helpful reply thread",
+            "draft_prompt": "Write a Reddit-safe answer for Vacuum performance anxiety with practical detail and no hard CTA.",
+            "review_status": "needs_human_review",
+            "rewrite_direction": "Turn the hook into a detailed, non-promotional answer with concrete steps.",
+            "source_platform": "TikTok",
+            "status": "draft_only",
+            "target_platform": "Reddit"
+          },
+          {
+            "cluster_name": "Vacuum performance anxiety",
+            "content_format": "short explainer outline",
+            "draft_prompt": "Create a YouTube explainer outline for Vacuum performance anxiety.",
+            "review_status": "needs_human_review",
+            "rewrite_direction": "Turn the trend into a checklist video outline with problem, fix, and example route.",
+            "source_platform": "TikTok",
+            "status": "draft_only",
+            "target_platform": "YouTube"
+          },
+          {
+            "cluster_name": "Vacuum performance anxiety",
+            "content_format": "carousel card plan",
+            "draft_prompt": "Create an Instagram carousel plan for Vacuum performance anxiety.",
+            "review_status": "needs_human_review",
+            "rewrite_direction": "Turn the trend into visual cards with one pain point per card and a calm guide tone.",
+            "source_platform": "TikTok",
+            "status": "draft_only",
+            "target_platform": "Instagram"
+          },
+          {
+            "cluster_name": "Vacuum performance anxiety",
+            "content_format": "short insight thread",
+            "draft_prompt": "Create an X thread draft for Vacuum performance anxiety.",
+            "review_status": "needs_human_review",
+            "rewrite_direction": "Compress the trend into a crisp observation plus 2-3 practical bullets.",
+            "source_platform": "TikTok",
+            "status": "draft_only",
+            "target_platform": "X"
+          },
+          {
+            "cluster_name": "Vacuum performance anxiety",
+            "content_format": "search article brief",
+            "draft_prompt": "Create an SEO article brief for Vacuum performance anxiety.",
+            "review_status": "needs_human_review",
+            "rewrite_direction": "Turn the trend into a search-intent brief with headings, FAQs, and safe advice.",
+            "source_platform": "TikTok",
+            "status": "draft_only",
+            "target_platform": "SEO"
+          }
+        ],
+        "prohibited_actions": [
+          "no_auto_publish",
+          "no_auto_reply",
+          "no_auto_login",
+          "no_platform_api_access"
+        ],
+        "requires_human_review": true,
+        "source_platform": "TikTok",
+        "status": "watch_only",
+        "strategy_id": "strategy_vacuum_performance_anxiety",
+        "target_platforms": [
+          "Reddit",
+          "YouTube",
+          "Instagram",
+          "X",
+          "SEO"
+        ]
+      }
+    ],
+    "expansionSummary": {
+      "requires_human_review": 4,
+      "top_focus": "Tokyo transport anxiety",
+      "top_strategy": "expansion_tokyo_transport_anxiety",
+      "total_strategies": 4
+    },
+    "report_id": "CROSS_PLATFORM_EXPANSION_REPORT",
+    "scope": "local_draft_only_no_auto_publish",
+    "status": "active",
+    "supportedExpansion": {
+      "source": [
+        "TikTok hot signal",
+        "Reddit hot signal",
+        "YouTube hot signal",
+        "Instagram hot signal",
+        "X hot signal",
+        "SEO hot signal"
+      ],
+      "targets": [
+        "Reddit",
+        "YouTube",
+        "Instagram",
+        "X",
+        "SEO"
+      ]
+    }
+  },
+  "crossPlatformExpansionFeed": [
+    {
+      "cluster_name": "Tokyo transport anxiety",
+      "review_status": "needs_human_review",
+      "source_platform": "TikTok",
+      "status": "draft_ready",
+      "strategy": "Convert TikTok signal for Tokyo transport anxiety into Reddit, YouTube, Instagram, X, SEO local draft assets, preserving the same pain point while adapting tone and format.",
+      "target_platforms": [
+        "Reddit",
+        "YouTube",
+        "Instagram",
+        "X",
+        "SEO"
+      ],
+      "time": "2026-05-22T10:19:10+00:00",
+      "type": "cross_platform_expansion"
+    },
+    {
+      "cluster_name": "Tokyo rainy day travel friction",
+      "review_status": "needs_human_review",
+      "source_platform": "TikTok",
+      "status": "draft_ready",
+      "strategy": "Convert TikTok signal for Tokyo rainy day travel friction into Reddit, YouTube, Instagram, X, SEO local draft assets, preserving the same pain point while adapting tone and format.",
+      "target_platforms": [
+        "Reddit",
+        "YouTube",
+        "Instagram",
+        "X",
+        "SEO"
+      ],
+      "time": "2026-05-22T10:19:10+00:00",
+      "type": "cross_platform_expansion"
+    },
+    {
+      "cluster_name": "Air fryer cleaning friction",
+      "review_status": "needs_human_review",
+      "source_platform": "TikTok",
+      "status": "watch_only",
+      "strategy": "Convert TikTok signal for Air fryer cleaning friction into Reddit, YouTube, Instagram, X, SEO local draft assets, preserving the same pain point while adapting tone and format.",
+      "target_platforms": [
+        "Reddit",
+        "YouTube",
+        "Instagram",
+        "X",
+        "SEO"
+      ],
+      "time": "2026-05-22T10:19:10+00:00",
+      "type": "cross_platform_expansion"
+    },
+    {
+      "cluster_name": "Vacuum performance anxiety",
+      "review_status": "needs_human_review",
+      "source_platform": "TikTok",
+      "status": "watch_only",
+      "strategy": "Convert TikTok signal for Vacuum performance anxiety into Reddit, YouTube, Instagram, X, SEO local draft assets, preserving the same pain point while adapting tone and format.",
+      "target_platforms": [
+        "Reddit",
+        "YouTube",
+        "Instagram",
+        "X",
+        "SEO"
+      ],
+      "time": "2026-05-22T10:19:10+00:00",
+      "type": "cross_platform_expansion"
+    }
+  ],
   "current_runtime_stage": "Deposit",
   "discoveredTopics": [
     {
@@ -518,8 +985,314 @@
       "topic_id": "topic_vacuum_performance_anxiety"
     }
   ],
+  "expansionStrategies": [
+    {
+      "cluster_name": "Tokyo transport anxiety",
+      "expansion_id": "expansion_tokyo_transport_anxiety",
+      "expansion_strategy": "Convert TikTok signal for Tokyo transport anxiety into Reddit, YouTube, Instagram, X, SEO local draft assets, preserving the same pain point while adapting tone and format.",
+      "heat_level": "hot",
+      "opportunity_score": 0.925,
+      "platform_plans": [
+        {
+          "cluster_name": "Tokyo transport anxiety",
+          "content_format": "helpful reply thread",
+          "draft_prompt": "Write a Reddit-safe answer for Tokyo transport anxiety with practical detail and no hard CTA.",
+          "review_status": "needs_human_review",
+          "rewrite_direction": "Turn the hook into a detailed, non-promotional answer with concrete steps.",
+          "source_platform": "TikTok",
+          "status": "draft_only",
+          "target_platform": "Reddit"
+        },
+        {
+          "cluster_name": "Tokyo transport anxiety",
+          "content_format": "short explainer outline",
+          "draft_prompt": "Create a YouTube explainer outline for Tokyo transport anxiety.",
+          "review_status": "needs_human_review",
+          "rewrite_direction": "Turn the trend into a checklist video outline with problem, fix, and example route.",
+          "source_platform": "TikTok",
+          "status": "draft_only",
+          "target_platform": "YouTube"
+        },
+        {
+          "cluster_name": "Tokyo transport anxiety",
+          "content_format": "carousel card plan",
+          "draft_prompt": "Create an Instagram carousel plan for Tokyo transport anxiety.",
+          "review_status": "needs_human_review",
+          "rewrite_direction": "Turn the trend into visual cards with one pain point per card and a calm guide tone.",
+          "source_platform": "TikTok",
+          "status": "draft_only",
+          "target_platform": "Instagram"
+        },
+        {
+          "cluster_name": "Tokyo transport anxiety",
+          "content_format": "short insight thread",
+          "draft_prompt": "Create an X thread draft for Tokyo transport anxiety.",
+          "review_status": "needs_human_review",
+          "rewrite_direction": "Compress the trend into a crisp observation plus 2-3 practical bullets.",
+          "source_platform": "TikTok",
+          "status": "draft_only",
+          "target_platform": "X"
+        },
+        {
+          "cluster_name": "Tokyo transport anxiety",
+          "content_format": "search article brief",
+          "draft_prompt": "Create an SEO article brief for Tokyo transport anxiety.",
+          "review_status": "needs_human_review",
+          "rewrite_direction": "Turn the trend into a search-intent brief with headings, FAQs, and safe advice.",
+          "source_platform": "TikTok",
+          "status": "draft_only",
+          "target_platform": "SEO"
+        }
+      ],
+      "prohibited_actions": [
+        "no_auto_publish",
+        "no_auto_reply",
+        "no_auto_login",
+        "no_platform_api_access"
+      ],
+      "requires_human_review": true,
+      "source_platform": "TikTok",
+      "status": "draft_ready",
+      "strategy_id": "strategy_tokyo_transport_anxiety",
+      "target_platforms": [
+        "Reddit",
+        "YouTube",
+        "Instagram",
+        "X",
+        "SEO"
+      ]
+    },
+    {
+      "cluster_name": "Tokyo rainy day travel friction",
+      "expansion_id": "expansion_tokyo_rainy_day",
+      "expansion_strategy": "Convert TikTok signal for Tokyo rainy day travel friction into Reddit, YouTube, Instagram, X, SEO local draft assets, preserving the same pain point while adapting tone and format.",
+      "heat_level": "hot",
+      "opportunity_score": 0.91,
+      "platform_plans": [
+        {
+          "cluster_name": "Tokyo rainy day travel friction",
+          "content_format": "helpful reply thread",
+          "draft_prompt": "Write a Reddit-safe answer for Tokyo rainy day travel friction with practical detail and no hard CTA.",
+          "review_status": "needs_human_review",
+          "rewrite_direction": "Turn the hook into a detailed, non-promotional answer with concrete steps.",
+          "source_platform": "TikTok",
+          "status": "draft_only",
+          "target_platform": "Reddit"
+        },
+        {
+          "cluster_name": "Tokyo rainy day travel friction",
+          "content_format": "short explainer outline",
+          "draft_prompt": "Create a YouTube explainer outline for Tokyo rainy day travel friction.",
+          "review_status": "needs_human_review",
+          "rewrite_direction": "Turn the trend into a checklist video outline with problem, fix, and example route.",
+          "source_platform": "TikTok",
+          "status": "draft_only",
+          "target_platform": "YouTube"
+        },
+        {
+          "cluster_name": "Tokyo rainy day travel friction",
+          "content_format": "carousel card plan",
+          "draft_prompt": "Create an Instagram carousel plan for Tokyo rainy day travel friction.",
+          "review_status": "needs_human_review",
+          "rewrite_direction": "Turn the trend into visual cards with one pain point per card and a calm guide tone.",
+          "source_platform": "TikTok",
+          "status": "draft_only",
+          "target_platform": "Instagram"
+        },
+        {
+          "cluster_name": "Tokyo rainy day travel friction",
+          "content_format": "short insight thread",
+          "draft_prompt": "Create an X thread draft for Tokyo rainy day travel friction.",
+          "review_status": "needs_human_review",
+          "rewrite_direction": "Compress the trend into a crisp observation plus 2-3 practical bullets.",
+          "source_platform": "TikTok",
+          "status": "draft_only",
+          "target_platform": "X"
+        },
+        {
+          "cluster_name": "Tokyo rainy day travel friction",
+          "content_format": "search article brief",
+          "draft_prompt": "Create an SEO article brief for Tokyo rainy day travel friction.",
+          "review_status": "needs_human_review",
+          "rewrite_direction": "Turn the trend into a search-intent brief with headings, FAQs, and safe advice.",
+          "source_platform": "TikTok",
+          "status": "draft_only",
+          "target_platform": "SEO"
+        }
+      ],
+      "prohibited_actions": [
+        "no_auto_publish",
+        "no_auto_reply",
+        "no_auto_login",
+        "no_platform_api_access"
+      ],
+      "requires_human_review": true,
+      "source_platform": "TikTok",
+      "status": "draft_ready",
+      "strategy_id": "strategy_tokyo_rainy_day",
+      "target_platforms": [
+        "Reddit",
+        "YouTube",
+        "Instagram",
+        "X",
+        "SEO"
+      ]
+    },
+    {
+      "cluster_name": "Air fryer cleaning friction",
+      "expansion_id": "expansion_air_fryer_cleaning_friction",
+      "expansion_strategy": "Convert TikTok signal for Air fryer cleaning friction into Reddit, YouTube, Instagram, X, SEO local draft assets, preserving the same pain point while adapting tone and format.",
+      "heat_level": "watch",
+      "opportunity_score": 0.357,
+      "platform_plans": [
+        {
+          "cluster_name": "Air fryer cleaning friction",
+          "content_format": "helpful reply thread",
+          "draft_prompt": "Write a Reddit-safe answer for Air fryer cleaning friction with practical detail and no hard CTA.",
+          "review_status": "needs_human_review",
+          "rewrite_direction": "Turn the hook into a detailed, non-promotional answer with concrete steps.",
+          "source_platform": "TikTok",
+          "status": "draft_only",
+          "target_platform": "Reddit"
+        },
+        {
+          "cluster_name": "Air fryer cleaning friction",
+          "content_format": "short explainer outline",
+          "draft_prompt": "Create a YouTube explainer outline for Air fryer cleaning friction.",
+          "review_status": "needs_human_review",
+          "rewrite_direction": "Turn the trend into a checklist video outline with problem, fix, and example route.",
+          "source_platform": "TikTok",
+          "status": "draft_only",
+          "target_platform": "YouTube"
+        },
+        {
+          "cluster_name": "Air fryer cleaning friction",
+          "content_format": "carousel card plan",
+          "draft_prompt": "Create an Instagram carousel plan for Air fryer cleaning friction.",
+          "review_status": "needs_human_review",
+          "rewrite_direction": "Turn the trend into visual cards with one pain point per card and a calm guide tone.",
+          "source_platform": "TikTok",
+          "status": "draft_only",
+          "target_platform": "Instagram"
+        },
+        {
+          "cluster_name": "Air fryer cleaning friction",
+          "content_format": "short insight thread",
+          "draft_prompt": "Create an X thread draft for Air fryer cleaning friction.",
+          "review_status": "needs_human_review",
+          "rewrite_direction": "Compress the trend into a crisp observation plus 2-3 practical bullets.",
+          "source_platform": "TikTok",
+          "status": "draft_only",
+          "target_platform": "X"
+        },
+        {
+          "cluster_name": "Air fryer cleaning friction",
+          "content_format": "search article brief",
+          "draft_prompt": "Create an SEO article brief for Air fryer cleaning friction.",
+          "review_status": "needs_human_review",
+          "rewrite_direction": "Turn the trend into a search-intent brief with headings, FAQs, and safe advice.",
+          "source_platform": "TikTok",
+          "status": "draft_only",
+          "target_platform": "SEO"
+        }
+      ],
+      "prohibited_actions": [
+        "no_auto_publish",
+        "no_auto_reply",
+        "no_auto_login",
+        "no_platform_api_access"
+      ],
+      "requires_human_review": true,
+      "source_platform": "TikTok",
+      "status": "watch_only",
+      "strategy_id": "strategy_air_fryer_cleaning_friction",
+      "target_platforms": [
+        "Reddit",
+        "YouTube",
+        "Instagram",
+        "X",
+        "SEO"
+      ]
+    },
+    {
+      "cluster_name": "Vacuum performance anxiety",
+      "expansion_id": "expansion_vacuum_performance_anxiety",
+      "expansion_strategy": "Convert TikTok signal for Vacuum performance anxiety into Reddit, YouTube, Instagram, X, SEO local draft assets, preserving the same pain point while adapting tone and format.",
+      "heat_level": "watch",
+      "opportunity_score": 0.342,
+      "platform_plans": [
+        {
+          "cluster_name": "Vacuum performance anxiety",
+          "content_format": "helpful reply thread",
+          "draft_prompt": "Write a Reddit-safe answer for Vacuum performance anxiety with practical detail and no hard CTA.",
+          "review_status": "needs_human_review",
+          "rewrite_direction": "Turn the hook into a detailed, non-promotional answer with concrete steps.",
+          "source_platform": "TikTok",
+          "status": "draft_only",
+          "target_platform": "Reddit"
+        },
+        {
+          "cluster_name": "Vacuum performance anxiety",
+          "content_format": "short explainer outline",
+          "draft_prompt": "Create a YouTube explainer outline for Vacuum performance anxiety.",
+          "review_status": "needs_human_review",
+          "rewrite_direction": "Turn the trend into a checklist video outline with problem, fix, and example route.",
+          "source_platform": "TikTok",
+          "status": "draft_only",
+          "target_platform": "YouTube"
+        },
+        {
+          "cluster_name": "Vacuum performance anxiety",
+          "content_format": "carousel card plan",
+          "draft_prompt": "Create an Instagram carousel plan for Vacuum performance anxiety.",
+          "review_status": "needs_human_review",
+          "rewrite_direction": "Turn the trend into visual cards with one pain point per card and a calm guide tone.",
+          "source_platform": "TikTok",
+          "status": "draft_only",
+          "target_platform": "Instagram"
+        },
+        {
+          "cluster_name": "Vacuum performance anxiety",
+          "content_format": "short insight thread",
+          "draft_prompt": "Create an X thread draft for Vacuum performance anxiety.",
+          "review_status": "needs_human_review",
+          "rewrite_direction": "Compress the trend into a crisp observation plus 2-3 practical bullets.",
+          "source_platform": "TikTok",
+          "status": "draft_only",
+          "target_platform": "X"
+        },
+        {
+          "cluster_name": "Vacuum performance anxiety",
+          "content_format": "search article brief",
+          "draft_prompt": "Create an SEO article brief for Vacuum performance anxiety.",
+          "review_status": "needs_human_review",
+          "rewrite_direction": "Turn the trend into a search-intent brief with headings, FAQs, and safe advice.",
+          "source_platform": "TikTok",
+          "status": "draft_only",
+          "target_platform": "SEO"
+        }
+      ],
+      "prohibited_actions": [
+        "no_auto_publish",
+        "no_auto_reply",
+        "no_auto_login",
+        "no_platform_api_access"
+      ],
+      "requires_human_review": true,
+      "source_platform": "TikTok",
+      "status": "watch_only",
+      "strategy_id": "strategy_vacuum_performance_anxiety",
+      "target_platforms": [
+        "Reddit",
+        "YouTube",
+        "Instagram",
+        "X",
+        "SEO"
+      ]
+    }
+  ],
   "heatDetection": {
-    "created_at": "2026-05-22T10:15:00+00:00",
+    "created_at": "2026-05-22T10:19:10+00:00",
     "heatDimensions": [
       "rising_trend",
       "high_engagement_trend",
@@ -1286,7 +2059,7 @@
       "Tokyo transport anxiety",
       "Vacuum performance anxiety"
     ],
-    "created_at": "2026-05-22T10:15:00+00:00",
+    "created_at": "2026-05-22T10:19:10+00:00",
     "keywordExpansions": [
       {
         "canonical_pain_point": "Air fryer cleaning friction",
@@ -2781,7 +3554,7 @@
         "workspace": "PHILIPS-LAB"
       }
     ],
-    "created_at": "2026-05-22T10:15:00+00:00",
+    "created_at": "2026-05-22T10:19:10+00:00",
     "industryPackPatrolGroups": {
       "Home Appliance Pack": [
         {
@@ -3607,7 +4380,7 @@
         "status": "passed"
       }
     ],
-    "created_at": "2026-05-22T10:15:00+00:00",
+    "created_at": "2026-05-22T10:19:10+00:00",
     "marketIsolationStatus": "clear",
     "personalityEvolutionSummary": "AGOS has formed a stable operating personality with workspace, platform, market, and strategy layers.",
     "platformPersonalityCount": 4,
@@ -3697,7 +4470,7 @@
     }
   ],
   "personalityIsolationReport": {
-    "created_at": "2026-05-22T10:15:00+00:00",
+    "created_at": "2026-05-22T10:19:10+00:00",
     "isolationMatrix": [
       {
         "allowed_traits": [
@@ -3998,7 +4771,7 @@
     }
   },
   "personalityReviewSession": {
-    "created_at": "2026-05-22T10:15:00+00:00",
+    "created_at": "2026-05-22T10:19:10+00:00",
     "driftEventsReviewed": 6,
     "personalityTrend": [
       {
@@ -5143,7 +5916,7 @@
         }
       ]
     },
-    "created_at": "2026-05-22T10:15:00+00:00",
+    "created_at": "2026-05-22T10:19:10+00:00",
     "dashboard_id": "RUNTIME_TRAINER_DASHBOARD",
     "driftAlerts": [
       {
@@ -5368,7 +6141,7 @@
       "reply_direction": "Draft a concise helpful reply with empathy, specific steps, and a soft CTA; require human approval.",
       "risk_level": "medium",
       "status": "interpreted",
-      "time": "2026-05-22T10:15:00+00:00",
+      "time": "2026-05-22T10:19:10+00:00",
       "type": "strategic_interpretation",
       "why": "Tokyo transport anxiety matters because AGOS detected rising_trend, high_engagement_trend, high_emotion_trend, high_spread_trend with opportunity score 0.925. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
     },
@@ -5381,7 +6154,7 @@
       "reply_direction": "Draft a concise helpful reply with empathy, specific steps, and a soft CTA; require human approval.",
       "risk_level": "medium",
       "status": "interpreted",
-      "time": "2026-05-22T10:15:00+00:00",
+      "time": "2026-05-22T10:19:10+00:00",
       "type": "strategic_interpretation",
       "why": "Tokyo rainy day travel friction matters because AGOS detected rising_trend, high_engagement_trend, high_emotion_trend, high_spread_trend with opportunity score 0.91. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
     },
@@ -5394,7 +6167,7 @@
       "reply_direction": "Do not reply yet; collect more examples.",
       "risk_level": "low",
       "status": "interpreted",
-      "time": "2026-05-22T10:15:00+00:00",
+      "time": "2026-05-22T10:19:10+00:00",
       "type": "strategic_interpretation",
       "why": "Air fryer cleaning friction matters because AGOS detected high_emotion_trend with opportunity score 0.357. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
     },
@@ -5407,13 +6180,13 @@
       "reply_direction": "Do not reply yet; collect more examples.",
       "risk_level": "low",
       "status": "interpreted",
-      "time": "2026-05-22T10:15:00+00:00",
+      "time": "2026-05-22T10:19:10+00:00",
       "type": "strategic_interpretation",
       "why": "Vacuum performance anxiety matters because AGOS detected watch_signal with opportunity score 0.342. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
     }
   ],
   "strategicInterpretation": {
-    "created_at": "2026-05-22T10:15:00+00:00",
+    "created_at": "2026-05-22T10:19:10+00:00",
     "interpretationDimensions": [
       "why_trend_matters",
       "risk",
@@ -5435,7 +6208,7 @@
         "reply_direction": "Draft a concise helpful reply with empathy, specific steps, and a soft CTA; require human approval.",
         "risk_level": "medium",
         "status": "interpreted",
-        "time": "2026-05-22T10:15:00+00:00",
+        "time": "2026-05-22T10:19:10+00:00",
         "type": "strategic_interpretation",
         "why": "Tokyo transport anxiety matters because AGOS detected rising_trend, high_engagement_trend, high_emotion_trend, high_spread_trend with opportunity score 0.925. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
       },
@@ -5448,7 +6221,7 @@
         "reply_direction": "Draft a concise helpful reply with empathy, specific steps, and a soft CTA; require human approval.",
         "risk_level": "medium",
         "status": "interpreted",
-        "time": "2026-05-22T10:15:00+00:00",
+        "time": "2026-05-22T10:19:10+00:00",
         "type": "strategic_interpretation",
         "why": "Tokyo rainy day travel friction matters because AGOS detected rising_trend, high_engagement_trend, high_emotion_trend, high_spread_trend with opportunity score 0.91. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
       },
@@ -5461,7 +6234,7 @@
         "reply_direction": "Do not reply yet; collect more examples.",
         "risk_level": "low",
         "status": "interpreted",
-        "time": "2026-05-22T10:15:00+00:00",
+        "time": "2026-05-22T10:19:10+00:00",
         "type": "strategic_interpretation",
         "why": "Air fryer cleaning friction matters because AGOS detected high_emotion_trend with opportunity score 0.357. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
       },
@@ -5474,7 +6247,7 @@
         "reply_direction": "Do not reply yet; collect more examples.",
         "risk_level": "low",
         "status": "interpreted",
-        "time": "2026-05-22T10:15:00+00:00",
+        "time": "2026-05-22T10:19:10+00:00",
         "type": "strategic_interpretation",
         "why": "Vacuum performance anxiety matters because AGOS detected watch_signal with opportunity score 0.342. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
       }
@@ -5743,7 +6516,7 @@
     }
   ],
   "strategyEvolution": {
-    "created_at": "2026-05-22T10:15:00+00:00",
+    "created_at": "2026-05-22T10:19:10+00:00",
     "evolutionFeed": [
       {
         "classification": "long_term_growth",
@@ -5940,7 +6713,7 @@
         ],
         "cadence": "Low frequency, high relevance, reply only when the question is a real pain point.",
         "content_shape": "Long-form answer with context, tradeoffs, and practical steps.",
-        "created_at": "2026-05-22T10:15:00+00:00",
+        "created_at": "2026-05-22T10:19:10+00:00",
         "current_pain_point": "Tokyo transport anxiety",
         "human_review_status": "needs_human_review",
         "industry_pack": "Travel Pack / Lab",
@@ -5968,7 +6741,7 @@
         ],
         "cadence": "Higher frequency experiments with tight hook variation and fast feedback.",
         "content_shape": "Short hook, one visible pain scene, one practical payoff, one soft save CTA.",
-        "created_at": "2026-05-22T10:15:00+00:00",
+        "created_at": "2026-05-22T10:19:10+00:00",
         "current_pain_point": "Tokyo transport anxiety",
         "human_review_status": "needs_human_review",
         "industry_pack": "Travel Pack / Lab",
@@ -5996,7 +6769,7 @@
         ],
         "cadence": "Timely posting around trend windows and question bursts.",
         "content_shape": "One strong claim, two supporting details, one practical takeaway or thread.",
-        "created_at": "2026-05-22T10:15:00+00:00",
+        "created_at": "2026-05-22T10:19:10+00:00",
         "current_pain_point": "Tokyo transport anxiety",
         "human_review_status": "needs_human_review",
         "industry_pack": "Travel Pack / Lab",
@@ -6024,7 +6797,7 @@
         ],
         "cadence": "Lower frequency evergreen videos supported by Shorts extracted from high-friction moments.",
         "content_shape": "Searchable title, structured chapters, visual walkthrough, recap, and next-step CTA.",
-        "created_at": "2026-05-22T10:15:00+00:00",
+        "created_at": "2026-05-22T10:19:10+00:00",
         "current_pain_point": "Tokyo transport anxiety",
         "human_review_status": "needs_human_review",
         "industry_pack": "Travel Pack / Lab",
@@ -6044,7 +6817,7 @@
         "workspace": "JAG-LAB"
       }
     ],
-    "updated_at": "2026-05-22T10:15:00+00:00",
+    "updated_at": "2026-05-22T10:19:10+00:00",
     "workspace": "JAG-LAB"
   },
   "strategyPersonalityFeed": [
@@ -6089,11 +6862,11 @@
     "currentCycle": "JAG-LAB-CYCLE-0001",
     "currentIndustryPack": "Travel Pack / Lab",
     "currentWorkspace": "JAG-LAB",
-    "lastRunTime": "2026-05-22T10:15:00+00:00",
+    "lastRunTime": "2026-05-22T10:19:10+00:00",
     "status": "STOPPED"
   },
   "topicDiscovery": {
-    "created_at": "2026-05-22T10:15:00+00:00",
+    "created_at": "2026-05-22T10:19:10+00:00",
     "discoveredTopics": [
       {
         "canonical_pain_point": "Tokyo transport anxiety",
@@ -6467,7 +7240,7 @@
       ],
       "total_clusters": 4
     },
-    "created_at": "2026-05-22T10:15:00+00:00",
+    "created_at": "2026-05-22T10:19:10+00:00",
     "report_id": "TREND_CLUSTERING_REPORT",
     "scope": "local_only_no_external_platform_access",
     "status": "active",

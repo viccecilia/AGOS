@@ -1,0 +1,66 @@
+[
+  {
+    "cluster_name": "Tokyo transport anxiety",
+    "review_status": "needs_human_review",
+    "source_platform": "TikTok",
+    "status": "draft_ready",
+    "strategy": "Convert TikTok signal for Tokyo transport anxiety into Reddit, YouTube, Instagram, X, SEO local draft assets, preserving the same pain point while adapting tone and format.",
+    "target_platforms": [
+      "Reddit",
+      "YouTube",
+      "Instagram",
+      "X",
+      "SEO"
+    ],
+    "time": "2026-05-22T10:19:10+00:00",
+    "type": "cross_platform_expansion"
+  },
+  {
+    "cluster_name": "Tokyo rainy day travel friction",
+    "review_status": "needs_human_review",
+    "source_platform": "TikTok",
+    "status": "draft_ready",
+    "strategy": "Convert TikTok signal for Tokyo rainy day travel friction into Reddit, YouTube, Instagram, X, SEO local draft assets, preserving the same pain point while adapting tone and format.",
+    "target_platforms": [
+      "Reddit",
+      "YouTube",
+      "Instagram",
+      "X",
+      "SEO"
+    ],
+    "time": "2026-05-22T10:19:10+00:00",
+    "type": "cross_platform_expansion"
+  },
+  {
+    "cluster_name": "Air fryer cleaning friction",
+    "review_status": "needs_human_review",
+    "source_platform": "TikTok",
+    "status": "watch_only",
+    "strategy": "Convert TikTok signal for Air fryer cleaning friction into Reddit, YouTube, Instagram, X, SEO local draft assets, preserving the same pain point while adapting tone and format.",
+    "target_platforms": [
+      "Reddit",
+      "YouTube",
+      "Instagram",
+      "X",
+      "SEO"
+    ],
+    "time": "2026-05-22T10:19:10+00:00",
+    "type": "cross_platform_expansion"
+  },
+  {
+    "cluster_name": "Vacuum performance anxiety",
+    "review_status": "needs_human_review",
+    "source_platform": "TikTok",
+    "status": "watch_only",
+    "strategy": "Convert TikTok signal for Vacuum performance anxiety into Reddit, YouTube, Instagram, X, SEO local draft assets, preserving the same pain point while adapting tone and format.",
+    "target_platforms": [
+      "Reddit",
+      "YouTube",
+      "Instagram",
+      "X",
+      "SEO"
+    ],
+    "time": "2026-05-22T10:19:10+00:00",
+    "type": "cross_platform_expansion"
+  }
+]

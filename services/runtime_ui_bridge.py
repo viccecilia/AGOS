@@ -5,6 +5,7 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
+from services.cross_platform_expansion_engine import CrossPlatformExpansionEngine
 from services.human_feedback_learning import HumanFeedbackLearning
 from services.human_personality_training import HumanPersonalityTraining
 from services.heat_detection_engine import HeatDetectionEngine
@@ -82,6 +83,7 @@ class RuntimeUIBridge:
         trend_clustering = TrendClusteringEngine().cluster()
         heat_detection = HeatDetectionEngine().detect()
         strategic_interpretation = StrategicInterpretationEngine().interpret()
+        cross_platform_expansion = CrossPlatformExpansionEngine().expand()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -241,6 +243,9 @@ class RuntimeUIBridge:
             "strategicInterpretation": strategic_interpretation,
             "strategicInterpretations": strategic_interpretation.get("strategicInterpretations", []),
             "strategicFeed": strategic_interpretation.get("strategicFeed", []),
+            "crossPlatformExpansion": cross_platform_expansion,
+            "expansionStrategies": cross_platform_expansion.get("expansionStrategies", []),
+            "crossPlatformExpansionFeed": cross_platform_expansion.get("crossPlatformExpansionFeed", []),
         }
 
 
