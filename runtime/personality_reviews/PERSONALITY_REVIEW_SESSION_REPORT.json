@@ -1,0 +1,135 @@
+{
+  "created_at": "2026-05-22T09:30:10+00:00",
+  "driftEventsReviewed": 6,
+  "personalityTrend": [
+    {
+      "count": 1,
+      "signal": "approved_personality",
+      "status": "improving",
+      "summary": "trusted_guide"
+    },
+    {
+      "count": 1,
+      "signal": "failed_tone",
+      "status": "needs_human_review",
+      "summary": "aggressive_hook"
+    },
+    {
+      "count": 6,
+      "signal": "personality_drift",
+      "status": "needs_human_review",
+      "summary": "Detected personality drift tokens: same hook repeated"
+    }
+  ],
+  "recentBestPersonality": {
+    "created_at": "2026-05-22T09:11:50+00:00",
+    "market": "Japan",
+    "personality_id": "personality_2026-05-22T09-11-50+00-00",
+    "platform": "reddit",
+    "reason": "Best long-term JAG guide personality: useful, credible, calm, and non-promotional.",
+    "style": [
+      "??",
+      "??",
+      "??",
+      "???",
+      "???"
+    ],
+    "tone": "trusted_guide",
+    "workspace": "JAG-LAB"
+  },
+  "recentDrift": [
+    {
+      "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+      "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_1",
+      "created_at": "2026-05-22T09:02:14+00:00",
+      "issue": "过度营销",
+      "matched_tokens": [
+        "buy now"
+      ],
+      "reason": "Detected personality drift tokens: buy now",
+      "severity": "high",
+      "status": "needs_human_review"
+    },
+    {
+      "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+      "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_2",
+      "created_at": "2026-05-22T09:02:14+00:00",
+      "issue": "过度情绪化",
+      "matched_tokens": [
+        "panic"
+      ],
+      "reason": "Detected personality drift tokens: panic",
+      "severity": "medium",
+      "status": "needs_human_review"
+    },
+    {
+      "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+      "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_3",
+      "created_at": "2026-05-22T09:02:14+00:00",
+      "issue": "平台人格错乱",
+      "matched_tokens": [
+        "reddit short hook"
+      ],
+      "reason": "Detected personality drift tokens: reddit short hook",
+      "severity": "high",
+      "status": "needs_human_review"
+    },
+    {
+      "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+      "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_4",
+      "created_at": "2026-05-22T09:02:14+00:00",
+      "issue": "clickbait",
+      "matched_tokens": [
+        "you won't believe",
+        "secret trick"
+      ],
+      "reason": "Detected personality drift tokens: you won't believe, secret trick",
+      "severity": "medium",
+      "status": "needs_human_review"
+    },
+    {
+      "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+      "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_5",
+      "created_at": "2026-05-22T09:02:14+00:00",
+      "issue": "机械回复",
+      "matched_tokens": [
+        "generic reply"
+      ],
+      "reason": "Detected personality drift tokens: generic reply",
+      "severity": "medium",
+      "status": "needs_human_review"
+    },
+    {
+      "action": "进入人工纠偏；不要把该人格样式沉淀为最佳人格。",
+      "alert_id": "personality_drift_2026-05-22T09-02-14+00-00_6",
+      "created_at": "2026-05-22T09:02:14+00:00",
+      "issue": "内容重复",
+      "matched_tokens": [
+        "same hook repeated"
+      ],
+      "reason": "Detected personality drift tokens: same hook repeated",
+      "severity": "medium",
+      "status": "needs_human_review"
+    }
+  ],
+  "recentFailedPersonality": {
+    "created_at": "2026-05-22T09:11:50+00:00",
+    "market": "Japan",
+    "personality_id": "personality_2026-05-22T09-11-50+00-00",
+    "platform": "tiktok",
+    "reason": "Failed personality: aggressive hook drifts away from trusted guide style.",
+    "style": [
+      "????",
+      "???",
+      "??"
+    ],
+    "tone": "aggressive_hook",
+    "workspace": "JAG-LAB"
+  },
+  "recentFailedTone": "aggressive_hook",
+  "report_id": "PERSONALITY_REVIEW_SESSION_REPORT",
+  "reviewSummary": "Recent drift exists. Keep trusted_guide as the preferred personality and review failed tone aggressive_hook.",
+  "status": "needs_human_review",
+  "timelineEventsReviewed": 2,
+  "window_hours": 24
+}

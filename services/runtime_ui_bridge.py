@@ -10,6 +10,7 @@ from services.human_personality_training import HumanPersonalityTraining
 from services.personality_drift_engine import PersonalityDriftEngine
 from services.personality_isolation_engine import PersonalityIsolationEngine
 from services.personality_memory_deposit import PersonalityMemoryDeposit
+from services.personality_review_session import PersonalityReviewSession
 from services.runtime_drift_monitor import RuntimeDriftMonitor
 from services.runtime_engine import RuntimeEngine
 from services.runtime_persistence import RuntimePersistence
@@ -51,6 +52,7 @@ class RuntimeUIBridge:
         personality_status = PersonalityMemoryDeposit().status()
         personality_drift = PersonalityDriftEngine().summary()
         personality_isolation = PersonalityIsolationEngine().run_check()
+        personality_review_session = PersonalityReviewSession().generate()
         personality_training = HumanPersonalityTraining().summary()
         current_event = state.get("current_event") or ""
         strategy_pain_point = current_event if current_event and not current_event.startswith("human_personality_") else "Tokyo transport anxiety"
@@ -180,6 +182,8 @@ class RuntimeUIBridge:
                     "platformPersonalityPollution",
                 )
             ],
+            "personalityReviewSession": personality_review_session,
+            "personalityReviewTrend": personality_review_session.get("personalityTrend", []),
             "personalityRuntimeFeed": [
                 {
                     "type": "current_personality",

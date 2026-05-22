@@ -1,0 +1,23 @@
+{
+  "round_id": "ROUND-RUNTIME-PERSONALITY-007",
+  "status": "passed",
+  "report": "runtime/personality_reviews/PERSONALITY_REVIEW_SESSION_REPORT.json",
+  "checks": [
+    "24-hour personality review report",
+    "recent drift",
+    "recent best personality",
+    "recent failed tone",
+    "personality trend"
+  ],
+  "verification": [
+    "python -m compileall services tests passed",
+    "python tests\\personality_review_session_smoke_test.py passed",
+    "python tests\\war_room_runtime_ui_smoke_test.py passed"
+  ],
+  "safety_boundary": {
+    "local_runtime_only": true,
+    "external_platform_api": false,
+    "auto_posting": false,
+    "auto_replying": false
+  }
+}
