@@ -371,6 +371,140 @@
       text-align: center;
       font-size: 13px;
     }
+    .runtime-os {
+      position: relative;
+      overflow: visible;
+      background: #0b1220;
+      color: #e5edf8;
+      border-color: #17233a;
+      box-shadow: 0 20px 55px rgba(2, 6, 23, .22);
+    }
+    .runtime-os p, .runtime-os .muted { color: #94a3b8; }
+    .runtime-shell { display: grid; gap: 14px; }
+    .runtime-bar {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      display: grid;
+      grid-template-columns: auto repeat(5, minmax(110px, 1fr)) auto;
+      gap: 10px;
+      align-items: center;
+      min-height: 58px;
+      padding: 10px 12px;
+      border: 1px solid #24344f;
+      border-radius: 8px;
+      background: #111827;
+    }
+    .runtime-brand { font-weight: 900; letter-spacing: .02em; }
+    .runtime-kv { display: grid; gap: 2px; font-size: 12px; color: #94a3b8; }
+    .runtime-kv strong { color: #e5edf8; font-size: 13px; }
+    .runtime-actions { display: flex; gap: 8px; justify-content: flex-end; }
+    .runtime-actions button {
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 8px 12px;
+      background: #0f172a;
+      color: #e5edf8;
+      font-weight: 900;
+      cursor: pointer;
+    }
+    .runtime-actions button.primary { background: #16a34a; border-color: #16a34a; color: #fff; }
+    .runtime-actions button.danger { background: #991b1b; border-color: #991b1b; color: #fff; }
+    .rt-running { color: #bbf7d0; background: rgba(22, 163, 74, .22); }
+    .rt-paused { color: #fde68a; background: rgba(217, 119, 6, .22); }
+    .rt-stopped { color: #fecaca; background: rgba(220, 38, 38, .22); }
+    .runtime-panel {
+      border: 1px solid #24344f;
+      border-radius: 8px;
+      background: #0f172a;
+      padding: 14px;
+    }
+    .runtime-panel h3 { color: #f8fafc; }
+    .runtime-title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+    .runtime-title-row p { margin: 0; font-size: 12px; }
+    .pipeline {
+      display: grid;
+      grid-template-columns: repeat(10, minmax(90px, 1fr));
+      gap: 8px;
+      align-items: stretch;
+    }
+    .pipeline-node {
+      display: grid;
+      gap: 5px;
+      min-height: 82px;
+      padding: 10px;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      background: #111827;
+      color: #cbd5e1;
+    }
+    .pipeline-node strong { color: #f8fafc; font-size: 13px; }
+    .pipeline-node span { font-size: 11px; color: #94a3b8; }
+    .node-done { border-color: #16a34a; background: rgba(22, 163, 74, .15); }
+    .node-current { border-color: #38bdf8; box-shadow: 0 0 0 2px rgba(56, 189, 248, .22); }
+    .node-waiting, .node-pending { opacity: .62; }
+    .node-error { border-color: #ef4444; background: rgba(239, 68, 68, .18); }
+    .node-human_review { border-color: #d97706; background: rgba(217, 119, 6, .18); }
+    .runtime-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 14px; }
+    .feed-stream { display: grid; gap: 8px; }
+    .feed-item {
+      display: grid;
+      grid-template-columns: 58px 1fr auto;
+      gap: 10px;
+      align-items: center;
+      padding: 10px;
+      border: 1px solid #24344f;
+      border-radius: 8px;
+      background: #111827;
+    }
+    .feed-item time { color: #38bdf8; font-weight: 900; font-size: 12px; }
+    .feed-main strong { display: block; color: #f8fafc; font-size: 13px; }
+    .feed-main span { color: #94a3b8; font-size: 12px; }
+    .runtime-stat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    .runtime-stat { padding: 10px; border: 1px solid #24344f; border-radius: 8px; background: #111827; }
+    .runtime-stat span { display: block; color: #94a3b8; font-size: 12px; }
+    .runtime-stat strong { display: block; color: #f8fafc; margin-top: 4px; font-size: 13px; }
+    .social-runtime {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(120px, 1fr));
+      gap: 8px;
+    }
+    .social-cell { padding: 10px; border: 1px solid #24344f; border-radius: 8px; background: #111827; }
+    .social-cell strong { color: #f8fafc; display: block; margin-bottom: 6px; }
+    .social-cell span { display: block; color: #94a3b8; font-size: 12px; line-height: 1.5; }
+    .timeline-list { display: grid; gap: 8px; }
+    details.runtime-details {
+      border: 1px solid #24344f;
+      border-radius: 8px;
+      background: #111827;
+      overflow: hidden;
+    }
+    details.runtime-details summary {
+      display: grid;
+      grid-template-columns: 140px 1fr auto;
+      gap: 10px;
+      align-items: center;
+      padding: 12px;
+      cursor: pointer;
+      color: #f8fafc;
+      font-weight: 900;
+    }
+    .mini-steps { display: flex; flex-wrap: wrap; gap: 6px; }
+    .mini-step { padding: 4px 7px; border-radius: 999px; background: #1e293b; color: #cbd5e1; font-size: 11px; }
+    .mini-step.done { background: rgba(22, 163, 74, .28); color: #bbf7d0; }
+    .mini-step.waiting { background: rgba(217, 119, 6, .25); color: #fde68a; }
+    .mini-step.pending { opacity: .58; }
+    .runtime-detail-body { padding: 0 12px 12px; display: grid; gap: 8px; color: #cbd5e1; font-size: 13px; }
+    .strategy-timeline { display: grid; grid-template-columns: repeat(6, minmax(150px, 1fr)); gap: 8px; }
+    .strategy-stage { border: 1px solid #24344f; border-radius: 8px; background: #111827; overflow: hidden; }
+    .strategy-stage summary { padding: 11px; cursor: pointer; color: #f8fafc; font-weight: 900; }
+    .strategy-stage div { padding: 0 11px 11px; color: #cbd5e1; font-size: 12px; line-height: 1.55; }
+    .correction-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+    .correction-card { padding: 12px; border: 1px solid #24344f; border-radius: 8px; background: #111827; }
+    .correction-card strong { display: block; color: #f8fafc; margin-bottom: 8px; }
+    .correction-card p { margin: 8px 0 0; font-size: 12px; line-height: 1.45; }
+    .drift-banner { border: 1px solid #d97706; background: rgba(217, 119, 6, .18); color: #fde68a; border-radius: 8px; padding: 11px 12px; font-weight: 900; }
+
     @media (max-width: 1180px) {
       .layout { grid-template-columns: 1fr; }
       .side { position: static; height: auto; }
@@ -390,28 +524,28 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.43",
+    "controlCenterVersion": "0.1.44",
     "lastUpdated": "2026-05-22",
-    "currentPhase": "AI 战情室 / 自监督增长",
-    "currentRound": "ROUND-WAR-ROOM-GROWTH-001",
-    "nextRound": "等待用户验收汉化版 War Room Growth 控制台",
-    "overallProgress": 82,
-    "activeFocus": "AGOS 控制中心已汉化成长可视化战情室：情报收集、信号分析、痛点分类、学习沉淀、策略生成、纠偏检查和 JAG App 推广工作区都可以在一个页面查看。"
+    "currentPhase": "AI War Room / Runtime OS",
+    "currentRound": "ROUND-WAR-ROOM-UI-001",
+    "nextRound": "等待用户验收 Runtime OS UI",
+    "overallProgress": 84,
+    "activeFocus": "AGOS 战情室已重构为 AI Runtime Operating System：顶部 Runtime Bar、Pipeline、实时战情流、Workspace Card、Social Matrix、Cycle Timeline、Strategy Evolution 和 Correction Center 形成一个运行态指挥界面。"
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.43 Localize AGOS war room growth view",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.43",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.43",
-    "note": "War Room Growth 汉化版映射到 GitHub tag agos-v0.1.43。当前仍是样例/模拟数据，不代表真实平台自动化运行结果。"
+    "latestCommit": "agos-v0.1.44 Reconstruct AGOS runtime OS UI",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.44",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.44",
+    "note": "Runtime OS UI 重构映射到 GitHub tag agos-v0.1.44。当前仍是模拟 Runtime UI，不启动真实平台 API、daemon、自动发帖或自动回复。"
   },
   "metrics": {
-    "roundsPlanned": 98,
-    "roundsCompleted": 42,
+    "roundsPlanned": 99,
+    "roundsCompleted": 43,
     "roundsInProgress": 0,
-    "reportsEmbedded": 48
+    "reportsEmbedded": 49
   },
   "modules": [
     {
@@ -545,6 +679,26 @@
     }
   ],
   "reports": [
+    {
+      "id": "ROUND-WAR-ROOM-UI-001",
+      "title": "AGOS Runtime OS UI Reconstruction",
+      "date": "2026-05-22",
+      "status": "done",
+      "summary": "重构 War Room 为 AI Runtime Operating System UI：固定顶部 Runtime Bar、Pipeline、Feed、Runtime Workspace Card、Social Matrix、折叠 Cycle Timeline、Strategy Evolution Timeline 和 Correction Center。",
+      "files": [
+        "docs/project_control_center.html",
+        "tests/war_room_runtime_ui_smoke_test.py",
+        "runtime/task_results/ROUND-WAR-ROOM-UI-001/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "passed: python -m compileall services schemas models tests",
+        "passed: python tests\\real_growth_workflow_smoke_test.py",
+        "passed: python tests\\learning_smoke_test.py",
+        "passed: python tests\\control_center_war_room_growth_smoke_test.py",
+        "passed: python tests\\war_room_runtime_ui_smoke_test.py",
+        "passed: browser render check at http://127.0.0.1:8765/project_control_center.html#war-room-growth"
+      ]
+    },
     {
       "id": "ROUND-WAR-ROOM-GROWTH-001",
       "title": "AGOS 成长可视化战情室汉化版",
@@ -1435,6 +1589,15 @@
     }
   ],
   "versions": [
+    {
+      "id": "agos-v0.1.44-runtime-os-ui",
+      "label": "Control Center v0.1.44",
+      "date": "2026-05-22",
+      "gitRef": "agos-v0.1.44",
+      "location": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.44",
+      "notes": "War Room Runtime OS UI：固定 Runtime Bar、Pipeline、Feed、Timeline、Correction Center。",
+      "snapshot": "AGOS Project Control Center v0.1.44\nRound: ROUND-WAR-ROOM-UI-001 completed\nStatus: Runtime OS UI reconstructed\nNo real automation enabled.\n"
+    },
     {
       "id": "agos-v0.1.43-war-room-growth-zh",
       "label": "Control Center v0.1.43",
@@ -2793,6 +2956,16 @@
       "deliverable": "War Room Growth Cycle visualization, JAG App promotion workspace, social homepage matrix, intelligence trace, learning deposit trace, and correction panel in the control center.",
       "report": "runtime/task_results/ROUND-WAR-ROOM-GROWTH-001/ROUND_SUMMARY.md",
       "summary": "This round upgrades the control center from project status tracking into a growth visualization war room. It shows how AGOS collects signals, analyzes them, deposits learning, creates strategy, checks for drift, and prepares the next scout cycle for the JAG App workspace. The controls are simulated only and do not call real platform APIs or automate posting."
+    },
+    {
+      "id": "ROUND-WAR-ROOM-UI-001",
+      "phase": "AI_WAR_ROOM / RUNTIME_OS",
+      "name": "AGOS_RUNTIME_OS_UI_RECONSTRUCTION",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "Runtime OS UI with fixed runtime bar, pipeline, feed stream, runtime workspace card, social matrix, collapsed cycle timeline, strategy evolution timeline, and correction center.",
+      "report": "runtime/task_results/ROUND-WAR-ROOM-UI-001/ROUND_SUMMARY.md",
+      "summary": "This round does not add real automation. It reconstructs the War Room page into an AI Runtime Operating System UI so the user can immediately see what AGOS is doing, which runtime stage is active, what needs human/code/runtime review, and whether learning drift is occurring."
     }
   ],
   "realGrowthVerification": {
@@ -2984,7 +3157,7 @@
     "noAutoPosting": true,
     "noAutoRegistration": true,
     "systemControl": {
-      "status": "needs_human_review",
+      "status": "RUNNING",
       "statusEnum": [
         "idle",
         "scouting",
@@ -2997,21 +3170,16 @@
         "needs_human_review",
         "needs_code_check"
       ],
-      "currentMode": "模拟控制面板",
+      "currentMode": "AI Runtime OS / 模拟运行态",
       "currentWorkspace": "jag_app_growth",
       "currentIndustryPack": "Travel Pack / 旅行行业包",
       "currentCycle": "CYCLE-001",
-      "lastRunTime": "2026-05-22 12:30 Asia/Tokyo",
+      "lastRunTime": "2026-05-22 12:42 Asia/Tokyo",
       "buttons": [
-        "启动侦察循环",
-        "暂停侦察循环",
-        "停止运营",
-        "运行分析",
-        "生成策略",
-        "保存学习",
-        "导出证据包"
+        "启动",
+        "停止"
       ],
-      "controlNote": "本轮按钮只模拟前端状态，不会触发 API、发帖、回复、注册账号或抓取数据。"
+      "controlNote": "本轮只重构 Runtime UI；启动/停止按钮为前端状态模拟，不会触发真实 daemon、平台 API、发帖或回复。"
     },
     "jagWorkspace": {
       "product": "Japan AI Guide App",
@@ -3139,7 +3307,39 @@
           "Workspace Memory / 工作区记忆"
         ],
         "generatedStrategy": "先提供有帮助的救援式回答，再围绕降低焦虑和增强旅行信心做平台化内容。",
-        "nextCollectionPlan": "继续手动收集 10 个日本行程、交通、餐饮、紧急预案相关问题。"
+        "nextCollectionPlan": "继续手动收集 10 个日本行程、交通、餐饮、紧急预案相关问题。",
+        "timeline": [
+          {
+            "node": "Scout",
+            "status": "done"
+          },
+          {
+            "node": "Analyze",
+            "status": "done"
+          },
+          {
+            "node": "Classify",
+            "status": "done"
+          },
+          {
+            "node": "Strategy",
+            "status": "done"
+          },
+          {
+            "node": "Generate",
+            "status": "done"
+          },
+          {
+            "node": "Human Review",
+            "status": "waiting"
+          },
+          {
+            "node": "Learn",
+            "status": "pending"
+          }
+        ],
+        "learningResult": "样例只用于 UI，不写入真实效果学习。",
+        "strategyChange": "从泛推荐转为救援式回答优先。"
       },
       {
         "cycleId": "CYCLE-002",
@@ -3168,7 +3368,39 @@
           "Content Strategy Memory / 内容策略记忆"
         ],
         "generatedStrategy": "先创建本地化回答分支，再考虑发布任何内容。",
-        "nextCollectionPlan": "准备 5 组市场专属问题导入，并逐条人工复核。"
+        "nextCollectionPlan": "准备 5 组市场专属问题导入，并逐条人工复核。",
+        "timeline": [
+          {
+            "node": "Scout",
+            "status": "waiting"
+          },
+          {
+            "node": "Analyze",
+            "status": "pending"
+          },
+          {
+            "node": "Classify",
+            "status": "pending"
+          },
+          {
+            "node": "Strategy",
+            "status": "pending"
+          },
+          {
+            "node": "Generate",
+            "status": "pending"
+          },
+          {
+            "node": "Human Review",
+            "status": "pending"
+          },
+          {
+            "node": "Learn",
+            "status": "pending"
+          }
+        ],
+        "learningResult": "等待真实人工批准数据。",
+        "strategyChange": "等待下一轮输入。"
       },
       {
         "cycleId": "CYCLE-003",
@@ -3199,7 +3431,39 @@
           "Content Strategy Memory / 内容策略记忆"
         ],
         "generatedStrategy": "提升最佳回答分支，压制重复和过度营销内容。",
-        "nextCollectionPlan": "只有真实人工批准发布后，才复盘第一批真实尝试。"
+        "nextCollectionPlan": "只有真实人工批准发布后，才复盘第一批真实尝试。",
+        "timeline": [
+          {
+            "node": "Scout",
+            "status": "pending"
+          },
+          {
+            "node": "Analyze",
+            "status": "pending"
+          },
+          {
+            "node": "Classify",
+            "status": "pending"
+          },
+          {
+            "node": "Strategy",
+            "status": "pending"
+          },
+          {
+            "node": "Generate",
+            "status": "pending"
+          },
+          {
+            "node": "Human Review",
+            "status": "pending"
+          },
+          {
+            "node": "Learn",
+            "status": "pending"
+          }
+        ],
+        "learningResult": "等待真实人工批准数据。",
+        "strategyChange": "等待下一轮输入。"
       }
     ],
     "growthStages": [
@@ -3220,7 +3484,11 @@
           "暂时没有真实平台运营证据"
         ],
         "correctionConclusion": "账号设置和人工验收完成前，所有控制都保持模拟。",
-        "nextFocus": "收集足够的人工验证问题，从样例转向真实运营。"
+        "nextFocus": "收集足够的人工验证问题，从样例转向真实运营。",
+        "learningCount": 2,
+        "highValueQuestion": "如何避免在日本大型车站迷路？",
+        "strongestStrategy": "救援式回答优先",
+        "biggestFailure": "暂无真实平台证据"
       },
       {
         "id": "STAGE-011-020",
@@ -3238,7 +3506,11 @@
           "计划中"
         ],
         "correctionConclusion": "不要把单个平台的弱信号当成战略。",
-        "nextFocus": "建立信号置信度和来源证据。"
+        "nextFocus": "建立信号置信度和来源证据。",
+        "learningCount": 0,
+        "highValueQuestion": "待收集",
+        "strongestStrategy": "待形成",
+        "biggestFailure": "待运行"
       },
       {
         "id": "STAGE-021-030",
@@ -3256,7 +3528,11 @@
           "计划中"
         ],
         "correctionConclusion": "没有问题证据的泛营销主张必须拒绝。",
-        "nextFocus": "按平台创建回答分支和内容分支。"
+        "nextFocus": "按平台创建回答分支和内容分支。",
+        "learningCount": 0,
+        "highValueQuestion": "待收集",
+        "strongestStrategy": "待形成",
+        "biggestFailure": "待运行"
       },
       {
         "id": "STAGE-031-040",
@@ -3274,7 +3550,11 @@
           "计划中"
         ],
         "correctionConclusion": "保持平台语气边界和来源证据。",
-        "nextFocus": "追踪平台适配度和风险。"
+        "nextFocus": "追踪平台适配度和风险。",
+        "learningCount": 0,
+        "highValueQuestion": "待收集",
+        "strongestStrategy": "待形成",
+        "biggestFailure": "待运行"
       },
       {
         "id": "STAGE-041-050",
@@ -3292,7 +3572,11 @@
           "计划中"
         ],
         "correctionConclusion": "所有策略变化必须经过纠偏证据 Gate。",
-        "nextFocus": "增强漂移检测和人工审核点。"
+        "nextFocus": "增强漂移检测和人工审核点。",
+        "learningCount": 0,
+        "highValueQuestion": "待收集",
+        "strongestStrategy": "待形成",
+        "biggestFailure": "待运行"
       },
       {
         "id": "STAGE-051-060",
@@ -3310,7 +3594,11 @@
           "计划中"
         ],
         "correctionConclusion": "自主增长指的是在审核 Gate 下推荐和排程，不是无控制执行。",
-        "nextFocus": "定义人工批准下的自主运营边界。"
+        "nextFocus": "定义人工批准下的自主运营边界。",
+        "learningCount": 0,
+        "highValueQuestion": "待收集",
+        "strongestStrategy": "待形成",
+        "biggestFailure": "待运行"
       }
     ],
     "intelligenceCollectionTrace": [
@@ -3490,6 +3778,254 @@
         "evidence": "本轮只是可视化，没有真实平台运行。",
         "action": "下一阶段应手动导入真实问题并记录证据。"
       }
+    ],
+    "runtimeUiVersion": "runtime-os-v1",
+    "runtimeStatus": "RUNNING",
+    "current_runtime_stage": "Analyze",
+    "runtimeNode": "Analyze",
+    "runtimeStartedAt": "2026-05-22 12:00 Asia/Tokyo",
+    "runtimeElapsed": "00:42:18",
+    "isLearningDrifting": true,
+    "runtimePipeline": [
+      {
+        "id": "Scout",
+        "label": "Scout",
+        "status": "done",
+        "note": "发现问题入口"
+      },
+      {
+        "id": "Collect",
+        "label": "Collect",
+        "status": "done",
+        "note": "手动录入/导入候选问题"
+      },
+      {
+        "id": "Analyze",
+        "label": "Analyze",
+        "status": "current",
+        "note": "当前分析痛点强度"
+      },
+      {
+        "id": "Classify",
+        "label": "Classify",
+        "status": "waiting",
+        "note": "等待分类写入库"
+      },
+      {
+        "id": "Prioritize",
+        "label": "Prioritize",
+        "status": "waiting",
+        "note": "等待优先级评分"
+      },
+      {
+        "id": "Strategy",
+        "label": "Strategy",
+        "status": "waiting",
+        "note": "等待策略形成"
+      },
+      {
+        "id": "Generate",
+        "label": "Generate",
+        "status": "waiting",
+        "note": "等待回答/内容分支"
+      },
+      {
+        "id": "Human Review",
+        "label": "Human Review",
+        "status": "human_review",
+        "note": "人工审核 Gate"
+      },
+      {
+        "id": "Learn",
+        "label": "Learn",
+        "status": "waiting",
+        "note": "等待真实反馈"
+      },
+      {
+        "id": "Deposit",
+        "label": "Deposit",
+        "status": "waiting",
+        "note": "沉淀到记忆库"
+      }
+    ],
+    "warRoomFeed": [
+      {
+        "time": "12:40",
+        "type": "最新发现的问题",
+        "sourcePlatform": "Manual Import",
+        "country": "Japan",
+        "language": "EN",
+        "audience": "首次赴日游客",
+        "emotion": "焦虑",
+        "status": "new_signal",
+        "aiAction": "进入 Analyze，检测交通迷路痛点"
+      },
+      {
+        "time": "12:36",
+        "type": "最新高价值痛点",
+        "sourcePlatform": "Question Inbox",
+        "country": "Japan",
+        "language": "EN",
+        "audience": "自由行用户",
+        "emotion": "不确定",
+        "status": "high_value",
+        "aiAction": "标记为路线救援主题"
+      },
+      {
+        "time": "12:31",
+        "type": "最新趋势",
+        "sourcePlatform": "Market Seeds",
+        "country": "Korea/Taiwan",
+        "language": "KO/ZH-TW",
+        "audience": "年轻游客",
+        "emotion": "期待",
+        "status": "watching",
+        "aiAction": "准备本地化语气分支"
+      },
+      {
+        "time": "12:27",
+        "type": "最新失败案例",
+        "sourcePlatform": "Reddit Plan",
+        "country": "US",
+        "language": "EN",
+        "audience": "论坛用户",
+        "emotion": "警惕",
+        "status": "risk",
+        "aiAction": "禁止营销式 CTA，等待人工审核"
+      },
+      {
+        "time": "12:22",
+        "type": "最新学习事件",
+        "sourcePlatform": "Learning Events",
+        "country": "Japan",
+        "language": "EN",
+        "audience": "行程规划者",
+        "emotion": "求稳",
+        "status": "learn_pending",
+        "aiAction": "样例不进入真实效果学习"
+      },
+      {
+        "time": "12:18",
+        "type": "最新纠偏建议",
+        "sourcePlatform": "Correction Center",
+        "country": "All",
+        "language": "Multi",
+        "audience": "All",
+        "emotion": "n/a",
+        "status": "needs_human_review",
+        "aiAction": "检查是否过度营销"
+      }
+    ],
+    "runtimeWorkspace": {
+      "workspace": "jag_app_growth",
+      "industryPack": "Travel Pack / 旅行行业包",
+      "targetMarket": "Japan first",
+      "focusPlatforms": [
+        "TikTok",
+        "Instagram",
+        "YouTube",
+        "Reddit",
+        "SEO"
+      ],
+      "focusPainPoint": "日本车站迷路与临时行程救援",
+      "todayGoal": "完成第一批真实问题人工录入与回答分支审核",
+      "riskStatus": "needs_review",
+      "workspaceStatus": "learning"
+    },
+    "socialRuntimeMatrix": [
+      {
+        "platform": "TikTok",
+        "status": "pending_setup",
+        "today": "Tokyo transport hook",
+        "reply": "waiting",
+        "risk": "low",
+        "review": "waiting"
+      },
+      {
+        "platform": "Instagram",
+        "status": "pending_setup",
+        "today": "Itinerary confidence carousel",
+        "reply": "waiting",
+        "risk": "low",
+        "review": "waiting"
+      },
+      {
+        "platform": "X",
+        "status": "pending_setup",
+        "today": "Japan mistake thread",
+        "reply": "waiting",
+        "risk": "medium",
+        "review": "waiting"
+      },
+      {
+        "platform": "YouTube",
+        "status": "pending_setup",
+        "today": "AI travel companion outline",
+        "reply": "n/a",
+        "risk": "low",
+        "review": "waiting"
+      },
+      {
+        "platform": "Reddit",
+        "status": "pending_setup",
+        "today": "No promo; question pattern only",
+        "reply": "blocked",
+        "risk": "high",
+        "review": "required"
+      },
+      {
+        "platform": "Threads",
+        "status": "pending_setup",
+        "today": "Short insight draft",
+        "reply": "waiting",
+        "risk": "low",
+        "review": "waiting"
+      },
+      {
+        "platform": "SEO / Website",
+        "status": "pending_setup",
+        "today": "Pain-point landing outline",
+        "reply": "n/a",
+        "risk": "low",
+        "review": "waiting"
+      }
+    ],
+    "correctionCenter": [
+      {
+        "issue": "AGOS 是否正在学歪",
+        "status": "needs_human_review",
+        "severity": "high",
+        "signal": "样例结论不能当真实反馈",
+        "action": "人工确认后才进入 Learning Events"
+      },
+      {
+        "issue": "Reply Tone Drift",
+        "status": "needs_human_review",
+        "severity": "high",
+        "signal": "Reddit 语气可能过度营销",
+        "action": "移除 CTA，保留帮助型回答"
+      },
+      {
+        "issue": "Repeated Hook Pattern",
+        "status": "needs_analysis",
+        "severity": "medium",
+        "signal": "多个平台重复旅行焦虑 Hook",
+        "action": "下一轮收集更多问题源"
+      },
+      {
+        "issue": "Cross Workspace Pollution Risk",
+        "status": "needs_code_check",
+        "severity": "high",
+        "signal": "必须确认 jag_app_growth 不污染其他 workspace",
+        "action": "运行隔离验证"
+      },
+      {
+        "issue": "Runtime Evidence Gap",
+        "status": "needs_runtime_validation",
+        "severity": "high",
+        "signal": "当前没有真实运行反馈",
+        "action": "下一轮手动导入真实问题"
+      }
     ]
   }
 }
@@ -3598,29 +4134,52 @@
       </section>
 
 
-      <section id="war-room-growth" class="panel section">
-        <div class="section-head">
-          <div>
-            <h2>AGOS 成长可视化战情室</h2>
-            <p>用于查看 AGOS 如何收集情报、分析信号、分类痛点、沉淀学习、生成策略、检查纠偏风险，并准备下一轮侦察。当前控制按钮仅为前端模拟。</p>
+
+      <section id="war-room-growth" class="panel section runtime-os">
+        <div class="runtime-shell">
+          <div class="runtime-bar" id="war-room-control-panel"></div>
+          <div class="runtime-title-row">
+            <div>
+              <h2>AGOS 成长可视化战情室 · AI Runtime OS</h2>
+              <p>运行态视图：Pipeline、Feed、Timeline、Correction Center。</p>
+            </div>
+            <span class="badge rt-running" id="war-room-status">RUNNING</span>
           </div>
-          <span class="badge b-violet" id="war-room-status">war room</span>
+          <div class="drift-banner" id="runtime-drift-banner"></div>
+          <div class="runtime-panel">
+            <div class="runtime-title-row"><h3>Runtime Pipeline</h3><p id="runtime-pipeline-note"></p></div>
+            <div class="pipeline" id="runtime-pipeline"></div>
+          </div>
+          <div class="runtime-grid">
+            <div class="runtime-panel">
+              <div class="runtime-title-row"><h3>War Room Feed</h3><p>实时战情流</p></div>
+              <div class="feed-stream" id="war-room-feed"></div>
+            </div>
+            <div class="runtime-panel" id="war-room-jag-workspace"></div>
+          </div>
+          <div class="runtime-panel">
+            <div class="runtime-title-row"><h3>Social Runtime Matrix</h3><p>平台运行矩阵</p></div>
+            <div class="social-runtime" id="war-room-social-homepages"></div>
+          </div>
+          <div class="runtime-grid">
+            <div class="runtime-panel">
+              <div class="runtime-title-row"><h3>Growth Cycle Timeline</h3><p>默认收起，点击展开细节</p></div>
+              <div class="timeline-list" id="war-room-growth-cycles"></div>
+            </div>
+            <div class="runtime-panel">
+              <div class="runtime-title-row"><h3>Strategy Evolution Timeline</h3><p>10 轮策略演进</p></div>
+              <div class="strategy-timeline" id="war-room-growth-stages"></div>
+            </div>
+          </div>
+          <div class="runtime-panel">
+            <div class="runtime-title-row"><h3>AI Correction Center</h3><p>AGOS 是否正在学歪</p></div>
+            <div class="correction-grid" id="war-room-correction-panel"></div>
+          </div>
+          <div class="runtime-grid" style="display:none">
+            <div id="war-room-intelligence-trace"></div>
+            <div id="war-room-learning-deposit"></div>
+          </div>
         </div>
-        <div class="callout" id="war-room-safety-note"></div>
-        <div style="height:14px"></div>
-        <div class="grid two"><div class="card" id="war-room-control-panel"></div><div class="card" id="war-room-jag-workspace"></div></div>
-        <div style="height:14px"></div>
-        <div class="card"><div class="topline"><h3>JAG 社交主页矩阵</h3><span class="badge b-amber">人工设置</span></div><div class="table-wrap"><table><thead><tr><th>平台</th><th>主页 URL</th><th>账号状态</th><th>今日计划</th><th>风险</th><th>人工检查</th></tr></thead><tbody id="war-room-social-homepages"></tbody></table></div></div>
-        <div style="height:14px"></div>
-        <div class="section-head compact"><div><h2>成长循环可视化</h2><p>每个 cycle 记录来源、方法、问题、分析、沉淀库、生成策略和下一轮收集计划。</p></div><span class="badge b-blue">循环追踪</span></div>
-        <div class="grid three" id="war-room-growth-cycles"></div>
-        <div style="height:14px"></div>
-        <div class="section-head compact"><div><h2>10 轮成长阶段视图</h2><p>每 10 个 cycle 形成一个阶段验收点，用来查看收集数量、学习事件、策略变化、失败案例和纠偏结论。</p></div><span class="badge b-cyan">阶段复盘</span></div>
-        <div class="grid two" id="war-room-growth-stages"></div>
-        <div style="height:14px"></div>
-        <div class="grid two"><div class="card"><div class="topline"><h3>情报收集追踪</h3><span class="badge b-blue">证据优先</span></div><div id="war-room-intelligence-trace"></div></div><div class="card"><div class="topline"><h3>学习沉淀追踪</h3><span class="badge b-green">记忆路径</span></div><div id="war-room-learning-deposit"></div></div></div>
-        <div style="height:14px"></div>
-        <div class="card"><div class="topline"><h3>纠偏检测面板</h3><span class="badge b-red">防跑偏</span></div><div class="grid three" id="war-room-correction-panel"></div></div>
       </section>
 
       <section id="completion" class="panel section">
@@ -3866,28 +4425,70 @@
     }
 
 
+
+    function runtimeBadgeClass(status) {
+      if (status === 'RUNNING') return 'rt-running';
+      if (status === 'PAUSED') return 'rt-paused';
+      if (status === 'STOPPED') return 'rt-stopped';
+      return 'b-amber';
+    }
+
     function renderWarRoomGrowth() {
       const wr = state.warRoomGrowth || {};
       const control = wr.systemControl || {};
-      const workspace = wr.jagWorkspace || {};
-      const status = control.status || 'idle';
-      const statusClassName = status === 'needs_human_review' || status === 'needs_code_check' ? 'b-amber' : status === 'stopped' ? 'b-red' : status === 'scouting' || status === 'analyzing' ? 'b-blue' : 'b-green';
-      el('war-room-status').className = 'badge ' + statusClassName;
-      el('war-room-status').textContent = status;
-      el('war-room-safety-note').innerHTML = '<strong>安全边界：</strong>样例数据=' + esc(wr.sampleDataOnly) + '，自动化启用=' + esc(wr.automationEnabled) + '，禁止自动发布=' + esc(wr.noAutoPosting) + '，禁止自动注册=' + esc(wr.noAutoRegistration) + '。' + esc(control.controlNote || '');
-      el('war-room-control-panel').innerHTML = '<div class="topline"><h3>系统控制面板</h3><span class="badge ' + statusClassName + '">' + esc(status) + '</span></div>' +
-        '<div class="grid two"><p><strong>当前运行模式</strong><br>' + esc(control.currentMode) + '</p><p><strong>当前 Workspace</strong><br>' + esc(control.currentWorkspace) + '</p><p><strong>当前行业包</strong><br>' + esc(control.currentIndustryPack) + '</p><p><strong>当前 Cycle</strong><br>' + esc(control.currentCycle) + '</p></div>' +
-        '<p><strong>最后一次运行时间</strong><br>' + esc(control.lastRunTime) + '</p><div class="toolbar">' + (control.buttons || []).map(label => '<button type="button" data-war-room-action="' + esc(label) + '">' + esc(label) + '</button>').join('') + '</div>';
-      el('war-room-control-panel').querySelectorAll('[data-war-room-action]').forEach(button => button.addEventListener('click', () => { el('war-room-status').textContent = '模拟操作：' + button.dataset.warRoomAction; }));
-      el('war-room-jag-workspace').innerHTML = '<div class="topline"><h3>JAG App 推广工作区</h3><span class="badge b-green">' + esc(workspace.workspace_id) + '</span></div>' +
-        '<p><strong>推广对象</strong><br>' + esc(workspace.product) + '</p><p><strong>App 定位</strong><br>' + esc(workspace.positioning) + '</p><p><strong>目标市场</strong><br>' + (workspace.targetMarkets || []).map(esc).join(' / ') + '</p>' +
-        '<p><strong>当前推广阶段</strong><br>' + esc(workspace.promotionPhase) + '</p><p><strong>当前重点平台</strong><br>' + (workspace.focusPlatforms || []).map(esc).join(', ') + '</p><p><strong>今日推广目标</strong><br>' + esc(workspace.todayGoal) + '</p><ul>' + (workspace.coreSellingPoints || []).map(item => '<li>' + esc(item) + '</li>').join('') + '</ul>';
-      el('war-room-social-homepages').innerHTML = (wr.socialHomepages || []).map(item => '<tr><td>' + esc(item.platform) + '</td><td><code>' + esc(item.homepageUrl) + '</code></td><td>' + esc(item.accountStatus) + '</td><td>' + esc(item.todayContentPlan) + '<br><span class="muted">回复计划：' + esc(item.todayReplyPlan) + '</span></td><td>' + esc(item.riskStatus) + '</td><td>' + (item.needsHumanCheck ? 'yes' : 'no') + '</td></tr>').join('');
-      el('war-room-growth-cycles').innerHTML = (wr.growthCycles || []).map(cycle => '<article class="card"><div class="topline"><h3>' + esc(cycle.cycleId) + '</h3><span class="badge b-blue">' + esc(cycle.status) + '</span></div><p><strong>当前轮次</strong><br>' + esc(cycle.currentRound) + '</p><p><strong>时间</strong><br>' + esc(cycle.startTime) + ' -> ' + esc(cycle.endTime) + '</p><p><strong>收集来源</strong><br>' + (cycle.collectionSources || []).map(esc).join(', ') + '</p><p><strong>收集方法</strong><br>' + esc(cycle.collectionMethod) + '</p><p><strong>收集到的问题</strong></p><ul>' + (cycle.collectedQuestions || []).map(q => '<li>' + esc(q) + '</li>').join('') + '</ul><p><strong>分析方法 / 结论</strong><br>' + esc(cycle.analysisMethod) + '<br>' + esc(cycle.analysisConclusion) + '</p><p><strong>分类结果</strong><br>' + (cycle.classificationResults || []).map(esc).join(', ') + '</p><p><strong>沉淀到哪个库</strong><br>' + (cycle.depositLibrary || []).map(esc).join(', ') + '</p><p><strong>生成策略</strong><br>' + esc(cycle.generatedStrategy) + '</p><p><strong>下一轮收集计划</strong><br>' + esc(cycle.nextCollectionPlan) + '</p></article>').join('');
-      el('war-room-growth-stages').innerHTML = (wr.growthStages || []).map(stage => '<article class="card"><div class="topline"><h3>' + esc(stage.cycleRange) + '</h3><span class="badge b-cyan">' + esc(stage.name) + '</span></div><p><strong>阶段目标</strong><br>' + esc(stage.stageGoal) + '</p><p><strong>阶段收集数量</strong> ' + esc(stage.collectionCount) + '</p><p><strong>阶段学习事件</strong><br>' + (stage.learningEvents || []).map(esc).join(', ') + '</p><p><strong>阶段策略变化</strong><br>' + (stage.strategyChanges || []).map(esc).join(', ') + '</p><p><strong>阶段失败案例</strong><br>' + (stage.failureCases || []).map(esc).join(', ') + '</p><p><strong>阶段纠偏结论</strong><br>' + esc(stage.correctionConclusion) + '</p><p><strong>下一阶段重点</strong><br>' + esc(stage.nextFocus) + '</p></article>').join('');
-      el('war-room-intelligence-trace').innerHTML = (wr.intelligenceCollectionTrace || []).map(trace => '<div class="detail-box" style="margin-bottom:10px"><h3>' + esc(trace.source) + '</h3><p><strong>关键词</strong>：' + (trace.keywords || []).map(esc).join(', ') + '</p><p><strong>语言 / 行业包</strong>：' + esc(trace.language) + ' / ' + esc(trace.industryPack) + '</p><p><strong>发现的问题</strong>：' + esc(trace.discoveredProblem) + '</p><p><strong>为什么重要</strong>：' + esc(trace.importanceReason) + '</p><p><strong>分类到哪里</strong>：' + (trace.classifiedTo || []).map(esc).join(', ') + '</p><p><strong>进入流程</strong>：问题池=' + esc(trace.enteredQuestionInbox) + '，痛点库=' + esc(trace.enteredPainPointLibrary) + '，回答分支=' + esc(trace.generatedAnswerBranch) + '，内容策略=' + esc(trace.generatedContentStrategy) + '，下一轮计划=' + esc(trace.enteredNextScoutPlan) + '</p></div>').join('');
-      el('war-room-learning-deposit').innerHTML = (wr.learningDepositTrace || []).map(item => '<div class="detail-box" style="margin-bottom:10px"><h3>' + esc(item.library) + '</h3><p><strong>来源</strong>：' + esc(item.source) + '</p><p><strong>原因</strong>：' + esc(item.reason) + '</p><p><strong>沉淀内容</strong>：' + esc(item.depositedContent) + '</p><p><strong>影响策略</strong>：' + esc(item.impactedStrategy) + '</p><p><strong>是否需要人工审核</strong>：' + (item.needsHumanReview ? 'yes' : 'no') + '</p></div>').join('');
-      el('war-room-correction-panel').innerHTML = (wr.correctionPanel || []).map(item => '<article class="card"><div class="topline"><h3>' + esc(item.check) + '</h3><span class="badge ' + (item.status === '通过' ? 'b-green' : item.status === '需要' || item.status === '需要人工审核' ? 'b-amber' : 'b-blue') + '">' + esc(item.status) + '</span></div><p><strong>检测证据</strong><br>' + esc(item.evidence) + '</p><p><strong>处理动作</strong><br>' + esc(item.action) + '</p></article>').join('');
+      const workspace = wr.runtimeWorkspace || wr.jagWorkspace || {};
+      const runtimeStatus = wr.runtimeStatus || control.status || 'STOPPED';
+      const currentStage = wr.current_runtime_stage || 'Scout';
+      el('war-room-status').className = 'badge ' + runtimeBadgeClass(runtimeStatus);
+      el('war-room-status').textContent = runtimeStatus;
+      el('war-room-control-panel').innerHTML =
+        '<div class="runtime-brand">AGOS Runtime</div>' +
+        '<div class="runtime-kv"><span>状态</span><strong>' + esc(runtimeStatus) + '</strong></div>' +
+        '<div class="runtime-kv"><span>当前 Cycle</span><strong>' + esc(control.currentCycle || wr.currentCycle || 'CYCLE-001') + '</strong></div>' +
+        '<div class="runtime-kv"><span>当前节点</span><strong>' + esc(currentStage) + '</strong></div>' +
+        '<div class="runtime-kv"><span>已运行时间</span><strong>' + esc(wr.runtimeElapsed || '00:00:00') + '</strong></div>' +
+        '<div class="runtime-kv"><span>Workspace</span><strong>' + esc(control.currentWorkspace || workspace.workspace || 'jag_app_growth') + '</strong></div>' +
+        '<div class="runtime-actions"><button class="primary" type="button" data-runtime-action="start">启动</button><button class="danger" type="button" data-runtime-action="stop">停止</button></div>';
+      el('war-room-control-panel').querySelectorAll('[data-runtime-action]').forEach(button => {
+        button.addEventListener('click', () => {
+          el('war-room-status').textContent = button.dataset.runtimeAction === 'start' ? 'RUNNING' : 'STOPPED';
+          el('war-room-status').className = 'badge ' + runtimeBadgeClass(el('war-room-status').textContent);
+        });
+      });
+      el('runtime-drift-banner').textContent = wr.isLearningDrifting ? 'AGOS 正在学歪风险：需要人工审核样例结论，禁止把样例当成真实反馈。' : 'AGOS 学习方向正常。';
+      el('runtime-pipeline-note').textContent = 'current_runtime_stage = ' + currentStage;
+      el('runtime-pipeline').innerHTML = (wr.runtimePipeline || []).map(node => {
+        const status = node.id === currentStage ? 'current' : node.status;
+        return '<div class="pipeline-node node-' + esc(status) + '"><strong>' + esc(node.label) + '</strong><span>' + esc(status) + '</span><span>' + esc(node.note || '') + '</span></div>';
+      }).join('');
+      el('war-room-feed').innerHTML = (wr.warRoomFeed || []).map(item =>
+        '<div class="feed-item"><time>' + esc(item.time) + '</time><div class="feed-main"><strong>' + esc(item.type) + '</strong><span>' + esc(item.sourcePlatform) + ' · ' + esc(item.country) + ' · ' + esc(item.language) + ' · ' + esc(item.audience) + ' · 情绪 ' + esc(item.emotion) + '</span></div><span class="badge ' + (item.status === 'risk' || item.status === 'needs_human_review' ? 'b-amber' : 'b-blue') + '">' + esc(item.aiAction) + '</span></div>'
+      ).join('');
+      el('war-room-jag-workspace').innerHTML =
+        '<div class="runtime-title-row"><h3>Runtime Workspace Card</h3><span class="badge b-cyan">' + esc(workspace.workspaceStatus || 'learning') + '</span></div>' +
+        '<div class="runtime-stat-grid">' +
+        '<div class="runtime-stat"><span>Workspace</span><strong>' + esc(workspace.workspace || workspace.workspace_id) + '</strong></div>' +
+        '<div class="runtime-stat"><span>Industry Pack</span><strong>' + esc(workspace.industryPack) + '</strong></div>' +
+        '<div class="runtime-stat"><span>当前目标市场</span><strong>' + esc(workspace.targetMarket || workspace.focusMarket) + '</strong></div>' +
+        '<div class="runtime-stat"><span>当前重点平台</span><strong>' + esc((workspace.focusPlatforms || []).join(', ')) + '</strong></div>' +
+        '<div class="runtime-stat"><span>当前重点痛点</span><strong>' + esc(workspace.focusPainPoint || '待分析') + '</strong></div>' +
+        '<div class="runtime-stat"><span>风险状态</span><strong>' + esc(workspace.riskStatus || 'needs_review') + '</strong></div>' +
+        '</div><div style="height:8px"></div><div class="runtime-stat"><span>今日目标</span><strong>' + esc(workspace.todayGoal) + '</strong></div>';
+      el('war-room-social-homepages').innerHTML = (wr.socialRuntimeMatrix || []).map(item =>
+        '<div class="social-cell"><strong>' + esc(item.platform) + '</strong><span>status: ' + esc(item.status) + '</span><span>today: ' + esc(item.today) + '</span><span>reply: ' + esc(item.reply) + '</span><span>risk: ' + esc(item.risk) + '</span><span>review: ' + esc(item.review) + '</span></div>'
+      ).join('');
+      el('war-room-growth-cycles').innerHTML = (wr.growthCycles || []).map(cycle => {
+        const steps = (cycle.timeline || []).map(step => '<span class="mini-step ' + esc(step.status) + '">' + esc(step.node) + ' ' + (step.status === 'done' ? '✓' : esc(step.status)) + '</span>').join('');
+        return '<details class="runtime-details"><summary><span>' + esc(cycle.cycleId) + '</span><span class="mini-steps">' + steps + '</span><span>' + esc(cycle.status) + '</span></summary><div class="runtime-detail-body"><div><strong>收集内容</strong>：' + esc((cycle.collectedQuestions || []).join(' / ')) + '</div><div><strong>分析结果</strong>：' + esc(cycle.analysisConclusion) + '</div><div><strong>学习结果</strong>：' + esc(cycle.learningResult || '') + '</div><div><strong>策略变化</strong>：' + esc(cycle.strategyChange || cycle.generatedStrategy) + '</div></div></details>';
+      }).join('');
+      el('war-room-growth-stages').innerHTML = (wr.growthStages || []).map(stage =>
+        '<details class="strategy-stage"><summary>' + esc(stage.cycleRange) + '<br>' + esc(stage.name) + '</summary><div><strong>阶段目标</strong><br>' + esc(stage.stageGoal) + '<br><strong>学习数量</strong> ' + esc(stage.learningCount ?? stage.collectionCount) + '<br><strong>高价值问题</strong><br>' + esc(stage.highValueQuestion || '待收集') + '<br><strong>最强策略</strong><br>' + esc(stage.strongestStrategy || '待形成') + '<br><strong>最大失败</strong><br>' + esc(stage.biggestFailure || '待运行') + '<br><strong>下一阶段重点</strong><br>' + esc(stage.nextFocus) + '</div></details>'
+      ).join('');
+      el('war-room-correction-panel').innerHTML = (wr.correctionCenter || []).map(item =>
+        '<div class="correction-card"><strong>' + esc(item.issue) + '</strong><span class="badge ' + (item.status === 'needs_code_check' || item.status === 'needs_runtime_validation' ? 'b-red' : item.status === 'needs_human_review' ? 'b-amber' : 'b-blue') + '">' + esc(item.status) + '</span><p>' + esc(item.signal) + '</p><p>' + esc(item.action) + '</p></div>'
+      ).join('');
+      el('war-room-intelligence-trace').textContent = JSON.stringify(wr.intelligenceCollectionTrace || []);
+      el('war-room-learning-deposit').textContent = JSON.stringify(wr.learningDepositTrace || []);
     }
 
 

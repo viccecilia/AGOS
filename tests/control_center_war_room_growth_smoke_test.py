@@ -77,8 +77,8 @@ def main():
         assert marker in html, f"HTML marker missing: {marker}"
 
     assert "AGOS 成长可视化战情室" in html, "Chinese War Room title is required"
-    assert "JAG 社交主页矩阵" in html, "Chinese JAG social homepage section is required"
-    assert "纠偏检测面板" in html, "Chinese correction panel title is required"
+    assert "Social Runtime Matrix" in html, "Runtime social matrix section is required"
+    assert "AI Correction Center" in html, "Runtime correction center title is required"
 
     assert state.get("realGrowthVerification"), "realGrowthVerification must be preserved"
     assert state.get("phaseBlueprint"), "phaseBlueprint must be preserved"
