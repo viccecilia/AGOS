@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import Any
 
 from services.cross_platform_expansion_engine import CrossPlatformExpansionEngine
+from services.daily_question_import_engine import DailyQuestionImportEngine
 from services.human_feedback_learning import HumanFeedbackLearning
 from services.human_personality_training import HumanPersonalityTraining
 from services.heat_detection_engine import HeatDetectionEngine
@@ -84,6 +85,7 @@ class RuntimeUIBridge:
         heat_detection = HeatDetectionEngine().detect()
         strategic_interpretation = StrategicInterpretationEngine().interpret()
         cross_platform_expansion = CrossPlatformExpansionEngine().expand()
+        daily_question_import = DailyQuestionImportEngine().import_today()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -246,6 +248,9 @@ class RuntimeUIBridge:
             "crossPlatformExpansion": cross_platform_expansion,
             "expansionStrategies": cross_platform_expansion.get("expansionStrategies", []),
             "crossPlatformExpansionFeed": cross_platform_expansion.get("crossPlatformExpansionFeed", []),
+            "dailyQuestionImport": daily_question_import,
+            "dailyQuestions": daily_question_import.get("dailyQuestions", []),
+            "dailyImportSummary": daily_question_import.get("dailyImportSummary", {}),
         }
 
 
