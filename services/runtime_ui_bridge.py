@@ -9,6 +9,7 @@ from services.best_answer_learning_engine import BestAnswerLearningEngine
 from services.cross_platform_expansion_engine import CrossPlatformExpansionEngine
 from services.daily_question_import_engine import DailyQuestionImportEngine
 from services.daily_operations_report_engine import DailyOperationsReportEngine
+from services.failure_analysis_engine import FailureAnalysisEngine
 from services.human_feedback_learning import HumanFeedbackLearning
 from services.human_personality_training import HumanPersonalityTraining
 from services.heat_detection_engine import HeatDetectionEngine
@@ -18,6 +19,7 @@ from services.personality_memory_deposit import PersonalityMemoryDeposit
 from services.personality_evolution_gate import PersonalityEvolutionGate
 from services.personality_review_session import PersonalityReviewSession
 from services.real_feedback_capture_engine import RealFeedbackCaptureEngine
+from services.real_growth_validation_engine import RealGrowthValidationEngine
 from services.real_reply_attempt_engine import RealReplyAttemptEngine
 from services.patrol_group_engine import PatrolGroupEngine
 from services.keyword_expansion_engine import KeywordExpansionEngine
@@ -94,6 +96,8 @@ class RuntimeUIBridge:
         real_feedback_capture = RealFeedbackCaptureEngine().capture()
         best_answer_learning = BestAnswerLearningEngine().learn()
         daily_operations_report = DailyOperationsReportEngine().generate()
+        failure_analysis = FailureAnalysisEngine().analyze()
+        real_growth_validation = RealGrowthValidationEngine().validate()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -273,6 +277,14 @@ class RuntimeUIBridge:
             "dailyOperationsReport": daily_operations_report,
             "runtimeDailyReportFeed": daily_operations_report.get("runtimeDailyReportFeed", []),
             "dailyOperationsSummary": daily_operations_report.get("dailyOperationsSummary", {}),
+            "failureAnalysis": failure_analysis,
+            "failureItems": failure_analysis.get("failureItems", []),
+            "failureTimeline": failure_analysis.get("failureTimeline", []),
+            "failureSummary": failure_analysis.get("failureSummary", {}),
+            "realGrowthValidation": real_growth_validation,
+            "realGrowthValidationChecks": real_growth_validation.get("validationChecks", []),
+            "runtimeIntelligenceReview": real_growth_validation.get("runtimeIntelligenceReview", {}),
+            "realGrowthValidationSummary": real_growth_validation.get("realGrowthValidationSummary", {}),
         }
 
 

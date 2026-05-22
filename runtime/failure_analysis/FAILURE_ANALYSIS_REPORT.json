@@ -1,0 +1,146 @@
+{
+  "created_at": "2026-05-22T11:48:06+00:00",
+  "failedHooks": [
+    "reduce transit uncertainty first"
+  ],
+  "failedStrategies": [
+    "generic answer without visible follow-up"
+  ],
+  "failureItems": [
+    {
+      "failure_id": "failure_feedback_0003",
+      "failure_type": "ignored_reply",
+      "fix_recommendation": "Try a clearer hook and stronger practical detail.",
+      "platform": "X",
+      "question_text": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
+      "reply_attempt_id": "20260522-Q001-x-reply",
+      "reply_text": "Draft X reply: For How do I avoid getting lost at Shinjuku station on my first Tokyo trip?, reduce uncertainty with one clear route, one backup, and one saved map. Needs human review before any real reply.",
+      "source": "feedback_capture",
+      "status": "analyzed",
+      "why_failed": "Reply did not produce visible engagement in the feedback window."
+    },
+    {
+      "failure_id": "failure_learning_20260522-Q001-x-reply",
+      "failure_type": "failed_answer",
+      "fix_recommendation": "Make the answer more specific, reduce generic phrasing, and require human review before reuse.",
+      "platform": "X",
+      "question_text": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
+      "reply_attempt_id": "20260522-Q001-x-reply",
+      "reply_text": "Draft X reply: For How do I avoid getting lost at Shinjuku station on my first Tokyo trip?, reduce uncertainty with one clear route, one backup, and one saved map. Needs human review before any real reply.",
+      "source": "best_answer_learning",
+      "status": "analyzed",
+      "why_failed": "Answer produced no positive feedback and should not be learned as a best pattern."
+    },
+    {
+      "failure_id": "failure_hook_80087",
+      "failure_type": "failed_hook",
+      "fix_recommendation": "Name the concrete pain point in the first phrase and promise one useful next step.",
+      "hook": "reduce transit uncertainty first",
+      "platform": "unknown",
+      "source": "best_answer_learning",
+      "status": "analyzed",
+      "why_failed": "Hook failed because it did not make the practical travel payoff visible fast enough."
+    },
+    {
+      "failure_id": "failure_strategy_78418",
+      "failure_type": "failed_strategy",
+      "fix_recommendation": "Retest with a narrower audience, clearer pain point, and explicit human review.",
+      "platform": "unknown",
+      "source": "best_answer_learning",
+      "status": "analyzed",
+      "strategy": "generic answer without visible follow-up",
+      "why_failed": "Strategy failed because it produced weak feedback or could not be tied to a clear user pain signal."
+    }
+  ],
+  "failureSummary": {
+    "can_explain_failure": true,
+    "failed_hooks": 1,
+    "failed_strategies": 1,
+    "ignored_content": 1,
+    "ignored_replies": 1,
+    "top_failure_reason": "Reply did not produce visible engagement in the feedback window."
+  },
+  "failureTimeline": [
+    {
+      "fix_recommendation": "Try a clearer hook and stronger practical detail.",
+      "platform": "X",
+      "reply_attempt_id": "20260522-Q001-x-reply",
+      "status": "analyzed",
+      "time": "2026-05-22T11:48:06+00:00",
+      "type": "ignored_reply",
+      "why_failed": "Reply did not produce visible engagement in the feedback window."
+    },
+    {
+      "fix_recommendation": "Make the answer more specific, reduce generic phrasing, and require human review before reuse.",
+      "platform": "X",
+      "reply_attempt_id": "20260522-Q001-x-reply",
+      "status": "analyzed",
+      "time": "2026-05-22T11:48:06+00:00",
+      "type": "failed_answer",
+      "why_failed": "Answer produced no positive feedback and should not be learned as a best pattern."
+    },
+    {
+      "fix_recommendation": "Name the concrete pain point in the first phrase and promise one useful next step.",
+      "platform": "unknown",
+      "reply_attempt_id": null,
+      "status": "analyzed",
+      "time": "2026-05-22T11:48:06+00:00",
+      "type": "failed_hook",
+      "why_failed": "Hook failed because it did not make the practical travel payoff visible fast enough."
+    },
+    {
+      "fix_recommendation": "Retest with a narrower audience, clearer pain point, and explicit human review.",
+      "platform": "unknown",
+      "reply_attempt_id": null,
+      "status": "analyzed",
+      "time": "2026-05-22T11:48:06+00:00",
+      "type": "failed_strategy",
+      "why_failed": "Strategy failed because it produced weak feedback or could not be tied to a clear user pain signal."
+    }
+  ],
+  "ignoredContent": [
+    {
+      "captured_at": "2026-05-22T11:48:06+00:00",
+      "feedback_id": "feedback_0003",
+      "feedback_note": "No visible response after review window.",
+      "has_negative_feedback": true,
+      "has_positive_feedback": false,
+      "ignored": true,
+      "liked": false,
+      "platform": "X",
+      "question_id": "20260522-Q001",
+      "question_text": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
+      "replied": false,
+      "reply_attempt_id": "20260522-Q001-x-reply",
+      "reply_text": "Draft X reply: For How do I avoid getting lost at Shinjuku station on my first Tokyo trip?, reduce uncertainty with one clear route, one backup, and one saved map. Needs human review before any real reply.",
+      "safety_boundary": "manual_feedback_record_only",
+      "saved": false,
+      "shared": false,
+      "status": "captured"
+    }
+  ],
+  "ignoredReplies": [
+    {
+      "captured_at": "2026-05-22T11:48:06+00:00",
+      "feedback_id": "feedback_0003",
+      "feedback_note": "No visible response after review window.",
+      "has_negative_feedback": true,
+      "has_positive_feedback": false,
+      "ignored": true,
+      "liked": false,
+      "platform": "X",
+      "question_id": "20260522-Q001",
+      "question_text": "How do I avoid getting lost at Shinjuku station on my first Tokyo trip?",
+      "replied": false,
+      "reply_attempt_id": "20260522-Q001-x-reply",
+      "reply_text": "Draft X reply: For How do I avoid getting lost at Shinjuku station on my first Tokyo trip?, reduce uncertainty with one clear route, one backup, and one saved map. Needs human review before any real reply.",
+      "safety_boundary": "manual_feedback_record_only",
+      "saved": false,
+      "shared": false,
+      "status": "captured"
+    }
+  ],
+  "report_id": "FAILURE_ANALYSIS_REPORT",
+  "scope": "local_failure_analysis_only_no_platform_api",
+  "status": "active"
+}

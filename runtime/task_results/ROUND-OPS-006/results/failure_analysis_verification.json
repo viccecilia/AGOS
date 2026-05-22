@@ -1,0 +1,18 @@
+{
+  "round_id": "ROUND-OPS-006",
+  "status": "passed",
+  "artifacts": [
+    "runtime/failure_analysis/FAILURE_ANALYSIS_REPORT.json",
+    "runtime/failure_analysis/failure_items.json",
+    "runtime/failure_analysis/failure_timeline.json"
+  ],
+  "checks": [
+    "ignored content analyzed",
+    "ignored replies analyzed",
+    "failed hooks analyzed",
+    "failed strategies analyzed",
+    "why_failed explanations present",
+    "fix recommendations present"
+  ],
+  "safety_boundary": "local analysis only; no platform API or auto-posting"
+}
