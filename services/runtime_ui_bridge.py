@@ -7,6 +7,7 @@ from typing import Any
 
 from services.human_feedback_learning import HumanFeedbackLearning
 from services.human_personality_training import HumanPersonalityTraining
+from services.heat_detection_engine import HeatDetectionEngine
 from services.personality_drift_engine import PersonalityDriftEngine
 from services.personality_isolation_engine import PersonalityIsolationEngine
 from services.personality_memory_deposit import PersonalityMemoryDeposit
@@ -78,6 +79,7 @@ class RuntimeUIBridge:
         keyword_expansion = KeywordExpansionEngine().build_from_patrol_groups()
         topic_discovery = TopicDiscoveryEngine().discover()
         trend_clustering = TrendClusteringEngine().cluster()
+        heat_detection = HeatDetectionEngine().detect()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -160,7 +162,7 @@ class RuntimeUIBridge:
             "platformStyleDrift": [
                 item for item in state.get("mislearning_alerts", []) if "平台" in item.get("issue", "") or "Tone" in item.get("issue", "")
             ],
-            "opportunityRanking": [state["opportunity_score"]] if state.get("opportunity_score") else [],
+            "opportunityRanking": heat_detection.get("opportunityRanking", []),
             "runtimeIntelligenceFeed": state.get("runtime_intelligence", {}),
             "trainingExplanations": state.get("training_explanations", []),
             "runtimeReviewReport": state.get("runtime_review_report"),
@@ -231,6 +233,9 @@ class RuntimeUIBridge:
             "discoveredTopics": topic_discovery.get("discoveredTopics", []),
             "trendClustering": trend_clustering,
             "trendClusters": trend_clustering.get("trendClusters", []),
+            "heatDetection": heat_detection,
+            "heatSignals": heat_detection.get("heatSignals", []),
+            "heatOpportunityRanking": heat_detection.get("opportunityRanking", []),
         }
 
 

@@ -1,0 +1,102 @@
+[
+  {
+    "cluster_id": "trend_cluster_tokyo_transport_anxiety",
+    "cluster_name": "Tokyo transport anxiety",
+    "detectedSignals": [
+      "rising_trend",
+      "high_engagement_trend",
+      "high_emotion_trend",
+      "high_spread_trend"
+    ],
+    "emotion_heat_score": 0.9,
+    "engagement_score": 1.0,
+    "frequency": 4,
+    "heat_level": "hot",
+    "opportunity_score": 0.925,
+    "platforms": [
+      "Manual",
+      "RSS",
+      "Reddit",
+      "Threads"
+    ],
+    "rank": 1,
+    "recommended_action": "Prioritize for human-reviewed answer branch and content strategy.",
+    "rising_score": 0.8,
+    "signal_id": "heat_tokyo_transport_anxiety",
+    "spread_score": 1.0,
+    "status": "detected",
+    "why_hot": "Tokyo transport anxiety scores 0.925 because it appears across 4 platform(s), has frequency 4, and emotion score 0.9."
+  },
+  {
+    "cluster_id": "trend_cluster_tokyo_rainy_day",
+    "cluster_name": "Tokyo rainy day travel friction",
+    "detectedSignals": [
+      "rising_trend",
+      "high_engagement_trend",
+      "high_emotion_trend",
+      "high_spread_trend"
+    ],
+    "emotion_heat_score": 0.84,
+    "engagement_score": 1.0,
+    "frequency": 4,
+    "heat_level": "hot",
+    "opportunity_score": 0.91,
+    "platforms": [
+      "Instagram",
+      "Reddit",
+      "TikTok",
+      "YouTube"
+    ],
+    "rank": 2,
+    "recommended_action": "Prioritize for human-reviewed answer branch and content strategy.",
+    "rising_score": 0.8,
+    "signal_id": "heat_tokyo_rainy_day",
+    "spread_score": 1.0,
+    "status": "detected",
+    "why_hot": "Tokyo rainy day travel friction scores 0.91 because it appears across 4 platform(s), has frequency 4, and emotion score 0.84."
+  },
+  {
+    "cluster_id": "trend_cluster_air_fryer_cleaning_friction",
+    "cluster_name": "Air fryer cleaning friction",
+    "detectedSignals": [
+      "high_emotion_trend"
+    ],
+    "emotion_heat_score": 0.78,
+    "engagement_score": 0.25,
+    "frequency": 1,
+    "heat_level": "watch",
+    "opportunity_score": 0.357,
+    "platforms": [
+      "TikTok"
+    ],
+    "rank": 3,
+    "recommended_action": "Keep in watchlist until stronger cross-platform evidence appears.",
+    "rising_score": 0.2,
+    "signal_id": "heat_air_fryer_cleaning_friction",
+    "spread_score": 0.2,
+    "status": "detected",
+    "why_hot": "Air fryer cleaning friction scores 0.357 because it appears across 1 platform(s), has frequency 1, and emotion score 0.78."
+  },
+  {
+    "cluster_id": "trend_cluster_vacuum_performance_anxiety",
+    "cluster_name": "Vacuum performance anxiety",
+    "detectedSignals": [
+      "watch_signal"
+    ],
+    "emotion_heat_score": 0.72,
+    "engagement_score": 0.25,
+    "frequency": 1,
+    "heat_level": "watch",
+    "opportunity_score": 0.342,
+    "platforms": [
+      "YouTube"
+    ],
+    "rank": 4,
+    "recommended_action": "Keep in watchlist until stronger cross-platform evidence appears.",
+    "rising_score": 0.2,
+    "signal_id": "heat_vacuum_performance_anxiety",
+    "spread_score": 0.2,
+    "status": "detected",
+    "why_hot": "Vacuum performance anxiety scores 0.342 because it appears across 1 platform(s), has frequency 1, and emotion score 0.72."
+  }
+]

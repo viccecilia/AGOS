@@ -1,0 +1,27 @@
+{
+  "round_id": "ROUND-SCOUT-005",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "heat_detection_engine_exists",
+      "status": "passed",
+      "evidence": "services/heat_detection_engine.py"
+    },
+    {
+      "name": "heat_signals_report_exists",
+      "status": "passed",
+      "evidence": "runtime/heat_signals/HEAT_DETECTION_REPORT.json"
+    },
+    {
+      "name": "opportunity_ranking_exists",
+      "status": "passed",
+      "evidence": "runtime/heat_signals/opportunity_ranking.json"
+    },
+    {
+      "name": "control_center_panel_exists",
+      "status": "passed",
+      "evidence": "docs/project_control_center.html#war-room-growth"
+    }
+  ],
+  "safety_boundary": "local_only_no_external_platform_access"
+}

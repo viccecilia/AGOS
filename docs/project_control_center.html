@@ -525,28 +525,28 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.63",
+    "controlCenterVersion": "0.1.64",
     "lastUpdated": "2026-05-22",
     "currentPhase": "Scout Intelligence / AI Scout Network",
-    "currentRound": "ROUND-SCOUT-004",
-    "nextRound": "ROUND-SCOUT-005 Heat Detection",
-    "overallProgress": 98,
-    "activeFocus": "Trend Clustering Engine: AGOS clusters similar questions, similar trends, cross-platform discussions, and similar emotions into local trend clusters."
+    "currentRound": "ROUND-SCOUT-005",
+    "nextRound": "ROUND-SCOUT-006 Strategic Interpretation",
+    "overallProgress": 99,
+    "activeFocus": "Heat Detection Engine: AGOS detects rising, engagement, emotion, and spread heat signals, then ranks which local trend opportunities are getting hot."
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.63 Add trend clustering engine",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.63",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.63",
-    "note": "Trend Clustering Engine mapped to GitHub tag agos-v0.1.63. Clustering is local-only; no external platform automation is enabled."
+    "latestCommit": "agos-v0.1.64 Add heat detection engine",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.64",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.64",
+    "note": "Heat Detection Engine mapped to GitHub tag agos-v0.1.64. Heat ranking is local-only; no external platform automation is enabled."
   },
   "metrics": {
     "roundsPlanned": 101,
-    "roundsCompleted": 55,
+    "roundsCompleted": 56,
     "roundsInProgress": 0,
-    "reportsEmbedded": 67
+    "reportsEmbedded": 68
   },
   "modules": [
     {
@@ -680,6 +680,27 @@
     }
   ],
   "reports": [
+    {
+      "id": "ROUND-SCOUT-005",
+      "title": "AGOS Heat Detection Engine",
+      "date": "2026-05-22",
+      "status": "done",
+      "summary": "Added Heat Detection Engine to detect rising, high engagement, high emotion, and high spread trend signals, then produce Opportunity Ranking.",
+      "files": [
+        "services/heat_detection_engine.py",
+        "services/runtime_ui_bridge.py",
+        "docs/project_control_center.html",
+        "tests/heat_detection_smoke_test.py",
+        "runtime/heat_signals/HEAT_DETECTION_REPORT.json",
+        "runtime/task_results/ROUND-SCOUT-005/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "python -m compileall services tests passed",
+        "python tests\\heat_detection_smoke_test.py passed",
+        "python tests\\war_room_runtime_ui_smoke_test.py passed",
+        "Browser check: Heat Detection Engine and Opportunity Ranking show hot local trend signals"
+      ]
+    },
     {
       "id": "ROUND-SCOUT-004",
       "title": "AGOS Trend Clustering Engine",
@@ -2014,6 +2035,15 @@
   ],
   "versions": [
     {
+      "id": "agos_control_center_v0.1.64",
+      "label": "v0.1.64 - Heat Detection Engine",
+      "date": "2026-05-22",
+      "gitRef": "agos-v0.1.64",
+      "location": "docs/project_control_center.html",
+      "notes": "ROUND-SCOUT-005 completed locally and mapped to GitHub tag agos-v0.1.64. War Room now shows Heat Detection and Opportunity Ranking.",
+      "snapshot": "AGOS Project Control Center v0.1.64\nRound: ROUND-SCOUT-005 completed\nGit: agos-v0.1.64\nStatus: Heat Detection Engine added\nNo external platform automation enabled.\n"
+    },
+    {
       "id": "agos_control_center_v0.1.63",
       "label": "v0.1.63 - Trend Clustering Engine",
       "date": "2026-05-22",
@@ -3264,16 +3294,6 @@
       "summary": "Planned blueprint round for Phase C / AI WAR ROOM. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
     },
     {
-      "id": "ROUND-SCOUT-005",
-      "phase": "Phase D / AI SCOUT NETWORK",
-      "name": "Heat Detection",
-      "status": "planned",
-      "progress": 0,
-      "deliverable": "Score heat signals and detect what deserves action",
-      "report": "runtime/task_results/ROUND-SCOUT-005/ROUND_SUMMARY.md",
-      "summary": "Planned blueprint round for Phase D / AI SCOUT NETWORK. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
-    },
-    {
       "id": "ROUND-SCOUT-006",
       "phase": "Phase D / AI SCOUT NETWORK",
       "name": "Strategic Interpretation",
@@ -3692,6 +3712,16 @@
       "deliverable": "Trend Clustering Engine for similar questions, cross-platform trends, and similar emotion clusters.",
       "report": "runtime/task_results/ROUND-SCOUT-004/ROUND_SUMMARY.md",
       "summary": "AGOS can now cluster local cross-platform question signals into trend clusters such as Tokyo transport anxiety and Tokyo rainy day travel friction."
+    },
+    {
+      "id": "ROUND-SCOUT-005",
+      "phase": "SCOUT_INTELLIGENCE / AI_SCOUT_NETWORK",
+      "name": "AGOS_HEAT_DETECTION_ENGINE",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "Heat Detection Engine for rising, engagement, emotion, spread signals and Opportunity Ranking.",
+      "report": "runtime/task_results/ROUND-SCOUT-005/ROUND_SUMMARY.md",
+      "summary": "AGOS can now detect what is getting hot and rank local trend opportunities for human-reviewed growth action."
     }
   ],
   "realGrowthVerification": {
@@ -3890,7 +3920,7 @@
       "currentCycle": "JAG-LAB-CYCLE-0001",
       "currentIndustryPack": "Travel Pack / Lab",
       "currentWorkspace": "JAG-LAB",
-      "lastRunTime": "2026-05-22T10:06:01+00:00",
+      "lastRunTime": "2026-05-22T10:09:05+00:00",
       "status": "STOPPED"
     },
     "jagWorkspace": {
@@ -4919,7 +4949,7 @@
           ],
           "cadence": "Low frequency, high relevance, reply only when the question is a real pain point.",
           "content_shape": "Long-form answer with context, tradeoffs, and practical steps.",
-          "created_at": "2026-05-22T10:06:01+00:00",
+          "created_at": "2026-05-22T10:09:05+00:00",
           "current_pain_point": "Tokyo transport anxiety",
           "human_review_status": "needs_human_review",
           "industry_pack": "Travel Pack / Lab",
@@ -4947,7 +4977,7 @@
           ],
           "cadence": "Higher frequency experiments with tight hook variation and fast feedback.",
           "content_shape": "Short hook, one visible pain scene, one practical payoff, one soft save CTA.",
-          "created_at": "2026-05-22T10:06:01+00:00",
+          "created_at": "2026-05-22T10:09:05+00:00",
           "current_pain_point": "Tokyo transport anxiety",
           "human_review_status": "needs_human_review",
           "industry_pack": "Travel Pack / Lab",
@@ -4975,7 +5005,7 @@
           ],
           "cadence": "Timely posting around trend windows and question bursts.",
           "content_shape": "One strong claim, two supporting details, one practical takeaway or thread.",
-          "created_at": "2026-05-22T10:06:01+00:00",
+          "created_at": "2026-05-22T10:09:05+00:00",
           "current_pain_point": "Tokyo transport anxiety",
           "human_review_status": "needs_human_review",
           "industry_pack": "Travel Pack / Lab",
@@ -5003,7 +5033,7 @@
           ],
           "cadence": "Lower frequency evergreen videos supported by Shorts extracted from high-friction moments.",
           "content_shape": "Searchable title, structured chapters, visual walkthrough, recap, and next-step CTA.",
-          "created_at": "2026-05-22T10:06:01+00:00",
+          "created_at": "2026-05-22T10:09:05+00:00",
           "current_pain_point": "Tokyo transport anxiety",
           "human_review_status": "needs_human_review",
           "industry_pack": "Travel Pack / Lab",
@@ -5023,7 +5053,7 @@
           "workspace": "JAG-LAB"
         }
       ],
-      "updated_at": "2026-05-22T10:06:01+00:00",
+      "updated_at": "2026-05-22T10:09:05+00:00",
       "workspace": "JAG-LAB"
     },
     "strategyPersonalityFeed": [
@@ -5061,7 +5091,7 @@
       }
     ],
     "personalityIsolationReport": {
-      "created_at": "2026-05-22T10:06:01+00:00",
+      "created_at": "2026-05-22T10:09:05+00:00",
       "isolationMatrix": [
         {
           "allowed_traits": [
@@ -5398,7 +5428,7 @@
       }
     ],
     "personalityReviewSession": {
-      "created_at": "2026-05-22T10:06:01+00:00",
+      "created_at": "2026-05-22T10:09:05+00:00",
       "driftEventsReviewed": 6,
       "personalityTrend": [
         {
@@ -5553,7 +5583,7 @@
       }
     ],
     "strategyEvolution": {
-      "created_at": "2026-05-22T10:06:01+00:00",
+      "created_at": "2026-05-22T10:09:05+00:00",
       "evolutionFeed": [
         {
           "classification": "long_term_growth",
@@ -5742,7 +5772,7 @@
           }
         ]
       },
-      "created_at": "2026-05-22T10:06:01+00:00",
+      "created_at": "2026-05-22T10:09:05+00:00",
       "dashboard_id": "RUNTIME_TRAINER_DASHBOARD",
       "driftAlerts": [
         {
@@ -5943,7 +5973,7 @@
           "status": "passed"
         }
       ],
-      "created_at": "2026-05-22T10:06:01+00:00",
+      "created_at": "2026-05-22T10:09:05+00:00",
       "marketIsolationStatus": "clear",
       "personalityEvolutionSummary": "AGOS has formed a stable operating personality with workspace, platform, market, and strategy layers.",
       "platformPersonalityCount": 4,
@@ -6339,7 +6369,7 @@
           "workspace": "PHILIPS-LAB"
         }
       ],
-      "created_at": "2026-05-22T10:06:01+00:00",
+      "created_at": "2026-05-22T10:09:05+00:00",
       "industryPackPatrolGroups": {
         "Home Appliance Pack": [
           {
@@ -7412,7 +7442,7 @@
         "Tokyo transport anxiety",
         "Vacuum performance anxiety"
       ],
-      "created_at": "2026-05-22T10:06:01+00:00",
+      "created_at": "2026-05-22T10:09:05+00:00",
       "keywordExpansions": [
         {
           "canonical_pain_point": "Air fryer cleaning friction",
@@ -8165,7 +8195,7 @@
       }
     ],
     "topicDiscovery": {
-      "created_at": "2026-05-22T10:06:01+00:00",
+      "created_at": "2026-05-22T10:09:05+00:00",
       "discoveredTopics": [
         {
           "canonical_pain_point": "Tokyo transport anxiety",
@@ -9075,22 +9105,104 @@
     ],
     "opportunityRanking": [
       {
-        "dimensions": {
-          "content_potential": 0.82,
-          "conversion_potential": 0.55,
-          "cross_platform_potential": 0.68,
-          "engagement_potential": 0.78,
-          "pain_strength": 0.85,
-          "reply_potential": 0.76
-        },
-        "question_id": "jag_lab_tokyo_transport_001",
-        "reasons": [
-          "痛点强：用户有明确焦虑或求助信号",
-          "内容潜力高：交通和路线问题适合多平台解释",
-          "回复潜力高：问题可直接给出帮助型答案"
+        "cluster_id": "trend_cluster_tokyo_transport_anxiety",
+        "cluster_name": "Tokyo transport anxiety",
+        "detectedSignals": [
+          "rising_trend",
+          "high_engagement_trend",
+          "high_emotion_trend",
+          "high_spread_trend"
         ],
-        "total_score": 0.74,
-        "verdict": "high_value"
+        "emotion_heat_score": 0.9,
+        "engagement_score": 1.0,
+        "frequency": 4,
+        "heat_level": "hot",
+        "opportunity_score": 0.925,
+        "platforms": [
+          "Manual",
+          "RSS",
+          "Reddit",
+          "Threads"
+        ],
+        "rank": 1,
+        "recommended_action": "Prioritize for human-reviewed answer branch and content strategy.",
+        "rising_score": 0.8,
+        "signal_id": "heat_tokyo_transport_anxiety",
+        "spread_score": 1.0,
+        "status": "detected",
+        "why_hot": "Tokyo transport anxiety scores 0.925 because it appears across 4 platform(s), has frequency 4, and emotion score 0.9."
+      },
+      {
+        "cluster_id": "trend_cluster_tokyo_rainy_day",
+        "cluster_name": "Tokyo rainy day travel friction",
+        "detectedSignals": [
+          "rising_trend",
+          "high_engagement_trend",
+          "high_emotion_trend",
+          "high_spread_trend"
+        ],
+        "emotion_heat_score": 0.84,
+        "engagement_score": 1.0,
+        "frequency": 4,
+        "heat_level": "hot",
+        "opportunity_score": 0.91,
+        "platforms": [
+          "Instagram",
+          "Reddit",
+          "TikTok",
+          "YouTube"
+        ],
+        "rank": 2,
+        "recommended_action": "Prioritize for human-reviewed answer branch and content strategy.",
+        "rising_score": 0.8,
+        "signal_id": "heat_tokyo_rainy_day",
+        "spread_score": 1.0,
+        "status": "detected",
+        "why_hot": "Tokyo rainy day travel friction scores 0.91 because it appears across 4 platform(s), has frequency 4, and emotion score 0.84."
+      },
+      {
+        "cluster_id": "trend_cluster_air_fryer_cleaning_friction",
+        "cluster_name": "Air fryer cleaning friction",
+        "detectedSignals": [
+          "high_emotion_trend"
+        ],
+        "emotion_heat_score": 0.78,
+        "engagement_score": 0.25,
+        "frequency": 1,
+        "heat_level": "watch",
+        "opportunity_score": 0.357,
+        "platforms": [
+          "TikTok"
+        ],
+        "rank": 3,
+        "recommended_action": "Keep in watchlist until stronger cross-platform evidence appears.",
+        "rising_score": 0.2,
+        "signal_id": "heat_air_fryer_cleaning_friction",
+        "spread_score": 0.2,
+        "status": "detected",
+        "why_hot": "Air fryer cleaning friction scores 0.357 because it appears across 1 platform(s), has frequency 1, and emotion score 0.78."
+      },
+      {
+        "cluster_id": "trend_cluster_vacuum_performance_anxiety",
+        "cluster_name": "Vacuum performance anxiety",
+        "detectedSignals": [
+          "watch_signal"
+        ],
+        "emotion_heat_score": 0.72,
+        "engagement_score": 0.25,
+        "frequency": 1,
+        "heat_level": "watch",
+        "opportunity_score": 0.342,
+        "platforms": [
+          "YouTube"
+        ],
+        "rank": 4,
+        "recommended_action": "Keep in watchlist until stronger cross-platform evidence appears.",
+        "rising_score": 0.2,
+        "signal_id": "heat_vacuum_performance_anxiety",
+        "spread_score": 0.2,
+        "status": "detected",
+        "why_hot": "Vacuum performance anxiety scores 0.342 because it appears across 1 platform(s), has frequency 1, and emotion score 0.72."
       }
     ],
     "personalityDriftAlerts": [
@@ -10303,7 +10415,7 @@
         ],
         "total_clusters": 4
       },
-      "created_at": "2026-05-22T10:06:01+00:00",
+      "created_at": "2026-05-22T10:09:05+00:00",
       "report_id": "TREND_CLUSTERING_REPORT",
       "scope": "local_only_no_external_platform_access",
       "status": "active",
@@ -10573,6 +10685,432 @@
         ],
         "status": "clustered"
       }
+    ],
+    "heatDetection": {
+      "created_at": "2026-05-22T10:09:05+00:00",
+      "heatDimensions": [
+        "rising_trend",
+        "high_engagement_trend",
+        "high_emotion_trend",
+        "high_spread_trend"
+      ],
+      "heatSignals": [
+        {
+          "cluster_id": "trend_cluster_tokyo_transport_anxiety",
+          "cluster_name": "Tokyo transport anxiety",
+          "detectedSignals": [
+            "rising_trend",
+            "high_engagement_trend",
+            "high_emotion_trend",
+            "high_spread_trend"
+          ],
+          "emotion_heat_score": 0.9,
+          "engagement_score": 1.0,
+          "frequency": 4,
+          "heat_level": "hot",
+          "opportunity_score": 0.925,
+          "platforms": [
+            "Manual",
+            "RSS",
+            "Reddit",
+            "Threads"
+          ],
+          "rank": 1,
+          "recommended_action": "Prioritize for human-reviewed answer branch and content strategy.",
+          "rising_score": 0.8,
+          "signal_id": "heat_tokyo_transport_anxiety",
+          "spread_score": 1.0,
+          "status": "detected",
+          "why_hot": "Tokyo transport anxiety scores 0.925 because it appears across 4 platform(s), has frequency 4, and emotion score 0.9."
+        },
+        {
+          "cluster_id": "trend_cluster_tokyo_rainy_day",
+          "cluster_name": "Tokyo rainy day travel friction",
+          "detectedSignals": [
+            "rising_trend",
+            "high_engagement_trend",
+            "high_emotion_trend",
+            "high_spread_trend"
+          ],
+          "emotion_heat_score": 0.84,
+          "engagement_score": 1.0,
+          "frequency": 4,
+          "heat_level": "hot",
+          "opportunity_score": 0.91,
+          "platforms": [
+            "Instagram",
+            "Reddit",
+            "TikTok",
+            "YouTube"
+          ],
+          "rank": 2,
+          "recommended_action": "Prioritize for human-reviewed answer branch and content strategy.",
+          "rising_score": 0.8,
+          "signal_id": "heat_tokyo_rainy_day",
+          "spread_score": 1.0,
+          "status": "detected",
+          "why_hot": "Tokyo rainy day travel friction scores 0.91 because it appears across 4 platform(s), has frequency 4, and emotion score 0.84."
+        },
+        {
+          "cluster_id": "trend_cluster_air_fryer_cleaning_friction",
+          "cluster_name": "Air fryer cleaning friction",
+          "detectedSignals": [
+            "high_emotion_trend"
+          ],
+          "emotion_heat_score": 0.78,
+          "engagement_score": 0.25,
+          "frequency": 1,
+          "heat_level": "watch",
+          "opportunity_score": 0.357,
+          "platforms": [
+            "TikTok"
+          ],
+          "rank": 3,
+          "recommended_action": "Keep in watchlist until stronger cross-platform evidence appears.",
+          "rising_score": 0.2,
+          "signal_id": "heat_air_fryer_cleaning_friction",
+          "spread_score": 0.2,
+          "status": "detected",
+          "why_hot": "Air fryer cleaning friction scores 0.357 because it appears across 1 platform(s), has frequency 1, and emotion score 0.78."
+        },
+        {
+          "cluster_id": "trend_cluster_vacuum_performance_anxiety",
+          "cluster_name": "Vacuum performance anxiety",
+          "detectedSignals": [
+            "watch_signal"
+          ],
+          "emotion_heat_score": 0.72,
+          "engagement_score": 0.25,
+          "frequency": 1,
+          "heat_level": "watch",
+          "opportunity_score": 0.342,
+          "platforms": [
+            "YouTube"
+          ],
+          "rank": 4,
+          "recommended_action": "Keep in watchlist until stronger cross-platform evidence appears.",
+          "rising_score": 0.2,
+          "signal_id": "heat_vacuum_performance_anxiety",
+          "spread_score": 0.2,
+          "status": "detected",
+          "why_hot": "Vacuum performance anxiety scores 0.342 because it appears across 1 platform(s), has frequency 1, and emotion score 0.72."
+        }
+      ],
+      "heatSummary": {
+        "hot_signals": 2,
+        "top_opportunity": "Tokyo transport anxiety",
+        "total_signals": 4,
+        "warming_signals": 0
+      },
+      "opportunityRanking": [
+        {
+          "cluster_id": "trend_cluster_tokyo_transport_anxiety",
+          "cluster_name": "Tokyo transport anxiety",
+          "detectedSignals": [
+            "rising_trend",
+            "high_engagement_trend",
+            "high_emotion_trend",
+            "high_spread_trend"
+          ],
+          "emotion_heat_score": 0.9,
+          "engagement_score": 1.0,
+          "frequency": 4,
+          "heat_level": "hot",
+          "opportunity_score": 0.925,
+          "platforms": [
+            "Manual",
+            "RSS",
+            "Reddit",
+            "Threads"
+          ],
+          "rank": 1,
+          "recommended_action": "Prioritize for human-reviewed answer branch and content strategy.",
+          "rising_score": 0.8,
+          "signal_id": "heat_tokyo_transport_anxiety",
+          "spread_score": 1.0,
+          "status": "detected",
+          "why_hot": "Tokyo transport anxiety scores 0.925 because it appears across 4 platform(s), has frequency 4, and emotion score 0.9."
+        },
+        {
+          "cluster_id": "trend_cluster_tokyo_rainy_day",
+          "cluster_name": "Tokyo rainy day travel friction",
+          "detectedSignals": [
+            "rising_trend",
+            "high_engagement_trend",
+            "high_emotion_trend",
+            "high_spread_trend"
+          ],
+          "emotion_heat_score": 0.84,
+          "engagement_score": 1.0,
+          "frequency": 4,
+          "heat_level": "hot",
+          "opportunity_score": 0.91,
+          "platforms": [
+            "Instagram",
+            "Reddit",
+            "TikTok",
+            "YouTube"
+          ],
+          "rank": 2,
+          "recommended_action": "Prioritize for human-reviewed answer branch and content strategy.",
+          "rising_score": 0.8,
+          "signal_id": "heat_tokyo_rainy_day",
+          "spread_score": 1.0,
+          "status": "detected",
+          "why_hot": "Tokyo rainy day travel friction scores 0.91 because it appears across 4 platform(s), has frequency 4, and emotion score 0.84."
+        },
+        {
+          "cluster_id": "trend_cluster_air_fryer_cleaning_friction",
+          "cluster_name": "Air fryer cleaning friction",
+          "detectedSignals": [
+            "high_emotion_trend"
+          ],
+          "emotion_heat_score": 0.78,
+          "engagement_score": 0.25,
+          "frequency": 1,
+          "heat_level": "watch",
+          "opportunity_score": 0.357,
+          "platforms": [
+            "TikTok"
+          ],
+          "rank": 3,
+          "recommended_action": "Keep in watchlist until stronger cross-platform evidence appears.",
+          "rising_score": 0.2,
+          "signal_id": "heat_air_fryer_cleaning_friction",
+          "spread_score": 0.2,
+          "status": "detected",
+          "why_hot": "Air fryer cleaning friction scores 0.357 because it appears across 1 platform(s), has frequency 1, and emotion score 0.78."
+        },
+        {
+          "cluster_id": "trend_cluster_vacuum_performance_anxiety",
+          "cluster_name": "Vacuum performance anxiety",
+          "detectedSignals": [
+            "watch_signal"
+          ],
+          "emotion_heat_score": 0.72,
+          "engagement_score": 0.25,
+          "frequency": 1,
+          "heat_level": "watch",
+          "opportunity_score": 0.342,
+          "platforms": [
+            "YouTube"
+          ],
+          "rank": 4,
+          "recommended_action": "Keep in watchlist until stronger cross-platform evidence appears.",
+          "rising_score": 0.2,
+          "signal_id": "heat_vacuum_performance_anxiety",
+          "spread_score": 0.2,
+          "status": "detected",
+          "why_hot": "Vacuum performance anxiety scores 0.342 because it appears across 1 platform(s), has frequency 1, and emotion score 0.72."
+        }
+      ],
+      "report_id": "HEAT_DETECTION_REPORT",
+      "scope": "local_only_no_external_platform_access",
+      "status": "active"
+    },
+    "heatOpportunityRanking": [
+      {
+        "cluster_id": "trend_cluster_tokyo_transport_anxiety",
+        "cluster_name": "Tokyo transport anxiety",
+        "detectedSignals": [
+          "rising_trend",
+          "high_engagement_trend",
+          "high_emotion_trend",
+          "high_spread_trend"
+        ],
+        "emotion_heat_score": 0.9,
+        "engagement_score": 1.0,
+        "frequency": 4,
+        "heat_level": "hot",
+        "opportunity_score": 0.925,
+        "platforms": [
+          "Manual",
+          "RSS",
+          "Reddit",
+          "Threads"
+        ],
+        "rank": 1,
+        "recommended_action": "Prioritize for human-reviewed answer branch and content strategy.",
+        "rising_score": 0.8,
+        "signal_id": "heat_tokyo_transport_anxiety",
+        "spread_score": 1.0,
+        "status": "detected",
+        "why_hot": "Tokyo transport anxiety scores 0.925 because it appears across 4 platform(s), has frequency 4, and emotion score 0.9."
+      },
+      {
+        "cluster_id": "trend_cluster_tokyo_rainy_day",
+        "cluster_name": "Tokyo rainy day travel friction",
+        "detectedSignals": [
+          "rising_trend",
+          "high_engagement_trend",
+          "high_emotion_trend",
+          "high_spread_trend"
+        ],
+        "emotion_heat_score": 0.84,
+        "engagement_score": 1.0,
+        "frequency": 4,
+        "heat_level": "hot",
+        "opportunity_score": 0.91,
+        "platforms": [
+          "Instagram",
+          "Reddit",
+          "TikTok",
+          "YouTube"
+        ],
+        "rank": 2,
+        "recommended_action": "Prioritize for human-reviewed answer branch and content strategy.",
+        "rising_score": 0.8,
+        "signal_id": "heat_tokyo_rainy_day",
+        "spread_score": 1.0,
+        "status": "detected",
+        "why_hot": "Tokyo rainy day travel friction scores 0.91 because it appears across 4 platform(s), has frequency 4, and emotion score 0.84."
+      },
+      {
+        "cluster_id": "trend_cluster_air_fryer_cleaning_friction",
+        "cluster_name": "Air fryer cleaning friction",
+        "detectedSignals": [
+          "high_emotion_trend"
+        ],
+        "emotion_heat_score": 0.78,
+        "engagement_score": 0.25,
+        "frequency": 1,
+        "heat_level": "watch",
+        "opportunity_score": 0.357,
+        "platforms": [
+          "TikTok"
+        ],
+        "rank": 3,
+        "recommended_action": "Keep in watchlist until stronger cross-platform evidence appears.",
+        "rising_score": 0.2,
+        "signal_id": "heat_air_fryer_cleaning_friction",
+        "spread_score": 0.2,
+        "status": "detected",
+        "why_hot": "Air fryer cleaning friction scores 0.357 because it appears across 1 platform(s), has frequency 1, and emotion score 0.78."
+      },
+      {
+        "cluster_id": "trend_cluster_vacuum_performance_anxiety",
+        "cluster_name": "Vacuum performance anxiety",
+        "detectedSignals": [
+          "watch_signal"
+        ],
+        "emotion_heat_score": 0.72,
+        "engagement_score": 0.25,
+        "frequency": 1,
+        "heat_level": "watch",
+        "opportunity_score": 0.342,
+        "platforms": [
+          "YouTube"
+        ],
+        "rank": 4,
+        "recommended_action": "Keep in watchlist until stronger cross-platform evidence appears.",
+        "rising_score": 0.2,
+        "signal_id": "heat_vacuum_performance_anxiety",
+        "spread_score": 0.2,
+        "status": "detected",
+        "why_hot": "Vacuum performance anxiety scores 0.342 because it appears across 1 platform(s), has frequency 1, and emotion score 0.72."
+      }
+    ],
+    "heatSignals": [
+      {
+        "cluster_id": "trend_cluster_tokyo_transport_anxiety",
+        "cluster_name": "Tokyo transport anxiety",
+        "detectedSignals": [
+          "rising_trend",
+          "high_engagement_trend",
+          "high_emotion_trend",
+          "high_spread_trend"
+        ],
+        "emotion_heat_score": 0.9,
+        "engagement_score": 1.0,
+        "frequency": 4,
+        "heat_level": "hot",
+        "opportunity_score": 0.925,
+        "platforms": [
+          "Manual",
+          "RSS",
+          "Reddit",
+          "Threads"
+        ],
+        "rank": 1,
+        "recommended_action": "Prioritize for human-reviewed answer branch and content strategy.",
+        "rising_score": 0.8,
+        "signal_id": "heat_tokyo_transport_anxiety",
+        "spread_score": 1.0,
+        "status": "detected",
+        "why_hot": "Tokyo transport anxiety scores 0.925 because it appears across 4 platform(s), has frequency 4, and emotion score 0.9."
+      },
+      {
+        "cluster_id": "trend_cluster_tokyo_rainy_day",
+        "cluster_name": "Tokyo rainy day travel friction",
+        "detectedSignals": [
+          "rising_trend",
+          "high_engagement_trend",
+          "high_emotion_trend",
+          "high_spread_trend"
+        ],
+        "emotion_heat_score": 0.84,
+        "engagement_score": 1.0,
+        "frequency": 4,
+        "heat_level": "hot",
+        "opportunity_score": 0.91,
+        "platforms": [
+          "Instagram",
+          "Reddit",
+          "TikTok",
+          "YouTube"
+        ],
+        "rank": 2,
+        "recommended_action": "Prioritize for human-reviewed answer branch and content strategy.",
+        "rising_score": 0.8,
+        "signal_id": "heat_tokyo_rainy_day",
+        "spread_score": 1.0,
+        "status": "detected",
+        "why_hot": "Tokyo rainy day travel friction scores 0.91 because it appears across 4 platform(s), has frequency 4, and emotion score 0.84."
+      },
+      {
+        "cluster_id": "trend_cluster_air_fryer_cleaning_friction",
+        "cluster_name": "Air fryer cleaning friction",
+        "detectedSignals": [
+          "high_emotion_trend"
+        ],
+        "emotion_heat_score": 0.78,
+        "engagement_score": 0.25,
+        "frequency": 1,
+        "heat_level": "watch",
+        "opportunity_score": 0.357,
+        "platforms": [
+          "TikTok"
+        ],
+        "rank": 3,
+        "recommended_action": "Keep in watchlist until stronger cross-platform evidence appears.",
+        "rising_score": 0.2,
+        "signal_id": "heat_air_fryer_cleaning_friction",
+        "spread_score": 0.2,
+        "status": "detected",
+        "why_hot": "Air fryer cleaning friction scores 0.357 because it appears across 1 platform(s), has frequency 1, and emotion score 0.78."
+      },
+      {
+        "cluster_id": "trend_cluster_vacuum_performance_anxiety",
+        "cluster_name": "Vacuum performance anxiety",
+        "detectedSignals": [
+          "watch_signal"
+        ],
+        "emotion_heat_score": 0.72,
+        "engagement_score": 0.25,
+        "frequency": 1,
+        "heat_level": "watch",
+        "opportunity_score": 0.342,
+        "platforms": [
+          "YouTube"
+        ],
+        "rank": 4,
+        "recommended_action": "Keep in watchlist until stronger cross-platform evidence appears.",
+        "rising_score": 0.2,
+        "signal_id": "heat_vacuum_performance_anxiety",
+        "spread_score": 0.2,
+        "status": "detected",
+        "why_hot": "Vacuum performance anxiety scores 0.342 because it appears across 1 platform(s), has frequency 1, and emotion score 0.72."
+      }
     ]
   }
 }
@@ -10794,6 +11332,12 @@
             <div style="height:10px"></div>
             <div class="runtime-title-row"><h3>Trend Clustering Engine</h3><p>Similar questions / cross-platform trends / emotion clusters</p></div>
             <div class="feed-stream" id="runtime-trend-clustering"></div>
+            <div style="height:10px"></div>
+            <div class="runtime-title-row"><h3>Heat Detection Engine</h3><p>Rising / engagement / emotion / spread signals</p></div>
+            <div class="feed-stream" id="runtime-heat-detection"></div>
+            <div style="height:10px"></div>
+            <div class="runtime-title-row"><h3>Opportunity Ranking</h3><p>What is getting hot first</p></div>
+            <div class="feed-stream" id="runtime-heat-opportunity-ranking"></div>
             <div style="height:10px"></div>
             <div class="runtime-title-row"><h3>Personality Isolation Report</h3><p>Workspace / Market / Platform pollution guard</p></div>
             <div class="feed-stream" id="runtime-personality-isolation"></div>
@@ -11399,6 +11943,12 @@
       el('runtime-trend-clustering').innerHTML = (wr.trendClusters || []).map(item =>
         '<div class="feed-item"><time>' + esc((item.platforms || []).join(' / ')) + '</time><div class="feed-main"><strong>' + esc(item.cluster_name) + '</strong><span>Type: ' + esc(item.cluster_type || 'trend_cluster') + ' | Frequency: ' + esc(item.frequency || 0) + ' | Emotion: ' + esc((item.emotion_tags || []).join(' / ')) + '</span><span>Similar trends: ' + esc((item.similar_trends || []).join(' / ')) + '</span><span>Questions: ' + esc((item.similar_questions || []).slice(0, 3).join(' | ')) + '</span><span>' + esc(item.next_action || '') + '</span></div><span class="badge ' + (item.cross_platform ? 'b-green' : 'b-blue') + '">' + esc(item.status || 'clustered') + '</span></div>'
       ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Trend Clustering pending</strong><span>Scout Network will cluster similar questions, trends, cross-platform discussion, and emotion patterns.</span></div><span class="badge b-amber">pending</span></div>';
+      el('runtime-heat-detection').innerHTML = (wr.heatSignals || []).map(item =>
+        '<div class="feed-item"><time>' + esc(item.heat_level || 'watch') + '</time><div class="feed-main"><strong>' + esc(item.cluster_name) + '</strong><span>Score: ' + esc(item.opportunity_score) + ' | Rising: ' + esc(item.rising_score) + ' | Engagement: ' + esc(item.engagement_score) + ' | Emotion: ' + esc(item.emotion_heat_score) + ' | Spread: ' + esc(item.spread_score) + '</span><span>Signals: ' + esc((item.detectedSignals || []).join(' / ')) + '</span><span>' + esc(item.why_hot || '') + '</span></div><span class="badge ' + (item.heat_level === 'hot' ? 'b-green' : (item.heat_level === 'warming' ? 'b-amber' : 'b-blue')) + '">' + esc(item.status || 'detected') + '</span></div>'
+      ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Heat Detection pending</strong><span>Scout Network will detect rising, engagement, emotion, and spread heat signals.</span></div><span class="badge b-amber">pending</span></div>';
+      el('runtime-heat-opportunity-ranking').innerHTML = (wr.heatOpportunityRanking || []).map(item =>
+        '<div class="feed-item"><time>#' + esc(item.rank || '-') + '</time><div class="feed-main"><strong>' + esc(item.cluster_name || item.pain_point || 'Opportunity') + '</strong><span>Opportunity score: ' + esc(item.opportunity_score || item.total_score || 0) + ' | Heat: ' + esc(item.heat_level || 'unknown') + '</span><span>Platforms: ' + esc((item.platforms || []).join(' / ')) + '</span><span>' + esc(item.recommended_action || item.reason || '') + '</span></div><span class="badge ' + (item.heat_level === 'hot' ? 'b-green' : 'b-blue') + '">ranked</span></div>'
+      ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Opportunity Ranking pending</strong><span>Heat Detection will rank what is getting hot first.</span></div><span class="badge b-amber">pending</span></div>';
       el('runtime-personality-isolation').innerHTML = (wr.personalityIsolationFeed || []).map(item =>
         '<div class="feed-item"><time>' + esc(item.dimension) + '</time><div class="feed-main"><strong>' + esc(item.status) + '</strong><span>Scopes: ' + esc((item.scopes || []).join(' / ')) + '</span><span>Contexts checked: ' + esc(item.contexts_checked) + ' | Violations: ' + esc(item.violations) + '</span></div><span class="badge ' + (item.status === 'clear' ? 'b-green' : 'b-amber') + '">' + esc(item.status) + '</span></div>'
       ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Personality Isolation Report pending</strong><span>Runtime will verify workspace, market, and platform personalities do not cross-pollute.</span></div><span class="badge b-amber">pending</span></div>';
