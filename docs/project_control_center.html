@@ -525,28 +525,28 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.64",
+    "controlCenterVersion": "0.1.65",
     "lastUpdated": "2026-05-22",
     "currentPhase": "Scout Intelligence / AI Scout Network",
-    "currentRound": "ROUND-SCOUT-005",
-    "nextRound": "ROUND-SCOUT-006 Strategic Interpretation",
-    "overallProgress": 99,
-    "activeFocus": "Heat Detection Engine: AGOS detects rising, engagement, emotion, and spread heat signals, then ranks which local trend opportunities are getting hot."
+    "currentRound": "ROUND-SCOUT-006",
+    "nextRound": "ROUND-SCOUT-007 Cross Platform Expansion",
+    "overallProgress": 100,
+    "activeFocus": "Strategic Interpretation Engine: AGOS explains why a hot trend matters and outputs risk, opportunity, content direction, reply direction, and platform direction."
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.64 Add heat detection engine",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.64",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.64",
-    "note": "Heat Detection Engine mapped to GitHub tag agos-v0.1.64. Heat ranking is local-only; no external platform automation is enabled."
+    "latestCommit": "agos-v0.1.65 Add strategic interpretation engine",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.65",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.65",
+    "note": "Strategic Interpretation Engine mapped to GitHub tag agos-v0.1.65. Interpretation is local-only; no external platform automation is enabled."
   },
   "metrics": {
     "roundsPlanned": 101,
-    "roundsCompleted": 56,
+    "roundsCompleted": 57,
     "roundsInProgress": 0,
-    "reportsEmbedded": 68
+    "reportsEmbedded": 69
   },
   "modules": [
     {
@@ -680,6 +680,27 @@
     }
   ],
   "reports": [
+    {
+      "id": "ROUND-SCOUT-006",
+      "title": "AGOS Strategic Interpretation Engine",
+      "date": "2026-05-22",
+      "status": "done",
+      "summary": "Added Strategic Interpretation Engine to explain why trends matter and output risk, opportunity, content direction, reply direction, platform direction, and Strategic Feed.",
+      "files": [
+        "services/strategic_interpretation_engine.py",
+        "services/runtime_ui_bridge.py",
+        "docs/project_control_center.html",
+        "tests/strategic_interpretation_smoke_test.py",
+        "runtime/strategic_interpretation/STRATEGIC_INTERPRETATION_REPORT.json",
+        "runtime/task_results/ROUND-SCOUT-006/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "python -m compileall services tests passed",
+        "python tests\\strategic_interpretation_smoke_test.py passed",
+        "python tests\\war_room_runtime_ui_smoke_test.py passed",
+        "Browser check: Strategic Feed shows why trends matter with risk, opportunity, content, and reply direction"
+      ]
+    },
     {
       "id": "ROUND-SCOUT-005",
       "title": "AGOS Heat Detection Engine",
@@ -2035,6 +2056,15 @@
   ],
   "versions": [
     {
+      "id": "agos_control_center_v0.1.65",
+      "label": "v0.1.65 - Strategic Interpretation Engine",
+      "date": "2026-05-22",
+      "gitRef": "agos-v0.1.65",
+      "location": "docs/project_control_center.html",
+      "notes": "ROUND-SCOUT-006 completed locally and mapped to GitHub tag agos-v0.1.65. War Room now shows Strategic Feed.",
+      "snapshot": "AGOS Project Control Center v0.1.65\nRound: ROUND-SCOUT-006 completed\nGit: agos-v0.1.65\nStatus: Strategic Interpretation Engine added\nNo external platform automation enabled.\n"
+    },
+    {
       "id": "agos_control_center_v0.1.64",
       "label": "v0.1.64 - Heat Detection Engine",
       "date": "2026-05-22",
@@ -3294,16 +3324,6 @@
       "summary": "Planned blueprint round for Phase C / AI WAR ROOM. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
     },
     {
-      "id": "ROUND-SCOUT-006",
-      "phase": "Phase D / AI SCOUT NETWORK",
-      "name": "Strategic Interpretation",
-      "status": "planned",
-      "progress": 0,
-      "deliverable": "Convert trend clusters into strategic growth interpretation",
-      "report": "runtime/task_results/ROUND-SCOUT-006/ROUND_SUMMARY.md",
-      "summary": "Planned blueprint round for Phase D / AI SCOUT NETWORK. It should be executed with the standard Round Execution Request template and must write runtime results before acceptance."
-    },
-    {
       "id": "ROUND-SCOUT-007",
       "phase": "Phase D / AI SCOUT NETWORK",
       "name": "Cross Platform Expansion",
@@ -3722,6 +3742,16 @@
       "deliverable": "Heat Detection Engine for rising, engagement, emotion, spread signals and Opportunity Ranking.",
       "report": "runtime/task_results/ROUND-SCOUT-005/ROUND_SUMMARY.md",
       "summary": "AGOS can now detect what is getting hot and rank local trend opportunities for human-reviewed growth action."
+    },
+    {
+      "id": "ROUND-SCOUT-006",
+      "phase": "SCOUT_INTELLIGENCE / AI_SCOUT_NETWORK",
+      "name": "AGOS_STRATEGIC_INTERPRETATION_ENGINE",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "Strategic Interpretation Engine and Strategic Feed for trend meaning, risk, opportunity, content, reply, and platform direction.",
+      "report": "runtime/task_results/ROUND-SCOUT-006/ROUND_SUMMARY.md",
+      "summary": "AGOS can now explain the meaning behind hot trends and convert heat signals into safe human-reviewed strategic direction."
     }
   ],
   "realGrowthVerification": {
@@ -3920,7 +3950,7 @@
       "currentCycle": "JAG-LAB-CYCLE-0001",
       "currentIndustryPack": "Travel Pack / Lab",
       "currentWorkspace": "JAG-LAB",
-      "lastRunTime": "2026-05-22T10:09:05+00:00",
+      "lastRunTime": "2026-05-22T10:15:00+00:00",
       "status": "STOPPED"
     },
     "jagWorkspace": {
@@ -4949,7 +4979,7 @@
           ],
           "cadence": "Low frequency, high relevance, reply only when the question is a real pain point.",
           "content_shape": "Long-form answer with context, tradeoffs, and practical steps.",
-          "created_at": "2026-05-22T10:09:05+00:00",
+          "created_at": "2026-05-22T10:15:00+00:00",
           "current_pain_point": "Tokyo transport anxiety",
           "human_review_status": "needs_human_review",
           "industry_pack": "Travel Pack / Lab",
@@ -4977,7 +5007,7 @@
           ],
           "cadence": "Higher frequency experiments with tight hook variation and fast feedback.",
           "content_shape": "Short hook, one visible pain scene, one practical payoff, one soft save CTA.",
-          "created_at": "2026-05-22T10:09:05+00:00",
+          "created_at": "2026-05-22T10:15:00+00:00",
           "current_pain_point": "Tokyo transport anxiety",
           "human_review_status": "needs_human_review",
           "industry_pack": "Travel Pack / Lab",
@@ -5005,7 +5035,7 @@
           ],
           "cadence": "Timely posting around trend windows and question bursts.",
           "content_shape": "One strong claim, two supporting details, one practical takeaway or thread.",
-          "created_at": "2026-05-22T10:09:05+00:00",
+          "created_at": "2026-05-22T10:15:00+00:00",
           "current_pain_point": "Tokyo transport anxiety",
           "human_review_status": "needs_human_review",
           "industry_pack": "Travel Pack / Lab",
@@ -5033,7 +5063,7 @@
           ],
           "cadence": "Lower frequency evergreen videos supported by Shorts extracted from high-friction moments.",
           "content_shape": "Searchable title, structured chapters, visual walkthrough, recap, and next-step CTA.",
-          "created_at": "2026-05-22T10:09:05+00:00",
+          "created_at": "2026-05-22T10:15:00+00:00",
           "current_pain_point": "Tokyo transport anxiety",
           "human_review_status": "needs_human_review",
           "industry_pack": "Travel Pack / Lab",
@@ -5053,7 +5083,7 @@
           "workspace": "JAG-LAB"
         }
       ],
-      "updated_at": "2026-05-22T10:09:05+00:00",
+      "updated_at": "2026-05-22T10:15:00+00:00",
       "workspace": "JAG-LAB"
     },
     "strategyPersonalityFeed": [
@@ -5091,7 +5121,7 @@
       }
     ],
     "personalityIsolationReport": {
-      "created_at": "2026-05-22T10:09:05+00:00",
+      "created_at": "2026-05-22T10:15:00+00:00",
       "isolationMatrix": [
         {
           "allowed_traits": [
@@ -5428,7 +5458,7 @@
       }
     ],
     "personalityReviewSession": {
-      "created_at": "2026-05-22T10:09:05+00:00",
+      "created_at": "2026-05-22T10:15:00+00:00",
       "driftEventsReviewed": 6,
       "personalityTrend": [
         {
@@ -5583,7 +5613,7 @@
       }
     ],
     "strategyEvolution": {
-      "created_at": "2026-05-22T10:09:05+00:00",
+      "created_at": "2026-05-22T10:15:00+00:00",
       "evolutionFeed": [
         {
           "classification": "long_term_growth",
@@ -5772,7 +5802,7 @@
           }
         ]
       },
-      "created_at": "2026-05-22T10:09:05+00:00",
+      "created_at": "2026-05-22T10:15:00+00:00",
       "dashboard_id": "RUNTIME_TRAINER_DASHBOARD",
       "driftAlerts": [
         {
@@ -5973,7 +6003,7 @@
           "status": "passed"
         }
       ],
-      "created_at": "2026-05-22T10:09:05+00:00",
+      "created_at": "2026-05-22T10:15:00+00:00",
       "marketIsolationStatus": "clear",
       "personalityEvolutionSummary": "AGOS has formed a stable operating personality with workspace, platform, market, and strategy layers.",
       "platformPersonalityCount": 4,
@@ -6369,7 +6399,7 @@
           "workspace": "PHILIPS-LAB"
         }
       ],
-      "created_at": "2026-05-22T10:09:05+00:00",
+      "created_at": "2026-05-22T10:15:00+00:00",
       "industryPackPatrolGroups": {
         "Home Appliance Pack": [
           {
@@ -7442,7 +7472,7 @@
         "Tokyo transport anxiety",
         "Vacuum performance anxiety"
       ],
-      "created_at": "2026-05-22T10:09:05+00:00",
+      "created_at": "2026-05-22T10:15:00+00:00",
       "keywordExpansions": [
         {
           "canonical_pain_point": "Air fryer cleaning friction",
@@ -8195,7 +8225,7 @@
       }
     ],
     "topicDiscovery": {
-      "created_at": "2026-05-22T10:09:05+00:00",
+      "created_at": "2026-05-22T10:15:00+00:00",
       "discoveredTopics": [
         {
           "canonical_pain_point": "Tokyo transport anxiety",
@@ -10415,7 +10445,7 @@
         ],
         "total_clusters": 4
       },
-      "created_at": "2026-05-22T10:09:05+00:00",
+      "created_at": "2026-05-22T10:15:00+00:00",
       "report_id": "TREND_CLUSTERING_REPORT",
       "scope": "local_only_no_external_platform_access",
       "status": "active",
@@ -10687,7 +10717,7 @@
       }
     ],
     "heatDetection": {
-      "created_at": "2026-05-22T10:09:05+00:00",
+      "created_at": "2026-05-22T10:15:00+00:00",
       "heatDimensions": [
         "rising_trend",
         "high_engagement_trend",
@@ -11111,6 +11141,390 @@
         "status": "detected",
         "why_hot": "Vacuum performance anxiety scores 0.342 because it appears across 1 platform(s), has frequency 1, and emotion score 0.72."
       }
+    ],
+    "strategicFeed": [
+      {
+        "cluster_name": "Tokyo transport anxiety",
+        "content_direction": "Create practical route-confidence content: station map explainer, transfer checklist, and first-time Tokyo transit guide.",
+        "heat_level": "hot",
+        "opportunity_level": "high",
+        "rank": 1,
+        "reply_direction": "Draft a concise helpful reply with empathy, specific steps, and a soft CTA; require human approval.",
+        "risk_level": "medium",
+        "status": "interpreted",
+        "time": "2026-05-22T10:15:00+00:00",
+        "type": "strategic_interpretation",
+        "why": "Tokyo transport anxiety matters because AGOS detected rising_trend, high_engagement_trend, high_emotion_trend, high_spread_trend with opportunity score 0.925. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
+      },
+      {
+        "cluster_name": "Tokyo rainy day travel friction",
+        "content_direction": "Create weather-safe itinerary content: indoor route, food/shopping fallback, and rainy-day timing tips.",
+        "heat_level": "hot",
+        "opportunity_level": "high",
+        "rank": 2,
+        "reply_direction": "Draft a concise helpful reply with empathy, specific steps, and a soft CTA; require human approval.",
+        "risk_level": "medium",
+        "status": "interpreted",
+        "time": "2026-05-22T10:15:00+00:00",
+        "type": "strategic_interpretation",
+        "why": "Tokyo rainy day travel friction matters because AGOS detected rising_trend, high_engagement_trend, high_emotion_trend, high_spread_trend with opportunity score 0.91. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
+      },
+      {
+        "cluster_name": "Air fryer cleaning friction",
+        "content_direction": "Create maintenance content: quick cleaning steps, grease prevention, and mistake checklist.",
+        "heat_level": "watch",
+        "opportunity_level": "watch",
+        "rank": 3,
+        "reply_direction": "Do not reply yet; collect more examples.",
+        "risk_level": "low",
+        "status": "interpreted",
+        "time": "2026-05-22T10:15:00+00:00",
+        "type": "strategic_interpretation",
+        "why": "Air fryer cleaning friction matters because AGOS detected high_emotion_trend with opportunity score 0.357. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
+      },
+      {
+        "cluster_name": "Vacuum performance anxiety",
+        "content_direction": "Create troubleshooting content: suction loss diagnosis, filter cleaning, and maintenance cadence.",
+        "heat_level": "watch",
+        "opportunity_level": "watch",
+        "rank": 4,
+        "reply_direction": "Do not reply yet; collect more examples.",
+        "risk_level": "low",
+        "status": "interpreted",
+        "time": "2026-05-22T10:15:00+00:00",
+        "type": "strategic_interpretation",
+        "why": "Vacuum performance anxiety matters because AGOS detected watch_signal with opportunity score 0.342. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
+      }
+    ],
+    "strategicInterpretation": {
+      "created_at": "2026-05-22T10:15:00+00:00",
+      "interpretationDimensions": [
+        "why_trend_matters",
+        "risk",
+        "opportunity",
+        "content_direction",
+        "reply_direction",
+        "platform_direction"
+      ],
+      "report_id": "STRATEGIC_INTERPRETATION_REPORT",
+      "scope": "local_only_no_external_platform_access",
+      "status": "active",
+      "strategicFeed": [
+        {
+          "cluster_name": "Tokyo transport anxiety",
+          "content_direction": "Create practical route-confidence content: station map explainer, transfer checklist, and first-time Tokyo transit guide.",
+          "heat_level": "hot",
+          "opportunity_level": "high",
+          "rank": 1,
+          "reply_direction": "Draft a concise helpful reply with empathy, specific steps, and a soft CTA; require human approval.",
+          "risk_level": "medium",
+          "status": "interpreted",
+          "time": "2026-05-22T10:15:00+00:00",
+          "type": "strategic_interpretation",
+          "why": "Tokyo transport anxiety matters because AGOS detected rising_trend, high_engagement_trend, high_emotion_trend, high_spread_trend with opportunity score 0.925. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
+        },
+        {
+          "cluster_name": "Tokyo rainy day travel friction",
+          "content_direction": "Create weather-safe itinerary content: indoor route, food/shopping fallback, and rainy-day timing tips.",
+          "heat_level": "hot",
+          "opportunity_level": "high",
+          "rank": 2,
+          "reply_direction": "Draft a concise helpful reply with empathy, specific steps, and a soft CTA; require human approval.",
+          "risk_level": "medium",
+          "status": "interpreted",
+          "time": "2026-05-22T10:15:00+00:00",
+          "type": "strategic_interpretation",
+          "why": "Tokyo rainy day travel friction matters because AGOS detected rising_trend, high_engagement_trend, high_emotion_trend, high_spread_trend with opportunity score 0.91. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
+        },
+        {
+          "cluster_name": "Air fryer cleaning friction",
+          "content_direction": "Create maintenance content: quick cleaning steps, grease prevention, and mistake checklist.",
+          "heat_level": "watch",
+          "opportunity_level": "watch",
+          "rank": 3,
+          "reply_direction": "Do not reply yet; collect more examples.",
+          "risk_level": "low",
+          "status": "interpreted",
+          "time": "2026-05-22T10:15:00+00:00",
+          "type": "strategic_interpretation",
+          "why": "Air fryer cleaning friction matters because AGOS detected high_emotion_trend with opportunity score 0.357. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
+        },
+        {
+          "cluster_name": "Vacuum performance anxiety",
+          "content_direction": "Create troubleshooting content: suction loss diagnosis, filter cleaning, and maintenance cadence.",
+          "heat_level": "watch",
+          "opportunity_level": "watch",
+          "rank": 4,
+          "reply_direction": "Do not reply yet; collect more examples.",
+          "risk_level": "low",
+          "status": "interpreted",
+          "time": "2026-05-22T10:15:00+00:00",
+          "type": "strategic_interpretation",
+          "why": "Vacuum performance anxiety matters because AGOS detected watch_signal with opportunity score 0.342. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
+        }
+      ],
+      "strategicInterpretations": [
+        {
+          "cluster_name": "Tokyo transport anxiety",
+          "content_direction": "Create practical route-confidence content: station map explainer, transfer checklist, and first-time Tokyo transit guide.",
+          "heat_level": "hot",
+          "opportunity": {
+            "level": "high",
+            "summary": "Strong candidate for human-reviewed reply branch and content strategy."
+          },
+          "opportunity_score": 0.925,
+          "platform_direction": {
+            "Manual": "Use safe local draft only; validate platform tone before publishing.",
+            "RSS": "Use safe local draft only; validate platform tone before publishing.",
+            "Reddit": "Use detailed, non-promotional answers with firsthand-style reasoning.",
+            "Threads": "Use safe local draft only; validate platform tone before publishing."
+          },
+          "rank": 1,
+          "recommended_next_step": "Create human-reviewed strategy draft and answer branch; do not publish automatically.",
+          "reply_direction": "Draft a concise helpful reply with empathy, specific steps, and a soft CTA; require human approval.",
+          "review_required": true,
+          "risk": {
+            "items": [
+              "sample_data_only",
+              "overreacting_to_local_sample",
+              "needs_human_review_before_action",
+              "travel_advice_accuracy_risk"
+            ],
+            "level": "medium",
+            "mitigation": "Keep the action local, create drafts only, and require human review before external use."
+          },
+          "signal_id": "heat_tokyo_transport_anxiety",
+          "status": "interpreted",
+          "strategy_id": "strategy_tokyo_transport_anxiety",
+          "why_trend_matters": "Tokyo transport anxiety matters because AGOS detected rising_trend, high_engagement_trend, high_emotion_trend, high_spread_trend with opportunity score 0.925. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
+        },
+        {
+          "cluster_name": "Tokyo rainy day travel friction",
+          "content_direction": "Create weather-safe itinerary content: indoor route, food/shopping fallback, and rainy-day timing tips.",
+          "heat_level": "hot",
+          "opportunity": {
+            "level": "high",
+            "summary": "Strong candidate for human-reviewed reply branch and content strategy."
+          },
+          "opportunity_score": 0.91,
+          "platform_direction": {
+            "Instagram": "Use visual carousel or route card style.",
+            "Reddit": "Use detailed, non-promotional answers with firsthand-style reasoning.",
+            "TikTok": "Use short hook-first content that names the pain quickly.",
+            "YouTube": "Use explainer or checklist format with practical steps."
+          },
+          "rank": 2,
+          "recommended_next_step": "Create human-reviewed strategy draft and answer branch; do not publish automatically.",
+          "reply_direction": "Draft a concise helpful reply with empathy, specific steps, and a soft CTA; require human approval.",
+          "review_required": true,
+          "risk": {
+            "items": [
+              "sample_data_only",
+              "overreacting_to_local_sample",
+              "needs_human_review_before_action",
+              "travel_advice_accuracy_risk"
+            ],
+            "level": "medium",
+            "mitigation": "Keep the action local, create drafts only, and require human review before external use."
+          },
+          "signal_id": "heat_tokyo_rainy_day",
+          "status": "interpreted",
+          "strategy_id": "strategy_tokyo_rainy_day",
+          "why_trend_matters": "Tokyo rainy day travel friction matters because AGOS detected rising_trend, high_engagement_trend, high_emotion_trend, high_spread_trend with opportunity score 0.91. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
+        },
+        {
+          "cluster_name": "Air fryer cleaning friction",
+          "content_direction": "Create maintenance content: quick cleaning steps, grease prevention, and mistake checklist.",
+          "heat_level": "watch",
+          "opportunity": {
+            "level": "watch",
+            "summary": "Keep in watchlist until stronger evidence appears."
+          },
+          "opportunity_score": 0.357,
+          "platform_direction": {
+            "TikTok": "Monitor only; no external action."
+          },
+          "rank": 3,
+          "recommended_next_step": "Keep monitoring and avoid content generation until evidence improves.",
+          "reply_direction": "Do not reply yet; collect more examples.",
+          "review_required": false,
+          "risk": {
+            "items": [
+              "sample_data_only",
+              "single_platform_bias"
+            ],
+            "level": "low",
+            "mitigation": "Keep the action local, create drafts only, and require human review before external use."
+          },
+          "signal_id": "heat_air_fryer_cleaning_friction",
+          "status": "interpreted",
+          "strategy_id": "strategy_air_fryer_cleaning_friction",
+          "why_trend_matters": "Air fryer cleaning friction matters because AGOS detected high_emotion_trend with opportunity score 0.357. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
+        },
+        {
+          "cluster_name": "Vacuum performance anxiety",
+          "content_direction": "Create troubleshooting content: suction loss diagnosis, filter cleaning, and maintenance cadence.",
+          "heat_level": "watch",
+          "opportunity": {
+            "level": "watch",
+            "summary": "Keep in watchlist until stronger evidence appears."
+          },
+          "opportunity_score": 0.342,
+          "platform_direction": {
+            "YouTube": "Monitor only; no external action."
+          },
+          "rank": 4,
+          "recommended_next_step": "Keep monitoring and avoid content generation until evidence improves.",
+          "reply_direction": "Do not reply yet; collect more examples.",
+          "review_required": false,
+          "risk": {
+            "items": [
+              "sample_data_only",
+              "single_platform_bias"
+            ],
+            "level": "low",
+            "mitigation": "Keep the action local, create drafts only, and require human review before external use."
+          },
+          "signal_id": "heat_vacuum_performance_anxiety",
+          "status": "interpreted",
+          "strategy_id": "strategy_vacuum_performance_anxiety",
+          "why_trend_matters": "Vacuum performance anxiety matters because AGOS detected watch_signal with opportunity score 0.342. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
+        }
+      ],
+      "strategicSummary": {
+        "requires_human_review": 2,
+        "top_focus": "Tokyo transport anxiety",
+        "top_strategy": "strategy_tokyo_transport_anxiety",
+        "total_interpretations": 4
+      }
+    },
+    "strategicInterpretations": [
+      {
+        "cluster_name": "Tokyo transport anxiety",
+        "content_direction": "Create practical route-confidence content: station map explainer, transfer checklist, and first-time Tokyo transit guide.",
+        "heat_level": "hot",
+        "opportunity": {
+          "level": "high",
+          "summary": "Strong candidate for human-reviewed reply branch and content strategy."
+        },
+        "opportunity_score": 0.925,
+        "platform_direction": {
+          "Manual": "Use safe local draft only; validate platform tone before publishing.",
+          "RSS": "Use safe local draft only; validate platform tone before publishing.",
+          "Reddit": "Use detailed, non-promotional answers with firsthand-style reasoning.",
+          "Threads": "Use safe local draft only; validate platform tone before publishing."
+        },
+        "rank": 1,
+        "recommended_next_step": "Create human-reviewed strategy draft and answer branch; do not publish automatically.",
+        "reply_direction": "Draft a concise helpful reply with empathy, specific steps, and a soft CTA; require human approval.",
+        "review_required": true,
+        "risk": {
+          "items": [
+            "sample_data_only",
+            "overreacting_to_local_sample",
+            "needs_human_review_before_action",
+            "travel_advice_accuracy_risk"
+          ],
+          "level": "medium",
+          "mitigation": "Keep the action local, create drafts only, and require human review before external use."
+        },
+        "signal_id": "heat_tokyo_transport_anxiety",
+        "status": "interpreted",
+        "strategy_id": "strategy_tokyo_transport_anxiety",
+        "why_trend_matters": "Tokyo transport anxiety matters because AGOS detected rising_trend, high_engagement_trend, high_emotion_trend, high_spread_trend with opportunity score 0.925. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
+      },
+      {
+        "cluster_name": "Tokyo rainy day travel friction",
+        "content_direction": "Create weather-safe itinerary content: indoor route, food/shopping fallback, and rainy-day timing tips.",
+        "heat_level": "hot",
+        "opportunity": {
+          "level": "high",
+          "summary": "Strong candidate for human-reviewed reply branch and content strategy."
+        },
+        "opportunity_score": 0.91,
+        "platform_direction": {
+          "Instagram": "Use visual carousel or route card style.",
+          "Reddit": "Use detailed, non-promotional answers with firsthand-style reasoning.",
+          "TikTok": "Use short hook-first content that names the pain quickly.",
+          "YouTube": "Use explainer or checklist format with practical steps."
+        },
+        "rank": 2,
+        "recommended_next_step": "Create human-reviewed strategy draft and answer branch; do not publish automatically.",
+        "reply_direction": "Draft a concise helpful reply with empathy, specific steps, and a soft CTA; require human approval.",
+        "review_required": true,
+        "risk": {
+          "items": [
+            "sample_data_only",
+            "overreacting_to_local_sample",
+            "needs_human_review_before_action",
+            "travel_advice_accuracy_risk"
+          ],
+          "level": "medium",
+          "mitigation": "Keep the action local, create drafts only, and require human review before external use."
+        },
+        "signal_id": "heat_tokyo_rainy_day",
+        "status": "interpreted",
+        "strategy_id": "strategy_tokyo_rainy_day",
+        "why_trend_matters": "Tokyo rainy day travel friction matters because AGOS detected rising_trend, high_engagement_trend, high_emotion_trend, high_spread_trend with opportunity score 0.91. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
+      },
+      {
+        "cluster_name": "Air fryer cleaning friction",
+        "content_direction": "Create maintenance content: quick cleaning steps, grease prevention, and mistake checklist.",
+        "heat_level": "watch",
+        "opportunity": {
+          "level": "watch",
+          "summary": "Keep in watchlist until stronger evidence appears."
+        },
+        "opportunity_score": 0.357,
+        "platform_direction": {
+          "TikTok": "Monitor only; no external action."
+        },
+        "rank": 3,
+        "recommended_next_step": "Keep monitoring and avoid content generation until evidence improves.",
+        "reply_direction": "Do not reply yet; collect more examples.",
+        "review_required": false,
+        "risk": {
+          "items": [
+            "sample_data_only",
+            "single_platform_bias"
+          ],
+          "level": "low",
+          "mitigation": "Keep the action local, create drafts only, and require human review before external use."
+        },
+        "signal_id": "heat_air_fryer_cleaning_friction",
+        "status": "interpreted",
+        "strategy_id": "strategy_air_fryer_cleaning_friction",
+        "why_trend_matters": "Air fryer cleaning friction matters because AGOS detected high_emotion_trend with opportunity score 0.357. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
+      },
+      {
+        "cluster_name": "Vacuum performance anxiety",
+        "content_direction": "Create troubleshooting content: suction loss diagnosis, filter cleaning, and maintenance cadence.",
+        "heat_level": "watch",
+        "opportunity": {
+          "level": "watch",
+          "summary": "Keep in watchlist until stronger evidence appears."
+        },
+        "opportunity_score": 0.342,
+        "platform_direction": {
+          "YouTube": "Monitor only; no external action."
+        },
+        "rank": 4,
+        "recommended_next_step": "Keep monitoring and avoid content generation until evidence improves.",
+        "reply_direction": "Do not reply yet; collect more examples.",
+        "review_required": false,
+        "risk": {
+          "items": [
+            "sample_data_only",
+            "single_platform_bias"
+          ],
+          "level": "low",
+          "mitigation": "Keep the action local, create drafts only, and require human review before external use."
+        },
+        "signal_id": "heat_vacuum_performance_anxiety",
+        "status": "interpreted",
+        "strategy_id": "strategy_vacuum_performance_anxiety",
+        "why_trend_matters": "Vacuum performance anxiety matters because AGOS detected watch_signal with opportunity score 0.342. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
+      }
     ]
   }
 }
@@ -11338,6 +11752,9 @@
             <div style="height:10px"></div>
             <div class="runtime-title-row"><h3>Opportunity Ranking</h3><p>What is getting hot first</p></div>
             <div class="feed-stream" id="runtime-heat-opportunity-ranking"></div>
+            <div style="height:10px"></div>
+            <div class="runtime-title-row"><h3>Strategic Feed</h3><p>Why it matters / risk / opportunity / content / reply / platform</p></div>
+            <div class="feed-stream" id="runtime-strategic-feed"></div>
             <div style="height:10px"></div>
             <div class="runtime-title-row"><h3>Personality Isolation Report</h3><p>Workspace / Market / Platform pollution guard</p></div>
             <div class="feed-stream" id="runtime-personality-isolation"></div>
@@ -11949,6 +12366,9 @@
       el('runtime-heat-opportunity-ranking').innerHTML = (wr.heatOpportunityRanking || []).map(item =>
         '<div class="feed-item"><time>#' + esc(item.rank || '-') + '</time><div class="feed-main"><strong>' + esc(item.cluster_name || item.pain_point || 'Opportunity') + '</strong><span>Opportunity score: ' + esc(item.opportunity_score || item.total_score || 0) + ' | Heat: ' + esc(item.heat_level || 'unknown') + '</span><span>Platforms: ' + esc((item.platforms || []).join(' / ')) + '</span><span>' + esc(item.recommended_action || item.reason || '') + '</span></div><span class="badge ' + (item.heat_level === 'hot' ? 'b-green' : 'b-blue') + '">ranked</span></div>'
       ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Opportunity Ranking pending</strong><span>Heat Detection will rank what is getting hot first.</span></div><span class="badge b-amber">pending</span></div>';
+      el('runtime-strategic-feed').innerHTML = (wr.strategicFeed || []).map(item =>
+        '<div class="feed-item"><time>#' + esc(item.rank || '-') + ' ' + esc(item.heat_level || '') + '</time><div class="feed-main"><strong>' + esc(item.cluster_name || 'Strategic signal') + '</strong><span>Why: ' + esc(item.why || '') + '</span><span>Risk: ' + esc(item.risk_level || '') + ' | Opportunity: ' + esc(item.opportunity_level || '') + '</span><span>Content: ' + esc(item.content_direction || '') + '</span><span>Reply: ' + esc(item.reply_direction || '') + '</span></div><span class="badge ' + (item.risk_level === 'medium' ? 'b-amber' : 'b-blue') + '">' + esc(item.status || 'interpreted') + '</span></div>'
+      ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Strategic Feed pending</strong><span>Scout Network will explain why trends matter and output risk, opportunity, content, reply, and platform direction.</span></div><span class="badge b-amber">pending</span></div>';
       el('runtime-personality-isolation').innerHTML = (wr.personalityIsolationFeed || []).map(item =>
         '<div class="feed-item"><time>' + esc(item.dimension) + '</time><div class="feed-main"><strong>' + esc(item.status) + '</strong><span>Scopes: ' + esc((item.scopes || []).join(' / ')) + '</span><span>Contexts checked: ' + esc(item.contexts_checked) + ' | Violations: ' + esc(item.violations) + '</span></div><span class="badge ' + (item.status === 'clear' ? 'b-green' : 'b-amber') + '">' + esc(item.status) + '</span></div>'
       ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Personality Isolation Report pending</strong><span>Runtime will verify workspace, market, and platform personalities do not cross-pollute.</span></div><span class="badge b-amber">pending</span></div>';

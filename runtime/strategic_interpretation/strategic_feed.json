@@ -1,0 +1,54 @@
+[
+  {
+    "cluster_name": "Tokyo transport anxiety",
+    "content_direction": "Create practical route-confidence content: station map explainer, transfer checklist, and first-time Tokyo transit guide.",
+    "heat_level": "hot",
+    "opportunity_level": "high",
+    "rank": 1,
+    "reply_direction": "Draft a concise helpful reply with empathy, specific steps, and a soft CTA; require human approval.",
+    "risk_level": "medium",
+    "status": "interpreted",
+    "time": "2026-05-22T10:15:00+00:00",
+    "type": "strategic_interpretation",
+    "why": "Tokyo transport anxiety matters because AGOS detected rising_trend, high_engagement_trend, high_emotion_trend, high_spread_trend with opportunity score 0.925. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
+  },
+  {
+    "cluster_name": "Tokyo rainy day travel friction",
+    "content_direction": "Create weather-safe itinerary content: indoor route, food/shopping fallback, and rainy-day timing tips.",
+    "heat_level": "hot",
+    "opportunity_level": "high",
+    "rank": 2,
+    "reply_direction": "Draft a concise helpful reply with empathy, specific steps, and a soft CTA; require human approval.",
+    "risk_level": "medium",
+    "status": "interpreted",
+    "time": "2026-05-22T10:15:00+00:00",
+    "type": "strategic_interpretation",
+    "why": "Tokyo rainy day travel friction matters because AGOS detected rising_trend, high_engagement_trend, high_emotion_trend, high_spread_trend with opportunity score 0.91. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
+  },
+  {
+    "cluster_name": "Air fryer cleaning friction",
+    "content_direction": "Create maintenance content: quick cleaning steps, grease prevention, and mistake checklist.",
+    "heat_level": "watch",
+    "opportunity_level": "watch",
+    "rank": 3,
+    "reply_direction": "Do not reply yet; collect more examples.",
+    "risk_level": "low",
+    "status": "interpreted",
+    "time": "2026-05-22T10:15:00+00:00",
+    "type": "strategic_interpretation",
+    "why": "Air fryer cleaning friction matters because AGOS detected high_emotion_trend with opportunity score 0.357. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
+  },
+  {
+    "cluster_name": "Vacuum performance anxiety",
+    "content_direction": "Create troubleshooting content: suction loss diagnosis, filter cleaning, and maintenance cadence.",
+    "heat_level": "watch",
+    "opportunity_level": "watch",
+    "rank": 4,
+    "reply_direction": "Do not reply yet; collect more examples.",
+    "risk_level": "low",
+    "status": "interpreted",
+    "time": "2026-05-22T10:15:00+00:00",
+    "type": "strategic_interpretation",
+    "why": "Vacuum performance anxiety matters because AGOS detected watch_signal with opportunity score 0.342. It indicates a repeated pain point that can be answered, turned into content, and monitored safely before any real platform action."
+  }
+]

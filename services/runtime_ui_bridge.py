@@ -19,6 +19,7 @@ from services.runtime_drift_monitor import RuntimeDriftMonitor
 from services.runtime_engine import RuntimeEngine
 from services.runtime_persistence import RuntimePersistence
 from services.runtime_strategy_personality import RuntimeStrategyPersonalityEngine
+from services.strategic_interpretation_engine import StrategicInterpretationEngine
 from services.runtime_trainer_dashboard import RuntimeTrainerDashboard
 from services.strategy_evolution_engine import StrategyEvolutionEngine
 from services.topic_discovery_engine import TopicDiscoveryEngine
@@ -80,6 +81,7 @@ class RuntimeUIBridge:
         topic_discovery = TopicDiscoveryEngine().discover()
         trend_clustering = TrendClusteringEngine().cluster()
         heat_detection = HeatDetectionEngine().detect()
+        strategic_interpretation = StrategicInterpretationEngine().interpret()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -236,6 +238,9 @@ class RuntimeUIBridge:
             "heatDetection": heat_detection,
             "heatSignals": heat_detection.get("heatSignals", []),
             "heatOpportunityRanking": heat_detection.get("opportunityRanking", []),
+            "strategicInterpretation": strategic_interpretation,
+            "strategicInterpretations": strategic_interpretation.get("strategicInterpretations", []),
+            "strategicFeed": strategic_interpretation.get("strategicFeed", []),
         }
 
 
