@@ -1,0 +1,479 @@
+{
+  "contentPriority": [
+    {
+      "content_focus": "reddit durable guidance",
+      "next_action": "Promote into durable operating memory and retest over multiple cycles.",
+      "priority": "high",
+      "priority_score": 0.837,
+      "why_changed": "Durable strategy memory is stronger than short-term traffic for this content type."
+    },
+    {
+      "content_focus": "youtube durable guidance",
+      "next_action": "Promote into durable operating memory and retest over multiple cycles.",
+      "priority": "high",
+      "priority_score": 0.823,
+      "why_changed": "Durable strategy memory is stronger than short-term traffic for this content type."
+    },
+    {
+      "content_focus": "avoid failed hooks and generic replies",
+      "next_action": "Require human review before reusing failed patterns.",
+      "priority": "high",
+      "priority_score": 0.67,
+      "why_changed": "4 failed pattern(s) were detected; correction work must stay visible."
+    }
+  ],
+  "created_at": "2026-05-22T11:59:24+00:00",
+  "platformPriority": [
+    {
+      "next_action": "Prioritize human-reviewed strategy work.",
+      "platform": "reddit",
+      "priority": "high",
+      "priority_score": 0.879,
+      "why_changed": "reddit priority changed because heat=0.925, durable_memory=0.757, positive_feedback=2."
+    },
+    {
+      "next_action": "Prioritize human-reviewed strategy work.",
+      "platform": "youtube",
+      "priority": "medium",
+      "priority_score": 0.707,
+      "why_changed": "youtube priority changed because heat=0.91, durable_memory=0.743."
+    },
+    {
+      "next_action": "Keep as watch or experiment.",
+      "platform": "tiktok",
+      "priority": "watch",
+      "priority_score": 0.45,
+      "why_changed": "tiktok priority changed because heat=0.91, durable_memory=0, positive_feedback=2, long_term_memory_warns_not_to_overweight."
+    },
+    {
+      "next_action": "Keep as watch or experiment.",
+      "platform": "manual",
+      "priority": "watch",
+      "priority_score": 0.416,
+      "why_changed": "manual priority changed because heat=0.925, durable_memory=0."
+    },
+    {
+      "next_action": "Keep as watch or experiment.",
+      "platform": "rss",
+      "priority": "watch",
+      "priority_score": 0.416,
+      "why_changed": "rss priority changed because heat=0.925, durable_memory=0."
+    },
+    {
+      "next_action": "Keep as watch or experiment.",
+      "platform": "threads",
+      "priority": "watch",
+      "priority_score": 0.416,
+      "why_changed": "threads priority changed because heat=0.925, durable_memory=0."
+    },
+    {
+      "next_action": "Keep as watch or experiment.",
+      "platform": "instagram",
+      "priority": "watch",
+      "priority_score": 0.41,
+      "why_changed": "instagram priority changed because heat=0.91, durable_memory=0."
+    },
+    {
+      "next_action": "Keep as watch or experiment.",
+      "platform": "x",
+      "priority": "watch",
+      "priority_score": 0,
+      "why_changed": "x priority changed because heat=0, durable_memory=0, failures=2, long_term_memory_warns_not_to_overweight."
+    }
+  ],
+  "priorityEvolutionHistory": [
+    {
+      "next_action": "Prioritize human-reviewed strategy work.",
+      "priority": "high",
+      "priority_score": 0.879,
+      "priority_type": "platform_priority",
+      "rank": 1,
+      "target": "reddit",
+      "timestamp": "2026-05-22T11:59:24+00:00",
+      "why_changed": "reddit priority changed because heat=0.925, durable_memory=0.757, positive_feedback=2."
+    },
+    {
+      "next_action": "Prioritize human-reviewed strategy work.",
+      "priority": "medium",
+      "priority_score": 0.707,
+      "priority_type": "platform_priority",
+      "rank": 2,
+      "target": "youtube",
+      "timestamp": "2026-05-22T11:59:24+00:00",
+      "why_changed": "youtube priority changed because heat=0.91, durable_memory=0.743."
+    },
+    {
+      "next_action": "Keep as watch or experiment.",
+      "priority": "watch",
+      "priority_score": 0.45,
+      "priority_type": "platform_priority",
+      "rank": 3,
+      "target": "tiktok",
+      "timestamp": "2026-05-22T11:59:24+00:00",
+      "why_changed": "tiktok priority changed because heat=0.91, durable_memory=0, positive_feedback=2, long_term_memory_warns_not_to_overweight."
+    },
+    {
+      "next_action": "Keep as watch or experiment.",
+      "priority": "watch",
+      "priority_score": 0.416,
+      "priority_type": "platform_priority",
+      "rank": 4,
+      "target": "manual",
+      "timestamp": "2026-05-22T11:59:24+00:00",
+      "why_changed": "manual priority changed because heat=0.925, durable_memory=0."
+    },
+    {
+      "next_action": "Keep as watch or experiment.",
+      "priority": "watch",
+      "priority_score": 0.416,
+      "priority_type": "platform_priority",
+      "rank": 5,
+      "target": "rss",
+      "timestamp": "2026-05-22T11:59:24+00:00",
+      "why_changed": "rss priority changed because heat=0.925, durable_memory=0."
+    },
+    {
+      "next_action": "Prioritize for human-reviewed answer branch and content strategy.",
+      "priority": "high",
+      "priority_score": 0.974,
+      "priority_type": "question_priority",
+      "rank": 1,
+      "target": "Tokyo transport anxiety",
+      "timestamp": "2026-05-22T11:59:24+00:00",
+      "why_changed": "Tokyo transport anxiety scores 0.925 because it appears across 4 platform(s), has frequency 4, and emotion score 0.9."
+    },
+    {
+      "next_action": "Prioritize for human-reviewed answer branch and content strategy.",
+      "priority": "high",
+      "priority_score": 0.883,
+      "priority_type": "question_priority",
+      "rank": 2,
+      "target": "Tokyo rainy day travel friction",
+      "timestamp": "2026-05-22T11:59:24+00:00",
+      "why_changed": "Tokyo rainy day travel friction scores 0.91 because it appears across 4 platform(s), has frequency 4, and emotion score 0.84."
+    },
+    {
+      "next_action": "Keep in watchlist until stronger cross-platform evidence appears.",
+      "priority": "watch",
+      "priority_score": 0.368,
+      "priority_type": "question_priority",
+      "rank": 3,
+      "target": "Air fryer cleaning friction",
+      "timestamp": "2026-05-22T11:59:24+00:00",
+      "why_changed": "Air fryer cleaning friction scores 0.357 because it appears across 1 platform(s), has frequency 1, and emotion score 0.78."
+    },
+    {
+      "next_action": "Keep in watchlist until stronger cross-platform evidence appears.",
+      "priority": "watch",
+      "priority_score": 0.357,
+      "priority_type": "question_priority",
+      "rank": 4,
+      "target": "Vacuum performance anxiety",
+      "timestamp": "2026-05-22T11:59:24+00:00",
+      "why_changed": "Vacuum performance anxiety scores 0.342 because it appears across 1 platform(s), has frequency 1, and emotion score 0.72."
+    },
+    {
+      "next_action": "Move into strategy and content planning if human review approves.",
+      "priority": "high",
+      "priority_score": 0.985,
+      "priority_type": "trend_priority",
+      "rank": 1,
+      "target": "Tokyo transport anxiety",
+      "timestamp": "2026-05-22T11:59:24+00:00",
+      "why_changed": "Tokyo transport anxiety scores 0.925 because it appears across 4 platform(s), has frequency 4, and emotion score 0.9."
+    },
+    {
+      "next_action": "Move into strategy and content planning if human review approves.",
+      "priority": "high",
+      "priority_score": 0.97,
+      "priority_type": "trend_priority",
+      "rank": 2,
+      "target": "Tokyo rainy day travel friction",
+      "timestamp": "2026-05-22T11:59:24+00:00",
+      "why_changed": "Tokyo rainy day travel friction scores 0.91 because it appears across 4 platform(s), has frequency 4, and emotion score 0.84."
+    },
+    {
+      "next_action": "Move into strategy and content planning if human review approves.",
+      "priority": "watch",
+      "priority_score": 0.357,
+      "priority_type": "trend_priority",
+      "rank": 3,
+      "target": "Air fryer cleaning friction",
+      "timestamp": "2026-05-22T11:59:24+00:00",
+      "why_changed": "Air fryer cleaning friction scores 0.357 because it appears across 1 platform(s), has frequency 1, and emotion score 0.78."
+    },
+    {
+      "next_action": "Move into strategy and content planning if human review approves.",
+      "priority": "watch",
+      "priority_score": 0.342,
+      "priority_type": "trend_priority",
+      "rank": 4,
+      "target": "Vacuum performance anxiety",
+      "timestamp": "2026-05-22T11:59:24+00:00",
+      "why_changed": "Vacuum performance anxiety scores 0.342 because it appears across 1 platform(s), has frequency 1, and emotion score 0.72."
+    },
+    {
+      "next_action": "Promote into durable operating memory and retest over multiple cycles.",
+      "priority": "high",
+      "priority_score": 0.837,
+      "priority_type": "content_priority",
+      "rank": 1,
+      "target": "reddit durable guidance",
+      "timestamp": "2026-05-22T11:59:24+00:00",
+      "why_changed": "Durable strategy memory is stronger than short-term traffic for this content type."
+    },
+    {
+      "next_action": "Promote into durable operating memory and retest over multiple cycles.",
+      "priority": "high",
+      "priority_score": 0.823,
+      "priority_type": "content_priority",
+      "rank": 2,
+      "target": "youtube durable guidance",
+      "timestamp": "2026-05-22T11:59:24+00:00",
+      "why_changed": "Durable strategy memory is stronger than short-term traffic for this content type."
+    },
+    {
+      "next_action": "Require human review before reusing failed patterns.",
+      "priority": "high",
+      "priority_score": 0.67,
+      "priority_type": "content_priority",
+      "rank": 3,
+      "target": "avoid failed hooks and generic replies",
+      "timestamp": "2026-05-22T11:59:24+00:00",
+      "why_changed": "4 failed pattern(s) were detected; correction work must stay visible."
+    }
+  ],
+  "prioritySummary": {
+    "can_explain_priority_change": true,
+    "top_content": "reddit durable guidance",
+    "top_platform": "reddit",
+    "top_question": "Tokyo transport anxiety",
+    "top_trend": "Tokyo transport anxiety"
+  },
+  "questionPriority": [
+    {
+      "next_action": "Prioritize for human-reviewed answer branch and content strategy.",
+      "priority": "high",
+      "priority_score": 0.974,
+      "question_focus": "Tokyo transport anxiety",
+      "why_changed": "Tokyo transport anxiety scores 0.925 because it appears across 4 platform(s), has frequency 4, and emotion score 0.9."
+    },
+    {
+      "next_action": "Prioritize for human-reviewed answer branch and content strategy.",
+      "priority": "high",
+      "priority_score": 0.883,
+      "question_focus": "Tokyo rainy day travel friction",
+      "why_changed": "Tokyo rainy day travel friction scores 0.91 because it appears across 4 platform(s), has frequency 4, and emotion score 0.84."
+    },
+    {
+      "next_action": "Keep in watchlist until stronger cross-platform evidence appears.",
+      "priority": "watch",
+      "priority_score": 0.368,
+      "question_focus": "Air fryer cleaning friction",
+      "why_changed": "Air fryer cleaning friction scores 0.357 because it appears across 1 platform(s), has frequency 1, and emotion score 0.78."
+    },
+    {
+      "next_action": "Keep in watchlist until stronger cross-platform evidence appears.",
+      "priority": "watch",
+      "priority_score": 0.357,
+      "question_focus": "Vacuum performance anxiety",
+      "why_changed": "Vacuum performance anxiety scores 0.342 because it appears across 1 platform(s), has frequency 1, and emotion score 0.72."
+    }
+  ],
+  "report_id": "RUNTIME_PRIORITY_REPORT",
+  "runtimePriorityFeed": [
+    {
+      "ai_action": "Prioritize human-reviewed strategy work.",
+      "priority": "high",
+      "rank": 1,
+      "status": "human_review_required",
+      "target": "reddit",
+      "time": "2026-05-22T11:59:24+00:00",
+      "type": "platform_priority",
+      "why_changed": "reddit priority changed because heat=0.925, durable_memory=0.757, positive_feedback=2."
+    },
+    {
+      "ai_action": "Prioritize human-reviewed strategy work.",
+      "priority": "medium",
+      "rank": 2,
+      "status": "watch",
+      "target": "youtube",
+      "time": "2026-05-22T11:59:24+00:00",
+      "type": "platform_priority",
+      "why_changed": "youtube priority changed because heat=0.91, durable_memory=0.743."
+    },
+    {
+      "ai_action": "Keep as watch or experiment.",
+      "priority": "watch",
+      "rank": 3,
+      "status": "watch",
+      "target": "tiktok",
+      "time": "2026-05-22T11:59:24+00:00",
+      "type": "platform_priority",
+      "why_changed": "tiktok priority changed because heat=0.91, durable_memory=0, positive_feedback=2, long_term_memory_warns_not_to_overweight."
+    },
+    {
+      "ai_action": "Keep as watch or experiment.",
+      "priority": "watch",
+      "rank": 4,
+      "status": "watch",
+      "target": "manual",
+      "time": "2026-05-22T11:59:24+00:00",
+      "type": "platform_priority",
+      "why_changed": "manual priority changed because heat=0.925, durable_memory=0."
+    },
+    {
+      "ai_action": "Keep as watch or experiment.",
+      "priority": "watch",
+      "rank": 5,
+      "status": "watch",
+      "target": "rss",
+      "time": "2026-05-22T11:59:24+00:00",
+      "type": "platform_priority",
+      "why_changed": "rss priority changed because heat=0.925, durable_memory=0."
+    },
+    {
+      "ai_action": "Prioritize for human-reviewed answer branch and content strategy.",
+      "priority": "high",
+      "rank": 1,
+      "status": "human_review_required",
+      "target": "Tokyo transport anxiety",
+      "time": "2026-05-22T11:59:24+00:00",
+      "type": "question_priority",
+      "why_changed": "Tokyo transport anxiety scores 0.925 because it appears across 4 platform(s), has frequency 4, and emotion score 0.9."
+    },
+    {
+      "ai_action": "Prioritize for human-reviewed answer branch and content strategy.",
+      "priority": "high",
+      "rank": 2,
+      "status": "human_review_required",
+      "target": "Tokyo rainy day travel friction",
+      "time": "2026-05-22T11:59:24+00:00",
+      "type": "question_priority",
+      "why_changed": "Tokyo rainy day travel friction scores 0.91 because it appears across 4 platform(s), has frequency 4, and emotion score 0.84."
+    },
+    {
+      "ai_action": "Keep in watchlist until stronger cross-platform evidence appears.",
+      "priority": "watch",
+      "rank": 3,
+      "status": "watch",
+      "target": "Air fryer cleaning friction",
+      "time": "2026-05-22T11:59:24+00:00",
+      "type": "question_priority",
+      "why_changed": "Air fryer cleaning friction scores 0.357 because it appears across 1 platform(s), has frequency 1, and emotion score 0.78."
+    },
+    {
+      "ai_action": "Keep in watchlist until stronger cross-platform evidence appears.",
+      "priority": "watch",
+      "rank": 4,
+      "status": "watch",
+      "target": "Vacuum performance anxiety",
+      "time": "2026-05-22T11:59:24+00:00",
+      "type": "question_priority",
+      "why_changed": "Vacuum performance anxiety scores 0.342 because it appears across 1 platform(s), has frequency 1, and emotion score 0.72."
+    },
+    {
+      "ai_action": "Move into strategy and content planning if human review approves.",
+      "priority": "high",
+      "rank": 1,
+      "status": "human_review_required",
+      "target": "Tokyo transport anxiety",
+      "time": "2026-05-22T11:59:24+00:00",
+      "type": "trend_priority",
+      "why_changed": "Tokyo transport anxiety scores 0.925 because it appears across 4 platform(s), has frequency 4, and emotion score 0.9."
+    },
+    {
+      "ai_action": "Move into strategy and content planning if human review approves.",
+      "priority": "high",
+      "rank": 2,
+      "status": "human_review_required",
+      "target": "Tokyo rainy day travel friction",
+      "time": "2026-05-22T11:59:24+00:00",
+      "type": "trend_priority",
+      "why_changed": "Tokyo rainy day travel friction scores 0.91 because it appears across 4 platform(s), has frequency 4, and emotion score 0.84."
+    },
+    {
+      "ai_action": "Move into strategy and content planning if human review approves.",
+      "priority": "watch",
+      "rank": 3,
+      "status": "watch",
+      "target": "Air fryer cleaning friction",
+      "time": "2026-05-22T11:59:24+00:00",
+      "type": "trend_priority",
+      "why_changed": "Air fryer cleaning friction scores 0.357 because it appears across 1 platform(s), has frequency 1, and emotion score 0.78."
+    },
+    {
+      "ai_action": "Move into strategy and content planning if human review approves.",
+      "priority": "watch",
+      "rank": 4,
+      "status": "watch",
+      "target": "Vacuum performance anxiety",
+      "time": "2026-05-22T11:59:24+00:00",
+      "type": "trend_priority",
+      "why_changed": "Vacuum performance anxiety scores 0.342 because it appears across 1 platform(s), has frequency 1, and emotion score 0.72."
+    },
+    {
+      "ai_action": "Promote into durable operating memory and retest over multiple cycles.",
+      "priority": "high",
+      "rank": 1,
+      "status": "human_review_required",
+      "target": "reddit durable guidance",
+      "time": "2026-05-22T11:59:24+00:00",
+      "type": "content_priority",
+      "why_changed": "Durable strategy memory is stronger than short-term traffic for this content type."
+    },
+    {
+      "ai_action": "Promote into durable operating memory and retest over multiple cycles.",
+      "priority": "high",
+      "rank": 2,
+      "status": "human_review_required",
+      "target": "youtube durable guidance",
+      "time": "2026-05-22T11:59:24+00:00",
+      "type": "content_priority",
+      "why_changed": "Durable strategy memory is stronger than short-term traffic for this content type."
+    },
+    {
+      "ai_action": "Require human review before reusing failed patterns.",
+      "priority": "high",
+      "rank": 3,
+      "status": "human_review_required",
+      "target": "avoid failed hooks and generic replies",
+      "time": "2026-05-22T11:59:24+00:00",
+      "type": "content_priority",
+      "why_changed": "4 failed pattern(s) were detected; correction work must stay visible."
+    }
+  ],
+  "safetyBoundary": "Priority changes only affect local planning and human-reviewed drafts.",
+  "scope": "local_autonomous_growth_preparation_only",
+  "status": "priority_evolving",
+  "trendPriority": [
+    {
+      "next_action": "Move into strategy and content planning if human review approves.",
+      "priority": "high",
+      "priority_score": 0.985,
+      "trend": "Tokyo transport anxiety",
+      "why_changed": "Tokyo transport anxiety scores 0.925 because it appears across 4 platform(s), has frequency 4, and emotion score 0.9."
+    },
+    {
+      "next_action": "Move into strategy and content planning if human review approves.",
+      "priority": "high",
+      "priority_score": 0.97,
+      "trend": "Tokyo rainy day travel friction",
+      "why_changed": "Tokyo rainy day travel friction scores 0.91 because it appears across 4 platform(s), has frequency 4, and emotion score 0.84."
+    },
+    {
+      "next_action": "Move into strategy and content planning if human review approves.",
+      "priority": "watch",
+      "priority_score": 0.357,
+      "trend": "Air fryer cleaning friction",
+      "why_changed": "Air fryer cleaning friction scores 0.357 because it appears across 1 platform(s), has frequency 1, and emotion score 0.78."
+    },
+    {
+      "next_action": "Move into strategy and content planning if human review approves.",
+      "priority": "watch",
+      "priority_score": 0.342,
+      "trend": "Vacuum performance anxiety",
+      "why_changed": "Vacuum performance anxiety scores 0.342 because it appears across 1 platform(s), has frequency 1, and emotion score 0.72."
+    }
+  ]
+}

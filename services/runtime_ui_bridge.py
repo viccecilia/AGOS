@@ -27,6 +27,7 @@ from services.keyword_expansion_engine import KeywordExpansionEngine
 from services.runtime_drift_monitor import RuntimeDriftMonitor
 from services.runtime_engine import RuntimeEngine
 from services.runtime_persistence import RuntimePersistence
+from services.runtime_priority_engine import RuntimePriorityEngine
 from services.runtime_strategy_personality import RuntimeStrategyPersonalityEngine
 from services.strategic_interpretation_engine import StrategicInterpretationEngine
 from services.runtime_trainer_dashboard import RuntimeTrainerDashboard
@@ -100,6 +101,7 @@ class RuntimeUIBridge:
         failure_analysis = FailureAnalysisEngine().analyze()
         real_growth_validation = RealGrowthValidationEngine().validate()
         long_term_strategy_memory = LongTermStrategyMemory().build()
+        runtime_priority = RuntimePriorityEngine().evolve()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -295,6 +297,14 @@ class RuntimeUIBridge:
             "marketLongTermTrends": long_term_strategy_memory.get("marketLongTermTrends", []),
             "strategyMemoryTimeline": long_term_strategy_memory.get("strategyMemoryTimeline", []),
             "strategyHorizonClassification": long_term_strategy_memory.get("strategyHorizonClassification", {}),
+            "runtimePriority": runtime_priority,
+            "platformPriority": runtime_priority.get("platformPriority", []),
+            "questionPriority": runtime_priority.get("questionPriority", []),
+            "trendPriority": runtime_priority.get("trendPriority", []),
+            "contentPriority": runtime_priority.get("contentPriority", []),
+            "priorityEvolutionHistory": runtime_priority.get("priorityEvolutionHistory", []),
+            "runtimePriorityFeed": runtime_priority.get("runtimePriorityFeed", []),
+            "prioritySummary": runtime_priority.get("prioritySummary", {}),
         }
 
 
