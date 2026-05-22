@@ -525,28 +525,28 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.56",
+    "controlCenterVersion": "0.1.57",
     "lastUpdated": "2026-05-22",
     "currentPhase": "Runtime Personality / AI Growth Training",
-    "currentRound": "ROUND-RUNTIME-PERSONALITY-007",
-    "nextRound": "Human acceptance for Personality Review Session",
-    "overallProgress": 91,
-    "activeFocus": "Personality Review Session: AGOS produces 24-hour personality review reports with recent drift, best personality, failed tone, and trend signals."
+    "currentRound": "ROUND-RUNTIME-PERSONALITY-008",
+    "nextRound": "Human acceptance for Strategy Evolution Engine",
+    "overallProgress": 92,
+    "activeFocus": "Strategy Evolution Engine: AGOS distinguishes long-term growth strategy from short-term traffic tactics and stores evolution memory."
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.56 Add personality review session",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.56",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.56",
-    "note": "Personality Review Session mapped to GitHub tag agos-v0.1.56. Runtime remains local-only; no external platform automation is enabled."
+    "latestCommit": "agos-v0.1.57 Add strategy evolution engine",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.57",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.57",
+    "note": "Strategy Evolution Engine mapped to GitHub tag agos-v0.1.57. Runtime remains local-only; no external platform automation is enabled."
   },
   "metrics": {
     "roundsPlanned": 101,
-    "roundsCompleted": 48,
+    "roundsCompleted": 49,
     "roundsInProgress": 0,
-    "reportsEmbedded": 60
+    "reportsEmbedded": 61
   },
   "modules": [
     {
@@ -680,6 +680,28 @@
     }
   ],
   "reports": [
+    {
+      "id": "ROUND-RUNTIME-PERSONALITY-008",
+      "title": "AGOS Strategy Evolution Engine",
+      "date": "2026-05-22",
+      "status": "done",
+      "summary": "Added Strategy Evolution Engine so AGOS can distinguish durable growth strategies from short-term traffic tactics and store Strategy Evolution Memory.",
+      "files": [
+        "services/strategy_evolution_engine.py",
+        "services/runtime_ui_bridge.py",
+        "docs/project_control_center.html",
+        "tests/strategy_evolution_smoke_test.py",
+        "runtime/strategy_evolution/STRATEGY_EVOLUTION_REPORT.json",
+        "runtime/strategy_evolution/STRATEGY_EVOLUTION_MEMORY.json",
+        "runtime/task_results/ROUND-RUNTIME-PERSONALITY-008/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "python -m compileall services tests passed",
+        "python tests\\strategy_evolution_smoke_test.py passed",
+        "python tests\\war_room_runtime_ui_smoke_test.py passed",
+        "Browser check: Strategy Evolution Engine shows long-term growth and short-term traffic classifications"
+      ]
+    },
     {
       "id": "ROUND-RUNTIME-PERSONALITY-007",
       "title": "AGOS Personality Review Session",
@@ -1865,6 +1887,15 @@
     }
   ],
   "versions": [
+    {
+      "id": "agos_control_center_v0.1.57",
+      "label": "v0.1.57 - Strategy Evolution Engine",
+      "date": "2026-05-22",
+      "gitRef": "agos-v0.1.57",
+      "location": "docs/project_control_center.html",
+      "notes": "ROUND-RUNTIME-PERSONALITY-008 completed locally and mapped to GitHub tag agos-v0.1.57. War Room now shows Strategy Evolution Engine classifications.",
+      "snapshot": "AGOS Project Control Center v0.1.57\nRound: ROUND-RUNTIME-PERSONALITY-008 completed\nGit: agos-v0.1.57\nStatus: Strategy Evolution Engine added\nNo external platform automation enabled.\n"
+    },
     {
       "id": "agos_control_center_v0.1.56",
       "label": "v0.1.56 - Personality Review Session",
@@ -3460,6 +3491,16 @@
       "deliverable": "24-hour Personality Review Report with drift, best personality, failed tone, and trend signals.",
       "report": "runtime/task_results/ROUND-RUNTIME-PERSONALITY-007/ROUND_SUMMARY.md",
       "summary": "AGOS can now review its personality changes over a 24-hour window and show whether personality direction is improving, stable, or requires human review."
+    },
+    {
+      "id": "ROUND-RUNTIME-PERSONALITY-008",
+      "phase": "RUNTIME_PERSONALITY / AI_GROWTH_TRAINING",
+      "name": "AGOS_STRATEGY_EVOLUTION_ENGINE",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "Strategy Evolution Engine and Memory for long-term growth direction.",
+      "report": "runtime/task_results/ROUND-RUNTIME-PERSONALITY-008/ROUND_SUMMARY.md",
+      "summary": "AGOS can now judge long-term strategy versus short-term traffic and persist the primary growth direction in Strategy Evolution Memory."
     }
   ],
   "realGrowthVerification": {
@@ -5204,6 +5245,153 @@
         "status": "needs_human_review",
         "summary": "Detected personality drift tokens: same hook repeated"
       }
+    ],
+    "strategyEvolution": {
+      "created_at": "2026-05-22T09:34:27+00:00",
+      "evolutionFeed": [
+        {
+          "classification": "long_term_growth",
+          "platform": "reddit",
+          "reason": "Durable trust and learning value are stronger than traffic spike.",
+          "score": 0.757,
+          "strategy": "Answer high-intent travel anxiety with detailed, non-promotional guidance."
+        },
+        {
+          "classification": "short_term_traffic",
+          "platform": "tiktok",
+          "reason": "Traffic spike is stronger than durable learning value; keep it as an experiment.",
+          "score": 0.742,
+          "strategy": "Test fast Tokyo transport hooks for save-worthy short videos."
+        },
+        {
+          "classification": "long_term_growth",
+          "platform": "youtube",
+          "reason": "Durable trust and learning value are stronger than traffic spike.",
+          "score": 0.743,
+          "strategy": "Build evergreen walkthroughs for repeated travel pain points."
+        },
+        {
+          "classification": "short_term_traffic",
+          "platform": "x",
+          "reason": "Traffic spike is stronger than durable learning value; keep it as an experiment.",
+          "score": 0.623,
+          "strategy": "React to travel trend bursts with concise observations."
+        }
+      ],
+      "longTermGrowthStrategies": [
+        {
+          "classification": "long_term_growth",
+          "durable_score": 0.757,
+          "evolution_score": 0.757,
+          "human_review_status": "needs_human_review",
+          "learning_value": 0.86,
+          "platform": "reddit",
+          "reason": "Durable trust and learning value are stronger than traffic spike.",
+          "repeatability": 0.78,
+          "risk": 0.18,
+          "signal_id": "reddit_trust_answer",
+          "spike_score": 0.222,
+          "strategy": "Answer high-intent travel anxiety with detailed, non-promotional guidance.",
+          "time_horizon": "long_term",
+          "traffic_spike": 0.24,
+          "trust_score": 0.92
+        },
+        {
+          "classification": "long_term_growth",
+          "durable_score": 0.743,
+          "evolution_score": 0.743,
+          "human_review_status": "needs_human_review",
+          "learning_value": 0.82,
+          "platform": "youtube",
+          "reason": "Durable trust and learning value are stronger than traffic spike.",
+          "repeatability": 0.81,
+          "risk": 0.2,
+          "signal_id": "youtube_evergreen_walkthrough",
+          "spike_score": 0.312,
+          "strategy": "Build evergreen walkthroughs for repeated travel pain points.",
+          "time_horizon": "long_term",
+          "traffic_spike": 0.36,
+          "trust_score": 0.9
+        }
+      ],
+      "report_id": "STRATEGY_EVOLUTION_REPORT",
+      "shortTermTrafficTactics": [
+        {
+          "classification": "short_term_traffic",
+          "durable_score": 0.389,
+          "evolution_score": 0.742,
+          "human_review_status": "needs_human_review",
+          "learning_value": 0.52,
+          "platform": "tiktok",
+          "reason": "Traffic spike is stronger than durable learning value; keep it as an experiment.",
+          "repeatability": 0.43,
+          "risk": 0.42,
+          "signal_id": "tiktok_hook_spike",
+          "spike_score": 0.742,
+          "strategy": "Test fast Tokyo transport hooks for save-worthy short videos.",
+          "time_horizon": "short_term",
+          "traffic_spike": 0.88,
+          "trust_score": 0.48
+        },
+        {
+          "classification": "short_term_traffic",
+          "durable_score": 0.424,
+          "evolution_score": 0.623,
+          "human_review_status": "needs_human_review",
+          "learning_value": 0.48,
+          "platform": "x",
+          "reason": "Traffic spike is stronger than durable learning value; keep it as an experiment.",
+          "repeatability": 0.45,
+          "risk": 0.35,
+          "signal_id": "x_trend_reaction",
+          "spike_score": 0.623,
+          "strategy": "React to travel trend bursts with concise observations.",
+          "time_horizon": "short_term",
+          "traffic_spike": 0.74,
+          "trust_score": 0.58
+        }
+      ],
+      "status": "forming_long_term_strategy",
+      "strategyEvolutionMemory": {
+        "avoid_overweighting": [
+          "tiktok",
+          "x"
+        ],
+        "long_term_count": 2,
+        "next_review": "Promote strategies with durable trust, repeatable learning, and low drift risk.",
+        "primary_direction": "reddit: Answer high-intent travel anxiety with detailed, non-promotional guidance.",
+        "short_term_count": 2
+      }
+    },
+    "strategyEvolutionFeed": [
+      {
+        "classification": "long_term_growth",
+        "platform": "reddit",
+        "reason": "Durable trust and learning value are stronger than traffic spike.",
+        "score": 0.757,
+        "strategy": "Answer high-intent travel anxiety with detailed, non-promotional guidance."
+      },
+      {
+        "classification": "short_term_traffic",
+        "platform": "tiktok",
+        "reason": "Traffic spike is stronger than durable learning value; keep it as an experiment.",
+        "score": 0.742,
+        "strategy": "Test fast Tokyo transport hooks for save-worthy short videos."
+      },
+      {
+        "classification": "long_term_growth",
+        "platform": "youtube",
+        "reason": "Durable trust and learning value are stronger than traffic spike.",
+        "score": 0.743,
+        "strategy": "Build evergreen walkthroughs for repeated travel pain points."
+      },
+      {
+        "classification": "short_term_traffic",
+        "platform": "x",
+        "reason": "Traffic spike is stronger than durable learning value; keep it as an experiment.",
+        "score": 0.623,
+        "strategy": "React to travel trend bursts with concise observations."
+      }
     ]
   }
 }
@@ -5404,6 +5592,9 @@
             <div style="height:10px"></div>
             <div class="runtime-title-row"><h3>Strategy Personality</h3><p>Platform operating philosophy</p></div>
             <div class="feed-stream" id="runtime-strategy-personality"></div>
+            <div style="height:10px"></div>
+            <div class="runtime-title-row"><h3>Strategy Evolution Engine</h3><p>Long-term growth vs short-term traffic</p></div>
+            <div class="feed-stream" id="runtime-strategy-evolution"></div>
             <div style="height:10px"></div>
             <div class="runtime-title-row"><h3>Personality Isolation Report</h3><p>Workspace / Market / Platform pollution guard</p></div>
             <div class="feed-stream" id="runtime-personality-isolation"></div>
@@ -5985,6 +6176,10 @@
       el('runtime-strategy-personality').innerHTML = (wr.strategyPersonalityFeed || []).map(item =>
         '<div class="feed-item"><time>' + esc(item.platform) + '</time><div class="feed-main"><strong>' + esc(item.goal) + '</strong><span>Philosophy: ' + esc(item.philosophy) + '</span><span>Action: ' + esc(item.action) + '</span><span>Signal: ' + esc(item.success_signal) + '</span></div><span class="badge b-blue">' + esc(item.status || 'ready') + '</span></div>'
       ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Strategy Personality pending</strong><span>Runtime will map Reddit / TikTok / X / YouTube into different operating strategies.</span></div><span class="badge b-amber">pending</span></div>';
+      const strategyEvolution = wr.strategyEvolution || {};
+      el('runtime-strategy-evolution').innerHTML = (wr.strategyEvolutionFeed || []).map(item =>
+        '<div class="feed-item"><time>' + esc(item.platform) + '</time><div class="feed-main"><strong>' + esc(item.classification) + ' · score ' + esc(item.score) + '</strong><span>' + esc(item.strategy) + '</span><span>' + esc(item.reason) + '</span></div><span class="badge ' + (item.classification === 'long_term_growth' ? 'b-green' : 'b-amber') + '">' + esc(item.classification) + '</span></div>'
+      ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Strategy Evolution pending</strong><span>Runtime will classify long-term growth strategy versus short-term traffic tactics.</span></div><span class="badge b-amber">pending</span></div>';
       el('runtime-personality-isolation').innerHTML = (wr.personalityIsolationFeed || []).map(item =>
         '<div class="feed-item"><time>' + esc(item.dimension) + '</time><div class="feed-main"><strong>' + esc(item.status) + '</strong><span>Scopes: ' + esc((item.scopes || []).join(' / ')) + '</span><span>Contexts checked: ' + esc(item.contexts_checked) + ' | Violations: ' + esc(item.violations) + '</span></div><span class="badge ' + (item.status === 'clear' ? 'b-green' : 'b-amber') + '">' + esc(item.status) + '</span></div>'
       ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Personality Isolation Report pending</strong><span>Runtime will verify workspace, market, and platform personalities do not cross-pollute.</span></div><span class="badge b-amber">pending</span></div>';

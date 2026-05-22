@@ -15,6 +15,7 @@ from services.runtime_drift_monitor import RuntimeDriftMonitor
 from services.runtime_engine import RuntimeEngine
 from services.runtime_persistence import RuntimePersistence
 from services.runtime_strategy_personality import RuntimeStrategyPersonalityEngine
+from services.strategy_evolution_engine import StrategyEvolutionEngine
 
 
 class RuntimeUIBridge:
@@ -64,6 +65,7 @@ class RuntimeUIBridge:
                 "pain_point": strategy_pain_point,
             }
         )
+        strategy_evolution = StrategyEvolutionEngine().evaluate()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -203,6 +205,8 @@ class RuntimeUIBridge:
             ],
             "strategyPersonality": strategy_personality,
             "strategyPersonalityFeed": strategy_personality.get("strategyPersonalityFeed", []),
+            "strategyEvolution": strategy_evolution,
+            "strategyEvolutionFeed": strategy_evolution.get("evolutionFeed", []),
         }
 
 

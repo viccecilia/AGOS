@@ -874,7 +874,7 @@
     }
   ],
   "personalityIsolationReport": {
-    "created_at": "2026-05-22T09:30:10+00:00",
+    "created_at": "2026-05-22T09:34:27+00:00",
     "isolationMatrix": [
       {
         "allowed_traits": [
@@ -1175,7 +1175,7 @@
     }
   },
   "personalityReviewSession": {
-    "created_at": "2026-05-22T09:30:10+00:00",
+    "created_at": "2026-05-22T09:34:27+00:00",
     "driftEventsReviewed": 6,
     "personalityTrend": [
       {
@@ -2319,6 +2319,153 @@
     "workspaceStatus": "stopped"
   },
   "socialRuntimeMatrix": [],
+  "strategyEvolution": {
+    "created_at": "2026-05-22T09:34:27+00:00",
+    "evolutionFeed": [
+      {
+        "classification": "long_term_growth",
+        "platform": "reddit",
+        "reason": "Durable trust and learning value are stronger than traffic spike.",
+        "score": 0.757,
+        "strategy": "Answer high-intent travel anxiety with detailed, non-promotional guidance."
+      },
+      {
+        "classification": "short_term_traffic",
+        "platform": "tiktok",
+        "reason": "Traffic spike is stronger than durable learning value; keep it as an experiment.",
+        "score": 0.742,
+        "strategy": "Test fast Tokyo transport hooks for save-worthy short videos."
+      },
+      {
+        "classification": "long_term_growth",
+        "platform": "youtube",
+        "reason": "Durable trust and learning value are stronger than traffic spike.",
+        "score": 0.743,
+        "strategy": "Build evergreen walkthroughs for repeated travel pain points."
+      },
+      {
+        "classification": "short_term_traffic",
+        "platform": "x",
+        "reason": "Traffic spike is stronger than durable learning value; keep it as an experiment.",
+        "score": 0.623,
+        "strategy": "React to travel trend bursts with concise observations."
+      }
+    ],
+    "longTermGrowthStrategies": [
+      {
+        "classification": "long_term_growth",
+        "durable_score": 0.757,
+        "evolution_score": 0.757,
+        "human_review_status": "needs_human_review",
+        "learning_value": 0.86,
+        "platform": "reddit",
+        "reason": "Durable trust and learning value are stronger than traffic spike.",
+        "repeatability": 0.78,
+        "risk": 0.18,
+        "signal_id": "reddit_trust_answer",
+        "spike_score": 0.222,
+        "strategy": "Answer high-intent travel anxiety with detailed, non-promotional guidance.",
+        "time_horizon": "long_term",
+        "traffic_spike": 0.24,
+        "trust_score": 0.92
+      },
+      {
+        "classification": "long_term_growth",
+        "durable_score": 0.743,
+        "evolution_score": 0.743,
+        "human_review_status": "needs_human_review",
+        "learning_value": 0.82,
+        "platform": "youtube",
+        "reason": "Durable trust and learning value are stronger than traffic spike.",
+        "repeatability": 0.81,
+        "risk": 0.2,
+        "signal_id": "youtube_evergreen_walkthrough",
+        "spike_score": 0.312,
+        "strategy": "Build evergreen walkthroughs for repeated travel pain points.",
+        "time_horizon": "long_term",
+        "traffic_spike": 0.36,
+        "trust_score": 0.9
+      }
+    ],
+    "report_id": "STRATEGY_EVOLUTION_REPORT",
+    "shortTermTrafficTactics": [
+      {
+        "classification": "short_term_traffic",
+        "durable_score": 0.389,
+        "evolution_score": 0.742,
+        "human_review_status": "needs_human_review",
+        "learning_value": 0.52,
+        "platform": "tiktok",
+        "reason": "Traffic spike is stronger than durable learning value; keep it as an experiment.",
+        "repeatability": 0.43,
+        "risk": 0.42,
+        "signal_id": "tiktok_hook_spike",
+        "spike_score": 0.742,
+        "strategy": "Test fast Tokyo transport hooks for save-worthy short videos.",
+        "time_horizon": "short_term",
+        "traffic_spike": 0.88,
+        "trust_score": 0.48
+      },
+      {
+        "classification": "short_term_traffic",
+        "durable_score": 0.424,
+        "evolution_score": 0.623,
+        "human_review_status": "needs_human_review",
+        "learning_value": 0.48,
+        "platform": "x",
+        "reason": "Traffic spike is stronger than durable learning value; keep it as an experiment.",
+        "repeatability": 0.45,
+        "risk": 0.35,
+        "signal_id": "x_trend_reaction",
+        "spike_score": 0.623,
+        "strategy": "React to travel trend bursts with concise observations.",
+        "time_horizon": "short_term",
+        "traffic_spike": 0.74,
+        "trust_score": 0.58
+      }
+    ],
+    "status": "forming_long_term_strategy",
+    "strategyEvolutionMemory": {
+      "avoid_overweighting": [
+        "tiktok",
+        "x"
+      ],
+      "long_term_count": 2,
+      "next_review": "Promote strategies with durable trust, repeatable learning, and low drift risk.",
+      "primary_direction": "reddit: Answer high-intent travel anxiety with detailed, non-promotional guidance.",
+      "short_term_count": 2
+    }
+  },
+  "strategyEvolutionFeed": [
+    {
+      "classification": "long_term_growth",
+      "platform": "reddit",
+      "reason": "Durable trust and learning value are stronger than traffic spike.",
+      "score": 0.757,
+      "strategy": "Answer high-intent travel anxiety with detailed, non-promotional guidance."
+    },
+    {
+      "classification": "short_term_traffic",
+      "platform": "tiktok",
+      "reason": "Traffic spike is stronger than durable learning value; keep it as an experiment.",
+      "score": 0.742,
+      "strategy": "Test fast Tokyo transport hooks for save-worthy short videos."
+    },
+    {
+      "classification": "long_term_growth",
+      "platform": "youtube",
+      "reason": "Durable trust and learning value are stronger than traffic spike.",
+      "score": 0.743,
+      "strategy": "Build evergreen walkthroughs for repeated travel pain points."
+    },
+    {
+      "classification": "short_term_traffic",
+      "platform": "x",
+      "reason": "Traffic spike is stronger than durable learning value; keep it as an experiment.",
+      "score": 0.623,
+      "strategy": "React to travel trend bursts with concise observations."
+    }
+  ],
   "strategyPersonality": {
     "platformOperatingPhilosophies": {
       "reddit": "Earn trust through depth, specificity, and community-first answers.",
@@ -2370,7 +2517,7 @@
         ],
         "cadence": "Low frequency, high relevance, reply only when the question is a real pain point.",
         "content_shape": "Long-form answer with context, tradeoffs, and practical steps.",
-        "created_at": "2026-05-22T09:30:10+00:00",
+        "created_at": "2026-05-22T09:34:27+00:00",
         "current_pain_point": "Tokyo transport anxiety",
         "human_review_status": "needs_human_review",
         "industry_pack": "Travel Pack / Lab",
@@ -2398,7 +2545,7 @@
         ],
         "cadence": "Higher frequency experiments with tight hook variation and fast feedback.",
         "content_shape": "Short hook, one visible pain scene, one practical payoff, one soft save CTA.",
-        "created_at": "2026-05-22T09:30:10+00:00",
+        "created_at": "2026-05-22T09:34:27+00:00",
         "current_pain_point": "Tokyo transport anxiety",
         "human_review_status": "needs_human_review",
         "industry_pack": "Travel Pack / Lab",
@@ -2426,7 +2573,7 @@
         ],
         "cadence": "Timely posting around trend windows and question bursts.",
         "content_shape": "One strong claim, two supporting details, one practical takeaway or thread.",
-        "created_at": "2026-05-22T09:30:10+00:00",
+        "created_at": "2026-05-22T09:34:27+00:00",
         "current_pain_point": "Tokyo transport anxiety",
         "human_review_status": "needs_human_review",
         "industry_pack": "Travel Pack / Lab",
@@ -2454,7 +2601,7 @@
         ],
         "cadence": "Lower frequency evergreen videos supported by Shorts extracted from high-friction moments.",
         "content_shape": "Searchable title, structured chapters, visual walkthrough, recap, and next-step CTA.",
-        "created_at": "2026-05-22T09:30:10+00:00",
+        "created_at": "2026-05-22T09:34:27+00:00",
         "current_pain_point": "Tokyo transport anxiety",
         "human_review_status": "needs_human_review",
         "industry_pack": "Travel Pack / Lab",
@@ -2474,7 +2621,7 @@
         "workspace": "JAG-LAB"
       }
     ],
-    "updated_at": "2026-05-22T09:30:10+00:00",
+    "updated_at": "2026-05-22T09:34:27+00:00",
     "workspace": "JAG-LAB"
   },
   "strategyPersonalityFeed": [
@@ -2519,7 +2666,7 @@
     "currentCycle": "JAG-LAB-CYCLE-0001",
     "currentIndustryPack": "Travel Pack / Lab",
     "currentWorkspace": "JAG-LAB",
-    "lastRunTime": "2026-05-22T09:30:10+00:00",
+    "lastRunTime": "2026-05-22T09:34:27+00:00",
     "status": "STOPPED"
   },
   "trainingExplanations": [
