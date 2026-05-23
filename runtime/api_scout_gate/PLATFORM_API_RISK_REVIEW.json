@@ -1,0 +1,90 @@
+{
+  "blocking_risk": false,
+  "capabilityConclusion": "AGOS can safely read and interpret platform trend intelligence locally, with write actions blocked and risk visible.",
+  "created_at": "2026-05-23T02:12:41+00:00",
+  "overall_risk": "medium_watch",
+  "phaseExitRecommendation": "pass_to_controlled_external_operations_preparation",
+  "review_id": "PLATFORM_API_RISK_REVIEW",
+  "riskItems": [
+    {
+      "evidence": "auto posting, auto reply, auto follow, auto DM, and auto engagement are forbidden in API Registry.",
+      "mitigation": "Keep all external platform actions human-gated and disabled.",
+      "risk": "write-side automation",
+      "risk_id": "API-RISK-001",
+      "status": "blocked"
+    },
+    {
+      "evidence": {
+        "credentials": 3,
+        "git_commit_allowed": false,
+        "plaintext_logging_enabled": false,
+        "public_upload_allowed": false,
+        "workspace_isolation_enabled": true,
+        "workspaces": 2
+      },
+      "mitigation": "Keep vault files local-only and excluded from Git; expose only redacted status.",
+      "risk": "credential leakage",
+      "risk_id": "API-RISK-002",
+      "status": "controlled"
+    },
+    {
+      "evidence": {
+        "approaching_platform_risk": true,
+        "blocked": 0,
+        "highest_risk_platform": "Reddit",
+        "near_platform_risk": 2,
+        "risk_items": 11,
+        "safe": 8,
+        "watch": 1,
+        "write_operations_enabled": false
+      },
+      "mitigation": "Require slow-down and human review when near_platform_risk appears.",
+      "risk": "platform rate-limit pressure",
+      "risk_id": "API-RISK-003",
+      "status": "watch"
+    },
+    {
+      "evidence": {
+        "emotion_tags": [
+          "anxiety",
+          "comparison_pressure",
+          "decision_pressure"
+        ],
+        "highest_strength_signal": "API-SIGNAL-0003",
+        "languages": [
+          "en"
+        ],
+        "platforms": 4,
+        "signals_normalized": 4,
+        "write_operations_enabled": false
+      },
+      "mitigation": "Use normalized language, emotion, strength, and engagement fields before Scout ranking.",
+      "risk": "misinterpreting platform signals",
+      "risk_id": "API-RISK-004",
+      "status": "controlled"
+    },
+    {
+      "evidence": {
+        "api_trends_entered_scout": true,
+        "discovered_topics": 4,
+        "heat_signals": 5,
+        "keyword_expansions": 8,
+        "patrol_groups": 10,
+        "source_signals": 4,
+        "strategic_interpretations": 5,
+        "trend_clusters": 5,
+        "write_operations_enabled": false
+      },
+      "mitigation": "Route API trends through Scout Intelligence locally before any external operation.",
+      "risk": "unsafe Scout escalation",
+      "risk_id": "API-RISK-005",
+      "status": "controlled"
+    }
+  ],
+  "sourceEvidence": {
+    "normalization_status": "signals_normalized",
+    "pipeline_status": "api_trends_entered_scout_intelligence",
+    "registry_status": "registry_ready",
+    "trend_status": "trends_read"
+  }
+}

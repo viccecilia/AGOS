@@ -1,0 +1,215 @@
+{
+  "apiScoutGateChecks": [
+    {
+      "capability": "API Registry",
+      "check_id": "API-GATE-001",
+      "evidence": {
+        "all_platforms_block_auto_posting": true,
+        "all_platforms_block_auto_reply": true,
+        "allowed_capabilities": 6,
+        "external_api_calls_enabled": false,
+        "forbidden_capabilities": 5,
+        "platforms": 6
+      },
+      "result": "Platform API capabilities and forbidden actions are explicitly registered.",
+      "status": "passed"
+    },
+    {
+      "capability": "Credential Vault",
+      "check_id": "API-GATE-002",
+      "evidence": {
+        "credentials": 3,
+        "git_commit_allowed": false,
+        "plaintext_logging_enabled": false,
+        "public_upload_allowed": false,
+        "workspace_isolation_enabled": true,
+        "workspaces": 2
+      },
+      "result": "Credentials are local-only, redacted, and workspace isolated.",
+      "status": "passed"
+    },
+    {
+      "capability": "Trend Connector",
+      "check_id": "API-GATE-003",
+      "evidence": {
+        "dm_enabled": false,
+        "follow_enabled": false,
+        "platforms": 4,
+        "post_enabled": false,
+        "read_only": true,
+        "reply_enabled": false,
+        "source_mode": "read_only_public_trend_import",
+        "trends_read": 4,
+        "write_operations_enabled": false
+      },
+      "result": "Read-only platform trend signals are available locally.",
+      "status": "passed"
+    },
+    {
+      "capability": "API Safety Guard",
+      "check_id": "API-GATE-004",
+      "evidence": {
+        "approaching_platform_risk": true,
+        "blocked": 0,
+        "highest_risk_platform": "Reddit",
+        "near_platform_risk": 2,
+        "risk_items": 11,
+        "safe": 8,
+        "watch": 1,
+        "write_operations_enabled": false
+      },
+      "result": "Rate-limit and suspicious-pattern risk is visible before external usage.",
+      "status": "passed"
+    },
+    {
+      "capability": "Signal Normalization",
+      "check_id": "API-GATE-005",
+      "evidence": {
+        "emotion_tags": [
+          "anxiety",
+          "comparison_pressure",
+          "decision_pressure"
+        ],
+        "highest_strength_signal": "API-SIGNAL-0003",
+        "languages": [
+          "en"
+        ],
+        "platforms": 4,
+        "signals_normalized": 4,
+        "write_operations_enabled": false
+      },
+      "result": "Different platform signals are unified into shared Scout fields.",
+      "status": "passed"
+    },
+    {
+      "capability": "API Scout Pipeline",
+      "check_id": "API-GATE-006",
+      "evidence": {
+        "api_trends_entered_scout": true,
+        "discovered_topics": 4,
+        "heat_signals": 5,
+        "keyword_expansions": 8,
+        "patrol_groups": 10,
+        "source_signals": 4,
+        "strategic_interpretations": 5,
+        "trend_clusters": 5,
+        "write_operations_enabled": false
+      },
+      "result": "Read-only API trends enter Scout Intelligence and reach strategic interpretation.",
+      "status": "passed"
+    }
+  ],
+  "apiScoutGateSummary": {
+    "checks": 6,
+    "needs_review": 0,
+    "next_phase": "Controlled External Operations Preparation Stage",
+    "passed": 6,
+    "ready_for_next_phase": true,
+    "safe_trend_intelligence_ready": true,
+    "write_operations_enabled": false
+  },
+  "created_at": "2026-05-23T02:12:41+00:00",
+  "gate": "API Scout Gate",
+  "phase": "PLATFORM_API_SCOUT_INTEGRATION",
+  "platformApiRiskReview": {
+    "blocking_risk": false,
+    "capabilityConclusion": "AGOS can safely read and interpret platform trend intelligence locally, with write actions blocked and risk visible.",
+    "created_at": "2026-05-23T02:12:41+00:00",
+    "overall_risk": "medium_watch",
+    "phaseExitRecommendation": "pass_to_controlled_external_operations_preparation",
+    "review_id": "PLATFORM_API_RISK_REVIEW",
+    "riskItems": [
+      {
+        "evidence": "auto posting, auto reply, auto follow, auto DM, and auto engagement are forbidden in API Registry.",
+        "mitigation": "Keep all external platform actions human-gated and disabled.",
+        "risk": "write-side automation",
+        "risk_id": "API-RISK-001",
+        "status": "blocked"
+      },
+      {
+        "evidence": {
+          "credentials": 3,
+          "git_commit_allowed": false,
+          "plaintext_logging_enabled": false,
+          "public_upload_allowed": false,
+          "workspace_isolation_enabled": true,
+          "workspaces": 2
+        },
+        "mitigation": "Keep vault files local-only and excluded from Git; expose only redacted status.",
+        "risk": "credential leakage",
+        "risk_id": "API-RISK-002",
+        "status": "controlled"
+      },
+      {
+        "evidence": {
+          "approaching_platform_risk": true,
+          "blocked": 0,
+          "highest_risk_platform": "Reddit",
+          "near_platform_risk": 2,
+          "risk_items": 11,
+          "safe": 8,
+          "watch": 1,
+          "write_operations_enabled": false
+        },
+        "mitigation": "Require slow-down and human review when near_platform_risk appears.",
+        "risk": "platform rate-limit pressure",
+        "risk_id": "API-RISK-003",
+        "status": "watch"
+      },
+      {
+        "evidence": {
+          "emotion_tags": [
+            "anxiety",
+            "comparison_pressure",
+            "decision_pressure"
+          ],
+          "highest_strength_signal": "API-SIGNAL-0003",
+          "languages": [
+            "en"
+          ],
+          "platforms": 4,
+          "signals_normalized": 4,
+          "write_operations_enabled": false
+        },
+        "mitigation": "Use normalized language, emotion, strength, and engagement fields before Scout ranking.",
+        "risk": "misinterpreting platform signals",
+        "risk_id": "API-RISK-004",
+        "status": "controlled"
+      },
+      {
+        "evidence": {
+          "api_trends_entered_scout": true,
+          "discovered_topics": 4,
+          "heat_signals": 5,
+          "keyword_expansions": 8,
+          "patrol_groups": 10,
+          "source_signals": 4,
+          "strategic_interpretations": 5,
+          "trend_clusters": 5,
+          "write_operations_enabled": false
+        },
+        "mitigation": "Route API trends through Scout Intelligence locally before any external operation.",
+        "risk": "unsafe Scout escalation",
+        "risk_id": "API-RISK-005",
+        "status": "controlled"
+      }
+    ],
+    "sourceEvidence": {
+      "normalization_status": "signals_normalized",
+      "pipeline_status": "api_trends_entered_scout_intelligence",
+      "registry_status": "registry_ready",
+      "trend_status": "trends_read"
+    }
+  },
+  "report_id": "API_SCOUT_VALIDATION_REPORT",
+  "safetyBoundary": "Gate validates safe read-only platform trend intelligence. It does not post, reply, follow, DM, scrape login-only pages, expose credentials, or bypass platform limits.",
+  "status": "passed",
+  "validatedCapabilities": [
+    "API Registry",
+    "Credential Vault",
+    "Trend Connector",
+    "API Safety Guard",
+    "Signal Normalization",
+    "API Scout Pipeline"
+  ]
+}

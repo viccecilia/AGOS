@@ -1,0 +1,100 @@
+[
+  {
+    "capability": "API Registry",
+    "check_id": "API-GATE-001",
+    "evidence": {
+      "all_platforms_block_auto_posting": true,
+      "all_platforms_block_auto_reply": true,
+      "allowed_capabilities": 6,
+      "external_api_calls_enabled": false,
+      "forbidden_capabilities": 5,
+      "platforms": 6
+    },
+    "result": "Platform API capabilities and forbidden actions are explicitly registered.",
+    "status": "passed"
+  },
+  {
+    "capability": "Credential Vault",
+    "check_id": "API-GATE-002",
+    "evidence": {
+      "credentials": 3,
+      "git_commit_allowed": false,
+      "plaintext_logging_enabled": false,
+      "public_upload_allowed": false,
+      "workspace_isolation_enabled": true,
+      "workspaces": 2
+    },
+    "result": "Credentials are local-only, redacted, and workspace isolated.",
+    "status": "passed"
+  },
+  {
+    "capability": "Trend Connector",
+    "check_id": "API-GATE-003",
+    "evidence": {
+      "dm_enabled": false,
+      "follow_enabled": false,
+      "platforms": 4,
+      "post_enabled": false,
+      "read_only": true,
+      "reply_enabled": false,
+      "source_mode": "read_only_public_trend_import",
+      "trends_read": 4,
+      "write_operations_enabled": false
+    },
+    "result": "Read-only platform trend signals are available locally.",
+    "status": "passed"
+  },
+  {
+    "capability": "API Safety Guard",
+    "check_id": "API-GATE-004",
+    "evidence": {
+      "approaching_platform_risk": true,
+      "blocked": 0,
+      "highest_risk_platform": "Reddit",
+      "near_platform_risk": 2,
+      "risk_items": 11,
+      "safe": 8,
+      "watch": 1,
+      "write_operations_enabled": false
+    },
+    "result": "Rate-limit and suspicious-pattern risk is visible before external usage.",
+    "status": "passed"
+  },
+  {
+    "capability": "Signal Normalization",
+    "check_id": "API-GATE-005",
+    "evidence": {
+      "emotion_tags": [
+        "anxiety",
+        "comparison_pressure",
+        "decision_pressure"
+      ],
+      "highest_strength_signal": "API-SIGNAL-0003",
+      "languages": [
+        "en"
+      ],
+      "platforms": 4,
+      "signals_normalized": 4,
+      "write_operations_enabled": false
+    },
+    "result": "Different platform signals are unified into shared Scout fields.",
+    "status": "passed"
+  },
+  {
+    "capability": "API Scout Pipeline",
+    "check_id": "API-GATE-006",
+    "evidence": {
+      "api_trends_entered_scout": true,
+      "discovered_topics": 4,
+      "heat_signals": 5,
+      "keyword_expansions": 8,
+      "patrol_groups": 10,
+      "source_signals": 4,
+      "strategic_interpretations": 5,
+      "trend_clusters": 5,
+      "write_operations_enabled": false
+    },
+    "result": "Read-only API trends enter Scout Intelligence and reach strategic interpretation.",
+    "status": "passed"
+  }
+]
