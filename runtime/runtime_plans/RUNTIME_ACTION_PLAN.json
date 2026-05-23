@@ -1,0 +1,150 @@
+{
+  "created_at": "2026-05-23T00:51:15+00:00",
+  "report_id": "RUNTIME_ACTION_PLAN",
+  "runtimePlanFeed": [
+    {
+      "action_type": "today_content",
+      "approval_state": "needs_human_approval",
+      "plan_id": "PLAN-0001",
+      "planned_action": "Create one human-reviewed payment_decision_guidance content draft around Tokyo transport anxiety.",
+      "platform": "Reddit",
+      "priority": "high",
+      "status": "wait_for_human_approval",
+      "time": "2026-05-23T00:51:15+00:00",
+      "time_block": "morning_content_planning",
+      "why_this_plan": "payment_decision_guidance is the strongest content signal and increase_reddit_content is the best simulated strategy. Top platform is reddit. Human approval is still required."
+    },
+    {
+      "action_type": "today_reply",
+      "approval_state": "needs_human_approval",
+      "plan_id": "PLAN-0002",
+      "planned_action": "Draft two replies using hook 'make payment decision simple' for Tokyo transport anxiety.",
+      "platform": "Reddit",
+      "priority": "high",
+      "status": "wait_for_human_approval",
+      "time": "2026-05-23T00:51:15+00:00",
+      "time_block": "midday_reply_review",
+      "why_this_plan": "The hook make payment decision simple is currently the strongest interaction signal. Top platform is reddit. Human approval is still required."
+    },
+    {
+      "action_type": "today_platform",
+      "approval_state": "needs_human_approval",
+      "plan_id": "PLAN-0003",
+      "planned_action": "Prioritize reddit today and keep TikTok in experiment mode.",
+      "platform": "reddit",
+      "priority": "high",
+      "status": "wait_for_human_approval",
+      "time": "2026-05-23T00:51:15+00:00",
+      "time_block": "platform_focus_setup",
+      "why_this_plan": "reddit is the current top platform and increase_reddit_content is the best simulated scenario. Top platform is reddit. Human approval is still required."
+    },
+    {
+      "action_type": "today_trend",
+      "approval_state": "needs_human_approval",
+      "plan_id": "PLAN-0004",
+      "planned_action": "Track and draft around trend 'Tokyo transport anxiety' with payment_decision_guidance.",
+      "platform": "Reddit",
+      "priority": "medium",
+      "status": "wait_for_human_approval",
+      "time": "2026-05-23T00:51:15+00:00",
+      "time_block": "afternoon_trend_watch",
+      "why_this_plan": "Tokyo transport anxiety is the current top trend and matches the strongest content correlation. Top platform is reddit. Human approval is still required."
+    }
+  ],
+  "runtimePlanSummary": {
+    "approved_or_modified": 0,
+    "execution_boundary": "local plan only; no external action",
+    "pending_approval": 4,
+    "planned_actions": 4,
+    "top_platform": "reddit"
+  },
+  "safetyBoundary": "The plan does not post, reply, log in, register accounts, or call platform APIs.",
+  "scope": "local_runtime_plan_only",
+  "status": "ready_for_human_review",
+  "todayContentRhythm": {
+    "approval_waiting": 4,
+    "planned_content_blocks": 2,
+    "reason": "Keep cadence small while human approval is required.",
+    "rhythm": "one_content_one_reply_block"
+  },
+  "todayOperationPlan": [
+    {
+      "action_id": "REC-CONTENT-001",
+      "action_type": "today_content",
+      "approval_state": "needs_human_approval",
+      "execution_boundary": "local plan only; no external action",
+      "execution_mode": "wait_for_human_approval",
+      "market": "Japan",
+      "personality": "trusted_guide",
+      "plan_id": "PLAN-0001",
+      "planned_action": "Create one human-reviewed payment_decision_guidance content draft around Tokyo transport anxiety.",
+      "platform": "Reddit",
+      "priority": "high",
+      "time_block": "morning_content_planning",
+      "today_sequence": 1,
+      "why_this_plan": "payment_decision_guidance is the strongest content signal and increase_reddit_content is the best simulated strategy. Top platform is reddit. Human approval is still required."
+    },
+    {
+      "action_id": "REC-REPLY-001",
+      "action_type": "today_reply",
+      "approval_state": "needs_human_approval",
+      "execution_boundary": "local plan only; no external action",
+      "execution_mode": "wait_for_human_approval",
+      "market": "Japan",
+      "personality": "trusted_guide",
+      "plan_id": "PLAN-0002",
+      "planned_action": "Draft two replies using hook 'make payment decision simple' for Tokyo transport anxiety.",
+      "platform": "Reddit",
+      "priority": "high",
+      "time_block": "midday_reply_review",
+      "today_sequence": 2,
+      "why_this_plan": "The hook make payment decision simple is currently the strongest interaction signal. Top platform is reddit. Human approval is still required."
+    },
+    {
+      "action_id": "REC-PLATFORM-001",
+      "action_type": "today_platform",
+      "approval_state": "needs_human_approval",
+      "execution_boundary": "local plan only; no external action",
+      "execution_mode": "wait_for_human_approval",
+      "market": "Japan",
+      "personality": "trusted_guide",
+      "plan_id": "PLAN-0003",
+      "planned_action": "Prioritize reddit today and keep TikTok in experiment mode.",
+      "platform": "reddit",
+      "priority": "high",
+      "time_block": "platform_focus_setup",
+      "today_sequence": 3,
+      "why_this_plan": "reddit is the current top platform and increase_reddit_content is the best simulated scenario. Top platform is reddit. Human approval is still required."
+    },
+    {
+      "action_id": "REC-TREND-001",
+      "action_type": "today_trend",
+      "approval_state": "needs_human_approval",
+      "execution_boundary": "local plan only; no external action",
+      "execution_mode": "wait_for_human_approval",
+      "market": "Japan",
+      "personality": "trusted_guide",
+      "plan_id": "PLAN-0004",
+      "planned_action": "Track and draft around trend 'Tokyo transport anxiety' with payment_decision_guidance.",
+      "platform": "Reddit",
+      "priority": "medium",
+      "time_block": "afternoon_trend_watch",
+      "today_sequence": 4,
+      "why_this_plan": "Tokyo transport anxiety is the current top trend and matches the strongest content correlation. Top platform is reddit. Human approval is still required."
+    }
+  ],
+  "todayPlatformFocus": {
+    "primary_platform": "reddit",
+    "reason": "reddit is the current priority leader; other platforms stay secondary until approval.",
+    "supporting_platforms": [
+      "Reddit",
+      "reddit"
+    ]
+  },
+  "todayReplyPriority": {
+    "priority": "high",
+    "reason": "Replies remain human-gated and focus on the top question.",
+    "reply_count": 1,
+    "target": "Tokyo transport anxiety"
+  }
+}

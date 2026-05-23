@@ -31,7 +31,9 @@ from services.keyword_expansion_engine import KeywordExpansionEngine
 from services.runtime_drift_monitor import RuntimeDriftMonitor
 from services.runtime_engine import RuntimeEngine
 from services.runtime_persistence import RuntimePersistence
+from services.runtime_planner import RuntimePlanner
 from services.runtime_priority_engine import RuntimePriorityEngine
+from services.runtime_risk_prediction import RuntimeRiskPrediction
 from services.runtime_strategy_simulation import RuntimeStrategySimulation
 from services.runtime_strategy_personality import RuntimeStrategyPersonalityEngine
 from services.strategic_interpretation_engine import StrategicInterpretationEngine
@@ -112,6 +114,8 @@ class RuntimeUIBridge:
         autonomous_growth_preparation_gate = AutonomousGrowthPreparationGate().evaluate()
         action_recommendations = ActionRecommendationEngine().recommend()
         action_queue = ActionQueueEngine().build_queue(action_recommendations.get("actionRecommendations", []))
+        runtime_plan = RuntimePlanner().plan()
+        runtime_risk = RuntimeRiskPrediction().predict()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -337,6 +341,17 @@ class RuntimeUIBridge:
             "humanActionDecisions": action_queue.get("humanActionDecisions", []),
             "actionQueueFeed": action_queue.get("actionQueueFeed", []),
             "actionQueueSummary": action_queue.get("actionQueueSummary", {}),
+            "runtimePlan": runtime_plan,
+            "todayOperationPlan": runtime_plan.get("todayOperationPlan", []),
+            "todayPlatformFocus": runtime_plan.get("todayPlatformFocus", {}),
+            "todayContentRhythm": runtime_plan.get("todayContentRhythm", {}),
+            "todayReplyPriority": runtime_plan.get("todayReplyPriority", {}),
+            "runtimePlanFeed": runtime_plan.get("runtimePlanFeed", []),
+            "runtimePlanSummary": runtime_plan.get("runtimePlanSummary", {}),
+            "runtimeRiskPrediction": runtime_risk,
+            "runtimeRiskMatrix": runtime_risk.get("runtimeRiskMatrix", []),
+            "runtimeRiskFeed": runtime_risk.get("runtimeRiskFeed", []),
+            "runtimeRiskSummary": runtime_risk.get("riskSummary", {}),
         }
 
 

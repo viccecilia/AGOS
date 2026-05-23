@@ -1,0 +1,47 @@
+[
+  {
+    "level": "medium",
+    "mitigation": "Limit frequency and require human approval before external replies.",
+    "reason": "Too many reply-like actions or repeated platform activity can look spammy.",
+    "risk_type": "spam risk",
+    "score": 0.57,
+    "status": "needs_human_review",
+    "time": "2026-05-23T00:51:15+00:00"
+  },
+  {
+    "level": "low",
+    "mitigation": "Keep platform-specific actions as local plans until reviewed.",
+    "reason": "Platform-specific actions require review before any external execution.",
+    "risk_type": "platform risk",
+    "score": 0.37,
+    "status": "watch",
+    "time": "2026-05-23T00:51:15+00:00"
+  },
+  {
+    "level": "medium",
+    "mitigation": "Keep trusted guide personality and avoid sudden market shifts.",
+    "reason": "Plan can drift from trusted guide personality if market or tone changes too fast.",
+    "risk_type": "drift risk",
+    "score": 0.52,
+    "status": "needs_human_review",
+    "time": "2026-05-23T00:51:15+00:00"
+  },
+  {
+    "level": "low",
+    "mitigation": "Remove promotional phrasing and keep practical help first.",
+    "reason": "Promotional wording or platform pushing can weaken trust.",
+    "risk_type": "over-marketing risk",
+    "score": 0.2,
+    "status": "watch",
+    "time": "2026-05-23T00:51:15+00:00"
+  },
+  {
+    "level": "medium",
+    "mitigation": "Vary hooks, formats, and platforms across cycles.",
+    "reason": "Repeating the same hook, platform, or content format can reduce learning quality.",
+    "risk_type": "repetition risk",
+    "score": 0.61,
+    "status": "needs_human_review",
+    "time": "2026-05-23T00:51:15+00:00"
+  }
+]
