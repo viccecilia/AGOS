@@ -1,0 +1,10 @@
+{
+  "high_conversion_patterns": 1,
+  "high_engagement_patterns": 1,
+  "high_risk_patterns": 2,
+  "high_value_patterns": 1,
+  "pattern_memory_ready": true,
+  "patterns_learned": 5,
+  "reviews_learned": 5,
+  "top_pattern": "high_value"
+}

@@ -44,6 +44,7 @@ from services.runtime_drift_monitor import RuntimeDriftMonitor
 from services.runtime_engine import RuntimeEngine
 from services.runtime_correction_engine import RuntimeCorrectionEngine
 from services.runtime_execution_simulator import RuntimeExecutionSimulator
+from services.runtime_pattern_learning import RuntimePatternLearning
 from services.runtime_persistence import RuntimePersistence
 from services.runtime_planner import RuntimePlanner
 from services.runtime_priority_engine import RuntimePriorityEngine
@@ -159,6 +160,7 @@ class RuntimeUIBridge:
         batch_scout_runtime = BatchScoutRuntime().run()
         batch_topic_clustering = BatchTopicClustering().cluster(batch_scout_runtime.get("batchAnalysis", []))
         batch_human_review = BatchHumanReview().review(batch_topic_clustering.get("batchTrendClusters", []))
+        runtime_pattern_learning = RuntimePatternLearning().learn(batch_human_review.get("batchReviewQueue", []))
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -456,6 +458,10 @@ class RuntimeUIBridge:
             "batchTrainingLabels": batch_human_review.get("batchTrainingLabels", []),
             "batchReviewFeed": batch_human_review.get("batchReviewFeed", []),
             "batchHumanReviewSummary": batch_human_review.get("batchHumanReviewSummary", {}),
+            "runtimePatternLearning": runtime_pattern_learning,
+            "patternMemory": runtime_pattern_learning.get("patternMemory", []),
+            "runtimePatternFeed": runtime_pattern_learning.get("runtimePatternFeed", []),
+            "patternLearningSummary": runtime_pattern_learning.get("patternLearningSummary", {}),
         }
 
 

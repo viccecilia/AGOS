@@ -1,0 +1,52 @@
+[
+  {
+    "learning_weight": 1.0,
+    "pattern_id": "RUNTIME-PATTERN-0001",
+    "pattern_type": "high_value",
+    "question_combination": "transport_confusion + Tokyo transport anxiety + 10 similar questions",
+    "recommended_next_action": "Promote Tokyo transport anxiety into best-answer branch generation.",
+    "result_pattern": "Tokyo transport anxiety is a validated high-value cluster and should seed answer branches or content planning.",
+    "risk_flag": "low",
+    "time": "2026-05-23T04:27:44+00:00"
+  },
+  {
+    "learning_weight": 0.92,
+    "pattern_id": "RUNTIME-PATTERN-0002",
+    "pattern_type": "high_conversion",
+    "question_combination": "transport_confusion + Airport transfer confusion + 10 similar questions",
+    "recommended_next_action": "Prepare comparison or decision-support reply drafts for Airport transfer confusion.",
+    "result_pattern": "Airport transfer confusion shows decision pressure and may convert when the reply reduces uncertainty.",
+    "risk_flag": "watch",
+    "time": "2026-05-23T04:27:44+00:00"
+  },
+  {
+    "learning_weight": 0.78,
+    "pattern_id": "RUNTIME-PATTERN-0003",
+    "pattern_type": "high_engagement",
+    "question_combination": "payment_decision + JR Pass decision pressure + 10 similar questions",
+    "recommended_next_action": "Keep JR Pass decision pressure in observation and test a refined hook before scaling.",
+    "result_pattern": "JR Pass decision pressure may attract engagement, but needs human-refined angle or stronger evidence.",
+    "risk_flag": "needs_tone_correction",
+    "time": "2026-05-23T04:27:44+00:00"
+  },
+  {
+    "learning_weight": 1.0,
+    "pattern_id": "RUNTIME-PATTERN-0004",
+    "pattern_type": "high_risk",
+    "question_combination": "weather_fallback + Rainy day Tokyo plan + 10 similar questions",
+    "recommended_next_action": "Do not train on Rainy day Tokyo plan until the risk is corrected by a human reviewer.",
+    "result_pattern": "Rainy day Tokyo plan contains risk signals and should be blocked or corrected before reuse.",
+    "risk_flag": "blocked",
+    "time": "2026-05-23T04:27:44+00:00"
+  },
+  {
+    "learning_weight": 1.0,
+    "pattern_id": "RUNTIME-PATTERN-0005",
+    "pattern_type": "high_risk",
+    "question_combination": "planning_overwhelm + Japan itinerary overwhelm + 10 similar questions",
+    "recommended_next_action": "Do not train on Japan itinerary overwhelm until the risk is corrected by a human reviewer.",
+    "result_pattern": "Japan itinerary overwhelm contains risk signals and should be blocked or corrected before reuse.",
+    "risk_flag": "blocked",
+    "time": "2026-05-23T04:27:44+00:00"
+  }
+]
