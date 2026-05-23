@@ -32,6 +32,7 @@ from services.keyword_expansion_engine import KeywordExpansionEngine
 from services.runtime_drift_monitor import RuntimeDriftMonitor
 from services.runtime_engine import RuntimeEngine
 from services.runtime_correction_engine import RuntimeCorrectionEngine
+from services.runtime_execution_simulator import RuntimeExecutionSimulator
 from services.runtime_persistence import RuntimePersistence
 from services.runtime_planner import RuntimePlanner
 from services.runtime_priority_engine import RuntimePriorityEngine
@@ -122,6 +123,11 @@ class RuntimeUIBridge:
             review_queue=state.get("review_queue", []),
             action_queue=action_queue.get("actionQueue", []),
             correction_queue=RuntimeCorrectionEngine().list(),
+        )
+        execution_simulation = RuntimeExecutionSimulator().simulate(
+            runtime_plan=runtime_plan,
+            approval=human_approval,
+            risk=runtime_risk,
         )
         status = state.get("status", "idle")
         runtime_status = {
@@ -363,6 +369,10 @@ class RuntimeUIBridge:
             "unifiedApprovalQueue": human_approval.get("unifiedApprovalQueue", []),
             "unifiedApprovalTimeline": human_approval.get("unifiedApprovalTimeline", []),
             "approvalSummary": human_approval.get("approvalSummary", {}),
+            "executionSimulation": execution_simulation,
+            "executionSimulationScenarios": execution_simulation.get("executionSimulationScenarios", []),
+            "executionSimulationFeed": execution_simulation.get("executionSimulationFeed", []),
+            "executionSimulationSummary": execution_simulation.get("executionSimulationSummary", {}),
         }
 
 

@@ -1,0 +1,18 @@
+{
+  "round_id": "ROUND-SEMI-AUTO-006",
+  "status": "passed",
+  "service": "services/runtime_execution_simulator.py",
+  "test": "tests/runtime_execution_simulation_smoke_test.py",
+  "outputs": [
+    "runtime/execution_simulation/EXECUTION_SIMULATION_REPORT.json",
+    "runtime/execution_simulation/execution_simulation_scenarios.json",
+    "runtime/execution_simulation/execution_simulation_feed.json"
+  ],
+  "validation": [
+    "python -m compileall services tests passed",
+    "python tests\\runtime_execution_simulation_smoke_test.py passed",
+    "python tests\\war_room_runtime_ui_smoke_test.py passed",
+    "node --check extracted control center script passed"
+  ],
+  "safety_boundary": "local execution simulation only; no external action"
+}

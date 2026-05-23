@@ -1,0 +1,42 @@
+[
+  {
+    "external_execution": false,
+    "platform": "Reddit",
+    "risk_if_executed": "medium",
+    "simulation_id": "SIM-0001",
+    "status": "blocked_by_human_gate",
+    "time": "2026-05-23T01:04:13+00:00",
+    "type": "content_publish",
+    "what_would_happen": "AGOS would prepare a local content publish draft for Reddit: Create one human-reviewed payment_decision_guidance content draft around Tokyo transport anxiety."
+  },
+  {
+    "external_execution": false,
+    "platform": "Reddit",
+    "risk_if_executed": "medium",
+    "simulation_id": "SIM-0002",
+    "status": "blocked_by_human_gate",
+    "time": "2026-05-23T01:04:13+00:00",
+    "type": "reply_action",
+    "what_would_happen": "AGOS would prepare local reply drafts for Reddit: Draft two replies using hook 'make payment decision simple' for Tokyo transport anxiety."
+  },
+  {
+    "external_execution": false,
+    "platform": "reddit",
+    "risk_if_executed": "medium",
+    "simulation_id": "SIM-0003",
+    "status": "blocked_by_human_gate",
+    "time": "2026-05-23T01:04:13+00:00",
+    "type": "platform_operation",
+    "what_would_happen": "AGOS would simulate changing platform focus for reddit: Prioritize reddit today and keep TikTok in experiment mode."
+  },
+  {
+    "external_execution": false,
+    "platform": "Reddit",
+    "risk_if_executed": "medium",
+    "simulation_id": "SIM-0004",
+    "status": "blocked_by_human_gate",
+    "time": "2026-05-23T01:04:13+00:00",
+    "type": "diffusion_action",
+    "what_would_happen": "AGOS would simulate spreading the trend angle across approved channels: Track and draft around trend 'Tokyo transport anxiety' with payment_decision_guidance."
+  }
+]
