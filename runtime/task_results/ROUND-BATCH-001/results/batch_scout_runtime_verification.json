@@ -1,0 +1,64 @@
+{
+  "round_id": "ROUND-BATCH-001",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "compileall",
+      "command": "python -m compileall services tests",
+      "status": "passed"
+    },
+    {
+      "name": "batch_scout_runtime_smoke",
+      "command": "python tests\\batch_scout_runtime_smoke_test.py",
+      "status": "passed"
+    },
+    {
+      "name": "runtime_ui_export",
+      "command": "python -c \"from services.runtime_ui_bridge import export_default_ui_state; export_default_ui_state()\"",
+      "status": "passed"
+    },
+    {
+      "name": "war_room_runtime_ui_regression",
+      "command": "python tests\\war_room_runtime_ui_smoke_test.py",
+      "status": "passed"
+    },
+    {
+      "name": "control_center_html_json_check",
+      "command": "node inline check for project-state batchScoutFeed and runtime script syntax",
+      "status": "passed"
+    },
+    {
+      "name": "browser_verification",
+      "command": "in-app browser at http://127.0.0.1:8765/project_control_center.html?runtime_ui=1#war-room-growth",
+      "status": "passed",
+      "evidence": {
+        "version": "0.1.94",
+        "round": "ROUND-BATCH-001",
+        "has_batch_scout_panel": true,
+        "questions_processed": 50,
+        "scout_completed": 50,
+        "analyze_completed": 50,
+        "classify_completed": 50,
+        "priority_ranked": 50,
+        "batch_runtime_ready": true
+      }
+    }
+  ],
+  "outputs": [
+    "runtime/batch_runtime/BATCH_SCOUT_RUNTIME_REPORT.json",
+    "runtime/batch_runtime/batch_questions.json",
+    "runtime/batch_runtime/batch_analysis.json",
+    "runtime/batch_runtime/batch_priority_ranking.json",
+    "runtime/batch_runtime/batch_scout_feed.json"
+  ],
+  "batch_capability": {
+    "min_questions": 50,
+    "max_questions": 500,
+    "smoke_test_questions": 75,
+    "default_ui_questions": 50,
+    "scout": true,
+    "analyze": true,
+    "classify": true,
+    "priority_ranking": true
+  }
+}
