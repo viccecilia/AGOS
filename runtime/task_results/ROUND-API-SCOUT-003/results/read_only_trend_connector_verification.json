@@ -1,0 +1,18 @@
+{
+  "round_id": "ROUND-API-SCOUT-003",
+  "status": "passed",
+  "service": "services/read_only_trend_connector.py",
+  "test": "tests/read_only_trend_connector_smoke_test.py",
+  "outputs": [
+    "runtime/platform_trends/READ_ONLY_TREND_REPORT.json",
+    "runtime/platform_trends/platform_trends.json",
+    "runtime/platform_trends/platform_trend_feed.json"
+  ],
+  "validation": [
+    "python -m compileall services tests passed",
+    "python tests\\read_only_trend_connector_smoke_test.py passed",
+    "python tests\\war_room_runtime_ui_smoke_test.py passed",
+    "node --check extracted control center script passed"
+  ],
+  "safety_boundary": "read-only trend connector only; no post, reply, follow, DM, or engagement action"
+}

@@ -29,6 +29,7 @@ from services.platform_credential_vault import PlatformCredentialVault
 from services.real_feedback_capture_engine import RealFeedbackCaptureEngine
 from services.real_growth_validation_engine import RealGrowthValidationEngine
 from services.real_reply_attempt_engine import RealReplyAttemptEngine
+from services.read_only_trend_connector import ReadOnlyTrendConnector
 from services.patrol_group_engine import PatrolGroupEngine
 from services.keyword_expansion_engine import KeywordExpansionEngine
 from services.runtime_drift_monitor import RuntimeDriftMonitor
@@ -141,6 +142,7 @@ class RuntimeUIBridge:
         )
         api_capability_registry = APICapabilityRegistry().build()
         platform_credential_vault = PlatformCredentialVault().bootstrap_sample_status()
+        read_only_trends = ReadOnlyTrendConnector().read_trends()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -398,6 +400,10 @@ class RuntimeUIBridge:
             "workspaceCredentialStatus": platform_credential_vault.get("workspaceCredentialStatus", []),
             "credentialVaultFeed": platform_credential_vault.get("credentialVaultFeed", []),
             "credentialVaultSummary": platform_credential_vault.get("credentialVaultSummary", {}),
+            "readOnlyTrendConnector": read_only_trends,
+            "platformTrends": read_only_trends.get("platformTrends", []),
+            "platformTrendFeed": read_only_trends.get("platformTrendFeed", []),
+            "trendConnectorSummary": read_only_trends.get("trendConnectorSummary", {}),
         }
 
 
