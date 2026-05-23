@@ -1,0 +1,12 @@
+{
+  "engagement_pattern_reinforced": 2,
+  "historical_failures": 5,
+  "historical_feedback": 6,
+  "historical_questions": 5,
+  "historical_replies": 4,
+  "question_priority_retrained": 9,
+  "replay_items": 20,
+  "replay_training_ready": true,
+  "reply_strategy_retrained": 4,
+  "risk_pattern_reinforced": 5
+}

@@ -48,6 +48,7 @@ from services.runtime_pattern_learning import RuntimePatternLearning
 from services.runtime_persistence import RuntimePersistence
 from services.runtime_planner import RuntimePlanner
 from services.runtime_priority_engine import RuntimePriorityEngine
+from services.runtime_replay_training import RuntimeReplayTraining
 from services.runtime_risk_prediction import RuntimeRiskPrediction
 from services.runtime_strategy_simulation import RuntimeStrategySimulation
 from services.runtime_strategy_personality import RuntimeStrategyPersonalityEngine
@@ -161,6 +162,7 @@ class RuntimeUIBridge:
         batch_topic_clustering = BatchTopicClustering().cluster(batch_scout_runtime.get("batchAnalysis", []))
         batch_human_review = BatchHumanReview().review(batch_topic_clustering.get("batchTrendClusters", []))
         runtime_pattern_learning = RuntimePatternLearning().learn(batch_human_review.get("batchReviewQueue", []))
+        runtime_replay_training = RuntimeReplayTraining().replay()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -462,6 +464,11 @@ class RuntimeUIBridge:
             "patternMemory": runtime_pattern_learning.get("patternMemory", []),
             "runtimePatternFeed": runtime_pattern_learning.get("runtimePatternFeed", []),
             "patternLearningSummary": runtime_pattern_learning.get("patternLearningSummary", {}),
+            "runtimeReplayTraining": runtime_replay_training,
+            "replayTrainingItems": runtime_replay_training.get("replayTrainingItems", []),
+            "replayMemory": runtime_replay_training.get("replayMemory", []),
+            "runtimeReplayFeed": runtime_replay_training.get("runtimeReplayFeed", []),
+            "replayTrainingSummary": runtime_replay_training.get("replayTrainingSummary", {}),
         }
 
 
