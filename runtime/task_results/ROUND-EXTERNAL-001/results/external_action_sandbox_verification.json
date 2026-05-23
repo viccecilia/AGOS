@@ -1,0 +1,76 @@
+{
+  "round_id": "ROUND-EXTERNAL-001",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "compileall",
+      "command": "python -m compileall services tests",
+      "status": "passed"
+    },
+    {
+      "name": "external_action_sandbox_smoke",
+      "command": "python tests\\external_action_sandbox_smoke_test.py",
+      "status": "passed"
+    },
+    {
+      "name": "runtime_risk_prediction",
+      "command": "python tests\\runtime_risk_prediction_smoke_test.py",
+      "status": "passed"
+    },
+    {
+      "name": "runtime_ui_export",
+      "command": "python -c \"from services.runtime_ui_bridge import export_default_ui_state; export_default_ui_state()\"",
+      "status": "passed"
+    },
+    {
+      "name": "war_room_runtime_ui_regression",
+      "command": "python tests\\war_room_runtime_ui_smoke_test.py",
+      "status": "passed"
+    },
+    {
+      "name": "control_center_html_json_check",
+      "command": "node inline check for project-state externalActionFeed and runtime script syntax",
+      "status": "passed"
+    },
+    {
+      "name": "browser_verification",
+      "command": "in-app browser at http://127.0.0.1:8765/project_control_center.html?runtime_ui=1#war-room-growth",
+      "status": "passed",
+      "evidence": {
+        "version": "0.1.93",
+        "round": "ROUND-EXTERNAL-001",
+        "has_external_action_sandbox_panel": true,
+        "has_action": true,
+        "has_why": true,
+        "has_risk": true,
+        "has_human_gate": true,
+        "has_blocked_reason": true,
+        "external_execution_allowed": false,
+        "write_api_calls_enabled": false
+      }
+    }
+  ],
+  "outputs": [
+    "runtime/external_action_sandbox/EXTERNAL_ACTION_SANDBOX_REPORT.json",
+    "runtime/external_action_sandbox/external_action_queue.json",
+    "runtime/external_action_sandbox/external_action_feed.json",
+    "runtime/external_action_sandbox/external_action_simulations.json"
+  ],
+  "external_action_status": {
+    "default_blocked": true,
+    "external_execution_allowed": false,
+    "write_api_calls_enabled": false,
+    "human_gate_required": true,
+    "simulated_only": true
+  },
+  "forbidden": {
+    "auto_post": false,
+    "auto_reply": false,
+    "auto_follow": false,
+    "auto_dm": false,
+    "auto_like": false,
+    "auto_login": false,
+    "auto_register": false,
+    "write_api_call": false
+  }
+}

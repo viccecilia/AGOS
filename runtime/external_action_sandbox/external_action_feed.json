@@ -1,0 +1,54 @@
+[
+  {
+    "blocked_reason": "External actions require human approval and manual execution. Automated write-side platform actions are disabled.",
+    "external_action_id": "EXT-ACTION-0001",
+    "external_action_type": "external_content_publish",
+    "external_execution_allowed": false,
+    "human_gate_status": "required",
+    "risk_level": "medium",
+    "status": "waiting_human_approval",
+    "suggested_action": "Create one human-reviewed payment_decision_guidance content draft around Tokyo transport anxiety.",
+    "target_platform": "Reddit",
+    "time": "2026-05-23T03:42:52+00:00",
+    "why_suggested": "payment_decision_guidance is the strongest content signal and increase_reddit_content is the best simulated strategy."
+  },
+  {
+    "blocked_reason": "External actions require human approval and manual execution. Automated write-side platform actions are disabled.",
+    "external_action_id": "EXT-ACTION-0002",
+    "external_action_type": "external_reply",
+    "external_execution_allowed": false,
+    "human_gate_status": "required",
+    "risk_level": "medium",
+    "status": "waiting_human_approval",
+    "suggested_action": "Draft two replies using hook 'make payment decision simple' for Tokyo transport anxiety.",
+    "target_platform": "Reddit",
+    "time": "2026-05-23T03:42:52+00:00",
+    "why_suggested": "The hook make payment decision simple is currently the strongest interaction signal."
+  },
+  {
+    "blocked_reason": "External actions require human approval and manual execution. Automated write-side platform actions are disabled.",
+    "external_action_id": "EXT-ACTION-0003",
+    "external_action_type": "external_expansion_action",
+    "external_execution_allowed": false,
+    "human_gate_status": "required",
+    "risk_level": "medium",
+    "status": "waiting_human_approval",
+    "suggested_action": "Prioritize reddit today and keep TikTok in experiment mode.",
+    "target_platform": "reddit",
+    "time": "2026-05-23T03:42:52+00:00",
+    "why_suggested": "reddit is the current top platform and increase_reddit_content is the best simulated scenario."
+  },
+  {
+    "blocked_reason": "External actions require human approval and manual execution. Automated write-side platform actions are disabled.",
+    "external_action_id": "EXT-ACTION-0004",
+    "external_action_type": "external_trend_followup",
+    "external_execution_allowed": false,
+    "human_gate_status": "required",
+    "risk_level": "medium",
+    "status": "waiting_human_approval",
+    "suggested_action": "Track and draft around trend 'Tokyo transport anxiety' with payment_decision_guidance.",
+    "target_platform": "Reddit",
+    "time": "2026-05-23T03:42:52+00:00",
+    "why_suggested": "Tokyo transport anxiety is the current top trend and matches the strongest content correlation."
+  }
+]

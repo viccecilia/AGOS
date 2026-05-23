@@ -19,6 +19,7 @@ from services.daily_question_import_engine import DailyQuestionImportEngine
 from services.daily_operations_report_engine import DailyOperationsReportEngine
 from services.failure_analysis_engine import FailureAnalysisEngine
 from services.growth_signal_correlation_engine import GrowthSignalCorrelationEngine
+from services.external_action_sandbox import ExternalActionSandbox
 from services.human_approval_orchestrator import HumanApprovalOrchestrator
 from services.human_feedback_learning import HumanFeedbackLearning
 from services.human_personality_training import HumanPersonalityTraining
@@ -151,6 +152,7 @@ class RuntimeUIBridge:
         api_signal_normalization = APISignalNormalization().normalize(read_only_trends.get("platformTrends", []))
         api_to_scout_pipeline = APIToScoutPipeline().run(api_signal_normalization.get("normalizedSignals", []))
         api_scout_gate = APIScoutGate().evaluate()
+        external_action_sandbox = ExternalActionSandbox().build(action_recommendations.get("actionRecommendations", []))
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -428,6 +430,11 @@ class RuntimeUIBridge:
             "apiScoutGateChecks": api_scout_gate.get("apiScoutGateChecks", []),
             "platformApiRiskReview": api_scout_gate.get("platformApiRiskReview", {}),
             "apiScoutGateSummary": api_scout_gate.get("apiScoutGateSummary", {}),
+            "externalActionSandbox": external_action_sandbox,
+            "externalActionQueue": external_action_sandbox.get("externalActionQueue", []),
+            "externalActionFeed": external_action_sandbox.get("externalActionFeed", []),
+            "externalActionSimulations": external_action_sandbox.get("externalActionSimulations", []),
+            "externalActionSandboxSummary": external_action_sandbox.get("externalActionSandboxSummary", {}),
         }
 
 
