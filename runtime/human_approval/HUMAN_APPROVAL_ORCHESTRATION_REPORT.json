@@ -1,0 +1,1094 @@
+{
+  "approvalSummary": {
+    "action_queue_items": 4,
+    "approved": 0,
+    "correction_queue_items": 21,
+    "decisions_recorded": 0,
+    "modified": 0,
+    "needs_human_approval": 4,
+    "postponed": 0,
+    "rejected": 21,
+    "review_queue_items": 0,
+    "total_items": 25
+  },
+  "created_at": "2026-05-23T00:58:31+00:00",
+  "report_id": "HUMAN_APPROVAL_ORCHESTRATION_REPORT",
+  "safetyBoundary": "Unified approval only records local human decisions; no posting, replying, login, account creation, or platform API call is executed.",
+  "scope": "local_unified_human_approval_only",
+  "status": "active",
+  "unifiedApprovalQueue": [
+    {
+      "created_at": "2026-05-23T00:43:48+00:00",
+      "description": "payment_decision_guidance is the strongest content signal and increase_reddit_content is the best simulated strategy.",
+      "market": "Japan",
+      "platform": "Reddit",
+      "queue_type": "action",
+      "required_decisions": [
+        "approve",
+        "reject",
+        "modify",
+        "postpone"
+      ],
+      "risk_level": "medium",
+      "source": {
+        "action_id": "REC-CONTENT-001",
+        "action_type": "today_content",
+        "created_at": "2026-05-23T00:43:48+00:00",
+        "execution_boundary": "local approval queue only; no external action",
+        "expected_result": "Higher save/reply potential from a durable guidance format.",
+        "human_decision": null,
+        "human_modified_action": "",
+        "human_reason": "",
+        "priority": "high",
+        "queue_id": "ACTION-Q-0001",
+        "recommendation": "Create one human-reviewed payment_decision_guidance content draft around Tokyo transport anxiety.",
+        "recommended_market": "Japan",
+        "recommended_personality": "trusted_guide",
+        "recommended_platform": "Reddit",
+        "risk_level": "medium",
+        "status": "needs_human_approval",
+        "updated_at": "2026-05-23T00:58:31+00:00",
+        "why_recommended": "payment_decision_guidance is the strongest content signal and increase_reddit_content is the best simulated strategy."
+      },
+      "status": "needs_human_approval",
+      "target_id": "REC-CONTENT-001",
+      "title": "today_content",
+      "unified_id": "APPROVAL-ACTION-0001",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-23T00:43:48+00:00",
+      "description": "The hook make payment decision simple is currently the strongest interaction signal.",
+      "market": "Japan",
+      "platform": "Reddit",
+      "queue_type": "action",
+      "required_decisions": [
+        "approve",
+        "reject",
+        "modify",
+        "postpone"
+      ],
+      "risk_level": "medium",
+      "source": {
+        "action_id": "REC-REPLY-001",
+        "action_type": "today_reply",
+        "created_at": "2026-05-23T00:43:48+00:00",
+        "execution_boundary": "local approval queue only; no external action",
+        "expected_result": "More useful reply drafts with better chance of positive feedback.",
+        "human_decision": null,
+        "human_modified_action": "",
+        "human_reason": "",
+        "priority": "high",
+        "queue_id": "ACTION-Q-0002",
+        "recommendation": "Draft two replies using hook 'make payment decision simple' for Tokyo transport anxiety.",
+        "recommended_market": "Japan",
+        "recommended_personality": "trusted_guide",
+        "recommended_platform": "Reddit",
+        "risk_level": "medium",
+        "status": "needs_human_approval",
+        "updated_at": "2026-05-23T00:58:31+00:00",
+        "why_recommended": "The hook make payment decision simple is currently the strongest interaction signal."
+      },
+      "status": "needs_human_approval",
+      "target_id": "REC-REPLY-001",
+      "title": "today_reply",
+      "unified_id": "APPROVAL-ACTION-0002",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-23T00:43:48+00:00",
+      "description": "reddit is the current top platform and increase_reddit_content is the best simulated scenario.",
+      "market": "Japan",
+      "platform": "reddit",
+      "queue_type": "action",
+      "required_decisions": [
+        "approve",
+        "reject",
+        "modify",
+        "postpone"
+      ],
+      "risk_level": "low",
+      "source": {
+        "action_id": "REC-PLATFORM-001",
+        "action_type": "today_platform",
+        "created_at": "2026-05-23T00:43:48+00:00",
+        "execution_boundary": "local approval queue only; no external action",
+        "expected_result": "More durable trust-building signal with lower drift risk.",
+        "human_decision": null,
+        "human_modified_action": "",
+        "human_reason": "",
+        "priority": "high",
+        "queue_id": "ACTION-Q-0003",
+        "recommendation": "Prioritize reddit today and keep TikTok in experiment mode.",
+        "recommended_market": "Japan",
+        "recommended_personality": "trusted_guide",
+        "recommended_platform": "reddit",
+        "risk_level": "low",
+        "status": "needs_human_approval",
+        "updated_at": "2026-05-23T00:58:31+00:00",
+        "why_recommended": "reddit is the current top platform and increase_reddit_content is the best simulated scenario."
+      },
+      "status": "needs_human_approval",
+      "target_id": "REC-PLATFORM-001",
+      "title": "today_platform",
+      "unified_id": "APPROVAL-ACTION-0003",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-23T00:43:48+00:00",
+      "description": "Tokyo transport anxiety is the current top trend and matches the strongest content correlation.",
+      "market": "Japan",
+      "platform": "Reddit",
+      "queue_type": "action",
+      "required_decisions": [
+        "approve",
+        "reject",
+        "modify",
+        "postpone"
+      ],
+      "risk_level": "medium",
+      "source": {
+        "action_id": "REC-TREND-001",
+        "action_type": "today_trend",
+        "created_at": "2026-05-23T00:43:48+00:00",
+        "execution_boundary": "local approval queue only; no external action",
+        "expected_result": "Better alignment between scout signal and content strategy.",
+        "human_decision": null,
+        "human_modified_action": "",
+        "human_reason": "",
+        "priority": "medium",
+        "queue_id": "ACTION-Q-0004",
+        "recommendation": "Track and draft around trend 'Tokyo transport anxiety' with payment_decision_guidance.",
+        "recommended_market": "Japan",
+        "recommended_personality": "trusted_guide",
+        "recommended_platform": "Reddit",
+        "risk_level": "medium",
+        "status": "needs_human_approval",
+        "updated_at": "2026-05-23T00:58:31+00:00",
+        "why_recommended": "Tokyo transport anxiety is the current top trend and matches the strongest content correlation."
+      },
+      "status": "needs_human_approval",
+      "target_id": "REC-TREND-001",
+      "title": "today_trend",
+      "unified_id": "APPROVAL-ACTION-0004",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-22T06:06:42+00:00",
+      "description": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+      "market": "local",
+      "platform": "Local Runtime",
+      "queue_type": "correction",
+      "required_decisions": [
+        "approve",
+        "reject",
+        "modify"
+      ],
+      "risk_level": "medium",
+      "source": {
+        "correction_id": "correction_2026-05-22T06-06-42+00-00",
+        "created_at": "2026-05-22T06:06:42+00:00",
+        "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+        "rejected_learning": {
+          "bad_style": "short promotional CTA",
+          "platform": "reddit"
+        },
+        "status": "rejected",
+        "target_id": "jag_lab_tokyo_transport_001",
+        "target_type": "platform_style"
+      },
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T06-06-42+00-00",
+      "title": "platform_style",
+      "unified_id": "APPROVAL-CORRECTION-0001",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-22T06:21:22+00:00",
+      "description": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+      "market": "local",
+      "platform": "Local Runtime",
+      "queue_type": "correction",
+      "required_decisions": [
+        "approve",
+        "reject",
+        "modify"
+      ],
+      "risk_level": "medium",
+      "source": {
+        "correction_id": "correction_2026-05-22T06-21-22+00-00",
+        "created_at": "2026-05-22T06:21:22+00:00",
+        "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+        "rejected_learning": {
+          "bad_style": "short promotional CTA",
+          "platform": "reddit"
+        },
+        "status": "rejected",
+        "target_id": "jag_lab_tokyo_transport_001",
+        "target_type": "platform_style"
+      },
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T06-21-22+00-00",
+      "title": "platform_style",
+      "unified_id": "APPROVAL-CORRECTION-0002",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-22T06:21:22+00:00",
+      "description": "This is normal chatter, not a high-value travel pain point.",
+      "market": "local",
+      "platform": "Local Runtime",
+      "queue_type": "correction",
+      "required_decisions": [
+        "approve",
+        "reject",
+        "modify"
+      ],
+      "risk_level": "medium",
+      "source": {
+        "correction_id": "correction_2026-05-22T06-21-22+00-00",
+        "created_at": "2026-05-22T06:21:22+00:00",
+        "reason": "This is normal chatter, not a high-value travel pain point.",
+        "rejected_learning": {
+          "decision": "reject",
+          "workspace": "JAG-LAB"
+        },
+        "status": "rejected",
+        "target_id": "OPP-001",
+        "target_type": "opportunity"
+      },
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T06-21-22+00-00",
+      "title": "opportunity",
+      "unified_id": "APPROVAL-CORRECTION-0003",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-22T06:22:18+00:00",
+      "description": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+      "market": "local",
+      "platform": "Local Runtime",
+      "queue_type": "correction",
+      "required_decisions": [
+        "approve",
+        "reject",
+        "modify"
+      ],
+      "risk_level": "medium",
+      "source": {
+        "correction_id": "correction_2026-05-22T06-22-18+00-00",
+        "created_at": "2026-05-22T06:22:18+00:00",
+        "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+        "rejected_learning": {
+          "bad_style": "short promotional CTA",
+          "platform": "reddit"
+        },
+        "status": "rejected",
+        "target_id": "jag_lab_tokyo_transport_001",
+        "target_type": "platform_style"
+      },
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T06-22-18+00-00",
+      "title": "platform_style",
+      "unified_id": "APPROVAL-CORRECTION-0004",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-22T06:23:59+00:00",
+      "description": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+      "market": "local",
+      "platform": "Local Runtime",
+      "queue_type": "correction",
+      "required_decisions": [
+        "approve",
+        "reject",
+        "modify"
+      ],
+      "risk_level": "medium",
+      "source": {
+        "correction_id": "correction_2026-05-22T06-23-59+00-00",
+        "created_at": "2026-05-22T06:23:59+00:00",
+        "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+        "rejected_learning": {
+          "bad_style": "short promotional CTA",
+          "platform": "reddit"
+        },
+        "status": "rejected",
+        "target_id": "jag_lab_tokyo_transport_001",
+        "target_type": "platform_style"
+      },
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T06-23-59+00-00",
+      "title": "platform_style",
+      "unified_id": "APPROVAL-CORRECTION-0005",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-22T06:23:59+00:00",
+      "description": "This is normal chatter, not a high-value travel pain point.",
+      "market": "local",
+      "platform": "Local Runtime",
+      "queue_type": "correction",
+      "required_decisions": [
+        "approve",
+        "reject",
+        "modify"
+      ],
+      "risk_level": "medium",
+      "source": {
+        "correction_id": "correction_2026-05-22T06-23-59+00-00",
+        "created_at": "2026-05-22T06:23:59+00:00",
+        "reason": "This is normal chatter, not a high-value travel pain point.",
+        "rejected_learning": {
+          "decision": "reject",
+          "workspace": "JAG-LAB"
+        },
+        "status": "rejected",
+        "target_id": "OPP-001",
+        "target_type": "opportunity"
+      },
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T06-23-59+00-00",
+      "title": "opportunity",
+      "unified_id": "APPROVAL-CORRECTION-0006",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-22T06:24:24+00:00",
+      "description": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+      "market": "local",
+      "platform": "Local Runtime",
+      "queue_type": "correction",
+      "required_decisions": [
+        "approve",
+        "reject",
+        "modify"
+      ],
+      "risk_level": "medium",
+      "source": {
+        "correction_id": "correction_2026-05-22T06-24-24+00-00",
+        "created_at": "2026-05-22T06:24:24+00:00",
+        "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+        "rejected_learning": {
+          "bad_style": "short promotional CTA",
+          "platform": "reddit"
+        },
+        "status": "rejected",
+        "target_id": "jag_lab_tokyo_transport_001",
+        "target_type": "platform_style"
+      },
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T06-24-24+00-00",
+      "title": "platform_style",
+      "unified_id": "APPROVAL-CORRECTION-0007",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-22T06:24:24+00:00",
+      "description": "This is normal chatter, not a high-value travel pain point.",
+      "market": "local",
+      "platform": "Local Runtime",
+      "queue_type": "correction",
+      "required_decisions": [
+        "approve",
+        "reject",
+        "modify"
+      ],
+      "risk_level": "medium",
+      "source": {
+        "correction_id": "correction_2026-05-22T06-24-24+00-00",
+        "created_at": "2026-05-22T06:24:24+00:00",
+        "reason": "This is normal chatter, not a high-value travel pain point.",
+        "rejected_learning": {
+          "decision": "reject",
+          "workspace": "JAG-LAB"
+        },
+        "status": "rejected",
+        "target_id": "OPP-001",
+        "target_type": "opportunity"
+      },
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T06-24-24+00-00",
+      "title": "opportunity",
+      "unified_id": "APPROVAL-CORRECTION-0008",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-22T06:25:19+00:00",
+      "description": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+      "market": "local",
+      "platform": "Local Runtime",
+      "queue_type": "correction",
+      "required_decisions": [
+        "approve",
+        "reject",
+        "modify"
+      ],
+      "risk_level": "medium",
+      "source": {
+        "correction_id": "correction_2026-05-22T06-25-19+00-00",
+        "created_at": "2026-05-22T06:25:19+00:00",
+        "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+        "rejected_learning": {
+          "bad_style": "short promotional CTA",
+          "platform": "reddit"
+        },
+        "status": "rejected",
+        "target_id": "jag_lab_tokyo_transport_001",
+        "target_type": "platform_style"
+      },
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T06-25-19+00-00",
+      "title": "platform_style",
+      "unified_id": "APPROVAL-CORRECTION-0009",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-22T06:25:19+00:00",
+      "description": "This is normal chatter, not a high-value travel pain point.",
+      "market": "local",
+      "platform": "Local Runtime",
+      "queue_type": "correction",
+      "required_decisions": [
+        "approve",
+        "reject",
+        "modify"
+      ],
+      "risk_level": "medium",
+      "source": {
+        "correction_id": "correction_2026-05-22T06-25-19+00-00",
+        "created_at": "2026-05-22T06:25:19+00:00",
+        "reason": "This is normal chatter, not a high-value travel pain point.",
+        "rejected_learning": {
+          "decision": "reject",
+          "workspace": "JAG-LAB"
+        },
+        "status": "rejected",
+        "target_id": "OPP-001",
+        "target_type": "opportunity"
+      },
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T06-25-19+00-00",
+      "title": "opportunity",
+      "unified_id": "APPROVAL-CORRECTION-0010",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-22T06:25:33+00:00",
+      "description": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+      "market": "local",
+      "platform": "Local Runtime",
+      "queue_type": "correction",
+      "required_decisions": [
+        "approve",
+        "reject",
+        "modify"
+      ],
+      "risk_level": "medium",
+      "source": {
+        "correction_id": "correction_2026-05-22T06-25-33+00-00",
+        "created_at": "2026-05-22T06:25:33+00:00",
+        "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+        "rejected_learning": {
+          "bad_style": "short promotional CTA",
+          "platform": "reddit"
+        },
+        "status": "rejected",
+        "target_id": "jag_lab_tokyo_transport_001",
+        "target_type": "platform_style"
+      },
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T06-25-33+00-00",
+      "title": "platform_style",
+      "unified_id": "APPROVAL-CORRECTION-0011",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-22T06:25:33+00:00",
+      "description": "This is normal chatter, not a high-value travel pain point.",
+      "market": "local",
+      "platform": "Local Runtime",
+      "queue_type": "correction",
+      "required_decisions": [
+        "approve",
+        "reject",
+        "modify"
+      ],
+      "risk_level": "medium",
+      "source": {
+        "correction_id": "correction_2026-05-22T06-25-33+00-00",
+        "created_at": "2026-05-22T06:25:33+00:00",
+        "reason": "This is normal chatter, not a high-value travel pain point.",
+        "rejected_learning": {
+          "decision": "reject",
+          "workspace": "JAG-LAB"
+        },
+        "status": "rejected",
+        "target_id": "OPP-001",
+        "target_type": "opportunity"
+      },
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T06-25-33+00-00",
+      "title": "opportunity",
+      "unified_id": "APPROVAL-CORRECTION-0012",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-22T08:35:14+00:00",
+      "description": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+      "market": "local",
+      "platform": "Local Runtime",
+      "queue_type": "correction",
+      "required_decisions": [
+        "approve",
+        "reject",
+        "modify"
+      ],
+      "risk_level": "medium",
+      "source": {
+        "correction_id": "correction_2026-05-22T08-35-14+00-00",
+        "created_at": "2026-05-22T08:35:14+00:00",
+        "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+        "rejected_learning": {
+          "bad_style": "short promotional CTA",
+          "platform": "reddit"
+        },
+        "status": "rejected",
+        "target_id": "jag_lab_tokyo_transport_001",
+        "target_type": "platform_style"
+      },
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T08-35-14+00-00",
+      "title": "platform_style",
+      "unified_id": "APPROVAL-CORRECTION-0013",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-22T08:35:14+00:00",
+      "description": "This is normal chatter, not a high-value travel pain point.",
+      "market": "local",
+      "platform": "Local Runtime",
+      "queue_type": "correction",
+      "required_decisions": [
+        "approve",
+        "reject",
+        "modify"
+      ],
+      "risk_level": "medium",
+      "source": {
+        "correction_id": "correction_2026-05-22T08-35-14+00-00",
+        "created_at": "2026-05-22T08:35:14+00:00",
+        "reason": "This is normal chatter, not a high-value travel pain point.",
+        "rejected_learning": {
+          "affected_runtime_stage": "Human Review",
+          "decision": "reject",
+          "industry_pack": "Travel Pack / Lab",
+          "workspace": "JAG-LAB"
+        },
+        "status": "rejected",
+        "target_id": "OPP-001",
+        "target_type": "opportunity"
+      },
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T08-35-14+00-00",
+      "title": "opportunity",
+      "unified_id": "APPROVAL-CORRECTION-0014",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-22T08:35:49+00:00",
+      "description": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+      "market": "local",
+      "platform": "Local Runtime",
+      "queue_type": "correction",
+      "required_decisions": [
+        "approve",
+        "reject",
+        "modify"
+      ],
+      "risk_level": "medium",
+      "source": {
+        "correction_id": "correction_2026-05-22T08-35-49+00-00",
+        "created_at": "2026-05-22T08:35:49+00:00",
+        "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+        "rejected_learning": {
+          "bad_style": "short promotional CTA",
+          "platform": "reddit"
+        },
+        "status": "rejected",
+        "target_id": "jag_lab_tokyo_transport_001",
+        "target_type": "platform_style"
+      },
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T08-35-49+00-00",
+      "title": "platform_style",
+      "unified_id": "APPROVAL-CORRECTION-0015",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-22T08:36:12+00:00",
+      "description": "TikTok emotional spam pattern is too aggressive and should not become the best style.",
+      "market": "local",
+      "platform": "Local Runtime",
+      "queue_type": "correction",
+      "required_decisions": [
+        "approve",
+        "reject",
+        "modify"
+      ],
+      "risk_level": "medium",
+      "source": {
+        "correction_id": "correction_2026-05-22T08-36-12+00-00",
+        "created_at": "2026-05-22T08:36:12+00:00",
+        "reason": "TikTok emotional spam pattern is too aggressive and should not become the best style.",
+        "rejected_learning": {
+          "affected_runtime_stage": "Human Review",
+          "decision": "reject",
+          "industry_pack": "Travel Pack / Lab",
+          "workspace": "JAG-LAB"
+        },
+        "status": "rejected",
+        "target_id": "manual_1779438972656",
+        "target_type": "错误机会判断"
+      },
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T08-36-12+00-00",
+      "title": "错误机会判断",
+      "unified_id": "APPROVAL-CORRECTION-0016",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-22T08:36:57+00:00",
+      "description": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+      "market": "local",
+      "platform": "Local Runtime",
+      "queue_type": "correction",
+      "required_decisions": [
+        "approve",
+        "reject",
+        "modify"
+      ],
+      "risk_level": "medium",
+      "source": {
+        "correction_id": "correction_2026-05-22T08-36-57+00-00",
+        "created_at": "2026-05-22T08:36:57+00:00",
+        "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+        "rejected_learning": {
+          "bad_style": "short promotional CTA",
+          "platform": "reddit"
+        },
+        "status": "rejected",
+        "target_id": "jag_lab_tokyo_transport_001",
+        "target_type": "platform_style"
+      },
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T08-36-57+00-00",
+      "title": "platform_style",
+      "unified_id": "APPROVAL-CORRECTION-0017",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-22T08:36:57+00:00",
+      "description": "This is normal chatter, not a high-value travel pain point.",
+      "market": "local",
+      "platform": "Local Runtime",
+      "queue_type": "correction",
+      "required_decisions": [
+        "approve",
+        "reject",
+        "modify"
+      ],
+      "risk_level": "medium",
+      "source": {
+        "correction_id": "correction_2026-05-22T08-36-57+00-00",
+        "created_at": "2026-05-22T08:36:57+00:00",
+        "reason": "This is normal chatter, not a high-value travel pain point.",
+        "rejected_learning": {
+          "affected_runtime_stage": "Human Review",
+          "decision": "reject",
+          "industry_pack": "Travel Pack / Lab",
+          "workspace": "JAG-LAB"
+        },
+        "status": "rejected",
+        "target_id": "OPP-001",
+        "target_type": "opportunity"
+      },
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T08-36-57+00-00",
+      "title": "opportunity",
+      "unified_id": "APPROVAL-CORRECTION-0018",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-22T08:37:06+00:00",
+      "description": "TikTok emotional spam pattern is too aggressive and should trigger platform drift review.",
+      "market": "local",
+      "platform": "Local Runtime",
+      "queue_type": "correction",
+      "required_decisions": [
+        "approve",
+        "reject",
+        "modify"
+      ],
+      "risk_level": "medium",
+      "source": {
+        "correction_id": "correction_2026-05-22T08-37-06+00-00",
+        "created_at": "2026-05-22T08:37:06+00:00",
+        "reason": "TikTok emotional spam pattern is too aggressive and should trigger platform drift review.",
+        "rejected_learning": {
+          "affected_runtime_stage": "Generate",
+          "decision": "reject",
+          "industry_pack": "Travel Pack / Lab",
+          "workspace": "JAG-LAB"
+        },
+        "status": "rejected",
+        "target_id": "UI-DRIFT-VALIDATION",
+        "target_type": "??????"
+      },
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T08-37-06+00-00",
+      "title": "??????",
+      "unified_id": "APPROVAL-CORRECTION-0019",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-22T08:38:56+00:00",
+      "description": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+      "market": "local",
+      "platform": "Local Runtime",
+      "queue_type": "correction",
+      "required_decisions": [
+        "approve",
+        "reject",
+        "modify"
+      ],
+      "risk_level": "medium",
+      "source": {
+        "correction_id": "correction_2026-05-22T08-38-56+00-00",
+        "created_at": "2026-05-22T08:38:56+00:00",
+        "reason": "训练样例：如果平台风格过度营销，必须拒绝错误学习。",
+        "rejected_learning": {
+          "bad_style": "short promotional CTA",
+          "platform": "reddit"
+        },
+        "status": "rejected",
+        "target_id": "jag_lab_tokyo_transport_001",
+        "target_type": "platform_style"
+      },
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T08-38-56+00-00",
+      "title": "platform_style",
+      "unified_id": "APPROVAL-CORRECTION-0020",
+      "workspace": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-22T08:38:56+00:00",
+      "description": "This is normal chatter, not a high-value travel pain point.",
+      "market": "local",
+      "platform": "Local Runtime",
+      "queue_type": "correction",
+      "required_decisions": [
+        "approve",
+        "reject",
+        "modify"
+      ],
+      "risk_level": "medium",
+      "source": {
+        "correction_id": "correction_2026-05-22T08-38-56+00-00",
+        "created_at": "2026-05-22T08:38:56+00:00",
+        "reason": "This is normal chatter, not a high-value travel pain point.",
+        "rejected_learning": {
+          "affected_runtime_stage": "Human Review",
+          "decision": "reject",
+          "industry_pack": "Travel Pack / Lab",
+          "workspace": "JAG-LAB"
+        },
+        "status": "rejected",
+        "target_id": "OPP-001",
+        "target_type": "opportunity"
+      },
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T08-38-56+00-00",
+      "title": "opportunity",
+      "unified_id": "APPROVAL-CORRECTION-0021",
+      "workspace": "JAG-LAB"
+    }
+  ],
+  "unifiedApprovalTimeline": [
+    {
+      "human_action_needed": false,
+      "queue_type": "correction",
+      "risk_level": "medium",
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T06-06-42+00-00",
+      "time": "2026-05-22T06:06:42+00:00",
+      "title": "platform_style",
+      "unified_id": "APPROVAL-CORRECTION-0001",
+      "why": "训练样例：如果平台风格过度营销，必须拒绝错误学习。"
+    },
+    {
+      "human_action_needed": false,
+      "queue_type": "correction",
+      "risk_level": "medium",
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T06-21-22+00-00",
+      "time": "2026-05-22T06:21:22+00:00",
+      "title": "platform_style",
+      "unified_id": "APPROVAL-CORRECTION-0002",
+      "why": "训练样例：如果平台风格过度营销，必须拒绝错误学习。"
+    },
+    {
+      "human_action_needed": false,
+      "queue_type": "correction",
+      "risk_level": "medium",
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T06-21-22+00-00",
+      "time": "2026-05-22T06:21:22+00:00",
+      "title": "opportunity",
+      "unified_id": "APPROVAL-CORRECTION-0003",
+      "why": "This is normal chatter, not a high-value travel pain point."
+    },
+    {
+      "human_action_needed": false,
+      "queue_type": "correction",
+      "risk_level": "medium",
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T06-22-18+00-00",
+      "time": "2026-05-22T06:22:18+00:00",
+      "title": "platform_style",
+      "unified_id": "APPROVAL-CORRECTION-0004",
+      "why": "训练样例：如果平台风格过度营销，必须拒绝错误学习。"
+    },
+    {
+      "human_action_needed": false,
+      "queue_type": "correction",
+      "risk_level": "medium",
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T06-23-59+00-00",
+      "time": "2026-05-22T06:23:59+00:00",
+      "title": "platform_style",
+      "unified_id": "APPROVAL-CORRECTION-0005",
+      "why": "训练样例：如果平台风格过度营销，必须拒绝错误学习。"
+    },
+    {
+      "human_action_needed": false,
+      "queue_type": "correction",
+      "risk_level": "medium",
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T06-23-59+00-00",
+      "time": "2026-05-22T06:23:59+00:00",
+      "title": "opportunity",
+      "unified_id": "APPROVAL-CORRECTION-0006",
+      "why": "This is normal chatter, not a high-value travel pain point."
+    },
+    {
+      "human_action_needed": false,
+      "queue_type": "correction",
+      "risk_level": "medium",
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T06-24-24+00-00",
+      "time": "2026-05-22T06:24:24+00:00",
+      "title": "platform_style",
+      "unified_id": "APPROVAL-CORRECTION-0007",
+      "why": "训练样例：如果平台风格过度营销，必须拒绝错误学习。"
+    },
+    {
+      "human_action_needed": false,
+      "queue_type": "correction",
+      "risk_level": "medium",
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T06-24-24+00-00",
+      "time": "2026-05-22T06:24:24+00:00",
+      "title": "opportunity",
+      "unified_id": "APPROVAL-CORRECTION-0008",
+      "why": "This is normal chatter, not a high-value travel pain point."
+    },
+    {
+      "human_action_needed": false,
+      "queue_type": "correction",
+      "risk_level": "medium",
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T06-25-19+00-00",
+      "time": "2026-05-22T06:25:19+00:00",
+      "title": "platform_style",
+      "unified_id": "APPROVAL-CORRECTION-0009",
+      "why": "训练样例：如果平台风格过度营销，必须拒绝错误学习。"
+    },
+    {
+      "human_action_needed": false,
+      "queue_type": "correction",
+      "risk_level": "medium",
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T06-25-19+00-00",
+      "time": "2026-05-22T06:25:19+00:00",
+      "title": "opportunity",
+      "unified_id": "APPROVAL-CORRECTION-0010",
+      "why": "This is normal chatter, not a high-value travel pain point."
+    },
+    {
+      "human_action_needed": false,
+      "queue_type": "correction",
+      "risk_level": "medium",
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T06-25-33+00-00",
+      "time": "2026-05-22T06:25:33+00:00",
+      "title": "platform_style",
+      "unified_id": "APPROVAL-CORRECTION-0011",
+      "why": "训练样例：如果平台风格过度营销，必须拒绝错误学习。"
+    },
+    {
+      "human_action_needed": false,
+      "queue_type": "correction",
+      "risk_level": "medium",
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T06-25-33+00-00",
+      "time": "2026-05-22T06:25:33+00:00",
+      "title": "opportunity",
+      "unified_id": "APPROVAL-CORRECTION-0012",
+      "why": "This is normal chatter, not a high-value travel pain point."
+    },
+    {
+      "human_action_needed": false,
+      "queue_type": "correction",
+      "risk_level": "medium",
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T08-35-14+00-00",
+      "time": "2026-05-22T08:35:14+00:00",
+      "title": "platform_style",
+      "unified_id": "APPROVAL-CORRECTION-0013",
+      "why": "训练样例：如果平台风格过度营销，必须拒绝错误学习。"
+    },
+    {
+      "human_action_needed": false,
+      "queue_type": "correction",
+      "risk_level": "medium",
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T08-35-14+00-00",
+      "time": "2026-05-22T08:35:14+00:00",
+      "title": "opportunity",
+      "unified_id": "APPROVAL-CORRECTION-0014",
+      "why": "This is normal chatter, not a high-value travel pain point."
+    },
+    {
+      "human_action_needed": false,
+      "queue_type": "correction",
+      "risk_level": "medium",
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T08-35-49+00-00",
+      "time": "2026-05-22T08:35:49+00:00",
+      "title": "platform_style",
+      "unified_id": "APPROVAL-CORRECTION-0015",
+      "why": "训练样例：如果平台风格过度营销，必须拒绝错误学习。"
+    },
+    {
+      "human_action_needed": false,
+      "queue_type": "correction",
+      "risk_level": "medium",
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T08-36-12+00-00",
+      "time": "2026-05-22T08:36:12+00:00",
+      "title": "错误机会判断",
+      "unified_id": "APPROVAL-CORRECTION-0016",
+      "why": "TikTok emotional spam pattern is too aggressive and should not become the best style."
+    },
+    {
+      "human_action_needed": false,
+      "queue_type": "correction",
+      "risk_level": "medium",
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T08-36-57+00-00",
+      "time": "2026-05-22T08:36:57+00:00",
+      "title": "platform_style",
+      "unified_id": "APPROVAL-CORRECTION-0017",
+      "why": "训练样例：如果平台风格过度营销，必须拒绝错误学习。"
+    },
+    {
+      "human_action_needed": false,
+      "queue_type": "correction",
+      "risk_level": "medium",
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T08-36-57+00-00",
+      "time": "2026-05-22T08:36:57+00:00",
+      "title": "opportunity",
+      "unified_id": "APPROVAL-CORRECTION-0018",
+      "why": "This is normal chatter, not a high-value travel pain point."
+    },
+    {
+      "human_action_needed": false,
+      "queue_type": "correction",
+      "risk_level": "medium",
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T08-37-06+00-00",
+      "time": "2026-05-22T08:37:06+00:00",
+      "title": "??????",
+      "unified_id": "APPROVAL-CORRECTION-0019",
+      "why": "TikTok emotional spam pattern is too aggressive and should trigger platform drift review."
+    },
+    {
+      "human_action_needed": false,
+      "queue_type": "correction",
+      "risk_level": "medium",
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T08-38-56+00-00",
+      "time": "2026-05-22T08:38:56+00:00",
+      "title": "platform_style",
+      "unified_id": "APPROVAL-CORRECTION-0020",
+      "why": "训练样例：如果平台风格过度营销，必须拒绝错误学习。"
+    },
+    {
+      "human_action_needed": false,
+      "queue_type": "correction",
+      "risk_level": "medium",
+      "status": "rejected",
+      "target_id": "correction_2026-05-22T08-38-56+00-00",
+      "time": "2026-05-22T08:38:56+00:00",
+      "title": "opportunity",
+      "unified_id": "APPROVAL-CORRECTION-0021",
+      "why": "This is normal chatter, not a high-value travel pain point."
+    },
+    {
+      "human_action_needed": true,
+      "queue_type": "action",
+      "risk_level": "medium",
+      "status": "needs_human_approval",
+      "target_id": "REC-CONTENT-001",
+      "time": "2026-05-23T00:43:48+00:00",
+      "title": "today_content",
+      "unified_id": "APPROVAL-ACTION-0001",
+      "why": "payment_decision_guidance is the strongest content signal and increase_reddit_content is the best simulated strategy."
+    },
+    {
+      "human_action_needed": true,
+      "queue_type": "action",
+      "risk_level": "medium",
+      "status": "needs_human_approval",
+      "target_id": "REC-REPLY-001",
+      "time": "2026-05-23T00:43:48+00:00",
+      "title": "today_reply",
+      "unified_id": "APPROVAL-ACTION-0002",
+      "why": "The hook make payment decision simple is currently the strongest interaction signal."
+    },
+    {
+      "human_action_needed": true,
+      "queue_type": "action",
+      "risk_level": "low",
+      "status": "needs_human_approval",
+      "target_id": "REC-PLATFORM-001",
+      "time": "2026-05-23T00:43:48+00:00",
+      "title": "today_platform",
+      "unified_id": "APPROVAL-ACTION-0003",
+      "why": "reddit is the current top platform and increase_reddit_content is the best simulated scenario."
+    },
+    {
+      "human_action_needed": true,
+      "queue_type": "action",
+      "risk_level": "medium",
+      "status": "needs_human_approval",
+      "target_id": "REC-TREND-001",
+      "time": "2026-05-23T00:43:48+00:00",
+      "title": "today_trend",
+      "unified_id": "APPROVAL-ACTION-0004",
+      "why": "Tokyo transport anxiety is the current top trend and matches the strongest content correlation."
+    }
+  ]
+}

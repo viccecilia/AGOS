@@ -14,6 +14,7 @@ from services.daily_question_import_engine import DailyQuestionImportEngine
 from services.daily_operations_report_engine import DailyOperationsReportEngine
 from services.failure_analysis_engine import FailureAnalysisEngine
 from services.growth_signal_correlation_engine import GrowthSignalCorrelationEngine
+from services.human_approval_orchestrator import HumanApprovalOrchestrator
 from services.human_feedback_learning import HumanFeedbackLearning
 from services.human_personality_training import HumanPersonalityTraining
 from services.heat_detection_engine import HeatDetectionEngine
@@ -30,6 +31,7 @@ from services.patrol_group_engine import PatrolGroupEngine
 from services.keyword_expansion_engine import KeywordExpansionEngine
 from services.runtime_drift_monitor import RuntimeDriftMonitor
 from services.runtime_engine import RuntimeEngine
+from services.runtime_correction_engine import RuntimeCorrectionEngine
 from services.runtime_persistence import RuntimePersistence
 from services.runtime_planner import RuntimePlanner
 from services.runtime_priority_engine import RuntimePriorityEngine
@@ -116,6 +118,11 @@ class RuntimeUIBridge:
         action_queue = ActionQueueEngine().build_queue(action_recommendations.get("actionRecommendations", []))
         runtime_plan = RuntimePlanner().plan()
         runtime_risk = RuntimeRiskPrediction().predict()
+        human_approval = HumanApprovalOrchestrator().orchestrate(
+            review_queue=state.get("review_queue", []),
+            action_queue=action_queue.get("actionQueue", []),
+            correction_queue=RuntimeCorrectionEngine().list(),
+        )
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -352,6 +359,10 @@ class RuntimeUIBridge:
             "runtimeRiskMatrix": runtime_risk.get("runtimeRiskMatrix", []),
             "runtimeRiskFeed": runtime_risk.get("runtimeRiskFeed", []),
             "runtimeRiskSummary": runtime_risk.get("riskSummary", {}),
+            "humanApprovalOrchestration": human_approval,
+            "unifiedApprovalQueue": human_approval.get("unifiedApprovalQueue", []),
+            "unifiedApprovalTimeline": human_approval.get("unifiedApprovalTimeline", []),
+            "approvalSummary": human_approval.get("approvalSummary", {}),
         }
 
 

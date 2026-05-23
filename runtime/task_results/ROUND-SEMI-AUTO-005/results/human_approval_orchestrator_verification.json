@@ -1,0 +1,18 @@
+{
+  "round_id": "ROUND-SEMI-AUTO-005",
+  "status": "passed",
+  "service": "services/human_approval_orchestrator.py",
+  "test": "tests/human_approval_orchestrator_smoke_test.py",
+  "outputs": [
+    "runtime/human_approval/HUMAN_APPROVAL_ORCHESTRATION_REPORT.json",
+    "runtime/human_approval/unified_approval_queue.json",
+    "runtime/human_approval/UNIFIED_APPROVAL_TIMELINE.json"
+  ],
+  "validation": [
+    "python -m compileall services tests passed",
+    "python tests\\human_approval_orchestrator_smoke_test.py passed",
+    "python tests\\war_room_runtime_ui_smoke_test.py passed",
+    "node --check extracted control center script passed"
+  ],
+  "safety_boundary": "local unified approval only; no external action"
+}
