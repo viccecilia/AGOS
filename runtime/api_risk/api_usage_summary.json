@@ -1,0 +1,83 @@
+{
+  "platform_operations": [
+    {
+      "operations": [
+        "hashtag search",
+        "keyword search",
+        "public analytics",
+        "trend search"
+      ],
+      "platform": "Reddit"
+    },
+    {
+      "operations": [
+        "hashtag search"
+      ],
+      "platform": "TikTok"
+    },
+    {
+      "operations": [
+        "public analytics"
+      ],
+      "platform": "YouTube"
+    }
+  ],
+  "repeated_queries": [
+    {
+      "count": 3,
+      "platform": "Reddit",
+      "query": "Tokyo transport anxiety"
+    }
+  ],
+  "requests_per_day": [
+    {
+      "count": 5,
+      "day_bucket": "2026-05-23",
+      "platform": "Reddit"
+    },
+    {
+      "count": 1,
+      "day_bucket": "2026-05-23",
+      "platform": "TikTok"
+    },
+    {
+      "count": 1,
+      "day_bucket": "2026-05-23",
+      "platform": "YouTube"
+    }
+  ],
+  "requests_per_hour": [
+    {
+      "count": 5,
+      "hour_bucket": "2026-05-23T10",
+      "platform": "Reddit"
+    },
+    {
+      "count": 1,
+      "hour_bucket": "2026-05-23T10",
+      "platform": "TikTok"
+    },
+    {
+      "count": 1,
+      "hour_bucket": "2026-05-23T10",
+      "platform": "YouTube"
+    }
+  ],
+  "requests_per_minute": [
+    {
+      "count": 5,
+      "minute_bucket": "2026-05-23T10:00",
+      "platform": "Reddit"
+    },
+    {
+      "count": 1,
+      "minute_bucket": "2026-05-23T10:01",
+      "platform": "TikTok"
+    },
+    {
+      "count": 1,
+      "minute_bucket": "2026-05-23T10:02",
+      "platform": "YouTube"
+    }
+  ]
+}

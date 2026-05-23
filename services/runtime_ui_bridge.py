@@ -8,6 +8,7 @@ from typing import Any
 from services.action_recommendation_engine import ActionRecommendationEngine
 from services.action_queue_engine import ActionQueueEngine
 from services.api_capability_registry import APICapabilityRegistry
+from services.api_rate_limit_guard import APIRateLimitGuard
 from services.best_answer_learning_engine import BestAnswerLearningEngine
 from services.autonomous_growth_preparation_gate import AutonomousGrowthPreparationGate
 from services.cross_platform_expansion_engine import CrossPlatformExpansionEngine
@@ -143,6 +144,7 @@ class RuntimeUIBridge:
         api_capability_registry = APICapabilityRegistry().build()
         platform_credential_vault = PlatformCredentialVault().bootstrap_sample_status()
         read_only_trends = ReadOnlyTrendConnector().read_trends()
+        api_rate_limit_guard = APIRateLimitGuard().evaluate()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -404,6 +406,10 @@ class RuntimeUIBridge:
             "platformTrends": read_only_trends.get("platformTrends", []),
             "platformTrendFeed": read_only_trends.get("platformTrendFeed", []),
             "trendConnectorSummary": read_only_trends.get("trendConnectorSummary", {}),
+            "apiRateLimitGuard": api_rate_limit_guard,
+            "apiRiskFeed": api_rate_limit_guard.get("apiRiskFeed", []),
+            "apiUsageSummary": api_rate_limit_guard.get("apiUsageSummary", {}),
+            "apiRiskSummary": api_rate_limit_guard.get("apiRiskSummary", {}),
         }
 
 

@@ -1,0 +1,56 @@
+{
+  "round_id": "ROUND-API-SCOUT-004",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "compileall",
+      "command": "python -m compileall services tests",
+      "status": "passed"
+    },
+    {
+      "name": "api_rate_limit_guard_smoke",
+      "command": "python tests\\api_rate_limit_guard_smoke_test.py",
+      "status": "passed"
+    },
+    {
+      "name": "runtime_ui_export",
+      "command": "python -c \"from services.runtime_ui_bridge import export_default_ui_state; export_default_ui_state()\"",
+      "status": "passed"
+    },
+    {
+      "name": "war_room_runtime_ui_regression",
+      "command": "python tests\\war_room_runtime_ui_smoke_test.py",
+      "status": "passed"
+    },
+    {
+      "name": "control_center_html_json_check",
+      "command": "node inline check for project-state apiRiskFeed and runtime script syntax",
+      "status": "passed"
+    },
+    {
+      "name": "browser_verification",
+      "command": "in-app browser at http://127.0.0.1:8765/project_control_center.html?runtime_ui=1#war-room-growth",
+      "status": "passed",
+      "evidence": {
+        "version": "0.1.89",
+        "round": "ROUND-API-SCOUT-004",
+        "has_api_safety_guard_panel": true,
+        "has_near_platform_risk": true,
+        "has_repeated_queries": true,
+        "has_write_operations_disabled": true
+      }
+    }
+  ],
+  "outputs": [
+    "runtime/api_risk/API_RATE_LIMIT_GUARD_REPORT.json",
+    "runtime/api_risk/api_risk_feed.json",
+    "runtime/api_risk/api_usage_summary.json"
+  ],
+  "safety": {
+    "write_operations_enabled": false,
+    "auto_posting": false,
+    "auto_reply": false,
+    "auto_follow": false,
+    "auto_dm": false
+  }
+}
