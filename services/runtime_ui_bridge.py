@@ -56,6 +56,7 @@ from services.semi_autonomous_runtime_gate import SemiAutonomousRuntimeGate
 from services.strategic_interpretation_engine import StrategicInterpretationEngine
 from services.runtime_trainer_dashboard import RuntimeTrainerDashboard
 from services.strategy_evolution_engine import StrategyEvolutionEngine
+from services.synthetic_feedback_training import SyntheticFeedbackTraining
 from services.topic_discovery_engine import TopicDiscoveryEngine
 from services.trend_clustering_engine import TrendClusteringEngine
 
@@ -163,6 +164,7 @@ class RuntimeUIBridge:
         batch_human_review = BatchHumanReview().review(batch_topic_clustering.get("batchTrendClusters", []))
         runtime_pattern_learning = RuntimePatternLearning().learn(batch_human_review.get("batchReviewQueue", []))
         runtime_replay_training = RuntimeReplayTraining().replay()
+        synthetic_feedback_training = SyntheticFeedbackTraining().generate(runtime_replay_training.get("replayMemory", []))
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -469,6 +471,10 @@ class RuntimeUIBridge:
             "replayMemory": runtime_replay_training.get("replayMemory", []),
             "runtimeReplayFeed": runtime_replay_training.get("runtimeReplayFeed", []),
             "replayTrainingSummary": runtime_replay_training.get("replayTrainingSummary", {}),
+            "syntheticFeedbackTraining": synthetic_feedback_training,
+            "syntheticTrainingDataset": synthetic_feedback_training.get("syntheticTrainingDataset", []),
+            "syntheticTrainingFeed": synthetic_feedback_training.get("syntheticTrainingFeed", []),
+            "syntheticTrainingSummary": synthetic_feedback_training.get("syntheticTrainingSummary", {}),
         }
 
 

@@ -1,0 +1,15 @@
+{
+  "high_risk_samples": 2,
+  "platform_coverage": {
+    "Reddit": 8,
+    "TikTok": 8,
+    "X": 8,
+    "YouTube": 8
+  },
+  "simulated_user_feedback": 8,
+  "simulated_user_interactions": 8,
+  "simulated_user_questions": 8,
+  "simulated_user_risks": 8,
+  "synthetic_items": 32,
+  "synthetic_training_ready": true
+}

@@ -1,0 +1,39 @@
+{
+  "round_id": "ROUND-BATCH-006",
+  "status": "passed",
+  "checks": [
+    {
+      "command": "python -m compileall services tests",
+      "status": "passed"
+    },
+    {
+      "command": "python tests\\synthetic_feedback_training_smoke_test.py",
+      "status": "passed",
+      "evidence": "synthetic_feedback_training_smoke_test passed"
+    },
+    {
+      "command": "python tests\\war_room_runtime_ui_smoke_test.py",
+      "status": "passed",
+      "evidence": "war_room_runtime_ui_smoke_test passed"
+    },
+    {
+      "command": "node project-state and runtime script check",
+      "status": "passed",
+      "evidence": "controlCenterVersion=0.1.99, syntheticItems=32, synthetic types include user_question, user_feedback, user_interaction, user_risk"
+    },
+    {
+      "command": "Browser verification",
+      "status": "passed",
+      "evidence": "Synthetic Feedback Training panel shows simulated questions, feedback, interactions, risks, and training objectives."
+    }
+  ],
+  "summary": {
+    "synthetic_items": 32,
+    "simulated_user_questions": 8,
+    "simulated_user_feedback": 8,
+    "simulated_user_interactions": 8,
+    "simulated_user_risks": 8,
+    "high_risk_samples": 2,
+    "synthetic_training_ready": true
+  }
+}
