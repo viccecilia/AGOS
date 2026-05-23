@@ -25,6 +25,7 @@ from services.personality_isolation_engine import PersonalityIsolationEngine
 from services.personality_memory_deposit import PersonalityMemoryDeposit
 from services.personality_evolution_gate import PersonalityEvolutionGate
 from services.personality_review_session import PersonalityReviewSession
+from services.platform_credential_vault import PlatformCredentialVault
 from services.real_feedback_capture_engine import RealFeedbackCaptureEngine
 from services.real_growth_validation_engine import RealGrowthValidationEngine
 from services.real_reply_attempt_engine import RealReplyAttemptEngine
@@ -139,6 +140,7 @@ class RuntimeUIBridge:
             runtime_simulation=execution_simulation,
         )
         api_capability_registry = APICapabilityRegistry().build()
+        platform_credential_vault = PlatformCredentialVault().bootstrap_sample_status()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -392,6 +394,10 @@ class RuntimeUIBridge:
             "platformApiRegistry": api_capability_registry.get("platformApiRegistry", []),
             "apiCapabilityFeed": api_capability_registry.get("apiCapabilityFeed", []),
             "apiRegistrySummary": api_capability_registry.get("apiRegistrySummary", {}),
+            "platformCredentialVault": platform_credential_vault,
+            "workspaceCredentialStatus": platform_credential_vault.get("workspaceCredentialStatus", []),
+            "credentialVaultFeed": platform_credential_vault.get("credentialVaultFeed", []),
+            "credentialVaultSummary": platform_credential_vault.get("credentialVaultSummary", {}),
         }
 
 
