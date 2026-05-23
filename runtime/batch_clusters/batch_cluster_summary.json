@@ -1,0 +1,10 @@
+{
+  "batch_clustering_ready": true,
+  "clusters_created": 5,
+  "high_emotion_clusters": 4,
+  "high_frequency_clusters": 5,
+  "high_growth_signal_clusters": 4,
+  "questions_clustered": 50,
+  "top_cluster": "Tokyo transport anxiety",
+  "top_growth_signal_score": 92
+}

@@ -13,6 +13,7 @@ from services.api_signal_normalization import APISignalNormalization
 from services.api_scout_gate import APIScoutGate
 from services.api_to_scout_pipeline import APIToScoutPipeline
 from services.batch_scout_runtime import BatchScoutRuntime
+from services.batch_topic_clustering import BatchTopicClustering
 from services.best_answer_learning_engine import BestAnswerLearningEngine
 from services.autonomous_growth_preparation_gate import AutonomousGrowthPreparationGate
 from services.cross_platform_expansion_engine import CrossPlatformExpansionEngine
@@ -155,6 +156,7 @@ class RuntimeUIBridge:
         api_scout_gate = APIScoutGate().evaluate()
         external_action_sandbox = ExternalActionSandbox().build(action_recommendations.get("actionRecommendations", []))
         batch_scout_runtime = BatchScoutRuntime().run()
+        batch_topic_clustering = BatchTopicClustering().cluster(batch_scout_runtime.get("batchAnalysis", []))
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -442,6 +444,10 @@ class RuntimeUIBridge:
             "batchAnalysis": batch_scout_runtime.get("batchAnalysis", []),
             "batchPriorityRanking": batch_scout_runtime.get("batchPriorityRanking", []),
             "batchScoutSummary": batch_scout_runtime.get("batchScoutSummary", {}),
+            "batchTopicClustering": batch_topic_clustering,
+            "batchTrendClusters": batch_topic_clustering.get("batchTrendClusters", []),
+            "batchClusterFeed": batch_topic_clustering.get("batchClusterFeed", []),
+            "batchClusterSummary": batch_topic_clustering.get("batchClusterSummary", {}),
         }
 
 

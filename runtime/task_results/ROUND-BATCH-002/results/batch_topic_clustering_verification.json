@@ -1,0 +1,60 @@
+{
+  "round_id": "ROUND-BATCH-002",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "compileall",
+      "command": "python -m compileall services tests",
+      "status": "passed"
+    },
+    {
+      "name": "batch_topic_clustering_smoke",
+      "command": "python tests\\batch_topic_clustering_smoke_test.py",
+      "status": "passed"
+    },
+    {
+      "name": "runtime_ui_export",
+      "command": "python -c \"from services.runtime_ui_bridge import export_default_ui_state; export_default_ui_state()\"",
+      "status": "passed"
+    },
+    {
+      "name": "war_room_runtime_ui_regression",
+      "command": "python tests\\war_room_runtime_ui_smoke_test.py",
+      "status": "passed"
+    },
+    {
+      "name": "control_center_html_json_check",
+      "command": "node inline check for project-state batchClusterFeed and runtime script syntax",
+      "status": "passed"
+    },
+    {
+      "name": "browser_verification",
+      "command": "in-app browser at http://127.0.0.1:8765/project_control_center.html?runtime_ui=1#war-room-growth",
+      "status": "passed",
+      "evidence": {
+        "version": "0.1.95",
+        "round": "ROUND-BATCH-002",
+        "has_batch_topic_clustering_panel": true,
+        "questions_clustered": 50,
+        "clusters_created": 5,
+        "high_frequency_clusters": 5,
+        "high_emotion_clusters": 4,
+        "high_growth_signal_clusters": 4,
+        "top_cluster": "Tokyo transport anxiety"
+      }
+    }
+  ],
+  "outputs": [
+    "runtime/batch_clusters/BATCH_TOPIC_CLUSTERING_REPORT.json",
+    "runtime/batch_clusters/batch_trend_clusters.json",
+    "runtime/batch_clusters/batch_cluster_feed.json",
+    "runtime/batch_clusters/batch_cluster_summary.json"
+  ],
+  "batch_cluster_capability": {
+    "similar_questions": true,
+    "frequent_questions": true,
+    "high_emotion_questions": true,
+    "high_growth_signals": true,
+    "batch_trend_clusters": true
+  }
+}

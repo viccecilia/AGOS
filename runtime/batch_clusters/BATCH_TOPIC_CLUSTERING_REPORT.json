@@ -1,0 +1,317 @@
+{
+  "batchClusterFeed": [
+    {
+      "category": "transport_confusion",
+      "cluster_id": "batch_cluster_transport_confusion_tokyo_transport_anxiety",
+      "cluster_name": "Tokyo transport anxiety",
+      "frequency": 10,
+      "growth_signal_score": 92,
+      "high_emotion": true,
+      "high_frequency": true,
+      "high_growth_signal": true,
+      "platforms": [
+        "Reddit"
+      ],
+      "rank": 1,
+      "recommended_cluster_action": "Prioritize Tokyo transport anxiety for batch answer branch generation and human-reviewed content planning.",
+      "status": "clustered",
+      "time": "2026-05-23T04:15:12+00:00"
+    },
+    {
+      "category": "transport_confusion",
+      "cluster_id": "batch_cluster_transport_confusion_airport_transfer_confusion",
+      "cluster_name": "Airport transfer confusion",
+      "frequency": 10,
+      "growth_signal_score": 92,
+      "high_emotion": true,
+      "high_frequency": true,
+      "high_growth_signal": true,
+      "platforms": [
+        "YouTube"
+      ],
+      "rank": 2,
+      "recommended_cluster_action": "Prioritize Airport transfer confusion for batch answer branch generation and human-reviewed content planning.",
+      "status": "clustered",
+      "time": "2026-05-23T04:15:12+00:00"
+    },
+    {
+      "category": "payment_decision",
+      "cluster_id": "batch_cluster_payment_decision_jr_pass_decision_pressure",
+      "cluster_name": "JR Pass decision pressure",
+      "frequency": 10,
+      "growth_signal_score": 89,
+      "high_emotion": true,
+      "high_frequency": true,
+      "high_growth_signal": true,
+      "platforms": [
+        "X"
+      ],
+      "rank": 3,
+      "recommended_cluster_action": "Create comparison answer branches for JR Pass decision pressure.",
+      "status": "clustered",
+      "time": "2026-05-23T04:15:12+00:00"
+    },
+    {
+      "category": "weather_fallback",
+      "cluster_id": "batch_cluster_weather_fallback_rainy_day_tokyo_plan",
+      "cluster_name": "Rainy day Tokyo plan",
+      "frequency": 10,
+      "growth_signal_score": 84,
+      "high_emotion": true,
+      "high_frequency": true,
+      "high_growth_signal": true,
+      "platforms": [
+        "Threads"
+      ],
+      "rank": 4,
+      "recommended_cluster_action": "Create contingency itinerary content for Rainy day Tokyo plan.",
+      "status": "clustered",
+      "time": "2026-05-23T04:15:12+00:00"
+    },
+    {
+      "category": "planning_overwhelm",
+      "cluster_id": "batch_cluster_planning_overwhelm_japan_itinerary_overwhelm",
+      "cluster_name": "Japan itinerary overwhelm",
+      "frequency": 10,
+      "growth_signal_score": 71,
+      "high_emotion": false,
+      "high_frequency": true,
+      "high_growth_signal": false,
+      "platforms": [
+        "TikTok"
+      ],
+      "rank": 5,
+      "recommended_cluster_action": "Keep clustering Japan itinerary overwhelm until stronger growth evidence appears.",
+      "status": "clustered",
+      "time": "2026-05-23T04:15:12+00:00"
+    }
+  ],
+  "batchClusterSummary": {
+    "batch_clustering_ready": true,
+    "clusters_created": 5,
+    "high_emotion_clusters": 4,
+    "high_frequency_clusters": 5,
+    "high_growth_signal_clusters": 4,
+    "questions_clustered": 50,
+    "top_cluster": "Tokyo transport anxiety",
+    "top_growth_signal_score": 92
+  },
+  "batchTrendClusters": [
+    {
+      "avg_priority_score": 100.0,
+      "category": "transport_confusion",
+      "cluster_id": "batch_cluster_transport_confusion_tokyo_transport_anxiety",
+      "cluster_name": "Tokyo transport anxiety",
+      "critical_questions": 10,
+      "dominant_emotions": [
+        "anxiety"
+      ],
+      "frequency": 10,
+      "growth_signal_score": 92,
+      "high_emotion": true,
+      "high_frequency": true,
+      "high_growth_signal": true,
+      "platforms": [
+        "Reddit"
+      ],
+      "rank": 1,
+      "recommended_cluster_action": "Prioritize Tokyo transport anxiety for batch answer branch generation and human-reviewed content planning.",
+      "sample_questions": [
+        "Tokyo subway confusing for first time Japan trip. How do I avoid getting lost?",
+        "Tokyo subway confusing for first time Japan trip. How do I avoid getting lost?",
+        "Tokyo subway confusing for first time Japan trip. How do I avoid getting lost?",
+        "Tokyo subway confusing for first time Japan trip. How do I avoid getting lost?",
+        "Tokyo subway confusing for first time Japan trip. How do I avoid getting lost?"
+      ],
+      "similar_question_count": 10,
+      "source_question_ids": [
+        "BATCH-Q-0001",
+        "BATCH-Q-0006",
+        "BATCH-Q-0011",
+        "BATCH-Q-0016",
+        "BATCH-Q-0021",
+        "BATCH-Q-0026",
+        "BATCH-Q-0031",
+        "BATCH-Q-0036",
+        "BATCH-Q-0041",
+        "BATCH-Q-0046"
+      ],
+      "status": "clustered"
+    },
+    {
+      "avg_priority_score": 100.0,
+      "category": "transport_confusion",
+      "cluster_id": "batch_cluster_transport_confusion_airport_transfer_confusion",
+      "cluster_name": "Airport transfer confusion",
+      "critical_questions": 10,
+      "dominant_emotions": [
+        "anxiety"
+      ],
+      "frequency": 10,
+      "growth_signal_score": 92,
+      "high_emotion": true,
+      "high_frequency": true,
+      "high_growth_signal": true,
+      "platforms": [
+        "YouTube"
+      ],
+      "rank": 2,
+      "recommended_cluster_action": "Prioritize Airport transfer confusion for batch answer branch generation and human-reviewed content planning.",
+      "sample_questions": [
+        "Narita to Tokyo transfer looks stressful and I am worried about choosing wrong.",
+        "Narita to Tokyo transfer looks stressful and I am worried about choosing wrong.",
+        "Narita to Tokyo transfer looks stressful and I am worried about choosing wrong.",
+        "Narita to Tokyo transfer looks stressful and I am worried about choosing wrong.",
+        "Narita to Tokyo transfer looks stressful and I am worried about choosing wrong."
+      ],
+      "similar_question_count": 10,
+      "source_question_ids": [
+        "BATCH-Q-0003",
+        "BATCH-Q-0008",
+        "BATCH-Q-0013",
+        "BATCH-Q-0018",
+        "BATCH-Q-0023",
+        "BATCH-Q-0028",
+        "BATCH-Q-0033",
+        "BATCH-Q-0038",
+        "BATCH-Q-0043",
+        "BATCH-Q-0048"
+      ],
+      "status": "clustered"
+    },
+    {
+      "avg_priority_score": 91.0,
+      "category": "payment_decision",
+      "cluster_id": "batch_cluster_payment_decision_jr_pass_decision_pressure",
+      "cluster_name": "JR Pass decision pressure",
+      "critical_questions": 10,
+      "dominant_emotions": [
+        "decision_pressure"
+      ],
+      "frequency": 10,
+      "growth_signal_score": 89,
+      "high_emotion": true,
+      "high_frequency": true,
+      "high_growth_signal": true,
+      "platforms": [
+        "X"
+      ],
+      "rank": 3,
+      "recommended_cluster_action": "Create comparison answer branches for JR Pass decision pressure.",
+      "sample_questions": [
+        "Is JR Pass worth it after the price increase or should I use IC cards?",
+        "Is JR Pass worth it after the price increase or should I use IC cards?",
+        "Is JR Pass worth it after the price increase or should I use IC cards?",
+        "Is JR Pass worth it after the price increase or should I use IC cards?",
+        "Is JR Pass worth it after the price increase or should I use IC cards?"
+      ],
+      "similar_question_count": 10,
+      "source_question_ids": [
+        "BATCH-Q-0004",
+        "BATCH-Q-0009",
+        "BATCH-Q-0014",
+        "BATCH-Q-0019",
+        "BATCH-Q-0024",
+        "BATCH-Q-0029",
+        "BATCH-Q-0034",
+        "BATCH-Q-0039",
+        "BATCH-Q-0044",
+        "BATCH-Q-0049"
+      ],
+      "status": "clustered"
+    },
+    {
+      "avg_priority_score": 76.0,
+      "category": "weather_fallback",
+      "cluster_id": "batch_cluster_weather_fallback_rainy_day_tokyo_plan",
+      "cluster_name": "Rainy day Tokyo plan",
+      "critical_questions": 0,
+      "dominant_emotions": [
+        "frustration"
+      ],
+      "frequency": 10,
+      "growth_signal_score": 84,
+      "high_emotion": true,
+      "high_frequency": true,
+      "high_growth_signal": true,
+      "platforms": [
+        "Threads"
+      ],
+      "rank": 4,
+      "recommended_cluster_action": "Create contingency itinerary content for Rainy day Tokyo plan.",
+      "sample_questions": [
+        "What should I do in Tokyo if heavy rain ruins my plan?",
+        "What should I do in Tokyo if heavy rain ruins my plan?",
+        "What should I do in Tokyo if heavy rain ruins my plan?",
+        "What should I do in Tokyo if heavy rain ruins my plan?",
+        "What should I do in Tokyo if heavy rain ruins my plan?"
+      ],
+      "similar_question_count": 10,
+      "source_question_ids": [
+        "BATCH-Q-0005",
+        "BATCH-Q-0010",
+        "BATCH-Q-0015",
+        "BATCH-Q-0020",
+        "BATCH-Q-0025",
+        "BATCH-Q-0030",
+        "BATCH-Q-0035",
+        "BATCH-Q-0040",
+        "BATCH-Q-0045",
+        "BATCH-Q-0050"
+      ],
+      "status": "clustered"
+    },
+    {
+      "avg_priority_score": 83.0,
+      "category": "planning_overwhelm",
+      "cluster_id": "batch_cluster_planning_overwhelm_japan_itinerary_overwhelm",
+      "cluster_name": "Japan itinerary overwhelm",
+      "critical_questions": 0,
+      "dominant_emotions": [
+        "uncertainty"
+      ],
+      "frequency": 10,
+      "growth_signal_score": 71,
+      "high_emotion": false,
+      "high_frequency": true,
+      "high_growth_signal": false,
+      "platforms": [
+        "TikTok"
+      ],
+      "rank": 5,
+      "recommended_cluster_action": "Keep clustering Japan itinerary overwhelm until stronger growth evidence appears.",
+      "sample_questions": [
+        "I have too many Japan itinerary options and do not know what to choose.",
+        "I have too many Japan itinerary options and do not know what to choose.",
+        "I have too many Japan itinerary options and do not know what to choose.",
+        "I have too many Japan itinerary options and do not know what to choose.",
+        "I have too many Japan itinerary options and do not know what to choose."
+      ],
+      "similar_question_count": 10,
+      "source_question_ids": [
+        "BATCH-Q-0002",
+        "BATCH-Q-0007",
+        "BATCH-Q-0012",
+        "BATCH-Q-0017",
+        "BATCH-Q-0022",
+        "BATCH-Q-0027",
+        "BATCH-Q-0032",
+        "BATCH-Q-0037",
+        "BATCH-Q-0042",
+        "BATCH-Q-0047"
+      ],
+      "status": "clustered"
+    }
+  ],
+  "clusterDimensions": [
+    "similar_questions",
+    "frequent_questions",
+    "high_emotion_questions",
+    "high_growth_signals"
+  ],
+  "created_at": "2026-05-23T04:15:12+00:00",
+  "report_id": "BATCH_TOPIC_CLUSTERING_REPORT",
+  "safetyBoundary": "Batch Topic Clustering uses local batch analysis only. It does not post, reply, follow, DM, log in, register accounts, or call external write APIs.",
+  "scope": "local_batch_topic_clustering",
+  "status": "batch_clusters_ready"
+}

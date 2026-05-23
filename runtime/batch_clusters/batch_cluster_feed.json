@@ -1,0 +1,87 @@
+[
+  {
+    "category": "transport_confusion",
+    "cluster_id": "batch_cluster_transport_confusion_tokyo_transport_anxiety",
+    "cluster_name": "Tokyo transport anxiety",
+    "frequency": 10,
+    "growth_signal_score": 92,
+    "high_emotion": true,
+    "high_frequency": true,
+    "high_growth_signal": true,
+    "platforms": [
+      "Reddit"
+    ],
+    "rank": 1,
+    "recommended_cluster_action": "Prioritize Tokyo transport anxiety for batch answer branch generation and human-reviewed content planning.",
+    "status": "clustered",
+    "time": "2026-05-23T04:15:12+00:00"
+  },
+  {
+    "category": "transport_confusion",
+    "cluster_id": "batch_cluster_transport_confusion_airport_transfer_confusion",
+    "cluster_name": "Airport transfer confusion",
+    "frequency": 10,
+    "growth_signal_score": 92,
+    "high_emotion": true,
+    "high_frequency": true,
+    "high_growth_signal": true,
+    "platforms": [
+      "YouTube"
+    ],
+    "rank": 2,
+    "recommended_cluster_action": "Prioritize Airport transfer confusion for batch answer branch generation and human-reviewed content planning.",
+    "status": "clustered",
+    "time": "2026-05-23T04:15:12+00:00"
+  },
+  {
+    "category": "payment_decision",
+    "cluster_id": "batch_cluster_payment_decision_jr_pass_decision_pressure",
+    "cluster_name": "JR Pass decision pressure",
+    "frequency": 10,
+    "growth_signal_score": 89,
+    "high_emotion": true,
+    "high_frequency": true,
+    "high_growth_signal": true,
+    "platforms": [
+      "X"
+    ],
+    "rank": 3,
+    "recommended_cluster_action": "Create comparison answer branches for JR Pass decision pressure.",
+    "status": "clustered",
+    "time": "2026-05-23T04:15:12+00:00"
+  },
+  {
+    "category": "weather_fallback",
+    "cluster_id": "batch_cluster_weather_fallback_rainy_day_tokyo_plan",
+    "cluster_name": "Rainy day Tokyo plan",
+    "frequency": 10,
+    "growth_signal_score": 84,
+    "high_emotion": true,
+    "high_frequency": true,
+    "high_growth_signal": true,
+    "platforms": [
+      "Threads"
+    ],
+    "rank": 4,
+    "recommended_cluster_action": "Create contingency itinerary content for Rainy day Tokyo plan.",
+    "status": "clustered",
+    "time": "2026-05-23T04:15:12+00:00"
+  },
+  {
+    "category": "planning_overwhelm",
+    "cluster_id": "batch_cluster_planning_overwhelm_japan_itinerary_overwhelm",
+    "cluster_name": "Japan itinerary overwhelm",
+    "frequency": 10,
+    "growth_signal_score": 71,
+    "high_emotion": false,
+    "high_frequency": true,
+    "high_growth_signal": false,
+    "platforms": [
+      "TikTok"
+    ],
+    "rank": 5,
+    "recommended_cluster_action": "Keep clustering Japan itinerary overwhelm until stronger growth evidence appears.",
+    "status": "clustered",
+    "time": "2026-05-23T04:15:12+00:00"
+  }
+]
