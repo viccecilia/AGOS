@@ -1,0 +1,19 @@
+{
+  "round_id": "ROUND-SEMI-AUTO-002",
+  "status": "passed",
+  "artifacts": [
+    "runtime/action_queue/ACTION_QUEUE_REPORT.json",
+    "runtime/action_queue/action_queue.json",
+    "runtime/action_queue/human_action_decisions.json"
+  ],
+  "checks": [
+    "recommendations_enter_needs_human_approval",
+    "approve_supported",
+    "reject_supported",
+    "modify_supported",
+    "postpone_supported",
+    "human_action_decisions_recorded",
+    "no_external_action_executed"
+  ],
+  "safety_boundary": "local approval queue only; no autonomous platform execution"
+}

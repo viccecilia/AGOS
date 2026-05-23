@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import Any
 
 from services.action_recommendation_engine import ActionRecommendationEngine
+from services.action_queue_engine import ActionQueueEngine
 from services.best_answer_learning_engine import BestAnswerLearningEngine
 from services.autonomous_growth_preparation_gate import AutonomousGrowthPreparationGate
 from services.cross_platform_expansion_engine import CrossPlatformExpansionEngine
@@ -110,6 +111,7 @@ class RuntimeUIBridge:
         runtime_strategy_simulation = RuntimeStrategySimulation().simulate()
         autonomous_growth_preparation_gate = AutonomousGrowthPreparationGate().evaluate()
         action_recommendations = ActionRecommendationEngine().recommend()
+        action_queue = ActionQueueEngine().build_queue(action_recommendations.get("actionRecommendations", []))
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -330,6 +332,11 @@ class RuntimeUIBridge:
             "actionRecommendations": action_recommendations.get("actionRecommendations", []),
             "actionRecommendationFeed": action_recommendations.get("actionRecommendationFeed", []),
             "recommendationSummary": action_recommendations.get("recommendationSummary", {}),
+            "actionQueueReport": action_queue,
+            "actionQueue": action_queue.get("actionQueue", []),
+            "humanActionDecisions": action_queue.get("humanActionDecisions", []),
+            "actionQueueFeed": action_queue.get("actionQueueFeed", []),
+            "actionQueueSummary": action_queue.get("actionQueueSummary", {}),
         }
 
 
