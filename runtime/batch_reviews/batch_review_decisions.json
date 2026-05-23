@@ -1,0 +1,52 @@
+[
+  {
+    "cluster_id": "batch_cluster_transport_confusion_tokyo_transport_anxiety",
+    "created_at": "2026-05-23T04:22:14+00:00",
+    "decision": "approve",
+    "human_modified_cluster_name": "",
+    "human_note": "Keep Tokyo transport anxiety as a high-value batch training signal.",
+    "label": "high_value",
+    "review_id": "BATCH-REVIEW-0001",
+    "training_signal": "positive_batch_training_signal"
+  },
+  {
+    "cluster_id": "batch_cluster_transport_confusion_airport_transfer_confusion",
+    "created_at": "2026-05-23T04:22:14+00:00",
+    "decision": "classify",
+    "human_modified_cluster_name": "",
+    "human_note": "Classify Airport transfer confusion as low-value until stronger growth evidence appears.",
+    "label": "low_value",
+    "review_id": "BATCH-REVIEW-0002",
+    "training_signal": "classification_training_signal"
+  },
+  {
+    "cluster_id": "batch_cluster_payment_decision_jr_pass_decision_pressure",
+    "created_at": "2026-05-23T04:22:14+00:00",
+    "decision": "modify",
+    "human_modified_cluster_name": "JR Pass decision pressure - human refined angle",
+    "human_note": "Keep the signal from JR Pass decision pressure, but reduce over-marketing before using it.",
+    "label": "over_marketing",
+    "review_id": "BATCH-REVIEW-0003",
+    "training_signal": "human_refined_training_signal"
+  },
+  {
+    "cluster_id": "batch_cluster_weather_fallback_rainy_day_tokyo_plan",
+    "created_at": "2026-05-23T04:22:14+00:00",
+    "decision": "reject",
+    "human_modified_cluster_name": "",
+    "human_note": "Reject Rainy day Tokyo plan because it looks like weak or spam-like training data.",
+    "label": "spam",
+    "review_id": "BATCH-REVIEW-0004",
+    "training_signal": "negative_training_signal_spam"
+  },
+  {
+    "cluster_id": "batch_cluster_planning_overwhelm_japan_itinerary_overwhelm",
+    "created_at": "2026-05-23T04:22:14+00:00",
+    "decision": "reject",
+    "human_modified_cluster_name": "",
+    "human_note": "Reject Japan itinerary overwhelm because the cluster needs safety review before training.",
+    "label": "dangerous",
+    "review_id": "BATCH-REVIEW-0005",
+    "training_signal": "negative_training_signal_dangerous"
+  }
+]

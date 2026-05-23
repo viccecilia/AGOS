@@ -1,0 +1,47 @@
+[
+  {
+    "applies_to": "batch_topic_cluster",
+    "cluster_id": "batch_cluster_transport_confusion_tokyo_transport_anxiety",
+    "decision": "approve",
+    "label": "high_value",
+    "label_id": "BATCH-LABEL-0001",
+    "risk_flag": "low",
+    "training_signal": "positive_batch_training_signal"
+  },
+  {
+    "applies_to": "batch_topic_cluster",
+    "cluster_id": "batch_cluster_transport_confusion_airport_transfer_confusion",
+    "decision": "classify",
+    "label": "low_value",
+    "label_id": "BATCH-LABEL-0002",
+    "risk_flag": "watch",
+    "training_signal": "classification_training_signal"
+  },
+  {
+    "applies_to": "batch_topic_cluster",
+    "cluster_id": "batch_cluster_payment_decision_jr_pass_decision_pressure",
+    "decision": "modify",
+    "label": "over_marketing",
+    "label_id": "BATCH-LABEL-0003",
+    "risk_flag": "needs_tone_correction",
+    "training_signal": "human_refined_training_signal"
+  },
+  {
+    "applies_to": "batch_topic_cluster",
+    "cluster_id": "batch_cluster_weather_fallback_rainy_day_tokyo_plan",
+    "decision": "reject",
+    "label": "spam",
+    "label_id": "BATCH-LABEL-0004",
+    "risk_flag": "blocked",
+    "training_signal": "negative_training_signal_spam"
+  },
+  {
+    "applies_to": "batch_topic_cluster",
+    "cluster_id": "batch_cluster_planning_overwhelm_japan_itinerary_overwhelm",
+    "decision": "reject",
+    "label": "dangerous",
+    "label_id": "BATCH-LABEL-0005",
+    "risk_flag": "blocked",
+    "training_signal": "negative_training_signal_dangerous"
+  }
+]

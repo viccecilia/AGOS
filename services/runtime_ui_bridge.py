@@ -12,6 +12,7 @@ from services.api_rate_limit_guard import APIRateLimitGuard
 from services.api_signal_normalization import APISignalNormalization
 from services.api_scout_gate import APIScoutGate
 from services.api_to_scout_pipeline import APIToScoutPipeline
+from services.batch_human_review import BatchHumanReview
 from services.batch_scout_runtime import BatchScoutRuntime
 from services.batch_topic_clustering import BatchTopicClustering
 from services.best_answer_learning_engine import BestAnswerLearningEngine
@@ -157,6 +158,7 @@ class RuntimeUIBridge:
         external_action_sandbox = ExternalActionSandbox().build(action_recommendations.get("actionRecommendations", []))
         batch_scout_runtime = BatchScoutRuntime().run()
         batch_topic_clustering = BatchTopicClustering().cluster(batch_scout_runtime.get("batchAnalysis", []))
+        batch_human_review = BatchHumanReview().review(batch_topic_clustering.get("batchTrendClusters", []))
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -448,6 +450,12 @@ class RuntimeUIBridge:
             "batchTrendClusters": batch_topic_clustering.get("batchTrendClusters", []),
             "batchClusterFeed": batch_topic_clustering.get("batchClusterFeed", []),
             "batchClusterSummary": batch_topic_clustering.get("batchClusterSummary", {}),
+            "batchHumanReview": batch_human_review,
+            "batchReviewQueue": batch_human_review.get("batchReviewQueue", []),
+            "batchReviewDecisions": batch_human_review.get("batchReviewDecisions", []),
+            "batchTrainingLabels": batch_human_review.get("batchTrainingLabels", []),
+            "batchReviewFeed": batch_human_review.get("batchReviewFeed", []),
+            "batchHumanReviewSummary": batch_human_review.get("batchHumanReviewSummary", {}),
         }
 
 

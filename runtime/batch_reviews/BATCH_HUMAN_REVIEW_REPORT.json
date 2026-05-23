@@ -1,0 +1,327 @@
+{
+  "batchHumanReviewSummary": {
+    "approve_count": 1,
+    "batch_training_ready": true,
+    "classify_count": 1,
+    "dangerous_count": 1,
+    "high_value_count": 1,
+    "human_gate_required": true,
+    "low_value_count": 1,
+    "modify_count": 1,
+    "over_marketing_count": 1,
+    "reject_count": 2,
+    "review_items": 5,
+    "spam_count": 1
+  },
+  "batchReviewDecisions": [
+    {
+      "cluster_id": "batch_cluster_transport_confusion_tokyo_transport_anxiety",
+      "created_at": "2026-05-23T04:22:14+00:00",
+      "decision": "approve",
+      "human_modified_cluster_name": "",
+      "human_note": "Keep Tokyo transport anxiety as a high-value batch training signal.",
+      "label": "high_value",
+      "review_id": "BATCH-REVIEW-0001",
+      "training_signal": "positive_batch_training_signal"
+    },
+    {
+      "cluster_id": "batch_cluster_transport_confusion_airport_transfer_confusion",
+      "created_at": "2026-05-23T04:22:14+00:00",
+      "decision": "classify",
+      "human_modified_cluster_name": "",
+      "human_note": "Classify Airport transfer confusion as low-value until stronger growth evidence appears.",
+      "label": "low_value",
+      "review_id": "BATCH-REVIEW-0002",
+      "training_signal": "classification_training_signal"
+    },
+    {
+      "cluster_id": "batch_cluster_payment_decision_jr_pass_decision_pressure",
+      "created_at": "2026-05-23T04:22:14+00:00",
+      "decision": "modify",
+      "human_modified_cluster_name": "JR Pass decision pressure - human refined angle",
+      "human_note": "Keep the signal from JR Pass decision pressure, but reduce over-marketing before using it.",
+      "label": "over_marketing",
+      "review_id": "BATCH-REVIEW-0003",
+      "training_signal": "human_refined_training_signal"
+    },
+    {
+      "cluster_id": "batch_cluster_weather_fallback_rainy_day_tokyo_plan",
+      "created_at": "2026-05-23T04:22:14+00:00",
+      "decision": "reject",
+      "human_modified_cluster_name": "",
+      "human_note": "Reject Rainy day Tokyo plan because it looks like weak or spam-like training data.",
+      "label": "spam",
+      "review_id": "BATCH-REVIEW-0004",
+      "training_signal": "negative_training_signal_spam"
+    },
+    {
+      "cluster_id": "batch_cluster_planning_overwhelm_japan_itinerary_overwhelm",
+      "created_at": "2026-05-23T04:22:14+00:00",
+      "decision": "reject",
+      "human_modified_cluster_name": "",
+      "human_note": "Reject Japan itinerary overwhelm because the cluster needs safety review before training.",
+      "label": "dangerous",
+      "review_id": "BATCH-REVIEW-0005",
+      "training_signal": "negative_training_signal_dangerous"
+    }
+  ],
+  "batchReviewFeed": [
+    {
+      "category": "transport_confusion",
+      "cluster_id": "batch_cluster_transport_confusion_tokyo_transport_anxiety",
+      "cluster_name": "Tokyo transport anxiety",
+      "decision": "approve",
+      "human_gate_status": "completed",
+      "human_modified_cluster_name": "",
+      "human_note": "Keep Tokyo transport anxiety as a high-value batch training signal.",
+      "label": "high_value",
+      "question_count": 10,
+      "review_id": "BATCH-REVIEW-0001",
+      "risk_flag": "low",
+      "time": "2026-05-23T04:22:14+00:00",
+      "training_signal": "positive_batch_training_signal"
+    },
+    {
+      "category": "transport_confusion",
+      "cluster_id": "batch_cluster_transport_confusion_airport_transfer_confusion",
+      "cluster_name": "Airport transfer confusion",
+      "decision": "classify",
+      "human_gate_status": "completed",
+      "human_modified_cluster_name": "",
+      "human_note": "Classify Airport transfer confusion as low-value until stronger growth evidence appears.",
+      "label": "low_value",
+      "question_count": 10,
+      "review_id": "BATCH-REVIEW-0002",
+      "risk_flag": "watch",
+      "time": "2026-05-23T04:22:14+00:00",
+      "training_signal": "classification_training_signal"
+    },
+    {
+      "category": "payment_decision",
+      "cluster_id": "batch_cluster_payment_decision_jr_pass_decision_pressure",
+      "cluster_name": "JR Pass decision pressure",
+      "decision": "modify",
+      "human_gate_status": "completed",
+      "human_modified_cluster_name": "JR Pass decision pressure - human refined angle",
+      "human_note": "Keep the signal from JR Pass decision pressure, but reduce over-marketing before using it.",
+      "label": "over_marketing",
+      "question_count": 10,
+      "review_id": "BATCH-REVIEW-0003",
+      "risk_flag": "needs_tone_correction",
+      "time": "2026-05-23T04:22:14+00:00",
+      "training_signal": "human_refined_training_signal"
+    },
+    {
+      "category": "weather_fallback",
+      "cluster_id": "batch_cluster_weather_fallback_rainy_day_tokyo_plan",
+      "cluster_name": "Rainy day Tokyo plan",
+      "decision": "reject",
+      "human_gate_status": "completed",
+      "human_modified_cluster_name": "",
+      "human_note": "Reject Rainy day Tokyo plan because it looks like weak or spam-like training data.",
+      "label": "spam",
+      "question_count": 10,
+      "review_id": "BATCH-REVIEW-0004",
+      "risk_flag": "blocked",
+      "time": "2026-05-23T04:22:14+00:00",
+      "training_signal": "negative_training_signal_spam"
+    },
+    {
+      "category": "planning_overwhelm",
+      "cluster_id": "batch_cluster_planning_overwhelm_japan_itinerary_overwhelm",
+      "cluster_name": "Japan itinerary overwhelm",
+      "decision": "reject",
+      "human_gate_status": "completed",
+      "human_modified_cluster_name": "",
+      "human_note": "Reject Japan itinerary overwhelm because the cluster needs safety review before training.",
+      "label": "dangerous",
+      "question_count": 10,
+      "review_id": "BATCH-REVIEW-0005",
+      "risk_flag": "blocked",
+      "time": "2026-05-23T04:22:14+00:00",
+      "training_signal": "negative_training_signal_dangerous"
+    }
+  ],
+  "batchReviewQueue": [
+    {
+      "ai_recommendation": "Prioritize Tokyo transport anxiety for batch answer branch generation and human-reviewed content planning.",
+      "category": "transport_confusion",
+      "cluster_id": "batch_cluster_transport_confusion_tokyo_transport_anxiety",
+      "cluster_name": "Tokyo transport anxiety",
+      "created_at": "2026-05-23T04:22:14+00:00",
+      "decision": "approve",
+      "growth_signal_score": 92,
+      "human_gate_status": "completed",
+      "human_modified_cluster_name": "",
+      "human_note": "Keep Tokyo transport anxiety as a high-value batch training signal.",
+      "label": "high_value",
+      "question_count": 10,
+      "review_id": "BATCH-REVIEW-0001",
+      "review_status": "reviewed",
+      "risk_flag": "low",
+      "sample_questions": [
+        "Tokyo subway confusing for first time Japan trip. How do I avoid getting lost?",
+        "Tokyo subway confusing for first time Japan trip. How do I avoid getting lost?",
+        "Tokyo subway confusing for first time Japan trip. How do I avoid getting lost?"
+      ],
+      "training_signal": "positive_batch_training_signal"
+    },
+    {
+      "ai_recommendation": "Prioritize Airport transfer confusion for batch answer branch generation and human-reviewed content planning.",
+      "category": "transport_confusion",
+      "cluster_id": "batch_cluster_transport_confusion_airport_transfer_confusion",
+      "cluster_name": "Airport transfer confusion",
+      "created_at": "2026-05-23T04:22:14+00:00",
+      "decision": "classify",
+      "growth_signal_score": 92,
+      "human_gate_status": "completed",
+      "human_modified_cluster_name": "",
+      "human_note": "Classify Airport transfer confusion as low-value until stronger growth evidence appears.",
+      "label": "low_value",
+      "question_count": 10,
+      "review_id": "BATCH-REVIEW-0002",
+      "review_status": "reviewed",
+      "risk_flag": "watch",
+      "sample_questions": [
+        "Narita to Tokyo transfer looks stressful and I am worried about choosing wrong.",
+        "Narita to Tokyo transfer looks stressful and I am worried about choosing wrong.",
+        "Narita to Tokyo transfer looks stressful and I am worried about choosing wrong."
+      ],
+      "training_signal": "classification_training_signal"
+    },
+    {
+      "ai_recommendation": "Create comparison answer branches for JR Pass decision pressure.",
+      "category": "payment_decision",
+      "cluster_id": "batch_cluster_payment_decision_jr_pass_decision_pressure",
+      "cluster_name": "JR Pass decision pressure",
+      "created_at": "2026-05-23T04:22:14+00:00",
+      "decision": "modify",
+      "growth_signal_score": 89,
+      "human_gate_status": "completed",
+      "human_modified_cluster_name": "JR Pass decision pressure - human refined angle",
+      "human_note": "Keep the signal from JR Pass decision pressure, but reduce over-marketing before using it.",
+      "label": "over_marketing",
+      "question_count": 10,
+      "review_id": "BATCH-REVIEW-0003",
+      "review_status": "reviewed",
+      "risk_flag": "needs_tone_correction",
+      "sample_questions": [
+        "Is JR Pass worth it after the price increase or should I use IC cards?",
+        "Is JR Pass worth it after the price increase or should I use IC cards?",
+        "Is JR Pass worth it after the price increase or should I use IC cards?"
+      ],
+      "training_signal": "human_refined_training_signal"
+    },
+    {
+      "ai_recommendation": "Create contingency itinerary content for Rainy day Tokyo plan.",
+      "category": "weather_fallback",
+      "cluster_id": "batch_cluster_weather_fallback_rainy_day_tokyo_plan",
+      "cluster_name": "Rainy day Tokyo plan",
+      "created_at": "2026-05-23T04:22:14+00:00",
+      "decision": "reject",
+      "growth_signal_score": 84,
+      "human_gate_status": "completed",
+      "human_modified_cluster_name": "",
+      "human_note": "Reject Rainy day Tokyo plan because it looks like weak or spam-like training data.",
+      "label": "spam",
+      "question_count": 10,
+      "review_id": "BATCH-REVIEW-0004",
+      "review_status": "reviewed",
+      "risk_flag": "blocked",
+      "sample_questions": [
+        "What should I do in Tokyo if heavy rain ruins my plan?",
+        "What should I do in Tokyo if heavy rain ruins my plan?",
+        "What should I do in Tokyo if heavy rain ruins my plan?"
+      ],
+      "training_signal": "negative_training_signal_spam"
+    },
+    {
+      "ai_recommendation": "Keep clustering Japan itinerary overwhelm until stronger growth evidence appears.",
+      "category": "planning_overwhelm",
+      "cluster_id": "batch_cluster_planning_overwhelm_japan_itinerary_overwhelm",
+      "cluster_name": "Japan itinerary overwhelm",
+      "created_at": "2026-05-23T04:22:14+00:00",
+      "decision": "reject",
+      "growth_signal_score": 71,
+      "human_gate_status": "completed",
+      "human_modified_cluster_name": "",
+      "human_note": "Reject Japan itinerary overwhelm because the cluster needs safety review before training.",
+      "label": "dangerous",
+      "question_count": 10,
+      "review_id": "BATCH-REVIEW-0005",
+      "review_status": "reviewed",
+      "risk_flag": "blocked",
+      "sample_questions": [
+        "I have too many Japan itinerary options and do not know what to choose.",
+        "I have too many Japan itinerary options and do not know what to choose.",
+        "I have too many Japan itinerary options and do not know what to choose."
+      ],
+      "training_signal": "negative_training_signal_dangerous"
+    }
+  ],
+  "batchTrainingLabels": [
+    {
+      "applies_to": "batch_topic_cluster",
+      "cluster_id": "batch_cluster_transport_confusion_tokyo_transport_anxiety",
+      "decision": "approve",
+      "label": "high_value",
+      "label_id": "BATCH-LABEL-0001",
+      "risk_flag": "low",
+      "training_signal": "positive_batch_training_signal"
+    },
+    {
+      "applies_to": "batch_topic_cluster",
+      "cluster_id": "batch_cluster_transport_confusion_airport_transfer_confusion",
+      "decision": "classify",
+      "label": "low_value",
+      "label_id": "BATCH-LABEL-0002",
+      "risk_flag": "watch",
+      "training_signal": "classification_training_signal"
+    },
+    {
+      "applies_to": "batch_topic_cluster",
+      "cluster_id": "batch_cluster_payment_decision_jr_pass_decision_pressure",
+      "decision": "modify",
+      "label": "over_marketing",
+      "label_id": "BATCH-LABEL-0003",
+      "risk_flag": "needs_tone_correction",
+      "training_signal": "human_refined_training_signal"
+    },
+    {
+      "applies_to": "batch_topic_cluster",
+      "cluster_id": "batch_cluster_weather_fallback_rainy_day_tokyo_plan",
+      "decision": "reject",
+      "label": "spam",
+      "label_id": "BATCH-LABEL-0004",
+      "risk_flag": "blocked",
+      "training_signal": "negative_training_signal_spam"
+    },
+    {
+      "applies_to": "batch_topic_cluster",
+      "cluster_id": "batch_cluster_planning_overwhelm_japan_itinerary_overwhelm",
+      "decision": "reject",
+      "label": "dangerous",
+      "label_id": "BATCH-LABEL-0005",
+      "risk_flag": "blocked",
+      "training_signal": "negative_training_signal_dangerous"
+    }
+  ],
+  "created_at": "2026-05-23T04:22:14+00:00",
+  "report_id": "BATCH_HUMAN_REVIEW_REPORT",
+  "safetyBoundary": "Batch Human Review is local training only. It does not post, reply, follow, DM, log in, register accounts, or call external write APIs.",
+  "scope": "local_batch_human_review",
+  "status": "batch_human_review_ready",
+  "supportedDecisions": [
+    "approve",
+    "reject",
+    "modify",
+    "classify"
+  ],
+  "supportedLabels": [
+    "high_value",
+    "low_value",
+    "spam",
+    "dangerous",
+    "over_marketing"
+  ]
+}
