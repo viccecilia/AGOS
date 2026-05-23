@@ -1,0 +1,62 @@
+[
+  {
+    "content_potential": "high",
+    "emotion": "anxiety",
+    "engagement_potential": "high",
+    "language": "en",
+    "market": "Japan",
+    "platform": "Reddit",
+    "reply_potential": "high",
+    "signal_id": "API-SIGNAL-0001",
+    "source_signal_type": "reddit_hot_topics",
+    "time": "2026-05-23T02:02:44+00:00",
+    "topic": "Tokyo transport anxiety",
+    "trend_strength": 83,
+    "why_unified": "Reddit signal mapped into shared language/emotion/strength/potential fields."
+  },
+  {
+    "content_potential": "high",
+    "emotion": "decision_pressure",
+    "engagement_potential": "medium",
+    "language": "en",
+    "market": "Japan",
+    "platform": "YouTube",
+    "reply_potential": "low",
+    "signal_id": "API-SIGNAL-0002",
+    "source_signal_type": "youtube_search",
+    "time": "2026-05-23T02:02:44+00:00",
+    "topic": "Japan travel planning",
+    "trend_strength": 59,
+    "why_unified": "YouTube signal mapped into shared language/emotion/strength/potential fields."
+  },
+  {
+    "content_potential": "high",
+    "emotion": "anxiety",
+    "engagement_potential": "high",
+    "language": "en",
+    "market": "Japan",
+    "platform": "TikTok",
+    "reply_potential": "medium",
+    "signal_id": "API-SIGNAL-0003",
+    "source_signal_type": "tiktok_trends",
+    "time": "2026-05-23T02:02:44+00:00",
+    "topic": "Tokyo first trip mistakes",
+    "trend_strength": 89,
+    "why_unified": "TikTok signal mapped into shared language/emotion/strength/potential fields."
+  },
+  {
+    "content_potential": "high",
+    "emotion": "comparison_pressure",
+    "engagement_potential": "low",
+    "language": "en",
+    "market": "Japan",
+    "platform": "X",
+    "reply_potential": "medium",
+    "signal_id": "API-SIGNAL-0004",
+    "source_signal_type": "x_trend_data",
+    "time": "2026-05-23T02:02:44+00:00",
+    "topic": "Japan train pass",
+    "trend_strength": 52,
+    "why_unified": "X signal mapped into shared language/emotion/strength/potential fields."
+  }
+]

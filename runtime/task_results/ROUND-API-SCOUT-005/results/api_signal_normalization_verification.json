@@ -1,0 +1,70 @@
+{
+  "round_id": "ROUND-API-SCOUT-005",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "compileall",
+      "command": "python -m compileall services tests",
+      "status": "passed"
+    },
+    {
+      "name": "api_signal_normalization_smoke",
+      "command": "python tests\\api_signal_normalization_smoke_test.py",
+      "status": "passed"
+    },
+    {
+      "name": "runtime_ui_export",
+      "command": "python -c \"from services.runtime_ui_bridge import export_default_ui_state; export_default_ui_state()\"",
+      "status": "passed"
+    },
+    {
+      "name": "war_room_runtime_ui_regression",
+      "command": "python tests\\war_room_runtime_ui_smoke_test.py",
+      "status": "passed"
+    },
+    {
+      "name": "control_center_html_json_check",
+      "command": "node inline check for project-state apiNormalizedSignalFeed and runtime script syntax",
+      "status": "passed"
+    },
+    {
+      "name": "browser_verification",
+      "command": "in-app browser at http://127.0.0.1:8765/project_control_center.html?runtime_ui=1#war-room-growth",
+      "status": "passed",
+      "evidence": {
+        "version": "0.1.90",
+        "round": "ROUND-API-SCOUT-005",
+        "has_api_signal_normalization_panel": true,
+        "has_tiktok": true,
+        "has_reddit": true,
+        "has_youtube": true,
+        "has_x": true,
+        "has_language": true,
+        "has_emotion": true,
+        "has_trend_strength": true,
+        "has_engagement_potential": true
+      }
+    }
+  ],
+  "outputs": [
+    "runtime/api_normalized_signals/API_SIGNAL_NORMALIZATION_REPORT.json",
+    "runtime/api_normalized_signals/normalized_signals.json",
+    "runtime/api_normalized_signals/api_normalized_signal_feed.json"
+  ],
+  "normalized_fields": [
+    "language",
+    "emotion",
+    "platform",
+    "trend_strength",
+    "engagement_potential",
+    "content_potential",
+    "reply_potential"
+  ],
+  "safety": {
+    "write_operations_enabled": false,
+    "auto_posting": false,
+    "auto_reply": false,
+    "auto_follow": false,
+    "auto_dm": false
+  }
+}

@@ -9,6 +9,7 @@ from services.action_recommendation_engine import ActionRecommendationEngine
 from services.action_queue_engine import ActionQueueEngine
 from services.api_capability_registry import APICapabilityRegistry
 from services.api_rate_limit_guard import APIRateLimitGuard
+from services.api_signal_normalization import APISignalNormalization
 from services.best_answer_learning_engine import BestAnswerLearningEngine
 from services.autonomous_growth_preparation_gate import AutonomousGrowthPreparationGate
 from services.cross_platform_expansion_engine import CrossPlatformExpansionEngine
@@ -145,6 +146,7 @@ class RuntimeUIBridge:
         platform_credential_vault = PlatformCredentialVault().bootstrap_sample_status()
         read_only_trends = ReadOnlyTrendConnector().read_trends()
         api_rate_limit_guard = APIRateLimitGuard().evaluate()
+        api_signal_normalization = APISignalNormalization().normalize(read_only_trends.get("platformTrends", []))
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -410,6 +412,10 @@ class RuntimeUIBridge:
             "apiRiskFeed": api_rate_limit_guard.get("apiRiskFeed", []),
             "apiUsageSummary": api_rate_limit_guard.get("apiUsageSummary", {}),
             "apiRiskSummary": api_rate_limit_guard.get("apiRiskSummary", {}),
+            "apiSignalNormalization": api_signal_normalization,
+            "normalizedSignals": api_signal_normalization.get("normalizedSignals", []),
+            "apiNormalizedSignalFeed": api_signal_normalization.get("apiNormalizedSignalFeed", []),
+            "normalizationSummary": api_signal_normalization.get("normalizationSummary", {}),
         }
 
 
