@@ -5,6 +5,7 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
+from services.action_recommendation_engine import ActionRecommendationEngine
 from services.best_answer_learning_engine import BestAnswerLearningEngine
 from services.autonomous_growth_preparation_gate import AutonomousGrowthPreparationGate
 from services.cross_platform_expansion_engine import CrossPlatformExpansionEngine
@@ -108,6 +109,7 @@ class RuntimeUIBridge:
         growth_signal_correlation = GrowthSignalCorrelationEngine().correlate()
         runtime_strategy_simulation = RuntimeStrategySimulation().simulate()
         autonomous_growth_preparation_gate = AutonomousGrowthPreparationGate().evaluate()
+        action_recommendations = ActionRecommendationEngine().recommend()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -324,6 +326,10 @@ class RuntimeUIBridge:
             "autonomousGrowthPreparationCapability": autonomous_growth_preparation_gate.get("autonomousGrowthPreparationCapability", {}),
             "autonomousGrowthPreparationSummary": autonomous_growth_preparation_gate.get("autonomousGrowthPreparationSummary", {}),
             "autonomousRuntimeIntelligenceReview": autonomous_growth_preparation_gate.get("runtimeIntelligenceReview", {}),
+            "actionRecommendationReport": action_recommendations,
+            "actionRecommendations": action_recommendations.get("actionRecommendations", []),
+            "actionRecommendationFeed": action_recommendations.get("actionRecommendationFeed", []),
+            "recommendationSummary": action_recommendations.get("recommendationSummary", {}),
         }
 
 

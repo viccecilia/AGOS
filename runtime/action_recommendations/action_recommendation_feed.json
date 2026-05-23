@@ -1,0 +1,54 @@
+[
+  {
+    "action_id": "REC-CONTENT-001",
+    "expected_result": "Higher save/reply potential from a durable guidance format.",
+    "market": "Japan",
+    "personality": "trusted_guide",
+    "platform": "Reddit",
+    "recommendation": "Create one human-reviewed payment_decision_guidance content draft around Tokyo transport anxiety.",
+    "risk_level": "medium",
+    "status": "needs_human_review",
+    "time": "2026-05-23T00:39:08+00:00",
+    "type": "today_content",
+    "why_recommended": "payment_decision_guidance is the strongest content signal and increase_reddit_content is the best simulated strategy."
+  },
+  {
+    "action_id": "REC-REPLY-001",
+    "expected_result": "More useful reply drafts with better chance of positive feedback.",
+    "market": "Japan",
+    "personality": "trusted_guide",
+    "platform": "Reddit",
+    "recommendation": "Draft two replies using hook 'make payment decision simple' for Tokyo transport anxiety.",
+    "risk_level": "medium",
+    "status": "needs_human_review",
+    "time": "2026-05-23T00:39:08+00:00",
+    "type": "today_reply",
+    "why_recommended": "The hook make payment decision simple is currently the strongest interaction signal."
+  },
+  {
+    "action_id": "REC-PLATFORM-001",
+    "expected_result": "More durable trust-building signal with lower drift risk.",
+    "market": "Japan",
+    "personality": "trusted_guide",
+    "platform": "reddit",
+    "recommendation": "Prioritize reddit today and keep TikTok in experiment mode.",
+    "risk_level": "low",
+    "status": "needs_human_review",
+    "time": "2026-05-23T00:39:08+00:00",
+    "type": "today_platform",
+    "why_recommended": "reddit is the current top platform and increase_reddit_content is the best simulated scenario."
+  },
+  {
+    "action_id": "REC-TREND-001",
+    "expected_result": "Better alignment between scout signal and content strategy.",
+    "market": "Japan",
+    "personality": "trusted_guide",
+    "platform": "Reddit",
+    "recommendation": "Track and draft around trend 'Tokyo transport anxiety' with payment_decision_guidance.",
+    "risk_level": "medium",
+    "status": "needs_human_review",
+    "time": "2026-05-23T00:39:08+00:00",
+    "type": "today_trend",
+    "why_recommended": "Tokyo transport anxiety is the current top trend and matches the strongest content correlation."
+  }
+]

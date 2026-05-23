@@ -1,0 +1,21 @@
+{
+  "round_id": "ROUND-SEMI-AUTO-001",
+  "status": "passed",
+  "artifacts": [
+    "runtime/action_recommendations/ACTION_RECOMMENDATION_REPORT.json",
+    "runtime/action_recommendations/action_recommendations.json",
+    "runtime/action_recommendations/action_recommendation_feed.json"
+  ],
+  "checks": [
+    "today_content_recommendation_generated",
+    "today_reply_recommendation_generated",
+    "today_platform_recommendation_generated",
+    "today_trend_recommendation_generated",
+    "why_recommended_present",
+    "risk_level_present",
+    "expected_result_present",
+    "platform_personality_market_present",
+    "human_review_required"
+  ],
+  "safety_boundary": "local recommendations only; no autonomous platform execution"
+}
