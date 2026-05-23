@@ -27,6 +27,7 @@ from services.human_approval_orchestrator import HumanApprovalOrchestrator
 from services.human_feedback_learning import HumanFeedbackLearning
 from services.human_personality_training import HumanPersonalityTraining
 from services.heat_detection_engine import HeatDetectionEngine
+from services.intelligence_acceleration_gate import IntelligenceAccelerationGate
 from services.long_term_strategy_memory import LongTermStrategyMemory
 from services.personality_drift_engine import PersonalityDriftEngine
 from services.personality_isolation_engine import PersonalityIsolationEngine
@@ -165,6 +166,16 @@ class RuntimeUIBridge:
         runtime_pattern_learning = RuntimePatternLearning().learn(batch_human_review.get("batchReviewQueue", []))
         runtime_replay_training = RuntimeReplayTraining().replay()
         synthetic_feedback_training = SyntheticFeedbackTraining().generate(runtime_replay_training.get("replayMemory", []))
+        intelligence_acceleration_gate = IntelligenceAccelerationGate().evaluate(
+            {
+                "batch_scout": batch_scout_runtime,
+                "batch_clusters": batch_topic_clustering,
+                "batch_review": batch_human_review,
+                "pattern_learning": runtime_pattern_learning,
+                "replay_training": runtime_replay_training,
+                "synthetic_training": synthetic_feedback_training,
+            }
+        )
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -475,6 +486,10 @@ class RuntimeUIBridge:
             "syntheticTrainingDataset": synthetic_feedback_training.get("syntheticTrainingDataset", []),
             "syntheticTrainingFeed": synthetic_feedback_training.get("syntheticTrainingFeed", []),
             "syntheticTrainingSummary": synthetic_feedback_training.get("syntheticTrainingSummary", {}),
+            "intelligenceAccelerationGate": intelligence_acceleration_gate,
+            "intelligenceAccelerationChecks": intelligence_acceleration_gate.get("gateChecks", []),
+            "runtimeIntelligenceEvolutionReview": intelligence_acceleration_gate.get("runtimeIntelligenceEvolutionReview", {}),
+            "intelligenceAccelerationFeed": intelligence_acceleration_gate.get("intelligenceAccelerationFeed", []),
         }
 
 

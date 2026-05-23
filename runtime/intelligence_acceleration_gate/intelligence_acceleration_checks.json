@@ -1,0 +1,38 @@
+[
+  {
+    "check": "Batch Scout Runtime",
+    "checked_at": "2026-05-23T04:42:56+00:00",
+    "evidence": "Processed 50 questions through Scout, Analyze, Classify, and Priority Ranking.",
+    "status": "passed"
+  },
+  {
+    "check": "Batch Topic Clustering",
+    "checked_at": "2026-05-23T04:42:56+00:00",
+    "evidence": "Created 5 clusters with 4 high-growth groups.",
+    "status": "passed"
+  },
+  {
+    "check": "Batch Human Review",
+    "checked_at": "2026-05-23T04:42:56+00:00",
+    "evidence": "Reviewed 5 clusters with approve/reject/modify/classify labels.",
+    "status": "passed"
+  },
+  {
+    "check": "Pattern Learning",
+    "checked_at": "2026-05-23T04:42:56+00:00",
+    "evidence": "Learned 5 patterns across value, engagement, conversion, and risk.",
+    "status": "passed"
+  },
+  {
+    "check": "Replay Training",
+    "checked_at": "2026-05-23T04:42:56+00:00",
+    "evidence": "Replayed 20 historical intelligence items.",
+    "status": "passed"
+  },
+  {
+    "check": "Synthetic Feedback Training",
+    "checked_at": "2026-05-23T04:42:56+00:00",
+    "evidence": "Generated 32 synthetic samples with 2 high-risk samples.",
+    "status": "passed"
+  }
+]
