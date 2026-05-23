@@ -1,0 +1,71 @@
+{
+  "round_id": "ROUND-API-SCOUT-006",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "compileall",
+      "command": "python -m compileall services tests",
+      "status": "passed"
+    },
+    {
+      "name": "api_to_scout_pipeline_smoke",
+      "command": "python tests\\api_to_scout_pipeline_smoke_test.py",
+      "status": "passed"
+    },
+    {
+      "name": "runtime_ui_export",
+      "command": "python -c \"from services.runtime_ui_bridge import export_default_ui_state; export_default_ui_state()\"",
+      "status": "passed"
+    },
+    {
+      "name": "war_room_runtime_ui_regression",
+      "command": "python tests\\war_room_runtime_ui_smoke_test.py",
+      "status": "passed"
+    },
+    {
+      "name": "control_center_html_json_check",
+      "command": "node inline check for project-state apiScoutFeed and runtime script syntax",
+      "status": "passed"
+    },
+    {
+      "name": "browser_verification",
+      "command": "in-app browser at http://127.0.0.1:8765/project_control_center.html?runtime_ui=1#war-room-growth",
+      "status": "passed",
+      "evidence": {
+        "version": "0.1.91",
+        "round": "ROUND-API-SCOUT-006",
+        "has_api_scout_feed_panel": true,
+        "has_patrol_groups": true,
+        "has_keyword_expansion": true,
+        "has_topic_discovery": true,
+        "has_trend_clustering": true,
+        "has_heat_detection": true,
+        "has_strategic_interpretation": true,
+        "api_trends_entered_scout": true
+      }
+    }
+  ],
+  "outputs": [
+    "runtime/api_scout_pipeline/API_TO_SCOUT_PIPELINE_REPORT.json",
+    "runtime/api_scout_pipeline/api_scout_feed.json",
+    "runtime/api_scout_pipeline/api_scout_trace.json"
+  ],
+  "pipeline_stages": [
+    "API Signal Normalization",
+    "Patrol Groups",
+    "Keyword Expansion",
+    "Topic Discovery",
+    "Trend Clustering",
+    "Heat Detection",
+    "Strategic Interpretation"
+  ],
+  "safety": {
+    "write_operations_enabled": false,
+    "auto_posting": false,
+    "auto_reply": false,
+    "auto_follow": false,
+    "auto_dm": false,
+    "login_scraping": false,
+    "platform_limit_bypass": false
+  }
+}

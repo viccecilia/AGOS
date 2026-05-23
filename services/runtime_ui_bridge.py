@@ -10,6 +10,7 @@ from services.action_queue_engine import ActionQueueEngine
 from services.api_capability_registry import APICapabilityRegistry
 from services.api_rate_limit_guard import APIRateLimitGuard
 from services.api_signal_normalization import APISignalNormalization
+from services.api_to_scout_pipeline import APIToScoutPipeline
 from services.best_answer_learning_engine import BestAnswerLearningEngine
 from services.autonomous_growth_preparation_gate import AutonomousGrowthPreparationGate
 from services.cross_platform_expansion_engine import CrossPlatformExpansionEngine
@@ -147,6 +148,7 @@ class RuntimeUIBridge:
         read_only_trends = ReadOnlyTrendConnector().read_trends()
         api_rate_limit_guard = APIRateLimitGuard().evaluate()
         api_signal_normalization = APISignalNormalization().normalize(read_only_trends.get("platformTrends", []))
+        api_to_scout_pipeline = APIToScoutPipeline().run(api_signal_normalization.get("normalizedSignals", []))
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -416,6 +418,10 @@ class RuntimeUIBridge:
             "normalizedSignals": api_signal_normalization.get("normalizedSignals", []),
             "apiNormalizedSignalFeed": api_signal_normalization.get("apiNormalizedSignalFeed", []),
             "normalizationSummary": api_signal_normalization.get("normalizationSummary", {}),
+            "apiToScoutPipeline": api_to_scout_pipeline,
+            "apiScoutFeed": api_to_scout_pipeline.get("apiScoutFeed", []),
+            "apiScoutTrace": api_to_scout_pipeline.get("apiScoutTrace", []),
+            "apiScoutPipelineSummary": api_to_scout_pipeline.get("apiScoutPipelineSummary", {}),
         }
 
 

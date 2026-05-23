@@ -1,0 +1,93 @@
+[
+  {
+    "evidence": [
+      "API-SIGNAL-0001",
+      "API-SIGNAL-0002",
+      "API-SIGNAL-0003",
+      "API-SIGNAL-0004"
+    ],
+    "items": 4,
+    "result": "Normalized read-only platform API trends are ready for Scout Intelligence.",
+    "stage": "API Signal Normalization",
+    "status": "completed"
+  },
+  {
+    "evidence": [
+      "Reddit",
+      "TikTok",
+      "X",
+      "YouTube",
+      "Threads"
+    ],
+    "items": 10,
+    "result": "Workspace and industry-pack patrol groups provide platform context.",
+    "stage": "Patrol Groups",
+    "status": "active"
+  },
+  {
+    "evidence": [
+      "Air fryer cleaning friction",
+      "Japan itinerary overwhelm",
+      "Kansai transport confusion",
+      "Kitchen appliance troubleshooting",
+      "Smart home setup confusion",
+      "Tokyo transport anxiety",
+      "Vacuum performance anxiety"
+    ],
+    "items": 8,
+    "result": "API topics are mapped against canonical pain-point language.",
+    "stage": "Keyword Expansion",
+    "status": "active"
+  },
+  {
+    "evidence": [
+      "Tokyo first trip mistakes airport transfer confusion tokyotravel First-time travelers react strongly to airport transfer complexity. anxiety",
+      "Tokyo transport anxiety",
+      "Japan travel planning IC card vs rail pass japantrip Short videos compare Suica, Pasmo, and JR Pass choices. decision_pressure",
+      "Japan train pass JR Pass worth it JapanTravel Users debate whether JR Pass still saves money after price changes. comparison_pressure"
+    ],
+    "items": 4,
+    "result": "API trends entered discovered Scout topics.",
+    "stage": "Topic Discovery",
+    "status": "active"
+  },
+  {
+    "evidence": [
+      "Tokyo rainy day travel friction",
+      "Tokyo first trip mistakes airport transfer confusion tokyotravel First-time travelers react strongly to airport transfer complexity. anxiety",
+      "Tokyo transport anxiety",
+      "Japan travel planning IC card vs rail pass japantrip Short videos compare Suica, Pasmo, and JR Pass choices. decision_pressure",
+      "Japan train pass JR Pass worth it JapanTravel Users debate whether JR Pass still saves money after price changes. comparison_pressure"
+    ],
+    "items": 5,
+    "result": "Discovered API topics are grouped into trend clusters.",
+    "stage": "Trend Clustering",
+    "status": "active"
+  },
+  {
+    "evidence": [
+      "Tokyo rainy day travel friction",
+      "Tokyo first trip mistakes airport transfer confusion tokyotravel First-time travelers react strongly to airport transfer complexity. anxiety",
+      "Tokyo transport anxiety",
+      "Japan travel planning IC card vs rail pass japantrip Short videos compare Suica, Pasmo, and JR Pass choices. decision_pressure",
+      "Japan train pass JR Pass worth it JapanTravel Users debate whether JR Pass still saves money after price changes. comparison_pressure"
+    ],
+    "items": 5,
+    "result": "Trend clusters are scored and ranked as opportunities.",
+    "stage": "Heat Detection",
+    "status": "active"
+  },
+  {
+    "evidence": [
+      "Tokyo rainy day travel friction",
+      "Tokyo first trip mistakes airport transfer confusion tokyotravel First-time travelers react strongly to airport transfer complexity. anxiety",
+      "Tokyo transport anxiety",
+      "Japan travel planning IC card vs rail pass japantrip Short videos compare Suica, Pasmo, and JR Pass choices. decision_pressure",
+      "Japan train pass JR Pass worth it JapanTravel Users debate whether JR Pass still saves money after price changes. comparison_pressure"
+    ],
+    "items": 5,
+    "result": "Scout Intelligence explains why API trends matter and what to do next.",
+    "stage": "Strategic Interpretation",
+    "status": "active"
+  }
+]
