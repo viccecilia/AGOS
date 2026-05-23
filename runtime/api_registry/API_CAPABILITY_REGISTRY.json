@@ -1,0 +1,295 @@
+{
+  "apiCapabilityFeed": [
+    {
+      "allowed": [
+        "trend search",
+        "keyword search",
+        "public analytics",
+        "hashtag search",
+        "public comments",
+        "account analytics"
+      ],
+      "boundary": "capability registry only; no external API call",
+      "forbidden": [
+        "auto posting",
+        "auto reply",
+        "auto follow",
+        "auto DM",
+        "auto engagement"
+      ],
+      "human_review": true,
+      "platform": "Reddit",
+      "status": "not_connected",
+      "time": "2026-05-23T01:37:52+00:00"
+    },
+    {
+      "allowed": [
+        "trend search",
+        "keyword search",
+        "public analytics",
+        "hashtag search",
+        "public comments",
+        "account analytics"
+      ],
+      "boundary": "capability registry only; no external API call",
+      "forbidden": [
+        "auto posting",
+        "auto reply",
+        "auto follow",
+        "auto DM",
+        "auto engagement"
+      ],
+      "human_review": true,
+      "platform": "YouTube",
+      "status": "not_connected",
+      "time": "2026-05-23T01:37:52+00:00"
+    },
+    {
+      "allowed": [
+        "trend search",
+        "keyword search",
+        "public analytics",
+        "hashtag search",
+        "public comments",
+        "account analytics"
+      ],
+      "boundary": "capability registry only; no external API call",
+      "forbidden": [
+        "auto posting",
+        "auto reply",
+        "auto follow",
+        "auto DM",
+        "auto engagement"
+      ],
+      "human_review": true,
+      "platform": "X",
+      "status": "not_connected",
+      "time": "2026-05-23T01:37:52+00:00"
+    },
+    {
+      "allowed": [
+        "trend search",
+        "keyword search",
+        "public analytics",
+        "hashtag search",
+        "public comments",
+        "account analytics"
+      ],
+      "boundary": "capability registry only; no external API call",
+      "forbidden": [
+        "auto posting",
+        "auto reply",
+        "auto follow",
+        "auto DM",
+        "auto engagement"
+      ],
+      "human_review": true,
+      "platform": "TikTok",
+      "status": "not_connected",
+      "time": "2026-05-23T01:37:52+00:00"
+    },
+    {
+      "allowed": [
+        "trend search",
+        "keyword search",
+        "public analytics",
+        "hashtag search",
+        "public comments",
+        "account analytics"
+      ],
+      "boundary": "capability registry only; no external API call",
+      "forbidden": [
+        "auto posting",
+        "auto reply",
+        "auto follow",
+        "auto DM",
+        "auto engagement"
+      ],
+      "human_review": true,
+      "platform": "Instagram",
+      "status": "not_connected",
+      "time": "2026-05-23T01:37:52+00:00"
+    },
+    {
+      "allowed": [
+        "trend search",
+        "keyword search",
+        "public analytics",
+        "hashtag search",
+        "public comments",
+        "account analytics"
+      ],
+      "boundary": "capability registry only; no external API call",
+      "forbidden": [
+        "auto posting",
+        "auto reply",
+        "auto follow",
+        "auto DM",
+        "auto engagement"
+      ],
+      "human_review": true,
+      "platform": "Threads",
+      "status": "not_connected",
+      "time": "2026-05-23T01:37:52+00:00"
+    }
+  ],
+  "apiRegistrySummary": {
+    "all_platforms_block_auto_posting": true,
+    "all_platforms_block_auto_reply": true,
+    "allowed_capabilities": 6,
+    "external_api_calls_enabled": false,
+    "forbidden_capabilities": 5,
+    "platforms": 6
+  },
+  "created_at": "2026-05-23T01:37:52+00:00",
+  "platformApiRegistry": [
+    {
+      "allowed": [
+        "trend search",
+        "keyword search",
+        "public analytics",
+        "hashtag search",
+        "public comments",
+        "account analytics"
+      ],
+      "allowed_use": "Scout discovery, trend reading, keyword discovery, public signal analysis, and manual review support.",
+      "api_call_status": "not_connected",
+      "credentials_required_for_account_analytics": false,
+      "execution_boundary": "capability registry only; no external API call",
+      "forbidden": [
+        "auto posting",
+        "auto reply",
+        "auto follow",
+        "auto DM",
+        "auto engagement"
+      ],
+      "forbidden_use": "No automated posting, replying, following, direct messaging, or engagement manipulation.",
+      "platform": "Reddit",
+      "requires_human_review": true
+    },
+    {
+      "allowed": [
+        "trend search",
+        "keyword search",
+        "public analytics",
+        "hashtag search",
+        "public comments",
+        "account analytics"
+      ],
+      "allowed_use": "Scout discovery, trend reading, keyword discovery, public signal analysis, and manual review support.",
+      "api_call_status": "not_connected",
+      "credentials_required_for_account_analytics": true,
+      "execution_boundary": "capability registry only; no external API call",
+      "forbidden": [
+        "auto posting",
+        "auto reply",
+        "auto follow",
+        "auto DM",
+        "auto engagement"
+      ],
+      "forbidden_use": "No automated posting, replying, following, direct messaging, or engagement manipulation.",
+      "platform": "YouTube",
+      "requires_human_review": true
+    },
+    {
+      "allowed": [
+        "trend search",
+        "keyword search",
+        "public analytics",
+        "hashtag search",
+        "public comments",
+        "account analytics"
+      ],
+      "allowed_use": "Scout discovery, trend reading, keyword discovery, public signal analysis, and manual review support.",
+      "api_call_status": "not_connected",
+      "credentials_required_for_account_analytics": true,
+      "execution_boundary": "capability registry only; no external API call",
+      "forbidden": [
+        "auto posting",
+        "auto reply",
+        "auto follow",
+        "auto DM",
+        "auto engagement"
+      ],
+      "forbidden_use": "No automated posting, replying, following, direct messaging, or engagement manipulation.",
+      "platform": "X",
+      "requires_human_review": true
+    },
+    {
+      "allowed": [
+        "trend search",
+        "keyword search",
+        "public analytics",
+        "hashtag search",
+        "public comments",
+        "account analytics"
+      ],
+      "allowed_use": "Scout discovery, trend reading, keyword discovery, public signal analysis, and manual review support.",
+      "api_call_status": "not_connected",
+      "credentials_required_for_account_analytics": true,
+      "execution_boundary": "capability registry only; no external API call",
+      "forbidden": [
+        "auto posting",
+        "auto reply",
+        "auto follow",
+        "auto DM",
+        "auto engagement"
+      ],
+      "forbidden_use": "No automated posting, replying, following, direct messaging, or engagement manipulation.",
+      "platform": "TikTok",
+      "requires_human_review": true
+    },
+    {
+      "allowed": [
+        "trend search",
+        "keyword search",
+        "public analytics",
+        "hashtag search",
+        "public comments",
+        "account analytics"
+      ],
+      "allowed_use": "Scout discovery, trend reading, keyword discovery, public signal analysis, and manual review support.",
+      "api_call_status": "not_connected",
+      "credentials_required_for_account_analytics": true,
+      "execution_boundary": "capability registry only; no external API call",
+      "forbidden": [
+        "auto posting",
+        "auto reply",
+        "auto follow",
+        "auto DM",
+        "auto engagement"
+      ],
+      "forbidden_use": "No automated posting, replying, following, direct messaging, or engagement manipulation.",
+      "platform": "Instagram",
+      "requires_human_review": true
+    },
+    {
+      "allowed": [
+        "trend search",
+        "keyword search",
+        "public analytics",
+        "hashtag search",
+        "public comments",
+        "account analytics"
+      ],
+      "allowed_use": "Scout discovery, trend reading, keyword discovery, public signal analysis, and manual review support.",
+      "api_call_status": "not_connected",
+      "credentials_required_for_account_analytics": true,
+      "execution_boundary": "capability registry only; no external API call",
+      "forbidden": [
+        "auto posting",
+        "auto reply",
+        "auto follow",
+        "auto DM",
+        "auto engagement"
+      ],
+      "forbidden_use": "No automated posting, replying, following, direct messaging, or engagement manipulation.",
+      "platform": "Threads",
+      "requires_human_review": true
+    }
+  ],
+  "report_id": "API_CAPABILITY_REGISTRY",
+  "safetyBoundary": "This registry only documents API boundaries. It does not call platform APIs, post, reply, follow, DM, or trigger engagement.",
+  "scope": "platform_api_capability_boundary_only",
+  "status": "registry_ready"
+}

@@ -1,0 +1,134 @@
+[
+  {
+    "allowed": [
+      "trend search",
+      "keyword search",
+      "public analytics",
+      "hashtag search",
+      "public comments",
+      "account analytics"
+    ],
+    "boundary": "capability registry only; no external API call",
+    "forbidden": [
+      "auto posting",
+      "auto reply",
+      "auto follow",
+      "auto DM",
+      "auto engagement"
+    ],
+    "human_review": true,
+    "platform": "Reddit",
+    "status": "not_connected",
+    "time": "2026-05-23T01:37:52+00:00"
+  },
+  {
+    "allowed": [
+      "trend search",
+      "keyword search",
+      "public analytics",
+      "hashtag search",
+      "public comments",
+      "account analytics"
+    ],
+    "boundary": "capability registry only; no external API call",
+    "forbidden": [
+      "auto posting",
+      "auto reply",
+      "auto follow",
+      "auto DM",
+      "auto engagement"
+    ],
+    "human_review": true,
+    "platform": "YouTube",
+    "status": "not_connected",
+    "time": "2026-05-23T01:37:52+00:00"
+  },
+  {
+    "allowed": [
+      "trend search",
+      "keyword search",
+      "public analytics",
+      "hashtag search",
+      "public comments",
+      "account analytics"
+    ],
+    "boundary": "capability registry only; no external API call",
+    "forbidden": [
+      "auto posting",
+      "auto reply",
+      "auto follow",
+      "auto DM",
+      "auto engagement"
+    ],
+    "human_review": true,
+    "platform": "X",
+    "status": "not_connected",
+    "time": "2026-05-23T01:37:52+00:00"
+  },
+  {
+    "allowed": [
+      "trend search",
+      "keyword search",
+      "public analytics",
+      "hashtag search",
+      "public comments",
+      "account analytics"
+    ],
+    "boundary": "capability registry only; no external API call",
+    "forbidden": [
+      "auto posting",
+      "auto reply",
+      "auto follow",
+      "auto DM",
+      "auto engagement"
+    ],
+    "human_review": true,
+    "platform": "TikTok",
+    "status": "not_connected",
+    "time": "2026-05-23T01:37:52+00:00"
+  },
+  {
+    "allowed": [
+      "trend search",
+      "keyword search",
+      "public analytics",
+      "hashtag search",
+      "public comments",
+      "account analytics"
+    ],
+    "boundary": "capability registry only; no external API call",
+    "forbidden": [
+      "auto posting",
+      "auto reply",
+      "auto follow",
+      "auto DM",
+      "auto engagement"
+    ],
+    "human_review": true,
+    "platform": "Instagram",
+    "status": "not_connected",
+    "time": "2026-05-23T01:37:52+00:00"
+  },
+  {
+    "allowed": [
+      "trend search",
+      "keyword search",
+      "public analytics",
+      "hashtag search",
+      "public comments",
+      "account analytics"
+    ],
+    "boundary": "capability registry only; no external API call",
+    "forbidden": [
+      "auto posting",
+      "auto reply",
+      "auto follow",
+      "auto DM",
+      "auto engagement"
+    ],
+    "human_review": true,
+    "platform": "Threads",
+    "status": "not_connected",
+    "time": "2026-05-23T01:37:52+00:00"
+  }
+]

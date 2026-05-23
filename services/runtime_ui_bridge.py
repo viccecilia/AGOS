@@ -7,6 +7,7 @@ from typing import Any
 
 from services.action_recommendation_engine import ActionRecommendationEngine
 from services.action_queue_engine import ActionQueueEngine
+from services.api_capability_registry import APICapabilityRegistry
 from services.best_answer_learning_engine import BestAnswerLearningEngine
 from services.autonomous_growth_preparation_gate import AutonomousGrowthPreparationGate
 from services.cross_platform_expansion_engine import CrossPlatformExpansionEngine
@@ -137,6 +138,7 @@ class RuntimeUIBridge:
             risk_prediction=runtime_risk,
             runtime_simulation=execution_simulation,
         )
+        api_capability_registry = APICapabilityRegistry().build()
         status = state.get("status", "idle")
         runtime_status = {
             "idle": "STOPPED",
@@ -386,6 +388,10 @@ class RuntimeUIBridge:
             "semiAutonomousRuntimeCapability": semi_autonomous_runtime_gate.get("semiAutonomousRuntimeCapability", {}),
             "semiAutonomousRuntimeSummary": semi_autonomous_runtime_gate.get("semiAutonomousRuntimeSummary", {}),
             "runtimeIntelligenceGateReview": semi_autonomous_runtime_gate.get("runtimeIntelligenceGateReview", {}),
+            "apiCapabilityRegistry": api_capability_registry,
+            "platformApiRegistry": api_capability_registry.get("platformApiRegistry", []),
+            "apiCapabilityFeed": api_capability_registry.get("apiCapabilityFeed", []),
+            "apiRegistrySummary": api_capability_registry.get("apiRegistrySummary", {}),
         }
 
 
