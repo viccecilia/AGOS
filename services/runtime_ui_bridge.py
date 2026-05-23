@@ -39,6 +39,7 @@ from services.runtime_priority_engine import RuntimePriorityEngine
 from services.runtime_risk_prediction import RuntimeRiskPrediction
 from services.runtime_strategy_simulation import RuntimeStrategySimulation
 from services.runtime_strategy_personality import RuntimeStrategyPersonalityEngine
+from services.semi_autonomous_runtime_gate import SemiAutonomousRuntimeGate
 from services.strategic_interpretation_engine import StrategicInterpretationEngine
 from services.runtime_trainer_dashboard import RuntimeTrainerDashboard
 from services.strategy_evolution_engine import StrategyEvolutionEngine
@@ -128,6 +129,13 @@ class RuntimeUIBridge:
             runtime_plan=runtime_plan,
             approval=human_approval,
             risk=runtime_risk,
+        )
+        semi_autonomous_runtime_gate = SemiAutonomousRuntimeGate().evaluate(
+            action_recommendation=action_recommendations,
+            runtime_plan=runtime_plan,
+            human_approval=human_approval,
+            risk_prediction=runtime_risk,
+            runtime_simulation=execution_simulation,
         )
         status = state.get("status", "idle")
         runtime_status = {
@@ -373,6 +381,11 @@ class RuntimeUIBridge:
             "executionSimulationScenarios": execution_simulation.get("executionSimulationScenarios", []),
             "executionSimulationFeed": execution_simulation.get("executionSimulationFeed", []),
             "executionSimulationSummary": execution_simulation.get("executionSimulationSummary", {}),
+            "semiAutonomousRuntimeGate": semi_autonomous_runtime_gate,
+            "semiAutonomousRuntimeChecks": semi_autonomous_runtime_gate.get("checks", []),
+            "semiAutonomousRuntimeCapability": semi_autonomous_runtime_gate.get("semiAutonomousRuntimeCapability", {}),
+            "semiAutonomousRuntimeSummary": semi_autonomous_runtime_gate.get("semiAutonomousRuntimeSummary", {}),
+            "runtimeIntelligenceGateReview": semi_autonomous_runtime_gate.get("runtimeIntelligenceGateReview", {}),
         }
 
 

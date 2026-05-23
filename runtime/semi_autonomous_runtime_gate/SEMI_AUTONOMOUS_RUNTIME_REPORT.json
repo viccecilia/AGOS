@@ -1,0 +1,97 @@
+{
+  "checks": [
+    {
+      "checked_at": "2026-05-23T01:10:47+00:00",
+      "evidence": "4 action recommendations available; status=recommendations_ready",
+      "name": "Action Recommendation",
+      "requirement": "AGOS must recommend content, reply, platform, and trend actions before planning.",
+      "status": "passed"
+    },
+    {
+      "checked_at": "2026-05-23T01:10:47+00:00",
+      "evidence": "4 local plan items available; status=ready_for_human_review",
+      "name": "Runtime Planner",
+      "requirement": "AGOS must turn recommendations into a local daily runtime plan.",
+      "status": "passed"
+    },
+    {
+      "checked_at": "2026-05-23T01:10:47+00:00",
+      "evidence": "Unified approval total=25 action_items=4",
+      "name": "Human Approval",
+      "requirement": "AGOS must unify Review, Action, and Correction approval views.",
+      "status": "passed"
+    },
+    {
+      "checked_at": "2026-05-23T01:10:47+00:00",
+      "evidence": "risk_types=['drift risk', 'over-marketing risk', 'platform risk', 'repetition risk', 'spam risk'] overall=medium",
+      "name": "Risk Prediction",
+      "requirement": "AGOS must predict key operational risks before any execution stage.",
+      "status": "passed"
+    },
+    {
+      "checked_at": "2026-05-23T01:10:47+00:00",
+      "evidence": "4 scenarios simulated; external_execution_enabled=False",
+      "name": "Runtime Simulation",
+      "requirement": "AGOS must simulate what would happen without touching external platforms.",
+      "status": "passed"
+    },
+    {
+      "checked_at": "2026-05-23T01:10:47+00:00",
+      "evidence": "No external execution markers detected.",
+      "name": "External Execution Boundary",
+      "requirement": "Semi-autonomous runtime must remain local, simulated, and human-gated.",
+      "status": "passed"
+    }
+  ],
+  "created_at": "2026-05-23T01:10:47+00:00",
+  "report_id": "SEMI_AUTONOMOUS_RUNTIME_REPORT",
+  "runtimeIntelligenceGateReview": {
+    "created_at": "2026-05-23T01:10:47+00:00",
+    "evidence": {
+      "external_execution_enabled": false,
+      "planned_actions": 4,
+      "recommendations": 4,
+      "risk_rows": 5,
+      "simulation_scenarios": 4,
+      "unified_approval_items": 25
+    },
+    "gate_decision": "passed",
+    "next_stage": "Controlled External Operations Preparation Stage",
+    "review_id": "RUNTIME_INTELLIGENCE_GATE_REVIEW",
+    "what_agos_can_do_now": [
+      "recommend human-gated operating actions",
+      "turn recommendations into a local daily runtime plan",
+      "unify human approval views",
+      "predict operational risk before execution",
+      "simulate what would happen if actions were executed"
+    ],
+    "what_agos_still_cannot_do": [
+      "post content automatically",
+      "reply to real users automatically",
+      "log in to social platforms",
+      "register accounts",
+      "call real platform APIs",
+      "bypass human approval"
+    ]
+  },
+  "safetyBoundary": "Gate review does not post, reply, log in, register accounts, call platform APIs, or change external state.",
+  "scope": "semi_autonomous_runtime_phase_gate",
+  "semiAutonomousRuntimeCapability": {
+    "can_plan_runtime": true,
+    "can_predict_risk": true,
+    "can_recommend_actions": true,
+    "can_simulate_execution": true,
+    "can_unify_human_approval": true,
+    "external_execution_enabled": false,
+    "ready_for_controlled_external_operations_preparation": true
+  },
+  "semiAutonomousRuntimeSummary": {
+    "blocked_checks": 0,
+    "gate_decision": "passed",
+    "hard_boundary": "No real external execution is allowed at this gate.",
+    "next_stage": "Controlled External Operations Preparation Stage",
+    "passed_checks": 6,
+    "warning_checks": 0
+  },
+  "status": "passed"
+}

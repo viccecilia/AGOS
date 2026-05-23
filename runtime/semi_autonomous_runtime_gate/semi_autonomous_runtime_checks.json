@@ -1,0 +1,44 @@
+[
+  {
+    "checked_at": "2026-05-23T01:10:47+00:00",
+    "evidence": "4 action recommendations available; status=recommendations_ready",
+    "name": "Action Recommendation",
+    "requirement": "AGOS must recommend content, reply, platform, and trend actions before planning.",
+    "status": "passed"
+  },
+  {
+    "checked_at": "2026-05-23T01:10:47+00:00",
+    "evidence": "4 local plan items available; status=ready_for_human_review",
+    "name": "Runtime Planner",
+    "requirement": "AGOS must turn recommendations into a local daily runtime plan.",
+    "status": "passed"
+  },
+  {
+    "checked_at": "2026-05-23T01:10:47+00:00",
+    "evidence": "Unified approval total=25 action_items=4",
+    "name": "Human Approval",
+    "requirement": "AGOS must unify Review, Action, and Correction approval views.",
+    "status": "passed"
+  },
+  {
+    "checked_at": "2026-05-23T01:10:47+00:00",
+    "evidence": "risk_types=['drift risk', 'over-marketing risk', 'platform risk', 'repetition risk', 'spam risk'] overall=medium",
+    "name": "Risk Prediction",
+    "requirement": "AGOS must predict key operational risks before any execution stage.",
+    "status": "passed"
+  },
+  {
+    "checked_at": "2026-05-23T01:10:47+00:00",
+    "evidence": "4 scenarios simulated; external_execution_enabled=False",
+    "name": "Runtime Simulation",
+    "requirement": "AGOS must simulate what would happen without touching external platforms.",
+    "status": "passed"
+  },
+  {
+    "checked_at": "2026-05-23T01:10:47+00:00",
+    "evidence": "No external execution markers detected.",
+    "name": "External Execution Boundary",
+    "requirement": "Semi-autonomous runtime must remain local, simulated, and human-gated.",
+    "status": "passed"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "round_id": "ROUND-SEMI-AUTO-007",
+  "status": "passed",
+  "service": "services/semi_autonomous_runtime_gate.py",
+  "test": "tests/semi_autonomous_runtime_gate_smoke_test.py",
+  "outputs": [
+    "runtime/semi_autonomous_runtime_gate/SEMI_AUTONOMOUS_RUNTIME_REPORT.json",
+    "runtime/semi_autonomous_runtime_gate/RUNTIME_INTELLIGENCE_GATE_REVIEW.json",
+    "runtime/semi_autonomous_runtime_gate/semi_autonomous_runtime_checks.json"
+  ],
+  "validation": [
+    "python -m compileall services tests passed",
+    "python tests\\semi_autonomous_runtime_gate_smoke_test.py passed",
+    "python tests\\war_room_runtime_ui_smoke_test.py passed",
+    "node --check extracted control center script passed"
+  ],
+  "safety_boundary": "gate review only; no external action"
+}
