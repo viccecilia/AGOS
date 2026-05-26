@@ -62,6 +62,7 @@ from services.runtime_risk_prediction import RuntimeRiskPrediction
 from services.runtime_strategy_simulation import RuntimeStrategySimulation
 from services.runtime_strategy_personality import RuntimeStrategyPersonalityEngine
 from services.semi_autonomous_runtime_gate import SemiAutonomousRuntimeGate
+from services.seasonal_demand_calendar_engine import SeasonalDemandCalendarEngine
 from services.strategic_interpretation_engine import StrategicInterpretationEngine
 from services.runtime_trainer_dashboard import RuntimeTrainerDashboard
 from services.strategy_evolution_engine import StrategyEvolutionEngine
@@ -173,6 +174,7 @@ class RuntimeUIBridge:
         )
         api_collection_review = APICollectionReviewAndCorrection().review(live_memory_import)
         controlled_api_collection_gate = ControlledAPICollectionGate().evaluate(state.get("workspace", "JAG-LAB"))
+        seasonal_demand_calendar = SeasonalDemandCalendarEngine().build()
         read_only_trends = ReadOnlyTrendConnector().read_trends()
         api_rate_limit_guard = APIRateLimitGuard().evaluate()
         api_signal_normalization = APISignalNormalization().normalize(read_only_trends.get("platformTrends", []))
@@ -494,6 +496,11 @@ class RuntimeUIBridge:
             "controlledAPICollectionChecks": controlled_api_collection_gate.get("controlledAPICollectionChecks", []),
             "platformIntelligenceSafetyReview": controlled_api_collection_gate.get("platformIntelligenceSafetyReview", {}),
             "controlledAPICollectionSummary": controlled_api_collection_gate.get("controlledAPICollectionSummary", {}),
+            "seasonalDemandCalendar": seasonal_demand_calendar,
+            "seasonalCalendar": seasonal_demand_calendar.get("seasonalCalendar", []),
+            "seasonalKeywords": seasonal_demand_calendar.get("seasonalKeywords", []),
+            "seasonalMonitoringPlan": seasonal_demand_calendar.get("seasonalMonitoringPlan", []),
+            "seasonalDemandSummary": seasonal_demand_calendar.get("seasonalDemandSummary", {}),
             "readOnlyTrendConnector": read_only_trends,
             "platformTrends": read_only_trends.get("platformTrends", []),
             "platformTrendFeed": read_only_trends.get("platformTrendFeed", []),

@@ -1,0 +1,11 @@
+﻿{
+  "ok": true,
+  "url": "http://127.0.0.1:8765/project_control_center.html?runtime_ui=1#war-room-growth",
+  "version": "Control Center v0.1.109",
+  "round": "ROUND-PREDICT-001",
+  "panel": "runtime-seasonal-demand-calendar",
+  "visibleSeasons": ["Sakura Season", "Golden Week", "Chinese New Year Travel"],
+  "googleTrendsApiConnected": false,
+  "writeOperationsEnabled": false,
+  "dataSource": "local_sample_and_manual_import_ready"
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "data_source_status": "local_sample",
+    "future_api_hook": "reserved",
+    "google_trends_api_required_now": false,
+    "input_modes": [
+      "manual_import",
+      "csv",
+      "json",
+      "future_google_trends_api"
+    ],
+    "keyword_count": 4,
+    "monitoring_frequency": "weekly_until_peak_then_daily",
+    "plan_id": "SEASON-SAKURA-MONITOR",
+    "review_gate": "needs_human_review",
+    "season_id": "SEASON-SAKURA",
+    "season_name": "Sakura Season",
+    "time_window": "mid_March_to_early_April"
+  },
+  {
+    "data_source_status": "local_sample",
+    "future_api_hook": "reserved",
+    "google_trends_api_required_now": false,
+    "input_modes": [
+      "manual_import",
+      "csv",
+      "json",
+      "future_google_trends_api"
+    ],
+    "keyword_count": 4,
+    "monitoring_frequency": "weekly_until_peak_then_daily",
+    "plan_id": "SEASON-GOLDEN-WEEK-MONITOR",
+    "review_gate": "needs_human_review",
+    "season_id": "SEASON-GOLDEN-WEEK",
+    "season_name": "Golden Week",
+    "time_window": "late_April_to_early_May"
+  },
+  {
+    "data_source_status": "local_sample",
+    "future_api_hook": "reserved",
+    "google_trends_api_required_now": false,
+    "input_modes": [
+      "manual_import",
+      "csv",
+      "json",
+      "future_google_trends_api"
+    ],
+    "keyword_count": 4,
+    "monitoring_frequency": "weekly",
+    "plan_id": "SEASON-SUMMER-MONITOR",
+    "review_gate": "needs_human_review",
+    "season_id": "SEASON-SUMMER",
+    "season_name": "Summer Vacation",
+    "time_window": "July_to_August"
+  },
+  {
+    "data_source_status": "local_sample",
+    "future_api_hook": "reserved",
+    "google_trends_api_required_now": false,
+    "input_modes": [
+      "manual_import",
+      "csv",
+      "json",
+      "future_google_trends_api"
+    ],
+    "keyword_count": 4,
+    "monitoring_frequency": "weekly_until_peak_then_daily",
+    "plan_id": "SEASON-AUTUMN-LEAVES-MONITOR",
+    "review_gate": "needs_human_review",
+    "season_id": "SEASON-AUTUMN-LEAVES",
+    "season_name": "Autumn Leaves Season",
+    "time_window": "October_to_late_November"
+  },
+  {
+    "data_source_status": "local_sample",
+    "future_api_hook": "reserved",
+    "google_trends_api_required_now": false,
+    "input_modes": [
+      "manual_import",
+      "csv",
+      "json",
+      "future_google_trends_api"
+    ],
+    "keyword_count": 4,
+    "monitoring_frequency": "weekly",
+    "plan_id": "SEASON-CHRISTMAS-MONITOR",
+    "review_gate": "needs_human_review",
+    "season_id": "SEASON-CHRISTMAS",
+    "season_name": "Christmas and Year End",
+    "time_window": "mid_December_to_late_December"
+  },
+  {
+    "data_source_status": "local_sample",
+    "future_api_hook": "reserved",
+    "google_trends_api_required_now": false,
+    "input_modes": [
+      "manual_import",
+      "csv",
+      "json",
+      "future_google_trends_api"
+    ],
+    "keyword_count": 4,
+    "monitoring_frequency": "weekly_until_peak_then_daily",
+    "plan_id": "SEASON-CHINESE-NEW-YEAR-MONITOR",
+    "review_gate": "needs_human_review",
+    "season_id": "SEASON-CHINESE-NEW-YEAR",
+    "season_name": "Chinese New Year Travel",
+    "time_window": "late_January_to_mid_February"
+  },
+  {
+    "data_source_status": "local_sample",
+    "future_api_hook": "reserved",
+    "google_trends_api_required_now": false,
+    "input_modes": [
+      "manual_import",
+      "csv",
+      "json",
+      "future_google_trends_api"
+    ],
+    "keyword_count": 4,
+    "monitoring_frequency": "weekly",
+    "plan_id": "SEASON-JAPAN-NEW-YEAR-MONITOR",
+    "review_gate": "needs_human_review",
+    "season_id": "SEASON-JAPAN-NEW-YEAR",
+    "season_name": "Japan New Year",
+    "time_window": "late_December_to_early_January"
+  },
+  {
+    "data_source_status": "local_sample",
+    "future_api_hook": "reserved",
+    "google_trends_api_required_now": false,
+    "input_modes": [
+      "manual_import",
+      "csv",
+      "json",
+      "future_google_trends_api"
+    ],
+    "keyword_count": 4,
+    "monitoring_frequency": "weekly",
+    "plan_id": "SEASON-LONG-WEEKENDS-MONITOR",
+    "review_gate": "needs_human_review",
+    "season_id": "SEASON-LONG-WEEKENDS",
+    "season_name": "Long Weekends",
+    "time_window": "rolling_three_day_weekends"
+  },
+  {
+    "data_source_status": "local_sample",
+    "future_api_hook": "reserved",
+    "google_trends_api_required_now": false,
+    "input_modes": [
+      "manual_import",
+      "csv",
+      "json",
+      "future_google_trends_api"
+    ],
+    "keyword_count": 4,
+    "monitoring_frequency": "monthly_then_weekly_near_breaks",
+    "plan_id": "SEASON-SCHOOL-HOLIDAYS-MONITOR",
+    "review_gate": "needs_human_review",
+    "season_id": "SEASON-SCHOOL-HOLIDAYS",
+    "season_name": "School Holidays",
+    "time_window": "spring_summer_winter_school_breaks"
+  },
+  {
+    "data_source_status": "local_sample",
+    "future_api_hook": "reserved",
+    "google_trends_api_required_now": false,
+    "input_modes": [
+      "manual_import",
+      "csv",
+      "json",
+      "future_google_trends_api"
+    ],
+    "keyword_count": 4,
+    "monitoring_frequency": "event_calendar_weekly_then_daily_near_event",
+    "plan_id": "SEASON-EVENTS-MONITOR",
+    "review_gate": "needs_human_review",
+    "season_id": "SEASON-EVENTS",
+    "season_name": "Exhibitions Concerts Sports Events",
+    "time_window": "event_driven"
+  }
+]

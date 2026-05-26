@@ -1,0 +1,1226 @@
+[
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Japan cherry blossom travel",
+    "keyword_id": "SEASON-SAKURA-KW-001",
+    "likely_locations": [
+      "Tokyo",
+      "Ueno",
+      "Shinjuku",
+      "Kyoto",
+      "Osaka",
+      "Mount Fuji"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-SAKURA",
+    "season_name": "Sakura Season",
+    "target_markets": [
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan",
+      "Southeast Asia",
+      "China"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Tokyo airport transfer sakura",
+    "keyword_id": "SEASON-SAKURA-KW-002",
+    "likely_locations": [
+      "Tokyo",
+      "Ueno",
+      "Shinjuku",
+      "Kyoto",
+      "Osaka",
+      "Mount Fuji"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-SAKURA",
+    "season_name": "Sakura Season",
+    "target_markets": [
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan",
+      "Southeast Asia",
+      "China"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Kyoto cherry blossom private tour",
+    "keyword_id": "SEASON-SAKURA-KW-003",
+    "likely_locations": [
+      "Tokyo",
+      "Ueno",
+      "Shinjuku",
+      "Kyoto",
+      "Osaka",
+      "Mount Fuji"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-SAKURA",
+    "season_name": "Sakura Season",
+    "target_markets": [
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan",
+      "Southeast Asia",
+      "China"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Tokyo luggage transfer cherry blossom",
+    "keyword_id": "SEASON-SAKURA-KW-004",
+    "likely_locations": [
+      "Tokyo",
+      "Ueno",
+      "Shinjuku",
+      "Kyoto",
+      "Osaka",
+      "Mount Fuji"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-SAKURA",
+    "season_name": "Sakura Season",
+    "target_markets": [
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan",
+      "Southeast Asia",
+      "China"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Japan Golden Week travel",
+    "keyword_id": "SEASON-GOLDEN-WEEK-KW-001",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Sapporo",
+      "Okinawa",
+      "Nagoya"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-GOLDEN-WEEK",
+    "season_name": "Golden Week",
+    "target_markets": [
+      "Japan domestic",
+      "Korea",
+      "Taiwan",
+      "Southeast Asia"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Golden Week airport pickup",
+    "keyword_id": "SEASON-GOLDEN-WEEK-KW-002",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Sapporo",
+      "Okinawa",
+      "Nagoya"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-GOLDEN-WEEK",
+    "season_name": "Golden Week",
+    "target_markets": [
+      "Japan domestic",
+      "Korea",
+      "Taiwan",
+      "Southeast Asia"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Osaka airport pickup Golden Week",
+    "keyword_id": "SEASON-GOLDEN-WEEK-KW-003",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Sapporo",
+      "Okinawa",
+      "Nagoya"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-GOLDEN-WEEK",
+    "season_name": "Golden Week",
+    "target_markets": [
+      "Japan domestic",
+      "Korea",
+      "Taiwan",
+      "Southeast Asia"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Japan family trip Golden Week",
+    "keyword_id": "SEASON-GOLDEN-WEEK-KW-004",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Sapporo",
+      "Okinawa",
+      "Nagoya"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-GOLDEN-WEEK",
+    "season_name": "Golden Week",
+    "target_markets": [
+      "Japan domestic",
+      "Korea",
+      "Taiwan",
+      "Southeast Asia"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Japan summer family trip",
+    "keyword_id": "SEASON-SUMMER-KW-001",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Mount Fuji",
+      "Sapporo",
+      "Okinawa"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-SUMMER",
+    "season_name": "Summer Vacation",
+    "target_markets": [
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan",
+      "Southeast Asia",
+      "China"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Japan summer airport transfer",
+    "keyword_id": "SEASON-SUMMER-KW-002",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Mount Fuji",
+      "Sapporo",
+      "Okinawa"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-SUMMER",
+    "season_name": "Summer Vacation",
+    "target_markets": [
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan",
+      "Southeast Asia",
+      "China"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Okinawa family private transfer",
+    "keyword_id": "SEASON-SUMMER-KW-003",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Mount Fuji",
+      "Sapporo",
+      "Okinawa"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-SUMMER",
+    "season_name": "Summer Vacation",
+    "target_markets": [
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan",
+      "Southeast Asia",
+      "China"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Mount Fuji summer charter",
+    "keyword_id": "SEASON-SUMMER-KW-004",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Mount Fuji",
+      "Sapporo",
+      "Okinawa"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-SUMMER",
+    "season_name": "Summer Vacation",
+    "target_markets": [
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan",
+      "Southeast Asia",
+      "China"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Kyoto autumn leaves",
+    "keyword_id": "SEASON-AUTUMN-LEAVES-KW-001",
+    "likely_locations": [
+      "Kyoto",
+      "Mount Fuji",
+      "Tokyo",
+      "Osaka",
+      "Nagoya"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-AUTUMN-LEAVES",
+    "season_name": "Autumn Leaves Season",
+    "target_markets": [
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan",
+      "Southeast Asia",
+      "China"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Japan autumn leaves private tour",
+    "keyword_id": "SEASON-AUTUMN-LEAVES-KW-002",
+    "likely_locations": [
+      "Kyoto",
+      "Mount Fuji",
+      "Tokyo",
+      "Osaka",
+      "Nagoya"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-AUTUMN-LEAVES",
+    "season_name": "Autumn Leaves Season",
+    "target_markets": [
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan",
+      "Southeast Asia",
+      "China"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Mount Fuji autumn charter",
+    "keyword_id": "SEASON-AUTUMN-LEAVES-KW-003",
+    "likely_locations": [
+      "Kyoto",
+      "Mount Fuji",
+      "Tokyo",
+      "Osaka",
+      "Nagoya"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-AUTUMN-LEAVES",
+    "season_name": "Autumn Leaves Season",
+    "target_markets": [
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan",
+      "Southeast Asia",
+      "China"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Kyoto luggage transfer autumn",
+    "keyword_id": "SEASON-AUTUMN-LEAVES-KW-004",
+    "likely_locations": [
+      "Kyoto",
+      "Mount Fuji",
+      "Tokyo",
+      "Osaka",
+      "Nagoya"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-AUTUMN-LEAVES",
+    "season_name": "Autumn Leaves Season",
+    "target_markets": [
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan",
+      "Southeast Asia",
+      "China"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Japan Christmas travel",
+    "keyword_id": "SEASON-CHRISTMAS-KW-001",
+    "likely_locations": [
+      "Tokyo",
+      "Shibuya",
+      "Shinjuku",
+      "Osaka",
+      "Sapporo"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-CHRISTMAS",
+    "season_name": "Christmas and Year End",
+    "target_markets": [
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan",
+      "Southeast Asia"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Tokyo Christmas airport transfer",
+    "keyword_id": "SEASON-CHRISTMAS-KW-002",
+    "likely_locations": [
+      "Tokyo",
+      "Shibuya",
+      "Shinjuku",
+      "Osaka",
+      "Sapporo"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-CHRISTMAS",
+    "season_name": "Christmas and Year End",
+    "target_markets": [
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan",
+      "Southeast Asia"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Shibuya Christmas hotel transfer",
+    "keyword_id": "SEASON-CHRISTMAS-KW-003",
+    "likely_locations": [
+      "Tokyo",
+      "Shibuya",
+      "Shinjuku",
+      "Osaka",
+      "Sapporo"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-CHRISTMAS",
+    "season_name": "Christmas and Year End",
+    "target_markets": [
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan",
+      "Southeast Asia"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Sapporo winter airport pickup",
+    "keyword_id": "SEASON-CHRISTMAS-KW-004",
+    "likely_locations": [
+      "Tokyo",
+      "Shibuya",
+      "Shinjuku",
+      "Osaka",
+      "Sapporo"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-CHRISTMAS",
+    "season_name": "Christmas and Year End",
+    "target_markets": [
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan",
+      "Southeast Asia"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Japan Chinese New Year travel",
+    "keyword_id": "SEASON-CHINESE-NEW-YEAR-KW-001",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Haneda Airport",
+      "Narita Airport",
+      "Kansai Airport"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-CHINESE-NEW-YEAR",
+    "season_name": "Chinese New Year Travel",
+    "target_markets": [
+      "China",
+      "Taiwan",
+      "Hong Kong",
+      "Southeast Asia"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Tokyo airport transfer Chinese New Year",
+    "keyword_id": "SEASON-CHINESE-NEW-YEAR-KW-002",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Haneda Airport",
+      "Narita Airport",
+      "Kansai Airport"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-CHINESE-NEW-YEAR",
+    "season_name": "Chinese New Year Travel",
+    "target_markets": [
+      "China",
+      "Taiwan",
+      "Hong Kong",
+      "Southeast Asia"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Osaka airport pickup Chinese New Year",
+    "keyword_id": "SEASON-CHINESE-NEW-YEAR-KW-003",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Haneda Airport",
+      "Narita Airport",
+      "Kansai Airport"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-CHINESE-NEW-YEAR",
+    "season_name": "Chinese New Year Travel",
+    "target_markets": [
+      "China",
+      "Taiwan",
+      "Hong Kong",
+      "Southeast Asia"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Japan family charter Chinese New Year",
+    "keyword_id": "SEASON-CHINESE-NEW-YEAR-KW-004",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Haneda Airport",
+      "Narita Airport",
+      "Kansai Airport"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-CHINESE-NEW-YEAR",
+    "season_name": "Chinese New Year Travel",
+    "target_markets": [
+      "China",
+      "Taiwan",
+      "Hong Kong",
+      "Southeast Asia"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Japan New Year travel",
+    "keyword_id": "SEASON-JAPAN-NEW-YEAR-KW-001",
+    "likely_locations": [
+      "Tokyo",
+      "Kyoto",
+      "Osaka",
+      "Nagoya",
+      "Sapporo"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-JAPAN-NEW-YEAR",
+    "season_name": "Japan New Year",
+    "target_markets": [
+      "Japan domestic",
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Tokyo New Year airport transfer",
+    "keyword_id": "SEASON-JAPAN-NEW-YEAR-KW-002",
+    "likely_locations": [
+      "Tokyo",
+      "Kyoto",
+      "Osaka",
+      "Nagoya",
+      "Sapporo"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-JAPAN-NEW-YEAR",
+    "season_name": "Japan New Year",
+    "target_markets": [
+      "Japan domestic",
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Kyoto New Year shrine visit",
+    "keyword_id": "SEASON-JAPAN-NEW-YEAR-KW-003",
+    "likely_locations": [
+      "Tokyo",
+      "Kyoto",
+      "Osaka",
+      "Nagoya",
+      "Sapporo"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-JAPAN-NEW-YEAR",
+    "season_name": "Japan New Year",
+    "target_markets": [
+      "Japan domestic",
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Japan holiday transport",
+    "keyword_id": "SEASON-JAPAN-NEW-YEAR-KW-004",
+    "likely_locations": [
+      "Tokyo",
+      "Kyoto",
+      "Osaka",
+      "Nagoya",
+      "Sapporo"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-JAPAN-NEW-YEAR",
+    "season_name": "Japan New Year",
+    "target_markets": [
+      "Japan domestic",
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Japan long weekend travel",
+    "keyword_id": "SEASON-LONG-WEEKENDS-KW-001",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Nagoya",
+      "Mount Fuji"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-LONG-WEEKENDS",
+    "season_name": "Long Weekends",
+    "target_markets": [
+      "Japan domestic",
+      "Korea",
+      "Taiwan"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Tokyo weekend private tour",
+    "keyword_id": "SEASON-LONG-WEEKENDS-KW-002",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Nagoya",
+      "Mount Fuji"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-LONG-WEEKENDS",
+    "season_name": "Long Weekends",
+    "target_markets": [
+      "Japan domestic",
+      "Korea",
+      "Taiwan"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Mount Fuji weekend charter",
+    "keyword_id": "SEASON-LONG-WEEKENDS-KW-003",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Nagoya",
+      "Mount Fuji"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-LONG-WEEKENDS",
+    "season_name": "Long Weekends",
+    "target_markets": [
+      "Japan domestic",
+      "Korea",
+      "Taiwan"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Osaka weekend airport pickup",
+    "keyword_id": "SEASON-LONG-WEEKENDS-KW-004",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Nagoya",
+      "Mount Fuji"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-LONG-WEEKENDS",
+    "season_name": "Long Weekends",
+    "target_markets": [
+      "Japan domestic",
+      "Korea",
+      "Taiwan"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Japan school holiday family trip",
+    "keyword_id": "SEASON-SCHOOL-HOLIDAYS-KW-001",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Okinawa",
+      "Sapporo",
+      "Mount Fuji"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-SCHOOL-HOLIDAYS",
+    "season_name": "School Holidays",
+    "target_markets": [
+      "Japan domestic",
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan",
+      "Southeast Asia"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Japan family airport transfer",
+    "keyword_id": "SEASON-SCHOOL-HOLIDAYS-KW-002",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Okinawa",
+      "Sapporo",
+      "Mount Fuji"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-SCHOOL-HOLIDAYS",
+    "season_name": "School Holidays",
+    "target_markets": [
+      "Japan domestic",
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan",
+      "Southeast Asia"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Okinawa family transfer",
+    "keyword_id": "SEASON-SCHOOL-HOLIDAYS-KW-003",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Okinawa",
+      "Sapporo",
+      "Mount Fuji"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-SCHOOL-HOLIDAYS",
+    "season_name": "School Holidays",
+    "target_markets": [
+      "Japan domestic",
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan",
+      "Southeast Asia"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Tokyo family luggage transfer",
+    "keyword_id": "SEASON-SCHOOL-HOLIDAYS-KW-004",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Okinawa",
+      "Sapporo",
+      "Mount Fuji"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-SCHOOL-HOLIDAYS",
+    "season_name": "School Holidays",
+    "target_markets": [
+      "Japan domestic",
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan",
+      "Southeast Asia"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Japan event transfer",
+    "keyword_id": "SEASON-EVENTS-KW-001",
+    "likely_locations": [
+      "Tokyo Big Sight",
+      "Makuhari Messe",
+      "Nagoya",
+      "Suzuka Circuit",
+      "Osaka",
+      "Kyoto"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-EVENTS",
+    "season_name": "Exhibitions Concerts Sports Events",
+    "target_markets": [
+      "Japan domestic",
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan",
+      "China"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Suzuka Circuit transfer",
+    "keyword_id": "SEASON-EVENTS-KW-002",
+    "likely_locations": [
+      "Tokyo Big Sight",
+      "Makuhari Messe",
+      "Nagoya",
+      "Suzuka Circuit",
+      "Osaka",
+      "Kyoto"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-EVENTS",
+    "season_name": "Exhibitions Concerts Sports Events",
+    "target_markets": [
+      "Japan domestic",
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan",
+      "China"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Tokyo Big Sight taxi alternative",
+    "keyword_id": "SEASON-EVENTS-KW-003",
+    "likely_locations": [
+      "Tokyo Big Sight",
+      "Makuhari Messe",
+      "Nagoya",
+      "Suzuka Circuit",
+      "Osaka",
+      "Kyoto"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-EVENTS",
+    "season_name": "Exhibitions Concerts Sports Events",
+    "target_markets": [
+      "Japan domestic",
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan",
+      "China"
+    ]
+  },
+  {
+    "data_origin": "local_sample",
+    "human_review_required": true,
+    "keyword": "Nagoya event airport pickup",
+    "keyword_id": "SEASON-EVENTS-KW-004",
+    "likely_locations": [
+      "Tokyo Big Sight",
+      "Makuhari Messe",
+      "Nagoya",
+      "Suzuka Circuit",
+      "Osaka",
+      "Kyoto"
+    ],
+    "monitoring_channels": [
+      "Google Trends structure",
+      "manual import",
+      "CSV",
+      "JSON",
+      "future API"
+    ],
+    "real_google_trends_connected": false,
+    "season_id": "SEASON-EVENTS",
+    "season_name": "Exhibitions Concerts Sports Events",
+    "target_markets": [
+      "Japan domestic",
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan",
+      "China"
+    ]
+  }
+]

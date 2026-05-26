@@ -1,0 +1,77 @@
+{
+  "ok": true,
+  "version": "0.1.109",
+  "currentRound": "ROUND-PREDICT-001",
+  "seasons": [
+    "Sakura Season",
+    "Golden Week",
+    "Summer Vacation",
+    "Autumn Leaves Season",
+    "Christmas and Year End",
+    "Chinese New Year Travel",
+    "Japan New Year",
+    "Long Weekends",
+    "School Holidays",
+    "Exhibitions Concerts Sports Events"
+  ],
+  "summary": {
+    "calendar_ready": true,
+    "csv_import_supported": true,
+    "current_focus_season": "Sakura Season",
+    "data_source": "local_sample_and_manual_import_ready",
+    "json_import_supported": true,
+    "keywords": 40,
+    "likely_locations": [
+      "Haneda Airport",
+      "Kansai Airport",
+      "Kyoto",
+      "Makuhari Messe",
+      "Mount Fuji",
+      "Nagoya",
+      "Narita Airport",
+      "Okinawa",
+      "Osaka",
+      "Sapporo",
+      "Shibuya",
+      "Shinjuku",
+      "Suzuka Circuit",
+      "Tokyo",
+      "Tokyo Big Sight",
+      "Ueno"
+    ],
+    "manual_import_supported": true,
+    "monitoring_plans": 10,
+    "predicted_demand_types": [
+      "airport_transfer",
+      "elderly_support",
+      "event_pickup",
+      "family_trip",
+      "luggage_heavy_trip",
+      "multi_city_transfer",
+      "night_arrival",
+      "private_charter",
+      "sightseeing_route",
+      "station_to_hotel"
+    ],
+    "real_google_trends_api_connected": false,
+    "seasons": 10,
+    "target_markets": [
+      "China",
+      "Europe",
+      "Hong Kong",
+      "Japan domestic",
+      "Korea",
+      "Southeast Asia",
+      "Taiwan",
+      "US"
+    ],
+    "upcoming_peak_seasons": [
+      "Sakura Season",
+      "Golden Week",
+      "Autumn Leaves Season",
+      "Chinese New Year Travel",
+      "Exhibitions Concerts Sports Events"
+    ],
+    "write_operations_enabled": false
+  }
+}
