@@ -1,0 +1,50 @@
+{
+  "auto_dm_enabled": false,
+  "auto_post_enabled": false,
+  "auto_reply_enabled": false,
+  "auto_spam_enabled": false,
+  "blocked_flags": {
+    "no_auto_dm": true,
+    "no_auto_next_action": true,
+    "no_auto_posting": true,
+    "no_auto_reply": true,
+    "no_auto_spam": true,
+    "no_login_scraping": true,
+    "no_write_api": true,
+    "sample_not_real_result": true
+  },
+  "created_at": "2026-05-26T10:35:12+00:00",
+  "home_appliance_pollution_detected": false,
+  "human_review_gate": true,
+  "login_scraping_enabled": false,
+  "review_id": "MERCHANT_GROWTH_ENGINE_SAFETY_REVIEW",
+  "risk_review": [
+    {
+      "evidence": "Problem Seeker keeps JAG problems out of Home Appliance workspace.",
+      "risk": "workspace_pollution",
+      "status": "controlled"
+    },
+    {
+      "evidence": {
+        "no_auto_dm": true,
+        "no_auto_next_action": true,
+        "no_auto_posting": true,
+        "no_auto_reply": true,
+        "no_auto_spam": true,
+        "no_login_scraping": true,
+        "no_write_api": true,
+        "sample_not_real_result": true
+      },
+      "risk": "automatic_external_execution",
+      "status": "blocked"
+    },
+    {
+      "evidence": "Promotion Feedback Learning keeps sample_data_only=true and real_business_result=false.",
+      "risk": "sample_feedback_treated_as_real_revenue",
+      "status": "controlled"
+    }
+  ],
+  "safety_boundary_passed": true,
+  "workspace_isolation": true,
+  "write_api_enabled": false
+}

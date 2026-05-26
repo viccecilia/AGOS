@@ -1,0 +1,22 @@
+{
+  "answer_draft_ready": true,
+  "auto_dm_enabled": false,
+  "auto_post_enabled": false,
+  "auto_reply_enabled": false,
+  "checks": 7,
+  "cross_platform_plan_ready": true,
+  "feedback_learning_ready": true,
+  "gate_passed": true,
+  "login_scraping_enabled": false,
+  "merchant_growth_engine_ready": true,
+  "next_stage": "CONTROLLED_REAL_EXTERNAL_INTERACTION_PREPARATION",
+  "next_stage_recommendation": "Proceed to Controlled Real External Interaction Preparation with manual export packs, explicit human approval, and no platform write/API execution by default.",
+  "opportunity_qualification_ready": true,
+  "passed": 7,
+  "phase_completed": true,
+  "problem_seeker_ready": true,
+  "review_center_ready": true,
+  "safety_boundary_passed": true,
+  "workspace_plugin_ready": true,
+  "write_api_enabled": false
+}

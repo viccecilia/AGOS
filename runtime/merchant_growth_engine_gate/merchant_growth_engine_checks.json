@@ -1,0 +1,84 @@
+[
+  {
+    "check_id": "MERCHANT-GATE-001",
+    "evidence": [
+      "merchant_profiles.json",
+      "merchant_social_matrix.json",
+      "merchant_promotion_summary.json"
+    ],
+    "module": "Merchant Promotion Workspace",
+    "readiness_key": "workspace_plugin_ready",
+    "result": "2 merchant profiles; active workspace=jag_app_growth.",
+    "status": "passed"
+  },
+  {
+    "check_id": "MERCHANT-GATE-002",
+    "evidence": [
+      "problem_candidates.json",
+      "problem_seeker_summary.json"
+    ],
+    "module": "Problem Seeker Loop",
+    "readiness_key": "problem_seeker_ready",
+    "result": "13 candidate problems found; human gated=True.",
+    "status": "passed"
+  },
+  {
+    "check_id": "MERCHANT-GATE-003",
+    "evidence": [
+      "qualified_opportunities.json",
+      "opportunity_qualification_summary.json"
+    ],
+    "module": "Opportunity Qualification",
+    "readiness_key": "opportunity_qualification_ready",
+    "result": "6 high-value opportunities; auto action=False.",
+    "status": "passed"
+  },
+  {
+    "check_id": "MERCHANT-GATE-004",
+    "evidence": [
+      "answer_drafts.json",
+      "platform_draft_variants.json",
+      "answer_to_homepage_summary.json"
+    ],
+    "module": "Answer-to-Homepage Drafts",
+    "readiness_key": "answer_draft_ready",
+    "result": "6 answer drafts and 48 platform variants.",
+    "status": "passed"
+  },
+  {
+    "check_id": "MERCHANT-GATE-005",
+    "evidence": [
+      "promotion_plans.json",
+      "content_calendar_draft.json",
+      "cross_platform_promotion_summary.json"
+    ],
+    "module": "Cross-Platform Promotion Plan",
+    "readiness_key": "cross_platform_plan_ready",
+    "result": "48 platform plans across 8 platforms.",
+    "status": "passed"
+  },
+  {
+    "check_id": "MERCHANT-GATE-006",
+    "evidence": [
+      "promotion_review_items.json",
+      "promotion_review_decisions.json",
+      "promotion_review_summary.json"
+    ],
+    "module": "Promotion Review Center",
+    "readiness_key": "review_center_ready",
+    "result": "80 review items; decisions supported=approve, reject, modify, postpone.",
+    "status": "passed"
+  },
+  {
+    "check_id": "MERCHANT-GATE-007",
+    "evidence": [
+      "promotion_feedback_events.json",
+      "best_promotion_patterns.json",
+      "failed_promotion_patterns.json"
+    ],
+    "module": "Promotion Feedback Learning",
+    "readiness_key": "feedback_learning_ready",
+    "result": "13 feedback events; best patterns=8; failed patterns=12.",
+    "status": "passed"
+  }
+]

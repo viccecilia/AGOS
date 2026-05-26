@@ -40,6 +40,7 @@ from services.live_collection_runner import LiveCollectionRunner
 from services.live_data_import_to_memory import LiveDataImportToMemory
 from services.live_data_normalization_pipeline import LiveDataNormalizationPipeline
 from services.location_demand_heatmap_engine import LocationDemandHeatmapEngine
+from services.merchant_growth_engine_gate import MerchantGrowthEngineGate
 from services.merchant_promotion_workspace import MerchantPromotionWorkspace
 from services.mobility_demand_intent_engine import MobilityDemandIntentEngine
 from services.opportunity_qualification_engine import OpportunityQualificationEngine
@@ -195,6 +196,7 @@ class RuntimeUIBridge:
         cross_platform_promotion_plan = CrossPlatformPromotionPlanEngine().build()
         promotion_review_center = PromotionReviewCenter().build()
         promotion_feedback_learning = PromotionFeedbackLearning().learn()
+        merchant_growth_engine_gate = MerchantGrowthEngineGate().evaluate()
         location_demand_heatmap = LocationDemandHeatmapEngine().build(seasonal_demand_calendar.get("seasonalCalendar", []))
         mobility_demand_intent = MobilityDemandIntentEngine().build()
         demand_to_action_strategy = DemandToActionStrategyEngine().build()
@@ -571,6 +573,11 @@ class RuntimeUIBridge:
             "bestPromotionPatterns": promotion_feedback_learning.get("bestPromotionPatterns", []),
             "failedPromotionPatterns": promotion_feedback_learning.get("failedPromotionPatterns", []),
             "promotionFeedbackSummary": promotion_feedback_learning.get("promotionFeedbackSummary", {}),
+            "merchantGrowthEngineGate": merchant_growth_engine_gate,
+            "merchantGrowthEngineReport": merchant_growth_engine_gate.get("merchantGrowthEngineReport", {}),
+            "merchantGrowthEngineSafetyReview": merchant_growth_engine_gate.get("merchantGrowthEngineSafetyReview", {}),
+            "merchantGrowthEngineChecks": merchant_growth_engine_gate.get("merchantGrowthEngineChecks", []),
+            "merchantGrowthEngineSummary": merchant_growth_engine_gate.get("merchantGrowthEngineSummary", {}),
             "locationDemandHeatmap": location_demand_heatmap,
             "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),

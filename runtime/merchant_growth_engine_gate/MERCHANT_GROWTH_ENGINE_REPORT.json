@@ -1,0 +1,178 @@
+{
+  "active_merchant": "Japan AI Guide App",
+  "active_workspace": "jag_app_growth",
+  "answer_draft_count": 6,
+  "answer_draft_ready": true,
+  "best_promotion_patterns": [
+    {
+      "dimension": "problem_type",
+      "failed_feedback": 0,
+      "pattern_id": "BEST-001",
+      "positive_feedback": 1,
+      "sample_data_only": true,
+      "value": "transport_planning",
+      "why_best": "Positive sample/manual feedback without unsafe flags."
+    },
+    {
+      "dimension": "platform",
+      "failed_feedback": 0,
+      "pattern_id": "BEST-002",
+      "positive_feedback": 1,
+      "sample_data_only": true,
+      "value": "Instagram",
+      "why_best": "Positive sample/manual feedback without unsafe flags."
+    },
+    {
+      "dimension": "platform",
+      "failed_feedback": 0,
+      "pattern_id": "BEST-003",
+      "positive_feedback": 1,
+      "sample_data_only": true,
+      "value": "TikTok",
+      "why_best": "Positive sample/manual feedback without unsafe flags."
+    },
+    {
+      "dimension": "platform",
+      "failed_feedback": 0,
+      "pattern_id": "BEST-004",
+      "positive_feedback": 1,
+      "sample_data_only": true,
+      "value": "X",
+      "why_best": "Positive sample/manual feedback without unsafe flags."
+    },
+    {
+      "dimension": "platform",
+      "failed_feedback": 0,
+      "pattern_id": "BEST-005",
+      "positive_feedback": 1,
+      "sample_data_only": true,
+      "value": "YouTube",
+      "why_best": "Positive sample/manual feedback without unsafe flags."
+    },
+    {
+      "dimension": "cta_style",
+      "failed_feedback": 0,
+      "pattern_id": "BEST-006",
+      "positive_feedback": 5,
+      "sample_data_only": true,
+      "value": "answer_first_soft_reference",
+      "why_best": "Positive sample/manual feedback without unsafe flags."
+    },
+    {
+      "dimension": "content_format",
+      "failed_feedback": 0,
+      "pattern_id": "BEST-007",
+      "positive_feedback": 1,
+      "sample_data_only": true,
+      "value": "carousel",
+      "why_best": "Positive sample/manual feedback without unsafe flags."
+    },
+    {
+      "dimension": "content_format",
+      "failed_feedback": 0,
+      "pattern_id": "BEST-008",
+      "positive_feedback": 1,
+      "sample_data_only": true,
+      "value": "short_video_hook",
+      "why_best": "Positive sample/manual feedback without unsafe flags."
+    }
+  ],
+  "candidate_problem_count": 13,
+  "capability_chain": [
+    "Merchant homepage",
+    "Problem Seeker",
+    "Opportunity Qualification",
+    "Answer Draft",
+    "Cross-Platform Promotion Plan",
+    "Human Review",
+    "Feedback Learning"
+  ],
+  "created_at": "2026-05-26T10:35:12+00:00",
+  "cross_platform_plan_count": 48,
+  "cross_platform_plan_ready": true,
+  "failed_promotion_patterns": [
+    {
+      "dimension": "problem_type",
+      "failed_feedback": 1,
+      "pattern_id": "FAILED-001",
+      "sample_data_only": true,
+      "unsafe_feedback": 1,
+      "value": "travel_planning",
+      "why_failed": "Ignored, rejected, modified, or unsafe feedback should be learned as a caution pattern."
+    },
+    {
+      "dimension": "problem_type",
+      "failed_feedback": 1,
+      "pattern_id": "FAILED-002",
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
+      "value": "luggage_heavy_trip",
+      "why_failed": "Ignored, rejected, modified, or unsafe feedback should be learned as a caution pattern."
+    },
+    {
+      "dimension": "problem_type",
+      "failed_feedback": 6,
+      "pattern_id": "FAILED-003",
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
+      "value": "airport_transfer",
+      "why_failed": "Ignored, rejected, modified, or unsafe feedback should be learned as a caution pattern."
+    },
+    {
+      "dimension": "pain_point",
+      "failed_feedback": 1,
+      "pattern_id": "FAILED-004",
+      "sample_data_only": true,
+      "unsafe_feedback": 1,
+      "value": "planning uncertainty",
+      "why_failed": "Ignored, rejected, modified, or unsafe feedback should be learned as a caution pattern."
+    },
+    {
+      "dimension": "pain_point",
+      "failed_feedback": 7,
+      "pattern_id": "FAILED-005",
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
+      "value": "luggage friction",
+      "why_failed": "Ignored, rejected, modified, or unsafe feedback should be learned as a caution pattern."
+    },
+    {
+      "dimension": "platform",
+      "failed_feedback": 8,
+      "pattern_id": "FAILED-006",
+      "sample_data_only": true,
+      "unsafe_feedback": 1,
+      "value": "Reddit",
+      "why_failed": "Ignored, rejected, modified, or unsafe feedback should be learned as a caution pattern."
+    },
+    {
+      "dimension": "market",
+      "failed_feedback": 1,
+      "pattern_id": "FAILED-007",
+      "sample_data_only": true,
+      "unsafe_feedback": 1,
+      "value": "Japan",
+      "why_failed": "Ignored, rejected, modified, or unsafe feedback should be learned as a caution pattern."
+    },
+    {
+      "dimension": "market",
+      "failed_feedback": 7,
+      "pattern_id": "FAILED-008",
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
+      "value": "US",
+      "why_failed": "Ignored, rejected, modified, or unsafe feedback should be learned as a caution pattern."
+    }
+  ],
+  "feedback_event_count": 13,
+  "feedback_learning_ready": true,
+  "high_value_opportunity_count": 6,
+  "next_stage_recommendation": "Proceed to Controlled Real External Interaction Preparation with manual export packs, explicit human approval, and no platform write/API execution by default.",
+  "opportunity_qualification_ready": true,
+  "problem_seeker_ready": true,
+  "report_id": "MERCHANT_GROWTH_ENGINE_REPORT",
+  "review_center_ready": true,
+  "review_item_count": 80,
+  "safety_boundary_passed": true,
+  "workspace_plugin_ready": true
+}
