@@ -1,0 +1,61 @@
+{
+  "round_id": "ROUND-API-COLLECT-005",
+  "status": "passed",
+  "checked_at": "2026-05-26",
+  "validations": [
+    {
+      "command": "python -m compileall services tests",
+      "status": "passed"
+    },
+    {
+      "command": "python tests\\live_data_normalization_pipeline_smoke_test.py",
+      "status": "passed"
+    },
+    {
+      "command": "python tests\\war_room_runtime_ui_smoke_test.py",
+      "status": "passed"
+    },
+    {
+      "command": "node project-state live data normalization pipeline check",
+      "status": "passed"
+    },
+    {
+      "command": "node --check runtime\\task_results\\ROUND-API-COLLECT-005\\results\\control_center_runtime_script.js",
+      "status": "passed"
+    },
+    {
+      "command": "browser verification",
+      "status": "passed",
+      "evidence": {
+        "panelExists": true,
+        "feedCount": 4,
+        "includesSourceUrl": true,
+        "includesLanguage": true,
+        "includesMarket": true,
+        "includesPain": true,
+        "includesEmotion": true,
+        "includesTraining": true,
+        "includesConfidence": true,
+        "includesReddit": true,
+        "includesTikTok": true,
+        "includesYouTube": true,
+        "includesX": true
+      }
+    }
+  ],
+  "normalized_fields": [
+    "platform",
+    "source_url",
+    "language",
+    "market",
+    "pain_points",
+    "emotion_tags",
+    "trend_strength",
+    "training_value_score",
+    "source_confidence"
+  ],
+  "safety_checks": {
+    "write_operations_enabled": false,
+    "local_json_only": true
+  }
+}

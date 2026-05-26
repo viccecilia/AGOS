@@ -1,0 +1,35 @@
+{
+  "average_source_confidence": 0.836,
+  "emotion_tags": [
+    "anxiety",
+    "comparison_pressure",
+    "decision_pressure",
+    "frustration",
+    "information_need",
+    "neutral_information_need",
+    "surprise"
+  ],
+  "highest_training_value": 100,
+  "items_normalized": 4,
+  "languages": [
+    "en"
+  ],
+  "markets": [
+    "Japan"
+  ],
+  "pain_points": [
+    "airport_transfer_confusion",
+    "first_trip_uncertainty",
+    "payment_and_pass_decision",
+    "transport_confusion",
+    "value_decision_pressure"
+  ],
+  "pipeline_ready": true,
+  "platforms": [
+    "Reddit",
+    "TikTok",
+    "X",
+    "YouTube"
+  ],
+  "write_operations_enabled": false
+}

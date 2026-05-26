@@ -531,28 +531,28 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.104",
+    "controlCenterVersion": "0.1.105",
     "lastUpdated": "2026-05-26",
     "currentPhase": "Controlled API Intelligence Collection",
-    "currentRound": "ROUND-API-COLLECT-004",
-    "nextRound": "ROUND-API-COLLECT-005 Controlled Collection Gate",
+    "currentRound": "ROUND-API-COLLECT-005",
+    "nextRound": "ROUND-API-COLLECT-006 Controlled Collection Gate",
     "overallProgress": 100,
-    "activeFocus": "Collection Compliance Guard: AGOS can now detect rate limits, repeated queries, suspicious patterns, write API usage, excessive polling, automated login scraping, platform-limit bypass, and automated interaction risk before collecting intelligence."
+    "activeFocus": "Live Data Normalization Pipeline: AGOS can now normalize TikTok trend, Reddit topic, YouTube search, and X signal data into shared platform, source_url, language, market, pain_points, emotion_tags, trend_strength, training_value_score, and source_confidence fields."
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.104 Add collection compliance guard",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.104",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.104",
-    "note": "Collection Compliance Guard checks live collection compliance risk and keeps automated login scraping, platform-limit bypass, write API usage, and automated interaction blocked."
+    "latestCommit": "agos-v0.1.105 Add live data normalization pipeline",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.105",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.105",
+    "note": "Live Data Normalization Pipeline unifies platform intelligence into shared AGOS training fields while keeping write operations blocked."
   },
   "metrics": {
-    "roundsPlanned": 125,
-    "roundsCompleted": 96,
+    "roundsPlanned": 126,
+    "roundsCompleted": 97,
     "roundsInProgress": 0,
-    "reportsEmbedded": 108
+    "reportsEmbedded": 109
   },
   "modules": [
     {
@@ -686,6 +686,29 @@
     }
   ],
   "reports": [
+    {
+      "id": "ROUND-API-COLLECT-005",
+      "title": "AGOS Live Data Normalization Pipeline",
+      "status": "done",
+      "date": "2026-05-26",
+      "summary": "Added Live Data Normalization Pipeline. AGOS can now normalize TikTok trend, Reddit topic, YouTube search, and X signal intelligence into shared platform, source_url, language, market, pain_points, emotion_tags, trend_strength, training_value_score, and source_confidence fields.",
+      "files": [
+        "services/live_data_normalization_pipeline.py",
+        "tests/live_data_normalization_pipeline_smoke_test.py",
+        "runtime/normalized_live_data/LIVE_DATA_NORMALIZATION_REPORT.json",
+        "runtime/normalized_live_data/normalized_live_data.json",
+        "runtime/normalized_live_data/normalized_live_data_feed.json",
+        "runtime/normalized_live_data/normalization_summary.json",
+        "runtime/task_results/ROUND-API-COLLECT-005/ROUND_SUMMARY.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "python -m compileall services tests",
+        "python tests\\live_data_normalization_pipeline_smoke_test.py",
+        "python tests\\war_room_runtime_ui_smoke_test.py",
+        "Browser verification: Live Data Normalization Pipeline panel shows unified platform, source_url, language, market, pain_points, emotion_tags, trend_strength, training_value_score, and source_confidence fields."
+      ]
+    },
     {
       "id": "ROUND-API-COLLECT-004",
       "title": "AGOS Collection Compliance Guard",
@@ -2891,6 +2914,15 @@
     }
   ],
   "versions": [
+    {
+      "id": "agos_control_center_v0.1.105",
+      "label": "v0.1.105 - Live Data Normalization Pipeline",
+      "date": "2026-05-26",
+      "gitRef": "agos-v0.1.105",
+      "location": "docs/project_control_center.html",
+      "notes": "ROUND-API-COLLECT-005 completed locally. War Room now shows normalized live platform intelligence with shared training fields.",
+      "snapshot": "AGOS Project Control Center v0.1.105\nRound: ROUND-API-COLLECT-005 completed\nGit: agos-v0.1.105\nStatus: Live Data Normalization Pipeline added\nTikTok/Reddit/YouTube/X intelligence is normalized into shared AGOS training fields.\n"
+    },
     {
       "id": "agos_control_center_v0.1.104",
       "label": "v0.1.104 - Collection Compliance Guard",
@@ -5249,6 +5281,16 @@
       "deliverable": "services/collection_compliance_guard.py, runtime/compliance_guard/, compliance risk feed, guard summary, and War Room Collection Compliance Guard panel.",
       "report": "runtime/task_results/ROUND-API-COLLECT-004/ROUND_SUMMARY.md",
       "summary": "完成 Collection Compliance Guard。AGOS 现在能检查 rate limit、repeated queries、suspicious pattern、write API usage、excessive polling，并阻断自动登录抓取、绕过平台限制、write API 和自动互动。"
+    },
+    {
+      "id": "ROUND-API-COLLECT-005",
+      "phase": "CONTROLLED_API_INTELLIGENCE_COLLECTION",
+      "name": "AGOS_LIVE_DATA_NORMALIZATION_PIPELINE",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "services/live_data_normalization_pipeline.py, runtime/normalized_live_data/, normalized live data feed, summary, and War Room Live Data Normalization Pipeline panel.",
+      "report": "runtime/task_results/ROUND-API-COLLECT-005/ROUND_SUMMARY.md",
+      "summary": "完成 Live Data Normalization Pipeline。AGOS 现在能把 TikTok trend、Reddit topic、YouTube search、X signal 统一成 platform、source_url、language、market、pain_points、emotion_tags、trend_strength、training_value_score、source_confidence 等训练字段。"
     }
   ],
   "realGrowthVerification": {
@@ -25378,6 +25420,122 @@
       "follow_enabled": false,
       "like_enabled": false
     },
+    "normalizedLiveDataFeed": [
+      {
+        "time": "2026-05-26T02:30:00+00:00",
+        "normalized_id": "LIVE-NORM-0001",
+        "platform": "Reddit",
+        "source_type": "Reddit topic",
+        "source_url": "local://live_collection/LIVE-COLLECT-0001",
+        "language": "en",
+        "market": "Japan",
+        "pain_points": [
+          "payment_and_pass_decision",
+          "transport_confusion"
+        ],
+        "emotion_tags": [
+          "anxiety",
+          "information_need"
+        ],
+        "trend_strength": 100,
+        "training_value_score": 100,
+        "source_confidence": 0.89
+      },
+      {
+        "time": "2026-05-26T02:30:00+00:00",
+        "normalized_id": "LIVE-NORM-0002",
+        "platform": "YouTube",
+        "source_type": "YouTube search",
+        "source_url": "local://live_collection/LIVE-COLLECT-0002",
+        "language": "en",
+        "market": "Japan",
+        "pain_points": [
+          "payment_and_pass_decision"
+        ],
+        "emotion_tags": [
+          "neutral_information_need"
+        ],
+        "trend_strength": 80,
+        "training_value_score": 73,
+        "source_confidence": 0.769
+      },
+      {
+        "time": "2026-05-26T02:30:00+00:00",
+        "normalized_id": "LIVE-NORM-0003",
+        "platform": "TikTok",
+        "source_type": "TikTok trend",
+        "source_url": "local://live_collection/LIVE-COLLECT-0003",
+        "language": "en",
+        "market": "Japan",
+        "pain_points": [
+          "airport_transfer_confusion",
+          "first_trip_uncertainty"
+        ],
+        "emotion_tags": [
+          "anxiety",
+          "frustration",
+          "surprise"
+        ],
+        "trend_strength": 100,
+        "training_value_score": 100,
+        "source_confidence": 0.95
+      },
+      {
+        "time": "2026-05-26T02:30:00+00:00",
+        "normalized_id": "LIVE-NORM-0004",
+        "platform": "X",
+        "source_type": "X signal",
+        "source_url": "local://live_collection/LIVE-COLLECT-0004",
+        "language": "en",
+        "market": "Japan",
+        "pain_points": [
+          "payment_and_pass_decision",
+          "value_decision_pressure"
+        ],
+        "emotion_tags": [
+          "comparison_pressure",
+          "decision_pressure"
+        ],
+        "trend_strength": 71,
+        "training_value_score": 82,
+        "source_confidence": 0.733
+      }
+    ],
+    "liveDataNormalizationSummary": {
+      "pipeline_ready": true,
+      "items_normalized": 4,
+      "platforms": [
+        "Reddit",
+        "TikTok",
+        "X",
+        "YouTube"
+      ],
+      "languages": [
+        "en"
+      ],
+      "markets": [
+        "Japan"
+      ],
+      "pain_points": [
+        "airport_transfer_confusion",
+        "first_trip_uncertainty",
+        "payment_and_pass_decision",
+        "transport_confusion",
+        "value_decision_pressure"
+      ],
+      "emotion_tags": [
+        "anxiety",
+        "comparison_pressure",
+        "decision_pressure",
+        "frustration",
+        "information_need",
+        "neutral_information_need",
+        "surprise"
+      ],
+      "highest_training_value": 100,
+      "average_source_confidence": 0.836,
+      "write_operations_enabled": false
+    },
     "readOnlyTrendConnector": {
       "report_id": "READ_ONLY_TREND_REPORT",
       "created_at": "2026-05-26T01:44:42+00:00",
@@ -38794,6 +38952,9 @@
             <div class="runtime-title-row"><h3>Collection Compliance Guard</h3><p>rate limit / repeated queries / suspicious pattern / write API / excessive polling / forbidden automation</p></div>
             <div class="feed-stream" id="runtime-collection-compliance-guard"></div>
             <div style="height:10px"></div>
+            <div class="runtime-title-row"><h3>Live Data Normalization Pipeline</h3><p>platform / source_url / language / market / pain points / emotion / training value / confidence</p></div>
+            <div class="feed-stream" id="runtime-live-data-normalization"></div>
+            <div style="height:10px"></div>
             <div class="runtime-title-row"><h3>Read-Only Trend Connector</h3><p>Trend search / keyword search / hashtag search / public analytics only</p></div>
             <div class="feed-stream" id="runtime-read-only-trends"></div>
             <div style="height:10px"></div>
@@ -39564,6 +39725,10 @@
       el('runtime-collection-compliance-guard').innerHTML = (wr.complianceRiskFeed || []).map(item =>
         '<div class="feed-item"><time>' + esc(item.risk_id || '') + ' / ' + esc(item.platform || '') + '</time><div class="feed-main"><strong>' + esc(item.risk_type || '') + ' / ' + esc(item.status || '') + ' / ' + esc(item.severity || '') + '</strong><span>Evidence: ' + esc(item.evidence || '') + '</span><span>Blocked action: ' + esc(item.blocked_action || '') + ' / Recommended: ' + esc(item.recommended_action || '') + '</span><span>Write ops enabled: ' + esc(item.write_operations_enabled || false) + ' / Auto interaction enabled: ' + esc(item.automatic_interaction_enabled || false) + '</span><span>Allowed: read-only=' + esc(complianceSummary.read_only_collection_allowed || false) + ' / login scrape=' + esc(complianceSummary.automated_login_scrape_allowed || false) + ' / bypass=' + esc(complianceSummary.platform_limit_bypass_allowed || false) + ' / write API=' + esc(complianceSummary.write_api_allowed || false) + '</span><span>post=' + esc(complianceSummary.post_enabled || false) + ' / reply=' + esc(complianceSummary.reply_enabled || false) + ' / DM=' + esc(complianceSummary.dm_enabled || false) + ' / follow=' + esc(complianceSummary.follow_enabled || false) + ' / like=' + esc(complianceSummary.like_enabled || false) + '</span></div><span class="badge ' + (item.status === 'blocked' ? 'b-red' : item.status === 'watch' ? 'b-amber' : 'b-green') + '">' + esc(item.status || 'check') + '</span></div>'
       ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Collection Compliance Guard pending</strong><span>AGOS will check rate limits, repeated queries, suspicious patterns, write API usage, excessive polling, automated login scraping, platform-limit bypass, and automated interaction.</span></div><span class="badge b-amber">pending</span></div>';
+      const liveDataNormalizationSummary = wr.liveDataNormalizationSummary || {};
+      el('runtime-live-data-normalization').innerHTML = (wr.normalizedLiveDataFeed || []).map(item =>
+        '<div class="feed-item"><time>' + esc(item.normalized_id || '') + ' / ' + esc(item.platform || '') + '</time><div class="feed-main"><strong>' + esc(item.source_type || '') + ' / training ' + esc(item.training_value_score || 0) + ' / strength ' + esc(item.trend_strength || 0) + '</strong><span>source_url: ' + esc(item.source_url || '') + '</span><span>Language: ' + esc(item.language || '') + ' / Market: ' + esc(item.market || '') + ' / Confidence: ' + esc(item.source_confidence || 0) + '</span><span>Pain points: ' + esc((item.pain_points || []).join(' / ')) + '</span><span>Emotion tags: ' + esc((item.emotion_tags || []).join(' / ')) + '</span><span>Items normalized: ' + esc(liveDataNormalizationSummary.items_normalized || 0) + ' / Highest training value: ' + esc(liveDataNormalizationSummary.highest_training_value || 0) + ' / Write ops enabled: ' + esc(liveDataNormalizationSummary.write_operations_enabled || false) + '</span></div><span class="badge ' + ((item.training_value_score || 0) >= 90 ? 'b-green' : 'b-cyan') + '">' + esc(item.language || 'normalized') + '</span></div>'
+      ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Live Data Normalization Pipeline pending</strong><span>AGOS will normalize platform, source_url, language, market, pain_points, emotion_tags, trend_strength, training_value_score, and source_confidence.</span></div><span class="badge b-amber">pending</span></div>';
       const trendConnectorSummary = wr.trendConnectorSummary || {};
       el('runtime-read-only-trends').innerHTML = (wr.platformTrendFeed || []).map(item =>
         '<div class="feed-item"><time>' + esc(item.trend_id || '') + ' / ' + esc(item.platform || '') + '</time><div class="feed-main"><strong>' + esc(item.query || '') + ' / heat ' + esc(item.heat_score || 0) + '</strong><span>Keyword: ' + esc(item.keyword || '') + ' / Hashtag: ' + esc(item.hashtag || '') + '</span><span>' + esc(item.trend_text || '') + '</span><span>Read: ' + esc(item.read_status || '') + ' / Write: ' + esc(item.write_status || '') + ' / Write ops enabled: ' + esc(trendConnectorSummary.write_operations_enabled || false) + '</span></div><span class="badge ' + (item.write_status === 'blocked' ? 'b-green' : 'b-red') + '">' + esc(item.read_status || 'read') + '</span></div>'

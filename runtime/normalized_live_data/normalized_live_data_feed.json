@@ -1,0 +1,81 @@
+[
+  {
+    "emotion_tags": [
+      "anxiety",
+      "information_need"
+    ],
+    "language": "en",
+    "market": "Japan",
+    "normalized_id": "LIVE-NORM-0001",
+    "pain_points": [
+      "payment_and_pass_decision",
+      "transport_confusion"
+    ],
+    "platform": "Reddit",
+    "source_confidence": 0.89,
+    "source_type": "Reddit topic",
+    "source_url": "local://live_collection/LIVE-COLLECT-0001",
+    "time": "2026-05-26T02:16:32+00:00",
+    "training_value_score": 100,
+    "trend_strength": 100
+  },
+  {
+    "emotion_tags": [
+      "neutral_information_need"
+    ],
+    "language": "en",
+    "market": "Japan",
+    "normalized_id": "LIVE-NORM-0002",
+    "pain_points": [
+      "payment_and_pass_decision"
+    ],
+    "platform": "YouTube",
+    "source_confidence": 0.769,
+    "source_type": "YouTube search",
+    "source_url": "local://live_collection/LIVE-COLLECT-0002",
+    "time": "2026-05-26T02:16:32+00:00",
+    "training_value_score": 73,
+    "trend_strength": 80
+  },
+  {
+    "emotion_tags": [
+      "anxiety",
+      "frustration",
+      "surprise"
+    ],
+    "language": "en",
+    "market": "Japan",
+    "normalized_id": "LIVE-NORM-0003",
+    "pain_points": [
+      "airport_transfer_confusion",
+      "first_trip_uncertainty"
+    ],
+    "platform": "TikTok",
+    "source_confidence": 0.95,
+    "source_type": "TikTok trend",
+    "source_url": "local://live_collection/LIVE-COLLECT-0003",
+    "time": "2026-05-26T02:16:32+00:00",
+    "training_value_score": 100,
+    "trend_strength": 100
+  },
+  {
+    "emotion_tags": [
+      "comparison_pressure",
+      "decision_pressure"
+    ],
+    "language": "en",
+    "market": "Japan",
+    "normalized_id": "LIVE-NORM-0004",
+    "pain_points": [
+      "payment_and_pass_decision",
+      "value_decision_pressure"
+    ],
+    "platform": "X",
+    "source_confidence": 0.733,
+    "source_type": "X signal",
+    "source_url": "local://live_collection/LIVE-COLLECT-0004",
+    "time": "2026-05-26T02:16:32+00:00",
+    "training_value_score": 82,
+    "trend_strength": 71
+  }
+]
