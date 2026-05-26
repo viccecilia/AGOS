@@ -22,6 +22,7 @@ from services.autonomous_growth_preparation_gate import AutonomousGrowthPreparat
 from services.collection_compliance_guard import CollectionComplianceGuard
 from services.controlled_api_collection_gate import ControlledAPICollectionGate
 from services.cross_platform_expansion_engine import CrossPlatformExpansionEngine
+from services.demand_to_action_strategy_engine import DemandToActionStrategyEngine
 from services.daily_question_import_engine import DailyQuestionImportEngine
 from services.daily_operations_report_engine import DailyOperationsReportEngine
 from services.failure_analysis_engine import FailureAnalysisEngine
@@ -179,6 +180,7 @@ class RuntimeUIBridge:
         seasonal_demand_calendar = SeasonalDemandCalendarEngine().build()
         location_demand_heatmap = LocationDemandHeatmapEngine().build(seasonal_demand_calendar.get("seasonalCalendar", []))
         mobility_demand_intent = MobilityDemandIntentEngine().build()
+        demand_to_action_strategy = DemandToActionStrategyEngine().build()
         read_only_trends = ReadOnlyTrendConnector().read_trends()
         api_rate_limit_guard = APIRateLimitGuard().evaluate()
         api_signal_normalization = APISignalNormalization().normalize(read_only_trends.get("platformTrends", []))
@@ -515,6 +517,11 @@ class RuntimeUIBridge:
             "highValueMobilityIntents": mobility_demand_intent.get("highValueMobilityIntents", []),
             "lowValueSignals": mobility_demand_intent.get("lowValueSignals", []),
             "mobilityIntentSummary": mobility_demand_intent.get("mobilityIntentSummary", {}),
+            "demandToActionStrategy": demand_to_action_strategy,
+            "platformContentActions": demand_to_action_strategy.get("platformContentActions", []),
+            "localBusinessActions": demand_to_action_strategy.get("localBusinessActions", []),
+            "driverOperationActions": demand_to_action_strategy.get("driverOperationActions", []),
+            "demandActionStrategySummary": demand_to_action_strategy.get("demandActionStrategySummary", {}),
             "readOnlyTrendConnector": read_only_trends,
             "platformTrends": read_only_trends.get("platformTrends", []),
             "platformTrendFeed": read_only_trends.get("platformTrendFeed", []),

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8765/project_control_center.html?runtime_ui=1#war-room-growth",
+  "checks": {
+    "demand_action_panel_visible": true,
+    "platform_content_visible": true,
+    "local_business_visible": true,
+    "driver_operation_visible": true,
+    "needs_human_review_visible": true,
+    "auto_publish_false_visible": true,
+    "auto_contact_false_visible": true,
+    "auto_dispatch_false_visible": true,
+    "quote_false_visible": true
+  }
+}

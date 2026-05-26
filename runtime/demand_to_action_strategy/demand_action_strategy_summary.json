@@ -1,0 +1,45 @@
+{
+  "all_actions_need_human_review": true,
+  "auto_contact_business_enabled": false,
+  "auto_contact_customer_enabled": false,
+  "auto_contact_driver_enabled": false,
+  "auto_dispatch_enabled": false,
+  "auto_dm_enabled": false,
+  "auto_publish_enabled": false,
+  "auto_quote_enabled": false,
+  "business_types": [
+    "airport_transfer_company",
+    "charter_company",
+    "event_organizer",
+    "exhibition_service_provider",
+    "hotel",
+    "local_dmc",
+    "travel_agency"
+  ],
+  "driver_focus_areas": [
+    "Haneda Airport",
+    "Kyoto",
+    "Osaka",
+    "Tokyo"
+  ],
+  "driver_operation_actions": 6,
+  "local_business_actions": 19,
+  "platform_content_actions": 21,
+  "source_collection_review_items": 0,
+  "source_high_value_intents": 18,
+  "source_locations": 16,
+  "source_memory_imports": 0,
+  "source_seasons": 10,
+  "strategy_engine_ready": true,
+  "target_platforms": [
+    "Instagram",
+    "Reddit",
+    "SEO / Website",
+    "TikTok",
+    "X",
+    "Xiaohongshu",
+    "YouTube"
+  ],
+  "total_actions": 46,
+  "write_operations_enabled": false
+}

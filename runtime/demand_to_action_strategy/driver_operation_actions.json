@@ -1,0 +1,138 @@
+[
+  {
+    "action_id": "DRIVER-ACTION-0001",
+    "auto_contact_customer_enabled": false,
+    "auto_contact_driver_enabled": false,
+    "auto_dispatch_enabled": false,
+    "auto_quote_enabled": false,
+    "created_at": "2026-05-26T03:51:38+00:00",
+    "focus_standby_area": "Tokyo",
+    "human_review_required": true,
+    "language_preparation": [
+      "simple English pickup script",
+      "Japanese driver notes"
+    ],
+    "luggage_space_requirement": "large_luggage_capacity_required",
+    "priority_time_window": "arrival_peak_and_late_evening",
+    "reason": "airport_transfer signal has strength 100 and conversion 92 around Tokyo; location heat score is 100. Action remains human-reviewed only.",
+    "recommended_vehicle_type": "minivan_or_large_luggage_vehicle",
+    "service_script_suggestion": "Confirm terminal, luggage count, arrival time, and exact meeting point for Tokyo.",
+    "source_intent_id": "MOBILITY-INTENT-0003",
+    "status": "needs_human_review",
+    "traffic_waiting_risk": "high_congestion_waiting_risk"
+  },
+  {
+    "action_id": "DRIVER-ACTION-0002",
+    "auto_contact_customer_enabled": false,
+    "auto_contact_driver_enabled": false,
+    "auto_dispatch_enabled": false,
+    "auto_quote_enabled": false,
+    "created_at": "2026-05-26T03:51:38+00:00",
+    "focus_standby_area": "Tokyo",
+    "human_review_required": true,
+    "language_preparation": [
+      "simple English pickup script",
+      "Japanese driver notes"
+    ],
+    "luggage_space_requirement": "large_luggage_capacity_required",
+    "priority_time_window": "arrival_peak_and_late_evening",
+    "reason": "airport_transfer signal has strength 100 and conversion 92 around Tokyo; location heat score is 100. Action remains human-reviewed only.",
+    "recommended_vehicle_type": "minivan_or_large_luggage_vehicle",
+    "service_script_suggestion": "Confirm terminal, luggage count, arrival time, and exact meeting point for Tokyo.",
+    "source_intent_id": "MOBILITY-INTENT-0011",
+    "status": "needs_human_review",
+    "traffic_waiting_risk": "high_congestion_waiting_risk"
+  },
+  {
+    "action_id": "DRIVER-ACTION-0003",
+    "auto_contact_customer_enabled": false,
+    "auto_contact_driver_enabled": false,
+    "auto_dispatch_enabled": false,
+    "auto_quote_enabled": false,
+    "created_at": "2026-05-26T03:51:38+00:00",
+    "focus_standby_area": "Tokyo",
+    "human_review_required": true,
+    "language_preparation": [
+      "simple English pickup script",
+      "Japanese driver notes",
+      "Korean pickup instructions"
+    ],
+    "luggage_space_requirement": "large_luggage_capacity_required",
+    "priority_time_window": "arrival_peak_and_late_evening",
+    "reason": "airport_transfer signal has strength 100 and conversion 92 around Tokyo; location heat score is 100. Action remains human-reviewed only.",
+    "recommended_vehicle_type": "minivan_or_large_luggage_vehicle",
+    "service_script_suggestion": "Confirm terminal, luggage count, arrival time, and exact meeting point for Tokyo.",
+    "source_intent_id": "MOBILITY-INTENT-0014",
+    "status": "needs_human_review",
+    "traffic_waiting_risk": "high_congestion_waiting_risk"
+  },
+  {
+    "action_id": "DRIVER-ACTION-0004",
+    "auto_contact_customer_enabled": false,
+    "auto_contact_driver_enabled": false,
+    "auto_dispatch_enabled": false,
+    "auto_quote_enabled": false,
+    "created_at": "2026-05-26T03:51:38+00:00",
+    "focus_standby_area": "Haneda Airport",
+    "human_review_required": true,
+    "language_preparation": [
+      "simple English pickup script",
+      "Japanese driver notes"
+    ],
+    "luggage_space_requirement": "large_luggage_capacity_required",
+    "priority_time_window": "arrival_peak_and_late_evening",
+    "reason": "airport_transfer signal has strength 95 and conversion 91 around Haneda Airport; location heat score is 97. Action remains human-reviewed only.",
+    "recommended_vehicle_type": "minivan_or_large_luggage_vehicle",
+    "service_script_suggestion": "Confirm terminal, luggage count, arrival time, and exact meeting point for Haneda Airport.",
+    "source_intent_id": "MOBILITY-INTENT-0025",
+    "status": "needs_human_review",
+    "traffic_waiting_risk": "high_congestion_waiting_risk"
+  },
+  {
+    "action_id": "DRIVER-ACTION-0005",
+    "auto_contact_customer_enabled": false,
+    "auto_contact_driver_enabled": false,
+    "auto_dispatch_enabled": false,
+    "auto_quote_enabled": false,
+    "created_at": "2026-05-26T03:51:38+00:00",
+    "focus_standby_area": "Osaka",
+    "human_review_required": true,
+    "language_preparation": [
+      "simple English pickup script",
+      "Japanese driver notes",
+      "Chinese pickup instructions",
+      "Korean pickup instructions"
+    ],
+    "luggage_space_requirement": "large_luggage_capacity_required",
+    "priority_time_window": "arrival_peak_and_late_evening",
+    "reason": "airport_transfer signal has strength 99 and conversion 91 around Osaka; location heat score is 95. Action remains human-reviewed only.",
+    "recommended_vehicle_type": "minivan_or_large_luggage_vehicle",
+    "service_script_suggestion": "Confirm terminal, luggage count, arrival time, and exact meeting point for Osaka.",
+    "source_intent_id": "MOBILITY-INTENT-0019",
+    "status": "needs_human_review",
+    "traffic_waiting_risk": "high_congestion_waiting_risk"
+  },
+  {
+    "action_id": "DRIVER-ACTION-0006",
+    "auto_contact_customer_enabled": false,
+    "auto_contact_driver_enabled": false,
+    "auto_dispatch_enabled": false,
+    "auto_quote_enabled": false,
+    "created_at": "2026-05-26T03:51:38+00:00",
+    "focus_standby_area": "Kyoto",
+    "human_review_required": true,
+    "language_preparation": [
+      "simple English pickup script",
+      "Japanese driver notes",
+      "Korean pickup instructions"
+    ],
+    "luggage_space_requirement": "medium_to_large_luggage_capacity_recommended",
+    "priority_time_window": "Sakura Season",
+    "reason": "private_charter signal has strength 98 and conversion 90 around Kyoto; location heat score is 100. Action remains human-reviewed only.",
+    "recommended_vehicle_type": "comfortable_private_charter_vehicle",
+    "service_script_suggestion": "Confirm route, luggage, timing, and human-reviewed service boundary around Kyoto.",
+    "source_intent_id": "MOBILITY-INTENT-0015",
+    "status": "needs_human_review",
+    "traffic_waiting_risk": "high_congestion_waiting_risk"
+  }
+]
