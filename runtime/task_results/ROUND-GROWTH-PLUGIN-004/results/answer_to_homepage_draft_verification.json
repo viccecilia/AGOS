@@ -1,0 +1,17 @@
+{
+  "auto_publish_allowed": false,
+  "command_status": "passed",
+  "control_center_version": "0.1.119",
+  "current_round": "ROUND-GROWTH-PLUGIN-004 / AGOS_ANSWER_TO_HOMEPAGE_DRAFT_ENGINE",
+  "draft_count": 6,
+  "drafts_need_human_review": true,
+  "forbidden_claims_passed": true,
+  "platform_variant_count": 48,
+  "required_commands": [
+    "python -m compileall services tests",
+    "python tests\\opportunity_qualification_smoke_test.py",
+    "python tests\\answer_to_homepage_draft_smoke_test.py",
+    "python tests\\war_room_runtime_ui_smoke_test.py"
+  ],
+  "round_id": "ROUND-GROWTH-PLUGIN-004"
+}

@@ -1,0 +1,26 @@
+{
+  "answer_to_homepage_ready": true,
+  "auto_publish_allowed": false,
+  "draft_count": 6,
+  "drafts_need_human_review": true,
+  "forbidden_claims_passed": true,
+  "platform_variant_count": 48,
+  "recommended_next_round": "ROUND-GROWTH-PLUGIN-005 Human Review Draft Queue",
+  "supported_platforms": [
+    "Reddit",
+    "TikTok",
+    "Instagram",
+    "X",
+    "YouTube",
+    "Threads",
+    "SEO",
+    "Xiaohongshu"
+  ],
+  "top_draft_ids": [
+    "HOME-DRAFT-001",
+    "HOME-DRAFT-002",
+    "HOME-DRAFT-003",
+    "HOME-DRAFT-004",
+    "HOME-DRAFT-005"
+  ]
+}

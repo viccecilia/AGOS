@@ -1,0 +1,482 @@
+[
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-001",
+    "opening_style": "Start with a direct answer and disclose tradeoffs.",
+    "platform": "Reddit",
+    "platform_tone": "Specific, practical, transparent, no hard sell.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-001-REDDIT"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-001",
+    "opening_style": "Use a short hook before the practical answer.",
+    "platform": "TikTok",
+    "platform_tone": "Short hook, simple steps, emotional but not exaggerated.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-001-TIKTOK"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-001",
+    "opening_style": "Frame as a simple saveable travel tip.",
+    "platform": "Instagram",
+    "platform_tone": "Light, visual, concise, route-planning friendly.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-001-INSTAGRAM"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-001",
+    "opening_style": "Lead with a compact opinion and one key warning.",
+    "platform": "X",
+    "platform_tone": "Direct, opinionated, compact, trend-aware.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-001-X"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-001",
+    "opening_style": "Structure as a comment or script note with clear sections.",
+    "platform": "YouTube",
+    "platform_tone": "Structured explanation with clear planning takeaways.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-001-YOUTUBE"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-001",
+    "opening_style": "Keep it conversational and easy to reply to.",
+    "platform": "Threads",
+    "platform_tone": "Conversational, warm, quick to scan.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-001-THREADS"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-001",
+    "opening_style": "Use search-friendly heading and evergreen explanation.",
+    "platform": "SEO",
+    "platform_tone": "Search-friendly, evergreen, clear headings.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-001-SEO"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-001",
+    "opening_style": "Use practical checklist style with soft tone.",
+    "platform": "Xiaohongshu",
+    "platform_tone": "Helpful lifestyle tone, practical Japan travel details, no overclaiming.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-001-XIAOHONGSHU"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-002",
+    "opening_style": "Start with a direct answer and disclose tradeoffs.",
+    "platform": "Reddit",
+    "platform_tone": "Specific, practical, transparent, no hard sell.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-002-REDDIT"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-002",
+    "opening_style": "Use a short hook before the practical answer.",
+    "platform": "TikTok",
+    "platform_tone": "Short hook, simple steps, emotional but not exaggerated.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-002-TIKTOK"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-002",
+    "opening_style": "Frame as a simple saveable travel tip.",
+    "platform": "Instagram",
+    "platform_tone": "Light, visual, concise, route-planning friendly.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-002-INSTAGRAM"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-002",
+    "opening_style": "Lead with a compact opinion and one key warning.",
+    "platform": "X",
+    "platform_tone": "Direct, opinionated, compact, trend-aware.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-002-X"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-002",
+    "opening_style": "Structure as a comment or script note with clear sections.",
+    "platform": "YouTube",
+    "platform_tone": "Structured explanation with clear planning takeaways.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-002-YOUTUBE"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-002",
+    "opening_style": "Keep it conversational and easy to reply to.",
+    "platform": "Threads",
+    "platform_tone": "Conversational, warm, quick to scan.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-002-THREADS"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-002",
+    "opening_style": "Use search-friendly heading and evergreen explanation.",
+    "platform": "SEO",
+    "platform_tone": "Search-friendly, evergreen, clear headings.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-002-SEO"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-002",
+    "opening_style": "Use practical checklist style with soft tone.",
+    "platform": "Xiaohongshu",
+    "platform_tone": "Helpful lifestyle tone, practical Japan travel details, no overclaiming.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-002-XIAOHONGSHU"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-003",
+    "opening_style": "Start with a direct answer and disclose tradeoffs.",
+    "platform": "Reddit",
+    "platform_tone": "Specific, practical, transparent, no hard sell.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-003-REDDIT"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-003",
+    "opening_style": "Use a short hook before the practical answer.",
+    "platform": "TikTok",
+    "platform_tone": "Short hook, simple steps, emotional but not exaggerated.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-003-TIKTOK"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-003",
+    "opening_style": "Frame as a simple saveable travel tip.",
+    "platform": "Instagram",
+    "platform_tone": "Light, visual, concise, route-planning friendly.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-003-INSTAGRAM"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-003",
+    "opening_style": "Lead with a compact opinion and one key warning.",
+    "platform": "X",
+    "platform_tone": "Direct, opinionated, compact, trend-aware.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-003-X"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-003",
+    "opening_style": "Structure as a comment or script note with clear sections.",
+    "platform": "YouTube",
+    "platform_tone": "Structured explanation with clear planning takeaways.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-003-YOUTUBE"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-003",
+    "opening_style": "Keep it conversational and easy to reply to.",
+    "platform": "Threads",
+    "platform_tone": "Conversational, warm, quick to scan.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-003-THREADS"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-003",
+    "opening_style": "Use search-friendly heading and evergreen explanation.",
+    "platform": "SEO",
+    "platform_tone": "Search-friendly, evergreen, clear headings.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-003-SEO"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-003",
+    "opening_style": "Use practical checklist style with soft tone.",
+    "platform": "Xiaohongshu",
+    "platform_tone": "Helpful lifestyle tone, practical Japan travel details, no overclaiming.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-003-XIAOHONGSHU"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-004",
+    "opening_style": "Start with a direct answer and disclose tradeoffs.",
+    "platform": "Reddit",
+    "platform_tone": "Specific, practical, transparent, no hard sell.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-004-REDDIT"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-004",
+    "opening_style": "Use a short hook before the practical answer.",
+    "platform": "TikTok",
+    "platform_tone": "Short hook, simple steps, emotional but not exaggerated.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-004-TIKTOK"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-004",
+    "opening_style": "Frame as a simple saveable travel tip.",
+    "platform": "Instagram",
+    "platform_tone": "Light, visual, concise, route-planning friendly.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-004-INSTAGRAM"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-004",
+    "opening_style": "Lead with a compact opinion and one key warning.",
+    "platform": "X",
+    "platform_tone": "Direct, opinionated, compact, trend-aware.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-004-X"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-004",
+    "opening_style": "Structure as a comment or script note with clear sections.",
+    "platform": "YouTube",
+    "platform_tone": "Structured explanation with clear planning takeaways.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-004-YOUTUBE"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-004",
+    "opening_style": "Keep it conversational and easy to reply to.",
+    "platform": "Threads",
+    "platform_tone": "Conversational, warm, quick to scan.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-004-THREADS"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-004",
+    "opening_style": "Use search-friendly heading and evergreen explanation.",
+    "platform": "SEO",
+    "platform_tone": "Search-friendly, evergreen, clear headings.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-004-SEO"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-004",
+    "opening_style": "Use practical checklist style with soft tone.",
+    "platform": "Xiaohongshu",
+    "platform_tone": "Helpful lifestyle tone, practical Japan travel details, no overclaiming.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-004-XIAOHONGSHU"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-005",
+    "opening_style": "Start with a direct answer and disclose tradeoffs.",
+    "platform": "Reddit",
+    "platform_tone": "Specific, practical, transparent, no hard sell.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-005-REDDIT"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-005",
+    "opening_style": "Use a short hook before the practical answer.",
+    "platform": "TikTok",
+    "platform_tone": "Short hook, simple steps, emotional but not exaggerated.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-005-TIKTOK"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-005",
+    "opening_style": "Frame as a simple saveable travel tip.",
+    "platform": "Instagram",
+    "platform_tone": "Light, visual, concise, route-planning friendly.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-005-INSTAGRAM"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-005",
+    "opening_style": "Lead with a compact opinion and one key warning.",
+    "platform": "X",
+    "platform_tone": "Direct, opinionated, compact, trend-aware.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-005-X"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-005",
+    "opening_style": "Structure as a comment or script note with clear sections.",
+    "platform": "YouTube",
+    "platform_tone": "Structured explanation with clear planning takeaways.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-005-YOUTUBE"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-005",
+    "opening_style": "Keep it conversational and easy to reply to.",
+    "platform": "Threads",
+    "platform_tone": "Conversational, warm, quick to scan.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-005-THREADS"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-005",
+    "opening_style": "Use search-friendly heading and evergreen explanation.",
+    "platform": "SEO",
+    "platform_tone": "Search-friendly, evergreen, clear headings.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-005-SEO"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-005",
+    "opening_style": "Use practical checklist style with soft tone.",
+    "platform": "Xiaohongshu",
+    "platform_tone": "Helpful lifestyle tone, practical Japan travel details, no overclaiming.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-005-XIAOHONGSHU"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-006",
+    "opening_style": "Start with a direct answer and disclose tradeoffs.",
+    "platform": "Reddit",
+    "platform_tone": "Specific, practical, transparent, no hard sell.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-006-REDDIT"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-006",
+    "opening_style": "Use a short hook before the practical answer.",
+    "platform": "TikTok",
+    "platform_tone": "Short hook, simple steps, emotional but not exaggerated.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-006-TIKTOK"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-006",
+    "opening_style": "Frame as a simple saveable travel tip.",
+    "platform": "Instagram",
+    "platform_tone": "Light, visual, concise, route-planning friendly.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-006-INSTAGRAM"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-006",
+    "opening_style": "Lead with a compact opinion and one key warning.",
+    "platform": "X",
+    "platform_tone": "Direct, opinionated, compact, trend-aware.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-006-X"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-006",
+    "opening_style": "Structure as a comment or script note with clear sections.",
+    "platform": "YouTube",
+    "platform_tone": "Structured explanation with clear planning takeaways.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-006-YOUTUBE"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-006",
+    "opening_style": "Keep it conversational and easy to reply to.",
+    "platform": "Threads",
+    "platform_tone": "Conversational, warm, quick to scan.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-006-THREADS"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-006",
+    "opening_style": "Use search-friendly heading and evergreen explanation.",
+    "platform": "SEO",
+    "platform_tone": "Search-friendly, evergreen, clear headings.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-006-SEO"
+  },
+  {
+    "auto_publish_allowed": false,
+    "draft_id": "HOME-DRAFT-006",
+    "opening_style": "Use practical checklist style with soft tone.",
+    "platform": "Xiaohongshu",
+    "platform_tone": "Helpful lifestyle tone, practical Japan travel details, no overclaiming.",
+    "review_status": "needs_human_review",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "variant_id": "HOME-DRAFT-006-XIAOHONGSHU"
+  }
+]

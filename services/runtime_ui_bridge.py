@@ -14,6 +14,7 @@ from services.api_rate_limit_guard import APIRateLimitGuard
 from services.api_signal_normalization import APISignalNormalization
 from services.api_scout_gate import APIScoutGate
 from services.api_to_scout_pipeline import APIToScoutPipeline
+from services.answer_to_homepage_draft_engine import AnswerToHomepageDraftEngine
 from services.batch_human_review import BatchHumanReview
 from services.batch_scout_runtime import BatchScoutRuntime
 from services.batch_topic_clustering import BatchTopicClustering
@@ -187,6 +188,7 @@ class RuntimeUIBridge:
         merchant_promotion_workspace = MerchantPromotionWorkspace().build()
         problem_seeker_loop = ProblemSeekerLoop().run()
         opportunity_qualification = OpportunityQualificationEngine().qualify()
+        answer_to_homepage_drafts = AnswerToHomepageDraftEngine().build()
         location_demand_heatmap = LocationDemandHeatmapEngine().build(seasonal_demand_calendar.get("seasonalCalendar", []))
         mobility_demand_intent = MobilityDemandIntentEngine().build()
         demand_to_action_strategy = DemandToActionStrategyEngine().build()
@@ -540,6 +542,11 @@ class RuntimeUIBridge:
             "opportunityRanking": opportunity_qualification.get("opportunityRanking", []),
             "opportunityRiskReview": opportunity_qualification.get("opportunityRiskReview", {}),
             "opportunityQualificationSummary": opportunity_qualification.get("opportunityQualificationSummary", {}),
+            "answerToHomepageDraftEngine": answer_to_homepage_drafts,
+            "answerDrafts": answer_to_homepage_drafts.get("answerDrafts", []),
+            "platformDraftVariants": answer_to_homepage_drafts.get("platformDraftVariants", []),
+            "draftRiskReview": answer_to_homepage_drafts.get("draftRiskReview", {}),
+            "answerToHomepageSummary": answer_to_homepage_drafts.get("answerToHomepageSummary", {}),
             "locationDemandHeatmap": location_demand_heatmap,
             "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),

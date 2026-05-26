@@ -1,0 +1,16 @@
+{
+  "current_round": "ROUND-GROWTH-PLUGIN-004 / AGOS_ANSWER_TO_HOMEPAGE_DRAFT_ENGINE",
+  "panel_exists": true,
+  "round_id": "ROUND-GROWTH-PLUGIN-004",
+  "shows_auto_publish_disabled": true,
+  "shows_direct_answer": true,
+  "shows_draft": true,
+  "shows_forbidden_claim_passed": true,
+  "shows_helpful_steps": true,
+  "shows_review_status": true,
+  "shows_risk_notes": true,
+  "shows_soft_cta": true,
+  "url": "http://127.0.0.1:8765/project_control_center.html?runtime_ui=1&cache_bust=1779790136031#war-room-growth",
+  "verified_at": "2026-05-26T10:09:08.645Z",
+  "version": "0.1.119"
+}

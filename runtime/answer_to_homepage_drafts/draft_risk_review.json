@@ -1,0 +1,10 @@
+{
+  "all_need_human_review": true,
+  "auto_publish_allowed": false,
+  "blocked_draft_ids": [],
+  "draft_count": 6,
+  "forbidden_claims_passed": true,
+  "hard_sell_risk_counts": {
+    "low": 6
+  }
+}

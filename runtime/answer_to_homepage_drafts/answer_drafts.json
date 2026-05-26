@@ -1,0 +1,248 @@
+[
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "direct_answer": "For this situation, do not judge only by train price. With luggage, kids, late arrival, or a first Japan trip, compare the full route from arrival gate to hotel door: train changes, walking distance, last-train risk, and luggage handling.",
+    "draft_id": "HOME-DRAFT-001",
+    "forbidden_claim_check": {
+      "blocked_claims": [],
+      "checked_claims": [
+        "guaranteed booking",
+        "official government guide",
+        "automatic platform replies",
+        "unverified discounts"
+      ],
+      "status": "passed"
+    },
+    "hard_sell_risk": "low",
+    "helpful_steps": [
+      "List the arrival time, hotel area, group size, luggage count, and whether anyone needs walking support.",
+      "Compare door-to-door time, not only station-to-station time.",
+      "Keep a fallback option if the route depends on late trains, crowded buses, or several transfers.",
+      "For family travel, reduce transfer count before optimizing for the lowest fare.",
+      "For heavy luggage, check elevator access and walking distance before choosing public transport."
+    ],
+    "homepage_reference": "https://japan-ai-guide.example/pending-official-url",
+    "market": "US",
+    "merchant_name": "Japan AI Guide App",
+    "opportunity_id": "HOME-OPP-001",
+    "platform": "Reddit",
+    "platform_tone": "Specific, practical, transparent, no hard sell.",
+    "qualification_score": 86,
+    "review_status": "needs_human_review",
+    "risk_notes": [
+      "Needs human review before publishing or replying.",
+      "Keep CTA soft; answer the user first and avoid hard selling.",
+      "Do not promise bookings, discounts, official status, or guaranteed transport availability.",
+      "Source is sample/local/read-only intelligence; do not present it as verified live user demand."
+    ],
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "source_question": "We land at Haneda late with two kids and big luggage. Is train still realistic?",
+    "workspace_id": "jag_app_growth"
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "direct_answer": "For this situation, do not judge only by train price. With luggage, kids, late arrival, or a first Japan trip, compare the full route from arrival gate to hotel door: train changes, walking distance, last-train risk, and luggage handling.",
+    "draft_id": "HOME-DRAFT-002",
+    "forbidden_claim_check": {
+      "blocked_claims": [],
+      "checked_claims": [
+        "guaranteed booking",
+        "official government guide",
+        "automatic platform replies",
+        "unverified discounts"
+      ],
+      "status": "passed"
+    },
+    "hard_sell_risk": "low",
+    "helpful_steps": [
+      "List the arrival time, hotel area, group size, luggage count, and whether anyone needs walking support.",
+      "Compare door-to-door time, not only station-to-station time.",
+      "Keep a fallback option if the route depends on late trains, crowded buses, or several transfers.",
+      "For family travel, reduce transfer count before optimizing for the lowest fare.",
+      "For heavy luggage, check elevator access and walking distance before choosing public transport."
+    ],
+    "homepage_reference": "https://japan-ai-guide.example/pending-official-url",
+    "market": "China",
+    "merchant_name": "Japan AI Guide App",
+    "opportunity_id": "HOME-OPP-003",
+    "platform": "Google Trends style sample",
+    "platform_tone": "Search-intent interpretation, cautious because data is sample-only.",
+    "qualification_score": 82,
+    "review_status": "needs_human_review",
+    "risk_notes": [
+      "Needs human review before publishing or replying.",
+      "Keep CTA soft; answer the user first and avoid hard selling.",
+      "Do not promise bookings, discounts, official status, or guaranteed transport availability.",
+      "Source is sample/local/read-only intelligence; do not present it as verified live user demand.",
+      "This is search-intent style input, not a direct user post."
+    ],
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "source_question": "Travelers are searching for 'Japan Chinese New Year travel'. What Japan mobility problem should the homepage answer?",
+    "workspace_id": "jag_app_growth"
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "direct_answer": "For this situation, do not judge only by train price. With luggage, kids, late arrival, or a first Japan trip, compare the full route from arrival gate to hotel door: train changes, walking distance, last-train risk, and luggage handling.",
+    "draft_id": "HOME-DRAFT-003",
+    "forbidden_claim_check": {
+      "blocked_claims": [],
+      "checked_claims": [
+        "guaranteed booking",
+        "official government guide",
+        "automatic platform replies",
+        "unverified discounts"
+      ],
+      "status": "passed"
+    },
+    "hard_sell_risk": "low",
+    "helpful_steps": [
+      "List the arrival time, hotel area, group size, luggage count, and whether anyone needs walking support.",
+      "Compare door-to-door time, not only station-to-station time.",
+      "Keep a fallback option if the route depends on late trains, crowded buses, or several transfers.",
+      "For family travel, reduce transfer count before optimizing for the lowest fare.",
+      "For heavy luggage, check elevator access and walking distance before choosing public transport."
+    ],
+    "homepage_reference": "https://japan-ai-guide.example/pending-official-url",
+    "market": "China",
+    "merchant_name": "Japan AI Guide App",
+    "opportunity_id": "HOME-OPP-004",
+    "platform": "Google Trends style sample",
+    "platform_tone": "Search-intent interpretation, cautious because data is sample-only.",
+    "qualification_score": 83,
+    "review_status": "needs_human_review",
+    "risk_notes": [
+      "Needs human review before publishing or replying.",
+      "Keep CTA soft; answer the user first and avoid hard selling.",
+      "Do not promise bookings, discounts, official status, or guaranteed transport availability.",
+      "Source is sample/local/read-only intelligence; do not present it as verified live user demand.",
+      "This is search-intent style input, not a direct user post."
+    ],
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "source_question": "Travelers are searching for 'Tokyo airport transfer Chinese New Year'. What Japan mobility problem should the homepage answer?",
+    "workspace_id": "jag_app_growth"
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "direct_answer": "For this situation, do not judge only by train price. With luggage, kids, late arrival, or a first Japan trip, compare the full route from arrival gate to hotel door: train changes, walking distance, last-train risk, and luggage handling.",
+    "draft_id": "HOME-DRAFT-004",
+    "forbidden_claim_check": {
+      "blocked_claims": [],
+      "checked_claims": [
+        "guaranteed booking",
+        "official government guide",
+        "automatic platform replies",
+        "unverified discounts"
+      ],
+      "status": "passed"
+    },
+    "hard_sell_risk": "low",
+    "helpful_steps": [
+      "List the arrival time, hotel area, group size, luggage count, and whether anyone needs walking support.",
+      "Compare door-to-door time, not only station-to-station time.",
+      "Keep a fallback option if the route depends on late trains, crowded buses, or several transfers.",
+      "For heavy luggage, check elevator access and walking distance before choosing public transport."
+    ],
+    "homepage_reference": "https://japan-ai-guide.example/pending-official-url",
+    "market": "US",
+    "merchant_name": "Japan AI Guide App",
+    "opportunity_id": "HOME-OPP-005",
+    "platform": "Google Trends style sample",
+    "platform_tone": "Search-intent interpretation, cautious because data is sample-only.",
+    "qualification_score": 81,
+    "review_status": "needs_human_review",
+    "risk_notes": [
+      "Needs human review before publishing or replying.",
+      "Keep CTA soft; answer the user first and avoid hard selling.",
+      "Do not promise bookings, discounts, official status, or guaranteed transport availability.",
+      "Source is sample/local/read-only intelligence; do not present it as verified live user demand.",
+      "This is search-intent style input, not a direct user post."
+    ],
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "source_question": "Travelers are searching for 'Japan cherry blossom travel'. What Japan mobility problem should the homepage answer?",
+    "workspace_id": "jag_app_growth"
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "direct_answer": "For this situation, do not judge only by train price. With luggage, kids, late arrival, or a first Japan trip, compare the full route from arrival gate to hotel door: train changes, walking distance, last-train risk, and luggage handling.",
+    "draft_id": "HOME-DRAFT-005",
+    "forbidden_claim_check": {
+      "blocked_claims": [],
+      "checked_claims": [
+        "guaranteed booking",
+        "official government guide",
+        "automatic platform replies",
+        "unverified discounts"
+      ],
+      "status": "passed"
+    },
+    "hard_sell_risk": "low",
+    "helpful_steps": [
+      "List the arrival time, hotel area, group size, luggage count, and whether anyone needs walking support.",
+      "Compare door-to-door time, not only station-to-station time.",
+      "Keep a fallback option if the route depends on late trains, crowded buses, or several transfers.",
+      "For heavy luggage, check elevator access and walking distance before choosing public transport."
+    ],
+    "homepage_reference": "https://japan-ai-guide.example/pending-official-url",
+    "market": "Taiwan",
+    "merchant_name": "Japan AI Guide App",
+    "opportunity_id": "HOME-OPP-006",
+    "platform": "Google Trends style sample",
+    "platform_tone": "Search-intent interpretation, cautious because data is sample-only.",
+    "qualification_score": 82,
+    "review_status": "needs_human_review",
+    "risk_notes": [
+      "Needs human review before publishing or replying.",
+      "Keep CTA soft; answer the user first and avoid hard selling.",
+      "Do not promise bookings, discounts, official status, or guaranteed transport availability.",
+      "Source is sample/local/read-only intelligence; do not present it as verified live user demand.",
+      "This is search-intent style input, not a direct user post."
+    ],
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "source_question": "Travelers are searching for 'Tokyo luggage transfer cherry blossom'. What Japan mobility problem should the homepage answer?",
+    "workspace_id": "jag_app_growth"
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "direct_answer": "For this route question, the key is not whether the destination is possible, but whether the day still feels comfortable after transfers, walking time, crowds, and return timing.",
+    "draft_id": "HOME-DRAFT-006",
+    "forbidden_claim_check": {
+      "blocked_claims": [],
+      "checked_claims": [
+        "guaranteed booking",
+        "official government guide",
+        "automatic platform replies",
+        "unverified discounts"
+      ],
+      "status": "passed"
+    },
+    "hard_sell_risk": "low",
+    "helpful_steps": [
+      "List the arrival time, hotel area, group size, luggage count, and whether anyone needs walking support.",
+      "Compare door-to-door time, not only station-to-station time.",
+      "Keep a fallback option if the route depends on late trains, crowded buses, or several transfers."
+    ],
+    "homepage_reference": "https://japan-ai-guide.example/pending-official-url",
+    "market": "Europe",
+    "merchant_name": "Japan AI Guide App",
+    "opportunity_id": "HOME-OPP-010",
+    "platform": "YouTube",
+    "platform_tone": "Structured explanation with clear planning takeaways.",
+    "qualification_score": 74,
+    "review_status": "needs_human_review",
+    "risk_notes": [
+      "Needs human review before publishing or replying.",
+      "Keep CTA soft; answer the user first and avoid hard selling.",
+      "Do not promise bookings, discounts, official status, or guaranteed transport availability.",
+      "Source is sample/local/read-only intelligence; do not present it as verified live user demand."
+    ],
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "source_question": "Is a Mount Fuji day trip by public transport too rushed in autumn?",
+    "workspace_id": "jag_app_growth"
+  }
+]
