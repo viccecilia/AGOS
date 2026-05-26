@@ -1,0 +1,42 @@
+[
+  {
+    "imported": 4,
+    "result": "live questions ready for review",
+    "target": "Question Inbox",
+    "time": "2026-05-26T02:30:44+00:00",
+    "trigger": "Replay Training",
+    "triggered": true
+  },
+  {
+    "imported": 7,
+    "result": "live pain points mapped",
+    "target": "Pain Point Library",
+    "time": "2026-05-26T02:30:44+00:00",
+    "trigger": "Pattern Learning",
+    "triggered": true
+  },
+  {
+    "imported": 4,
+    "result": "question-result patterns prepared",
+    "target": "Pattern Memory",
+    "time": "2026-05-26T02:30:44+00:00",
+    "trigger": "Pattern Learning",
+    "triggered": true
+  },
+  {
+    "imported": 2,
+    "result": "live signals clustered",
+    "target": "Trend Cluster",
+    "time": "2026-05-26T02:30:44+00:00",
+    "trigger": "Intelligence Ranking",
+    "triggered": true
+  },
+  {
+    "imported": 4,
+    "result": "scout memory updated",
+    "target": "Scout Intelligence",
+    "time": "2026-05-26T02:30:44+00:00",
+    "trigger": "Intelligence Ranking",
+    "triggered": true
+  }
+]

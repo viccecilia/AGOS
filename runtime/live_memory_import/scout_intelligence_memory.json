@@ -1,0 +1,58 @@
+[
+  {
+    "created_at": "2026-05-26T02:30:44+00:00",
+    "language": "en",
+    "market": "Japan",
+    "next_action": "Import into local training memory and keep write actions blocked.",
+    "platform": "Reddit",
+    "scout_id": "LIVE-SCOUT-0001",
+    "signal": "Travelers are asking how to choose the right Tokyo transport pass.",
+    "source_confidence": 0.89,
+    "source_type": "Reddit topic",
+    "source_url": "local://live_collection/LIVE-COLLECT-0001",
+    "training_value_score": 100,
+    "why_important": "payment_and_pass_decision has training value 100 and source confidence 0.89."
+  },
+  {
+    "created_at": "2026-05-26T02:30:44+00:00",
+    "language": "en",
+    "market": "Japan",
+    "next_action": "Import into local training memory and keep write actions blocked.",
+    "platform": "YouTube",
+    "scout_id": "LIVE-SCOUT-0002",
+    "signal": "Short videos compare Suica, Pasmo, and JR Pass choices.",
+    "source_confidence": 0.769,
+    "source_type": "YouTube search",
+    "source_url": "local://live_collection/LIVE-COLLECT-0002",
+    "training_value_score": 73,
+    "why_important": "payment_and_pass_decision has training value 73 and source confidence 0.769."
+  },
+  {
+    "created_at": "2026-05-26T02:30:44+00:00",
+    "language": "en",
+    "market": "Japan",
+    "next_action": "Import into local training memory and keep write actions blocked.",
+    "platform": "TikTok",
+    "scout_id": "LIVE-SCOUT-0003",
+    "signal": "First-time travelers react strongly to airport transfer complexity.",
+    "source_confidence": 0.95,
+    "source_type": "TikTok trend",
+    "source_url": "local://live_collection/LIVE-COLLECT-0003",
+    "training_value_score": 100,
+    "why_important": "airport_transfer_confusion has training value 100 and source confidence 0.95."
+  },
+  {
+    "created_at": "2026-05-26T02:30:44+00:00",
+    "language": "en",
+    "market": "Japan",
+    "next_action": "Import into local training memory and keep write actions blocked.",
+    "platform": "X",
+    "scout_id": "LIVE-SCOUT-0004",
+    "signal": "Users debate whether JR Pass still saves money after price changes.",
+    "source_confidence": 0.733,
+    "source_type": "X signal",
+    "source_url": "local://live_collection/LIVE-COLLECT-0004",
+    "training_value_score": 82,
+    "why_important": "payment_and_pass_decision has training value 82 and source confidence 0.733."
+  }
+]

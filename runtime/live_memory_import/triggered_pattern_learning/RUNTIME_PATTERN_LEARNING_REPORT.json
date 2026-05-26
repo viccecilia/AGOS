@@ -1,0 +1,135 @@
+{
+  "created_at": "2026-05-26T02:30:44+00:00",
+  "patternLearningSummary": {
+    "high_conversion_patterns": 0,
+    "high_engagement_patterns": 2,
+    "high_risk_patterns": 0,
+    "high_value_patterns": 2,
+    "pattern_memory_ready": true,
+    "patterns_learned": 4,
+    "reviews_learned": 4,
+    "top_pattern": "high_value"
+  },
+  "patternMemory": [
+    {
+      "category": "live_memory_import",
+      "cluster_name": "Reddit + payment_and_pass_decision/transport_confusion + Japan",
+      "created_at": "2026-05-26T02:30:44+00:00",
+      "decision": "classify",
+      "label": "high_value",
+      "learning_weight": 0.96,
+      "pattern_id": "RUNTIME-PATTERN-0001",
+      "pattern_type": "high_value",
+      "question_combination": "live_memory_import + Reddit + payment_and_pass_decision/transport_confusion + Japan + 1 similar questions",
+      "question_count": 1,
+      "recommended_next_action": "Promote Reddit + payment_and_pass_decision/transport_confusion + Japan into best-answer branch generation.",
+      "result_pattern": "Reddit + payment_and_pass_decision/transport_confusion + Japan is a validated high-value cluster and should seed answer branches or content planning.",
+      "risk_flag": "low",
+      "source_cluster_id": "LIVE-PATTERN-0001",
+      "source_review_id": "LIVE-MEM-REVIEW-0001"
+    },
+    {
+      "category": "live_memory_import",
+      "cluster_name": "YouTube + payment_and_pass_decision + Japan",
+      "created_at": "2026-05-26T02:30:44+00:00",
+      "decision": "classify",
+      "label": "watch",
+      "learning_weight": 0.69,
+      "pattern_id": "RUNTIME-PATTERN-0002",
+      "pattern_type": "high_engagement",
+      "question_combination": "live_memory_import + YouTube + payment_and_pass_decision + Japan + 1 similar questions",
+      "question_count": 1,
+      "recommended_next_action": "Keep YouTube + payment_and_pass_decision + Japan in observation and test a refined hook before scaling.",
+      "result_pattern": "YouTube + payment_and_pass_decision + Japan may attract engagement, but needs human-refined angle or stronger evidence.",
+      "risk_flag": "low",
+      "source_cluster_id": "LIVE-PATTERN-0002",
+      "source_review_id": "LIVE-MEM-REVIEW-0002"
+    },
+    {
+      "category": "live_memory_import",
+      "cluster_name": "TikTok + airport_transfer_confusion/first_trip_uncertainty + Japan",
+      "created_at": "2026-05-26T02:30:44+00:00",
+      "decision": "classify",
+      "label": "high_value",
+      "learning_weight": 0.96,
+      "pattern_id": "RUNTIME-PATTERN-0003",
+      "pattern_type": "high_value",
+      "question_combination": "live_memory_import + TikTok + airport_transfer_confusion/first_trip_uncertainty + Japan + 1 similar questions",
+      "question_count": 1,
+      "recommended_next_action": "Promote TikTok + airport_transfer_confusion/first_trip_uncertainty + Japan into best-answer branch generation.",
+      "result_pattern": "TikTok + airport_transfer_confusion/first_trip_uncertainty + Japan is a validated high-value cluster and should seed answer branches or content planning.",
+      "risk_flag": "low",
+      "source_cluster_id": "LIVE-PATTERN-0003",
+      "source_review_id": "LIVE-MEM-REVIEW-0003"
+    },
+    {
+      "category": "live_memory_import",
+      "cluster_name": "X + payment_and_pass_decision/value_decision_pressure + Japan",
+      "created_at": "2026-05-26T02:30:44+00:00",
+      "decision": "classify",
+      "label": "watch",
+      "learning_weight": 0.69,
+      "pattern_id": "RUNTIME-PATTERN-0004",
+      "pattern_type": "high_engagement",
+      "question_combination": "live_memory_import + X + payment_and_pass_decision/value_decision_pressure + Japan + 1 similar questions",
+      "question_count": 1,
+      "recommended_next_action": "Keep X + payment_and_pass_decision/value_decision_pressure + Japan in observation and test a refined hook before scaling.",
+      "result_pattern": "X + payment_and_pass_decision/value_decision_pressure + Japan may attract engagement, but needs human-refined angle or stronger evidence.",
+      "risk_flag": "low",
+      "source_cluster_id": "LIVE-PATTERN-0004",
+      "source_review_id": "LIVE-MEM-REVIEW-0004"
+    }
+  ],
+  "patternTypes": [
+    "high_value",
+    "high_engagement",
+    "high_conversion",
+    "high_risk"
+  ],
+  "report_id": "RUNTIME_PATTERN_LEARNING_REPORT",
+  "runtimePatternFeed": [
+    {
+      "learning_weight": 0.96,
+      "pattern_id": "RUNTIME-PATTERN-0001",
+      "pattern_type": "high_value",
+      "question_combination": "live_memory_import + Reddit + payment_and_pass_decision/transport_confusion + Japan + 1 similar questions",
+      "recommended_next_action": "Promote Reddit + payment_and_pass_decision/transport_confusion + Japan into best-answer branch generation.",
+      "result_pattern": "Reddit + payment_and_pass_decision/transport_confusion + Japan is a validated high-value cluster and should seed answer branches or content planning.",
+      "risk_flag": "low",
+      "time": "2026-05-26T02:30:44+00:00"
+    },
+    {
+      "learning_weight": 0.69,
+      "pattern_id": "RUNTIME-PATTERN-0002",
+      "pattern_type": "high_engagement",
+      "question_combination": "live_memory_import + YouTube + payment_and_pass_decision + Japan + 1 similar questions",
+      "recommended_next_action": "Keep YouTube + payment_and_pass_decision + Japan in observation and test a refined hook before scaling.",
+      "result_pattern": "YouTube + payment_and_pass_decision + Japan may attract engagement, but needs human-refined angle or stronger evidence.",
+      "risk_flag": "low",
+      "time": "2026-05-26T02:30:44+00:00"
+    },
+    {
+      "learning_weight": 0.96,
+      "pattern_id": "RUNTIME-PATTERN-0003",
+      "pattern_type": "high_value",
+      "question_combination": "live_memory_import + TikTok + airport_transfer_confusion/first_trip_uncertainty + Japan + 1 similar questions",
+      "recommended_next_action": "Promote TikTok + airport_transfer_confusion/first_trip_uncertainty + Japan into best-answer branch generation.",
+      "result_pattern": "TikTok + airport_transfer_confusion/first_trip_uncertainty + Japan is a validated high-value cluster and should seed answer branches or content planning.",
+      "risk_flag": "low",
+      "time": "2026-05-26T02:30:44+00:00"
+    },
+    {
+      "learning_weight": 0.69,
+      "pattern_id": "RUNTIME-PATTERN-0004",
+      "pattern_type": "high_engagement",
+      "question_combination": "live_memory_import + X + payment_and_pass_decision/value_decision_pressure + Japan + 1 similar questions",
+      "recommended_next_action": "Keep X + payment_and_pass_decision/value_decision_pressure + Japan in observation and test a refined hook before scaling.",
+      "result_pattern": "X + payment_and_pass_decision/value_decision_pressure + Japan may attract engagement, but needs human-refined angle or stronger evidence.",
+      "risk_flag": "low",
+      "time": "2026-05-26T02:30:44+00:00"
+    }
+  ],
+  "safetyBoundary": "Runtime Pattern Learning uses local batch review signals only. It does not post, reply, follow, DM, log in, register accounts, or call external write APIs.",
+  "scope": "local_runtime_pattern_learning",
+  "status": "runtime_patterns_learned"
+}

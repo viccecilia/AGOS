@@ -1,0 +1,18 @@
+﻿{
+  "ok": true,
+  "url": "http://127.0.0.1:8765/project_control_center.html?runtime_ui=1#war-room-growth",
+  "version": "Control Center v0.1.106",
+  "round": "ROUND-API-COLLECT-006",
+  "panel": "runtime-live-memory-import",
+  "memoryTargetsVisible": [
+    "Question Inbox",
+    "Pain Point Library",
+    "Pattern Memory",
+    "Trend Cluster",
+    "Scout Intelligence"
+  ],
+  "patternLearningTriggered": true,
+  "replayTrainingTriggered": true,
+  "intelligenceRankingTriggered": true,
+  "writeOperationsEnabled": false
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "canonical_pain_point": "airport_transfer_confusion",
+    "cluster_id": "LIVE-CLUSTER-0001",
+    "cluster_name": "Airport Transfer Confusion",
+    "created_at": "2026-05-26T02:30:44+00:00",
+    "cross_platform": false,
+    "emotion_tags": [
+      "anxiety",
+      "frustration",
+      "surprise"
+    ],
+    "frequency": 1,
+    "max_emotion_score": 1.0,
+    "max_trend_strength": 100,
+    "platforms": [
+      "TikTok"
+    ],
+    "source_items": [
+      "LIVE-NORM-0003"
+    ],
+    "status": "clustered_from_live_data"
+  },
+  {
+    "canonical_pain_point": "payment_and_pass_decision",
+    "cluster_id": "LIVE-CLUSTER-0002",
+    "cluster_name": "Payment And Pass Decision",
+    "created_at": "2026-05-26T02:30:44+00:00",
+    "cross_platform": true,
+    "emotion_tags": [
+      "anxiety",
+      "comparison_pressure",
+      "decision_pressure",
+      "information_need",
+      "neutral_information_need"
+    ],
+    "frequency": 3,
+    "max_emotion_score": 1.0,
+    "max_trend_strength": 100,
+    "platforms": [
+      "Reddit",
+      "X",
+      "YouTube"
+    ],
+    "source_items": [
+      "LIVE-NORM-0001",
+      "LIVE-NORM-0002",
+      "LIVE-NORM-0004"
+    ],
+    "status": "clustered_from_live_data"
+  }
+]

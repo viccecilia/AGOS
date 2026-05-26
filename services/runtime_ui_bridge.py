@@ -32,6 +32,7 @@ from services.heat_detection_engine import HeatDetectionEngine
 from services.intelligence_acceleration_gate import IntelligenceAccelerationGate
 from services.long_term_strategy_memory import LongTermStrategyMemory
 from services.live_collection_runner import LiveCollectionRunner
+from services.live_data_import_to_memory import LiveDataImportToMemory
 from services.live_data_normalization_pipeline import LiveDataNormalizationPipeline
 from services.personality_drift_engine import PersonalityDriftEngine
 from services.personality_isolation_engine import PersonalityIsolationEngine
@@ -164,6 +165,10 @@ class RuntimeUIBridge:
         live_collection = LiveCollectionRunner().run(state.get("workspace", "JAG-LAB"))
         compliance_guard = CollectionComplianceGuard().evaluate()
         live_data_normalization = LiveDataNormalizationPipeline().normalize(live_collection.get("liveCollectionItems", []))
+        live_memory_import = LiveDataImportToMemory().import_data(
+            state.get("workspace", "JAG-LAB"),
+            live_data_normalization.get("normalizedLiveData", []),
+        )
         read_only_trends = ReadOnlyTrendConnector().read_trends()
         api_rate_limit_guard = APIRateLimitGuard().evaluate()
         api_signal_normalization = APISignalNormalization().normalize(read_only_trends.get("platformTrends", []))
@@ -464,6 +469,17 @@ class RuntimeUIBridge:
             "normalizedLiveData": live_data_normalization.get("normalizedLiveData", []),
             "normalizedLiveDataFeed": live_data_normalization.get("normalizedLiveDataFeed", []),
             "liveDataNormalizationSummary": live_data_normalization.get("liveDataNormalizationSummary", {}),
+            "liveDataImportToMemory": live_memory_import,
+            "questionInboxMemory": live_memory_import.get("questionInboxMemory", []),
+            "painPointLibraryMemory": live_memory_import.get("painPointLibraryMemory", []),
+            "patternMemoryImport": live_memory_import.get("patternMemoryImport", []),
+            "trendClusterMemory": live_memory_import.get("trendClusterMemory", []),
+            "scoutIntelligenceMemory": live_memory_import.get("scoutIntelligenceMemory", []),
+            "memoryImportFeed": live_memory_import.get("memoryImportFeed", []),
+            "memoryImportSummary": live_memory_import.get("memoryImportSummary", {}),
+            "triggeredPatternLearningFromLiveData": live_memory_import.get("triggeredPatternLearning", {}),
+            "triggeredReplayTrainingFromLiveData": live_memory_import.get("triggeredReplayTraining", {}),
+            "triggeredIntelligenceRankingFromLiveData": live_memory_import.get("triggeredIntelligenceRanking", {}),
             "readOnlyTrendConnector": read_only_trends,
             "platformTrends": read_only_trends.get("platformTrends", []),
             "platformTrendFeed": read_only_trends.get("platformTrendFeed", []),

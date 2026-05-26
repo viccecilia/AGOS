@@ -1,0 +1,42 @@
+[
+  {
+    "created_at": "2026-05-26T02:30:44+00:00",
+    "learning_weight": 1.0,
+    "pattern_id": "LIVE-PATTERN-0001",
+    "pattern_type": "high_value",
+    "question_combination": "Reddit + payment_and_pass_decision/transport_confusion + Japan",
+    "recommended_next_action": "Route into answer strategy and human-reviewed training memory.",
+    "result_pattern": "payment_and_pass_decision is a live intelligence pattern with training value 100.",
+    "source_normalized_id": "LIVE-NORM-0001"
+  },
+  {
+    "created_at": "2026-05-26T02:30:44+00:00",
+    "learning_weight": 0.94,
+    "pattern_id": "LIVE-PATTERN-0002",
+    "pattern_type": "high_engagement",
+    "question_combination": "YouTube + payment_and_pass_decision + Japan",
+    "recommended_next_action": "Route into answer strategy and human-reviewed training memory.",
+    "result_pattern": "payment_and_pass_decision is a live intelligence pattern with training value 73.",
+    "source_normalized_id": "LIVE-NORM-0002"
+  },
+  {
+    "created_at": "2026-05-26T02:30:44+00:00",
+    "learning_weight": 1.0,
+    "pattern_id": "LIVE-PATTERN-0003",
+    "pattern_type": "high_value",
+    "question_combination": "TikTok + airport_transfer_confusion/first_trip_uncertainty + Japan",
+    "recommended_next_action": "Route into answer strategy and human-reviewed training memory.",
+    "result_pattern": "airport_transfer_confusion is a live intelligence pattern with training value 100.",
+    "source_normalized_id": "LIVE-NORM-0003"
+  },
+  {
+    "created_at": "2026-05-26T02:30:44+00:00",
+    "learning_weight": 1.0,
+    "pattern_id": "LIVE-PATTERN-0004",
+    "pattern_type": "high_engagement",
+    "question_combination": "X + payment_and_pass_decision/value_decision_pressure + Japan",
+    "recommended_next_action": "Route into answer strategy and human-reviewed training memory.",
+    "result_pattern": "payment_and_pass_decision is a live intelligence pattern with training value 82.",
+    "source_normalized_id": "LIVE-NORM-0004"
+  }
+]

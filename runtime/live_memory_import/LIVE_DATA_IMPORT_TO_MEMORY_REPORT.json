@@ -1,0 +1,964 @@
+{
+  "created_at": "2026-05-26T02:30:44+00:00",
+  "memoryImportFeed": [
+    {
+      "imported": 4,
+      "result": "live questions ready for review",
+      "target": "Question Inbox",
+      "time": "2026-05-26T02:30:44+00:00",
+      "trigger": "Replay Training",
+      "triggered": true
+    },
+    {
+      "imported": 7,
+      "result": "live pain points mapped",
+      "target": "Pain Point Library",
+      "time": "2026-05-26T02:30:44+00:00",
+      "trigger": "Pattern Learning",
+      "triggered": true
+    },
+    {
+      "imported": 4,
+      "result": "question-result patterns prepared",
+      "target": "Pattern Memory",
+      "time": "2026-05-26T02:30:44+00:00",
+      "trigger": "Pattern Learning",
+      "triggered": true
+    },
+    {
+      "imported": 2,
+      "result": "live signals clustered",
+      "target": "Trend Cluster",
+      "time": "2026-05-26T02:30:44+00:00",
+      "trigger": "Intelligence Ranking",
+      "triggered": true
+    },
+    {
+      "imported": 4,
+      "result": "scout memory updated",
+      "target": "Scout Intelligence",
+      "time": "2026-05-26T02:30:44+00:00",
+      "trigger": "Intelligence Ranking",
+      "triggered": true
+    }
+  ],
+  "memoryImportSummary": {
+    "import_ready": true,
+    "intelligence_ranking_triggered": true,
+    "normalized_items_imported": 4,
+    "pain_points_imported": 7,
+    "pattern_learning_triggered": true,
+    "patterns_imported": 4,
+    "question_inbox_items": 4,
+    "replay_training_triggered": true,
+    "scout_intelligence_items": 4,
+    "top_memory_target": "Question Inbox",
+    "trend_clusters_imported": 2,
+    "write_operations_enabled": false
+  },
+  "memoryTargets": [
+    "Question Inbox",
+    "Pain Point Library",
+    "Pattern Memory",
+    "Trend Cluster",
+    "Scout Intelligence"
+  ],
+  "painPointLibraryMemory": [
+    {
+      "created_at": "2026-05-26T02:30:44+00:00",
+      "emotion_tags": [
+        "anxiety",
+        "information_need"
+      ],
+      "market": "Japan",
+      "pain_point": "payment_and_pass_decision",
+      "pain_point_id": "LIVE-PAIN-0001",
+      "platform": "Reddit",
+      "source_confidence": 0.89,
+      "source_normalized_id": "LIVE-NORM-0001",
+      "training_value_score": 100,
+      "trend_strength": 100
+    },
+    {
+      "created_at": "2026-05-26T02:30:44+00:00",
+      "emotion_tags": [
+        "anxiety",
+        "information_need"
+      ],
+      "market": "Japan",
+      "pain_point": "transport_confusion",
+      "pain_point_id": "LIVE-PAIN-0002",
+      "platform": "Reddit",
+      "source_confidence": 0.89,
+      "source_normalized_id": "LIVE-NORM-0001",
+      "training_value_score": 100,
+      "trend_strength": 100
+    },
+    {
+      "created_at": "2026-05-26T02:30:44+00:00",
+      "emotion_tags": [
+        "neutral_information_need"
+      ],
+      "market": "Japan",
+      "pain_point": "payment_and_pass_decision",
+      "pain_point_id": "LIVE-PAIN-0003",
+      "platform": "YouTube",
+      "source_confidence": 0.769,
+      "source_normalized_id": "LIVE-NORM-0002",
+      "training_value_score": 73,
+      "trend_strength": 80
+    },
+    {
+      "created_at": "2026-05-26T02:30:44+00:00",
+      "emotion_tags": [
+        "anxiety",
+        "frustration",
+        "surprise"
+      ],
+      "market": "Japan",
+      "pain_point": "airport_transfer_confusion",
+      "pain_point_id": "LIVE-PAIN-0004",
+      "platform": "TikTok",
+      "source_confidence": 0.95,
+      "source_normalized_id": "LIVE-NORM-0003",
+      "training_value_score": 100,
+      "trend_strength": 100
+    },
+    {
+      "created_at": "2026-05-26T02:30:44+00:00",
+      "emotion_tags": [
+        "anxiety",
+        "frustration",
+        "surprise"
+      ],
+      "market": "Japan",
+      "pain_point": "first_trip_uncertainty",
+      "pain_point_id": "LIVE-PAIN-0005",
+      "platform": "TikTok",
+      "source_confidence": 0.95,
+      "source_normalized_id": "LIVE-NORM-0003",
+      "training_value_score": 100,
+      "trend_strength": 100
+    },
+    {
+      "created_at": "2026-05-26T02:30:44+00:00",
+      "emotion_tags": [
+        "comparison_pressure",
+        "decision_pressure"
+      ],
+      "market": "Japan",
+      "pain_point": "payment_and_pass_decision",
+      "pain_point_id": "LIVE-PAIN-0006",
+      "platform": "X",
+      "source_confidence": 0.733,
+      "source_normalized_id": "LIVE-NORM-0004",
+      "training_value_score": 82,
+      "trend_strength": 71
+    },
+    {
+      "created_at": "2026-05-26T02:30:44+00:00",
+      "emotion_tags": [
+        "comparison_pressure",
+        "decision_pressure"
+      ],
+      "market": "Japan",
+      "pain_point": "value_decision_pressure",
+      "pain_point_id": "LIVE-PAIN-0007",
+      "platform": "X",
+      "source_confidence": 0.733,
+      "source_normalized_id": "LIVE-NORM-0004",
+      "training_value_score": 82,
+      "trend_strength": 71
+    }
+  ],
+  "patternMemoryImport": [
+    {
+      "created_at": "2026-05-26T02:30:44+00:00",
+      "learning_weight": 1.0,
+      "pattern_id": "LIVE-PATTERN-0001",
+      "pattern_type": "high_value",
+      "question_combination": "Reddit + payment_and_pass_decision/transport_confusion + Japan",
+      "recommended_next_action": "Route into answer strategy and human-reviewed training memory.",
+      "result_pattern": "payment_and_pass_decision is a live intelligence pattern with training value 100.",
+      "source_normalized_id": "LIVE-NORM-0001"
+    },
+    {
+      "created_at": "2026-05-26T02:30:44+00:00",
+      "learning_weight": 0.94,
+      "pattern_id": "LIVE-PATTERN-0002",
+      "pattern_type": "high_engagement",
+      "question_combination": "YouTube + payment_and_pass_decision + Japan",
+      "recommended_next_action": "Route into answer strategy and human-reviewed training memory.",
+      "result_pattern": "payment_and_pass_decision is a live intelligence pattern with training value 73.",
+      "source_normalized_id": "LIVE-NORM-0002"
+    },
+    {
+      "created_at": "2026-05-26T02:30:44+00:00",
+      "learning_weight": 1.0,
+      "pattern_id": "LIVE-PATTERN-0003",
+      "pattern_type": "high_value",
+      "question_combination": "TikTok + airport_transfer_confusion/first_trip_uncertainty + Japan",
+      "recommended_next_action": "Route into answer strategy and human-reviewed training memory.",
+      "result_pattern": "airport_transfer_confusion is a live intelligence pattern with training value 100.",
+      "source_normalized_id": "LIVE-NORM-0003"
+    },
+    {
+      "created_at": "2026-05-26T02:30:44+00:00",
+      "learning_weight": 1.0,
+      "pattern_id": "LIVE-PATTERN-0004",
+      "pattern_type": "high_engagement",
+      "question_combination": "X + payment_and_pass_decision/value_decision_pressure + Japan",
+      "recommended_next_action": "Route into answer strategy and human-reviewed training memory.",
+      "result_pattern": "payment_and_pass_decision is a live intelligence pattern with training value 82.",
+      "source_normalized_id": "LIVE-NORM-0004"
+    }
+  ],
+  "questionInboxMemory": [
+    {
+      "created_at": "2026-05-26T02:30:44+00:00",
+      "emotion_tags": [
+        "anxiety",
+        "information_need"
+      ],
+      "language": "en",
+      "market": "Japan",
+      "pain_points": [
+        "payment_and_pass_decision",
+        "transport_confusion"
+      ],
+      "platform": "Reddit",
+      "priority_score": 100,
+      "question_id": "LIVE-Q-0001",
+      "question_text": "Travelers are asking how to choose the right Tokyo transport pass.",
+      "source_normalized_id": "LIVE-NORM-0001",
+      "source_url": "local://live_collection/LIVE-COLLECT-0001",
+      "status": "new",
+      "workspace_id": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-26T02:30:44+00:00",
+      "emotion_tags": [
+        "neutral_information_need"
+      ],
+      "language": "en",
+      "market": "Japan",
+      "pain_points": [
+        "payment_and_pass_decision"
+      ],
+      "platform": "YouTube",
+      "priority_score": 73,
+      "question_id": "LIVE-Q-0002",
+      "question_text": "Short videos compare Suica, Pasmo, and JR Pass choices.",
+      "source_normalized_id": "LIVE-NORM-0002",
+      "source_url": "local://live_collection/LIVE-COLLECT-0002",
+      "status": "new",
+      "workspace_id": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-26T02:30:44+00:00",
+      "emotion_tags": [
+        "anxiety",
+        "frustration",
+        "surprise"
+      ],
+      "language": "en",
+      "market": "Japan",
+      "pain_points": [
+        "airport_transfer_confusion",
+        "first_trip_uncertainty"
+      ],
+      "platform": "TikTok",
+      "priority_score": 100,
+      "question_id": "LIVE-Q-0003",
+      "question_text": "First-time travelers react strongly to airport transfer complexity.",
+      "source_normalized_id": "LIVE-NORM-0003",
+      "source_url": "local://live_collection/LIVE-COLLECT-0003",
+      "status": "new",
+      "workspace_id": "JAG-LAB"
+    },
+    {
+      "created_at": "2026-05-26T02:30:44+00:00",
+      "emotion_tags": [
+        "comparison_pressure",
+        "decision_pressure"
+      ],
+      "language": "en",
+      "market": "Japan",
+      "pain_points": [
+        "payment_and_pass_decision",
+        "value_decision_pressure"
+      ],
+      "platform": "X",
+      "priority_score": 82,
+      "question_id": "LIVE-Q-0004",
+      "question_text": "Users debate whether JR Pass still saves money after price changes.",
+      "source_normalized_id": "LIVE-NORM-0004",
+      "source_url": "local://live_collection/LIVE-COLLECT-0004",
+      "status": "new",
+      "workspace_id": "JAG-LAB"
+    }
+  ],
+  "report_id": "LIVE_DATA_IMPORT_TO_MEMORY_REPORT",
+  "safetyBoundary": "Live Data Import to Memory writes local JSON training memory only. It does not post, reply, follow, DM, log in, register accounts, call platform write APIs, or bypass platform limits.",
+  "scope": "controlled_api_intelligence_collection",
+  "scoutIntelligenceMemory": [
+    {
+      "created_at": "2026-05-26T02:30:44+00:00",
+      "language": "en",
+      "market": "Japan",
+      "next_action": "Import into local training memory and keep write actions blocked.",
+      "platform": "Reddit",
+      "scout_id": "LIVE-SCOUT-0001",
+      "signal": "Travelers are asking how to choose the right Tokyo transport pass.",
+      "source_confidence": 0.89,
+      "source_type": "Reddit topic",
+      "source_url": "local://live_collection/LIVE-COLLECT-0001",
+      "training_value_score": 100,
+      "why_important": "payment_and_pass_decision has training value 100 and source confidence 0.89."
+    },
+    {
+      "created_at": "2026-05-26T02:30:44+00:00",
+      "language": "en",
+      "market": "Japan",
+      "next_action": "Import into local training memory and keep write actions blocked.",
+      "platform": "YouTube",
+      "scout_id": "LIVE-SCOUT-0002",
+      "signal": "Short videos compare Suica, Pasmo, and JR Pass choices.",
+      "source_confidence": 0.769,
+      "source_type": "YouTube search",
+      "source_url": "local://live_collection/LIVE-COLLECT-0002",
+      "training_value_score": 73,
+      "why_important": "payment_and_pass_decision has training value 73 and source confidence 0.769."
+    },
+    {
+      "created_at": "2026-05-26T02:30:44+00:00",
+      "language": "en",
+      "market": "Japan",
+      "next_action": "Import into local training memory and keep write actions blocked.",
+      "platform": "TikTok",
+      "scout_id": "LIVE-SCOUT-0003",
+      "signal": "First-time travelers react strongly to airport transfer complexity.",
+      "source_confidence": 0.95,
+      "source_type": "TikTok trend",
+      "source_url": "local://live_collection/LIVE-COLLECT-0003",
+      "training_value_score": 100,
+      "why_important": "airport_transfer_confusion has training value 100 and source confidence 0.95."
+    },
+    {
+      "created_at": "2026-05-26T02:30:44+00:00",
+      "language": "en",
+      "market": "Japan",
+      "next_action": "Import into local training memory and keep write actions blocked.",
+      "platform": "X",
+      "scout_id": "LIVE-SCOUT-0004",
+      "signal": "Users debate whether JR Pass still saves money after price changes.",
+      "source_confidence": 0.733,
+      "source_type": "X signal",
+      "source_url": "local://live_collection/LIVE-COLLECT-0004",
+      "training_value_score": 82,
+      "why_important": "payment_and_pass_decision has training value 82 and source confidence 0.733."
+    }
+  ],
+  "status": "live_intelligence_imported_to_memory",
+  "trendClusterMemory": [
+    {
+      "canonical_pain_point": "airport_transfer_confusion",
+      "cluster_id": "LIVE-CLUSTER-0001",
+      "cluster_name": "Airport Transfer Confusion",
+      "created_at": "2026-05-26T02:30:44+00:00",
+      "cross_platform": false,
+      "emotion_tags": [
+        "anxiety",
+        "frustration",
+        "surprise"
+      ],
+      "frequency": 1,
+      "max_emotion_score": 1.0,
+      "max_trend_strength": 100,
+      "platforms": [
+        "TikTok"
+      ],
+      "source_items": [
+        "LIVE-NORM-0003"
+      ],
+      "status": "clustered_from_live_data"
+    },
+    {
+      "canonical_pain_point": "payment_and_pass_decision",
+      "cluster_id": "LIVE-CLUSTER-0002",
+      "cluster_name": "Payment And Pass Decision",
+      "created_at": "2026-05-26T02:30:44+00:00",
+      "cross_platform": true,
+      "emotion_tags": [
+        "anxiety",
+        "comparison_pressure",
+        "decision_pressure",
+        "information_need",
+        "neutral_information_need"
+      ],
+      "frequency": 3,
+      "max_emotion_score": 1.0,
+      "max_trend_strength": 100,
+      "platforms": [
+        "Reddit",
+        "X",
+        "YouTube"
+      ],
+      "source_items": [
+        "LIVE-NORM-0001",
+        "LIVE-NORM-0002",
+        "LIVE-NORM-0004"
+      ],
+      "status": "clustered_from_live_data"
+    }
+  ],
+  "triggeredIntelligenceRanking": {
+    "created_at": "2026-05-26T02:30:44+00:00",
+    "heatDimensions": [
+      "rising_trend",
+      "high_engagement_trend",
+      "high_emotion_trend",
+      "high_spread_trend"
+    ],
+    "heatSignals": [
+      {
+        "cluster_id": "LIVE-CLUSTER-0001",
+        "cluster_name": "Airport Transfer Confusion",
+        "detectedSignals": [
+          "high_emotion_trend"
+        ],
+        "emotion_heat_score": 1.0,
+        "engagement_score": 0.25,
+        "frequency": 1,
+        "heat_level": "watch",
+        "opportunity_score": 0.412,
+        "platforms": [
+          "TikTok"
+        ],
+        "rank": 2,
+        "recommended_action": "Keep in watchlist until stronger cross-platform evidence appears.",
+        "rising_score": 0.2,
+        "signal_id": "heat_LIVE-CLUSTER-0001",
+        "spread_score": 0.2,
+        "status": "detected",
+        "why_hot": "Airport Transfer Confusion scores 0.412 because it appears across 1 platform(s), has frequency 1, and emotion score 1.0."
+      },
+      {
+        "cluster_id": "LIVE-CLUSTER-0002",
+        "cluster_name": "Payment And Pass Decision",
+        "detectedSignals": [
+          "high_engagement_trend",
+          "high_emotion_trend",
+          "high_spread_trend"
+        ],
+        "emotion_heat_score": 1.0,
+        "engagement_score": 0.9,
+        "frequency": 3,
+        "heat_level": "hot",
+        "opportunity_score": 0.825,
+        "platforms": [
+          "Reddit",
+          "X",
+          "YouTube"
+        ],
+        "rank": 1,
+        "recommended_action": "Prioritize for human-reviewed answer branch and content strategy.",
+        "rising_score": 0.6,
+        "signal_id": "heat_LIVE-CLUSTER-0002",
+        "spread_score": 0.8,
+        "status": "detected",
+        "why_hot": "Payment And Pass Decision scores 0.825 because it appears across 3 platform(s), has frequency 3, and emotion score 1.0."
+      }
+    ],
+    "heatSummary": {
+      "hot_signals": 1,
+      "top_opportunity": "Payment And Pass Decision",
+      "total_signals": 2,
+      "warming_signals": 0
+    },
+    "opportunityRanking": [
+      {
+        "cluster_id": "LIVE-CLUSTER-0002",
+        "cluster_name": "Payment And Pass Decision",
+        "detectedSignals": [
+          "high_engagement_trend",
+          "high_emotion_trend",
+          "high_spread_trend"
+        ],
+        "emotion_heat_score": 1.0,
+        "engagement_score": 0.9,
+        "frequency": 3,
+        "heat_level": "hot",
+        "opportunity_score": 0.825,
+        "platforms": [
+          "Reddit",
+          "X",
+          "YouTube"
+        ],
+        "rank": 1,
+        "recommended_action": "Prioritize for human-reviewed answer branch and content strategy.",
+        "rising_score": 0.6,
+        "signal_id": "heat_LIVE-CLUSTER-0002",
+        "spread_score": 0.8,
+        "status": "detected",
+        "why_hot": "Payment And Pass Decision scores 0.825 because it appears across 3 platform(s), has frequency 3, and emotion score 1.0."
+      },
+      {
+        "cluster_id": "LIVE-CLUSTER-0001",
+        "cluster_name": "Airport Transfer Confusion",
+        "detectedSignals": [
+          "high_emotion_trend"
+        ],
+        "emotion_heat_score": 1.0,
+        "engagement_score": 0.25,
+        "frequency": 1,
+        "heat_level": "watch",
+        "opportunity_score": 0.412,
+        "platforms": [
+          "TikTok"
+        ],
+        "rank": 2,
+        "recommended_action": "Keep in watchlist until stronger cross-platform evidence appears.",
+        "rising_score": 0.2,
+        "signal_id": "heat_LIVE-CLUSTER-0001",
+        "spread_score": 0.2,
+        "status": "detected",
+        "why_hot": "Airport Transfer Confusion scores 0.412 because it appears across 1 platform(s), has frequency 1, and emotion score 1.0."
+      }
+    ],
+    "report_id": "HEAT_DETECTION_REPORT",
+    "scope": "local_only_no_external_platform_access",
+    "status": "active"
+  },
+  "triggeredPatternLearning": {
+    "created_at": "2026-05-26T02:30:44+00:00",
+    "patternLearningSummary": {
+      "high_conversion_patterns": 0,
+      "high_engagement_patterns": 2,
+      "high_risk_patterns": 0,
+      "high_value_patterns": 2,
+      "pattern_memory_ready": true,
+      "patterns_learned": 4,
+      "reviews_learned": 4,
+      "top_pattern": "high_value"
+    },
+    "patternMemory": [
+      {
+        "category": "live_memory_import",
+        "cluster_name": "Reddit + payment_and_pass_decision/transport_confusion + Japan",
+        "created_at": "2026-05-26T02:30:44+00:00",
+        "decision": "classify",
+        "label": "high_value",
+        "learning_weight": 0.96,
+        "pattern_id": "RUNTIME-PATTERN-0001",
+        "pattern_type": "high_value",
+        "question_combination": "live_memory_import + Reddit + payment_and_pass_decision/transport_confusion + Japan + 1 similar questions",
+        "question_count": 1,
+        "recommended_next_action": "Promote Reddit + payment_and_pass_decision/transport_confusion + Japan into best-answer branch generation.",
+        "result_pattern": "Reddit + payment_and_pass_decision/transport_confusion + Japan is a validated high-value cluster and should seed answer branches or content planning.",
+        "risk_flag": "low",
+        "source_cluster_id": "LIVE-PATTERN-0001",
+        "source_review_id": "LIVE-MEM-REVIEW-0001"
+      },
+      {
+        "category": "live_memory_import",
+        "cluster_name": "YouTube + payment_and_pass_decision + Japan",
+        "created_at": "2026-05-26T02:30:44+00:00",
+        "decision": "classify",
+        "label": "watch",
+        "learning_weight": 0.69,
+        "pattern_id": "RUNTIME-PATTERN-0002",
+        "pattern_type": "high_engagement",
+        "question_combination": "live_memory_import + YouTube + payment_and_pass_decision + Japan + 1 similar questions",
+        "question_count": 1,
+        "recommended_next_action": "Keep YouTube + payment_and_pass_decision + Japan in observation and test a refined hook before scaling.",
+        "result_pattern": "YouTube + payment_and_pass_decision + Japan may attract engagement, but needs human-refined angle or stronger evidence.",
+        "risk_flag": "low",
+        "source_cluster_id": "LIVE-PATTERN-0002",
+        "source_review_id": "LIVE-MEM-REVIEW-0002"
+      },
+      {
+        "category": "live_memory_import",
+        "cluster_name": "TikTok + airport_transfer_confusion/first_trip_uncertainty + Japan",
+        "created_at": "2026-05-26T02:30:44+00:00",
+        "decision": "classify",
+        "label": "high_value",
+        "learning_weight": 0.96,
+        "pattern_id": "RUNTIME-PATTERN-0003",
+        "pattern_type": "high_value",
+        "question_combination": "live_memory_import + TikTok + airport_transfer_confusion/first_trip_uncertainty + Japan + 1 similar questions",
+        "question_count": 1,
+        "recommended_next_action": "Promote TikTok + airport_transfer_confusion/first_trip_uncertainty + Japan into best-answer branch generation.",
+        "result_pattern": "TikTok + airport_transfer_confusion/first_trip_uncertainty + Japan is a validated high-value cluster and should seed answer branches or content planning.",
+        "risk_flag": "low",
+        "source_cluster_id": "LIVE-PATTERN-0003",
+        "source_review_id": "LIVE-MEM-REVIEW-0003"
+      },
+      {
+        "category": "live_memory_import",
+        "cluster_name": "X + payment_and_pass_decision/value_decision_pressure + Japan",
+        "created_at": "2026-05-26T02:30:44+00:00",
+        "decision": "classify",
+        "label": "watch",
+        "learning_weight": 0.69,
+        "pattern_id": "RUNTIME-PATTERN-0004",
+        "pattern_type": "high_engagement",
+        "question_combination": "live_memory_import + X + payment_and_pass_decision/value_decision_pressure + Japan + 1 similar questions",
+        "question_count": 1,
+        "recommended_next_action": "Keep X + payment_and_pass_decision/value_decision_pressure + Japan in observation and test a refined hook before scaling.",
+        "result_pattern": "X + payment_and_pass_decision/value_decision_pressure + Japan may attract engagement, but needs human-refined angle or stronger evidence.",
+        "risk_flag": "low",
+        "source_cluster_id": "LIVE-PATTERN-0004",
+        "source_review_id": "LIVE-MEM-REVIEW-0004"
+      }
+    ],
+    "patternTypes": [
+      "high_value",
+      "high_engagement",
+      "high_conversion",
+      "high_risk"
+    ],
+    "report_id": "RUNTIME_PATTERN_LEARNING_REPORT",
+    "runtimePatternFeed": [
+      {
+        "learning_weight": 0.96,
+        "pattern_id": "RUNTIME-PATTERN-0001",
+        "pattern_type": "high_value",
+        "question_combination": "live_memory_import + Reddit + payment_and_pass_decision/transport_confusion + Japan + 1 similar questions",
+        "recommended_next_action": "Promote Reddit + payment_and_pass_decision/transport_confusion + Japan into best-answer branch generation.",
+        "result_pattern": "Reddit + payment_and_pass_decision/transport_confusion + Japan is a validated high-value cluster and should seed answer branches or content planning.",
+        "risk_flag": "low",
+        "time": "2026-05-26T02:30:44+00:00"
+      },
+      {
+        "learning_weight": 0.69,
+        "pattern_id": "RUNTIME-PATTERN-0002",
+        "pattern_type": "high_engagement",
+        "question_combination": "live_memory_import + YouTube + payment_and_pass_decision + Japan + 1 similar questions",
+        "recommended_next_action": "Keep YouTube + payment_and_pass_decision + Japan in observation and test a refined hook before scaling.",
+        "result_pattern": "YouTube + payment_and_pass_decision + Japan may attract engagement, but needs human-refined angle or stronger evidence.",
+        "risk_flag": "low",
+        "time": "2026-05-26T02:30:44+00:00"
+      },
+      {
+        "learning_weight": 0.96,
+        "pattern_id": "RUNTIME-PATTERN-0003",
+        "pattern_type": "high_value",
+        "question_combination": "live_memory_import + TikTok + airport_transfer_confusion/first_trip_uncertainty + Japan + 1 similar questions",
+        "recommended_next_action": "Promote TikTok + airport_transfer_confusion/first_trip_uncertainty + Japan into best-answer branch generation.",
+        "result_pattern": "TikTok + airport_transfer_confusion/first_trip_uncertainty + Japan is a validated high-value cluster and should seed answer branches or content planning.",
+        "risk_flag": "low",
+        "time": "2026-05-26T02:30:44+00:00"
+      },
+      {
+        "learning_weight": 0.69,
+        "pattern_id": "RUNTIME-PATTERN-0004",
+        "pattern_type": "high_engagement",
+        "question_combination": "live_memory_import + X + payment_and_pass_decision/value_decision_pressure + Japan + 1 similar questions",
+        "recommended_next_action": "Keep X + payment_and_pass_decision/value_decision_pressure + Japan in observation and test a refined hook before scaling.",
+        "result_pattern": "X + payment_and_pass_decision/value_decision_pressure + Japan may attract engagement, but needs human-refined angle or stronger evidence.",
+        "risk_flag": "low",
+        "time": "2026-05-26T02:30:44+00:00"
+      }
+    ],
+    "safetyBoundary": "Runtime Pattern Learning uses local batch review signals only. It does not post, reply, follow, DM, log in, register accounts, or call external write APIs.",
+    "scope": "local_runtime_pattern_learning",
+    "status": "runtime_patterns_learned"
+  },
+  "triggeredReplayTraining": {
+    "created_at": "2026-05-26T02:30:44+00:00",
+    "replayMemory": [
+      {
+        "created_at": "2026-05-26T02:30:44+00:00",
+        "historical_evidence": "Travelers are asking how to choose the right Tokyo transport pass.",
+        "previous_signal": "unknown",
+        "replay_action": "re-evaluate question priority and route into pattern memory",
+        "replay_id": "RUNTIME-REPLAY-0001",
+        "replay_result": "question_priority_retrained",
+        "source_id": "LIVE-Q-0001",
+        "source_type": "historical_question",
+        "status": "replayed",
+        "topic": "unknown",
+        "training_weight": 0.72,
+        "updated_intelligence": "Update question priority memory from repeated historical pain-point evidence."
+      },
+      {
+        "created_at": "2026-05-26T02:30:44+00:00",
+        "historical_evidence": "Short videos compare Suica, Pasmo, and JR Pass choices.",
+        "previous_signal": "unknown",
+        "replay_action": "re-evaluate question priority and route into pattern memory",
+        "replay_id": "RUNTIME-REPLAY-0002",
+        "replay_result": "question_priority_retrained",
+        "source_id": "LIVE-Q-0002",
+        "source_type": "historical_question",
+        "status": "replayed",
+        "topic": "unknown",
+        "training_weight": 0.72,
+        "updated_intelligence": "Update question priority memory from repeated historical pain-point evidence."
+      },
+      {
+        "created_at": "2026-05-26T02:30:44+00:00",
+        "historical_evidence": "First-time travelers react strongly to airport transfer complexity.",
+        "previous_signal": "unknown",
+        "replay_action": "re-evaluate question priority and route into pattern memory",
+        "replay_id": "RUNTIME-REPLAY-0003",
+        "replay_result": "question_priority_retrained",
+        "source_id": "LIVE-Q-0003",
+        "source_type": "historical_question",
+        "status": "replayed",
+        "topic": "unknown",
+        "training_weight": 0.72,
+        "updated_intelligence": "Update question priority memory from repeated historical pain-point evidence."
+      },
+      {
+        "created_at": "2026-05-26T02:30:44+00:00",
+        "historical_evidence": "Users debate whether JR Pass still saves money after price changes.",
+        "previous_signal": "unknown",
+        "replay_action": "re-evaluate question priority and route into pattern memory",
+        "replay_id": "RUNTIME-REPLAY-0004",
+        "replay_result": "question_priority_retrained",
+        "source_id": "LIVE-Q-0004",
+        "source_type": "historical_question",
+        "status": "replayed",
+        "topic": "unknown",
+        "training_weight": 0.72,
+        "updated_intelligence": "Update question priority memory from repeated historical pain-point evidence."
+      },
+      {
+        "created_at": "2026-05-26T02:30:44+00:00",
+        "historical_evidence": "Reddit + payment_and_pass_decision/transport_confusion + Japan is a validated high-value cluster and should seed answer branches or content planning.",
+        "previous_signal": "high_value",
+        "replay_action": "replay learned pattern into updated runtime intelligence",
+        "replay_id": "RUNTIME-REPLAY-0005",
+        "replay_result": "question_priority_retrained",
+        "source_id": "RUNTIME-PATTERN-0001",
+        "source_type": "historical_question",
+        "status": "replayed",
+        "topic": "Reddit + payment_and_pass_decision/transport_confusion + Japan",
+        "training_weight": 0.72,
+        "updated_intelligence": "Update question priority memory from repeated historical pain-point evidence."
+      },
+      {
+        "created_at": "2026-05-26T02:30:44+00:00",
+        "historical_evidence": "YouTube + payment_and_pass_decision + Japan may attract engagement, but needs human-refined angle or stronger evidence.",
+        "previous_signal": "high_engagement",
+        "replay_action": "replay learned pattern into updated runtime intelligence",
+        "replay_id": "RUNTIME-REPLAY-0006",
+        "replay_result": "engagement_pattern_reinforced",
+        "source_id": "RUNTIME-PATTERN-0002",
+        "source_type": "historical_feedback",
+        "status": "replayed",
+        "topic": "YouTube + payment_and_pass_decision + Japan",
+        "training_weight": 0.94,
+        "updated_intelligence": "Promote signals that repeatedly create replies, saves, or useful engagement."
+      },
+      {
+        "created_at": "2026-05-26T02:30:44+00:00",
+        "historical_evidence": "TikTok + airport_transfer_confusion/first_trip_uncertainty + Japan is a validated high-value cluster and should seed answer branches or content planning.",
+        "previous_signal": "high_value",
+        "replay_action": "replay learned pattern into updated runtime intelligence",
+        "replay_id": "RUNTIME-REPLAY-0007",
+        "replay_result": "question_priority_retrained",
+        "source_id": "RUNTIME-PATTERN-0003",
+        "source_type": "historical_question",
+        "status": "replayed",
+        "topic": "TikTok + airport_transfer_confusion/first_trip_uncertainty + Japan",
+        "training_weight": 0.72,
+        "updated_intelligence": "Update question priority memory from repeated historical pain-point evidence."
+      },
+      {
+        "created_at": "2026-05-26T02:30:44+00:00",
+        "historical_evidence": "X + payment_and_pass_decision/value_decision_pressure + Japan may attract engagement, but needs human-refined angle or stronger evidence.",
+        "previous_signal": "high_engagement",
+        "replay_action": "replay learned pattern into updated runtime intelligence",
+        "replay_id": "RUNTIME-REPLAY-0008",
+        "replay_result": "engagement_pattern_reinforced",
+        "source_id": "RUNTIME-PATTERN-0004",
+        "source_type": "historical_feedback",
+        "status": "replayed",
+        "topic": "X + payment_and_pass_decision/value_decision_pressure + Japan",
+        "training_weight": 0.94,
+        "updated_intelligence": "Promote signals that repeatedly create replies, saves, or useful engagement."
+      }
+    ],
+    "replaySourceTypes": [
+      "historical_question",
+      "historical_reply",
+      "historical_feedback",
+      "historical_failure"
+    ],
+    "replayTrainingItems": [
+      {
+        "evidence": "Travelers are asking how to choose the right Tokyo transport pass.",
+        "previous_signal": "unknown",
+        "replay_action": "re-evaluate question priority and route into pattern memory",
+        "source_id": "LIVE-Q-0001",
+        "source_type": "historical_question",
+        "topic": "unknown"
+      },
+      {
+        "evidence": "Short videos compare Suica, Pasmo, and JR Pass choices.",
+        "previous_signal": "unknown",
+        "replay_action": "re-evaluate question priority and route into pattern memory",
+        "source_id": "LIVE-Q-0002",
+        "source_type": "historical_question",
+        "topic": "unknown"
+      },
+      {
+        "evidence": "First-time travelers react strongly to airport transfer complexity.",
+        "previous_signal": "unknown",
+        "replay_action": "re-evaluate question priority and route into pattern memory",
+        "source_id": "LIVE-Q-0003",
+        "source_type": "historical_question",
+        "topic": "unknown"
+      },
+      {
+        "evidence": "Users debate whether JR Pass still saves money after price changes.",
+        "previous_signal": "unknown",
+        "replay_action": "re-evaluate question priority and route into pattern memory",
+        "source_id": "LIVE-Q-0004",
+        "source_type": "historical_question",
+        "topic": "unknown"
+      },
+      {
+        "evidence": "Reddit + payment_and_pass_decision/transport_confusion + Japan is a validated high-value cluster and should seed answer branches or content planning.",
+        "previous_signal": "high_value",
+        "replay_action": "replay learned pattern into updated runtime intelligence",
+        "source_id": "RUNTIME-PATTERN-0001",
+        "source_type": "historical_question",
+        "topic": "Reddit + payment_and_pass_decision/transport_confusion + Japan"
+      },
+      {
+        "evidence": "YouTube + payment_and_pass_decision + Japan may attract engagement, but needs human-refined angle or stronger evidence.",
+        "previous_signal": "high_engagement",
+        "replay_action": "replay learned pattern into updated runtime intelligence",
+        "source_id": "RUNTIME-PATTERN-0002",
+        "source_type": "historical_feedback",
+        "topic": "YouTube + payment_and_pass_decision + Japan"
+      },
+      {
+        "evidence": "TikTok + airport_transfer_confusion/first_trip_uncertainty + Japan is a validated high-value cluster and should seed answer branches or content planning.",
+        "previous_signal": "high_value",
+        "replay_action": "replay learned pattern into updated runtime intelligence",
+        "source_id": "RUNTIME-PATTERN-0003",
+        "source_type": "historical_question",
+        "topic": "TikTok + airport_transfer_confusion/first_trip_uncertainty + Japan"
+      },
+      {
+        "evidence": "X + payment_and_pass_decision/value_decision_pressure + Japan may attract engagement, but needs human-refined angle or stronger evidence.",
+        "previous_signal": "high_engagement",
+        "replay_action": "replay learned pattern into updated runtime intelligence",
+        "source_id": "RUNTIME-PATTERN-0004",
+        "source_type": "historical_feedback",
+        "topic": "X + payment_and_pass_decision/value_decision_pressure + Japan"
+      }
+    ],
+    "replayTrainingSummary": {
+      "engagement_pattern_reinforced": 2,
+      "historical_failures": 0,
+      "historical_feedback": 2,
+      "historical_questions": 6,
+      "historical_replies": 0,
+      "question_priority_retrained": 6,
+      "replay_items": 8,
+      "replay_training_ready": true,
+      "reply_strategy_retrained": 0,
+      "risk_pattern_reinforced": 0
+    },
+    "report_id": "RUNTIME_REPLAY_TRAINING_REPORT",
+    "runtimeReplayFeed": [
+      {
+        "previous_signal": "unknown",
+        "replay_id": "RUNTIME-REPLAY-0001",
+        "replay_result": "question_priority_retrained",
+        "source_type": "historical_question",
+        "status": "replayed",
+        "time": "2026-05-26T02:30:44+00:00",
+        "topic": "unknown",
+        "training_weight": 0.72,
+        "updated_intelligence": "Update question priority memory from repeated historical pain-point evidence."
+      },
+      {
+        "previous_signal": "unknown",
+        "replay_id": "RUNTIME-REPLAY-0002",
+        "replay_result": "question_priority_retrained",
+        "source_type": "historical_question",
+        "status": "replayed",
+        "time": "2026-05-26T02:30:44+00:00",
+        "topic": "unknown",
+        "training_weight": 0.72,
+        "updated_intelligence": "Update question priority memory from repeated historical pain-point evidence."
+      },
+      {
+        "previous_signal": "unknown",
+        "replay_id": "RUNTIME-REPLAY-0003",
+        "replay_result": "question_priority_retrained",
+        "source_type": "historical_question",
+        "status": "replayed",
+        "time": "2026-05-26T02:30:44+00:00",
+        "topic": "unknown",
+        "training_weight": 0.72,
+        "updated_intelligence": "Update question priority memory from repeated historical pain-point evidence."
+      },
+      {
+        "previous_signal": "unknown",
+        "replay_id": "RUNTIME-REPLAY-0004",
+        "replay_result": "question_priority_retrained",
+        "source_type": "historical_question",
+        "status": "replayed",
+        "time": "2026-05-26T02:30:44+00:00",
+        "topic": "unknown",
+        "training_weight": 0.72,
+        "updated_intelligence": "Update question priority memory from repeated historical pain-point evidence."
+      },
+      {
+        "previous_signal": "high_value",
+        "replay_id": "RUNTIME-REPLAY-0005",
+        "replay_result": "question_priority_retrained",
+        "source_type": "historical_question",
+        "status": "replayed",
+        "time": "2026-05-26T02:30:44+00:00",
+        "topic": "Reddit + payment_and_pass_decision/transport_confusion + Japan",
+        "training_weight": 0.72,
+        "updated_intelligence": "Update question priority memory from repeated historical pain-point evidence."
+      },
+      {
+        "previous_signal": "high_engagement",
+        "replay_id": "RUNTIME-REPLAY-0006",
+        "replay_result": "engagement_pattern_reinforced",
+        "source_type": "historical_feedback",
+        "status": "replayed",
+        "time": "2026-05-26T02:30:44+00:00",
+        "topic": "YouTube + payment_and_pass_decision + Japan",
+        "training_weight": 0.94,
+        "updated_intelligence": "Promote signals that repeatedly create replies, saves, or useful engagement."
+      },
+      {
+        "previous_signal": "high_value",
+        "replay_id": "RUNTIME-REPLAY-0007",
+        "replay_result": "question_priority_retrained",
+        "source_type": "historical_question",
+        "status": "replayed",
+        "time": "2026-05-26T02:30:44+00:00",
+        "topic": "TikTok + airport_transfer_confusion/first_trip_uncertainty + Japan",
+        "training_weight": 0.72,
+        "updated_intelligence": "Update question priority memory from repeated historical pain-point evidence."
+      },
+      {
+        "previous_signal": "high_engagement",
+        "replay_id": "RUNTIME-REPLAY-0008",
+        "replay_result": "engagement_pattern_reinforced",
+        "source_type": "historical_feedback",
+        "status": "replayed",
+        "time": "2026-05-26T02:30:44+00:00",
+        "topic": "X + payment_and_pass_decision/value_decision_pressure + Japan",
+        "training_weight": 0.94,
+        "updated_intelligence": "Promote signals that repeatedly create replies, saves, or useful engagement."
+      }
+    ],
+    "safetyBoundary": "Runtime Replay Training replays local historical intelligence only. It does not post, reply, follow, DM, log in, register accounts, or call external write APIs.",
+    "scope": "local_runtime_replay_training",
+    "status": "runtime_replay_trained"
+  },
+  "workspace_id": "JAG-LAB"
+}

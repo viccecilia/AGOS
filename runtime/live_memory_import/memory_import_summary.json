@@ -1,0 +1,14 @@
+{
+  "import_ready": true,
+  "intelligence_ranking_triggered": true,
+  "normalized_items_imported": 4,
+  "pain_points_imported": 7,
+  "pattern_learning_triggered": true,
+  "patterns_imported": 4,
+  "question_inbox_items": 4,
+  "replay_training_triggered": true,
+  "scout_intelligence_items": 4,
+  "top_memory_target": "Question Inbox",
+  "trend_clusters_imported": 2,
+  "write_operations_enabled": false
+}

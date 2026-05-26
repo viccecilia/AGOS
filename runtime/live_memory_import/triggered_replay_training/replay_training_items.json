@@ -1,0 +1,66 @@
+[
+  {
+    "evidence": "Travelers are asking how to choose the right Tokyo transport pass.",
+    "previous_signal": "unknown",
+    "replay_action": "re-evaluate question priority and route into pattern memory",
+    "source_id": "LIVE-Q-0001",
+    "source_type": "historical_question",
+    "topic": "unknown"
+  },
+  {
+    "evidence": "Short videos compare Suica, Pasmo, and JR Pass choices.",
+    "previous_signal": "unknown",
+    "replay_action": "re-evaluate question priority and route into pattern memory",
+    "source_id": "LIVE-Q-0002",
+    "source_type": "historical_question",
+    "topic": "unknown"
+  },
+  {
+    "evidence": "First-time travelers react strongly to airport transfer complexity.",
+    "previous_signal": "unknown",
+    "replay_action": "re-evaluate question priority and route into pattern memory",
+    "source_id": "LIVE-Q-0003",
+    "source_type": "historical_question",
+    "topic": "unknown"
+  },
+  {
+    "evidence": "Users debate whether JR Pass still saves money after price changes.",
+    "previous_signal": "unknown",
+    "replay_action": "re-evaluate question priority and route into pattern memory",
+    "source_id": "LIVE-Q-0004",
+    "source_type": "historical_question",
+    "topic": "unknown"
+  },
+  {
+    "evidence": "Reddit + payment_and_pass_decision/transport_confusion + Japan is a validated high-value cluster and should seed answer branches or content planning.",
+    "previous_signal": "high_value",
+    "replay_action": "replay learned pattern into updated runtime intelligence",
+    "source_id": "RUNTIME-PATTERN-0001",
+    "source_type": "historical_question",
+    "topic": "Reddit + payment_and_pass_decision/transport_confusion + Japan"
+  },
+  {
+    "evidence": "YouTube + payment_and_pass_decision + Japan may attract engagement, but needs human-refined angle or stronger evidence.",
+    "previous_signal": "high_engagement",
+    "replay_action": "replay learned pattern into updated runtime intelligence",
+    "source_id": "RUNTIME-PATTERN-0002",
+    "source_type": "historical_feedback",
+    "topic": "YouTube + payment_and_pass_decision + Japan"
+  },
+  {
+    "evidence": "TikTok + airport_transfer_confusion/first_trip_uncertainty + Japan is a validated high-value cluster and should seed answer branches or content planning.",
+    "previous_signal": "high_value",
+    "replay_action": "replay learned pattern into updated runtime intelligence",
+    "source_id": "RUNTIME-PATTERN-0003",
+    "source_type": "historical_question",
+    "topic": "TikTok + airport_transfer_confusion/first_trip_uncertainty + Japan"
+  },
+  {
+    "evidence": "X + payment_and_pass_decision/value_decision_pressure + Japan may attract engagement, but needs human-refined angle or stronger evidence.",
+    "previous_signal": "high_engagement",
+    "replay_action": "replay learned pattern into updated runtime intelligence",
+    "source_id": "RUNTIME-PATTERN-0004",
+    "source_type": "historical_feedback",
+    "topic": "X + payment_and_pass_decision/value_decision_pressure + Japan"
+  }
+]

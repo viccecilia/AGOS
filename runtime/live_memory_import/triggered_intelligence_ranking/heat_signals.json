@@ -1,0 +1,50 @@
+[
+  {
+    "cluster_id": "LIVE-CLUSTER-0001",
+    "cluster_name": "Airport Transfer Confusion",
+    "detectedSignals": [
+      "high_emotion_trend"
+    ],
+    "emotion_heat_score": 1.0,
+    "engagement_score": 0.25,
+    "frequency": 1,
+    "heat_level": "watch",
+    "opportunity_score": 0.412,
+    "platforms": [
+      "TikTok"
+    ],
+    "rank": 2,
+    "recommended_action": "Keep in watchlist until stronger cross-platform evidence appears.",
+    "rising_score": 0.2,
+    "signal_id": "heat_LIVE-CLUSTER-0001",
+    "spread_score": 0.2,
+    "status": "detected",
+    "why_hot": "Airport Transfer Confusion scores 0.412 because it appears across 1 platform(s), has frequency 1, and emotion score 1.0."
+  },
+  {
+    "cluster_id": "LIVE-CLUSTER-0002",
+    "cluster_name": "Payment And Pass Decision",
+    "detectedSignals": [
+      "high_engagement_trend",
+      "high_emotion_trend",
+      "high_spread_trend"
+    ],
+    "emotion_heat_score": 1.0,
+    "engagement_score": 0.9,
+    "frequency": 3,
+    "heat_level": "hot",
+    "opportunity_score": 0.825,
+    "platforms": [
+      "Reddit",
+      "X",
+      "YouTube"
+    ],
+    "rank": 1,
+    "recommended_action": "Prioritize for human-reviewed answer branch and content strategy.",
+    "rising_score": 0.6,
+    "signal_id": "heat_LIVE-CLUSTER-0002",
+    "spread_score": 0.8,
+    "status": "detected",
+    "why_hot": "Payment And Pass Decision scores 0.825 because it appears across 3 platform(s), has frequency 3, and emotion score 1.0."
+  }
+]

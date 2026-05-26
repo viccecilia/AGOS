@@ -1,0 +1,17 @@
+﻿{
+  "round": "ROUND-API-COLLECT-006",
+  "status": "passed",
+  "checks": [
+    {"command": "python -m compileall services tests", "status": "passed"},
+    {"command": "python tests\\live_data_import_to_memory_smoke_test.py", "status": "passed"},
+    {"command": "python tests\\war_room_runtime_ui_smoke_test.py", "status": "passed"},
+    {"command": "node project-state live memory import check", "status": "passed"},
+    {"command": "node --check runtime\\task_results\\ROUND-API-COLLECT-006\\results\\control_center_runtime_script.js", "status": "passed"},
+    {"command": "browser verification", "status": "passed"}
+  ],
+  "evidence": [
+    "runtime/live_memory_import/LIVE_DATA_IMPORT_TO_MEMORY_REPORT.json",
+    "runtime/task_results/ROUND-API-COLLECT-006/results/project_state_check.json",
+    "runtime/task_results/ROUND-API-COLLECT-006/results/browser_verification.json"
+  ]
+}

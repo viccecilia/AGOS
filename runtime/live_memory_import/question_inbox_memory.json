@@ -1,0 +1,85 @@
+[
+  {
+    "created_at": "2026-05-26T02:30:44+00:00",
+    "emotion_tags": [
+      "anxiety",
+      "information_need"
+    ],
+    "language": "en",
+    "market": "Japan",
+    "pain_points": [
+      "payment_and_pass_decision",
+      "transport_confusion"
+    ],
+    "platform": "Reddit",
+    "priority_score": 100,
+    "question_id": "LIVE-Q-0001",
+    "question_text": "Travelers are asking how to choose the right Tokyo transport pass.",
+    "source_normalized_id": "LIVE-NORM-0001",
+    "source_url": "local://live_collection/LIVE-COLLECT-0001",
+    "status": "new",
+    "workspace_id": "JAG-LAB"
+  },
+  {
+    "created_at": "2026-05-26T02:30:44+00:00",
+    "emotion_tags": [
+      "neutral_information_need"
+    ],
+    "language": "en",
+    "market": "Japan",
+    "pain_points": [
+      "payment_and_pass_decision"
+    ],
+    "platform": "YouTube",
+    "priority_score": 73,
+    "question_id": "LIVE-Q-0002",
+    "question_text": "Short videos compare Suica, Pasmo, and JR Pass choices.",
+    "source_normalized_id": "LIVE-NORM-0002",
+    "source_url": "local://live_collection/LIVE-COLLECT-0002",
+    "status": "new",
+    "workspace_id": "JAG-LAB"
+  },
+  {
+    "created_at": "2026-05-26T02:30:44+00:00",
+    "emotion_tags": [
+      "anxiety",
+      "frustration",
+      "surprise"
+    ],
+    "language": "en",
+    "market": "Japan",
+    "pain_points": [
+      "airport_transfer_confusion",
+      "first_trip_uncertainty"
+    ],
+    "platform": "TikTok",
+    "priority_score": 100,
+    "question_id": "LIVE-Q-0003",
+    "question_text": "First-time travelers react strongly to airport transfer complexity.",
+    "source_normalized_id": "LIVE-NORM-0003",
+    "source_url": "local://live_collection/LIVE-COLLECT-0003",
+    "status": "new",
+    "workspace_id": "JAG-LAB"
+  },
+  {
+    "created_at": "2026-05-26T02:30:44+00:00",
+    "emotion_tags": [
+      "comparison_pressure",
+      "decision_pressure"
+    ],
+    "language": "en",
+    "market": "Japan",
+    "pain_points": [
+      "payment_and_pass_decision",
+      "value_decision_pressure"
+    ],
+    "platform": "X",
+    "priority_score": 82,
+    "question_id": "LIVE-Q-0004",
+    "question_text": "Users debate whether JR Pass still saves money after price changes.",
+    "source_normalized_id": "LIVE-NORM-0004",
+    "source_url": "local://live_collection/LIVE-COLLECT-0004",
+    "status": "new",
+    "workspace_id": "JAG-LAB"
+  }
+]

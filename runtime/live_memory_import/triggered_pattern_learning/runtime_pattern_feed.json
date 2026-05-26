@@ -1,0 +1,42 @@
+[
+  {
+    "learning_weight": 0.96,
+    "pattern_id": "RUNTIME-PATTERN-0001",
+    "pattern_type": "high_value",
+    "question_combination": "live_memory_import + Reddit + payment_and_pass_decision/transport_confusion + Japan + 1 similar questions",
+    "recommended_next_action": "Promote Reddit + payment_and_pass_decision/transport_confusion + Japan into best-answer branch generation.",
+    "result_pattern": "Reddit + payment_and_pass_decision/transport_confusion + Japan is a validated high-value cluster and should seed answer branches or content planning.",
+    "risk_flag": "low",
+    "time": "2026-05-26T02:30:44+00:00"
+  },
+  {
+    "learning_weight": 0.69,
+    "pattern_id": "RUNTIME-PATTERN-0002",
+    "pattern_type": "high_engagement",
+    "question_combination": "live_memory_import + YouTube + payment_and_pass_decision + Japan + 1 similar questions",
+    "recommended_next_action": "Keep YouTube + payment_and_pass_decision + Japan in observation and test a refined hook before scaling.",
+    "result_pattern": "YouTube + payment_and_pass_decision + Japan may attract engagement, but needs human-refined angle or stronger evidence.",
+    "risk_flag": "low",
+    "time": "2026-05-26T02:30:44+00:00"
+  },
+  {
+    "learning_weight": 0.96,
+    "pattern_id": "RUNTIME-PATTERN-0003",
+    "pattern_type": "high_value",
+    "question_combination": "live_memory_import + TikTok + airport_transfer_confusion/first_trip_uncertainty + Japan + 1 similar questions",
+    "recommended_next_action": "Promote TikTok + airport_transfer_confusion/first_trip_uncertainty + Japan into best-answer branch generation.",
+    "result_pattern": "TikTok + airport_transfer_confusion/first_trip_uncertainty + Japan is a validated high-value cluster and should seed answer branches or content planning.",
+    "risk_flag": "low",
+    "time": "2026-05-26T02:30:44+00:00"
+  },
+  {
+    "learning_weight": 0.69,
+    "pattern_id": "RUNTIME-PATTERN-0004",
+    "pattern_type": "high_engagement",
+    "question_combination": "live_memory_import + X + payment_and_pass_decision/value_decision_pressure + Japan + 1 similar questions",
+    "recommended_next_action": "Keep X + payment_and_pass_decision/value_decision_pressure + Japan in observation and test a refined hook before scaling.",
+    "result_pattern": "X + payment_and_pass_decision/value_decision_pressure + Japan may attract engagement, but needs human-refined angle or stronger evidence.",
+    "risk_flag": "low",
+    "time": "2026-05-26T02:30:44+00:00"
+  }
+]
