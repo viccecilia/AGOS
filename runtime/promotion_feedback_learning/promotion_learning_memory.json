@@ -1,0 +1,200 @@
+{
+  "answer_style": [
+    {
+      "failed_feedback": 1,
+      "positive_feedback": 5,
+      "sample_data_only": true,
+      "unsafe_feedback": 1,
+      "value": "platform_specific_plan"
+    },
+    {
+      "failed_feedback": 1,
+      "positive_feedback": 0,
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
+      "value": "direct_answer_with_steps"
+    },
+    {
+      "failed_feedback": 4,
+      "positive_feedback": 0,
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
+      "value": "diagnostic_problem_triage"
+    }
+  ],
+  "content_format": [
+    {
+      "failed_feedback": 1,
+      "positive_feedback": 3,
+      "sample_data_only": true,
+      "unsafe_feedback": 1,
+      "value": "promotion_plan"
+    },
+    {
+      "failed_feedback": 0,
+      "positive_feedback": 1,
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
+      "value": "carousel"
+    },
+    {
+      "failed_feedback": 0,
+      "positive_feedback": 1,
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
+      "value": "short_video_hook"
+    },
+    {
+      "failed_feedback": 1,
+      "positive_feedback": 0,
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
+      "value": "answer_draft"
+    },
+    {
+      "failed_feedback": 4,
+      "positive_feedback": 0,
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
+      "value": "problem_candidate"
+    }
+  ],
+  "cta_style": [
+    {
+      "failed_feedback": 0,
+      "positive_feedback": 5,
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
+      "value": "answer_first_soft_reference"
+    },
+    {
+      "failed_feedback": 2,
+      "positive_feedback": 0,
+      "sample_data_only": true,
+      "unsafe_feedback": 1,
+      "value": "soft_reference"
+    },
+    {
+      "failed_feedback": 4,
+      "positive_feedback": 0,
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
+      "value": "no_cta"
+    }
+  ],
+  "market": [
+    {
+      "failed_feedback": 1,
+      "positive_feedback": 4,
+      "sample_data_only": true,
+      "unsafe_feedback": 1,
+      "value": "Japan"
+    },
+    {
+      "failed_feedback": 5,
+      "positive_feedback": 1,
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
+      "value": "US"
+    }
+  ],
+  "pain_point": [
+    {
+      "failed_feedback": 1,
+      "positive_feedback": 5,
+      "sample_data_only": true,
+      "unsafe_feedback": 1,
+      "value": "planning uncertainty"
+    },
+    {
+      "failed_feedback": 5,
+      "positive_feedback": 0,
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
+      "value": "luggage friction"
+    }
+  ],
+  "platform": [
+    {
+      "failed_feedback": 0,
+      "positive_feedback": 1,
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
+      "value": "Instagram"
+    },
+    {
+      "failed_feedback": 0,
+      "positive_feedback": 1,
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
+      "value": "TikTok"
+    },
+    {
+      "failed_feedback": 0,
+      "positive_feedback": 1,
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
+      "value": "X"
+    },
+    {
+      "failed_feedback": 0,
+      "positive_feedback": 1,
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
+      "value": "YouTube"
+    },
+    {
+      "failed_feedback": 6,
+      "positive_feedback": 1,
+      "sample_data_only": true,
+      "unsafe_feedback": 1,
+      "value": "Reddit"
+    }
+  ],
+  "problem_type": [
+    {
+      "failed_feedback": 1,
+      "positive_feedback": 3,
+      "sample_data_only": true,
+      "unsafe_feedback": 1,
+      "value": "travel_planning"
+    },
+    {
+      "failed_feedback": 0,
+      "positive_feedback": 1,
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
+      "value": "transport_planning"
+    },
+    {
+      "failed_feedback": 1,
+      "positive_feedback": 0,
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
+      "value": "luggage_heavy_trip"
+    },
+    {
+      "failed_feedback": 4,
+      "positive_feedback": 1,
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
+      "value": "airport_transfer"
+    }
+  ],
+  "risk_pattern": [
+    {
+      "failed_feedback": 1,
+      "positive_feedback": 3,
+      "sample_data_only": true,
+      "unsafe_feedback": 1,
+      "value": "medium"
+    },
+    {
+      "failed_feedback": 5,
+      "positive_feedback": 2,
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
+      "value": "low"
+    }
+  ]
+}

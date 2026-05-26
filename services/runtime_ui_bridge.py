@@ -52,6 +52,7 @@ from services.platform_account_connection_center import PlatformAccountConnectio
 from services.platform_credential_vault import PlatformCredentialVault
 from services.predictive_demand_gate import PredictiveDemandGate
 from services.problem_seeker_loop import ProblemSeekerLoop
+from services.promotion_feedback_learning import PromotionFeedbackLearning
 from services.promotion_review_center import PromotionReviewCenter
 from services.real_feedback_capture_engine import RealFeedbackCaptureEngine
 from services.real_growth_validation_engine import RealGrowthValidationEngine
@@ -193,6 +194,7 @@ class RuntimeUIBridge:
         answer_to_homepage_drafts = AnswerToHomepageDraftEngine().build()
         cross_platform_promotion_plan = CrossPlatformPromotionPlanEngine().build()
         promotion_review_center = PromotionReviewCenter().build()
+        promotion_feedback_learning = PromotionFeedbackLearning().learn()
         location_demand_heatmap = LocationDemandHeatmapEngine().build(seasonal_demand_calendar.get("seasonalCalendar", []))
         mobility_demand_intent = MobilityDemandIntentEngine().build()
         demand_to_action_strategy = DemandToActionStrategyEngine().build()
@@ -563,6 +565,12 @@ class RuntimeUIBridge:
             "promotionModifiedOutputs": promotion_review_center.get("promotionModifiedOutputs", []),
             "promotionReviewTimeline": promotion_review_center.get("promotionReviewTimeline", []),
             "promotionReviewSummary": promotion_review_center.get("promotionReviewSummary", {}),
+            "promotionFeedbackLearning": promotion_feedback_learning,
+            "promotionFeedbackEvents": promotion_feedback_learning.get("promotionFeedbackEvents", []),
+            "promotionLearningMemory": promotion_feedback_learning.get("promotionLearningMemory", {}),
+            "bestPromotionPatterns": promotion_feedback_learning.get("bestPromotionPatterns", []),
+            "failedPromotionPatterns": promotion_feedback_learning.get("failedPromotionPatterns", []),
+            "promotionFeedbackSummary": promotion_feedback_learning.get("promotionFeedbackSummary", {}),
             "locationDemandHeatmap": location_demand_heatmap,
             "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),

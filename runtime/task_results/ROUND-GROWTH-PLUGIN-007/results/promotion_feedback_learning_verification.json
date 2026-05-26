@@ -1,0 +1,27 @@
+{
+  "control_center_version": "0.1.122",
+  "panel_present": true,
+  "promotion_feedback_learning_ready": true,
+  "feedback_event_count": 11,
+  "feedback_types_observed": [
+    "ignored",
+    "liked",
+    "modified_by_human",
+    "posted_manually",
+    "rejected_by_human",
+    "replied",
+    "saved",
+    "shared",
+    "unsafe_flagged"
+  ],
+  "has_at_least_5_feedback_types": true,
+  "best_pattern_count": 8,
+  "failed_pattern_count": 12,
+  "has_best_patterns": true,
+  "has_failed_patterns": true,
+  "unsafe_in_best_patterns": false,
+  "next_recommendation": "Prioritize soft-reference CTA on practical transport planning problems for Reddit/SEO/Xiaohongshu, and avoid patterns that were rejected, modified for softer CTA, ignored, or unsafe flagged.",
+  "sample_data_only": true,
+  "auto_next_action_allowed": false,
+  "passed": true
+}

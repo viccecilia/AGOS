@@ -1,0 +1,110 @@
+[
+  {
+    "dimension": "problem_type",
+    "failed_feedback": 1,
+    "pattern_id": "FAILED-001",
+    "sample_data_only": true,
+    "unsafe_feedback": 1,
+    "value": "travel_planning",
+    "why_failed": "Ignored, rejected, modified, or unsafe feedback should be learned as a caution pattern."
+  },
+  {
+    "dimension": "problem_type",
+    "failed_feedback": 1,
+    "pattern_id": "FAILED-002",
+    "sample_data_only": true,
+    "unsafe_feedback": 0,
+    "value": "luggage_heavy_trip",
+    "why_failed": "Ignored, rejected, modified, or unsafe feedback should be learned as a caution pattern."
+  },
+  {
+    "dimension": "problem_type",
+    "failed_feedback": 4,
+    "pattern_id": "FAILED-003",
+    "sample_data_only": true,
+    "unsafe_feedback": 0,
+    "value": "airport_transfer",
+    "why_failed": "Ignored, rejected, modified, or unsafe feedback should be learned as a caution pattern."
+  },
+  {
+    "dimension": "pain_point",
+    "failed_feedback": 1,
+    "pattern_id": "FAILED-004",
+    "sample_data_only": true,
+    "unsafe_feedback": 1,
+    "value": "planning uncertainty",
+    "why_failed": "Ignored, rejected, modified, or unsafe feedback should be learned as a caution pattern."
+  },
+  {
+    "dimension": "pain_point",
+    "failed_feedback": 5,
+    "pattern_id": "FAILED-005",
+    "sample_data_only": true,
+    "unsafe_feedback": 0,
+    "value": "luggage friction",
+    "why_failed": "Ignored, rejected, modified, or unsafe feedback should be learned as a caution pattern."
+  },
+  {
+    "dimension": "platform",
+    "failed_feedback": 6,
+    "pattern_id": "FAILED-006",
+    "sample_data_only": true,
+    "unsafe_feedback": 1,
+    "value": "Reddit",
+    "why_failed": "Ignored, rejected, modified, or unsafe feedback should be learned as a caution pattern."
+  },
+  {
+    "dimension": "market",
+    "failed_feedback": 1,
+    "pattern_id": "FAILED-007",
+    "sample_data_only": true,
+    "unsafe_feedback": 1,
+    "value": "Japan",
+    "why_failed": "Ignored, rejected, modified, or unsafe feedback should be learned as a caution pattern."
+  },
+  {
+    "dimension": "market",
+    "failed_feedback": 5,
+    "pattern_id": "FAILED-008",
+    "sample_data_only": true,
+    "unsafe_feedback": 0,
+    "value": "US",
+    "why_failed": "Ignored, rejected, modified, or unsafe feedback should be learned as a caution pattern."
+  },
+  {
+    "dimension": "answer_style",
+    "failed_feedback": 1,
+    "pattern_id": "FAILED-009",
+    "sample_data_only": true,
+    "unsafe_feedback": 1,
+    "value": "platform_specific_plan",
+    "why_failed": "Ignored, rejected, modified, or unsafe feedback should be learned as a caution pattern."
+  },
+  {
+    "dimension": "answer_style",
+    "failed_feedback": 1,
+    "pattern_id": "FAILED-010",
+    "sample_data_only": true,
+    "unsafe_feedback": 0,
+    "value": "direct_answer_with_steps",
+    "why_failed": "Ignored, rejected, modified, or unsafe feedback should be learned as a caution pattern."
+  },
+  {
+    "dimension": "answer_style",
+    "failed_feedback": 4,
+    "pattern_id": "FAILED-011",
+    "sample_data_only": true,
+    "unsafe_feedback": 0,
+    "value": "diagnostic_problem_triage",
+    "why_failed": "Ignored, rejected, modified, or unsafe feedback should be learned as a caution pattern."
+  },
+  {
+    "dimension": "cta_style",
+    "failed_feedback": 2,
+    "pattern_id": "FAILED-012",
+    "sample_data_only": true,
+    "unsafe_feedback": 1,
+    "value": "soft_reference",
+    "why_failed": "Ignored, rejected, modified, or unsafe feedback should be learned as a caution pattern."
+  }
+]

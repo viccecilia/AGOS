@@ -1,0 +1,22 @@
+{
+  "bestPatternCount": 8,
+  "failedPatternCount": 12,
+  "feedbackEventCount": 11,
+  "hasLiked": true,
+  "hasModified": true,
+  "hasNextRecommendation": true,
+  "hasPostedManually": true,
+  "hasRejected": true,
+  "hasReplied": true,
+  "hasSaved": true,
+  "hasShared": true,
+  "hasUnsafe": true,
+  "panelExists": true,
+  "panelTextSample": "反馈事件11ignored / liked / modified_by_human / posted_manually / rejected_by_human / replied / saved / shared / unsafe_flagged\n最佳模式8Platforms: Instagram / TikTok / X / YouTube\n失败模式12Unsafe in best: false\n学习边界sample_data_only: trueauto_next_action_allowed: false\nPROMO-FEEDBACK-001\nposted_manually / Reddit / travel_planning\nPain point: planning uncertainty / Market: Japan\nAnswer style: platform_specific_plan / CTA: answer_first_soft_reference / Format: promotion_plan\nRisk pattern: medium / Evidence: sample_positive_feedback\nSample only: true / Real business result: false / Auto next action: false\nposted_manually\nPROMO-FEEDBACK-002\nliked / TikTok / transport_planning\nPain point: planning uncertainty / Market: Japan\nAnswer style: platform_specific_plan / CTA: answer_first_soft_reference / Format: short_video_hook\nRisk pattern: medium / Evidence: sample_positive_feedback\nSample only: true / Real business result: false / Auto next action: false\nliked\nPROMO-FEEDBACK-003\nreplied / Instagram / travel_planning\nPain point: planning uncertainty / Market: US\nAnswer style: platform_specific_plan / CTA: answer_first_soft_reference / Format: carousel\nRisk pattern: low / Evidence: sample_positive_feed",
+  "passed": true,
+  "title": "AGOS Project Control Center",
+  "url": "http://127.0.0.1:8765/project_control_center.html?runtime_ui=1&cache_bust=1779791371933#war-room-growth",
+  "version": "0.1.122",
+  "auto_next_action_allowed_is_false": true,
+  "sample_data_only_is_true": true
+}
