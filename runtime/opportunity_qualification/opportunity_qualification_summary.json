@@ -1,0 +1,23 @@
+{
+  "auto_action_allowed": false,
+  "high_value_count": 6,
+  "human_review_required": true,
+  "low_value_count": 0,
+  "monitor_count": 7,
+  "opportunity_count": 13,
+  "opportunity_qualification_ready": true,
+  "recommended_next_round": "ROUND-GROWTH-PLUGIN-004 Answer Branch Drafting Engine",
+  "status_counts": {
+    "high_value": 6,
+    "monitor": 7
+  },
+  "top_opportunities": [
+    "HOME-OPP-001",
+    "HOME-OPP-004",
+    "HOME-OPP-003",
+    "HOME-OPP-006",
+    "HOME-OPP-005"
+  ],
+  "unsafe_auto_action_allowed": false,
+  "unsafe_count": 0
+}

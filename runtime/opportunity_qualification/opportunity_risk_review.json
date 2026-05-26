@@ -1,0 +1,7 @@
+{
+  "all_actions_human_gated": true,
+  "auto_action_allowed_for_unsafe": false,
+  "risk_reasons": [],
+  "unsafe_count": 0,
+  "unsafe_problem_ids": []
+}

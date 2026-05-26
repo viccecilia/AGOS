@@ -1,0 +1,19 @@
+{
+  "auto_action_allowed": false,
+  "command_status": "passed",
+  "control_center_version": "0.1.118",
+  "current_round": "ROUND-GROWTH-PLUGIN-003 / AGOS_OPPORTUNITY_QUALIFICATION_ENGINE",
+  "high_value_count": 6,
+  "human_review_required": true,
+  "low_value_count": 0,
+  "monitor_count": 7,
+  "opportunity_count": 13,
+  "required_commands": [
+    "python -m compileall services tests",
+    "python tests\\problem_seeker_loop_smoke_test.py",
+    "python tests\\opportunity_qualification_smoke_test.py",
+    "python tests\\war_room_runtime_ui_smoke_test.py"
+  ],
+  "round_id": "ROUND-GROWTH-PLUGIN-003",
+  "unsafe_count": 0
+}

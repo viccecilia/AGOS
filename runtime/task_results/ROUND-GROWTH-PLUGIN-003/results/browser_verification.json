@@ -1,0 +1,14 @@
+{
+  "current_round": "ROUND-GROWTH-PLUGIN-003 / AGOS_OPPORTUNITY_QUALIFICATION_ENGINE",
+  "panel_exists": true,
+  "round_id": "ROUND-GROWTH-PLUGIN-003",
+  "shows_auto_action_disabled": true,
+  "shows_high_value": true,
+  "shows_human_gate": true,
+  "shows_monitor": true,
+  "shows_next_step": true,
+  "shows_score_breakdown": true,
+  "url": "http://127.0.0.1:8765/project_control_center.html?runtime_ui=1&cache_bust=1779789833827#war-room-growth",
+  "verified_at": "2026-05-26T10:04:06.541Z",
+  "version": "0.1.118"
+}
