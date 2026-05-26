@@ -1,0 +1,107 @@
+[
+  {
+    "auto_dm_enabled": false,
+    "auto_post_enabled": false,
+    "auto_reply_enabled": false,
+    "core_value_props": [
+      "Japan trip planning support",
+      "transport and airport-transfer anxiety reduction",
+      "family and luggage-heavy trip planning",
+      "seasonal Japan travel guidance"
+    ],
+    "forbidden_claims": [
+      "guaranteed booking",
+      "official government guide",
+      "automatic platform replies",
+      "unverified discounts"
+    ],
+    "homepage_status": "placeholder_needs_official_url",
+    "homepage_url": "https://japan-ai-guide.example/pending-official-url",
+    "human_review_required": true,
+    "industry_pack": "Travel Pack",
+    "merchant_name": "Japan AI Guide App",
+    "merchant_type": "travel_app",
+    "plugin_status": "active",
+    "promotion_goal": "Promote the social homepage by solving Japan travel mobility questions first, then softly guiding users to the homepage.",
+    "target_markets": [
+      "Japan",
+      "US",
+      "Europe",
+      "Korea",
+      "Taiwan",
+      "Southeast Asia",
+      "China"
+    ],
+    "target_platforms": [
+      "Reddit",
+      "TikTok",
+      "Instagram",
+      "X",
+      "YouTube",
+      "Threads",
+      "SEO",
+      "Xiaohongshu"
+    ],
+    "target_users": [
+      "first-time Japan travelers",
+      "family travelers",
+      "luggage-heavy travelers",
+      "late-arrival travelers"
+    ],
+    "tone_guardrails": [
+      "helpful",
+      "specific",
+      "not hard-selling",
+      "transparent sample-only evidence"
+    ],
+    "updated_at": "2026-05-26T09:10:26+00:00",
+    "workspace_id": "jag_app_growth",
+    "workspace_isolation_required": true,
+    "write_api_enabled": false
+  },
+  {
+    "auto_dm_enabled": false,
+    "auto_post_enabled": false,
+    "auto_reply_enabled": false,
+    "core_value_props": [
+      "home appliance comparison",
+      "buying guidance",
+      "maintenance education"
+    ],
+    "forbidden_claims": [
+      "medical benefit claims",
+      "guaranteed savings",
+      "fake reviews"
+    ],
+    "homepage_status": "placeholder_demo_isolated",
+    "homepage_url": "pending_setup",
+    "human_review_required": true,
+    "industry_pack": "Home Appliance Pack",
+    "merchant_name": "Home Appliance Demo Store",
+    "merchant_type": "home_appliance",
+    "plugin_status": "isolation_demo",
+    "promotion_goal": "Isolation sample only; must not receive JAG travel questions or answers.",
+    "target_markets": [
+      "Japan",
+      "US"
+    ],
+    "target_platforms": [
+      "Reddit",
+      "YouTube",
+      "SEO"
+    ],
+    "target_users": [
+      "new homeowners",
+      "small-apartment renters"
+    ],
+    "tone_guardrails": [
+      "practical",
+      "evidence-based",
+      "not travel-oriented"
+    ],
+    "updated_at": "2026-05-26T09:10:26+00:00",
+    "workspace_id": "home_appliance_demo",
+    "workspace_isolation_required": true,
+    "write_api_enabled": false
+  }
+]

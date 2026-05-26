@@ -38,6 +38,7 @@ from services.live_collection_runner import LiveCollectionRunner
 from services.live_data_import_to_memory import LiveDataImportToMemory
 from services.live_data_normalization_pipeline import LiveDataNormalizationPipeline
 from services.location_demand_heatmap_engine import LocationDemandHeatmapEngine
+from services.merchant_promotion_workspace import MerchantPromotionWorkspace
 from services.mobility_demand_intent_engine import MobilityDemandIntentEngine
 from services.personality_drift_engine import PersonalityDriftEngine
 from services.personality_isolation_engine import PersonalityIsolationEngine
@@ -181,6 +182,7 @@ class RuntimeUIBridge:
         controlled_api_collection_gate = ControlledAPICollectionGate().evaluate(state.get("workspace", "JAG-LAB"))
         seasonal_demand_calendar = SeasonalDemandCalendarEngine().build()
         seasonal_trend_import_trial = SeasonalTrendImportTrial().run()
+        merchant_promotion_workspace = MerchantPromotionWorkspace().build()
         location_demand_heatmap = LocationDemandHeatmapEngine().build(seasonal_demand_calendar.get("seasonalCalendar", []))
         mobility_demand_intent = MobilityDemandIntentEngine().build()
         demand_to_action_strategy = DemandToActionStrategyEngine().build()
@@ -517,6 +519,13 @@ class RuntimeUIBridge:
             "seasonalMarketHeatmap": seasonal_trend_import_trial.get("seasonalMarketHeatmap", []),
             "seasonalDemandInterpretation": seasonal_trend_import_trial.get("seasonalDemandInterpretation", {}),
             "seasonalTrendImportSummary": seasonal_trend_import_trial.get("seasonalTrendImportSummary", {}),
+            "merchantPromotionWorkspace": merchant_promotion_workspace,
+            "merchantProfiles": merchant_promotion_workspace.get("merchantProfiles", []),
+            "merchantSocialMatrix": merchant_promotion_workspace.get("merchantSocialMatrix", []),
+            "homepageProblemOpportunities": merchant_promotion_workspace.get("homepageProblemOpportunities", []),
+            "answerToHomepageStrategy": merchant_promotion_workspace.get("answerToHomepageStrategy", []),
+            "promotionReviewQueue": merchant_promotion_workspace.get("promotionReviewQueue", []),
+            "merchantPromotionSummary": merchant_promotion_workspace.get("merchantPromotionSummary", {}),
             "locationDemandHeatmap": location_demand_heatmap,
             "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),

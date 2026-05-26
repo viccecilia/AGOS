@@ -1,0 +1,117 @@
+[
+  {
+    "auto_execution_allowed": false,
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "merchant_name": "Japan AI Guide App",
+    "must_check": [
+      "tone",
+      "platform_rules",
+      "soft_cta",
+      "no_hard_sell",
+      "workspace_isolation"
+    ],
+    "platform": "Reddit",
+    "review_id": "HOME-PROMO-REVIEW-001",
+    "review_status": "needs_human_review",
+    "review_type": "homepage_promotion_reply_or_content",
+    "strategy_id": "HOME-PROMO-STRATEGY-001",
+    "workspace_id": "jag_app_growth"
+  },
+  {
+    "auto_execution_allowed": false,
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "merchant_name": "Japan AI Guide App",
+    "must_check": [
+      "tone",
+      "platform_rules",
+      "soft_cta",
+      "no_hard_sell",
+      "workspace_isolation"
+    ],
+    "platform": "Xiaohongshu",
+    "review_id": "HOME-PROMO-REVIEW-002",
+    "review_status": "needs_human_review",
+    "review_type": "homepage_promotion_reply_or_content",
+    "strategy_id": "HOME-PROMO-STRATEGY-002",
+    "workspace_id": "jag_app_growth"
+  },
+  {
+    "auto_execution_allowed": false,
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "merchant_name": "Japan AI Guide App",
+    "must_check": [
+      "tone",
+      "platform_rules",
+      "soft_cta",
+      "no_hard_sell",
+      "workspace_isolation"
+    ],
+    "platform": "TikTok",
+    "review_id": "HOME-PROMO-REVIEW-003",
+    "review_status": "needs_human_review",
+    "review_type": "homepage_promotion_reply_or_content",
+    "strategy_id": "HOME-PROMO-STRATEGY-003",
+    "workspace_id": "jag_app_growth"
+  },
+  {
+    "auto_execution_allowed": false,
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "merchant_name": "Japan AI Guide App",
+    "must_check": [
+      "tone",
+      "platform_rules",
+      "soft_cta",
+      "no_hard_sell",
+      "workspace_isolation"
+    ],
+    "platform": "YouTube",
+    "review_id": "HOME-PROMO-REVIEW-004",
+    "review_status": "needs_human_review",
+    "review_type": "homepage_promotion_reply_or_content",
+    "strategy_id": "HOME-PROMO-STRATEGY-004",
+    "workspace_id": "jag_app_growth"
+  },
+  {
+    "auto_execution_allowed": false,
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "merchant_name": "Home Appliance Demo Store",
+    "must_check": [
+      "tone",
+      "platform_rules",
+      "soft_cta",
+      "no_hard_sell",
+      "workspace_isolation"
+    ],
+    "platform": "Reddit",
+    "review_id": "HOME-PROMO-REVIEW-005",
+    "review_status": "needs_human_review",
+    "review_type": "homepage_promotion_reply_or_content",
+    "strategy_id": "HOME-PROMO-STRATEGY-005",
+    "workspace_id": "home_appliance_demo"
+  }
+]

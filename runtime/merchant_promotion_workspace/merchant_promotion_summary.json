@@ -1,0 +1,54 @@
+{
+  "active_merchant": "Japan AI Guide App",
+  "active_workspace": "jag_app_growth",
+  "active_workspace_opportunities": 4,
+  "all_actions_human_gated": true,
+  "auto_dm_enabled": false,
+  "auto_post_enabled": false,
+  "auto_reply_enabled": false,
+  "home_appliance_demo_isolated": true,
+  "merchant_profiles": 2,
+  "problem_opportunities": 5,
+  "promotion_strategies": 5,
+  "review_queue_items": 5,
+  "social_homepage_slots": 8,
+  "top_markets": [
+    [
+      "US",
+      1
+    ],
+    [
+      "China",
+      1
+    ],
+    [
+      "Taiwan",
+      1
+    ],
+    [
+      "Europe",
+      1
+    ]
+  ],
+  "top_platforms": [
+    [
+      "Reddit",
+      1
+    ],
+    [
+      "Xiaohongshu",
+      1
+    ],
+    [
+      "TikTok",
+      1
+    ],
+    [
+      "YouTube",
+      1
+    ]
+  ],
+  "workspace_isolation_checked": true,
+  "workspace_plugin_ready": true,
+  "write_api_enabled": false
+}

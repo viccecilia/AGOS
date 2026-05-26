@@ -1,0 +1,97 @@
+{
+  "round_id": "ROUND-GROWTH-PLUGIN-001",
+  "status": "passed",
+  "summary": {
+    "active_merchant": "Japan AI Guide App",
+    "active_workspace": "jag_app_growth",
+    "active_workspace_opportunities": 4,
+    "all_actions_human_gated": true,
+    "auto_dm_enabled": false,
+    "auto_post_enabled": false,
+    "auto_reply_enabled": false,
+    "home_appliance_demo_isolated": true,
+    "merchant_profiles": 2,
+    "problem_opportunities": 5,
+    "promotion_strategies": 5,
+    "review_queue_items": 5,
+    "social_homepage_slots": 8,
+    "top_markets": [
+      [
+        "US",
+        1
+      ],
+      [
+        "China",
+        1
+      ],
+      [
+        "Taiwan",
+        1
+      ],
+      [
+        "Europe",
+        1
+      ]
+    ],
+    "top_platforms": [
+      [
+        "Reddit",
+        1
+      ],
+      [
+        "Xiaohongshu",
+        1
+      ],
+      [
+        "TikTok",
+        1
+      ],
+      [
+        "YouTube",
+        1
+      ]
+    ],
+    "workspace_isolation_checked": true,
+    "workspace_plugin_ready": true,
+    "write_api_enabled": false
+  },
+  "validation_commands": [
+    {
+      "command": "python -m compileall services tests",
+      "status": "passed"
+    },
+    {
+      "command": "python tests\\merchant_promotion_workspace_smoke_test.py",
+      "status": "passed"
+    },
+    {
+      "command": "python tests\\war_room_runtime_ui_smoke_test.py",
+      "status": "passed"
+    },
+    {
+      "command": "node project-state merchant promotion check",
+      "status": "passed"
+    },
+    {
+      "command": "node --check control_center_runtime_script.js",
+      "status": "passed"
+    }
+  ],
+  "browser": {
+    "status": "passed",
+    "visible": [
+      "Japan AI Guide App active merchant",
+      "homepage URL placeholder",
+      "8 social homepage slots",
+      "problem opportunities",
+      "reply drafts and soft CTA",
+      "promotion review queue",
+      "human gate true",
+      "auto post false",
+      "auto reply false",
+      "auto DM false",
+      "write API false",
+      "workspace isolation true"
+    ]
+  }
+}
