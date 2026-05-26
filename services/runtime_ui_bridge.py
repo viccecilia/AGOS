@@ -8,6 +8,7 @@ from typing import Any
 from services.action_recommendation_engine import ActionRecommendationEngine
 from services.action_queue_engine import ActionQueueEngine
 from services.api_capability_registry import APICapabilityRegistry
+from services.api_credential_setup_wizard import APICredentialSetupWizard
 from services.api_rate_limit_guard import APIRateLimitGuard
 from services.api_signal_normalization import APISignalNormalization
 from services.api_scout_gate import APIScoutGate
@@ -156,6 +157,7 @@ class RuntimeUIBridge:
         api_capability_registry = APICapabilityRegistry().build()
         platform_credential_vault = PlatformCredentialVault().bootstrap_sample_status()
         platform_account_connections = PlatformAccountConnectionCenter().build(state.get("workspace", "JAG-LAB"))
+        api_credential_setup_wizard = APICredentialSetupWizard().build(state.get("workspace", "JAG-LAB"))
         read_only_trends = ReadOnlyTrendConnector().read_trends()
         api_rate_limit_guard = APIRateLimitGuard().evaluate()
         api_signal_normalization = APISignalNormalization().normalize(read_only_trends.get("platformTrends", []))
@@ -439,6 +441,11 @@ class RuntimeUIBridge:
             "platformConnections": platform_account_connections.get("platformConnections", []),
             "platformConnectionFeed": platform_account_connections.get("platformConnectionFeed", []),
             "platformConnectionSummary": platform_account_connections.get("platformConnectionSummary", {}),
+            "apiCredentialSetupWizard": api_credential_setup_wizard,
+            "credentialSetupSteps": api_credential_setup_wizard.get("credentialSetupSteps", []),
+            "credentialSetupStatus": api_credential_setup_wizard.get("credentialSetupStatus", []),
+            "credentialSetupFeed": api_credential_setup_wizard.get("credentialSetupFeed", []),
+            "credentialSetupSummary": api_credential_setup_wizard.get("credentialSetupSummary", {}),
             "readOnlyTrendConnector": read_only_trends,
             "platformTrends": read_only_trends.get("platformTrends", []),
             "platformTrendFeed": read_only_trends.get("platformTrendFeed", []),

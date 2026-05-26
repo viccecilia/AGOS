@@ -460,7 +460,13 @@
     }
     .feed-item time { color: #2563eb; font-weight: 900; font-size: 12px; }
     .feed-main strong { display: block; color: #101828; font-size: 13px; }
-    .feed-main span { color: #667085; font-size: 12px; }
+    .feed-main span {
+      display: block;
+      color: #667085;
+      font-size: 12px;
+      line-height: 1.45;
+      overflow-wrap: anywhere;
+    }
     .runtime-stat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
     .runtime-stat { padding: 10px; border: 1px solid #d9e2ef; border-radius: 8px; background: #f8fafc; }
     .runtime-stat span { display: block; color: #667085; font-size: 12px; }
@@ -525,28 +531,28 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.101",
+    "controlCenterVersion": "0.1.102",
     "lastUpdated": "2026-05-26",
     "currentPhase": "Controlled API Intelligence Collection",
-    "currentRound": "ROUND-API-COLLECT-001",
-    "nextRound": "ROUND-API-COLLECT-002 Controlled Real Data Import",
+    "currentRound": "ROUND-API-COLLECT-002",
+    "nextRound": "ROUND-API-COLLECT-003 Controlled Real Data Import",
     "overallProgress": 100,
-    "activeFocus": "Platform Account Connection Center: AGOS can now manage platform API account connection state while keeping write permissions disabled."
+    "activeFocus": "API Credential Setup Wizard: AGOS can now guide API Key, OAuth Token, and Refresh Token setup with local-only storage, workspace isolation, redacted status, and no plaintext credential logging."
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.101 Add platform account connection center",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.101",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.101",
-    "note": "Platform Account Connection Center tracks local account connection status, read permissions, token expiration, and workspace scope. Write permissions remain false by default."
+    "latestCommit": "agos-v0.1.102 Add API credential setup wizard",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.102",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.102",
+    "note": "API Credential Setup Wizard supports API Key, OAuth Token, and Refresh Token setup through local-only, workspace-isolated, redacted credential status. No plaintext credentials are written to logs or Git."
   },
   "metrics": {
-    "roundsPlanned": 122,
-    "roundsCompleted": 93,
+    "roundsPlanned": 123,
+    "roundsCompleted": 94,
     "roundsInProgress": 0,
-    "reportsEmbedded": 105
+    "reportsEmbedded": 106
   },
   "modules": [
     {
@@ -680,6 +686,30 @@
     }
   ],
   "reports": [
+    {
+      "id": "ROUND-API-COLLECT-002",
+      "title": "AGOS API Credential Setup Wizard",
+      "status": "done",
+      "date": "2026-05-26",
+      "summary": "Added API Credential Setup Wizard. AGOS can now guide local API Key, OAuth Token, and Refresh Token setup, publish redacted setup status, enforce Workspace credential isolation, and keep plaintext credentials out of logs, public upload paths, and Git.",
+      "files": [
+        "services/api_credential_setup_wizard.py",
+        "tests/api_credential_setup_wizard_smoke_test.py",
+        "runtime/api_credentials/.gitignore",
+        "runtime/api_credentials/API_CREDENTIAL_SETUP_WIZARD_REPORT.json",
+        "runtime/api_credentials/credential_setup_status.json",
+        "runtime/api_credentials/credential_setup_feed.json",
+        "runtime/api_credentials/credential_setup_summary.json",
+        "runtime/task_results/ROUND-API-COLLECT-002/ROUND_SUMMARY.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "python -m compileall services tests",
+        "python tests\\api_credential_setup_wizard_smoke_test.py",
+        "python tests\\war_room_runtime_ui_smoke_test.py",
+        "Browser verification: API Credential Setup Wizard panel shows API Key, OAuth Token, Refresh Token, local-only storage, workspace isolation, redacted secret status, Git disabled, and public upload disabled."
+      ]
+    },
     {
       "id": "ROUND-API-COLLECT-001",
       "title": "AGOS Platform Account Connection Center",
@@ -2815,6 +2845,15 @@
     }
   ],
   "versions": [
+    {
+      "id": "agos_control_center_v0.1.102",
+      "label": "v0.1.102 - API Credential Setup Wizard",
+      "date": "2026-05-26",
+      "gitRef": "agos-v0.1.102",
+      "location": "docs/project_control_center.html",
+      "notes": "ROUND-API-COLLECT-002 completed locally. War Room now shows API Credential Setup Wizard status for API Key, OAuth Token, and Refresh Token setup with local-only redacted credential handling.",
+      "snapshot": "AGOS Project Control Center v0.1.102\nRound: ROUND-API-COLLECT-002 completed\nGit: agos-v0.1.102\nStatus: API Credential Setup Wizard added\nPlaintext credentials remain local-only, redacted, and outside Git.\n"
+    },
     {
       "id": "agos_control_center_v0.1.101",
       "label": "v0.1.101 - Platform Account Connection Center",
@@ -5116,6 +5155,16 @@
       "deliverable": "services/platform_account_connection_center.py, runtime/platform_connections/, connection status, read/write permissions, token expiration, workspace scope, and War Room Platform Connection Center panel.",
       "report": "runtime/task_results/ROUND-API-COLLECT-001/ROUND_SUMMARY.md",
       "summary": "?? Platform Account Connection Center?AGOS ???? Reddit?YouTube?X?TikTok?Instagram?Threads ? API ????????? write_permission=false?"
+    },
+    {
+      "id": "ROUND-API-COLLECT-002",
+      "phase": "CONTROLLED_API_INTELLIGENCE_COLLECTION",
+      "name": "AGOS_API_CREDENTIAL_SETUP_WIZARD",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "services/api_credential_setup_wizard.py, runtime/api_credentials/, local-only credential setup status, workspace isolation, redacted reports, and War Room API Credential Setup Wizard panel.",
+      "report": "runtime/task_results/ROUND-API-COLLECT-002/ROUND_SUMMARY.md",
+      "summary": "完成 API Credential Setup Wizard。AGOS 现在能安全配置 API Key、OAuth Token、Refresh Token，按 Workspace 隔离凭证状态，只展示 redacted status，不把明文写进日志、公开路径或 Git。"
     }
   ],
   "realGrowthVerification": {
@@ -25000,6 +25049,103 @@
       ],
       "connection_center_ready": true
     },
+    "credentialSetupFeed": [
+      {
+        "time": "2026-05-26T01:50:00+00:00",
+        "platform": "Reddit",
+        "workspace_id": "JAG-LAB",
+        "credential_type": "api_key / oauth_token / refresh_token",
+        "setup_status": "pending_local_setup",
+        "storage_mode": "local_vault_only",
+        "workspace_scope": "JAG-LAB:reddit:read_only",
+        "secret_redacted": true,
+        "plaintext_logged": false,
+        "git_commit_allowed": false,
+        "public_upload_allowed": false
+      },
+      {
+        "time": "2026-05-26T01:50:00+00:00",
+        "platform": "YouTube",
+        "workspace_id": "JAG-LAB",
+        "credential_type": "api_key / oauth_token / refresh_token",
+        "setup_status": "pending_local_setup",
+        "storage_mode": "local_vault_only",
+        "workspace_scope": "JAG-LAB:youtube:read_only",
+        "secret_redacted": true,
+        "plaintext_logged": false,
+        "git_commit_allowed": false,
+        "public_upload_allowed": false
+      },
+      {
+        "time": "2026-05-26T01:50:00+00:00",
+        "platform": "X",
+        "workspace_id": "JAG-LAB",
+        "credential_type": "api_key / oauth_token / refresh_token",
+        "setup_status": "pending_local_setup",
+        "storage_mode": "local_vault_only",
+        "workspace_scope": "JAG-LAB:x:read_only",
+        "secret_redacted": true,
+        "plaintext_logged": false,
+        "git_commit_allowed": false,
+        "public_upload_allowed": false
+      },
+      {
+        "time": "2026-05-26T01:50:00+00:00",
+        "platform": "TikTok",
+        "workspace_id": "JAG-LAB",
+        "credential_type": "api_key / oauth_token / refresh_token",
+        "setup_status": "pending_local_setup",
+        "storage_mode": "local_vault_only",
+        "workspace_scope": "JAG-LAB:tiktok:read_only",
+        "secret_redacted": true,
+        "plaintext_logged": false,
+        "git_commit_allowed": false,
+        "public_upload_allowed": false
+      },
+      {
+        "time": "2026-05-26T01:50:00+00:00",
+        "platform": "Instagram",
+        "workspace_id": "JAG-LAB",
+        "credential_type": "api_key / oauth_token / refresh_token",
+        "setup_status": "pending_local_setup",
+        "storage_mode": "local_vault_only",
+        "workspace_scope": "JAG-LAB:instagram:read_only",
+        "secret_redacted": true,
+        "plaintext_logged": false,
+        "git_commit_allowed": false,
+        "public_upload_allowed": false
+      },
+      {
+        "time": "2026-05-26T01:50:00+00:00",
+        "platform": "Threads",
+        "workspace_id": "JAG-LAB",
+        "credential_type": "api_key / oauth_token / refresh_token",
+        "setup_status": "pending_local_setup",
+        "storage_mode": "local_vault_only",
+        "workspace_scope": "JAG-LAB:threads:read_only",
+        "secret_redacted": true,
+        "plaintext_logged": false,
+        "git_commit_allowed": false,
+        "public_upload_allowed": false
+      }
+    ],
+    "credentialSetupSummary": {
+      "wizard_ready": true,
+      "platforms": 6,
+      "configured_credentials": 0,
+      "pending_platforms": 6,
+      "supported_credential_types": [
+        "api_key",
+        "oauth_token",
+        "refresh_token"
+      ],
+      "workspace_isolation_enabled": true,
+      "local_storage_only": true,
+      "plaintext_logging_enabled": false,
+      "public_upload_allowed": false,
+      "git_commit_allowed": false,
+      "write_permission_default": false
+    },
     "readOnlyTrendConnector": {
       "report_id": "READ_ONLY_TREND_REPORT",
       "created_at": "2026-05-26T01:44:42+00:00",
@@ -38407,6 +38553,9 @@
             <div class="runtime-title-row"><h3>Platform Connection Center</h3><p>Connection status / read permission / write permission / token expiration / workspace scope</p></div>
             <div class="feed-stream" id="runtime-platform-connection-center"></div>
             <div style="height:10px"></div>
+            <div class="runtime-title-row"><h3>API Credential Setup Wizard</h3><p>API Key / OAuth Token / Refresh Token / local-only / workspace isolation</p></div>
+            <div class="feed-stream" id="runtime-api-credential-setup-wizard"></div>
+            <div style="height:10px"></div>
             <div class="runtime-title-row"><h3>Read-Only Trend Connector</h3><p>Trend search / keyword search / hashtag search / public analytics only</p></div>
             <div class="feed-stream" id="runtime-read-only-trends"></div>
             <div style="height:10px"></div>
@@ -39165,6 +39314,10 @@
       el('runtime-platform-connection-center').innerHTML = (wr.platformConnectionFeed || []).map(item =>
         '<div class="feed-item"><time>' + esc(item.platform || '') + '</time><div class="feed-main"><strong>' + esc(item.connection_status || '') + ' / read=' + esc(item.read_permission || false) + ' / write=' + esc(item.write_permission || false) + '</strong><span>Token expiration: ' + esc(item.token_expiration || '') + ' / Workspace scope: ' + esc(item.workspace_scope || '') + '</span><span>Credential: ' + esc(item.credential_status || '') + ' / Collection mode: ' + esc(item.allowed_collection_mode || '') + '</span><span>Platforms: ' + esc(platformConnectionSummary.platforms || 0) + ' / Read connected: ' + esc(platformConnectionSummary.read_connected || 0) + ' / Not connected: ' + esc(platformConnectionSummary.not_connected || 0) + ' / Write enabled: ' + esc(platformConnectionSummary.write_enabled || 0) + '</span><span>All write permissions false: ' + esc(platformConnectionSummary.all_write_permissions_false || false) + '</span></div><span class="badge ' + (item.write_permission ? 'b-red' : (item.read_permission ? 'b-green' : 'b-amber')) + '">' + esc(item.write_permission ? 'write_enabled' : item.connection_status || 'connection') + '</span></div>'
       ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Platform Connection Center pending</strong><span>AGOS will show platform connection status, read permissions, write permissions, token expiration, and workspace scope.</span></div><span class="badge b-amber">pending</span></div>';
+      const credentialSetupSummary = wr.credentialSetupSummary || {};
+      el('runtime-api-credential-setup-wizard').innerHTML = (wr.credentialSetupFeed || []).map(item =>
+        '<div class="feed-item"><time>' + esc(item.platform || '') + '</time><div class="feed-main"><strong>' + esc(item.setup_status || '') + ' / ' + esc(item.credential_type || '') + '</strong><span>Workspace: ' + esc(item.workspace_id || '') + ' / Scope: ' + esc(item.workspace_scope || '') + '</span><span>Storage: ' + esc(item.storage_mode || '') + ' / Secret redacted: ' + esc(item.secret_redacted || false) + ' / Plaintext logged: ' + esc(item.plaintext_logged || false) + '</span><span>Git commit allowed: ' + esc(item.git_commit_allowed || false) + ' / Public upload allowed: ' + esc(item.public_upload_allowed || false) + ' / Write default: ' + esc(credentialSetupSummary.write_permission_default || false) + '</span><span>Supported: ' + esc((credentialSetupSummary.supported_credential_types || []).join(' / ')) + ' / Local storage only: ' + esc(credentialSetupSummary.local_storage_only || false) + ' / Workspace isolated: ' + esc(credentialSetupSummary.workspace_isolation_enabled || false) + '</span></div><span class="badge ' + (item.setup_status === 'configured_locally' ? 'b-green' : 'b-amber') + '">' + esc(item.storage_mode || 'local_only') + '</span></div>'
+      ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>API Credential Setup Wizard pending</strong><span>AGOS will support API Key, OAuth Token, and Refresh Token setup with local-only storage and redacted status.</span></div><span class="badge b-amber">pending</span></div>';
       const trendConnectorSummary = wr.trendConnectorSummary || {};
       el('runtime-read-only-trends').innerHTML = (wr.platformTrendFeed || []).map(item =>
         '<div class="feed-item"><time>' + esc(item.trend_id || '') + ' / ' + esc(item.platform || '') + '</time><div class="feed-main"><strong>' + esc(item.query || '') + ' / heat ' + esc(item.heat_score || 0) + '</strong><span>Keyword: ' + esc(item.keyword || '') + ' / Hashtag: ' + esc(item.hashtag || '') + '</span><span>' + esc(item.trend_text || '') + '</span><span>Read: ' + esc(item.read_status || '') + ' / Write: ' + esc(item.write_status || '') + ' / Write ops enabled: ' + esc(trendConnectorSummary.write_operations_enabled || false) + '</span></div><span class="badge ' + (item.write_status === 'blocked' ? 'b-green' : 'b-red') + '">' + esc(item.read_status || 'read') + '</span></div>'

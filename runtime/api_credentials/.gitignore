@@ -1,0 +1,6 @@
+*
+!.gitignore
+!API_CREDENTIAL_SETUP_WIZARD_REPORT.json
+!credential_setup_status.json
+!credential_setup_feed.json
+!credential_setup_summary.json
