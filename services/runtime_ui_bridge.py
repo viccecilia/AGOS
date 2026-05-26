@@ -67,6 +67,7 @@ from services.runtime_strategy_simulation import RuntimeStrategySimulation
 from services.runtime_strategy_personality import RuntimeStrategyPersonalityEngine
 from services.semi_autonomous_runtime_gate import SemiAutonomousRuntimeGate
 from services.seasonal_demand_calendar_engine import SeasonalDemandCalendarEngine
+from services.seasonal_trend_import_trial import SeasonalTrendImportTrial
 from services.strategic_interpretation_engine import StrategicInterpretationEngine
 from services.runtime_trainer_dashboard import RuntimeTrainerDashboard
 from services.strategy_evolution_engine import StrategyEvolutionEngine
@@ -179,6 +180,7 @@ class RuntimeUIBridge:
         api_collection_review = APICollectionReviewAndCorrection().review(live_memory_import)
         controlled_api_collection_gate = ControlledAPICollectionGate().evaluate(state.get("workspace", "JAG-LAB"))
         seasonal_demand_calendar = SeasonalDemandCalendarEngine().build()
+        seasonal_trend_import_trial = SeasonalTrendImportTrial().run()
         location_demand_heatmap = LocationDemandHeatmapEngine().build(seasonal_demand_calendar.get("seasonalCalendar", []))
         mobility_demand_intent = MobilityDemandIntentEngine().build()
         demand_to_action_strategy = DemandToActionStrategyEngine().build()
@@ -509,6 +511,12 @@ class RuntimeUIBridge:
             "seasonalKeywords": seasonal_demand_calendar.get("seasonalKeywords", []),
             "seasonalMonitoringPlan": seasonal_demand_calendar.get("seasonalMonitoringPlan", []),
             "seasonalDemandSummary": seasonal_demand_calendar.get("seasonalDemandSummary", {}),
+            "seasonalTrendImportTrial": seasonal_trend_import_trial,
+            "trendImportRecords": seasonal_trend_import_trial.get("trendImportRecords", []),
+            "seasonalTrendMatches": seasonal_trend_import_trial.get("seasonalTrendMatches", []),
+            "seasonalMarketHeatmap": seasonal_trend_import_trial.get("seasonalMarketHeatmap", []),
+            "seasonalDemandInterpretation": seasonal_trend_import_trial.get("seasonalDemandInterpretation", {}),
+            "seasonalTrendImportSummary": seasonal_trend_import_trial.get("seasonalTrendImportSummary", {}),
             "locationDemandHeatmap": location_demand_heatmap,
             "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),

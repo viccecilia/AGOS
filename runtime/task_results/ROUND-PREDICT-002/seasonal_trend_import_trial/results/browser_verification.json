@@ -1,0 +1,20 @@
+{
+  "round_id": "ROUND-PREDICT-002",
+  "status": "passed",
+  "url": "http://127.0.0.1:8765/project_control_center.html?runtime_ui=1#war-room-growth",
+  "verified_visible_items": [
+    "Seasonal Trend Import Trial panel exists",
+    "v0.1.114 visible",
+    "AGOS_READ_ONLY_SEASONAL_TREND_IMPORT_TRIAL visible",
+    "imported keyword count visible",
+    "matched seasonal signals visible",
+    "market heatmap visible",
+    "demand type ranking visible",
+    "mobility pain point ranking visible",
+    "low-confidence/noisy signals visible",
+    "sample-only status visible",
+    "real Google Trends API not connected visible",
+    "write action status blocked visible"
+  ],
+  "final_recheck": "v0.1.114 panel visible with imported keywords, matched seasons, market heat, demand, pain, noise, sample-only, API not connected, and write blocked."
+}

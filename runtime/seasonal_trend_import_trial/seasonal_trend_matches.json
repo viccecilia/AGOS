@@ -1,0 +1,930 @@
+[
+  {
+    "confidence_score": 95,
+    "confirmed_demand": false,
+    "inferred_demand_types": [
+      "airport_transfer",
+      "family_trip",
+      "private_charter",
+      "luggage_heavy_trip"
+    ],
+    "inferred_mobility_pain_points": [
+      "family group transfer",
+      "airport arrival peaks",
+      "large luggage",
+      "language support"
+    ],
+    "keyword": "Japan Chinese New Year travel",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Haneda Airport",
+      "Narita Airport",
+      "Kansai Airport"
+    ],
+    "match_reason": "keyword overlap: chinese, japan, travel, year; keyword overlap: chinese, year; keyword overlap: chinese, year; keyword overlap: chinese, japan, year; target market overlap: China; season phrase: chinese new year",
+    "matched_season_id": "SEASON-CHINESE-NEW-YEAR",
+    "matched_season_name": "Chinese New Year Travel",
+    "real_google_trends_api_connected": false,
+    "record_id": "google_trends_japan_travel_sample-001",
+    "review_status": "needs_human_review",
+    "sample_data_only": true,
+    "source_type": "sample_export",
+    "target_market": "China",
+    "trend_score": 88,
+    "write_operations_enabled": false
+  },
+  {
+    "confidence_score": 95,
+    "confirmed_demand": false,
+    "inferred_demand_types": [
+      "airport_transfer",
+      "family_trip",
+      "private_charter",
+      "luggage_heavy_trip"
+    ],
+    "inferred_mobility_pain_points": [
+      "family group transfer",
+      "airport arrival peaks",
+      "large luggage",
+      "language support"
+    ],
+    "keyword": "Tokyo airport transfer Chinese New Year",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Haneda Airport",
+      "Narita Airport",
+      "Kansai Airport"
+    ],
+    "match_reason": "keyword overlap: chinese, year; keyword overlap: airport, chinese, tokyo, transfer; keyword overlap: airport, chinese, year; keyword overlap: chinese, year; location signal: Tokyo; demand signal: airport_transfer; target market overlap: China; season phrase: chinese new year",
+    "matched_season_id": "SEASON-CHINESE-NEW-YEAR",
+    "matched_season_name": "Chinese New Year Travel",
+    "real_google_trends_api_connected": false,
+    "record_id": "google_trends_japan_travel_sample-002",
+    "review_status": "needs_human_review",
+    "sample_data_only": true,
+    "source_type": "sample_export",
+    "target_market": "China",
+    "trend_score": 82,
+    "write_operations_enabled": false
+  },
+  {
+    "confidence_score": 95,
+    "confirmed_demand": false,
+    "inferred_demand_types": [
+      "airport_transfer",
+      "private_charter",
+      "family_trip",
+      "luggage_heavy_trip"
+    ],
+    "inferred_mobility_pain_points": [
+      "crowded trains",
+      "large luggage",
+      "first Japan trip anxiety",
+      "hotel transfer confusion"
+    ],
+    "keyword": "Japan cherry blossom travel",
+    "likely_locations": [
+      "Tokyo",
+      "Ueno",
+      "Shinjuku",
+      "Kyoto",
+      "Osaka",
+      "Mount Fuji"
+    ],
+    "match_reason": "keyword overlap: blossom, cherry, japan, travel; keyword overlap: blossom, cherry; keyword overlap: blossom, cherry; target market overlap: US; season phrase: cherry blossom",
+    "matched_season_id": "SEASON-SAKURA",
+    "matched_season_name": "Sakura Season",
+    "real_google_trends_api_connected": false,
+    "record_id": "google_trends_japan_travel_sample-003",
+    "review_status": "needs_human_review",
+    "sample_data_only": true,
+    "source_type": "sample_export",
+    "target_market": "US",
+    "trend_score": 95,
+    "write_operations_enabled": false
+  },
+  {
+    "confidence_score": 95,
+    "confirmed_demand": false,
+    "inferred_demand_types": [
+      "airport_transfer",
+      "private_charter",
+      "family_trip",
+      "luggage_heavy_trip"
+    ],
+    "inferred_mobility_pain_points": [
+      "crowded trains",
+      "large luggage",
+      "first Japan trip anxiety",
+      "hotel transfer confusion"
+    ],
+    "keyword": "Tokyo luggage transfer cherry blossom",
+    "likely_locations": [
+      "Tokyo",
+      "Ueno",
+      "Shinjuku",
+      "Kyoto",
+      "Osaka",
+      "Mount Fuji"
+    ],
+    "match_reason": "keyword overlap: blossom, cherry; keyword overlap: tokyo, transfer; keyword overlap: blossom, cherry; keyword overlap: blossom, cherry, luggage, tokyo; location signal: Tokyo; demand signal: airport_transfer; demand signal: luggage_heavy_trip; target market overlap: Taiwan; season phrase: cherry blossom",
+    "matched_season_id": "SEASON-SAKURA",
+    "matched_season_name": "Sakura Season",
+    "real_google_trends_api_connected": false,
+    "record_id": "google_trends_japan_travel_sample-004",
+    "review_status": "needs_human_review",
+    "sample_data_only": true,
+    "source_type": "sample_export",
+    "target_market": "Taiwan",
+    "trend_score": 76,
+    "write_operations_enabled": false
+  },
+  {
+    "confidence_score": 95,
+    "confirmed_demand": false,
+    "inferred_demand_types": [
+      "airport_transfer",
+      "family_trip",
+      "multi_city_transfer",
+      "station_to_hotel"
+    ],
+    "inferred_mobility_pain_points": [
+      "hotel surge",
+      "crowded public transport",
+      "family travel load",
+      "airport queue uncertainty"
+    ],
+    "keyword": "Japan Golden Week travel",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Sapporo",
+      "Okinawa",
+      "Nagoya"
+    ],
+    "match_reason": "keyword overlap: golden, japan, travel, week; keyword overlap: golden, week; keyword overlap: golden, week; keyword overlap: golden, japan, week; target market overlap: Korea; season phrase: golden week",
+    "matched_season_id": "SEASON-GOLDEN-WEEK",
+    "matched_season_name": "Golden Week",
+    "real_google_trends_api_connected": false,
+    "record_id": "google_trends_japan_travel_sample-005",
+    "review_status": "needs_human_review",
+    "sample_data_only": true,
+    "source_type": "sample_export",
+    "target_market": "Korea",
+    "trend_score": 91,
+    "write_operations_enabled": false
+  },
+  {
+    "confidence_score": 91,
+    "confirmed_demand": false,
+    "inferred_demand_types": [
+      "airport_transfer",
+      "family_trip",
+      "multi_city_transfer",
+      "station_to_hotel"
+    ],
+    "inferred_mobility_pain_points": [
+      "hotel surge",
+      "crowded public transport",
+      "family travel load",
+      "airport queue uncertainty"
+    ],
+    "keyword": "Osaka airport pickup",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Sapporo",
+      "Okinawa",
+      "Nagoya"
+    ],
+    "match_reason": "keyword overlap: airport, pickup; keyword overlap: airport, osaka, pickup; location signal: Osaka; demand signal: airport_transfer; target market overlap: Southeast Asia",
+    "matched_season_id": "SEASON-GOLDEN-WEEK",
+    "matched_season_name": "Golden Week",
+    "real_google_trends_api_connected": false,
+    "record_id": "google_trends_japan_travel_sample-006",
+    "review_status": "needs_human_review",
+    "sample_data_only": true,
+    "source_type": "sample_export",
+    "target_market": "Southeast Asia",
+    "trend_score": 73,
+    "write_operations_enabled": false
+  },
+  {
+    "confidence_score": 95,
+    "confirmed_demand": false,
+    "inferred_demand_types": [
+      "family_trip",
+      "elderly_support",
+      "private_charter",
+      "sightseeing_route"
+    ],
+    "inferred_mobility_pain_points": [
+      "heat fatigue",
+      "children and elderly support",
+      "long walking distance",
+      "large luggage"
+    ],
+    "keyword": "Japan summer family trip",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Mount Fuji",
+      "Sapporo",
+      "Okinawa"
+    ],
+    "match_reason": "keyword overlap: family, japan, summer, trip; keyword overlap: japan, summer; keyword overlap: family; keyword overlap: summer; demand signal: family_trip; target market overlap: US; season phrase: summer",
+    "matched_season_id": "SEASON-SUMMER",
+    "matched_season_name": "Summer Vacation",
+    "real_google_trends_api_connected": false,
+    "record_id": "google_trends_japan_travel_sample-007",
+    "review_status": "needs_human_review",
+    "sample_data_only": true,
+    "source_type": "sample_export",
+    "target_market": "US",
+    "trend_score": 84,
+    "write_operations_enabled": false
+  },
+  {
+    "confidence_score": 95,
+    "confirmed_demand": false,
+    "inferred_demand_types": [
+      "family_trip",
+      "elderly_support",
+      "private_charter",
+      "sightseeing_route"
+    ],
+    "inferred_mobility_pain_points": [
+      "heat fatigue",
+      "children and elderly support",
+      "long walking distance",
+      "large luggage"
+    ],
+    "keyword": "Mount Fuji summer charter",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Mount Fuji",
+      "Sapporo",
+      "Okinawa"
+    ],
+    "match_reason": "keyword overlap: summer; keyword overlap: summer; keyword overlap: charter, fuji, mount, summer; location signal: Mount Fuji; demand signal: private_charter; target market overlap: Europe; season phrase: summer",
+    "matched_season_id": "SEASON-SUMMER",
+    "matched_season_name": "Summer Vacation",
+    "real_google_trends_api_connected": false,
+    "record_id": "google_trends_japan_travel_sample-008",
+    "review_status": "needs_human_review",
+    "sample_data_only": true,
+    "source_type": "sample_export",
+    "target_market": "Europe",
+    "trend_score": 69,
+    "write_operations_enabled": false
+  },
+  {
+    "confidence_score": 95,
+    "confirmed_demand": false,
+    "inferred_demand_types": [
+      "private_charter",
+      "sightseeing_route",
+      "elderly_support",
+      "station_to_hotel"
+    ],
+    "inferred_mobility_pain_points": [
+      "scattered sightseeing routes",
+      "crowded buses",
+      "station to temple transfer",
+      "elderly walking burden"
+    ],
+    "keyword": "Kyoto autumn leaves",
+    "likely_locations": [
+      "Kyoto",
+      "Mount Fuji",
+      "Tokyo",
+      "Osaka",
+      "Nagoya"
+    ],
+    "match_reason": "keyword overlap: autumn, kyoto, leaves; keyword overlap: autumn, leaves; keyword overlap: autumn; keyword overlap: autumn, kyoto; location signal: Kyoto; demand signal: station_to_hotel; target market overlap: Taiwan; season phrase: autumn; season phrase: leaves",
+    "matched_season_id": "SEASON-AUTUMN-LEAVES",
+    "matched_season_name": "Autumn Leaves Season",
+    "real_google_trends_api_connected": false,
+    "record_id": "google_trends_japan_travel_sample-009",
+    "review_status": "needs_human_review",
+    "sample_data_only": true,
+    "source_type": "sample_export",
+    "target_market": "Taiwan",
+    "trend_score": 93,
+    "write_operations_enabled": false
+  },
+  {
+    "confidence_score": 95,
+    "confirmed_demand": false,
+    "inferred_demand_types": [
+      "private_charter",
+      "sightseeing_route",
+      "elderly_support",
+      "station_to_hotel"
+    ],
+    "inferred_mobility_pain_points": [
+      "scattered sightseeing routes",
+      "crowded buses",
+      "station to temple transfer",
+      "elderly walking burden"
+    ],
+    "keyword": "Japan autumn leaves private tour",
+    "likely_locations": [
+      "Kyoto",
+      "Mount Fuji",
+      "Tokyo",
+      "Osaka",
+      "Nagoya"
+    ],
+    "match_reason": "keyword overlap: autumn, leaves; keyword overlap: autumn, japan, leaves, private; keyword overlap: autumn; keyword overlap: autumn; demand signal: private_charter; demand signal: station_to_hotel; target market overlap: Europe; season phrase: autumn; season phrase: leaves",
+    "matched_season_id": "SEASON-AUTUMN-LEAVES",
+    "matched_season_name": "Autumn Leaves Season",
+    "real_google_trends_api_connected": false,
+    "record_id": "google_trends_japan_travel_sample-010",
+    "review_status": "needs_human_review",
+    "sample_data_only": true,
+    "source_type": "sample_export",
+    "target_market": "Europe",
+    "trend_score": 79,
+    "write_operations_enabled": false
+  },
+  {
+    "confidence_score": 95,
+    "confirmed_demand": false,
+    "inferred_demand_types": [
+      "airport_transfer",
+      "night_arrival",
+      "station_to_hotel",
+      "luggage_heavy_trip"
+    ],
+    "inferred_mobility_pain_points": [
+      "night arrival",
+      "winter luggage",
+      "hotel district congestion",
+      "late train anxiety"
+    ],
+    "keyword": "Japan Christmas travel",
+    "likely_locations": [
+      "Tokyo",
+      "Shibuya",
+      "Shinjuku",
+      "Osaka",
+      "Sapporo"
+    ],
+    "match_reason": "keyword overlap: christmas, japan, travel; keyword overlap: christmas; keyword overlap: christmas; target market overlap: Southeast Asia; season phrase: christmas",
+    "matched_season_id": "SEASON-CHRISTMAS",
+    "matched_season_name": "Christmas and Year End",
+    "real_google_trends_api_connected": false,
+    "record_id": "google_trends_japan_travel_sample-011",
+    "review_status": "needs_human_review",
+    "sample_data_only": true,
+    "source_type": "sample_export",
+    "target_market": "Southeast Asia",
+    "trend_score": 71,
+    "write_operations_enabled": false
+  },
+  {
+    "confidence_score": 95,
+    "confirmed_demand": false,
+    "inferred_demand_types": [
+      "airport_transfer",
+      "night_arrival",
+      "private_charter",
+      "station_to_hotel"
+    ],
+    "inferred_mobility_pain_points": [
+      "holiday timetable changes",
+      "late night movement",
+      "station crowding",
+      "family luggage"
+    ],
+    "keyword": "Japan New Year travel",
+    "likely_locations": [
+      "Tokyo",
+      "Kyoto",
+      "Osaka",
+      "Nagoya",
+      "Sapporo"
+    ],
+    "match_reason": "keyword overlap: japan, travel, year; keyword overlap: year; keyword overlap: year; keyword overlap: japan; season phrase: new year",
+    "matched_season_id": "SEASON-JAPAN-NEW-YEAR",
+    "matched_season_name": "Japan New Year",
+    "real_google_trends_api_connected": false,
+    "record_id": "google_trends_japan_travel_sample-012",
+    "review_status": "needs_human_review",
+    "sample_data_only": true,
+    "source_type": "sample_export",
+    "target_market": "Hong Kong",
+    "trend_score": 86,
+    "write_operations_enabled": false
+  },
+  {
+    "confidence_score": 34,
+    "confirmed_demand": false,
+    "inferred_demand_types": [
+      "airport_transfer",
+      "private_charter",
+      "family_trip",
+      "luggage_heavy_trip"
+    ],
+    "inferred_mobility_pain_points": [
+      "crowded trains",
+      "large luggage",
+      "first Japan trip anxiety",
+      "hotel transfer confusion"
+    ],
+    "keyword": "Tokyo cafe ranking",
+    "likely_locations": [
+      "Tokyo",
+      "Ueno",
+      "Shinjuku",
+      "Kyoto",
+      "Osaka",
+      "Mount Fuji"
+    ],
+    "match_reason": "keyword overlap: tokyo; keyword overlap: tokyo; location signal: Tokyo",
+    "matched_season_id": "SEASON-SAKURA",
+    "matched_season_name": "Sakura Season",
+    "real_google_trends_api_connected": false,
+    "record_id": "google_trends_japan_travel_sample-013",
+    "review_status": "low_confidence_review",
+    "sample_data_only": true,
+    "source_type": "sample_export",
+    "target_market": "local",
+    "trend_score": 18,
+    "write_operations_enabled": false
+  },
+  {
+    "confidence_score": 32,
+    "confirmed_demand": false,
+    "inferred_demand_types": [
+      "airport_transfer",
+      "family_trip",
+      "multi_city_transfer",
+      "station_to_hotel"
+    ],
+    "inferred_mobility_pain_points": [
+      "hotel surge",
+      "crowded public transport",
+      "family travel load",
+      "airport queue uncertainty"
+    ],
+    "keyword": "Japan weather today",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Sapporo",
+      "Okinawa",
+      "Nagoya"
+    ],
+    "match_reason": "keyword overlap: japan; keyword overlap: japan; demand signal: station_to_hotel",
+    "matched_season_id": "SEASON-GOLDEN-WEEK",
+    "matched_season_name": "Golden Week",
+    "real_google_trends_api_connected": false,
+    "record_id": "google_trends_japan_travel_sample-014",
+    "review_status": "low_confidence_review",
+    "sample_data_only": true,
+    "source_type": "sample_export",
+    "target_market": "local",
+    "trend_score": 24,
+    "write_operations_enabled": false
+  },
+  {
+    "confidence_score": 95,
+    "confirmed_demand": false,
+    "inferred_demand_types": [
+      "airport_transfer",
+      "private_charter",
+      "family_trip",
+      "luggage_heavy_trip"
+    ],
+    "inferred_mobility_pain_points": [
+      "crowded trains",
+      "large luggage",
+      "first Japan trip anxiety",
+      "hotel transfer confusion"
+    ],
+    "keyword": "Japan cherry blossom travel",
+    "likely_locations": [
+      "Tokyo",
+      "Ueno",
+      "Shinjuku",
+      "Kyoto",
+      "Osaka",
+      "Mount Fuji"
+    ],
+    "match_reason": "keyword overlap: blossom, cherry, japan, travel; keyword overlap: blossom, cherry; keyword overlap: blossom, cherry; target market overlap: US; season phrase: cherry blossom",
+    "matched_season_id": "SEASON-SAKURA",
+    "matched_season_name": "Sakura Season",
+    "real_google_trends_api_connected": false,
+    "record_id": "google_trends_style_japan_mobility_sample-001",
+    "review_status": "needs_human_review",
+    "sample_data_only": true,
+    "source_type": "csv",
+    "target_market": "US",
+    "trend_score": 88,
+    "write_operations_enabled": false
+  },
+  {
+    "confidence_score": 95,
+    "confirmed_demand": false,
+    "inferred_demand_types": [
+      "airport_transfer",
+      "private_charter",
+      "family_trip",
+      "luggage_heavy_trip"
+    ],
+    "inferred_mobility_pain_points": [
+      "crowded trains",
+      "large luggage",
+      "first Japan trip anxiety",
+      "hotel transfer confusion"
+    ],
+    "keyword": "Tokyo airport transfer sakura",
+    "likely_locations": [
+      "Tokyo",
+      "Ueno",
+      "Shinjuku",
+      "Kyoto",
+      "Osaka",
+      "Mount Fuji"
+    ],
+    "match_reason": "keyword overlap: airport, sakura, tokyo, transfer; keyword overlap: tokyo, transfer; location signal: Tokyo; demand signal: airport_transfer; target market overlap: US; season phrase: sakura",
+    "matched_season_id": "SEASON-SAKURA",
+    "matched_season_name": "Sakura Season",
+    "real_google_trends_api_connected": false,
+    "record_id": "google_trends_style_japan_mobility_sample-002",
+    "review_status": "needs_human_review",
+    "sample_data_only": true,
+    "source_type": "csv",
+    "target_market": "US",
+    "trend_score": 82,
+    "write_operations_enabled": false
+  },
+  {
+    "confidence_score": 95,
+    "confirmed_demand": false,
+    "inferred_demand_types": [
+      "airport_transfer",
+      "family_trip",
+      "multi_city_transfer",
+      "station_to_hotel"
+    ],
+    "inferred_mobility_pain_points": [
+      "hotel surge",
+      "crowded public transport",
+      "family travel load",
+      "airport queue uncertainty"
+    ],
+    "keyword": "Japan Golden Week travel",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Sapporo",
+      "Okinawa",
+      "Nagoya"
+    ],
+    "match_reason": "keyword overlap: golden, japan, travel, week; keyword overlap: golden, week; keyword overlap: golden, week; keyword overlap: golden, japan, week; target market overlap: Taiwan; season phrase: golden week",
+    "matched_season_id": "SEASON-GOLDEN-WEEK",
+    "matched_season_name": "Golden Week",
+    "real_google_trends_api_connected": false,
+    "record_id": "google_trends_style_japan_mobility_sample-003",
+    "review_status": "needs_human_review",
+    "sample_data_only": true,
+    "source_type": "csv",
+    "target_market": "Taiwan",
+    "trend_score": 76,
+    "write_operations_enabled": false
+  },
+  {
+    "confidence_score": 95,
+    "confirmed_demand": false,
+    "inferred_demand_types": [
+      "airport_transfer",
+      "family_trip",
+      "multi_city_transfer",
+      "station_to_hotel"
+    ],
+    "inferred_mobility_pain_points": [
+      "hotel surge",
+      "crowded public transport",
+      "family travel load",
+      "airport queue uncertainty"
+    ],
+    "keyword": "Osaka airport pickup Golden Week",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Sapporo",
+      "Okinawa",
+      "Nagoya"
+    ],
+    "match_reason": "keyword overlap: golden, week; keyword overlap: airport, golden, pickup, week; keyword overlap: airport, golden, osaka, pickup; keyword overlap: golden, week; location signal: Osaka; demand signal: airport_transfer; target market overlap: Korea; season phrase: golden week",
+    "matched_season_id": "SEASON-GOLDEN-WEEK",
+    "matched_season_name": "Golden Week",
+    "real_google_trends_api_connected": false,
+    "record_id": "google_trends_style_japan_mobility_sample-004",
+    "review_status": "needs_human_review",
+    "sample_data_only": true,
+    "source_type": "csv",
+    "target_market": "Korea",
+    "trend_score": 72,
+    "write_operations_enabled": false
+  },
+  {
+    "confidence_score": 95,
+    "confirmed_demand": false,
+    "inferred_demand_types": [
+      "family_trip",
+      "elderly_support",
+      "private_charter",
+      "sightseeing_route"
+    ],
+    "inferred_mobility_pain_points": [
+      "heat fatigue",
+      "children and elderly support",
+      "long walking distance",
+      "large luggage"
+    ],
+    "keyword": "Japan summer family trip",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Mount Fuji",
+      "Sapporo",
+      "Okinawa"
+    ],
+    "match_reason": "keyword overlap: family, japan, summer, trip; keyword overlap: japan, summer; keyword overlap: family; keyword overlap: summer; demand signal: family_trip; target market overlap: Southeast Asia; season phrase: summer",
+    "matched_season_id": "SEASON-SUMMER",
+    "matched_season_name": "Summer Vacation",
+    "real_google_trends_api_connected": false,
+    "record_id": "google_trends_style_japan_mobility_sample-005",
+    "review_status": "needs_human_review",
+    "sample_data_only": true,
+    "source_type": "csv",
+    "target_market": "Southeast Asia",
+    "trend_score": 79,
+    "write_operations_enabled": false
+  },
+  {
+    "confidence_score": 95,
+    "confirmed_demand": false,
+    "inferred_demand_types": [
+      "family_trip",
+      "elderly_support",
+      "luggage_heavy_trip",
+      "private_charter"
+    ],
+    "inferred_mobility_pain_points": [
+      "children support",
+      "stroller and luggage",
+      "elderly support",
+      "rain and heat backup"
+    ],
+    "keyword": "Okinawa family private transfer",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Okinawa",
+      "Sapporo",
+      "Mount Fuji"
+    ],
+    "match_reason": "keyword overlap: family; keyword overlap: family, transfer; keyword overlap: family, okinawa, transfer; keyword overlap: family, transfer; location signal: Okinawa; demand signal: family_trip; demand signal: private_charter; target market overlap: Taiwan",
+    "matched_season_id": "SEASON-SCHOOL-HOLIDAYS",
+    "matched_season_name": "School Holidays",
+    "real_google_trends_api_connected": false,
+    "record_id": "google_trends_style_japan_mobility_sample-006",
+    "review_status": "needs_human_review",
+    "sample_data_only": true,
+    "source_type": "csv",
+    "target_market": "Taiwan",
+    "trend_score": 70,
+    "write_operations_enabled": false
+  },
+  {
+    "confidence_score": 95,
+    "confirmed_demand": false,
+    "inferred_demand_types": [
+      "private_charter",
+      "sightseeing_route",
+      "elderly_support",
+      "station_to_hotel"
+    ],
+    "inferred_mobility_pain_points": [
+      "scattered sightseeing routes",
+      "crowded buses",
+      "station to temple transfer",
+      "elderly walking burden"
+    ],
+    "keyword": "Kyoto autumn leaves",
+    "likely_locations": [
+      "Kyoto",
+      "Mount Fuji",
+      "Tokyo",
+      "Osaka",
+      "Nagoya"
+    ],
+    "match_reason": "keyword overlap: autumn, kyoto, leaves; keyword overlap: autumn, leaves; keyword overlap: autumn; keyword overlap: autumn, kyoto; location signal: Kyoto; demand signal: station_to_hotel; target market overlap: Europe; season phrase: autumn; season phrase: leaves",
+    "matched_season_id": "SEASON-AUTUMN-LEAVES",
+    "matched_season_name": "Autumn Leaves Season",
+    "real_google_trends_api_connected": false,
+    "record_id": "google_trends_style_japan_mobility_sample-007",
+    "review_status": "needs_human_review",
+    "sample_data_only": true,
+    "source_type": "csv",
+    "target_market": "Europe",
+    "trend_score": 84,
+    "write_operations_enabled": false
+  },
+  {
+    "confidence_score": 95,
+    "confirmed_demand": false,
+    "inferred_demand_types": [
+      "private_charter",
+      "sightseeing_route",
+      "elderly_support",
+      "station_to_hotel"
+    ],
+    "inferred_mobility_pain_points": [
+      "scattered sightseeing routes",
+      "crowded buses",
+      "station to temple transfer",
+      "elderly walking burden"
+    ],
+    "keyword": "Mount Fuji autumn charter",
+    "likely_locations": [
+      "Kyoto",
+      "Mount Fuji",
+      "Tokyo",
+      "Osaka",
+      "Nagoya"
+    ],
+    "match_reason": "keyword overlap: autumn; keyword overlap: autumn; keyword overlap: autumn, charter, fuji, mount; keyword overlap: autumn; location signal: Mount Fuji; demand signal: private_charter; target market overlap: US; season phrase: autumn",
+    "matched_season_id": "SEASON-AUTUMN-LEAVES",
+    "matched_season_name": "Autumn Leaves Season",
+    "real_google_trends_api_connected": false,
+    "record_id": "google_trends_style_japan_mobility_sample-008",
+    "review_status": "needs_human_review",
+    "sample_data_only": true,
+    "source_type": "csv",
+    "target_market": "US",
+    "trend_score": 73,
+    "write_operations_enabled": false
+  },
+  {
+    "confidence_score": 95,
+    "confirmed_demand": false,
+    "inferred_demand_types": [
+      "airport_transfer",
+      "night_arrival",
+      "station_to_hotel",
+      "luggage_heavy_trip"
+    ],
+    "inferred_mobility_pain_points": [
+      "night arrival",
+      "winter luggage",
+      "hotel district congestion",
+      "late train anxiety"
+    ],
+    "keyword": "Tokyo Christmas airport transfer",
+    "likely_locations": [
+      "Tokyo",
+      "Shibuya",
+      "Shinjuku",
+      "Osaka",
+      "Sapporo"
+    ],
+    "match_reason": "keyword overlap: christmas; keyword overlap: airport, christmas, tokyo, transfer; keyword overlap: christmas, transfer; keyword overlap: airport; location signal: Tokyo; demand signal: airport_transfer; demand signal: station_to_hotel; target market overlap: Korea; season phrase: christmas",
+    "matched_season_id": "SEASON-CHRISTMAS",
+    "matched_season_name": "Christmas and Year End",
+    "real_google_trends_api_connected": false,
+    "record_id": "google_trends_style_japan_mobility_sample-009",
+    "review_status": "needs_human_review",
+    "sample_data_only": true,
+    "source_type": "csv",
+    "target_market": "Korea",
+    "trend_score": 68,
+    "write_operations_enabled": false
+  },
+  {
+    "confidence_score": 95,
+    "confirmed_demand": false,
+    "inferred_demand_types": [
+      "airport_transfer",
+      "family_trip",
+      "private_charter",
+      "luggage_heavy_trip"
+    ],
+    "inferred_mobility_pain_points": [
+      "family group transfer",
+      "airport arrival peaks",
+      "large luggage",
+      "language support"
+    ],
+    "keyword": "Japan Chinese New Year travel",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Haneda Airport",
+      "Narita Airport",
+      "Kansai Airport"
+    ],
+    "match_reason": "keyword overlap: chinese, japan, travel, year; keyword overlap: chinese, year; keyword overlap: chinese, year; keyword overlap: chinese, japan, year; target market overlap: China; season phrase: chinese new year",
+    "matched_season_id": "SEASON-CHINESE-NEW-YEAR",
+    "matched_season_name": "Chinese New Year Travel",
+    "real_google_trends_api_connected": false,
+    "record_id": "google_trends_style_japan_mobility_sample-010",
+    "review_status": "needs_human_review",
+    "sample_data_only": true,
+    "source_type": "csv",
+    "target_market": "China",
+    "trend_score": 90,
+    "write_operations_enabled": false
+  },
+  {
+    "confidence_score": 95,
+    "confirmed_demand": false,
+    "inferred_demand_types": [
+      "event_pickup",
+      "private_charter",
+      "station_to_hotel",
+      "night_arrival"
+    ],
+    "inferred_mobility_pain_points": [
+      "venue exit congestion",
+      "event pickup confusion",
+      "late return",
+      "group movement"
+    ],
+    "keyword": "Suzuka Circuit transfer",
+    "likely_locations": [
+      "Tokyo Big Sight",
+      "Makuhari Messe",
+      "Nagoya",
+      "Suzuka Circuit",
+      "Osaka",
+      "Kyoto"
+    ],
+    "match_reason": "keyword overlap: transfer; keyword overlap: circuit, suzuka, transfer; location signal: Suzuka Circuit; target market overlap: Europe; season phrase: suzuka",
+    "matched_season_id": "SEASON-EVENTS",
+    "matched_season_name": "Exhibitions Concerts Sports Events",
+    "real_google_trends_api_connected": false,
+    "record_id": "google_trends_style_japan_mobility_sample-011",
+    "review_status": "needs_human_review",
+    "sample_data_only": true,
+    "source_type": "csv",
+    "target_market": "Europe",
+    "trend_score": 71,
+    "write_operations_enabled": false
+  },
+  {
+    "confidence_score": 29,
+    "confirmed_demand": false,
+    "inferred_demand_types": [
+      "family_trip",
+      "elderly_support",
+      "private_charter",
+      "sightseeing_route"
+    ],
+    "inferred_mobility_pain_points": [
+      "heat fatigue",
+      "children and elderly support",
+      "long walking distance",
+      "large luggage"
+    ],
+    "keyword": "Japan anime wallpaper",
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Mount Fuji",
+      "Sapporo",
+      "Okinawa"
+    ],
+    "match_reason": "keyword overlap: japan; keyword overlap: japan; target market overlap: US",
+    "matched_season_id": "SEASON-SUMMER",
+    "matched_season_name": "Summer Vacation",
+    "real_google_trends_api_connected": false,
+    "record_id": "google_trends_style_japan_mobility_sample-012",
+    "review_status": "low_confidence_review",
+    "sample_data_only": true,
+    "source_type": "csv",
+    "target_market": "US",
+    "trend_score": 21,
+    "write_operations_enabled": false
+  }
+]

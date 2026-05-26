@@ -1,0 +1,60 @@
+{
+  "round_id": "ROUND-PREDICT-002",
+  "round_name": "AGOS_READ_ONLY_SEASONAL_TREND_IMPORT_TRIAL",
+  "status": "passed",
+  "validation_commands": [
+    {
+      "command": "python -m compileall services tests",
+      "status": "passed"
+    },
+    {
+      "command": "python tests\\seasonal_demand_calendar_smoke_test.py",
+      "status": "passed"
+    },
+    {
+      "command": "python tests\\seasonal_trend_import_trial_smoke_test.py",
+      "status": "passed"
+    },
+    {
+      "command": "python tests\\war_room_runtime_ui_smoke_test.py",
+      "status": "passed"
+    },
+    {
+      "command": "node project-state seasonal trend import check",
+      "status": "passed"
+    },
+    {
+      "command": "node --check runtime\\task_results\\ROUND-PREDICT-002\\seasonal_trend_import_trial\\results\\control_center_runtime_script.js",
+      "status": "passed"
+    }
+  ],
+  "data_boundary": {
+    "sample_data_only": true,
+    "confirmed_demand": false,
+    "real_google_trends_api_connected": false,
+    "write_action_status": "blocked"
+  },
+  "outputs": [
+    "runtime/seasonal_trend_import_trial/trend_import_records.json",
+    "runtime/seasonal_trend_import_trial/seasonal_trend_matches.json",
+    "runtime/seasonal_trend_import_trial/seasonal_market_heatmap.json",
+    "runtime/seasonal_trend_import_trial/seasonal_demand_interpretation.json",
+    "runtime/seasonal_trend_import_trial/seasonal_trend_import_summary.json"
+  ],
+  "summary": {
+    "api_status": "real_google_trends_api_not_connected",
+    "confirmed_demand": false,
+    "data_source_status": "sample_csv_json_manual_import_only",
+    "demand_type_count": 10,
+    "high_confidence_matches": 23,
+    "human_review_queue_items": 26,
+    "import_trial_ready": true,
+    "imported_keyword_count": 26,
+    "market_heatmap_rows": 19,
+    "matched_seasonal_signals": 26,
+    "mobility_pain_point_count": 34,
+    "noisy_low_confidence_signals": 3,
+    "sample_data_only": true,
+    "write_action_status": "blocked"
+  }
+}

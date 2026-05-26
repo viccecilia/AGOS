@@ -1,0 +1,13 @@
+keyword,market,language,trend_score,source_type,source_file,notes
+Japan cherry blossom travel,US,en,88,csv,google_trends_style_japan_mobility_sample.csv,Sample trend export row for Sakura season travel interest.
+Tokyo airport transfer sakura,US,en,82,csv,google_trends_style_japan_mobility_sample.csv,Sample signal for airport transfer during Sakura season.
+Japan Golden Week travel,Taiwan,zh-TW,76,csv,google_trends_style_japan_mobility_sample.csv,Sample signal for Golden Week travel planning.
+Osaka airport pickup Golden Week,Korea,ko,72,csv,google_trends_style_japan_mobility_sample.csv,Sample signal for airport pickup during Golden Week.
+Japan summer family trip,Southeast Asia,en,79,csv,google_trends_style_japan_mobility_sample.csv,Sample signal for summer family mobility demand.
+Okinawa family private transfer,Taiwan,zh-TW,70,csv,google_trends_style_japan_mobility_sample.csv,Sample signal for summer family transfer.
+Kyoto autumn leaves,Europe,en,84,csv,google_trends_style_japan_mobility_sample.csv,Sample signal for autumn leaves sightseeing.
+Mount Fuji autumn charter,US,en,73,csv,google_trends_style_japan_mobility_sample.csv,Sample signal for autumn private charter.
+Tokyo Christmas airport transfer,Korea,ko,68,csv,google_trends_style_japan_mobility_sample.csv,Sample signal for year-end airport transfer.
+Japan Chinese New Year travel,China,zh-CN,90,csv,google_trends_style_japan_mobility_sample.csv,Sample signal for Chinese New Year inbound travel.
+Suzuka Circuit transfer,Europe,en,71,csv,google_trends_style_japan_mobility_sample.csv,Sample signal for event mobility demand.
+Japan anime wallpaper,US,en,21,csv,google_trends_style_japan_mobility_sample.csv,Sample noisy signal unrelated to mobility demand.

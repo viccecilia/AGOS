@@ -1,0 +1,16 @@
+{
+  "api_status": "real_google_trends_api_not_connected",
+  "confirmed_demand": false,
+  "data_source_status": "sample_csv_json_manual_import_only",
+  "demand_type_count": 10,
+  "high_confidence_matches": 23,
+  "human_review_queue_items": 26,
+  "import_trial_ready": true,
+  "imported_keyword_count": 26,
+  "market_heatmap_rows": 19,
+  "matched_seasonal_signals": 26,
+  "mobility_pain_point_count": 34,
+  "noisy_low_confidence_signals": 3,
+  "sample_data_only": true,
+  "write_action_status": "blocked"
+}
