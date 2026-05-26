@@ -1,0 +1,390 @@
+[
+  {
+    "data_source": "local_sample_and_seasonal_calendar_ready",
+    "demand_heat_score": 100,
+    "hot_reason": "Tokyo links to Autumn Leaves Season, Chinese New Year Travel, Christmas and Year End; main mobility pressure is complex rail transfers, large luggage, hotel district congestion.",
+    "location_id": "LOC-TOKYO",
+    "location_name": "Tokyo",
+    "mobility_demand_types": [
+      "airport_transfer",
+      "station_to_hotel",
+      "private_charter",
+      "night_arrival"
+    ],
+    "needs_human_review": true,
+    "recommended_preparation": "prepare_driver_vehicle_capacity",
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Chinese New Year Travel",
+      "Christmas and Year End",
+      "Golden Week",
+      "Japan New Year",
+      "Long Weekends",
+      "Sakura Season",
+      "School Holidays",
+      "Summer Vacation"
+    ],
+    "signal_id": "LOC-SIGNAL-001"
+  },
+  {
+    "data_source": "local_sample_and_seasonal_calendar_ready",
+    "demand_heat_score": 100,
+    "hot_reason": "Kyoto links to Autumn Leaves Season, Chinese New Year Travel, Exhibitions Concerts Sports Events; main mobility pressure is crowded buses, scattered temples, walking burden.",
+    "location_id": "LOC-KYOTO",
+    "location_name": "Kyoto",
+    "mobility_demand_types": [
+      "private_charter",
+      "sightseeing_route",
+      "station_to_hotel",
+      "elderly_support"
+    ],
+    "needs_human_review": true,
+    "recommended_preparation": "prepare_driver_vehicle_capacity",
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Chinese New Year Travel",
+      "Exhibitions Concerts Sports Events",
+      "Golden Week",
+      "Japan New Year",
+      "Long Weekends",
+      "Sakura Season",
+      "Summer Vacation"
+    ],
+    "signal_id": "LOC-SIGNAL-002"
+  },
+  {
+    "data_source": "local_sample_and_seasonal_calendar_ready",
+    "demand_heat_score": 99,
+    "hot_reason": "Narita Airport links to Autumn Leaves Season, Chinese New Year Travel, Christmas and Year End; main mobility pressure is long transfer distance, rail transfer confusion, large luggage.",
+    "location_id": "LOC-NARITA",
+    "location_name": "Narita Airport",
+    "mobility_demand_types": [
+      "airport_transfer",
+      "multi_city_transfer",
+      "family_group_transfer",
+      "luggage_heavy_trip"
+    ],
+    "needs_human_review": true,
+    "recommended_preparation": "prepare_driver_vehicle_capacity",
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Chinese New Year Travel",
+      "Christmas and Year End",
+      "Golden Week",
+      "Japan New Year",
+      "Long Weekends",
+      "Sakura Season",
+      "School Holidays",
+      "Summer Vacation"
+    ],
+    "signal_id": "LOC-SIGNAL-003"
+  },
+  {
+    "data_source": "local_sample_and_seasonal_calendar_ready",
+    "demand_heat_score": 97,
+    "hot_reason": "Haneda Airport links to Autumn Leaves Season, Chinese New Year Travel, Christmas and Year End; main mobility pressure is late train anxiety, airport queue uncertainty, large luggage.",
+    "location_id": "LOC-HANEDA",
+    "location_name": "Haneda Airport",
+    "mobility_demand_types": [
+      "airport_transfer",
+      "family_group_transfer",
+      "night_arrival",
+      "luggage_heavy_trip"
+    ],
+    "needs_human_review": true,
+    "recommended_preparation": "prepare_driver_vehicle_capacity",
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Chinese New Year Travel",
+      "Christmas and Year End",
+      "Golden Week",
+      "Japan New Year",
+      "Long Weekends",
+      "Sakura Season",
+      "School Holidays",
+      "Summer Vacation"
+    ],
+    "signal_id": "LOC-SIGNAL-004"
+  },
+  {
+    "data_source": "local_sample_and_seasonal_calendar_ready",
+    "demand_heat_score": 97,
+    "hot_reason": "Kansai Airport links to Autumn Leaves Season, Chinese New Year Travel, Christmas and Year End; main mobility pressure is bridge distance, late arrival, large luggage.",
+    "location_id": "LOC-KANSAI-AIRPORT",
+    "location_name": "Kansai Airport",
+    "mobility_demand_types": [
+      "airport_transfer",
+      "multi_city_transfer",
+      "family_group_transfer",
+      "luggage_heavy_trip"
+    ],
+    "needs_human_review": true,
+    "recommended_preparation": "prepare_driver_vehicle_capacity",
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Chinese New Year Travel",
+      "Christmas and Year End",
+      "Exhibitions Concerts Sports Events",
+      "Golden Week",
+      "Japan New Year",
+      "Long Weekends",
+      "Sakura Season",
+      "School Holidays",
+      "Summer Vacation"
+    ],
+    "signal_id": "LOC-SIGNAL-005"
+  },
+  {
+    "data_source": "local_sample_and_seasonal_calendar_ready",
+    "demand_heat_score": 95,
+    "hot_reason": "Osaka links to Autumn Leaves Season, Chinese New Year Travel, Christmas and Year End; main mobility pressure is airport-to-city distance, hotel congestion, family luggage.",
+    "location_id": "LOC-OSAKA",
+    "location_name": "Osaka",
+    "mobility_demand_types": [
+      "airport_transfer",
+      "station_to_hotel",
+      "private_charter",
+      "family_trip"
+    ],
+    "needs_human_review": true,
+    "recommended_preparation": "prepare_driver_vehicle_capacity",
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Chinese New Year Travel",
+      "Christmas and Year End",
+      "Exhibitions Concerts Sports Events",
+      "Golden Week",
+      "Japan New Year",
+      "Long Weekends",
+      "Sakura Season",
+      "School Holidays",
+      "Summer Vacation"
+    ],
+    "signal_id": "LOC-SIGNAL-006"
+  },
+  {
+    "data_source": "local_sample_and_seasonal_calendar_ready",
+    "demand_heat_score": 95,
+    "hot_reason": "Suzuka Circuit links to Autumn Leaves Season, Exhibitions Concerts Sports Events, Golden Week; main mobility pressure is venue exit congestion, last-mile transfer, late return.",
+    "location_id": "LOC-SUZUKA",
+    "location_name": "Suzuka Circuit",
+    "mobility_demand_types": [
+      "event_pickup",
+      "private_charter",
+      "group_transfer",
+      "night_return"
+    ],
+    "needs_human_review": true,
+    "recommended_preparation": "prepare_driver_vehicle_capacity",
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Exhibitions Concerts Sports Events",
+      "Golden Week",
+      "Japan New Year",
+      "Long Weekends"
+    ],
+    "signal_id": "LOC-SIGNAL-007"
+  },
+  {
+    "data_source": "local_sample_and_seasonal_calendar_ready",
+    "demand_heat_score": 95,
+    "hot_reason": "Mount Fuji links to Autumn Leaves Season, Chinese New Year Travel, Christmas and Year End; main mobility pressure is long day-trip route, weather changes, public transport complexity.",
+    "location_id": "LOC-MOUNT-FUJI",
+    "location_name": "Mount Fuji",
+    "mobility_demand_types": [
+      "private_charter",
+      "sightseeing_route",
+      "family_trip",
+      "elderly_support"
+    ],
+    "needs_human_review": true,
+    "recommended_preparation": "prepare_driver_vehicle_capacity",
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Chinese New Year Travel",
+      "Christmas and Year End",
+      "Golden Week",
+      "Japan New Year",
+      "Long Weekends",
+      "Sakura Season",
+      "School Holidays",
+      "Summer Vacation"
+    ],
+    "signal_id": "LOC-SIGNAL-008"
+  },
+  {
+    "data_source": "local_sample_and_seasonal_calendar_ready",
+    "demand_heat_score": 93,
+    "hot_reason": "Shinjuku links to Christmas and Year End, Golden Week, Sakura Season; main mobility pressure is station maze, hotel pickup confusion, night crowding.",
+    "location_id": "LOC-SHINJUKU",
+    "location_name": "Shinjuku",
+    "mobility_demand_types": [
+      "station_to_hotel",
+      "night_arrival",
+      "local_transfer"
+    ],
+    "needs_human_review": true,
+    "recommended_preparation": "prepare_driver_vehicle_capacity",
+    "related_seasons": [
+      "Christmas and Year End",
+      "Golden Week",
+      "Sakura Season"
+    ],
+    "signal_id": "LOC-SIGNAL-009"
+  },
+  {
+    "data_source": "local_sample_and_seasonal_calendar_ready",
+    "demand_heat_score": 93,
+    "hot_reason": "Tokyo Big Sight links to Autumn Leaves Season, Chinese New Year Travel, Christmas and Year End; main mobility pressure is venue exit congestion, group pickup coordination, equipment luggage.",
+    "location_id": "LOC-TOKYO-BIG-SIGHT",
+    "location_name": "Tokyo Big Sight",
+    "mobility_demand_types": [
+      "event_pickup",
+      "airport_transfer",
+      "station_to_hotel",
+      "group_transfer"
+    ],
+    "needs_human_review": true,
+    "recommended_preparation": "prepare_driver_vehicle_capacity",
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Chinese New Year Travel",
+      "Christmas and Year End",
+      "Exhibitions Concerts Sports Events",
+      "Golden Week",
+      "Japan New Year",
+      "Long Weekends",
+      "Sakura Season",
+      "School Holidays",
+      "Summer Vacation"
+    ],
+    "signal_id": "LOC-SIGNAL-010"
+  },
+  {
+    "data_source": "local_sample_and_seasonal_calendar_ready",
+    "demand_heat_score": 87,
+    "hot_reason": "Sapporo links to Christmas and Year End, Golden Week, Japan New Year; main mobility pressure is snow luggage, winter road risk, airport transfer timing.",
+    "location_id": "LOC-SAPPORO",
+    "location_name": "Sapporo",
+    "mobility_demand_types": [
+      "airport_transfer",
+      "winter_transfer",
+      "family_trip",
+      "private_charter"
+    ],
+    "needs_human_review": true,
+    "recommended_preparation": "prepare_driver_vehicle_capacity",
+    "related_seasons": [
+      "Christmas and Year End",
+      "Golden Week",
+      "Japan New Year",
+      "School Holidays",
+      "Summer Vacation"
+    ],
+    "signal_id": "LOC-SIGNAL-011"
+  },
+  {
+    "data_source": "local_sample_and_seasonal_calendar_ready",
+    "demand_heat_score": 86,
+    "hot_reason": "Shibuya links to Christmas and Year End, Golden Week; main mobility pressure is crowded crossings, pickup point confusion, late return.",
+    "location_id": "LOC-SHIBUYA",
+    "location_name": "Shibuya",
+    "mobility_demand_types": [
+      "hotel_transfer",
+      "night_arrival",
+      "local_transfer"
+    ],
+    "needs_human_review": true,
+    "recommended_preparation": "prepare_driver_vehicle_capacity",
+    "related_seasons": [
+      "Christmas and Year End",
+      "Golden Week"
+    ],
+    "signal_id": "LOC-SIGNAL-012"
+  },
+  {
+    "data_source": "local_sample_and_seasonal_calendar_ready",
+    "demand_heat_score": 86,
+    "hot_reason": "Chubu Centrair Airport links to Autumn Leaves Season, Exhibitions Concerts Sports Events, Golden Week; main mobility pressure is regional transfer uncertainty, race weekend luggage, airport-to-venue distance.",
+    "location_id": "LOC-CHUBU-AIRPORT",
+    "location_name": "Chubu Centrair Airport",
+    "mobility_demand_types": [
+      "airport_transfer",
+      "event_pickup",
+      "multi_city_transfer"
+    ],
+    "needs_human_review": true,
+    "recommended_preparation": "prepare_driver_vehicle_capacity",
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Exhibitions Concerts Sports Events",
+      "Golden Week",
+      "Japan New Year",
+      "Long Weekends"
+    ],
+    "signal_id": "LOC-SIGNAL-013"
+  },
+  {
+    "data_source": "local_sample_and_seasonal_calendar_ready",
+    "demand_heat_score": 84,
+    "hot_reason": "Nagoya links to Autumn Leaves Season, Exhibitions Concerts Sports Events, Golden Week; main mobility pressure is event transfer timing, airport-city transfer, regional route planning.",
+    "location_id": "LOC-NAGOYA",
+    "location_name": "Nagoya",
+    "mobility_demand_types": [
+      "airport_transfer",
+      "event_pickup",
+      "multi_city_transfer",
+      "station_to_hotel"
+    ],
+    "needs_human_review": true,
+    "recommended_preparation": "prepare_driver_vehicle_capacity",
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Exhibitions Concerts Sports Events",
+      "Golden Week",
+      "Japan New Year",
+      "Long Weekends"
+    ],
+    "signal_id": "LOC-SIGNAL-014"
+  },
+  {
+    "data_source": "local_sample_and_seasonal_calendar_ready",
+    "demand_heat_score": 84,
+    "hot_reason": "Okinawa links to Golden Week, School Holidays, Summer Vacation; main mobility pressure is rental car shortage, family luggage, resort distance.",
+    "location_id": "LOC-OKINAWA",
+    "location_name": "Okinawa",
+    "mobility_demand_types": [
+      "airport_transfer",
+      "family_trip",
+      "private_charter",
+      "resort_transfer"
+    ],
+    "needs_human_review": true,
+    "recommended_preparation": "prepare_driver_vehicle_capacity",
+    "related_seasons": [
+      "Golden Week",
+      "School Holidays",
+      "Summer Vacation"
+    ],
+    "signal_id": "LOC-SIGNAL-015"
+  },
+  {
+    "data_source": "local_sample_and_seasonal_calendar_ready",
+    "demand_heat_score": 82,
+    "hot_reason": "Ueno links to Golden Week, Sakura Season; main mobility pressure is park crowds, station crowding, family walking burden.",
+    "location_id": "LOC-UENO",
+    "location_name": "Ueno",
+    "mobility_demand_types": [
+      "sightseeing_route",
+      "station_to_hotel",
+      "private_charter"
+    ],
+    "needs_human_review": true,
+    "recommended_preparation": "prepare_driver_vehicle_capacity",
+    "related_seasons": [
+      "Golden Week",
+      "Sakura Season"
+    ],
+    "signal_id": "LOC-SIGNAL-016"
+  }
+]

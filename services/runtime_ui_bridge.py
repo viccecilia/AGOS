@@ -36,6 +36,7 @@ from services.long_term_strategy_memory import LongTermStrategyMemory
 from services.live_collection_runner import LiveCollectionRunner
 from services.live_data_import_to_memory import LiveDataImportToMemory
 from services.live_data_normalization_pipeline import LiveDataNormalizationPipeline
+from services.location_demand_heatmap_engine import LocationDemandHeatmapEngine
 from services.personality_drift_engine import PersonalityDriftEngine
 from services.personality_isolation_engine import PersonalityIsolationEngine
 from services.personality_memory_deposit import PersonalityMemoryDeposit
@@ -175,6 +176,7 @@ class RuntimeUIBridge:
         api_collection_review = APICollectionReviewAndCorrection().review(live_memory_import)
         controlled_api_collection_gate = ControlledAPICollectionGate().evaluate(state.get("workspace", "JAG-LAB"))
         seasonal_demand_calendar = SeasonalDemandCalendarEngine().build()
+        location_demand_heatmap = LocationDemandHeatmapEngine().build(seasonal_demand_calendar.get("seasonalCalendar", []))
         read_only_trends = ReadOnlyTrendConnector().read_trends()
         api_rate_limit_guard = APIRateLimitGuard().evaluate()
         api_signal_normalization = APISignalNormalization().normalize(read_only_trends.get("platformTrends", []))
@@ -501,6 +503,11 @@ class RuntimeUIBridge:
             "seasonalKeywords": seasonal_demand_calendar.get("seasonalKeywords", []),
             "seasonalMonitoringPlan": seasonal_demand_calendar.get("seasonalMonitoringPlan", []),
             "seasonalDemandSummary": seasonal_demand_calendar.get("seasonalDemandSummary", {}),
+            "locationDemandHeatmap": location_demand_heatmap,
+            "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
+            "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),
+            "locationMobilityRisk": location_demand_heatmap.get("locationMobilityRisk", []),
+            "locationHeatmapSummary": location_demand_heatmap.get("locationHeatmapSummary", {}),
             "readOnlyTrendConnector": read_only_trends,
             "platformTrends": read_only_trends.get("platformTrends", []),
             "platformTrendFeed": read_only_trends.get("platformTrendFeed", []),

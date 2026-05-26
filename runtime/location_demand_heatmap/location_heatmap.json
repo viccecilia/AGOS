@@ -1,0 +1,697 @@
+[
+  {
+    "common_pain_points": [
+      "complex rail transfers",
+      "large luggage",
+      "hotel district congestion",
+      "first Japan trip anxiety"
+    ],
+    "crowd_risk_score": 88,
+    "data_origin": "local_sample",
+    "demand_heat_score": 100,
+    "driver_vehicle_preparation_required": true,
+    "gps_dispatch_enabled": false,
+    "hot_reason": "Tokyo links to Autumn Leaves Season, Chinese New Year Travel, Christmas and Year End; main mobility pressure is complex rail transfers, large luggage, hotel district congestion.",
+    "human_review_required": true,
+    "location_id": "LOC-TOKYO",
+    "location_name": "Tokyo",
+    "location_type": "city",
+    "luggage_difficulty_score": 86,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "station_to_hotel",
+      "private_charter",
+      "night_arrival"
+    ],
+    "real_time_crowd_data_connected": false,
+    "region": "Kanto",
+    "related_events": [
+      "citywide seasonal travel",
+      "airport arrival peaks",
+      "shopping and hotel district movement"
+    ],
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Chinese New Year Travel",
+      "Christmas and Year End",
+      "Golden Week",
+      "Japan New Year",
+      "Long Weekends",
+      "Sakura Season",
+      "School Holidays",
+      "Summer Vacation"
+    ],
+    "seasonal_calendar_linked": true,
+    "transfer_complexity_score": 92,
+    "updated_at": "2026-05-26T03:36:36+00:00",
+    "write_operations_enabled": false
+  },
+  {
+    "common_pain_points": [
+      "crowded buses",
+      "scattered temples",
+      "walking burden",
+      "station-to-hotel transfer"
+    ],
+    "crowd_risk_score": 91,
+    "data_origin": "local_sample",
+    "demand_heat_score": 100,
+    "driver_vehicle_preparation_required": true,
+    "gps_dispatch_enabled": false,
+    "hot_reason": "Kyoto links to Autumn Leaves Season, Chinese New Year Travel, Exhibitions Concerts Sports Events; main mobility pressure is crowded buses, scattered temples, walking burden.",
+    "human_review_required": true,
+    "location_id": "LOC-KYOTO",
+    "location_name": "Kyoto",
+    "location_type": "city",
+    "luggage_difficulty_score": 83,
+    "mobility_demand_types": [
+      "private_charter",
+      "sightseeing_route",
+      "station_to_hotel",
+      "elderly_support"
+    ],
+    "real_time_crowd_data_connected": false,
+    "region": "Kansai",
+    "related_events": [
+      "temple routes",
+      "seasonal sightseeing peaks"
+    ],
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Chinese New Year Travel",
+      "Exhibitions Concerts Sports Events",
+      "Golden Week",
+      "Japan New Year",
+      "Long Weekends",
+      "Sakura Season",
+      "Summer Vacation"
+    ],
+    "seasonal_calendar_linked": true,
+    "transfer_complexity_score": 86,
+    "updated_at": "2026-05-26T03:36:36+00:00",
+    "write_operations_enabled": false
+  },
+  {
+    "common_pain_points": [
+      "long transfer distance",
+      "rail transfer confusion",
+      "large luggage",
+      "arrival fatigue"
+    ],
+    "crowd_risk_score": 80,
+    "data_origin": "local_sample",
+    "demand_heat_score": 99,
+    "driver_vehicle_preparation_required": true,
+    "gps_dispatch_enabled": false,
+    "hot_reason": "Narita Airport links to Autumn Leaves Season, Chinese New Year Travel, Christmas and Year End; main mobility pressure is long transfer distance, rail transfer confusion, large luggage.",
+    "human_review_required": true,
+    "location_id": "LOC-NARITA",
+    "location_name": "Narita Airport",
+    "location_type": "airport",
+    "luggage_difficulty_score": 91,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "multi_city_transfer",
+      "family_group_transfer",
+      "luggage_heavy_trip"
+    ],
+    "real_time_crowd_data_connected": false,
+    "region": "Chiba",
+    "related_events": [
+      "long-distance airport transfers",
+      "inbound peak arrivals"
+    ],
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Chinese New Year Travel",
+      "Christmas and Year End",
+      "Golden Week",
+      "Japan New Year",
+      "Long Weekends",
+      "Sakura Season",
+      "School Holidays",
+      "Summer Vacation"
+    ],
+    "seasonal_calendar_linked": true,
+    "transfer_complexity_score": 88,
+    "updated_at": "2026-05-26T03:36:36+00:00",
+    "write_operations_enabled": false
+  },
+  {
+    "common_pain_points": [
+      "late train anxiety",
+      "airport queue uncertainty",
+      "large luggage",
+      "language support"
+    ],
+    "crowd_risk_score": 82,
+    "data_origin": "local_sample",
+    "demand_heat_score": 97,
+    "driver_vehicle_preparation_required": true,
+    "gps_dispatch_enabled": false,
+    "hot_reason": "Haneda Airport links to Autumn Leaves Season, Chinese New Year Travel, Christmas and Year End; main mobility pressure is late train anxiety, airport queue uncertainty, large luggage.",
+    "human_review_required": true,
+    "location_id": "LOC-HANEDA",
+    "location_name": "Haneda Airport",
+    "location_type": "airport",
+    "luggage_difficulty_score": 90,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "family_group_transfer",
+      "night_arrival",
+      "luggage_heavy_trip"
+    ],
+    "real_time_crowd_data_connected": false,
+    "region": "Tokyo",
+    "related_events": [
+      "international arrivals",
+      "late-night arrivals"
+    ],
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Chinese New Year Travel",
+      "Christmas and Year End",
+      "Golden Week",
+      "Japan New Year",
+      "Long Weekends",
+      "Sakura Season",
+      "School Holidays",
+      "Summer Vacation"
+    ],
+    "seasonal_calendar_linked": true,
+    "transfer_complexity_score": 80,
+    "updated_at": "2026-05-26T03:36:36+00:00",
+    "write_operations_enabled": false
+  },
+  {
+    "common_pain_points": [
+      "bridge distance",
+      "late arrival",
+      "large luggage",
+      "hotel transfer uncertainty"
+    ],
+    "crowd_risk_score": 79,
+    "data_origin": "local_sample",
+    "demand_heat_score": 97,
+    "driver_vehicle_preparation_required": true,
+    "gps_dispatch_enabled": false,
+    "hot_reason": "Kansai Airport links to Autumn Leaves Season, Chinese New Year Travel, Christmas and Year End; main mobility pressure is bridge distance, late arrival, large luggage.",
+    "human_review_required": true,
+    "location_id": "LOC-KANSAI-AIRPORT",
+    "location_name": "Kansai Airport",
+    "location_type": "airport",
+    "luggage_difficulty_score": 89,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "multi_city_transfer",
+      "family_group_transfer",
+      "luggage_heavy_trip"
+    ],
+    "real_time_crowd_data_connected": false,
+    "region": "Osaka",
+    "related_events": [
+      "Kansai inbound arrivals",
+      "late-night airport transfer"
+    ],
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Chinese New Year Travel",
+      "Christmas and Year End",
+      "Exhibitions Concerts Sports Events",
+      "Golden Week",
+      "Japan New Year",
+      "Long Weekends",
+      "Sakura Season",
+      "School Holidays",
+      "Summer Vacation"
+    ],
+    "seasonal_calendar_linked": true,
+    "transfer_complexity_score": 84,
+    "updated_at": "2026-05-26T03:36:36+00:00",
+    "write_operations_enabled": false
+  },
+  {
+    "common_pain_points": [
+      "airport-to-city distance",
+      "hotel congestion",
+      "family luggage",
+      "night arrival"
+    ],
+    "crowd_risk_score": 82,
+    "data_origin": "local_sample",
+    "demand_heat_score": 95,
+    "driver_vehicle_preparation_required": true,
+    "gps_dispatch_enabled": false,
+    "hot_reason": "Osaka links to Autumn Leaves Season, Chinese New Year Travel, Christmas and Year End; main mobility pressure is airport-to-city distance, hotel congestion, family luggage.",
+    "human_review_required": true,
+    "location_id": "LOC-OSAKA",
+    "location_name": "Osaka",
+    "location_type": "city",
+    "luggage_difficulty_score": 84,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "station_to_hotel",
+      "private_charter",
+      "family_trip"
+    ],
+    "real_time_crowd_data_connected": false,
+    "region": "Kansai",
+    "related_events": [
+      "citywide travel",
+      "shopping and food district movement"
+    ],
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Chinese New Year Travel",
+      "Christmas and Year End",
+      "Exhibitions Concerts Sports Events",
+      "Golden Week",
+      "Japan New Year",
+      "Long Weekends",
+      "Sakura Season",
+      "School Holidays",
+      "Summer Vacation"
+    ],
+    "seasonal_calendar_linked": true,
+    "transfer_complexity_score": 78,
+    "updated_at": "2026-05-26T03:36:36+00:00",
+    "write_operations_enabled": false
+  },
+  {
+    "common_pain_points": [
+      "venue exit congestion",
+      "last-mile transfer",
+      "late return",
+      "group pickup confusion"
+    ],
+    "crowd_risk_score": 90,
+    "data_origin": "local_sample",
+    "demand_heat_score": 95,
+    "driver_vehicle_preparation_required": true,
+    "gps_dispatch_enabled": false,
+    "hot_reason": "Suzuka Circuit links to Autumn Leaves Season, Exhibitions Concerts Sports Events, Golden Week; main mobility pressure is venue exit congestion, last-mile transfer, late return.",
+    "human_review_required": true,
+    "location_id": "LOC-SUZUKA",
+    "location_name": "Suzuka Circuit",
+    "location_type": "racing_venue",
+    "luggage_difficulty_score": 70,
+    "mobility_demand_types": [
+      "event_pickup",
+      "private_charter",
+      "group_transfer",
+      "night_return"
+    ],
+    "real_time_crowd_data_connected": false,
+    "region": "Mie",
+    "related_events": [
+      "F1 / racing",
+      "motorsport race weekend"
+    ],
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Exhibitions Concerts Sports Events",
+      "Golden Week",
+      "Japan New Year",
+      "Long Weekends"
+    ],
+    "seasonal_calendar_linked": true,
+    "transfer_complexity_score": 89,
+    "updated_at": "2026-05-26T03:36:36+00:00",
+    "write_operations_enabled": false
+  },
+  {
+    "common_pain_points": [
+      "long day-trip route",
+      "weather changes",
+      "public transport complexity",
+      "elderly walking burden"
+    ],
+    "crowd_risk_score": 79,
+    "data_origin": "local_sample",
+    "demand_heat_score": 95,
+    "driver_vehicle_preparation_required": true,
+    "gps_dispatch_enabled": false,
+    "hot_reason": "Mount Fuji links to Autumn Leaves Season, Chinese New Year Travel, Christmas and Year End; main mobility pressure is long day-trip route, weather changes, public transport complexity.",
+    "human_review_required": true,
+    "location_id": "LOC-MOUNT-FUJI",
+    "location_name": "Mount Fuji",
+    "location_type": "attraction",
+    "luggage_difficulty_score": 74,
+    "mobility_demand_types": [
+      "private_charter",
+      "sightseeing_route",
+      "family_trip",
+      "elderly_support"
+    ],
+    "real_time_crowd_data_connected": false,
+    "region": "Yamanashi / Shizuoka",
+    "related_events": [
+      "Fuji sightseeing",
+      "seasonal day trips"
+    ],
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Chinese New Year Travel",
+      "Christmas and Year End",
+      "Golden Week",
+      "Japan New Year",
+      "Long Weekends",
+      "Sakura Season",
+      "School Holidays",
+      "Summer Vacation"
+    ],
+    "seasonal_calendar_linked": true,
+    "transfer_complexity_score": 87,
+    "updated_at": "2026-05-26T03:36:36+00:00",
+    "write_operations_enabled": false
+  },
+  {
+    "common_pain_points": [
+      "station maze",
+      "hotel pickup confusion",
+      "night crowding",
+      "large luggage"
+    ],
+    "crowd_risk_score": 86,
+    "data_origin": "local_sample",
+    "demand_heat_score": 93,
+    "driver_vehicle_preparation_required": true,
+    "gps_dispatch_enabled": false,
+    "hot_reason": "Shinjuku links to Christmas and Year End, Golden Week, Sakura Season; main mobility pressure is station maze, hotel pickup confusion, night crowding.",
+    "human_review_required": true,
+    "location_id": "LOC-SHINJUKU",
+    "location_name": "Shinjuku",
+    "location_type": "commercial_district",
+    "luggage_difficulty_score": 82,
+    "mobility_demand_types": [
+      "station_to_hotel",
+      "night_arrival",
+      "local_transfer"
+    ],
+    "real_time_crowd_data_connected": false,
+    "region": "Tokyo",
+    "related_events": [
+      "hotel district arrivals",
+      "night entertainment movement"
+    ],
+    "related_seasons": [
+      "Christmas and Year End",
+      "Golden Week",
+      "Sakura Season"
+    ],
+    "seasonal_calendar_linked": true,
+    "transfer_complexity_score": 94,
+    "updated_at": "2026-05-26T03:36:36+00:00",
+    "write_operations_enabled": false
+  },
+  {
+    "common_pain_points": [
+      "venue exit congestion",
+      "group pickup coordination",
+      "equipment luggage",
+      "airport transfer timing"
+    ],
+    "crowd_risk_score": 82,
+    "data_origin": "local_sample",
+    "demand_heat_score": 93,
+    "driver_vehicle_preparation_required": true,
+    "gps_dispatch_enabled": false,
+    "hot_reason": "Tokyo Big Sight links to Autumn Leaves Season, Chinese New Year Travel, Christmas and Year End; main mobility pressure is venue exit congestion, group pickup coordination, equipment luggage.",
+    "human_review_required": true,
+    "location_id": "LOC-TOKYO-BIG-SIGHT",
+    "location_name": "Tokyo Big Sight",
+    "location_type": "exhibition_center",
+    "luggage_difficulty_score": 78,
+    "mobility_demand_types": [
+      "event_pickup",
+      "airport_transfer",
+      "station_to_hotel",
+      "group_transfer"
+    ],
+    "real_time_crowd_data_connected": false,
+    "region": "Tokyo",
+    "related_events": [
+      "trade shows",
+      "conference arrivals",
+      "launch events"
+    ],
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Chinese New Year Travel",
+      "Christmas and Year End",
+      "Exhibitions Concerts Sports Events",
+      "Golden Week",
+      "Japan New Year",
+      "Long Weekends",
+      "Sakura Season",
+      "School Holidays",
+      "Summer Vacation"
+    ],
+    "seasonal_calendar_linked": true,
+    "transfer_complexity_score": 76,
+    "updated_at": "2026-05-26T03:36:36+00:00",
+    "write_operations_enabled": false
+  },
+  {
+    "common_pain_points": [
+      "snow luggage",
+      "winter road risk",
+      "airport transfer timing",
+      "family support"
+    ],
+    "crowd_risk_score": 74,
+    "data_origin": "local_sample",
+    "demand_heat_score": 87,
+    "driver_vehicle_preparation_required": true,
+    "gps_dispatch_enabled": false,
+    "hot_reason": "Sapporo links to Christmas and Year End, Golden Week, Japan New Year; main mobility pressure is snow luggage, winter road risk, airport transfer timing.",
+    "human_review_required": true,
+    "location_id": "LOC-SAPPORO",
+    "location_name": "Sapporo",
+    "location_type": "city",
+    "luggage_difficulty_score": 83,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "winter_transfer",
+      "family_trip",
+      "private_charter"
+    ],
+    "real_time_crowd_data_connected": false,
+    "region": "Hokkaido",
+    "related_events": [
+      "winter travel",
+      "summer escape travel"
+    ],
+    "related_seasons": [
+      "Christmas and Year End",
+      "Golden Week",
+      "Japan New Year",
+      "School Holidays",
+      "Summer Vacation"
+    ],
+    "seasonal_calendar_linked": true,
+    "transfer_complexity_score": 76,
+    "updated_at": "2026-05-26T03:36:36+00:00",
+    "write_operations_enabled": false
+  },
+  {
+    "common_pain_points": [
+      "crowded crossings",
+      "pickup point confusion",
+      "late return",
+      "shopping luggage"
+    ],
+    "crowd_risk_score": 85,
+    "data_origin": "local_sample",
+    "demand_heat_score": 86,
+    "driver_vehicle_preparation_required": true,
+    "gps_dispatch_enabled": false,
+    "hot_reason": "Shibuya links to Christmas and Year End, Golden Week; main mobility pressure is crowded crossings, pickup point confusion, late return.",
+    "human_review_required": true,
+    "location_id": "LOC-SHIBUYA",
+    "location_name": "Shibuya",
+    "location_type": "commercial_district",
+    "luggage_difficulty_score": 76,
+    "mobility_demand_types": [
+      "hotel_transfer",
+      "night_arrival",
+      "local_transfer"
+    ],
+    "real_time_crowd_data_connected": false,
+    "region": "Tokyo",
+    "related_events": [
+      "shopping peaks",
+      "night events",
+      "youth travel trends"
+    ],
+    "related_seasons": [
+      "Christmas and Year End",
+      "Golden Week"
+    ],
+    "seasonal_calendar_linked": true,
+    "transfer_complexity_score": 82,
+    "updated_at": "2026-05-26T03:36:36+00:00",
+    "write_operations_enabled": false
+  },
+  {
+    "common_pain_points": [
+      "regional transfer uncertainty",
+      "race weekend luggage",
+      "airport-to-venue distance"
+    ],
+    "crowd_risk_score": 70,
+    "data_origin": "local_sample",
+    "demand_heat_score": 86,
+    "driver_vehicle_preparation_required": true,
+    "gps_dispatch_enabled": false,
+    "hot_reason": "Chubu Centrair Airport links to Autumn Leaves Season, Exhibitions Concerts Sports Events, Golden Week; main mobility pressure is regional transfer uncertainty, race weekend luggage, airport-to-venue distance.",
+    "human_review_required": true,
+    "location_id": "LOC-CHUBU-AIRPORT",
+    "location_name": "Chubu Centrair Airport",
+    "location_type": "airport",
+    "luggage_difficulty_score": 80,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "event_pickup",
+      "multi_city_transfer"
+    ],
+    "real_time_crowd_data_connected": false,
+    "region": "Aichi",
+    "related_events": [
+      "Nagoya event arrivals",
+      "Suzuka race transfers"
+    ],
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Exhibitions Concerts Sports Events",
+      "Golden Week",
+      "Japan New Year",
+      "Long Weekends"
+    ],
+    "seasonal_calendar_linked": true,
+    "transfer_complexity_score": 78,
+    "updated_at": "2026-05-26T03:36:36+00:00",
+    "write_operations_enabled": false
+  },
+  {
+    "common_pain_points": [
+      "event transfer timing",
+      "airport-city transfer",
+      "regional route planning",
+      "group movement"
+    ],
+    "crowd_risk_score": 72,
+    "data_origin": "local_sample",
+    "demand_heat_score": 84,
+    "driver_vehicle_preparation_required": true,
+    "gps_dispatch_enabled": false,
+    "hot_reason": "Nagoya links to Autumn Leaves Season, Exhibitions Concerts Sports Events, Golden Week; main mobility pressure is event transfer timing, airport-city transfer, regional route planning.",
+    "human_review_required": true,
+    "location_id": "LOC-NAGOYA",
+    "location_name": "Nagoya",
+    "location_type": "city",
+    "luggage_difficulty_score": 72,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "event_pickup",
+      "multi_city_transfer",
+      "station_to_hotel"
+    ],
+    "real_time_crowd_data_connected": false,
+    "region": "Chubu",
+    "related_events": [
+      "event staging city",
+      "Suzuka access",
+      "future Asian Games monitoring"
+    ],
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Exhibitions Concerts Sports Events",
+      "Golden Week",
+      "Japan New Year",
+      "Long Weekends"
+    ],
+    "seasonal_calendar_linked": true,
+    "transfer_complexity_score": 74,
+    "updated_at": "2026-05-26T03:36:36+00:00",
+    "write_operations_enabled": false
+  },
+  {
+    "common_pain_points": [
+      "rental car shortage",
+      "family luggage",
+      "resort distance",
+      "heat fatigue"
+    ],
+    "crowd_risk_score": 78,
+    "data_origin": "local_sample",
+    "demand_heat_score": 84,
+    "driver_vehicle_preparation_required": true,
+    "gps_dispatch_enabled": false,
+    "hot_reason": "Okinawa links to Golden Week, School Holidays, Summer Vacation; main mobility pressure is rental car shortage, family luggage, resort distance.",
+    "human_review_required": true,
+    "location_id": "LOC-OKINAWA",
+    "location_name": "Okinawa",
+    "location_type": "attraction",
+    "luggage_difficulty_score": 82,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "family_trip",
+      "private_charter",
+      "resort_transfer"
+    ],
+    "real_time_crowd_data_connected": false,
+    "region": "Okinawa",
+    "related_events": [
+      "island resort travel",
+      "family summer trips"
+    ],
+    "related_seasons": [
+      "Golden Week",
+      "School Holidays",
+      "Summer Vacation"
+    ],
+    "seasonal_calendar_linked": true,
+    "transfer_complexity_score": 74,
+    "updated_at": "2026-05-26T03:36:36+00:00",
+    "write_operations_enabled": false
+  },
+  {
+    "common_pain_points": [
+      "park crowds",
+      "station crowding",
+      "family walking burden",
+      "luggage lockers"
+    ],
+    "crowd_risk_score": 84,
+    "data_origin": "local_sample",
+    "demand_heat_score": 82,
+    "driver_vehicle_preparation_required": true,
+    "gps_dispatch_enabled": false,
+    "hot_reason": "Ueno links to Golden Week, Sakura Season; main mobility pressure is park crowds, station crowding, family walking burden.",
+    "human_review_required": true,
+    "location_id": "LOC-UENO",
+    "location_name": "Ueno",
+    "location_type": "attraction",
+    "luggage_difficulty_score": 79,
+    "mobility_demand_types": [
+      "sightseeing_route",
+      "station_to_hotel",
+      "private_charter"
+    ],
+    "real_time_crowd_data_connected": false,
+    "region": "Tokyo",
+    "related_events": [
+      "park cherry blossom viewing",
+      "museum visits"
+    ],
+    "related_seasons": [
+      "Golden Week",
+      "Sakura Season"
+    ],
+    "seasonal_calendar_linked": true,
+    "transfer_complexity_score": 72,
+    "updated_at": "2026-05-26T03:36:36+00:00",
+    "write_operations_enabled": false
+  }
+]

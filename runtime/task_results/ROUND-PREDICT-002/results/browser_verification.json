@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8765/project_control_center.html?runtime_ui=1#war-room-growth",
+  "checks": {
+    "location_panel_visible": true,
+    "heading_visible": true,
+    "tokyo_visible": true,
+    "haneda_airport_visible": true,
+    "suzuka_circuit_visible": true,
+    "mount_fuji_visible": true,
+    "driver_vehicle_preparation_visible": true,
+    "write_operations_false_visible": true
+  }
+}
