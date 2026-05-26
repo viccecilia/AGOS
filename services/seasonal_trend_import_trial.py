@@ -13,6 +13,7 @@ from services.seasonal_demand_calendar_engine import SeasonalDemandCalendarEngin
 
 
 DEFAULT_SAMPLE_DIR = Path("runtime/seasonal_demand_calendar/import_samples")
+DEFAULT_SAMPLE_FILE = "google_trends_japan_travel_sample.csv"
 DEFAULT_OUTPUT_DIR = Path("runtime/seasonal_trend_import_trial")
 SUPPORTED_INPUTS = ["csv", "json", "manual_dict_list", "future_google_trends_api_placeholder"]
 
@@ -36,7 +37,7 @@ class SeasonalTrendImportTrial:
     def run(self, manual_records: list[dict[str, Any]] | None = None) -> dict[str, Any]:
         calendar_report = SeasonalDemandCalendarEngine().state()
         seasons = calendar_report.get("seasonalCalendar", [])
-        records = self.load_records(manual_records or [])
+        records = self.load_records(manual_records or [], preferred_file=DEFAULT_SAMPLE_FILE)
         matches = [self._match_record(record, seasons) for record in records]
         heatmap = self._market_heatmap(matches)
         interpretation = self._interpret(matches, heatmap)
@@ -76,10 +77,11 @@ class SeasonalTrendImportTrial:
             }
         return self.run()
 
-    def load_records(self, manual_records: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    def load_records(self, manual_records: list[dict[str, Any]], preferred_file: str | None = None) -> list[dict[str, Any]]:
         records: list[dict[str, Any]] = []
         self.sample_dir.mkdir(parents=True, exist_ok=True)
-        for path in sorted(self.sample_dir.glob("*.csv")):
+        csv_paths = [self.sample_dir / preferred_file] if preferred_file and (self.sample_dir / preferred_file).exists() else sorted(self.sample_dir.glob("*.csv"))
+        for path in csv_paths:
             records.extend(self._load_csv(path))
         for path in sorted(self.sample_dir.glob("*.json")):
             records.extend(self._load_json(path))
@@ -97,6 +99,8 @@ class SeasonalTrendImportTrial:
     def _load_csv(self, path: Path) -> list[dict[str, Any]]:
         with path.open("r", encoding="utf-8", newline="") as handle:
             rows = list(csv.DictReader(handle))
+        for row in rows:
+            row.setdefault("source_file", path.name)
         return [self._normalize_record(row, f"{path.stem}-{index:03d}", "csv") for index, row in enumerate(rows, start=1)]
 
     def _load_json(self, path: Path) -> list[dict[str, Any]]:
@@ -287,6 +291,8 @@ class SeasonalTrendImportTrial:
         high_confidence = [item for item in matched if item["confidence_score"] >= 60]
         return {
             "import_trial_ready": True,
+            "primary_sample_file": DEFAULT_SAMPLE_FILE,
+            "source_files": sorted({record.get("source_file") for record in records if record.get("source_file")}),
             "imported_keyword_count": len(records),
             "matched_seasonal_signals": len(matched),
             "high_confidence_matches": len(high_confidence),

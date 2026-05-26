@@ -33,3 +33,7 @@
 
 ## Next Round Suggestion
 Use this trial to harden the schema before connecting any approved read-only live trend source.
+## Visualization Update
+- Locked analysis to `google_trends_japan_travel_sample.csv`.
+- Added visual cards, season-market heat bars, demand ranking bars, pain point chips, keyword confidence bars, and noisy signal visibility in the Control Center.
+- Browser verification confirmed 5 visual cards, 22 bars, and 8 pain chips are visible.

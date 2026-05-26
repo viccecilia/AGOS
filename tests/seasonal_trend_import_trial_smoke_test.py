@@ -25,7 +25,7 @@ def main() -> None:
 
     assert report["status"] == "seasonal_trend_import_trial_ready"
     assert len(records) >= 8, "at least 8 sample trend records must be imported"
-    assert any(record["source_type"] == "csv" for record in records), "sample CSV must be loaded"
+    assert any(record["source_file"] == "google_trends_japan_travel_sample.csv" for record in records), "sample CSV must be loaded"
     assert all(record["sample_data_only"] is True for record in records), "records must be sample-only"
     assert all(record["real_google_trends_api_connected"] is False for record in records)
     assert all(record["write_operations_enabled"] is False for record in records)
@@ -41,6 +41,8 @@ def main() -> None:
     assert all(item["confirmed_demand"] is False for item in noisy), "noisy signals cannot be confirmed demand"
 
     assert summary["imported_keyword_count"] == len(records)
+    assert summary["primary_sample_file"] == "google_trends_japan_travel_sample.csv"
+    assert summary["source_files"] == ["google_trends_japan_travel_sample.csv"]
     assert summary["matched_seasonal_signals"] == len(matched)
     assert summary["sample_data_only"] is True
     assert summary["confirmed_demand"] is False

@@ -1,0 +1,60 @@
+{
+  "round_id": "ROUND-PREDICT-002",
+  "update": "seasonal_trend_sample_visualization",
+  "status": "passed",
+  "sample_file": "runtime/seasonal_demand_calendar/import_samples/google_trends_japan_travel_sample.csv",
+  "summary": {
+    "api_status": "real_google_trends_api_not_connected",
+    "confirmed_demand": false,
+    "data_source_status": "sample_csv_json_manual_import_only",
+    "demand_type_count": 9,
+    "high_confidence_matches": 12,
+    "human_review_queue_items": 14,
+    "import_trial_ready": true,
+    "imported_keyword_count": 14,
+    "market_heatmap_rows": 13,
+    "matched_seasonal_signals": 14,
+    "mobility_pain_point_count": 26,
+    "noisy_low_confidence_signals": 2,
+    "primary_sample_file": "google_trends_japan_travel_sample.csv",
+    "sample_data_only": true,
+    "source_files": [
+      "google_trends_japan_travel_sample.csv"
+    ],
+    "write_action_status": "blocked"
+  },
+  "validation_commands": [
+    {
+      "command": "python -m compileall services tests",
+      "status": "passed"
+    },
+    {
+      "command": "python tests\\seasonal_demand_calendar_smoke_test.py",
+      "status": "passed"
+    },
+    {
+      "command": "python tests\\seasonal_trend_import_trial_smoke_test.py",
+      "status": "passed"
+    },
+    {
+      "command": "python tests\\war_room_runtime_ui_smoke_test.py",
+      "status": "passed"
+    },
+    {
+      "command": "node project-state visualization check",
+      "status": "passed"
+    },
+    {
+      "command": "node --check control_center_runtime_script.js",
+      "status": "passed"
+    }
+  ],
+  "browser_visuals": {
+    "visual_cards": 5,
+    "heat_bars": 22,
+    "pain_chips": 8,
+    "sample_file_visible": true,
+    "api_not_connected_visible": true,
+    "write_blocked_visible": true
+  }
+}
