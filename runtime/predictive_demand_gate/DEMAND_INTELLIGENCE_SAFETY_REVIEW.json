@@ -1,0 +1,53 @@
+{
+  "all_actions_human_gated": true,
+  "automated_external_action_flags": {
+    "auto_contact_business_enabled": false,
+    "auto_contact_customer_enabled": false,
+    "auto_contact_driver_enabled": false,
+    "auto_dispatch_enabled": false,
+    "auto_dm_enabled": false,
+    "auto_publish_enabled": false,
+    "auto_quote_enabled": false,
+    "write_operations_enabled": false
+  },
+  "automatic_external_execution_enabled": false,
+  "created_at": "2026-05-26T03:58:59+00:00",
+  "gps_dispatch_enabled": false,
+  "low_value_filter_active": true,
+  "noise_marked_high_value_risk": "controlled",
+  "phase_exit_safety": "passed_with_human_gate",
+  "prediction_not_real_outcome": true,
+  "real_time_crowd_data_connected": false,
+  "requires_human_review": true,
+  "review_id": "DEMAND_INTELLIGENCE_SAFETY_REVIEW",
+  "risk_review": [
+    {
+      "evidence": "Reports identify local sample/manual-import-ready data and prediction boundary.",
+      "mitigation": "Keep labels as predictive signals until live validated by human review.",
+      "risk": "sample_data_interpreted_as_real_demand",
+      "status": "controlled"
+    },
+    {
+      "evidence": "10 low-value signals separated from 18 high-value intents.",
+      "mitigation": "Continue human correction before operational use.",
+      "risk": "noise_marked_as_high_value",
+      "status": "controlled"
+    },
+    {
+      "evidence": {
+        "auto_contact_business_enabled": false,
+        "auto_contact_customer_enabled": false,
+        "auto_contact_driver_enabled": false,
+        "auto_dispatch_enabled": false,
+        "auto_dm_enabled": false,
+        "auto_publish_enabled": false,
+        "auto_quote_enabled": false,
+        "write_operations_enabled": false
+      },
+      "mitigation": "Do not enable posting, contacting, quoting, dispatch, or write APIs in this phase.",
+      "risk": "automatic_external_execution",
+      "status": "blocked"
+    }
+  ],
+  "sample_data_used": true
+}

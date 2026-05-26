@@ -46,6 +46,7 @@ from services.personality_evolution_gate import PersonalityEvolutionGate
 from services.personality_review_session import PersonalityReviewSession
 from services.platform_account_connection_center import PlatformAccountConnectionCenter
 from services.platform_credential_vault import PlatformCredentialVault
+from services.predictive_demand_gate import PredictiveDemandGate
 from services.real_feedback_capture_engine import RealFeedbackCaptureEngine
 from services.real_growth_validation_engine import RealGrowthValidationEngine
 from services.real_reply_attempt_engine import RealReplyAttemptEngine
@@ -181,6 +182,7 @@ class RuntimeUIBridge:
         location_demand_heatmap = LocationDemandHeatmapEngine().build(seasonal_demand_calendar.get("seasonalCalendar", []))
         mobility_demand_intent = MobilityDemandIntentEngine().build()
         demand_to_action_strategy = DemandToActionStrategyEngine().build()
+        predictive_demand_gate = PredictiveDemandGate().evaluate()
         read_only_trends = ReadOnlyTrendConnector().read_trends()
         api_rate_limit_guard = APIRateLimitGuard().evaluate()
         api_signal_normalization = APISignalNormalization().normalize(read_only_trends.get("platformTrends", []))
@@ -522,6 +524,11 @@ class RuntimeUIBridge:
             "localBusinessActions": demand_to_action_strategy.get("localBusinessActions", []),
             "driverOperationActions": demand_to_action_strategy.get("driverOperationActions", []),
             "demandActionStrategySummary": demand_to_action_strategy.get("demandActionStrategySummary", {}),
+            "predictiveDemandGate": predictive_demand_gate,
+            "predictiveDemandReport": predictive_demand_gate.get("predictiveDemandReport", {}),
+            "demandIntelligenceSafetyReview": predictive_demand_gate.get("demandIntelligenceSafetyReview", {}),
+            "predictiveDemandChecks": predictive_demand_gate.get("predictiveDemandChecks", []),
+            "predictiveDemandSummary": predictive_demand_gate.get("predictiveDemandSummary", {}),
             "readOnlyTrendConnector": read_only_trends,
             "platformTrends": read_only_trends.get("platformTrends", []),
             "platformTrendFeed": read_only_trends.get("platformTrendFeed", []),

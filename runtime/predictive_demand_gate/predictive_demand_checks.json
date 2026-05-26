@@ -1,0 +1,50 @@
+[
+  {
+    "capability": "Seasonal Demand Calendar",
+    "check_id": "PREDICT-CHECK-001",
+    "evidence": [
+      "seasonal_calendar.json",
+      "seasonal_keywords.json",
+      "seasonal_monitoring_plan.json"
+    ],
+    "readiness_key": "time_trend_readiness",
+    "result": "10 seasons and 40 keywords available.",
+    "status": "passed"
+  },
+  {
+    "capability": "Location Demand Heatmap",
+    "check_id": "PREDICT-CHECK-002",
+    "evidence": [
+      "location_heatmap.json",
+      "location_mobility_risk.json",
+      "location_heatmap_summary.json"
+    ],
+    "readiness_key": "location_trend_readiness",
+    "result": "16 locations and 16 hot locations available.",
+    "status": "passed"
+  },
+  {
+    "capability": "Mobility Demand Intent",
+    "check_id": "PREDICT-CHECK-003",
+    "evidence": [
+      "mobility_intents.json",
+      "high_value_mobility_intents.json",
+      "low_value_signals.json"
+    ],
+    "readiness_key": "demand_intent_readiness",
+    "result": "18 high-value intents and 10 low-value signals separated.",
+    "status": "passed"
+  },
+  {
+    "capability": "Demand-to-Action Strategy",
+    "check_id": "PREDICT-CHECK-004",
+    "evidence": [
+      "platform_content_actions.json",
+      "local_business_actions.json",
+      "driver_operation_actions.json"
+    ],
+    "readiness_key": "action_strategy_readiness",
+    "result": "46 actions generated; human review required=True.",
+    "status": "passed"
+  }
+]
