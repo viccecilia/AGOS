@@ -22,6 +22,7 @@ from services.best_answer_learning_engine import BestAnswerLearningEngine
 from services.autonomous_growth_preparation_gate import AutonomousGrowthPreparationGate
 from services.collection_compliance_guard import CollectionComplianceGuard
 from services.controlled_api_collection_gate import ControlledAPICollectionGate
+from services.cross_platform_promotion_plan_engine import CrossPlatformPromotionPlanEngine
 from services.cross_platform_expansion_engine import CrossPlatformExpansionEngine
 from services.demand_to_action_strategy_engine import DemandToActionStrategyEngine
 from services.daily_question_import_engine import DailyQuestionImportEngine
@@ -189,6 +190,7 @@ class RuntimeUIBridge:
         problem_seeker_loop = ProblemSeekerLoop().run()
         opportunity_qualification = OpportunityQualificationEngine().qualify()
         answer_to_homepage_drafts = AnswerToHomepageDraftEngine().build()
+        cross_platform_promotion_plan = CrossPlatformPromotionPlanEngine().build()
         location_demand_heatmap = LocationDemandHeatmapEngine().build(seasonal_demand_calendar.get("seasonalCalendar", []))
         mobility_demand_intent = MobilityDemandIntentEngine().build()
         demand_to_action_strategy = DemandToActionStrategyEngine().build()
@@ -547,6 +549,12 @@ class RuntimeUIBridge:
             "platformDraftVariants": answer_to_homepage_drafts.get("platformDraftVariants", []),
             "draftRiskReview": answer_to_homepage_drafts.get("draftRiskReview", {}),
             "answerToHomepageSummary": answer_to_homepage_drafts.get("answerToHomepageSummary", {}),
+            "crossPlatformPromotionPlan": cross_platform_promotion_plan,
+            "promotionPlans": cross_platform_promotion_plan.get("promotionPlans", []),
+            "contentCalendarDraft": cross_platform_promotion_plan.get("contentCalendarDraft", []),
+            "platformPriority": cross_platform_promotion_plan.get("platformPriority", []),
+            "promotionPlanReviewQueue": cross_platform_promotion_plan.get("promotionPlanReviewQueue", []),
+            "crossPlatformPromotionSummary": cross_platform_promotion_plan.get("crossPlatformPromotionSummary", {}),
             "locationDemandHeatmap": location_demand_heatmap,
             "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),

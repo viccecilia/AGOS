@@ -1,0 +1,18 @@
+{
+  "all_plans_need_human_review": true,
+  "auto_publish_allowed": false,
+  "content_calendar_items": 30,
+  "cross_platform_promotion_ready": true,
+  "plan_count": 48,
+  "platform_count": 8,
+  "recommended_next_round": "ROUND-GROWTH-PLUGIN-006 Promotion Review Queue UI",
+  "review_queue_count": 48,
+  "top_platforms": [
+    "Reddit",
+    "SEO",
+    "Xiaohongshu",
+    "TikTok",
+    "YouTube"
+  ],
+  "write_api_called": false
+}

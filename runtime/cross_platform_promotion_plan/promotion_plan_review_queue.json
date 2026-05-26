@@ -1,0 +1,770 @@
+[
+  {
+    "auto_publish_allowed": false,
+    "content_format": "reply",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-001",
+    "plan_id": "PROMO-PLAN-001",
+    "platform": "Reddit",
+    "review_id": "PROMO-REVIEW-001",
+    "review_status": "needs_human_review",
+    "risk_level": "medium"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "short_video_hook",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-001",
+    "plan_id": "PROMO-PLAN-002",
+    "platform": "TikTok",
+    "review_id": "PROMO-REVIEW-002",
+    "review_status": "needs_human_review",
+    "risk_level": "medium"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "carousel_idea",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-001",
+    "plan_id": "PROMO-PLAN-003",
+    "platform": "Instagram",
+    "review_id": "PROMO-REVIEW-003",
+    "review_status": "needs_human_review",
+    "risk_level": "low"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "short_post",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-001",
+    "plan_id": "PROMO-PLAN-004",
+    "platform": "X",
+    "review_id": "PROMO-REVIEW-004",
+    "review_status": "needs_human_review",
+    "risk_level": "medium"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "short_topic",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-001",
+    "plan_id": "PROMO-PLAN-005",
+    "platform": "YouTube",
+    "review_id": "PROMO-REVIEW-005",
+    "review_status": "needs_human_review",
+    "risk_level": "low"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "conversation_post",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-001",
+    "plan_id": "PROMO-PLAN-006",
+    "platform": "Threads",
+    "review_id": "PROMO-REVIEW-006",
+    "review_status": "needs_human_review",
+    "risk_level": "low"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "article_idea",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-001",
+    "plan_id": "PROMO-PLAN-007",
+    "platform": "SEO",
+    "review_id": "PROMO-REVIEW-007",
+    "review_status": "needs_human_review",
+    "risk_level": "low"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "note_angle",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-001",
+    "plan_id": "PROMO-PLAN-008",
+    "platform": "Xiaohongshu",
+    "review_id": "PROMO-REVIEW-008",
+    "review_status": "needs_human_review",
+    "risk_level": "medium"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "reply",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-002",
+    "plan_id": "PROMO-PLAN-009",
+    "platform": "Reddit",
+    "review_id": "PROMO-REVIEW-009",
+    "review_status": "needs_human_review",
+    "risk_level": "medium"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "short_video_hook",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-002",
+    "plan_id": "PROMO-PLAN-010",
+    "platform": "TikTok",
+    "review_id": "PROMO-REVIEW-010",
+    "review_status": "needs_human_review",
+    "risk_level": "medium"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "carousel_idea",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-002",
+    "plan_id": "PROMO-PLAN-011",
+    "platform": "Instagram",
+    "review_id": "PROMO-REVIEW-011",
+    "review_status": "needs_human_review",
+    "risk_level": "low"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "short_post",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-002",
+    "plan_id": "PROMO-PLAN-012",
+    "platform": "X",
+    "review_id": "PROMO-REVIEW-012",
+    "review_status": "needs_human_review",
+    "risk_level": "medium"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "short_topic",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-002",
+    "plan_id": "PROMO-PLAN-013",
+    "platform": "YouTube",
+    "review_id": "PROMO-REVIEW-013",
+    "review_status": "needs_human_review",
+    "risk_level": "low"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "conversation_post",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-002",
+    "plan_id": "PROMO-PLAN-014",
+    "platform": "Threads",
+    "review_id": "PROMO-REVIEW-014",
+    "review_status": "needs_human_review",
+    "risk_level": "low"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "article_idea",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-002",
+    "plan_id": "PROMO-PLAN-015",
+    "platform": "SEO",
+    "review_id": "PROMO-REVIEW-015",
+    "review_status": "needs_human_review",
+    "risk_level": "low"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "note_angle",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-002",
+    "plan_id": "PROMO-PLAN-016",
+    "platform": "Xiaohongshu",
+    "review_id": "PROMO-REVIEW-016",
+    "review_status": "needs_human_review",
+    "risk_level": "medium"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "reply",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-003",
+    "plan_id": "PROMO-PLAN-017",
+    "platform": "Reddit",
+    "review_id": "PROMO-REVIEW-017",
+    "review_status": "needs_human_review",
+    "risk_level": "medium"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "short_video_hook",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-003",
+    "plan_id": "PROMO-PLAN-018",
+    "platform": "TikTok",
+    "review_id": "PROMO-REVIEW-018",
+    "review_status": "needs_human_review",
+    "risk_level": "medium"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "carousel_idea",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-003",
+    "plan_id": "PROMO-PLAN-019",
+    "platform": "Instagram",
+    "review_id": "PROMO-REVIEW-019",
+    "review_status": "needs_human_review",
+    "risk_level": "low"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "short_post",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-003",
+    "plan_id": "PROMO-PLAN-020",
+    "platform": "X",
+    "review_id": "PROMO-REVIEW-020",
+    "review_status": "needs_human_review",
+    "risk_level": "medium"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "short_topic",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-003",
+    "plan_id": "PROMO-PLAN-021",
+    "platform": "YouTube",
+    "review_id": "PROMO-REVIEW-021",
+    "review_status": "needs_human_review",
+    "risk_level": "low"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "conversation_post",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-003",
+    "plan_id": "PROMO-PLAN-022",
+    "platform": "Threads",
+    "review_id": "PROMO-REVIEW-022",
+    "review_status": "needs_human_review",
+    "risk_level": "low"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "article_idea",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-003",
+    "plan_id": "PROMO-PLAN-023",
+    "platform": "SEO",
+    "review_id": "PROMO-REVIEW-023",
+    "review_status": "needs_human_review",
+    "risk_level": "low"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "note_angle",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-003",
+    "plan_id": "PROMO-PLAN-024",
+    "platform": "Xiaohongshu",
+    "review_id": "PROMO-REVIEW-024",
+    "review_status": "needs_human_review",
+    "risk_level": "medium"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "reply",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-004",
+    "plan_id": "PROMO-PLAN-025",
+    "platform": "Reddit",
+    "review_id": "PROMO-REVIEW-025",
+    "review_status": "needs_human_review",
+    "risk_level": "medium"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "short_video_hook",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-004",
+    "plan_id": "PROMO-PLAN-026",
+    "platform": "TikTok",
+    "review_id": "PROMO-REVIEW-026",
+    "review_status": "needs_human_review",
+    "risk_level": "medium"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "carousel_idea",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-004",
+    "plan_id": "PROMO-PLAN-027",
+    "platform": "Instagram",
+    "review_id": "PROMO-REVIEW-027",
+    "review_status": "needs_human_review",
+    "risk_level": "low"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "short_post",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-004",
+    "plan_id": "PROMO-PLAN-028",
+    "platform": "X",
+    "review_id": "PROMO-REVIEW-028",
+    "review_status": "needs_human_review",
+    "risk_level": "medium"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "short_topic",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-004",
+    "plan_id": "PROMO-PLAN-029",
+    "platform": "YouTube",
+    "review_id": "PROMO-REVIEW-029",
+    "review_status": "needs_human_review",
+    "risk_level": "low"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "conversation_post",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-004",
+    "plan_id": "PROMO-PLAN-030",
+    "platform": "Threads",
+    "review_id": "PROMO-REVIEW-030",
+    "review_status": "needs_human_review",
+    "risk_level": "low"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "article_idea",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-004",
+    "plan_id": "PROMO-PLAN-031",
+    "platform": "SEO",
+    "review_id": "PROMO-REVIEW-031",
+    "review_status": "needs_human_review",
+    "risk_level": "low"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "note_angle",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-004",
+    "plan_id": "PROMO-PLAN-032",
+    "platform": "Xiaohongshu",
+    "review_id": "PROMO-REVIEW-032",
+    "review_status": "needs_human_review",
+    "risk_level": "medium"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "reply",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-005",
+    "plan_id": "PROMO-PLAN-033",
+    "platform": "Reddit",
+    "review_id": "PROMO-REVIEW-033",
+    "review_status": "needs_human_review",
+    "risk_level": "medium"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "short_video_hook",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-005",
+    "plan_id": "PROMO-PLAN-034",
+    "platform": "TikTok",
+    "review_id": "PROMO-REVIEW-034",
+    "review_status": "needs_human_review",
+    "risk_level": "medium"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "carousel_idea",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-005",
+    "plan_id": "PROMO-PLAN-035",
+    "platform": "Instagram",
+    "review_id": "PROMO-REVIEW-035",
+    "review_status": "needs_human_review",
+    "risk_level": "low"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "short_post",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-005",
+    "plan_id": "PROMO-PLAN-036",
+    "platform": "X",
+    "review_id": "PROMO-REVIEW-036",
+    "review_status": "needs_human_review",
+    "risk_level": "medium"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "short_topic",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-005",
+    "plan_id": "PROMO-PLAN-037",
+    "platform": "YouTube",
+    "review_id": "PROMO-REVIEW-037",
+    "review_status": "needs_human_review",
+    "risk_level": "low"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "conversation_post",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-005",
+    "plan_id": "PROMO-PLAN-038",
+    "platform": "Threads",
+    "review_id": "PROMO-REVIEW-038",
+    "review_status": "needs_human_review",
+    "risk_level": "low"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "article_idea",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-005",
+    "plan_id": "PROMO-PLAN-039",
+    "platform": "SEO",
+    "review_id": "PROMO-REVIEW-039",
+    "review_status": "needs_human_review",
+    "risk_level": "low"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "note_angle",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-005",
+    "plan_id": "PROMO-PLAN-040",
+    "platform": "Xiaohongshu",
+    "review_id": "PROMO-REVIEW-040",
+    "review_status": "needs_human_review",
+    "risk_level": "medium"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "reply",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-006",
+    "plan_id": "PROMO-PLAN-041",
+    "platform": "Reddit",
+    "review_id": "PROMO-REVIEW-041",
+    "review_status": "needs_human_review",
+    "risk_level": "medium"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "short_video_hook",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-006",
+    "plan_id": "PROMO-PLAN-042",
+    "platform": "TikTok",
+    "review_id": "PROMO-REVIEW-042",
+    "review_status": "needs_human_review",
+    "risk_level": "medium"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "carousel_idea",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-006",
+    "plan_id": "PROMO-PLAN-043",
+    "platform": "Instagram",
+    "review_id": "PROMO-REVIEW-043",
+    "review_status": "needs_human_review",
+    "risk_level": "low"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "short_post",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-006",
+    "plan_id": "PROMO-PLAN-044",
+    "platform": "X",
+    "review_id": "PROMO-REVIEW-044",
+    "review_status": "needs_human_review",
+    "risk_level": "medium"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "short_topic",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-006",
+    "plan_id": "PROMO-PLAN-045",
+    "platform": "YouTube",
+    "review_id": "PROMO-REVIEW-045",
+    "review_status": "needs_human_review",
+    "risk_level": "low"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "conversation_post",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-006",
+    "plan_id": "PROMO-PLAN-046",
+    "platform": "Threads",
+    "review_id": "PROMO-REVIEW-046",
+    "review_status": "needs_human_review",
+    "risk_level": "low"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "article_idea",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-006",
+    "plan_id": "PROMO-PLAN-047",
+    "platform": "SEO",
+    "review_id": "PROMO-REVIEW-047",
+    "review_status": "needs_human_review",
+    "risk_level": "low"
+  },
+  {
+    "auto_publish_allowed": false,
+    "content_format": "note_angle",
+    "decision_options": [
+      "approve",
+      "reject",
+      "modify",
+      "postpone"
+    ],
+    "draft_id": "HOME-DRAFT-006",
+    "plan_id": "PROMO-PLAN-048",
+    "platform": "Xiaohongshu",
+    "review_id": "PROMO-REVIEW-048",
+    "review_status": "needs_human_review",
+    "risk_level": "medium"
+  }
+]

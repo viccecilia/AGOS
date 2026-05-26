@@ -1,0 +1,66 @@
+[
+  {
+    "auto_publish_allowed": false,
+    "plan_count": 6,
+    "platform": "Reddit",
+    "priority_reason": "Practical tradeoff answer before any recommendation",
+    "priority_score": 92,
+    "review_status": "needs_human_review"
+  },
+  {
+    "auto_publish_allowed": false,
+    "plan_count": 6,
+    "platform": "SEO",
+    "priority_reason": "Japan airport transfer vs train: how to decide",
+    "priority_score": 84,
+    "review_status": "needs_human_review"
+  },
+  {
+    "auto_publish_allowed": false,
+    "plan_count": 6,
+    "platform": "Xiaohongshu",
+    "priority_reason": "日本机场到酒店别只看交通费",
+    "priority_score": 82,
+    "review_status": "needs_human_review"
+  },
+  {
+    "auto_publish_allowed": false,
+    "plan_count": 6,
+    "platform": "TikTok",
+    "priority_reason": "Do not choose Japan transport by price alone",
+    "priority_score": 80,
+    "review_status": "needs_human_review"
+  },
+  {
+    "auto_publish_allowed": false,
+    "plan_count": 6,
+    "platform": "YouTube",
+    "priority_reason": "Airport-to-hotel planning mistakes in Japan",
+    "priority_score": 76,
+    "review_status": "needs_human_review"
+  },
+  {
+    "auto_publish_allowed": false,
+    "plan_count": 6,
+    "platform": "Instagram",
+    "priority_reason": "Save this Japan arrival checklist",
+    "priority_score": 72,
+    "review_status": "needs_human_review"
+  },
+  {
+    "auto_publish_allowed": false,
+    "plan_count": 6,
+    "platform": "X",
+    "priority_reason": "Japan travel mistake: station-to-station time is not door-to-door time",
+    "priority_score": 70,
+    "review_status": "needs_human_review"
+  },
+  {
+    "auto_publish_allowed": false,
+    "plan_count": 6,
+    "platform": "Threads",
+    "priority_reason": "A simple way to decide train vs transfer in Japan",
+    "priority_score": 68,
+    "review_status": "needs_human_review"
+  }
+]

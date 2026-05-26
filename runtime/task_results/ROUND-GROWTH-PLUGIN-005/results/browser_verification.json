@@ -1,0 +1,17 @@
+{
+  "current_round": "ROUND-GROWTH-PLUGIN-005 / AGOS_CROSS_PLATFORM_PROMOTION_PLAN_ENGINE",
+  "panel_exists": true,
+  "round_id": "ROUND-GROWTH-PLUGIN-005",
+  "shows_auto_publish_disabled": true,
+  "shows_calendar": true,
+  "shows_content_format": true,
+  "shows_plan": true,
+  "shows_platforms": true,
+  "shows_priority": true,
+  "shows_review_status": true,
+  "shows_risk_level": true,
+  "shows_soft_cta": true,
+  "url": "http://127.0.0.1:8765/project_control_center.html?runtime_ui=1&cache_bust=1779790450335#war-room-growth",
+  "verified_at": "2026-05-26T10:14:23.557Z",
+  "version": "0.1.120"
+}
