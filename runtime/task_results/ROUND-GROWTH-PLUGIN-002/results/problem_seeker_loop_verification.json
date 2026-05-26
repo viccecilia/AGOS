@@ -1,0 +1,46 @@
+{
+  "all_candidates_need_human_review": true,
+  "auto_post_allowed": false,
+  "auto_reply_allowed": false,
+  "candidate_count": 13,
+  "command_status": "passed",
+  "control_center_version": "0.1.117",
+  "current_round": "ROUND-GROWTH-PLUGIN-002 / AGOS_PROBLEM_SEEKER_LOOP",
+  "home_appliance_pollution_detected": false,
+  "problem_seeker_ready": true,
+  "real_platform_api_called": false,
+  "required_commands": [
+    "python -m compileall services tests",
+    "python tests\\merchant_promotion_workspace_smoke_test.py",
+    "python tests\\problem_seeker_loop_smoke_test.py",
+    "python tests\\war_room_runtime_ui_smoke_test.py"
+  ],
+  "round_id": "ROUND-GROWTH-PLUGIN-002",
+  "top_platforms": [
+    [
+      "Google Trends style sample",
+      4
+    ],
+    [
+      "Reddit",
+      3
+    ],
+    [
+      "TikTok",
+      2
+    ],
+    [
+      "YouTube",
+      2
+    ],
+    [
+      "Xiaohongshu",
+      1
+    ],
+    [
+      "Threads",
+      1
+    ]
+  ],
+  "workspace_isolation_checked": true
+}

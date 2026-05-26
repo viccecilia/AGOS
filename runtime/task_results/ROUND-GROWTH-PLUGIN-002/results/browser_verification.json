@@ -1,0 +1,14 @@
+{
+  "current_round": "ROUND-GROWTH-PLUGIN-002 / AGOS_PROBLEM_SEEKER_LOOP",
+  "panel_exists": true,
+  "round_id": "ROUND-GROWTH-PLUGIN-002",
+  "shows_active_merchant": true,
+  "shows_auto_reply_disabled": true,
+  "shows_candidate_questions": true,
+  "shows_human_review": true,
+  "shows_source_platforms": true,
+  "shows_workspace_isolation": true,
+  "url": "http://127.0.0.1:8765/project_control_center.html?runtime_ui=1&cache_bust=1779789438478#war-room-growth",
+  "verified_at": "2026-05-26T09:57:31.417Z",
+  "version": "0.1.117"
+}

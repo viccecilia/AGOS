@@ -1,0 +1,95 @@
+{
+  "active_merchant": "Japan AI Guide App",
+  "active_workspace": "jag_app_growth",
+  "all_candidates_need_human_review": true,
+  "auto_post_allowed": false,
+  "auto_reply_allowed": false,
+  "candidate_count": 13,
+  "feed_items": 13,
+  "home_appliance_pollution_detected": false,
+  "problem_seeker_ready": true,
+  "real_platform_api_called": false,
+  "sample_data_only": true,
+  "supported_sources": [
+    "CSV",
+    "JSON",
+    "RSS",
+    "manual_import",
+    "read_only_api_output",
+    "runtime_normalized_live_data",
+    "seasonal_trend_import_sample",
+    "merchant_promotion_workspace"
+  ],
+  "top_markets": [
+    [
+      "US",
+      3
+    ],
+    [
+      "China",
+      3
+    ],
+    [
+      "Japan",
+      3
+    ],
+    [
+      "Taiwan",
+      2
+    ],
+    [
+      "Europe",
+      1
+    ],
+    [
+      "Southeast Asia",
+      1
+    ]
+  ],
+  "top_platforms": [
+    [
+      "Google Trends style sample",
+      4
+    ],
+    [
+      "Reddit",
+      3
+    ],
+    [
+      "TikTok",
+      2
+    ],
+    [
+      "YouTube",
+      2
+    ],
+    [
+      "Xiaohongshu",
+      1
+    ],
+    [
+      "Threads",
+      1
+    ]
+  ],
+  "top_sources": [
+    [
+      "merchant_promotion_workspace",
+      4
+    ],
+    [
+      "seasonal_trend_import_sample",
+      4
+    ],
+    [
+      "runtime_normalized_live_data",
+      3
+    ],
+    [
+      "manual_import",
+      2
+    ]
+  ],
+  "workspace_isolation_checked": true,
+  "write_api_called": false
+}

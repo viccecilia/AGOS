@@ -1,0 +1,106 @@
+{
+  "intent_counts": [
+    [
+      "airport_transfer",
+      6
+    ],
+    [
+      "family_airport_transfer",
+      1
+    ],
+    [
+      "Tokyo transport anxiety",
+      1
+    ],
+    [
+      "Tokyo first trip mistakes",
+      1
+    ],
+    [
+      "private_charter",
+      1
+    ],
+    [
+      "sightseeing_route",
+      1
+    ],
+    [
+      "Japan travel planning",
+      1
+    ],
+    [
+      "elderly_support",
+      1
+    ]
+  ],
+  "market_counts": [
+    [
+      "US",
+      3
+    ],
+    [
+      "China",
+      3
+    ],
+    [
+      "Japan",
+      3
+    ],
+    [
+      "Taiwan",
+      2
+    ],
+    [
+      "Europe",
+      1
+    ],
+    [
+      "Southeast Asia",
+      1
+    ]
+  ],
+  "platform_counts": [
+    [
+      "Google Trends style sample",
+      4
+    ],
+    [
+      "Reddit",
+      3
+    ],
+    [
+      "TikTok",
+      2
+    ],
+    [
+      "YouTube",
+      2
+    ],
+    [
+      "Xiaohongshu",
+      1
+    ],
+    [
+      "Threads",
+      1
+    ]
+  ],
+  "source_type_counts": [
+    [
+      "merchant_promotion_workspace",
+      4
+    ],
+    [
+      "seasonal_trend_import_sample",
+      4
+    ],
+    [
+      "runtime_normalized_live_data",
+      3
+    ],
+    [
+      "manual_import",
+      2
+    ]
+  ]
+}
