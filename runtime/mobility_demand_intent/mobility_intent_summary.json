@@ -1,0 +1,43 @@
+{
+  "auto_customer_contact_enabled": false,
+  "auto_dispatch_enabled": false,
+  "auto_post_enabled": false,
+  "auto_quote_enabled": false,
+  "auto_reply_enabled": false,
+  "high_value_intents": 18,
+  "high_value_routes": [
+    "airport_transfer_strategy",
+    "event_pickup_strategy",
+    "family_support_strategy",
+    "luggage_transfer_strategy",
+    "private_charter_strategy",
+    "public_transport_anxiety_reply_strategy"
+  ],
+  "intent_engine_ready": true,
+  "intent_types_detected": [
+    "airport_transfer",
+    "event_pickup",
+    "family_trip",
+    "luggage_heavy_trip",
+    "no_real_mobility_intent",
+    "price_comparison",
+    "private_charter",
+    "public_transport_anxiety"
+  ],
+  "intents_classified": 28,
+  "low_value_reasons": [
+    "below_high_value_threshold",
+    "casual_chatter"
+  ],
+  "low_value_signals": 10,
+  "supported_input_sources": [
+    "normalized_live_data",
+    "question_inbox",
+    "scout_intelligence",
+    "google_trends_keyword_signal",
+    "local_csv",
+    "local_json",
+    "manual_import"
+  ],
+  "write_operations_enabled": false
+}

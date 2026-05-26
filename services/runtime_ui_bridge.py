@@ -37,6 +37,7 @@ from services.live_collection_runner import LiveCollectionRunner
 from services.live_data_import_to_memory import LiveDataImportToMemory
 from services.live_data_normalization_pipeline import LiveDataNormalizationPipeline
 from services.location_demand_heatmap_engine import LocationDemandHeatmapEngine
+from services.mobility_demand_intent_engine import MobilityDemandIntentEngine
 from services.personality_drift_engine import PersonalityDriftEngine
 from services.personality_isolation_engine import PersonalityIsolationEngine
 from services.personality_memory_deposit import PersonalityMemoryDeposit
@@ -177,6 +178,7 @@ class RuntimeUIBridge:
         controlled_api_collection_gate = ControlledAPICollectionGate().evaluate(state.get("workspace", "JAG-LAB"))
         seasonal_demand_calendar = SeasonalDemandCalendarEngine().build()
         location_demand_heatmap = LocationDemandHeatmapEngine().build(seasonal_demand_calendar.get("seasonalCalendar", []))
+        mobility_demand_intent = MobilityDemandIntentEngine().build()
         read_only_trends = ReadOnlyTrendConnector().read_trends()
         api_rate_limit_guard = APIRateLimitGuard().evaluate()
         api_signal_normalization = APISignalNormalization().normalize(read_only_trends.get("platformTrends", []))
@@ -508,6 +510,11 @@ class RuntimeUIBridge:
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),
             "locationMobilityRisk": location_demand_heatmap.get("locationMobilityRisk", []),
             "locationHeatmapSummary": location_demand_heatmap.get("locationHeatmapSummary", {}),
+            "mobilityDemandIntent": mobility_demand_intent,
+            "mobilityIntents": mobility_demand_intent.get("mobilityIntents", []),
+            "highValueMobilityIntents": mobility_demand_intent.get("highValueMobilityIntents", []),
+            "lowValueSignals": mobility_demand_intent.get("lowValueSignals", []),
+            "mobilityIntentSummary": mobility_demand_intent.get("mobilityIntentSummary", {}),
             "readOnlyTrendConnector": read_only_trends,
             "platformTrends": read_only_trends.get("platformTrends", []),
             "platformTrendFeed": read_only_trends.get("platformTrendFeed", []),
