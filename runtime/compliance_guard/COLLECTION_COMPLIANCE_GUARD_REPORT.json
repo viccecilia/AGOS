@@ -1,0 +1,154 @@
+{
+  "complianceEvents": [
+    {
+      "auto_interaction": false,
+      "automated_login_scrape": false,
+      "bypass_platform_limits": false,
+      "event_id": "LIVE-COLLECT-0001",
+      "minute_bucket": "2026-05-26T02:10",
+      "operation": "hashtag search / keyword search / public analytics / trend search",
+      "platform": "Reddit",
+      "polling_window": "local_public_intelligence_window",
+      "query": "Tokyo transport anxiety",
+      "source_boundary": "read-only live collection; public intelligence only",
+      "write_api_used": false
+    },
+    {
+      "auto_interaction": false,
+      "automated_login_scrape": false,
+      "bypass_platform_limits": false,
+      "event_id": "LIVE-COLLECT-0002",
+      "minute_bucket": "2026-05-26T02:10",
+      "operation": "hashtag search / keyword search / public analytics / trend search",
+      "platform": "YouTube",
+      "polling_window": "local_public_intelligence_window",
+      "query": "Japan travel planning",
+      "source_boundary": "read-only live collection; public intelligence only",
+      "write_api_used": false
+    },
+    {
+      "auto_interaction": false,
+      "automated_login_scrape": false,
+      "bypass_platform_limits": false,
+      "event_id": "LIVE-COLLECT-0003",
+      "minute_bucket": "2026-05-26T02:10",
+      "operation": "hashtag search / keyword search / public analytics / trend search",
+      "platform": "TikTok",
+      "polling_window": "local_public_intelligence_window",
+      "query": "Tokyo first trip mistakes",
+      "source_boundary": "read-only live collection; public intelligence only",
+      "write_api_used": false
+    },
+    {
+      "auto_interaction": false,
+      "automated_login_scrape": false,
+      "bypass_platform_limits": false,
+      "event_id": "LIVE-COLLECT-0004",
+      "minute_bucket": "2026-05-26T02:10",
+      "operation": "hashtag search / keyword search / public analytics / trend search",
+      "platform": "X",
+      "polling_window": "local_public_intelligence_window",
+      "query": "Japan train pass",
+      "source_boundary": "read-only live collection; public intelligence only",
+      "write_api_used": false
+    }
+  ],
+  "complianceGuardSummary": {
+    "auto_interaction_allowed": false,
+    "automated_login_scrape_allowed": false,
+    "blocked": 0,
+    "blocking_risk": false,
+    "critical": 0,
+    "dm_enabled": false,
+    "follow_enabled": false,
+    "guard_ready": true,
+    "highest_severity": "low",
+    "like_enabled": false,
+    "platform_limit_bypass_allowed": false,
+    "post_enabled": false,
+    "read_only_collection_allowed": true,
+    "reply_enabled": false,
+    "risk_items": 4,
+    "safe": 4,
+    "watch": 0,
+    "write_api_allowed": false
+  },
+  "complianceRiskFeed": [
+    {
+      "automatic_interaction_enabled": false,
+      "blocked_action": "none",
+      "checked_at": "2026-05-26T02:10:13+00:00",
+      "evidence": "Reddit collected 1/6 events in minute bucket 2026-05-26T02:10.",
+      "platform": "Reddit",
+      "recommended_action": "Continue read-only collection.",
+      "risk_id": "COMPLIANCE-RISK-0001",
+      "risk_type": "rate limit",
+      "severity": "low",
+      "status": "safe",
+      "write_operations_enabled": false
+    },
+    {
+      "automatic_interaction_enabled": false,
+      "blocked_action": "none",
+      "checked_at": "2026-05-26T02:10:13+00:00",
+      "evidence": "TikTok collected 1/6 events in minute bucket 2026-05-26T02:10.",
+      "platform": "TikTok",
+      "recommended_action": "Continue read-only collection.",
+      "risk_id": "COMPLIANCE-RISK-0002",
+      "risk_type": "rate limit",
+      "severity": "low",
+      "status": "safe",
+      "write_operations_enabled": false
+    },
+    {
+      "automatic_interaction_enabled": false,
+      "blocked_action": "none",
+      "checked_at": "2026-05-26T02:10:13+00:00",
+      "evidence": "X collected 1/6 events in minute bucket 2026-05-26T02:10.",
+      "platform": "X",
+      "recommended_action": "Continue read-only collection.",
+      "risk_id": "COMPLIANCE-RISK-0003",
+      "risk_type": "rate limit",
+      "severity": "low",
+      "status": "safe",
+      "write_operations_enabled": false
+    },
+    {
+      "automatic_interaction_enabled": false,
+      "blocked_action": "none",
+      "checked_at": "2026-05-26T02:10:13+00:00",
+      "evidence": "YouTube collected 1/6 events in minute bucket 2026-05-26T02:10.",
+      "platform": "YouTube",
+      "recommended_action": "Continue read-only collection.",
+      "risk_id": "COMPLIANCE-RISK-0004",
+      "risk_type": "rate limit",
+      "severity": "low",
+      "status": "safe",
+      "write_operations_enabled": false
+    }
+  ],
+  "created_at": "2026-05-26T02:10:13+00:00",
+  "forbiddenCollectionBehaviors": [
+    "auto_interaction",
+    "automated_login_scrape",
+    "bypass_platform_limits",
+    "write_api_usage"
+  ],
+  "limits": {
+    "polling_events_per_window": 5,
+    "repeated_query_limit": 2,
+    "requests_per_minute": 6
+  },
+  "report_id": "COLLECTION_COMPLIANCE_GUARD_REPORT",
+  "safetyBoundary": "Collection Compliance Guard allows read-only public intelligence collection only. It blocks automated login scraping, platform-limit bypass, write API usage, and automated interaction.",
+  "scope": "controlled_api_intelligence_collection",
+  "status": "compliance_guard_ready",
+  "writeApiOperations": [
+    "DM",
+    "follow",
+    "like",
+    "post",
+    "reply",
+    "write_api"
+  ]
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "automatic_interaction_enabled": false,
+    "blocked_action": "none",
+    "checked_at": "2026-05-26T02:10:13+00:00",
+    "evidence": "Reddit collected 1/6 events in minute bucket 2026-05-26T02:10.",
+    "platform": "Reddit",
+    "recommended_action": "Continue read-only collection.",
+    "risk_id": "COMPLIANCE-RISK-0001",
+    "risk_type": "rate limit",
+    "severity": "low",
+    "status": "safe",
+    "write_operations_enabled": false
+  },
+  {
+    "automatic_interaction_enabled": false,
+    "blocked_action": "none",
+    "checked_at": "2026-05-26T02:10:13+00:00",
+    "evidence": "TikTok collected 1/6 events in minute bucket 2026-05-26T02:10.",
+    "platform": "TikTok",
+    "recommended_action": "Continue read-only collection.",
+    "risk_id": "COMPLIANCE-RISK-0002",
+    "risk_type": "rate limit",
+    "severity": "low",
+    "status": "safe",
+    "write_operations_enabled": false
+  },
+  {
+    "automatic_interaction_enabled": false,
+    "blocked_action": "none",
+    "checked_at": "2026-05-26T02:10:13+00:00",
+    "evidence": "X collected 1/6 events in minute bucket 2026-05-26T02:10.",
+    "platform": "X",
+    "recommended_action": "Continue read-only collection.",
+    "risk_id": "COMPLIANCE-RISK-0003",
+    "risk_type": "rate limit",
+    "severity": "low",
+    "status": "safe",
+    "write_operations_enabled": false
+  },
+  {
+    "automatic_interaction_enabled": false,
+    "blocked_action": "none",
+    "checked_at": "2026-05-26T02:10:13+00:00",
+    "evidence": "YouTube collected 1/6 events in minute bucket 2026-05-26T02:10.",
+    "platform": "YouTube",
+    "recommended_action": "Continue read-only collection.",
+    "risk_id": "COMPLIANCE-RISK-0004",
+    "risk_type": "rate limit",
+    "severity": "low",
+    "status": "safe",
+    "write_operations_enabled": false
+  }
+]

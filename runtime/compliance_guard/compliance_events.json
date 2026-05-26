@@ -1,0 +1,54 @@
+[
+  {
+    "auto_interaction": false,
+    "automated_login_scrape": false,
+    "bypass_platform_limits": false,
+    "event_id": "LIVE-COLLECT-0001",
+    "minute_bucket": "2026-05-26T02:10",
+    "operation": "hashtag search / keyword search / public analytics / trend search",
+    "platform": "Reddit",
+    "polling_window": "local_public_intelligence_window",
+    "query": "Tokyo transport anxiety",
+    "source_boundary": "read-only live collection; public intelligence only",
+    "write_api_used": false
+  },
+  {
+    "auto_interaction": false,
+    "automated_login_scrape": false,
+    "bypass_platform_limits": false,
+    "event_id": "LIVE-COLLECT-0002",
+    "minute_bucket": "2026-05-26T02:10",
+    "operation": "hashtag search / keyword search / public analytics / trend search",
+    "platform": "YouTube",
+    "polling_window": "local_public_intelligence_window",
+    "query": "Japan travel planning",
+    "source_boundary": "read-only live collection; public intelligence only",
+    "write_api_used": false
+  },
+  {
+    "auto_interaction": false,
+    "automated_login_scrape": false,
+    "bypass_platform_limits": false,
+    "event_id": "LIVE-COLLECT-0003",
+    "minute_bucket": "2026-05-26T02:10",
+    "operation": "hashtag search / keyword search / public analytics / trend search",
+    "platform": "TikTok",
+    "polling_window": "local_public_intelligence_window",
+    "query": "Tokyo first trip mistakes",
+    "source_boundary": "read-only live collection; public intelligence only",
+    "write_api_used": false
+  },
+  {
+    "auto_interaction": false,
+    "automated_login_scrape": false,
+    "bypass_platform_limits": false,
+    "event_id": "LIVE-COLLECT-0004",
+    "minute_bucket": "2026-05-26T02:10",
+    "operation": "hashtag search / keyword search / public analytics / trend search",
+    "platform": "X",
+    "polling_window": "local_public_intelligence_window",
+    "query": "Japan train pass",
+    "source_boundary": "read-only live collection; public intelligence only",
+    "write_api_used": false
+  }
+]

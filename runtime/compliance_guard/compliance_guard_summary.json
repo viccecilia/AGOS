@@ -1,0 +1,20 @@
+{
+  "auto_interaction_allowed": false,
+  "automated_login_scrape_allowed": false,
+  "blocked": 0,
+  "blocking_risk": false,
+  "critical": 0,
+  "dm_enabled": false,
+  "follow_enabled": false,
+  "guard_ready": true,
+  "highest_severity": "low",
+  "like_enabled": false,
+  "platform_limit_bypass_allowed": false,
+  "post_enabled": false,
+  "read_only_collection_allowed": true,
+  "reply_enabled": false,
+  "risk_items": 4,
+  "safe": 4,
+  "watch": 0,
+  "write_api_allowed": false
+}

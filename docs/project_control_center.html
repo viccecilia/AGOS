@@ -531,28 +531,28 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.103",
+    "controlCenterVersion": "0.1.104",
     "lastUpdated": "2026-05-26",
     "currentPhase": "Controlled API Intelligence Collection",
-    "currentRound": "ROUND-API-COLLECT-003",
-    "nextRound": "ROUND-API-COLLECT-004 Collection Safety Gate",
+    "currentRound": "ROUND-API-COLLECT-004",
+    "nextRound": "ROUND-API-COLLECT-005 Controlled Collection Gate",
     "overallProgress": 100,
-    "activeFocus": "Read-Only Live Collection Runner: AGOS can now collect public trend, keyword, hashtag, and public analytics intelligence while keeping post, reply, DM, follow, and like actions blocked."
+    "activeFocus": "Collection Compliance Guard: AGOS can now detect rate limits, repeated queries, suspicious patterns, write API usage, excessive polling, automated login scraping, platform-limit bypass, and automated interaction risk before collecting intelligence."
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.103 Add read-only live collection runner",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.103",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.103",
-    "note": "Read-Only Live Collection Runner collects public intelligence signals only. Platform write actions remain blocked."
+    "latestCommit": "agos-v0.1.104 Add collection compliance guard",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.104",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.104",
+    "note": "Collection Compliance Guard checks live collection compliance risk and keeps automated login scraping, platform-limit bypass, write API usage, and automated interaction blocked."
   },
   "metrics": {
-    "roundsPlanned": 124,
-    "roundsCompleted": 95,
+    "roundsPlanned": 125,
+    "roundsCompleted": 96,
     "roundsInProgress": 0,
-    "reportsEmbedded": 107
+    "reportsEmbedded": 108
   },
   "modules": [
     {
@@ -686,6 +686,29 @@
     }
   ],
   "reports": [
+    {
+      "id": "ROUND-API-COLLECT-004",
+      "title": "AGOS Collection Compliance Guard",
+      "status": "done",
+      "date": "2026-05-26",
+      "summary": "Added Collection Compliance Guard. AGOS can now detect rate limits, repeated queries, suspicious patterns, write API usage, excessive polling, automated login scraping, platform-limit bypass, and automated interaction risk before intelligence collection continues.",
+      "files": [
+        "services/collection_compliance_guard.py",
+        "tests/collection_compliance_guard_smoke_test.py",
+        "runtime/compliance_guard/COLLECTION_COMPLIANCE_GUARD_REPORT.json",
+        "runtime/compliance_guard/compliance_risk_feed.json",
+        "runtime/compliance_guard/compliance_guard_summary.json",
+        "runtime/compliance_guard/compliance_events.json",
+        "runtime/task_results/ROUND-API-COLLECT-004/ROUND_SUMMARY.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "python -m compileall services tests",
+        "python tests\\collection_compliance_guard_smoke_test.py",
+        "python tests\\war_room_runtime_ui_smoke_test.py",
+        "Browser verification: Collection Compliance Guard panel shows compliance risk feed and write/auto-interaction boundaries blocked."
+      ]
+    },
     {
       "id": "ROUND-API-COLLECT-003",
       "title": "AGOS Read-Only Live Collection Runner",
@@ -2868,6 +2891,15 @@
     }
   ],
   "versions": [
+    {
+      "id": "agos_control_center_v0.1.104",
+      "label": "v0.1.104 - Collection Compliance Guard",
+      "date": "2026-05-26",
+      "gitRef": "agos-v0.1.104",
+      "location": "docs/project_control_center.html",
+      "notes": "ROUND-API-COLLECT-004 completed locally. War Room now shows compliance risk feed for read-only collection and blocks write API, automated login scraping, platform-limit bypass, and automated interaction.",
+      "snapshot": "AGOS Project Control Center v0.1.104\nRound: ROUND-API-COLLECT-004 completed\nGit: agos-v0.1.104\nStatus: Collection Compliance Guard added\nwrite API, automated login scraping, platform-limit bypass, and automated interaction remain blocked.\n"
+    },
     {
       "id": "agos_control_center_v0.1.103",
       "label": "v0.1.103 - Read-Only Live Collection Runner",
@@ -5207,6 +5239,16 @@
       "deliverable": "services/live_collection_runner.py, runtime/live_collection/, read-only public intelligence collection feed, summary, and War Room Live Collection Runner panel.",
       "report": "runtime/task_results/ROUND-API-COLLECT-003/ROUND_SUMMARY.md",
       "summary": "完成 Read-Only Live Collection Runner。AGOS 现在能采集公开 trend search、keyword search、hashtag search、public analytics intelligence，同时保持 post、reply、DM、follow、like 全部 blocked。"
+    },
+    {
+      "id": "ROUND-API-COLLECT-004",
+      "phase": "CONTROLLED_API_INTELLIGENCE_COLLECTION",
+      "name": "AGOS_COLLECTION_COMPLIANCE_GUARD",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "services/collection_compliance_guard.py, runtime/compliance_guard/, compliance risk feed, guard summary, and War Room Collection Compliance Guard panel.",
+      "report": "runtime/task_results/ROUND-API-COLLECT-004/ROUND_SUMMARY.md",
+      "summary": "完成 Collection Compliance Guard。AGOS 现在能检查 rate limit、repeated queries、suspicious pattern、write API usage、excessive polling，并阻断自动登录抓取、绕过平台限制、write API 和自动互动。"
     }
   ],
   "realGrowthVerification": {
@@ -25262,6 +25304,80 @@
       "like_enabled": false,
       "all_write_actions_blocked": true
     },
+    "complianceRiskFeed": [
+      {
+        "risk_id": "COMPLIANCE-RISK-0001",
+        "risk_type": "rate limit",
+        "platform": "Reddit",
+        "status": "safe",
+        "severity": "low",
+        "evidence": "Reddit collected 1/6 events in minute bucket 2026-05-26T02:10.",
+        "blocked_action": "none",
+        "recommended_action": "Continue read-only collection.",
+        "write_operations_enabled": false,
+        "automatic_interaction_enabled": false,
+        "checked_at": "2026-05-26T02:20:00+00:00"
+      },
+      {
+        "risk_id": "COMPLIANCE-RISK-0002",
+        "risk_type": "rate limit",
+        "platform": "YouTube",
+        "status": "safe",
+        "severity": "low",
+        "evidence": "YouTube collected 1/6 events in minute bucket 2026-05-26T02:10.",
+        "blocked_action": "none",
+        "recommended_action": "Continue read-only collection.",
+        "write_operations_enabled": false,
+        "automatic_interaction_enabled": false,
+        "checked_at": "2026-05-26T02:20:00+00:00"
+      },
+      {
+        "risk_id": "COMPLIANCE-RISK-0003",
+        "risk_type": "rate limit",
+        "platform": "TikTok",
+        "status": "safe",
+        "severity": "low",
+        "evidence": "TikTok collected 1/6 events in minute bucket 2026-05-26T02:10.",
+        "blocked_action": "none",
+        "recommended_action": "Continue read-only collection.",
+        "write_operations_enabled": false,
+        "automatic_interaction_enabled": false,
+        "checked_at": "2026-05-26T02:20:00+00:00"
+      },
+      {
+        "risk_id": "COMPLIANCE-RISK-0004",
+        "risk_type": "rate limit",
+        "platform": "X",
+        "status": "safe",
+        "severity": "low",
+        "evidence": "X collected 1/6 events in minute bucket 2026-05-26T02:10.",
+        "blocked_action": "none",
+        "recommended_action": "Continue read-only collection.",
+        "write_operations_enabled": false,
+        "automatic_interaction_enabled": false,
+        "checked_at": "2026-05-26T02:20:00+00:00"
+      }
+    ],
+    "complianceGuardSummary": {
+      "guard_ready": true,
+      "risk_items": 4,
+      "safe": 4,
+      "watch": 0,
+      "blocked": 0,
+      "critical": 0,
+      "blocking_risk": false,
+      "highest_severity": "low",
+      "read_only_collection_allowed": true,
+      "automated_login_scrape_allowed": false,
+      "platform_limit_bypass_allowed": false,
+      "write_api_allowed": false,
+      "auto_interaction_allowed": false,
+      "post_enabled": false,
+      "reply_enabled": false,
+      "dm_enabled": false,
+      "follow_enabled": false,
+      "like_enabled": false
+    },
     "readOnlyTrendConnector": {
       "report_id": "READ_ONLY_TREND_REPORT",
       "created_at": "2026-05-26T01:44:42+00:00",
@@ -38675,6 +38791,9 @@
             <div class="runtime-title-row"><h3>Read-Only Live Collection Runner</h3><p>trend search / keyword search / hashtag search / public analytics / write actions blocked</p></div>
             <div class="feed-stream" id="runtime-live-collection-runner"></div>
             <div style="height:10px"></div>
+            <div class="runtime-title-row"><h3>Collection Compliance Guard</h3><p>rate limit / repeated queries / suspicious pattern / write API / excessive polling / forbidden automation</p></div>
+            <div class="feed-stream" id="runtime-collection-compliance-guard"></div>
+            <div style="height:10px"></div>
             <div class="runtime-title-row"><h3>Read-Only Trend Connector</h3><p>Trend search / keyword search / hashtag search / public analytics only</p></div>
             <div class="feed-stream" id="runtime-read-only-trends"></div>
             <div style="height:10px"></div>
@@ -39441,6 +39560,10 @@
       el('runtime-live-collection-runner').innerHTML = (wr.liveCollectionFeed || []).map(item =>
         '<div class="feed-item"><time>' + esc(item.collection_id || '') + ' / ' + esc(item.platform || '') + '</time><div class="feed-main"><strong>' + esc(item.query || '') + ' / score ' + esc(item.collection_score || 0) + '</strong><span>Keyword: ' + esc(item.keyword || '') + ' / Hashtag: ' + esc(item.hashtag || '') + '</span><span>' + esc(item.public_signal_text || '') + '</span><span>Read: ' + esc(item.read_status || '') + ' / Write: ' + esc(item.write_status || '') + ' / Boundary: ' + esc(item.execution_boundary || '') + '</span><span>Modes: ' + esc((liveCollectionSummary.supported_collection_modes || []).join(' / ')) + ' / Items: ' + esc(liveCollectionSummary.items_collected || 0) + ' / Write ops enabled: ' + esc(liveCollectionSummary.write_operations_enabled || false) + '</span><span>post=' + esc(liveCollectionSummary.post_enabled || false) + ' / reply=' + esc(liveCollectionSummary.reply_enabled || false) + ' / DM=' + esc(liveCollectionSummary.dm_enabled || false) + ' / follow=' + esc(liveCollectionSummary.follow_enabled || false) + ' / like=' + esc(liveCollectionSummary.like_enabled || false) + '</span></div><span class="badge ' + (item.write_status === 'blocked' ? 'b-green' : 'b-red') + '">' + esc(item.write_status || 'blocked') + '</span></div>'
       ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Read-Only Live Collection Runner pending</strong><span>AGOS will collect public trend, keyword, hashtag, and public analytics intelligence while blocking write actions.</span></div><span class="badge b-amber">pending</span></div>';
+      const complianceSummary = wr.complianceGuardSummary || {};
+      el('runtime-collection-compliance-guard').innerHTML = (wr.complianceRiskFeed || []).map(item =>
+        '<div class="feed-item"><time>' + esc(item.risk_id || '') + ' / ' + esc(item.platform || '') + '</time><div class="feed-main"><strong>' + esc(item.risk_type || '') + ' / ' + esc(item.status || '') + ' / ' + esc(item.severity || '') + '</strong><span>Evidence: ' + esc(item.evidence || '') + '</span><span>Blocked action: ' + esc(item.blocked_action || '') + ' / Recommended: ' + esc(item.recommended_action || '') + '</span><span>Write ops enabled: ' + esc(item.write_operations_enabled || false) + ' / Auto interaction enabled: ' + esc(item.automatic_interaction_enabled || false) + '</span><span>Allowed: read-only=' + esc(complianceSummary.read_only_collection_allowed || false) + ' / login scrape=' + esc(complianceSummary.automated_login_scrape_allowed || false) + ' / bypass=' + esc(complianceSummary.platform_limit_bypass_allowed || false) + ' / write API=' + esc(complianceSummary.write_api_allowed || false) + '</span><span>post=' + esc(complianceSummary.post_enabled || false) + ' / reply=' + esc(complianceSummary.reply_enabled || false) + ' / DM=' + esc(complianceSummary.dm_enabled || false) + ' / follow=' + esc(complianceSummary.follow_enabled || false) + ' / like=' + esc(complianceSummary.like_enabled || false) + '</span></div><span class="badge ' + (item.status === 'blocked' ? 'b-red' : item.status === 'watch' ? 'b-amber' : 'b-green') + '">' + esc(item.status || 'check') + '</span></div>'
+      ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Collection Compliance Guard pending</strong><span>AGOS will check rate limits, repeated queries, suspicious patterns, write API usage, excessive polling, automated login scraping, platform-limit bypass, and automated interaction.</span></div><span class="badge b-amber">pending</span></div>';
       const trendConnectorSummary = wr.trendConnectorSummary || {};
       el('runtime-read-only-trends').innerHTML = (wr.platformTrendFeed || []).map(item =>
         '<div class="feed-item"><time>' + esc(item.trend_id || '') + ' / ' + esc(item.platform || '') + '</time><div class="feed-main"><strong>' + esc(item.query || '') + ' / heat ' + esc(item.heat_score || 0) + '</strong><span>Keyword: ' + esc(item.keyword || '') + ' / Hashtag: ' + esc(item.hashtag || '') + '</span><span>' + esc(item.trend_text || '') + '</span><span>Read: ' + esc(item.read_status || '') + ' / Write: ' + esc(item.write_status || '') + ' / Write ops enabled: ' + esc(trendConnectorSummary.write_operations_enabled || false) + '</span></div><span class="badge ' + (item.write_status === 'blocked' ? 'b-green' : 'b-red') + '">' + esc(item.read_status || 'read') + '</span></div>'

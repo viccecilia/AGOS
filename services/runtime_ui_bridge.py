@@ -18,6 +18,7 @@ from services.batch_scout_runtime import BatchScoutRuntime
 from services.batch_topic_clustering import BatchTopicClustering
 from services.best_answer_learning_engine import BestAnswerLearningEngine
 from services.autonomous_growth_preparation_gate import AutonomousGrowthPreparationGate
+from services.collection_compliance_guard import CollectionComplianceGuard
 from services.cross_platform_expansion_engine import CrossPlatformExpansionEngine
 from services.daily_question_import_engine import DailyQuestionImportEngine
 from services.daily_operations_report_engine import DailyOperationsReportEngine
@@ -160,6 +161,7 @@ class RuntimeUIBridge:
         platform_account_connections = PlatformAccountConnectionCenter().build(state.get("workspace", "JAG-LAB"))
         api_credential_setup_wizard = APICredentialSetupWizard().build(state.get("workspace", "JAG-LAB"))
         live_collection = LiveCollectionRunner().run(state.get("workspace", "JAG-LAB"))
+        compliance_guard = CollectionComplianceGuard().evaluate()
         read_only_trends = ReadOnlyTrendConnector().read_trends()
         api_rate_limit_guard = APIRateLimitGuard().evaluate()
         api_signal_normalization = APISignalNormalization().normalize(read_only_trends.get("platformTrends", []))
@@ -453,6 +455,9 @@ class RuntimeUIBridge:
             "liveCollectionFeed": live_collection.get("liveCollectionFeed", []),
             "liveCollectionSummary": live_collection.get("liveCollectionSummary", {}),
             "liveCollectionPlatformCoverage": live_collection.get("platformCoverage", []),
+            "collectionComplianceGuard": compliance_guard,
+            "complianceRiskFeed": compliance_guard.get("complianceRiskFeed", []),
+            "complianceGuardSummary": compliance_guard.get("complianceGuardSummary", {}),
             "readOnlyTrendConnector": read_only_trends,
             "platformTrends": read_only_trends.get("platformTrends", []),
             "platformTrendFeed": read_only_trends.get("platformTrendFeed", []),
