@@ -1,0 +1,100 @@
+{
+  "blocking_risk": false,
+  "capabilityConclusion": "AGOS can legally and safely batch-collect platform intelligence in local read-only mode, normalize it, import it into memory, and review/correct it before training.",
+  "created_at": "2026-05-26T02:41:43+00:00",
+  "overall_risk": "controlled",
+  "phaseExitRecommendation": "pass_to_controlled_real_external_interaction_stage",
+  "review_id": "PLATFORM_INTELLIGENCE_SAFETY_REVIEW",
+  "riskItems": [
+    {
+      "evidence": {
+        "collection_write_operations_enabled": false,
+        "connection_write_enabled": 0
+      },
+      "mitigation": "Keep post, reply, DM, follow, like, and write API usage disabled.",
+      "risk": "platform write action",
+      "risk_id": "CONTROLLED-COLLECTION-RISK-001",
+      "status": "blocked"
+    },
+    {
+      "evidence": {
+        "credentials": 3,
+        "git_commit_allowed": false,
+        "plaintext_logging_enabled": false,
+        "public_upload_allowed": false,
+        "workspace_isolation_enabled": true,
+        "workspaces": 2
+      },
+      "mitigation": "Only expose redacted credential status and keep vault files local-only.",
+      "risk": "credential leakage",
+      "risk_id": "CONTROLLED-COLLECTION-RISK-002",
+      "status": "controlled"
+    },
+    {
+      "evidence": {
+        "auto_interaction_allowed": false,
+        "automated_login_scrape_allowed": false,
+        "blocked": 0,
+        "blocking_risk": false,
+        "critical": 0,
+        "dm_enabled": false,
+        "follow_enabled": false,
+        "guard_ready": true,
+        "highest_severity": "low",
+        "like_enabled": false,
+        "platform_limit_bypass_allowed": false,
+        "post_enabled": false,
+        "read_only_collection_allowed": true,
+        "reply_enabled": false,
+        "risk_items": 4,
+        "safe": 4,
+        "watch": 0,
+        "write_api_allowed": false
+      },
+      "mitigation": "Block automated login scraping, platform-limit bypass, write API usage, and automated interaction.",
+      "risk": "collection compliance drift",
+      "risk_id": "CONTROLLED-COLLECTION-RISK-003",
+      "status": "controlled"
+    },
+    {
+      "evidence": {
+        "corrected_records": 0,
+        "normalized_items": 4,
+        "review_items": 4
+      },
+      "mitigation": "Route intelligence through normalization, memory import, and review/correction before trusting it.",
+      "risk": "low-quality intelligence entering training",
+      "risk_id": "CONTROLLED-COLLECTION-RISK-004",
+      "status": "controlled"
+    },
+    {
+      "evidence": {
+        "import_ready": true,
+        "intelligence_ranking_triggered": true,
+        "normalized_items_imported": 4,
+        "pain_points_imported": 7,
+        "pattern_learning_triggered": true,
+        "patterns_imported": 4,
+        "question_inbox_items": 4,
+        "replay_training_triggered": true,
+        "scout_intelligence_items": 4,
+        "top_memory_target": "Question Inbox",
+        "trend_clusters_imported": 2,
+        "write_operations_enabled": false
+      },
+      "mitigation": "Keep collection review and human correction available before scaling training data.",
+      "risk": "unreviewed training memory",
+      "risk_id": "CONTROLLED-COLLECTION-RISK-005",
+      "status": "controlled"
+    }
+  ],
+  "sourceEvidence": {
+    "collection_review_status": "api_collection_review_ready",
+    "compliance_guard_status": "compliance_guard_ready",
+    "credential_vault_status": "vault_ready",
+    "live_collection_status": "live_collection_completed",
+    "memory_import_status": "live_intelligence_imported_to_memory",
+    "normalization_status": "live_data_normalized",
+    "platform_connection_status": "connection_center_ready"
+  }
+}

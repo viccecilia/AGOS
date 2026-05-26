@@ -1,0 +1,174 @@
+[
+  {
+    "capability": "Platform Connection Center",
+    "check_id": "CONTROLLED-API-COLLECT-001",
+    "evidence": {
+      "all_write_permissions_false": true,
+      "connection_center_ready": true,
+      "not_connected": 4,
+      "platforms": 6,
+      "read_connected": 2,
+      "workspace_scopes": [
+        "JAG-LAB:reddit:read_only",
+        "JAG-LAB:youtube:read_only",
+        "JAG-LAB:x:read_only",
+        "JAG-LAB:tiktok:read_only",
+        "JAG-LAB:instagram:read_only",
+        "JAG-LAB:threads:read_only"
+      ],
+      "write_enabled": 0
+    },
+    "result": "Platform connection state is visible and write permissions are false.",
+    "status": "passed"
+  },
+  {
+    "capability": "Credential Vault",
+    "check_id": "CONTROLLED-API-COLLECT-002",
+    "evidence": {
+      "credentials": 3,
+      "git_commit_allowed": false,
+      "plaintext_logging_enabled": false,
+      "public_upload_allowed": false,
+      "workspace_isolation_enabled": true,
+      "workspaces": 2
+    },
+    "result": "Credential state is local-only, redacted, and workspace isolated.",
+    "status": "passed"
+  },
+  {
+    "capability": "Live Collection Runner",
+    "check_id": "CONTROLLED-API-COLLECT-003",
+    "evidence": {
+      "all_write_actions_blocked": true,
+      "dm_enabled": false,
+      "follow_enabled": false,
+      "items_collected": 4,
+      "like_enabled": false,
+      "platforms_collected": 4,
+      "post_enabled": false,
+      "public_intelligence_only": true,
+      "read_only": true,
+      "reply_enabled": false,
+      "runner_ready": true,
+      "supported_collection_modes": [
+        "trend search",
+        "keyword search",
+        "hashtag search",
+        "public analytics"
+      ],
+      "write_operations_enabled": false
+    },
+    "result": "Read-only batch public intelligence collection can run locally.",
+    "status": "passed"
+  },
+  {
+    "capability": "Compliance Guard",
+    "check_id": "CONTROLLED-API-COLLECT-004",
+    "evidence": {
+      "auto_interaction_allowed": false,
+      "automated_login_scrape_allowed": false,
+      "blocked": 0,
+      "blocking_risk": false,
+      "critical": 0,
+      "dm_enabled": false,
+      "follow_enabled": false,
+      "guard_ready": true,
+      "highest_severity": "low",
+      "like_enabled": false,
+      "platform_limit_bypass_allowed": false,
+      "post_enabled": false,
+      "read_only_collection_allowed": true,
+      "reply_enabled": false,
+      "risk_items": 4,
+      "safe": 4,
+      "watch": 0,
+      "write_api_allowed": false
+    },
+    "result": "Compliance risks are visible and forbidden collection behaviors remain blocked.",
+    "status": "passed"
+  },
+  {
+    "capability": "Normalization Pipeline",
+    "check_id": "CONTROLLED-API-COLLECT-005",
+    "evidence": {
+      "average_source_confidence": 0.836,
+      "emotion_tags": [
+        "anxiety",
+        "comparison_pressure",
+        "decision_pressure",
+        "frustration",
+        "information_need",
+        "neutral_information_need",
+        "surprise"
+      ],
+      "highest_training_value": 100,
+      "items_normalized": 4,
+      "languages": [
+        "en"
+      ],
+      "markets": [
+        "Japan"
+      ],
+      "pain_points": [
+        "airport_transfer_confusion",
+        "first_trip_uncertainty",
+        "payment_and_pass_decision",
+        "transport_confusion",
+        "value_decision_pressure"
+      ],
+      "pipeline_ready": true,
+      "platforms": [
+        "Reddit",
+        "TikTok",
+        "X",
+        "YouTube"
+      ],
+      "write_operations_enabled": false
+    },
+    "result": "Collected intelligence is normalized into shared AGOS training fields.",
+    "status": "passed"
+  },
+  {
+    "capability": "Live Memory Import",
+    "check_id": "CONTROLLED-API-COLLECT-006",
+    "evidence": {
+      "import_ready": true,
+      "intelligence_ranking_triggered": true,
+      "normalized_items_imported": 4,
+      "pain_points_imported": 7,
+      "pattern_learning_triggered": true,
+      "patterns_imported": 4,
+      "question_inbox_items": 4,
+      "replay_training_triggered": true,
+      "scout_intelligence_items": 4,
+      "top_memory_target": "Question Inbox",
+      "trend_clusters_imported": 2,
+      "write_operations_enabled": false
+    },
+    "result": "Normalized intelligence enters training memory and local training triggers.",
+    "status": "passed"
+  },
+  {
+    "capability": "Collection Review & Correction",
+    "check_id": "CONTROLLED-API-COLLECT-007",
+    "evidence": {
+      "approved": 0,
+      "approved_training_memory": 2,
+      "blocked_from_training": 0,
+      "classified": 2,
+      "corrected_records": 0,
+      "emotion_corrections": 0,
+      "marked_high_value": 2,
+      "marked_low_value": 0,
+      "pain_point_corrections": 0,
+      "rejected": 0,
+      "review_items": 4,
+      "review_ready": true,
+      "source_confidence_corrections": 0,
+      "trend_corrections": 0,
+      "write_operations_enabled": false
+    },
+    "result": "Batch review and correction are available before training data is trusted.",
+    "status": "passed"
+  }
+]

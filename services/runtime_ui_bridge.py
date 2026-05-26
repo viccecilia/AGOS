@@ -20,6 +20,7 @@ from services.batch_topic_clustering import BatchTopicClustering
 from services.best_answer_learning_engine import BestAnswerLearningEngine
 from services.autonomous_growth_preparation_gate import AutonomousGrowthPreparationGate
 from services.collection_compliance_guard import CollectionComplianceGuard
+from services.controlled_api_collection_gate import ControlledAPICollectionGate
 from services.cross_platform_expansion_engine import CrossPlatformExpansionEngine
 from services.daily_question_import_engine import DailyQuestionImportEngine
 from services.daily_operations_report_engine import DailyOperationsReportEngine
@@ -171,6 +172,7 @@ class RuntimeUIBridge:
             live_data_normalization.get("normalizedLiveData", []),
         )
         api_collection_review = APICollectionReviewAndCorrection().review(live_memory_import)
+        controlled_api_collection_gate = ControlledAPICollectionGate().evaluate(state.get("workspace", "JAG-LAB"))
         read_only_trends = ReadOnlyTrendConnector().read_trends()
         api_rate_limit_guard = APIRateLimitGuard().evaluate()
         api_signal_normalization = APISignalNormalization().normalize(read_only_trends.get("platformTrends", []))
@@ -488,6 +490,10 @@ class RuntimeUIBridge:
             "correctedCollectionIntelligence": api_collection_review.get("correctedCollectionIntelligence", []),
             "collectionCorrectionFeed": api_collection_review.get("collectionCorrectionFeed", []),
             "collectionReviewSummary": api_collection_review.get("collectionReviewSummary", {}),
+            "controlledAPICollectionGate": controlled_api_collection_gate,
+            "controlledAPICollectionChecks": controlled_api_collection_gate.get("controlledAPICollectionChecks", []),
+            "platformIntelligenceSafetyReview": controlled_api_collection_gate.get("platformIntelligenceSafetyReview", {}),
+            "controlledAPICollectionSummary": controlled_api_collection_gate.get("controlledAPICollectionSummary", {}),
             "readOnlyTrendConnector": read_only_trends,
             "platformTrends": read_only_trends.get("platformTrends", []),
             "platformTrendFeed": read_only_trends.get("platformTrendFeed", []),

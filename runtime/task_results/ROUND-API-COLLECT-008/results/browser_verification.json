@@ -1,0 +1,12 @@
+﻿{
+  "ok": true,
+  "url": "http://127.0.0.1:8765/project_control_center.html?runtime_ui=1#war-room-growth",
+  "version": "Control Center v0.1.108",
+  "round": "ROUND-API-COLLECT-008",
+  "panel": "runtime-controlled-api-collection-gate",
+  "checksPassed": "7/7",
+  "safetyReview": "controlled",
+  "blockingRisk": false,
+  "nextPhaseRecommendation": "pass_to_controlled_real_external_interaction_stage",
+  "writeOperationsEnabled": false
+}
