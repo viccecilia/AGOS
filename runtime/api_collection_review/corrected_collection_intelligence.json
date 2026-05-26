@@ -1,0 +1,97 @@
+[
+  {
+    "corrected_at": "2026-05-26T02:36:17+00:00",
+    "corrected_id": "API-COLLECT-CORRECTED-0001",
+    "emotion_tags": [
+      "anxiety",
+      "information_need"
+    ],
+    "human_review_required": false,
+    "language": "en",
+    "market": "Japan",
+    "pain_points": [
+      "payment_and_pass_decision",
+      "transport_confusion"
+    ],
+    "platform": "Reddit",
+    "question_text": "Travelers are asking how to choose the right Tokyo transport pass.",
+    "review_action": "mark_high_value",
+    "review_id": "API-COLLECT-REVIEW-0001",
+    "source_confidence": 0.89,
+    "source_question_id": "LIVE-Q-0001",
+    "source_url": "local://live_collection/LIVE-COLLECT-0001",
+    "training_route": "approved_training_memory",
+    "trend_strength": 100
+  },
+  {
+    "corrected_at": "2026-05-26T02:36:17+00:00",
+    "corrected_id": "API-COLLECT-CORRECTED-0002",
+    "emotion_tags": [
+      "neutral_information_need"
+    ],
+    "human_review_required": false,
+    "language": "en",
+    "market": "Japan",
+    "pain_points": [
+      "payment_and_pass_decision"
+    ],
+    "platform": "YouTube",
+    "question_text": "Short videos compare Suica, Pasmo, and JR Pass choices.",
+    "review_action": "classify",
+    "review_id": "API-COLLECT-REVIEW-0002",
+    "source_confidence": 0.769,
+    "source_question_id": "LIVE-Q-0002",
+    "source_url": "local://live_collection/LIVE-COLLECT-0002",
+    "training_route": "classified_training_memory",
+    "trend_strength": 73
+  },
+  {
+    "corrected_at": "2026-05-26T02:36:17+00:00",
+    "corrected_id": "API-COLLECT-CORRECTED-0003",
+    "emotion_tags": [
+      "anxiety",
+      "frustration",
+      "surprise"
+    ],
+    "human_review_required": false,
+    "language": "en",
+    "market": "Japan",
+    "pain_points": [
+      "airport_transfer_confusion",
+      "first_trip_uncertainty"
+    ],
+    "platform": "TikTok",
+    "question_text": "First-time travelers react strongly to airport transfer complexity.",
+    "review_action": "mark_high_value",
+    "review_id": "API-COLLECT-REVIEW-0003",
+    "source_confidence": 0.95,
+    "source_question_id": "LIVE-Q-0003",
+    "source_url": "local://live_collection/LIVE-COLLECT-0003",
+    "training_route": "approved_training_memory",
+    "trend_strength": 100
+  },
+  {
+    "corrected_at": "2026-05-26T02:36:17+00:00",
+    "corrected_id": "API-COLLECT-CORRECTED-0004",
+    "emotion_tags": [
+      "comparison_pressure",
+      "decision_pressure"
+    ],
+    "human_review_required": false,
+    "language": "en",
+    "market": "Japan",
+    "pain_points": [
+      "payment_and_pass_decision",
+      "value_decision_pressure"
+    ],
+    "platform": "X",
+    "question_text": "Users debate whether JR Pass still saves money after price changes.",
+    "review_action": "classify",
+    "review_id": "API-COLLECT-REVIEW-0004",
+    "source_confidence": 0.733,
+    "source_question_id": "LIVE-Q-0004",
+    "source_url": "local://live_collection/LIVE-COLLECT-0004",
+    "training_route": "classified_training_memory",
+    "trend_strength": 82
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "created_at": "2026-05-26T02:36:17+00:00",
+    "current_emotion_tags": [
+      "anxiety",
+      "information_need"
+    ],
+    "current_pain_points": [
+      "payment_and_pass_decision",
+      "transport_confusion"
+    ],
+    "current_source_confidence": 0.89,
+    "current_trend_strength": 100,
+    "language": "en",
+    "market": "Japan",
+    "matched_trend_clusters": [
+      "LIVE-CLUSTER-0002"
+    ],
+    "platform": "Reddit",
+    "question_text": "Travelers are asking how to choose the right Tokyo transport pass.",
+    "review_id": "API-COLLECT-REVIEW-0001",
+    "review_status": "needs_human_review",
+    "source_normalized_id": "LIVE-NORM-0001",
+    "source_question_id": "LIVE-Q-0001",
+    "source_url": "local://live_collection/LIVE-COLLECT-0001",
+    "suggested_action": "mark_high_value"
+  },
+  {
+    "created_at": "2026-05-26T02:36:17+00:00",
+    "current_emotion_tags": [
+      "neutral_information_need"
+    ],
+    "current_pain_points": [
+      "payment_and_pass_decision"
+    ],
+    "current_source_confidence": 0.769,
+    "current_trend_strength": 73,
+    "language": "en",
+    "market": "Japan",
+    "matched_trend_clusters": [
+      "LIVE-CLUSTER-0002"
+    ],
+    "platform": "YouTube",
+    "question_text": "Short videos compare Suica, Pasmo, and JR Pass choices.",
+    "review_id": "API-COLLECT-REVIEW-0002",
+    "review_status": "needs_human_review",
+    "source_normalized_id": "LIVE-NORM-0002",
+    "source_question_id": "LIVE-Q-0002",
+    "source_url": "local://live_collection/LIVE-COLLECT-0002",
+    "suggested_action": "classify"
+  },
+  {
+    "created_at": "2026-05-26T02:36:17+00:00",
+    "current_emotion_tags": [
+      "anxiety",
+      "frustration",
+      "surprise"
+    ],
+    "current_pain_points": [
+      "airport_transfer_confusion",
+      "first_trip_uncertainty"
+    ],
+    "current_source_confidence": 0.95,
+    "current_trend_strength": 100,
+    "language": "en",
+    "market": "Japan",
+    "matched_trend_clusters": [
+      "LIVE-CLUSTER-0001"
+    ],
+    "platform": "TikTok",
+    "question_text": "First-time travelers react strongly to airport transfer complexity.",
+    "review_id": "API-COLLECT-REVIEW-0003",
+    "review_status": "needs_human_review",
+    "source_normalized_id": "LIVE-NORM-0003",
+    "source_question_id": "LIVE-Q-0003",
+    "source_url": "local://live_collection/LIVE-COLLECT-0003",
+    "suggested_action": "mark_high_value"
+  },
+  {
+    "created_at": "2026-05-26T02:36:17+00:00",
+    "current_emotion_tags": [
+      "comparison_pressure",
+      "decision_pressure"
+    ],
+    "current_pain_points": [
+      "payment_and_pass_decision",
+      "value_decision_pressure"
+    ],
+    "current_source_confidence": 0.733,
+    "current_trend_strength": 82,
+    "language": "en",
+    "market": "Japan",
+    "matched_trend_clusters": [
+      "LIVE-CLUSTER-0002"
+    ],
+    "platform": "X",
+    "question_text": "Users debate whether JR Pass still saves money after price changes.",
+    "review_id": "API-COLLECT-REVIEW-0004",
+    "review_status": "needs_human_review",
+    "source_normalized_id": "LIVE-NORM-0004",
+    "source_question_id": "LIVE-Q-0004",
+    "source_url": "local://live_collection/LIVE-COLLECT-0004",
+    "suggested_action": "classify"
+  }
+]

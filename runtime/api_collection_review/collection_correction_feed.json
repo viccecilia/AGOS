@@ -1,0 +1,54 @@
+[
+  {
+    "action": "mark_high_value",
+    "correction_reason": "Signal has strong priority and confidence for controlled training.",
+    "correction_type": [
+      "review_action"
+    ],
+    "human_review_required": false,
+    "platform": "Reddit",
+    "review_id": "API-COLLECT-REVIEW-0001",
+    "source_question_id": "LIVE-Q-0001",
+    "time": "2026-05-26T02:36:17+00:00",
+    "training_route": "approved_training_memory"
+  },
+  {
+    "action": "classify",
+    "correction_reason": "Classify LIVE-Q-0002 for corrected intelligence routing.",
+    "correction_type": [
+      "review_action"
+    ],
+    "human_review_required": false,
+    "platform": "YouTube",
+    "review_id": "API-COLLECT-REVIEW-0002",
+    "source_question_id": "LIVE-Q-0002",
+    "time": "2026-05-26T02:36:17+00:00",
+    "training_route": "classified_training_memory"
+  },
+  {
+    "action": "mark_high_value",
+    "correction_reason": "Signal has strong priority and confidence for controlled training.",
+    "correction_type": [
+      "review_action"
+    ],
+    "human_review_required": false,
+    "platform": "TikTok",
+    "review_id": "API-COLLECT-REVIEW-0003",
+    "source_question_id": "LIVE-Q-0003",
+    "time": "2026-05-26T02:36:17+00:00",
+    "training_route": "approved_training_memory"
+  },
+  {
+    "action": "classify",
+    "correction_reason": "Classify LIVE-Q-0004 for corrected intelligence routing.",
+    "correction_type": [
+      "review_action"
+    ],
+    "human_review_required": false,
+    "platform": "X",
+    "review_id": "API-COLLECT-REVIEW-0004",
+    "source_question_id": "LIVE-Q-0004",
+    "time": "2026-05-26T02:36:17+00:00",
+    "training_route": "classified_training_memory"
+  }
+]

@@ -7,6 +7,7 @@ from typing import Any
 
 from services.action_recommendation_engine import ActionRecommendationEngine
 from services.action_queue_engine import ActionQueueEngine
+from services.api_collection_review_and_correction import APICollectionReviewAndCorrection
 from services.api_capability_registry import APICapabilityRegistry
 from services.api_credential_setup_wizard import APICredentialSetupWizard
 from services.api_rate_limit_guard import APIRateLimitGuard
@@ -169,6 +170,7 @@ class RuntimeUIBridge:
             state.get("workspace", "JAG-LAB"),
             live_data_normalization.get("normalizedLiveData", []),
         )
+        api_collection_review = APICollectionReviewAndCorrection().review(live_memory_import)
         read_only_trends = ReadOnlyTrendConnector().read_trends()
         api_rate_limit_guard = APIRateLimitGuard().evaluate()
         api_signal_normalization = APISignalNormalization().normalize(read_only_trends.get("platformTrends", []))
@@ -480,6 +482,12 @@ class RuntimeUIBridge:
             "triggeredPatternLearningFromLiveData": live_memory_import.get("triggeredPatternLearning", {}),
             "triggeredReplayTrainingFromLiveData": live_memory_import.get("triggeredReplayTraining", {}),
             "triggeredIntelligenceRankingFromLiveData": live_memory_import.get("triggeredIntelligenceRanking", {}),
+            "apiCollectionReviewAndCorrection": api_collection_review,
+            "collectionReviewQueue": api_collection_review.get("collectionReviewQueue", []),
+            "collectionReviewDecisions": api_collection_review.get("collectionReviewDecisions", []),
+            "correctedCollectionIntelligence": api_collection_review.get("correctedCollectionIntelligence", []),
+            "collectionCorrectionFeed": api_collection_review.get("collectionCorrectionFeed", []),
+            "collectionReviewSummary": api_collection_review.get("collectionReviewSummary", {}),
             "readOnlyTrendConnector": read_only_trends,
             "platformTrends": read_only_trends.get("platformTrends", []),
             "platformTrendFeed": read_only_trends.get("platformTrendFeed", []),

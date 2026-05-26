@@ -1,0 +1,38 @@
+[
+  {
+    "action": "mark_high_value",
+    "corrections": {},
+    "decided_at": "2026-05-26T02:36:17+00:00",
+    "decided_by": "AGOS local review rule",
+    "decision_id": "API-COLLECT-DECISION-0001",
+    "reason": "Signal has strong priority and confidence for controlled training.",
+    "review_id": "API-COLLECT-REVIEW-0001"
+  },
+  {
+    "action": "classify",
+    "corrections": {},
+    "decided_at": "2026-05-26T02:36:17+00:00",
+    "decided_by": "AGOS local review rule",
+    "decision_id": "API-COLLECT-DECISION-0002",
+    "reason": "Classify LIVE-Q-0002 for corrected intelligence routing.",
+    "review_id": "API-COLLECT-REVIEW-0002"
+  },
+  {
+    "action": "mark_high_value",
+    "corrections": {},
+    "decided_at": "2026-05-26T02:36:17+00:00",
+    "decided_by": "AGOS local review rule",
+    "decision_id": "API-COLLECT-DECISION-0003",
+    "reason": "Signal has strong priority and confidence for controlled training.",
+    "review_id": "API-COLLECT-REVIEW-0003"
+  },
+  {
+    "action": "classify",
+    "corrections": {},
+    "decided_at": "2026-05-26T02:36:17+00:00",
+    "decided_by": "AGOS local review rule",
+    "decision_id": "API-COLLECT-DECISION-0004",
+    "reason": "Classify LIVE-Q-0004 for corrected intelligence routing.",
+    "review_id": "API-COLLECT-REVIEW-0004"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "version": "0.1.107",
+  "currentRound": "ROUND-API-COLLECT-007",
+  "actions": [
+    "mark_high_value",
+    "classify"
+  ],
+  "summary": {
+    "approved": 0,
+    "approved_training_memory": 2,
+    "blocked_from_training": 0,
+    "classified": 2,
+    "corrected_records": 0,
+    "emotion_corrections": 0,
+    "marked_high_value": 2,
+    "marked_low_value": 0,
+    "pain_point_corrections": 0,
+    "rejected": 0,
+    "review_items": 4,
+    "review_ready": true,
+    "source_confidence_corrections": 0,
+    "trend_corrections": 0,
+    "write_operations_enabled": false
+  }
+}

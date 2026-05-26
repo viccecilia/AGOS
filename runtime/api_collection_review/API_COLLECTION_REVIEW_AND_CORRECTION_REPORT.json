@@ -1,0 +1,331 @@
+{
+  "collectionCorrectionFeed": [
+    {
+      "action": "mark_high_value",
+      "correction_reason": "Signal has strong priority and confidence for controlled training.",
+      "correction_type": [
+        "review_action"
+      ],
+      "human_review_required": false,
+      "platform": "Reddit",
+      "review_id": "API-COLLECT-REVIEW-0001",
+      "source_question_id": "LIVE-Q-0001",
+      "time": "2026-05-26T02:36:17+00:00",
+      "training_route": "approved_training_memory"
+    },
+    {
+      "action": "classify",
+      "correction_reason": "Classify LIVE-Q-0002 for corrected intelligence routing.",
+      "correction_type": [
+        "review_action"
+      ],
+      "human_review_required": false,
+      "platform": "YouTube",
+      "review_id": "API-COLLECT-REVIEW-0002",
+      "source_question_id": "LIVE-Q-0002",
+      "time": "2026-05-26T02:36:17+00:00",
+      "training_route": "classified_training_memory"
+    },
+    {
+      "action": "mark_high_value",
+      "correction_reason": "Signal has strong priority and confidence for controlled training.",
+      "correction_type": [
+        "review_action"
+      ],
+      "human_review_required": false,
+      "platform": "TikTok",
+      "review_id": "API-COLLECT-REVIEW-0003",
+      "source_question_id": "LIVE-Q-0003",
+      "time": "2026-05-26T02:36:17+00:00",
+      "training_route": "approved_training_memory"
+    },
+    {
+      "action": "classify",
+      "correction_reason": "Classify LIVE-Q-0004 for corrected intelligence routing.",
+      "correction_type": [
+        "review_action"
+      ],
+      "human_review_required": false,
+      "platform": "X",
+      "review_id": "API-COLLECT-REVIEW-0004",
+      "source_question_id": "LIVE-Q-0004",
+      "time": "2026-05-26T02:36:17+00:00",
+      "training_route": "classified_training_memory"
+    }
+  ],
+  "collectionReviewDecisions": [
+    {
+      "action": "mark_high_value",
+      "corrections": {},
+      "decided_at": "2026-05-26T02:36:17+00:00",
+      "decided_by": "AGOS local review rule",
+      "decision_id": "API-COLLECT-DECISION-0001",
+      "reason": "Signal has strong priority and confidence for controlled training.",
+      "review_id": "API-COLLECT-REVIEW-0001"
+    },
+    {
+      "action": "classify",
+      "corrections": {},
+      "decided_at": "2026-05-26T02:36:17+00:00",
+      "decided_by": "AGOS local review rule",
+      "decision_id": "API-COLLECT-DECISION-0002",
+      "reason": "Classify LIVE-Q-0002 for corrected intelligence routing.",
+      "review_id": "API-COLLECT-REVIEW-0002"
+    },
+    {
+      "action": "mark_high_value",
+      "corrections": {},
+      "decided_at": "2026-05-26T02:36:17+00:00",
+      "decided_by": "AGOS local review rule",
+      "decision_id": "API-COLLECT-DECISION-0003",
+      "reason": "Signal has strong priority and confidence for controlled training.",
+      "review_id": "API-COLLECT-REVIEW-0003"
+    },
+    {
+      "action": "classify",
+      "corrections": {},
+      "decided_at": "2026-05-26T02:36:17+00:00",
+      "decided_by": "AGOS local review rule",
+      "decision_id": "API-COLLECT-DECISION-0004",
+      "reason": "Classify LIVE-Q-0004 for corrected intelligence routing.",
+      "review_id": "API-COLLECT-REVIEW-0004"
+    }
+  ],
+  "collectionReviewQueue": [
+    {
+      "created_at": "2026-05-26T02:36:17+00:00",
+      "current_emotion_tags": [
+        "anxiety",
+        "information_need"
+      ],
+      "current_pain_points": [
+        "payment_and_pass_decision",
+        "transport_confusion"
+      ],
+      "current_source_confidence": 0.89,
+      "current_trend_strength": 100,
+      "language": "en",
+      "market": "Japan",
+      "matched_trend_clusters": [
+        "LIVE-CLUSTER-0002"
+      ],
+      "platform": "Reddit",
+      "question_text": "Travelers are asking how to choose the right Tokyo transport pass.",
+      "review_id": "API-COLLECT-REVIEW-0001",
+      "review_status": "needs_human_review",
+      "source_normalized_id": "LIVE-NORM-0001",
+      "source_question_id": "LIVE-Q-0001",
+      "source_url": "local://live_collection/LIVE-COLLECT-0001",
+      "suggested_action": "mark_high_value"
+    },
+    {
+      "created_at": "2026-05-26T02:36:17+00:00",
+      "current_emotion_tags": [
+        "neutral_information_need"
+      ],
+      "current_pain_points": [
+        "payment_and_pass_decision"
+      ],
+      "current_source_confidence": 0.769,
+      "current_trend_strength": 73,
+      "language": "en",
+      "market": "Japan",
+      "matched_trend_clusters": [
+        "LIVE-CLUSTER-0002"
+      ],
+      "platform": "YouTube",
+      "question_text": "Short videos compare Suica, Pasmo, and JR Pass choices.",
+      "review_id": "API-COLLECT-REVIEW-0002",
+      "review_status": "needs_human_review",
+      "source_normalized_id": "LIVE-NORM-0002",
+      "source_question_id": "LIVE-Q-0002",
+      "source_url": "local://live_collection/LIVE-COLLECT-0002",
+      "suggested_action": "classify"
+    },
+    {
+      "created_at": "2026-05-26T02:36:17+00:00",
+      "current_emotion_tags": [
+        "anxiety",
+        "frustration",
+        "surprise"
+      ],
+      "current_pain_points": [
+        "airport_transfer_confusion",
+        "first_trip_uncertainty"
+      ],
+      "current_source_confidence": 0.95,
+      "current_trend_strength": 100,
+      "language": "en",
+      "market": "Japan",
+      "matched_trend_clusters": [
+        "LIVE-CLUSTER-0001"
+      ],
+      "platform": "TikTok",
+      "question_text": "First-time travelers react strongly to airport transfer complexity.",
+      "review_id": "API-COLLECT-REVIEW-0003",
+      "review_status": "needs_human_review",
+      "source_normalized_id": "LIVE-NORM-0003",
+      "source_question_id": "LIVE-Q-0003",
+      "source_url": "local://live_collection/LIVE-COLLECT-0003",
+      "suggested_action": "mark_high_value"
+    },
+    {
+      "created_at": "2026-05-26T02:36:17+00:00",
+      "current_emotion_tags": [
+        "comparison_pressure",
+        "decision_pressure"
+      ],
+      "current_pain_points": [
+        "payment_and_pass_decision",
+        "value_decision_pressure"
+      ],
+      "current_source_confidence": 0.733,
+      "current_trend_strength": 82,
+      "language": "en",
+      "market": "Japan",
+      "matched_trend_clusters": [
+        "LIVE-CLUSTER-0002"
+      ],
+      "platform": "X",
+      "question_text": "Users debate whether JR Pass still saves money after price changes.",
+      "review_id": "API-COLLECT-REVIEW-0004",
+      "review_status": "needs_human_review",
+      "source_normalized_id": "LIVE-NORM-0004",
+      "source_question_id": "LIVE-Q-0004",
+      "source_url": "local://live_collection/LIVE-COLLECT-0004",
+      "suggested_action": "classify"
+    }
+  ],
+  "collectionReviewSummary": {
+    "approved": 0,
+    "approved_training_memory": 2,
+    "blocked_from_training": 0,
+    "classified": 2,
+    "corrected_records": 0,
+    "emotion_corrections": 0,
+    "marked_high_value": 2,
+    "marked_low_value": 0,
+    "pain_point_corrections": 0,
+    "rejected": 0,
+    "review_items": 4,
+    "review_ready": true,
+    "source_confidence_corrections": 0,
+    "trend_corrections": 0,
+    "write_operations_enabled": false
+  },
+  "correctedCollectionIntelligence": [
+    {
+      "corrected_at": "2026-05-26T02:36:17+00:00",
+      "corrected_id": "API-COLLECT-CORRECTED-0001",
+      "emotion_tags": [
+        "anxiety",
+        "information_need"
+      ],
+      "human_review_required": false,
+      "language": "en",
+      "market": "Japan",
+      "pain_points": [
+        "payment_and_pass_decision",
+        "transport_confusion"
+      ],
+      "platform": "Reddit",
+      "question_text": "Travelers are asking how to choose the right Tokyo transport pass.",
+      "review_action": "mark_high_value",
+      "review_id": "API-COLLECT-REVIEW-0001",
+      "source_confidence": 0.89,
+      "source_question_id": "LIVE-Q-0001",
+      "source_url": "local://live_collection/LIVE-COLLECT-0001",
+      "training_route": "approved_training_memory",
+      "trend_strength": 100
+    },
+    {
+      "corrected_at": "2026-05-26T02:36:17+00:00",
+      "corrected_id": "API-COLLECT-CORRECTED-0002",
+      "emotion_tags": [
+        "neutral_information_need"
+      ],
+      "human_review_required": false,
+      "language": "en",
+      "market": "Japan",
+      "pain_points": [
+        "payment_and_pass_decision"
+      ],
+      "platform": "YouTube",
+      "question_text": "Short videos compare Suica, Pasmo, and JR Pass choices.",
+      "review_action": "classify",
+      "review_id": "API-COLLECT-REVIEW-0002",
+      "source_confidence": 0.769,
+      "source_question_id": "LIVE-Q-0002",
+      "source_url": "local://live_collection/LIVE-COLLECT-0002",
+      "training_route": "classified_training_memory",
+      "trend_strength": 73
+    },
+    {
+      "corrected_at": "2026-05-26T02:36:17+00:00",
+      "corrected_id": "API-COLLECT-CORRECTED-0003",
+      "emotion_tags": [
+        "anxiety",
+        "frustration",
+        "surprise"
+      ],
+      "human_review_required": false,
+      "language": "en",
+      "market": "Japan",
+      "pain_points": [
+        "airport_transfer_confusion",
+        "first_trip_uncertainty"
+      ],
+      "platform": "TikTok",
+      "question_text": "First-time travelers react strongly to airport transfer complexity.",
+      "review_action": "mark_high_value",
+      "review_id": "API-COLLECT-REVIEW-0003",
+      "source_confidence": 0.95,
+      "source_question_id": "LIVE-Q-0003",
+      "source_url": "local://live_collection/LIVE-COLLECT-0003",
+      "training_route": "approved_training_memory",
+      "trend_strength": 100
+    },
+    {
+      "corrected_at": "2026-05-26T02:36:17+00:00",
+      "corrected_id": "API-COLLECT-CORRECTED-0004",
+      "emotion_tags": [
+        "comparison_pressure",
+        "decision_pressure"
+      ],
+      "human_review_required": false,
+      "language": "en",
+      "market": "Japan",
+      "pain_points": [
+        "payment_and_pass_decision",
+        "value_decision_pressure"
+      ],
+      "platform": "X",
+      "question_text": "Users debate whether JR Pass still saves money after price changes.",
+      "review_action": "classify",
+      "review_id": "API-COLLECT-REVIEW-0004",
+      "source_confidence": 0.733,
+      "source_question_id": "LIVE-Q-0004",
+      "source_url": "local://live_collection/LIVE-COLLECT-0004",
+      "training_route": "classified_training_memory",
+      "trend_strength": 82
+    }
+  ],
+  "correctionFields": [
+    "pain_points",
+    "emotion_tags",
+    "trend_strength",
+    "source_confidence"
+  ],
+  "created_at": "2026-05-26T02:36:17+00:00",
+  "report_id": "API_COLLECTION_REVIEW_AND_CORRECTION_REPORT",
+  "safetyBoundary": "API Collection Review and Correction edits local intelligence records only. It does not post, reply, follow, DM, log in, register accounts, call platform write APIs, or bypass platform limits.",
+  "scope": "controlled_api_intelligence_collection",
+  "status": "api_collection_review_ready",
+  "supportedActions": [
+    "approve",
+    "reject",
+    "classify",
+    "mark_low_value",
+    "mark_high_value"
+  ]
+}
