@@ -1,0 +1,20 @@
+{
+  "all_write_actions_blocked": true,
+  "dm_enabled": false,
+  "follow_enabled": false,
+  "items_collected": 4,
+  "like_enabled": false,
+  "platforms_collected": 4,
+  "post_enabled": false,
+  "public_intelligence_only": true,
+  "read_only": true,
+  "reply_enabled": false,
+  "runner_ready": true,
+  "supported_collection_modes": [
+    "trend search",
+    "keyword search",
+    "hashtag search",
+    "public analytics"
+  ],
+  "write_operations_enabled": false
+}

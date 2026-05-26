@@ -1,0 +1,55 @@
+{
+  "round_id": "ROUND-API-COLLECT-003",
+  "status": "passed",
+  "checked_at": "2026-05-26",
+  "validations": [
+    {
+      "command": "python -m compileall services tests",
+      "status": "passed"
+    },
+    {
+      "command": "python tests\\live_collection_runner_smoke_test.py",
+      "status": "passed"
+    },
+    {
+      "command": "python tests\\war_room_runtime_ui_smoke_test.py",
+      "status": "passed"
+    },
+    {
+      "command": "node project-state live collection runner check",
+      "status": "passed"
+    },
+    {
+      "command": "node --check runtime\\task_results\\ROUND-API-COLLECT-003\\results\\control_center_runtime_script.js",
+      "status": "passed"
+    },
+    {
+      "command": "browser verification",
+      "status": "passed",
+      "evidence": {
+        "panelExists": true,
+        "feedCount": 4,
+        "includesTrend": true,
+        "includesKeyword": true,
+        "includesHashtag": true,
+        "includesBlocked": true,
+        "includesPostFalse": true,
+        "includesReplyFalse": true,
+        "includesDmFalse": true,
+        "includesFollowFalse": true,
+        "includesLikeFalse": true
+      }
+    }
+  ],
+  "safety_checks": {
+    "read_only": true,
+    "public_intelligence_only": true,
+    "write_operations_enabled": false,
+    "post_enabled": false,
+    "reply_enabled": false,
+    "dm_enabled": false,
+    "follow_enabled": false,
+    "like_enabled": false,
+    "all_write_actions_blocked": true
+  }
+}

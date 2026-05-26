@@ -30,6 +30,7 @@ from services.human_personality_training import HumanPersonalityTraining
 from services.heat_detection_engine import HeatDetectionEngine
 from services.intelligence_acceleration_gate import IntelligenceAccelerationGate
 from services.long_term_strategy_memory import LongTermStrategyMemory
+from services.live_collection_runner import LiveCollectionRunner
 from services.personality_drift_engine import PersonalityDriftEngine
 from services.personality_isolation_engine import PersonalityIsolationEngine
 from services.personality_memory_deposit import PersonalityMemoryDeposit
@@ -158,6 +159,7 @@ class RuntimeUIBridge:
         platform_credential_vault = PlatformCredentialVault().bootstrap_sample_status()
         platform_account_connections = PlatformAccountConnectionCenter().build(state.get("workspace", "JAG-LAB"))
         api_credential_setup_wizard = APICredentialSetupWizard().build(state.get("workspace", "JAG-LAB"))
+        live_collection = LiveCollectionRunner().run(state.get("workspace", "JAG-LAB"))
         read_only_trends = ReadOnlyTrendConnector().read_trends()
         api_rate_limit_guard = APIRateLimitGuard().evaluate()
         api_signal_normalization = APISignalNormalization().normalize(read_only_trends.get("platformTrends", []))
@@ -446,6 +448,11 @@ class RuntimeUIBridge:
             "credentialSetupStatus": api_credential_setup_wizard.get("credentialSetupStatus", []),
             "credentialSetupFeed": api_credential_setup_wizard.get("credentialSetupFeed", []),
             "credentialSetupSummary": api_credential_setup_wizard.get("credentialSetupSummary", {}),
+            "liveCollectionRunner": live_collection,
+            "liveCollectionItems": live_collection.get("liveCollectionItems", []),
+            "liveCollectionFeed": live_collection.get("liveCollectionFeed", []),
+            "liveCollectionSummary": live_collection.get("liveCollectionSummary", {}),
+            "liveCollectionPlatformCoverage": live_collection.get("platformCoverage", []),
             "readOnlyTrendConnector": read_only_trends,
             "platformTrends": read_only_trends.get("platformTrends", []),
             "platformTrendFeed": read_only_trends.get("platformTrendFeed", []),

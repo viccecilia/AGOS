@@ -531,28 +531,28 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.102",
+    "controlCenterVersion": "0.1.103",
     "lastUpdated": "2026-05-26",
     "currentPhase": "Controlled API Intelligence Collection",
-    "currentRound": "ROUND-API-COLLECT-002",
-    "nextRound": "ROUND-API-COLLECT-003 Controlled Real Data Import",
+    "currentRound": "ROUND-API-COLLECT-003",
+    "nextRound": "ROUND-API-COLLECT-004 Collection Safety Gate",
     "overallProgress": 100,
-    "activeFocus": "API Credential Setup Wizard: AGOS can now guide API Key, OAuth Token, and Refresh Token setup with local-only storage, workspace isolation, redacted status, and no plaintext credential logging."
+    "activeFocus": "Read-Only Live Collection Runner: AGOS can now collect public trend, keyword, hashtag, and public analytics intelligence while keeping post, reply, DM, follow, and like actions blocked."
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.102 Add API credential setup wizard",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.102",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.102",
-    "note": "API Credential Setup Wizard supports API Key, OAuth Token, and Refresh Token setup through local-only, workspace-isolated, redacted credential status. No plaintext credentials are written to logs or Git."
+    "latestCommit": "agos-v0.1.103 Add read-only live collection runner",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.103",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.103",
+    "note": "Read-Only Live Collection Runner collects public intelligence signals only. Platform write actions remain blocked."
   },
   "metrics": {
-    "roundsPlanned": 123,
-    "roundsCompleted": 94,
+    "roundsPlanned": 124,
+    "roundsCompleted": 95,
     "roundsInProgress": 0,
-    "reportsEmbedded": 106
+    "reportsEmbedded": 107
   },
   "modules": [
     {
@@ -686,6 +686,29 @@
     }
   ],
   "reports": [
+    {
+      "id": "ROUND-API-COLLECT-003",
+      "title": "AGOS Read-Only Live Collection Runner",
+      "status": "done",
+      "date": "2026-05-26",
+      "summary": "Added Read-Only Live Collection Runner. AGOS can now collect public trend search, keyword search, hashtag search, and public analytics intelligence while blocking post, reply, DM, follow, and like actions.",
+      "files": [
+        "services/live_collection_runner.py",
+        "tests/live_collection_runner_smoke_test.py",
+        "runtime/live_collection/LIVE_COLLECTION_RUNNER_REPORT.json",
+        "runtime/live_collection/live_collection_items.json",
+        "runtime/live_collection/live_collection_feed.json",
+        "runtime/live_collection/live_collection_summary.json",
+        "runtime/task_results/ROUND-API-COLLECT-003/ROUND_SUMMARY.md",
+        "docs/project_control_center.html"
+      ],
+      "verification": [
+        "python -m compileall services tests",
+        "python tests\\live_collection_runner_smoke_test.py",
+        "python tests\\war_room_runtime_ui_smoke_test.py",
+        "Browser verification: Read-Only Live Collection Runner panel shows public intelligence collection with write actions blocked."
+      ]
+    },
     {
       "id": "ROUND-API-COLLECT-002",
       "title": "AGOS API Credential Setup Wizard",
@@ -2845,6 +2868,15 @@
     }
   ],
   "versions": [
+    {
+      "id": "agos_control_center_v0.1.103",
+      "label": "v0.1.103 - Read-Only Live Collection Runner",
+      "date": "2026-05-26",
+      "gitRef": "agos-v0.1.103",
+      "location": "docs/project_control_center.html",
+      "notes": "ROUND-API-COLLECT-003 completed locally. War Room now shows read-only live public intelligence collection status and confirms write actions remain blocked.",
+      "snapshot": "AGOS Project Control Center v0.1.103\nRound: ROUND-API-COLLECT-003 completed\nGit: agos-v0.1.103\nStatus: Read-Only Live Collection Runner added\npost/reply/DM/follow/like remain blocked.\n"
+    },
     {
       "id": "agos_control_center_v0.1.102",
       "label": "v0.1.102 - API Credential Setup Wizard",
@@ -5165,6 +5197,16 @@
       "deliverable": "services/api_credential_setup_wizard.py, runtime/api_credentials/, local-only credential setup status, workspace isolation, redacted reports, and War Room API Credential Setup Wizard panel.",
       "report": "runtime/task_results/ROUND-API-COLLECT-002/ROUND_SUMMARY.md",
       "summary": "完成 API Credential Setup Wizard。AGOS 现在能安全配置 API Key、OAuth Token、Refresh Token，按 Workspace 隔离凭证状态，只展示 redacted status，不把明文写进日志、公开路径或 Git。"
+    },
+    {
+      "id": "ROUND-API-COLLECT-003",
+      "phase": "CONTROLLED_API_INTELLIGENCE_COLLECTION",
+      "name": "AGOS_READ_ONLY_LIVE_COLLECTION_RUNNER",
+      "status": "done",
+      "progress": 100,
+      "deliverable": "services/live_collection_runner.py, runtime/live_collection/, read-only public intelligence collection feed, summary, and War Room Live Collection Runner panel.",
+      "report": "runtime/task_results/ROUND-API-COLLECT-003/ROUND_SUMMARY.md",
+      "summary": "完成 Read-Only Live Collection Runner。AGOS 现在能采集公开 trend search、keyword search、hashtag search、public analytics intelligence，同时保持 post、reply、DM、follow、like 全部 blocked。"
     }
   ],
   "realGrowthVerification": {
@@ -25146,6 +25188,80 @@
       "git_commit_allowed": false,
       "write_permission_default": false
     },
+    "liveCollectionFeed": [
+      {
+        "time": "2026-05-26T02:10:00+00:00",
+        "collection_id": "LIVE-COLLECT-0001",
+        "platform": "Reddit",
+        "query": "Tokyo transport anxiety",
+        "keyword": "Tokyo subway confusing",
+        "hashtag": "japantravel",
+        "collection_score": 100,
+        "read_status": "collected",
+        "write_status": "blocked",
+        "public_signal_text": "Travelers are asking how to choose the right Tokyo transport pass.",
+        "execution_boundary": "read-only live collection; public intelligence only"
+      },
+      {
+        "time": "2026-05-26T02:10:00+00:00",
+        "collection_id": "LIVE-COLLECT-0002",
+        "platform": "YouTube",
+        "query": "Japan travel planning",
+        "keyword": "IC card vs rail pass",
+        "hashtag": "japantrip",
+        "collection_score": 80,
+        "read_status": "collected",
+        "write_status": "blocked",
+        "public_signal_text": "Short videos compare Suica, Pasmo, and JR Pass choices.",
+        "execution_boundary": "read-only live collection; public intelligence only"
+      },
+      {
+        "time": "2026-05-26T02:10:00+00:00",
+        "collection_id": "LIVE-COLLECT-0003",
+        "platform": "TikTok",
+        "query": "Tokyo first trip mistakes",
+        "keyword": "airport transfer confusion",
+        "hashtag": "tokyotravel",
+        "collection_score": 100,
+        "read_status": "collected",
+        "write_status": "blocked",
+        "public_signal_text": "First-time travelers react strongly to airport transfer complexity.",
+        "execution_boundary": "read-only live collection; public intelligence only"
+      },
+      {
+        "time": "2026-05-26T02:10:00+00:00",
+        "collection_id": "LIVE-COLLECT-0004",
+        "platform": "X",
+        "query": "Japan train pass",
+        "keyword": "JR Pass worth it",
+        "hashtag": "JapanTravel",
+        "collection_score": 71,
+        "read_status": "collected",
+        "write_status": "blocked",
+        "public_signal_text": "Users debate whether JR Pass still saves money after price changes.",
+        "execution_boundary": "read-only live collection; public intelligence only"
+      }
+    ],
+    "liveCollectionSummary": {
+      "runner_ready": true,
+      "items_collected": 4,
+      "platforms_collected": 4,
+      "supported_collection_modes": [
+        "trend search",
+        "keyword search",
+        "hashtag search",
+        "public analytics"
+      ],
+      "read_only": true,
+      "public_intelligence_only": true,
+      "write_operations_enabled": false,
+      "post_enabled": false,
+      "reply_enabled": false,
+      "dm_enabled": false,
+      "follow_enabled": false,
+      "like_enabled": false,
+      "all_write_actions_blocked": true
+    },
     "readOnlyTrendConnector": {
       "report_id": "READ_ONLY_TREND_REPORT",
       "created_at": "2026-05-26T01:44:42+00:00",
@@ -38556,6 +38672,9 @@
             <div class="runtime-title-row"><h3>API Credential Setup Wizard</h3><p>API Key / OAuth Token / Refresh Token / local-only / workspace isolation</p></div>
             <div class="feed-stream" id="runtime-api-credential-setup-wizard"></div>
             <div style="height:10px"></div>
+            <div class="runtime-title-row"><h3>Read-Only Live Collection Runner</h3><p>trend search / keyword search / hashtag search / public analytics / write actions blocked</p></div>
+            <div class="feed-stream" id="runtime-live-collection-runner"></div>
+            <div style="height:10px"></div>
             <div class="runtime-title-row"><h3>Read-Only Trend Connector</h3><p>Trend search / keyword search / hashtag search / public analytics only</p></div>
             <div class="feed-stream" id="runtime-read-only-trends"></div>
             <div style="height:10px"></div>
@@ -39318,6 +39437,10 @@
       el('runtime-api-credential-setup-wizard').innerHTML = (wr.credentialSetupFeed || []).map(item =>
         '<div class="feed-item"><time>' + esc(item.platform || '') + '</time><div class="feed-main"><strong>' + esc(item.setup_status || '') + ' / ' + esc(item.credential_type || '') + '</strong><span>Workspace: ' + esc(item.workspace_id || '') + ' / Scope: ' + esc(item.workspace_scope || '') + '</span><span>Storage: ' + esc(item.storage_mode || '') + ' / Secret redacted: ' + esc(item.secret_redacted || false) + ' / Plaintext logged: ' + esc(item.plaintext_logged || false) + '</span><span>Git commit allowed: ' + esc(item.git_commit_allowed || false) + ' / Public upload allowed: ' + esc(item.public_upload_allowed || false) + ' / Write default: ' + esc(credentialSetupSummary.write_permission_default || false) + '</span><span>Supported: ' + esc((credentialSetupSummary.supported_credential_types || []).join(' / ')) + ' / Local storage only: ' + esc(credentialSetupSummary.local_storage_only || false) + ' / Workspace isolated: ' + esc(credentialSetupSummary.workspace_isolation_enabled || false) + '</span></div><span class="badge ' + (item.setup_status === 'configured_locally' ? 'b-green' : 'b-amber') + '">' + esc(item.storage_mode || 'local_only') + '</span></div>'
       ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>API Credential Setup Wizard pending</strong><span>AGOS will support API Key, OAuth Token, and Refresh Token setup with local-only storage and redacted status.</span></div><span class="badge b-amber">pending</span></div>';
+      const liveCollectionSummary = wr.liveCollectionSummary || {};
+      el('runtime-live-collection-runner').innerHTML = (wr.liveCollectionFeed || []).map(item =>
+        '<div class="feed-item"><time>' + esc(item.collection_id || '') + ' / ' + esc(item.platform || '') + '</time><div class="feed-main"><strong>' + esc(item.query || '') + ' / score ' + esc(item.collection_score || 0) + '</strong><span>Keyword: ' + esc(item.keyword || '') + ' / Hashtag: ' + esc(item.hashtag || '') + '</span><span>' + esc(item.public_signal_text || '') + '</span><span>Read: ' + esc(item.read_status || '') + ' / Write: ' + esc(item.write_status || '') + ' / Boundary: ' + esc(item.execution_boundary || '') + '</span><span>Modes: ' + esc((liveCollectionSummary.supported_collection_modes || []).join(' / ')) + ' / Items: ' + esc(liveCollectionSummary.items_collected || 0) + ' / Write ops enabled: ' + esc(liveCollectionSummary.write_operations_enabled || false) + '</span><span>post=' + esc(liveCollectionSummary.post_enabled || false) + ' / reply=' + esc(liveCollectionSummary.reply_enabled || false) + ' / DM=' + esc(liveCollectionSummary.dm_enabled || false) + ' / follow=' + esc(liveCollectionSummary.follow_enabled || false) + ' / like=' + esc(liveCollectionSummary.like_enabled || false) + '</span></div><span class="badge ' + (item.write_status === 'blocked' ? 'b-green' : 'b-red') + '">' + esc(item.write_status || 'blocked') + '</span></div>'
+      ).join('') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Read-Only Live Collection Runner pending</strong><span>AGOS will collect public trend, keyword, hashtag, and public analytics intelligence while blocking write actions.</span></div><span class="badge b-amber">pending</span></div>';
       const trendConnectorSummary = wr.trendConnectorSummary || {};
       el('runtime-read-only-trends').innerHTML = (wr.platformTrendFeed || []).map(item =>
         '<div class="feed-item"><time>' + esc(item.trend_id || '') + ' / ' + esc(item.platform || '') + '</time><div class="feed-main"><strong>' + esc(item.query || '') + ' / heat ' + esc(item.heat_score || 0) + '</strong><span>Keyword: ' + esc(item.keyword || '') + ' / Hashtag: ' + esc(item.hashtag || '') + '</span><span>' + esc(item.trend_text || '') + '</span><span>Read: ' + esc(item.read_status || '') + ' / Write: ' + esc(item.write_status || '') + ' / Write ops enabled: ' + esc(trendConnectorSummary.write_operations_enabled || false) + '</span></div><span class="badge ' + (item.write_status === 'blocked' ? 'b-green' : 'b-red') + '">' + esc(item.read_status || 'read') + '</span></div>'

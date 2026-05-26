@@ -1,0 +1,130 @@
+[
+  {
+    "collected_at": "2026-05-26T02:04:01+00:00",
+    "collection_id": "LIVE-COLLECT-0001",
+    "collection_modes_used": [
+      "hashtag search",
+      "keyword search",
+      "public analytics",
+      "trend search"
+    ],
+    "collection_score": 100,
+    "dm_enabled": false,
+    "execution_boundary": "read-only live collection; public intelligence only",
+    "follow_enabled": false,
+    "hashtag": "japantravel",
+    "keyword": "Tokyo subway confusing",
+    "like_enabled": false,
+    "platform": "Reddit",
+    "post_enabled": false,
+    "public_metric": {
+      "comments": 18,
+      "mentions": 42,
+      "score": 78
+    },
+    "public_signal_text": "Travelers are asking how to choose the right Tokyo transport pass.",
+    "query": "Tokyo transport anxiety",
+    "read_status": "collected",
+    "reply_enabled": false,
+    "requires_human_review": true,
+    "source_type": "public_trend_import",
+    "workspace_id": "JAG-LAB",
+    "write_status": "blocked"
+  },
+  {
+    "collected_at": "2026-05-26T02:04:01+00:00",
+    "collection_id": "LIVE-COLLECT-0002",
+    "collection_modes_used": [
+      "hashtag search",
+      "keyword search",
+      "public analytics",
+      "trend search"
+    ],
+    "collection_score": 80,
+    "dm_enabled": false,
+    "execution_boundary": "read-only live collection; public intelligence only",
+    "follow_enabled": false,
+    "hashtag": "japantrip",
+    "keyword": "IC card vs rail pass",
+    "like_enabled": false,
+    "platform": "YouTube",
+    "post_enabled": false,
+    "public_metric": {
+      "comments": 9,
+      "mentions": 31,
+      "score": 61
+    },
+    "public_signal_text": "Short videos compare Suica, Pasmo, and JR Pass choices.",
+    "query": "Japan travel planning",
+    "read_status": "collected",
+    "reply_enabled": false,
+    "requires_human_review": true,
+    "source_type": "public_trend_import",
+    "workspace_id": "JAG-LAB",
+    "write_status": "blocked"
+  },
+  {
+    "collected_at": "2026-05-26T02:04:01+00:00",
+    "collection_id": "LIVE-COLLECT-0003",
+    "collection_modes_used": [
+      "hashtag search",
+      "keyword search",
+      "public analytics",
+      "trend search"
+    ],
+    "collection_score": 100,
+    "dm_enabled": false,
+    "execution_boundary": "read-only live collection; public intelligence only",
+    "follow_enabled": false,
+    "hashtag": "tokyotravel",
+    "keyword": "airport transfer confusion",
+    "like_enabled": false,
+    "platform": "TikTok",
+    "post_enabled": false,
+    "public_metric": {
+      "comments": 21,
+      "mentions": 54,
+      "score": 84
+    },
+    "public_signal_text": "First-time travelers react strongly to airport transfer complexity.",
+    "query": "Tokyo first trip mistakes",
+    "read_status": "collected",
+    "reply_enabled": false,
+    "requires_human_review": true,
+    "source_type": "public_trend_import",
+    "workspace_id": "JAG-LAB",
+    "write_status": "blocked"
+  },
+  {
+    "collected_at": "2026-05-26T02:04:01+00:00",
+    "collection_id": "LIVE-COLLECT-0004",
+    "collection_modes_used": [
+      "hashtag search",
+      "keyword search",
+      "public analytics",
+      "trend search"
+    ],
+    "collection_score": 71,
+    "dm_enabled": false,
+    "execution_boundary": "read-only live collection; public intelligence only",
+    "follow_enabled": false,
+    "hashtag": "JapanTravel",
+    "keyword": "JR Pass worth it",
+    "like_enabled": false,
+    "platform": "X",
+    "post_enabled": false,
+    "public_metric": {
+      "comments": 7,
+      "mentions": 27,
+      "score": 55
+    },
+    "public_signal_text": "Users debate whether JR Pass still saves money after price changes.",
+    "query": "Japan train pass",
+    "read_status": "collected",
+    "reply_enabled": false,
+    "requires_human_review": true,
+    "source_type": "public_trend_import",
+    "workspace_id": "JAG-LAB",
+    "write_status": "blocked"
+  }
+]
