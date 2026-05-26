@@ -1,0 +1,16 @@
+{
+  "all_write_permissions_false": true,
+  "connection_center_ready": true,
+  "not_connected": 4,
+  "platforms": 6,
+  "read_connected": 2,
+  "workspace_scopes": [
+    "JAG-LAB:reddit:read_only",
+    "JAG-LAB:youtube:read_only",
+    "JAG-LAB:x:read_only",
+    "JAG-LAB:tiktok:read_only",
+    "JAG-LAB:instagram:read_only",
+    "JAG-LAB:threads:read_only"
+  ],
+  "write_enabled": 0
+}

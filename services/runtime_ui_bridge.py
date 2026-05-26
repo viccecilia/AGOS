@@ -34,6 +34,7 @@ from services.personality_isolation_engine import PersonalityIsolationEngine
 from services.personality_memory_deposit import PersonalityMemoryDeposit
 from services.personality_evolution_gate import PersonalityEvolutionGate
 from services.personality_review_session import PersonalityReviewSession
+from services.platform_account_connection_center import PlatformAccountConnectionCenter
 from services.platform_credential_vault import PlatformCredentialVault
 from services.real_feedback_capture_engine import RealFeedbackCaptureEngine
 from services.real_growth_validation_engine import RealGrowthValidationEngine
@@ -154,6 +155,7 @@ class RuntimeUIBridge:
         )
         api_capability_registry = APICapabilityRegistry().build()
         platform_credential_vault = PlatformCredentialVault().bootstrap_sample_status()
+        platform_account_connections = PlatformAccountConnectionCenter().build(state.get("workspace", "JAG-LAB"))
         read_only_trends = ReadOnlyTrendConnector().read_trends()
         api_rate_limit_guard = APIRateLimitGuard().evaluate()
         api_signal_normalization = APISignalNormalization().normalize(read_only_trends.get("platformTrends", []))
@@ -433,6 +435,10 @@ class RuntimeUIBridge:
             "workspaceCredentialStatus": platform_credential_vault.get("workspaceCredentialStatus", []),
             "credentialVaultFeed": platform_credential_vault.get("credentialVaultFeed", []),
             "credentialVaultSummary": platform_credential_vault.get("credentialVaultSummary", {}),
+            "platformAccountConnectionCenter": platform_account_connections,
+            "platformConnections": platform_account_connections.get("platformConnections", []),
+            "platformConnectionFeed": platform_account_connections.get("platformConnectionFeed", []),
+            "platformConnectionSummary": platform_account_connections.get("platformConnectionSummary", {}),
             "readOnlyTrendConnector": read_only_trends,
             "platformTrends": read_only_trends.get("platformTrends", []),
             "platformTrendFeed": read_only_trends.get("platformTrendFeed", []),

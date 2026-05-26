@@ -1,0 +1,68 @@
+[
+  {
+    "allowed_collection_mode": "read_only_public_intelligence",
+    "connection_status": "read_connected",
+    "credential_status": "redacted_status_only",
+    "platform": "Reddit",
+    "read_permission": true,
+    "time": "2026-05-26T01:44:42+00:00",
+    "token_expiration": "sample_status_only_no_secret",
+    "workspace_scope": "JAG-LAB:reddit:read_only",
+    "write_permission": false
+  },
+  {
+    "allowed_collection_mode": "read_only_public_intelligence",
+    "connection_status": "read_connected",
+    "credential_status": "redacted_status_only",
+    "platform": "YouTube",
+    "read_permission": true,
+    "time": "2026-05-26T01:44:42+00:00",
+    "token_expiration": "sample_status_only_no_secret",
+    "workspace_scope": "JAG-LAB:youtube:read_only",
+    "write_permission": false
+  },
+  {
+    "allowed_collection_mode": "manual_import_or_pending_api_setup",
+    "connection_status": "not_connected",
+    "credential_status": "missing_or_pending_setup",
+    "platform": "X",
+    "read_permission": false,
+    "time": "2026-05-26T01:44:42+00:00",
+    "token_expiration": "not_configured",
+    "workspace_scope": "JAG-LAB:x:read_only",
+    "write_permission": false
+  },
+  {
+    "allowed_collection_mode": "manual_import_or_pending_api_setup",
+    "connection_status": "not_connected",
+    "credential_status": "missing_or_pending_setup",
+    "platform": "TikTok",
+    "read_permission": false,
+    "time": "2026-05-26T01:44:42+00:00",
+    "token_expiration": "not_configured",
+    "workspace_scope": "JAG-LAB:tiktok:read_only",
+    "write_permission": false
+  },
+  {
+    "allowed_collection_mode": "manual_import_or_pending_api_setup",
+    "connection_status": "not_connected",
+    "credential_status": "missing_or_pending_setup",
+    "platform": "Instagram",
+    "read_permission": false,
+    "time": "2026-05-26T01:44:42+00:00",
+    "token_expiration": "not_configured",
+    "workspace_scope": "JAG-LAB:instagram:read_only",
+    "write_permission": false
+  },
+  {
+    "allowed_collection_mode": "manual_import_or_pending_api_setup",
+    "connection_status": "not_connected",
+    "credential_status": "missing_or_pending_setup",
+    "platform": "Threads",
+    "read_permission": false,
+    "time": "2026-05-26T01:44:42+00:00",
+    "token_expiration": "not_configured",
+    "workspace_scope": "JAG-LAB:threads:read_only",
+    "write_permission": false
+  }
+]

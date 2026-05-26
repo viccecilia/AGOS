@@ -1,0 +1,38 @@
+{
+  "round_id": "ROUND-API-COLLECT-001",
+  "status": "passed",
+  "checks": [
+    {
+      "command": "python -m compileall services tests",
+      "status": "passed"
+    },
+    {
+      "command": "python tests\\platform_account_connection_center_smoke_test.py",
+      "status": "passed",
+      "evidence": "platform_account_connection_center_smoke_test passed"
+    },
+    {
+      "command": "python tests\\war_room_runtime_ui_smoke_test.py",
+      "status": "passed",
+      "evidence": "war_room_runtime_ui_smoke_test passed"
+    },
+    {
+      "command": "node project-state and runtime script check",
+      "status": "passed",
+      "evidence": "controlCenterVersion=0.1.101, platforms=6, writeEnabled=0"
+    },
+    {
+      "command": "Browser verification",
+      "status": "passed",
+      "evidence": "Platform Connection Center panel shows Reddit, YouTube, X, TikTok, Instagram, Threads, token expiration, workspace scope, and write=false."
+    }
+  ],
+  "summary": {
+    "platforms": 6,
+    "read_connected": 2,
+    "not_connected": 4,
+    "write_enabled": 0,
+    "all_write_permissions_false": true,
+    "connection_center_ready": true
+  }
+}

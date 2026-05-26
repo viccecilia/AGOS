@@ -1,0 +1,219 @@
+{
+  "created_at": "2026-05-26T01:44:42+00:00",
+  "platformConnectionFeed": [
+    {
+      "allowed_collection_mode": "read_only_public_intelligence",
+      "connection_status": "read_connected",
+      "credential_status": "redacted_status_only",
+      "platform": "Reddit",
+      "read_permission": true,
+      "time": "2026-05-26T01:44:42+00:00",
+      "token_expiration": "sample_status_only_no_secret",
+      "workspace_scope": "JAG-LAB:reddit:read_only",
+      "write_permission": false
+    },
+    {
+      "allowed_collection_mode": "read_only_public_intelligence",
+      "connection_status": "read_connected",
+      "credential_status": "redacted_status_only",
+      "platform": "YouTube",
+      "read_permission": true,
+      "time": "2026-05-26T01:44:42+00:00",
+      "token_expiration": "sample_status_only_no_secret",
+      "workspace_scope": "JAG-LAB:youtube:read_only",
+      "write_permission": false
+    },
+    {
+      "allowed_collection_mode": "manual_import_or_pending_api_setup",
+      "connection_status": "not_connected",
+      "credential_status": "missing_or_pending_setup",
+      "platform": "X",
+      "read_permission": false,
+      "time": "2026-05-26T01:44:42+00:00",
+      "token_expiration": "not_configured",
+      "workspace_scope": "JAG-LAB:x:read_only",
+      "write_permission": false
+    },
+    {
+      "allowed_collection_mode": "manual_import_or_pending_api_setup",
+      "connection_status": "not_connected",
+      "credential_status": "missing_or_pending_setup",
+      "platform": "TikTok",
+      "read_permission": false,
+      "time": "2026-05-26T01:44:42+00:00",
+      "token_expiration": "not_configured",
+      "workspace_scope": "JAG-LAB:tiktok:read_only",
+      "write_permission": false
+    },
+    {
+      "allowed_collection_mode": "manual_import_or_pending_api_setup",
+      "connection_status": "not_connected",
+      "credential_status": "missing_or_pending_setup",
+      "platform": "Instagram",
+      "read_permission": false,
+      "time": "2026-05-26T01:44:42+00:00",
+      "token_expiration": "not_configured",
+      "workspace_scope": "JAG-LAB:instagram:read_only",
+      "write_permission": false
+    },
+    {
+      "allowed_collection_mode": "manual_import_or_pending_api_setup",
+      "connection_status": "not_connected",
+      "credential_status": "missing_or_pending_setup",
+      "platform": "Threads",
+      "read_permission": false,
+      "time": "2026-05-26T01:44:42+00:00",
+      "token_expiration": "not_configured",
+      "workspace_scope": "JAG-LAB:threads:read_only",
+      "write_permission": false
+    }
+  ],
+  "platformConnectionSummary": {
+    "all_write_permissions_false": true,
+    "connection_center_ready": true,
+    "not_connected": 4,
+    "platforms": 6,
+    "read_connected": 2,
+    "workspace_scopes": [
+      "JAG-LAB:reddit:read_only",
+      "JAG-LAB:youtube:read_only",
+      "JAG-LAB:x:read_only",
+      "JAG-LAB:tiktok:read_only",
+      "JAG-LAB:instagram:read_only",
+      "JAG-LAB:threads:read_only"
+    ],
+    "write_enabled": 0
+  },
+  "platformConnections": [
+    {
+      "allowed_collection_mode": "read_only_public_intelligence",
+      "blocked_actions": [
+        "post",
+        "reply",
+        "follow",
+        "dm",
+        "auto_engagement",
+        "account_registration"
+      ],
+      "connection_status": "read_connected",
+      "credential_status": "redacted_status_only",
+      "last_checked_at": "2026-05-26T01:44:42+00:00",
+      "platform": "Reddit",
+      "read_permission": true,
+      "requires_human_review": true,
+      "token_expiration": "sample_status_only_no_secret",
+      "workspace_id": "JAG-LAB",
+      "workspace_scope": "JAG-LAB:reddit:read_only",
+      "write_permission": false
+    },
+    {
+      "allowed_collection_mode": "read_only_public_intelligence",
+      "blocked_actions": [
+        "post",
+        "reply",
+        "follow",
+        "dm",
+        "auto_engagement",
+        "account_registration"
+      ],
+      "connection_status": "read_connected",
+      "credential_status": "redacted_status_only",
+      "last_checked_at": "2026-05-26T01:44:42+00:00",
+      "platform": "YouTube",
+      "read_permission": true,
+      "requires_human_review": true,
+      "token_expiration": "sample_status_only_no_secret",
+      "workspace_id": "JAG-LAB",
+      "workspace_scope": "JAG-LAB:youtube:read_only",
+      "write_permission": false
+    },
+    {
+      "allowed_collection_mode": "manual_import_or_pending_api_setup",
+      "blocked_actions": [
+        "post",
+        "reply",
+        "follow",
+        "dm",
+        "auto_engagement",
+        "account_registration"
+      ],
+      "connection_status": "not_connected",
+      "credential_status": "missing_or_pending_setup",
+      "last_checked_at": "2026-05-26T01:44:42+00:00",
+      "platform": "X",
+      "read_permission": false,
+      "requires_human_review": true,
+      "token_expiration": "not_configured",
+      "workspace_id": "JAG-LAB",
+      "workspace_scope": "JAG-LAB:x:read_only",
+      "write_permission": false
+    },
+    {
+      "allowed_collection_mode": "manual_import_or_pending_api_setup",
+      "blocked_actions": [
+        "post",
+        "reply",
+        "follow",
+        "dm",
+        "auto_engagement",
+        "account_registration"
+      ],
+      "connection_status": "not_connected",
+      "credential_status": "missing_or_pending_setup",
+      "last_checked_at": "2026-05-26T01:44:42+00:00",
+      "platform": "TikTok",
+      "read_permission": false,
+      "requires_human_review": true,
+      "token_expiration": "not_configured",
+      "workspace_id": "JAG-LAB",
+      "workspace_scope": "JAG-LAB:tiktok:read_only",
+      "write_permission": false
+    },
+    {
+      "allowed_collection_mode": "manual_import_or_pending_api_setup",
+      "blocked_actions": [
+        "post",
+        "reply",
+        "follow",
+        "dm",
+        "auto_engagement",
+        "account_registration"
+      ],
+      "connection_status": "not_connected",
+      "credential_status": "missing_or_pending_setup",
+      "last_checked_at": "2026-05-26T01:44:42+00:00",
+      "platform": "Instagram",
+      "read_permission": false,
+      "requires_human_review": true,
+      "token_expiration": "not_configured",
+      "workspace_id": "JAG-LAB",
+      "workspace_scope": "JAG-LAB:instagram:read_only",
+      "write_permission": false
+    },
+    {
+      "allowed_collection_mode": "manual_import_or_pending_api_setup",
+      "blocked_actions": [
+        "post",
+        "reply",
+        "follow",
+        "dm",
+        "auto_engagement",
+        "account_registration"
+      ],
+      "connection_status": "not_connected",
+      "credential_status": "missing_or_pending_setup",
+      "last_checked_at": "2026-05-26T01:44:42+00:00",
+      "platform": "Threads",
+      "read_permission": false,
+      "requires_human_review": true,
+      "token_expiration": "not_configured",
+      "workspace_id": "JAG-LAB",
+      "workspace_scope": "JAG-LAB:threads:read_only",
+      "write_permission": false
+    }
+  ],
+  "report_id": "PLATFORM_ACCOUNT_CONNECTION_CENTER",
+  "safetyBoundary": "Platform Account Connection Center tracks local connection state only. Write permissions are false by default and no platform API call, post, reply, follow, DM, login, or account registration is performed.",
+  "scope": "controlled_api_intelligence_collection",
+  "status": "connection_center_ready"
+}
