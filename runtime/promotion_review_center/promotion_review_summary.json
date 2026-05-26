@@ -1,0 +1,33 @@
+{
+  "all_external_execution_allowed": false,
+  "approve_is_not_publish": true,
+  "auto_publish_allowed": false,
+  "decision_count": 4,
+  "decision_counts": {
+    "approve": 1,
+    "modify": 1,
+    "postpone": 1,
+    "reject": 1
+  },
+  "modified_output_count": 1,
+  "pending_review_count": 80,
+  "promotion_review_center_ready": true,
+  "recommended_next_round": "ROUND-GROWTH-PLUGIN-007 Manual Export Pack",
+  "review_item_count": 80,
+  "source_counts": {
+    "answer_draft": 6,
+    "problem_candidate": 13,
+    "promotion_plan": 48,
+    "qualified_opportunity": 13
+  },
+  "status_counts": {
+    "needs_human_review": 80
+  },
+  "supports_decisions": [
+    "approve",
+    "reject",
+    "modify",
+    "postpone"
+  ],
+  "write_api_called": false
+}

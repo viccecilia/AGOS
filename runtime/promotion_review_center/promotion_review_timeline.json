@@ -1,0 +1,514 @@
+[
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-001",
+    "source_id": "SEEK-PROBLEM-001",
+    "source_type": "problem_candidate",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-002",
+    "source_id": "SEEK-PROBLEM-002",
+    "source_type": "problem_candidate",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-003",
+    "source_id": "SEEK-PROBLEM-005",
+    "source_type": "problem_candidate",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-004",
+    "source_id": "SEEK-PROBLEM-006",
+    "source_type": "problem_candidate",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-005",
+    "source_id": "SEEK-PROBLEM-007",
+    "source_type": "problem_candidate",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-006",
+    "source_id": "SEEK-PROBLEM-008",
+    "source_type": "problem_candidate",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-007",
+    "source_id": "SEEK-PROBLEM-009",
+    "source_type": "problem_candidate",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-008",
+    "source_id": "SEEK-PROBLEM-011",
+    "source_type": "problem_candidate",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-009",
+    "source_id": "SEEK-PROBLEM-003",
+    "source_type": "problem_candidate",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-010",
+    "source_id": "SEEK-PROBLEM-004",
+    "source_type": "problem_candidate",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-011",
+    "source_id": "SEEK-PROBLEM-010",
+    "source_type": "problem_candidate",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-012",
+    "source_id": "SEEK-PROBLEM-012",
+    "source_type": "problem_candidate",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-013",
+    "source_id": "SEEK-PROBLEM-013",
+    "source_type": "problem_candidate",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-014",
+    "source_id": "HOME-OPP-001",
+    "source_type": "qualified_opportunity",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-015",
+    "source_id": "HOME-OPP-002",
+    "source_type": "qualified_opportunity",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-016",
+    "source_id": "HOME-OPP-003",
+    "source_type": "qualified_opportunity",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-017",
+    "source_id": "HOME-OPP-004",
+    "source_type": "qualified_opportunity",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-018",
+    "source_id": "HOME-OPP-005",
+    "source_type": "qualified_opportunity",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-019",
+    "source_id": "HOME-OPP-006",
+    "source_type": "qualified_opportunity",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-020",
+    "source_id": "HOME-OPP-007",
+    "source_type": "qualified_opportunity",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-021",
+    "source_id": "HOME-OPP-008",
+    "source_type": "qualified_opportunity",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-022",
+    "source_id": "HOME-OPP-009",
+    "source_type": "qualified_opportunity",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-023",
+    "source_id": "HOME-OPP-010",
+    "source_type": "qualified_opportunity",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-024",
+    "source_id": "HOME-OPP-011",
+    "source_type": "qualified_opportunity",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-025",
+    "source_id": "HOME-OPP-012",
+    "source_type": "qualified_opportunity",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-026",
+    "source_id": "HOME-OPP-013",
+    "source_type": "qualified_opportunity",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-027",
+    "source_id": "HOME-DRAFT-001",
+    "source_type": "answer_draft",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-028",
+    "source_id": "HOME-DRAFT-002",
+    "source_type": "answer_draft",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-029",
+    "source_id": "HOME-DRAFT-003",
+    "source_type": "answer_draft",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-030",
+    "source_id": "HOME-DRAFT-004",
+    "source_type": "answer_draft",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-031",
+    "source_id": "HOME-DRAFT-005",
+    "source_type": "answer_draft",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-032",
+    "source_id": "HOME-DRAFT-006",
+    "source_type": "answer_draft",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-033",
+    "source_id": "PROMO-PLAN-001",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-034",
+    "source_id": "PROMO-PLAN-002",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-035",
+    "source_id": "PROMO-PLAN-003",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-036",
+    "source_id": "PROMO-PLAN-004",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-037",
+    "source_id": "PROMO-PLAN-005",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-038",
+    "source_id": "PROMO-PLAN-006",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-039",
+    "source_id": "PROMO-PLAN-007",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-040",
+    "source_id": "PROMO-PLAN-008",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-041",
+    "source_id": "PROMO-PLAN-009",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-042",
+    "source_id": "PROMO-PLAN-010",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-043",
+    "source_id": "PROMO-PLAN-011",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-044",
+    "source_id": "PROMO-PLAN-012",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-045",
+    "source_id": "PROMO-PLAN-013",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-046",
+    "source_id": "PROMO-PLAN-014",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-047",
+    "source_id": "PROMO-PLAN-015",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-048",
+    "source_id": "PROMO-PLAN-016",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-049",
+    "source_id": "PROMO-PLAN-017",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-050",
+    "source_id": "PROMO-PLAN-018",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-051",
+    "source_id": "PROMO-PLAN-019",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-052",
+    "source_id": "PROMO-PLAN-020",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-053",
+    "source_id": "PROMO-PLAN-021",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-054",
+    "source_id": "PROMO-PLAN-022",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-055",
+    "source_id": "PROMO-PLAN-023",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-056",
+    "source_id": "PROMO-PLAN-024",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-057",
+    "source_id": "PROMO-PLAN-025",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-058",
+    "source_id": "PROMO-PLAN-026",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-059",
+    "source_id": "PROMO-PLAN-027",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "review_item_created",
+    "review_id": "PROMO-CENTER-REVIEW-060",
+    "source_id": "PROMO-PLAN-028",
+    "source_type": "promotion_plan",
+    "status": "needs_human_review",
+    "time": "2026-05-26T10:19:34+00:00"
+  },
+  {
+    "event": "human_modify",
+    "review_id": "PROMO-CENTER-REVIEW-001",
+    "source_id": "SEEK-PROBLEM-001",
+    "source_type": "problem_candidate",
+    "status": "modify",
+    "time": "2026-05-26T10:19:15+00:00"
+  },
+  {
+    "event": "human_approve",
+    "review_id": "PROMO-CENTER-REVIEW-001",
+    "source_id": "SEEK-PROBLEM-001",
+    "source_type": "problem_candidate",
+    "status": "approve",
+    "time": "2026-05-26T10:19:15+00:00"
+  },
+  {
+    "event": "human_reject",
+    "review_id": "PROMO-CENTER-REVIEW-001",
+    "source_id": "SEEK-PROBLEM-001",
+    "source_type": "problem_candidate",
+    "status": "reject",
+    "time": "2026-05-26T10:19:15+00:00"
+  },
+  {
+    "event": "human_postpone",
+    "review_id": "PROMO-CENTER-REVIEW-001",
+    "source_id": "SEEK-PROBLEM-001",
+    "source_type": "problem_candidate",
+    "status": "postpone",
+    "time": "2026-05-26T10:19:15+00:00"
+  }
+]

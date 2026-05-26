@@ -1,0 +1,17 @@
+{
+  "current_round": "ROUND-GROWTH-PLUGIN-006 / AGOS_HUMAN_GATED_PROMOTION_REVIEW_CENTER",
+  "panel_exists": true,
+  "round_id": "ROUND-GROWTH-PLUGIN-006",
+  "shows_approve_not_publish": true,
+  "shows_auto_publish_disabled": true,
+  "shows_decision_history": true,
+  "shows_decision_options": true,
+  "shows_modified_output": true,
+  "shows_review_items": true,
+  "shows_risk": true,
+  "shows_sources": true,
+  "shows_write_api_disabled": true,
+  "url": "http://127.0.0.1:8765/project_control_center.html?runtime_ui=1&cache_bust=1779790807016#war-room-growth",
+  "verified_at": "2026-05-26T10:20:24.135Z",
+  "version": "0.1.121"
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "auto_publish_allowed": false,
+    "decision_id": "PROMO-DECISION-001",
+    "external_execution_allowed": false,
+    "human_decision": "modify",
+    "human_notes": "Make the CTA softer and keep the answer first.",
+    "modified_version": "Modified answer keeps practical steps first, then mentions the homepage only as an optional reference.",
+    "review_id": "PROMO-CENTER-REVIEW-001",
+    "reviewed_at": "2026-05-26T10:19:15+00:00",
+    "source_id": "SEEK-PROBLEM-001",
+    "source_type": "problem_candidate",
+    "write_api_called": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "decision_id": "PROMO-DECISION-002",
+    "external_execution_allowed": false,
+    "human_decision": "approve",
+    "human_notes": "smoke approve",
+    "modified_version": "",
+    "review_id": "PROMO-CENTER-REVIEW-001",
+    "reviewed_at": "2026-05-26T10:19:15+00:00",
+    "source_id": "SEEK-PROBLEM-001",
+    "source_type": "problem_candidate",
+    "write_api_called": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "decision_id": "PROMO-DECISION-003",
+    "external_execution_allowed": false,
+    "human_decision": "reject",
+    "human_notes": "smoke reject",
+    "modified_version": "",
+    "review_id": "PROMO-CENTER-REVIEW-001",
+    "reviewed_at": "2026-05-26T10:19:15+00:00",
+    "source_id": "SEEK-PROBLEM-001",
+    "source_type": "problem_candidate",
+    "write_api_called": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "decision_id": "PROMO-DECISION-004",
+    "external_execution_allowed": false,
+    "human_decision": "postpone",
+    "human_notes": "smoke postpone",
+    "modified_version": "",
+    "review_id": "PROMO-CENTER-REVIEW-001",
+    "reviewed_at": "2026-05-26T10:19:15+00:00",
+    "source_id": "SEEK-PROBLEM-001",
+    "source_type": "problem_candidate",
+    "write_api_called": false
+  }
+]

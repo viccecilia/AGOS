@@ -1,0 +1,12 @@
+[
+  {
+    "auto_publish_allowed": false,
+    "created_at": "2026-05-26T10:19:15+00:00",
+    "human_notes": "Make the CTA softer and keep the answer first.",
+    "modified_id": "PROMO-MODIFIED-001",
+    "modified_version": "Modified answer keeps practical steps first, then mentions the homepage only as an optional reference.",
+    "review_id": "PROMO-CENTER-REVIEW-001",
+    "source_id": "SEEK-PROBLEM-001",
+    "source_type": "problem_candidate"
+  }
+]
