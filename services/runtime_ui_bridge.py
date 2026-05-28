@@ -22,6 +22,7 @@ from services.best_answer_learning_engine import BestAnswerLearningEngine
 from services.autonomous_growth_preparation_gate import AutonomousGrowthPreparationGate
 from services.collection_compliance_guard import CollectionComplianceGuard
 from services.controlled_api_collection_gate import ControlledAPICollectionGate
+from services.controlled_external_interaction_gate import ControlledExternalInteractionGate
 from services.cross_platform_promotion_plan_engine import CrossPlatformPromotionPlanEngine
 from services.cross_platform_expansion_engine import CrossPlatformExpansionEngine
 from services.demand_to_action_strategy_engine import DemandToActionStrategyEngine
@@ -225,6 +226,13 @@ class RuntimeUIBridge:
             manual_feedback=manual_external_feedback_intake.get("manualExternalFeedbackRecords", []),
             strategy_state=strategy_evolution,
             feedback_learning=promotion_feedback_learning,
+        )
+        controlled_external_interaction_gate = ControlledExternalInteractionGate().evaluate(
+            export_pack=manual_promotion_export_pack,
+            evidence_ledger=external_evidence_ledger,
+            manual_feedback=manual_external_feedback_intake,
+            survival_rulebook=platform_survival_rulebook,
+            drift_monitor=external_drift_monitor,
         )
         batch_scout_runtime = BatchScoutRuntime().run()
         batch_topic_clustering = BatchTopicClustering().cluster(batch_scout_runtime.get("batchAnalysis", []))
@@ -618,6 +626,12 @@ class RuntimeUIBridge:
             "externalDriftSignals": external_drift_monitor.get("externalDriftSignals", []),
             "externalDriftRecommendations": external_drift_monitor.get("externalDriftRecommendations", []),
             "externalDriftSummary": external_drift_monitor.get("externalDriftSummary", {}),
+            "controlledExternalInteractionGate": controlled_external_interaction_gate,
+            "controlledExternalInteractionReport": controlled_external_interaction_gate.get("controlledExternalInteractionReport", {}),
+            "controlledExternalInteractionSafetyReview": controlled_external_interaction_gate.get("controlledExternalInteractionSafetyReview", {}),
+            "controlledExternalInteractionActions": controlled_external_interaction_gate.get("controlledExternalInteractionActions", []),
+            "controlledExternalInteractionChecks": controlled_external_interaction_gate.get("controlledExternalInteractionChecks", []),
+            "controlledExternalInteractionSummary": controlled_external_interaction_gate.get("controlledExternalInteractionSummary", {}),
             "locationDemandHeatmap": location_demand_heatmap,
             "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),

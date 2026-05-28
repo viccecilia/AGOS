@@ -1,0 +1,27 @@
+[
+  {
+    "check": "Manual Promotion Export Pack",
+    "evidence": "items=4; human_gate=True; external_execution_allowed=False",
+    "passed": true
+  },
+  {
+    "check": "External Evidence Ledger",
+    "evidence": "records=4; all_bound=True; allowed_feedback=1",
+    "passed": true
+  },
+  {
+    "check": "Manual External Feedback Intake",
+    "evidence": "records=4; accepted=1; blocked=2",
+    "passed": true
+  },
+  {
+    "check": "Platform Survival Rulebook",
+    "evidence": "review_required=1; rejected=0; reddit_blocked=True",
+    "passed": true
+  },
+  {
+    "check": "External Drift Monitor",
+    "evidence": "signals=5; declining=True; recommendation_only=True",
+    "passed": true
+  }
+]

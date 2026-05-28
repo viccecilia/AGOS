@@ -1,0 +1,32 @@
+{
+  "allowed_scope": "manual_copy_execute_only_after_human_review",
+  "automatic_dm_allowed": false,
+  "automatic_follow_allowed": false,
+  "automatic_like_allowed": false,
+  "automatic_login_allowed": false,
+  "automatic_posting_allowed": false,
+  "automatic_reply_allowed": false,
+  "blocked_scope": [
+    "auto_post",
+    "auto_reply",
+    "auto_login",
+    "platform_write_api",
+    "auto_dm",
+    "auto_follow",
+    "auto_like",
+    "login_scraping",
+    "platform_crawling"
+  ],
+  "human_controlled_external_trial_allowed": true,
+  "login_scraping_allowed": false,
+  "platform_crawling_allowed": false,
+  "platform_write_api_allowed": false,
+  "safety_boundary_passed": true,
+  "source_boundaries": {
+    "drift_auto_strategy_change_allowed": false,
+    "drift_external_execution_change_allowed": false,
+    "evidence_platform_api_called": false,
+    "export_pack_external_execution_allowed": false,
+    "survival_write_api_called": false
+  }
+}

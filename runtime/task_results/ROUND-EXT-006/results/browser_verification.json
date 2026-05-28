@@ -1,0 +1,17 @@
+{
+  "actionCount": 4,
+  "actionStatuses": [
+    "review_required"
+  ],
+  "automaticExternalExecutionAllowed": false,
+  "currentRound": "ROUND-EXT-006 / CONTROLLED_EXTERNAL_INTERACTION_GATE",
+  "gateDecision": "human_controlled_trial_allowed",
+  "panelExists": true,
+  "panelTextIncludesAutoPostFalse": true,
+  "panelTextIncludesGateDecision": true,
+  "panelTextIncludesHumanOnly": true,
+  "panelTextIncludesWriteApiFalse": true,
+  "url": "http://127.0.0.1:8765/project_control_center.html?runtime_ui=1&cache_bust=1779959008143#war-room-growth",
+  "version": "0.1.129",
+  "visibleSnippet": "Gate Decisionhuman_controlled_trial_allowedchecks passed: true\nHuman Trialtrueautomatic external execution: false\nActionsallowed 0review: 4 / blocked: 0\nSafetywrite API: falsepost: false / reply: false / login: false\nCHECK\nManual Promotion Export Pack / passed\nitems=4; human_gate=True; external_execution_allowed=False\npassed\nCHECK\nExternal Evidence Ledger / passed\nrecords=4; all_bound=True; allowed_feedback=1\npassed\nCHECK\nManual External Feedback Intake / passed\nrecords=4; accepted=1; blocked=2\npassed\nCHECK\nPlatform Survival Rulebook / passed\nreview_required=1; rejected=0; reddit_blocked=True\npassed\nCHECK\nExternal Drift Monitor / passed\nsignals=5; declining=True; recommendation_only=True\npassed\nCONTROLLED-EXT-ACTION-001\nMANUAL-EXPORT-001 / Reddit / review_required\nReason: External drift monitor has high-severity findings; human review required before trial.\nEvidence: manually_executed / "
+}

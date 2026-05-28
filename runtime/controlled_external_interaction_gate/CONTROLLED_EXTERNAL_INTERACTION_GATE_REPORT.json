@@ -1,0 +1,171 @@
+{
+  "controlledExternalInteractionActions": [
+    {
+      "automatic_login_allowed": false,
+      "automatic_posting_allowed": false,
+      "automatic_reply_allowed": false,
+      "content_format": "reply",
+      "drift_highest_severity": "high",
+      "evidence_status": "manually_executed",
+      "export_id": "MANUAL-EXPORT-001",
+      "external_execution_allowed": false,
+      "gate_action_id": "CONTROLLED-EXT-ACTION-001",
+      "gate_reason": "External drift monitor has high-severity findings; human review required before trial.",
+      "gate_status": "review_required",
+      "human_controlled_trial_allowed": true,
+      "human_review_required": true,
+      "platform": "Reddit",
+      "platform_write_api_allowed": false,
+      "risk_level": "medium",
+      "survival_status": "safe_with_review"
+    },
+    {
+      "automatic_login_allowed": false,
+      "automatic_posting_allowed": false,
+      "automatic_reply_allowed": false,
+      "content_format": "answer_draft",
+      "drift_highest_severity": "high",
+      "evidence_status": "evidence_pending",
+      "export_id": "MANUAL-EXPORT-002",
+      "external_execution_allowed": false,
+      "gate_action_id": "CONTROLLED-EXT-ACTION-002",
+      "gate_reason": "External drift monitor has high-severity findings; human review required before trial.",
+      "gate_status": "review_required",
+      "human_controlled_trial_allowed": true,
+      "human_review_required": true,
+      "platform": "Reddit",
+      "platform_write_api_allowed": false,
+      "risk_level": "low",
+      "survival_status": "safe_with_review"
+    },
+    {
+      "automatic_login_allowed": false,
+      "automatic_posting_allowed": false,
+      "automatic_reply_allowed": false,
+      "content_format": "reply",
+      "drift_highest_severity": "high",
+      "evidence_status": "rejected",
+      "export_id": "MANUAL-EXPORT-003",
+      "external_execution_allowed": false,
+      "gate_action_id": "CONTROLLED-EXT-ACTION-003",
+      "gate_reason": "External drift monitor has high-severity findings; human review required before trial.",
+      "gate_status": "review_required",
+      "human_controlled_trial_allowed": true,
+      "human_review_required": true,
+      "platform": "Reddit",
+      "platform_write_api_allowed": false,
+      "risk_level": "medium",
+      "survival_status": "safe_with_review"
+    },
+    {
+      "automatic_login_allowed": false,
+      "automatic_posting_allowed": false,
+      "automatic_reply_allowed": false,
+      "content_format": "answer_draft",
+      "drift_highest_severity": "high",
+      "evidence_status": "evidence_pending",
+      "export_id": "MANUAL-EXPORT-004",
+      "external_execution_allowed": false,
+      "gate_action_id": "CONTROLLED-EXT-ACTION-004",
+      "gate_reason": "External drift monitor has high-severity findings; human review required before trial.",
+      "gate_status": "review_required",
+      "human_controlled_trial_allowed": true,
+      "human_review_required": true,
+      "platform": "Reddit",
+      "platform_write_api_allowed": false,
+      "risk_level": "low",
+      "survival_status": "safe_with_review"
+    }
+  ],
+  "controlledExternalInteractionChecks": [
+    {
+      "check": "Manual Promotion Export Pack",
+      "evidence": "items=4; human_gate=True; external_execution_allowed=False",
+      "passed": true
+    },
+    {
+      "check": "External Evidence Ledger",
+      "evidence": "records=4; all_bound=True; allowed_feedback=1",
+      "passed": true
+    },
+    {
+      "check": "Manual External Feedback Intake",
+      "evidence": "records=4; accepted=1; blocked=2",
+      "passed": true
+    },
+    {
+      "check": "Platform Survival Rulebook",
+      "evidence": "review_required=1; rejected=0; reddit_blocked=True",
+      "passed": true
+    },
+    {
+      "check": "External Drift Monitor",
+      "evidence": "signals=5; declining=True; recommendation_only=True",
+      "passed": true
+    }
+  ],
+  "controlledExternalInteractionReport": {
+    "automatic_external_execution_allowed": false,
+    "drift_monitor_ready": true,
+    "evidence_ledger_ready": true,
+    "export_pack_ready": true,
+    "human_controlled_trial_allowed": true,
+    "manual_feedback_ready": true,
+    "next_stage_recommendation": "Start only a small human-controlled external trial. Keep all automatic external execution disabled.",
+    "survival_rulebook_ready": true
+  },
+  "controlledExternalInteractionSafetyReview": {
+    "allowed_scope": "manual_copy_execute_only_after_human_review",
+    "automatic_dm_allowed": false,
+    "automatic_follow_allowed": false,
+    "automatic_like_allowed": false,
+    "automatic_login_allowed": false,
+    "automatic_posting_allowed": false,
+    "automatic_reply_allowed": false,
+    "blocked_scope": [
+      "auto_post",
+      "auto_reply",
+      "auto_login",
+      "platform_write_api",
+      "auto_dm",
+      "auto_follow",
+      "auto_like",
+      "login_scraping",
+      "platform_crawling"
+    ],
+    "human_controlled_external_trial_allowed": true,
+    "login_scraping_allowed": false,
+    "platform_crawling_allowed": false,
+    "platform_write_api_allowed": false,
+    "safety_boundary_passed": true,
+    "source_boundaries": {
+      "drift_auto_strategy_change_allowed": false,
+      "drift_external_execution_change_allowed": false,
+      "evidence_platform_api_called": false,
+      "export_pack_external_execution_allowed": false,
+      "survival_write_api_called": false
+    }
+  },
+  "controlledExternalInteractionSummary": {
+    "action_count": 4,
+    "allowed_action_count": 0,
+    "auto_login_allowed": false,
+    "auto_post_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_external_execution_allowed": false,
+    "blocked_action_count": 0,
+    "checks_passed": true,
+    "controlled_external_interaction_gate_ready": true,
+    "gate_decision": "human_controlled_trial_allowed",
+    "human_controlled_trial_allowed": true,
+    "next_stage_recommendation": "Start only a small human-controlled external trial. Keep all automatic external execution disabled.",
+    "platform_write_api_allowed": false,
+    "review_required_action_count": 4
+  },
+  "created_at": "2026-05-28T09:01:17+00:00",
+  "gateDecision": "human_controlled_trial_allowed",
+  "phase": "CONTROLLED_REAL_EXTERNAL_INTERACTION_PREPARATION",
+  "report_id": "CONTROLLED_EXTERNAL_INTERACTION_GATE_REPORT",
+  "safetyBoundary": "Gate permits only human-controlled external trial preparation. It does not enable automatic posting, replying, login, account operation, platform API writes, scraping, DMs, follows, or likes.",
+  "status": "controlled_external_interaction_gate_ready"
+}

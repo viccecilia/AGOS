@@ -1,0 +1,16 @@
+{
+  "action_count": 4,
+  "allowed_action_count": 0,
+  "auto_login_allowed": false,
+  "auto_post_allowed": false,
+  "auto_reply_allowed": false,
+  "automatic_external_execution_allowed": false,
+  "blocked_action_count": 0,
+  "checks_passed": true,
+  "controlled_external_interaction_gate_ready": true,
+  "gate_decision": "human_controlled_trial_allowed",
+  "human_controlled_trial_allowed": true,
+  "next_stage_recommendation": "Start only a small human-controlled external trial. Keep all automatic external execution disabled.",
+  "platform_write_api_allowed": false,
+  "review_required_action_count": 4
+}
