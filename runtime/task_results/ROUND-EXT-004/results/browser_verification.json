@@ -1,0 +1,57 @@
+{
+  "actionCount": 4,
+  "currentRound": "ROUND-EXT-004 / PLATFORM_SURVIVAL_RULEBOOK",
+  "hasCadence": true,
+  "hasForbidden": true,
+  "hasNoWriteApi": true,
+  "hasReddit": true,
+  "hasReviewRequired": true,
+  "hasSafeCta": true,
+  "hasStrongMarketingBlocked": true,
+  "panelExists": true,
+  "panelText": "RulebooktruePlatforms: Reddit / X / TikTok / Instagram / YouTube / Threads\nDowngradereview: 1rejected: 0\nRedditstrong marketing blocked: truecommunity first\nSafetywrite API: falseauto publish: false / auto reply: false\nInstagram\ncommunity risk: medium / cadence: visual_value_first\nForbidden: fake scarcity / auto dm / mass tagging / guaranteed\nSafe CTA: profile has checklist / soft reference in caption\nStrong marketing allowed by default: false\nrule\nReddit\ncommunity risk: high / cadence: low_frequency_answer_first\nForbidden: buy now / limited offer / guaranteed / official partner / dm me / promo code\nSafe CTA: optional reference / if useful / check the profile only after answering the question\nStrong marketing allowed by default: false\nrule\nThreads\ncommunity risk: medium / cadence: conversation_first\nForbidden: mass reply / hard sell / guaranteed / auto follow\nSafe CTA: optional profile reference / non-promotional thread reply\nStrong marketing allowed by default: false\nrule\nTikTok\ncommunity risk: medium / cadence: creative_hook_no_spam\nForbidden: clickbait / fake urgency / guaranteed result / spam comments\nSafe CTA: save this / profile reference after useful tip\nStrong marketing allowed by default: false\nrule\nX\ncommunity risk: medium / cadence: moderate_observation_first\nForbidden: guaranteed / mass reply / auto dm / follow for follow\nSafe CTA: short optional link / transparent source note\nStrong marketing allowed by default: false\nrule\nYouTube\ncommunity risk: medium / cadence: evergreen_helpful\nForbidden: misleading title / guaranteed / comment spam / fake authority\nSafe CTA: description reference / optional guide link\nStrong marketing allowed by default: false\nrule\nPROMO-CENTER-REVIEW-001\nReddit / safe_with_review\nWe land at Haneda late with two kids and big luggage. Is train still realistic?\nForbidden hits:\nSafe CTA: optional reference / Cadence: low_frequency_answer_first\nReason: Allowed only with human review using cadence low_frequency_answer_first and safe CTA: optional reference.\nAuto publish: false / Auto reply: false / External execution: false\nsafe_with_review\nPROMO-CENTER-REVIEW-002\nXiaohongshu / safe_with_review\n春节去东京一家四口行李很多，机场到酒店怎么安排比较稳？\nForbidden hits:\nSafe CTA: optional reference after useful answer / Cadence: review_first\nReason: Allowed only with human review using cadence review_first and safe CTA: optional reference after useful answer.\nAuto publish: false / Auto reply: false / External execution: false\nsafe_with_review\nPROMO-CENTER-REVIEW-003\nGoogle Trends style sample / safe_with_review\nTravelers are searching for 'Japan Chinese New Year travel'. What Japan mobility problem should the homepage answer?\nForbidden hits:\nSafe CTA: optional reference after useful answer / Cadence: review_first\nReason: Allowed only with human review using cadence review_first and safe CTA: optional reference after useful answer.\nAuto publish: false / Auto reply: false / External execution: false\nsafe_with_review\nPROMO-CENTER-REVIEW-004\nGoogle Tren",
+  "reviewCount": 80,
+  "riskReview": {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "external_execution_allowed": false,
+    "reddit_strong_marketing_blocked": true,
+    "rejected_count": 0,
+    "review_required_count": 1,
+    "risk_review_ready": true,
+    "safe_with_review_count": 83,
+    "total_items": 84,
+    "write_api_called": false
+  },
+  "rulesPlatforms": [
+    "Instagram",
+    "Reddit",
+    "Threads",
+    "TikTok",
+    "X",
+    "YouTube"
+  ],
+  "summary": {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "external_execution_allowed": false,
+    "governed_external_action_count": 4,
+    "governed_review_item_count": 80,
+    "high_risk_downgraded_or_rejected": true,
+    "next_recommendation": "Use rulebook-governed review_required/rejected states before producing manual export packs or external action evidence.",
+    "platform_survival_rulebook_ready": true,
+    "reddit_strong_marketing_blocked": true,
+    "rejected_count": 0,
+    "review_required_count": 1,
+    "supported_platforms": [
+      "Reddit",
+      "X",
+      "TikTok",
+      "Instagram",
+      "YouTube",
+      "Threads"
+    ],
+    "write_api_called": false
+  },
+  "version": "0.1.127"
+}

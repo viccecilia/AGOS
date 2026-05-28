@@ -1,0 +1,12 @@
+{
+  "auto_publish_allowed": false,
+  "auto_reply_allowed": false,
+  "external_execution_allowed": false,
+  "reddit_strong_marketing_blocked": true,
+  "rejected_count": 0,
+  "review_required_count": 1,
+  "risk_review_ready": true,
+  "safe_with_review_count": 83,
+  "total_items": 84,
+  "write_api_called": false
+}

@@ -54,6 +54,7 @@ from services.personality_evolution_gate import PersonalityEvolutionGate
 from services.personality_review_session import PersonalityReviewSession
 from services.platform_account_connection_center import PlatformAccountConnectionCenter
 from services.platform_credential_vault import PlatformCredentialVault
+from services.platform_survival_rulebook import PlatformSurvivalRulebook
 from services.predictive_demand_gate import PredictiveDemandGate
 from services.problem_seeker_loop import ProblemSeekerLoop
 from services.promotion_feedback_learning import PromotionFeedbackLearning
@@ -214,6 +215,10 @@ class RuntimeUIBridge:
         api_to_scout_pipeline = APIToScoutPipeline().run(api_signal_normalization.get("normalizedSignals", []))
         api_scout_gate = APIScoutGate().evaluate()
         external_action_sandbox = ExternalActionSandbox().build(action_recommendations.get("actionRecommendations", []))
+        platform_survival_rulebook = PlatformSurvivalRulebook().build(
+            promotion_review_center.get("promotionReviewItems", []),
+            external_action_sandbox.get("externalActionQueue", []),
+        )
         batch_scout_runtime = BatchScoutRuntime().run()
         batch_topic_clustering = BatchTopicClustering().cluster(batch_scout_runtime.get("batchAnalysis", []))
         batch_human_review = BatchHumanReview().review(batch_topic_clustering.get("batchTrendClusters", []))
@@ -596,6 +601,12 @@ class RuntimeUIBridge:
             "manualFeedbackLearningEvents": manual_external_feedback_intake.get("manualFeedbackLearningEvents", []),
             "manualFeedbackRejected": manual_external_feedback_intake.get("manualFeedbackRejected", []),
             "manualExternalFeedbackSummary": manual_external_feedback_intake.get("manualExternalFeedbackSummary", {}),
+            "platformSurvivalRulebook": platform_survival_rulebook,
+            "platformSurvivalRules": platform_survival_rulebook.get("platformSurvivalRules", {}),
+            "governedPromotionReviewItems": platform_survival_rulebook.get("governedPromotionReviewItems", []),
+            "governedExternalActionQueue": platform_survival_rulebook.get("governedExternalActionQueue", []),
+            "platformSurvivalRiskReview": platform_survival_rulebook.get("platformSurvivalRiskReview", {}),
+            "platformSurvivalRulebookSummary": platform_survival_rulebook.get("platformSurvivalRulebookSummary", {}),
             "locationDemandHeatmap": location_demand_heatmap,
             "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),
