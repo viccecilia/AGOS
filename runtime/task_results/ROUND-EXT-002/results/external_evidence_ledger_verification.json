@@ -1,0 +1,19 @@
+{
+  "control_center_version": "0.1.125",
+  "panel_present": true,
+  "ledger_ready": true,
+  "manual_export_item_count": 4,
+  "evidence_record_count": 4,
+  "all_export_items_bound": true,
+  "feedback_learning_allowed_count": 1,
+  "feedback_learning_blocked_count": 3,
+  "external_page_auto_verification_enabled": false,
+  "platform_crawling_enabled": false,
+  "platform_api_called": false,
+  "write_api_called": false,
+  "login_scraping_used": false,
+  "has_all_status_fields": true,
+  "has_feedback_gate_fields": true,
+  "missing_evidence_blocked": true,
+  "passed": true
+}

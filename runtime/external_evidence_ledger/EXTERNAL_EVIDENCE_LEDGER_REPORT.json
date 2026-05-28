@@ -1,0 +1,28 @@
+{
+  "all_export_items_bound": true,
+  "evidence_present_count": 1,
+  "evidence_record_count": 4,
+  "external_page_auto_verification_enabled": false,
+  "feedback_learning_allowed_count": 1,
+  "feedback_learning_blocked_count": 3,
+  "feedback_learning_gate": "blocked_without_evidence",
+  "ledger_ready": true,
+  "login_scraping_used": false,
+  "manual_export_item_count": 4,
+  "missing_evidence_export_ids": [
+    "MANUAL-EXPORT-003",
+    "MANUAL-EXPORT-004"
+  ],
+  "platform_api_called": false,
+  "platform_crawling_enabled": false,
+  "rejected_export_ids": [
+    "MANUAL-EXPORT-002"
+  ],
+  "status_counts": {
+    "evidence_pending": 2,
+    "manually_executed": 1,
+    "planned": 0,
+    "rejected": 1
+  },
+  "write_api_called": false
+}

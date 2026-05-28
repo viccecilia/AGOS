@@ -29,6 +29,7 @@ from services.daily_question_import_engine import DailyQuestionImportEngine
 from services.daily_operations_report_engine import DailyOperationsReportEngine
 from services.failure_analysis_engine import FailureAnalysisEngine
 from services.growth_signal_correlation_engine import GrowthSignalCorrelationEngine
+from services.external_evidence_ledger import ExternalEvidenceLedger
 from services.external_action_sandbox import ExternalActionSandbox
 from services.human_approval_orchestrator import HumanApprovalOrchestrator
 from services.human_feedback_learning import HumanFeedbackLearning
@@ -199,6 +200,7 @@ class RuntimeUIBridge:
         promotion_feedback_learning = PromotionFeedbackLearning().learn()
         merchant_growth_engine_gate = MerchantGrowthEngineGate().evaluate()
         manual_promotion_export_pack = ManualPromotionExportPack().build()
+        external_evidence_ledger = ExternalEvidenceLedger().build()
         location_demand_heatmap = LocationDemandHeatmapEngine().build(seasonal_demand_calendar.get("seasonalCalendar", []))
         mobility_demand_intent = MobilityDemandIntentEngine().build()
         demand_to_action_strategy = DemandToActionStrategyEngine().build()
@@ -584,6 +586,8 @@ class RuntimeUIBridge:
             "manualExportItems": manual_promotion_export_pack.get("manualExportItems", []),
             "manualExportAudit": manual_promotion_export_pack.get("manualExportAudit", {}),
             "manualExportSummary": manual_promotion_export_pack.get("manualExportSummary", {}),
+            "externalEvidenceLedger": external_evidence_ledger.get("externalEvidenceLedger", []),
+            "externalEvidenceLedgerReport": external_evidence_ledger.get("externalEvidenceLedgerReport", {}),
             "locationDemandHeatmap": location_demand_heatmap,
             "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),
