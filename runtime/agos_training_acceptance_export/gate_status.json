@@ -1,0 +1,14 @@
+{
+  "acceptance_passed": true,
+  "automatic_external_execution_allowed": false,
+  "blocked_action_count": 0,
+  "business_code_write_allowed": false,
+  "controlled_external_gate_decision": "human_controlled_trial_allowed",
+  "controlled_external_gate_ready": true,
+  "human_controlled_trial_allowed": true,
+  "platform_write_api_allowed": false,
+  "review_required_action_count": 4,
+  "secret_read_allowed": false,
+  "workbench_adapter_ready": true,
+  "workbench_read_only": true
+}

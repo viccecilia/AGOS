@@ -1,0 +1,15 @@
+{
+  "acceptance_ready": true,
+  "blocked_risk_count": 7,
+  "capability_grade": "pass",
+  "capability_score": 100,
+  "drift_acceptance_passed": true,
+  "feedback_evidence_passed": true,
+  "gate_acceptance_passed": true,
+  "needs_review_risk_count": 0,
+  "next_recommendation": "Workbench can ingest this training acceptance package as read-only evidence; execution remains AGOS/human-gated.",
+  "replay_acceptance_passed": true,
+  "training_acceptance_export_ready": true,
+  "workbench_may_execute": false,
+  "workbench_may_ingest": true
+}

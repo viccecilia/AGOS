@@ -1,0 +1,179 @@
+{
+  "blockedRisks": [
+    {
+      "blocked": true,
+      "reason": "Workbench cannot directly modify AGOS business code.",
+      "risk": "business_code_write",
+      "risk_id": "WB-RISK-001",
+      "status": "blocked",
+      "workbench_action_allowed": false
+    },
+    {
+      "blocked": true,
+      "reason": "Workbench cannot read secrets, tokens, .env, or credential payloads.",
+      "risk": "secret_read",
+      "risk_id": "WB-RISK-002",
+      "status": "blocked",
+      "workbench_action_allowed": false
+    },
+    {
+      "blocked": true,
+      "reason": "Workbench cannot start external platform actions.",
+      "risk": "external_action_start",
+      "risk_id": "WB-RISK-003",
+      "status": "blocked",
+      "workbench_action_allowed": false
+    },
+    {
+      "blocked": true,
+      "reason": "Platform write APIs remain disabled.",
+      "risk": "platform_write_api",
+      "risk_id": "WB-RISK-004",
+      "status": "blocked",
+      "workbench_action_allowed": false
+    },
+    {
+      "blocked": true,
+      "reason": "Automatic posting, replying, and login remain disabled.",
+      "risk": "automatic_post_reply_login",
+      "risk_id": "WB-RISK-005",
+      "status": "blocked",
+      "workbench_action_allowed": false
+    },
+    {
+      "blocked": true,
+      "reason": "Drift only creates recommendations; it cannot change external execution strategy.",
+      "risk": "drift_auto_strategy_change",
+      "risk_id": "WB-RISK-006",
+      "status": "blocked",
+      "workbench_action_allowed": false
+    },
+    {
+      "blocked": true,
+      "reason": "Missing evidence is blocked or ledger-bound before feedback learning.",
+      "risk": "feedback_without_evidence",
+      "risk_id": "WB-RISK-007",
+      "status": "blocked",
+      "workbench_action_allowed": false
+    }
+  ],
+  "capabilityScore": {
+    "acceptance_ready": true,
+    "dimensions": {
+      "blocked_risks": 20,
+      "drift_result": 20,
+      "feedback_evidence": 20,
+      "gate_status": 20,
+      "replay_result": 20
+    },
+    "grade": "pass",
+    "max_score": 100,
+    "score": 100
+  },
+  "created_at": "2026-05-28T09:13:47+00:00",
+  "driftResult": {
+    "acceptance_passed": true,
+    "auto_strategy_change_allowed": false,
+    "drift_status": "external_drift_monitor_ready",
+    "drift_types": [
+      "platform_drift",
+      "strategy_drift",
+      "tone_drift"
+    ],
+    "external_execution_change_allowed": false,
+    "highest_severity": "high",
+    "recommendation_only": true,
+    "signal_count": 5
+  },
+  "export_policy": {
+    "business_code_write_allowed": false,
+    "contains_secret_values": false,
+    "credential_value_export_allowed": false,
+    "external_action_start_allowed": false,
+    "platform_write_api_allowed": false,
+    "read_only": true
+  },
+  "feedbackEvidence": {
+    "acceptance_passed": true,
+    "best_pattern_count": 12,
+    "evidence_ledger_ready": true,
+    "evidence_record_count": 4,
+    "failed_pattern_count": 12,
+    "feedback_event_count": 20,
+    "feedback_learning_allowed_count": 1,
+    "feedback_status": "promotion_feedback_learning_ready",
+    "missing_evidence_blocks_learning": true,
+    "sample_or_manual_boundary": "Feedback evidence is local/manual/sample bounded unless evidence ledger marks a manually executed item.",
+    "supported_feedback_types": [
+      "posted_manually",
+      "liked",
+      "replied",
+      "saved",
+      "shared",
+      "ignored",
+      "rejected_by_human",
+      "modified_by_human",
+      "unsafe_flagged"
+    ]
+  },
+  "gateStatus": {
+    "acceptance_passed": true,
+    "automatic_external_execution_allowed": false,
+    "blocked_action_count": 0,
+    "business_code_write_allowed": false,
+    "controlled_external_gate_decision": "human_controlled_trial_allowed",
+    "controlled_external_gate_ready": true,
+    "human_controlled_trial_allowed": true,
+    "platform_write_api_allowed": false,
+    "review_required_action_count": 4,
+    "secret_read_allowed": false,
+    "workbench_adapter_ready": true,
+    "workbench_read_only": true
+  },
+  "phase": "WORKBENCH_AGOS_ADAPTER",
+  "replayResult": {
+    "acceptance_passed": true,
+    "average_training_weight": 0.843,
+    "replay_items": 20,
+    "replayed_memory_items": 20,
+    "source_types": [
+      "historical_question",
+      "historical_reply",
+      "historical_feedback",
+      "historical_failure"
+    ],
+    "status": "runtime_replay_trained",
+    "summary": {
+      "engagement_pattern_reinforced": 2,
+      "historical_failures": 5,
+      "historical_feedback": 6,
+      "historical_questions": 5,
+      "historical_replies": 4,
+      "question_priority_retrained": 9,
+      "replay_items": 20,
+      "replay_training_ready": true,
+      "reply_strategy_retrained": 4,
+      "risk_pattern_reinforced": 5
+    }
+  },
+  "report_id": "AGOS_TRAINING_ACCEPTANCE_EXPORT",
+  "round_id": "ROUND-WB-AGOS-002",
+  "safetyBoundary": "Training Acceptance Export is a read-only evidence package for Workbench. It does not export secrets, modify AGOS code, start external platform actions, or call write APIs.",
+  "status": "training_acceptance_export_ready",
+  "target_consumer": "Workbench",
+  "trainingAcceptanceSummary": {
+    "acceptance_ready": true,
+    "blocked_risk_count": 7,
+    "capability_grade": "pass",
+    "capability_score": 100,
+    "drift_acceptance_passed": true,
+    "feedback_evidence_passed": true,
+    "gate_acceptance_passed": true,
+    "needs_review_risk_count": 0,
+    "next_recommendation": "Workbench can ingest this training acceptance package as read-only evidence; execution remains AGOS/human-gated.",
+    "replay_acceptance_passed": true,
+    "training_acceptance_export_ready": true,
+    "workbench_may_execute": false,
+    "workbench_may_ingest": true
+  }
+}

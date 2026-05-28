@@ -1,0 +1,25 @@
+{
+  "acceptance_passed": true,
+  "average_training_weight": 0.843,
+  "replay_items": 20,
+  "replayed_memory_items": 20,
+  "source_types": [
+    "historical_question",
+    "historical_reply",
+    "historical_feedback",
+    "historical_failure"
+  ],
+  "status": "runtime_replay_trained",
+  "summary": {
+    "engagement_pattern_reinforced": 2,
+    "historical_failures": 5,
+    "historical_feedback": 6,
+    "historical_questions": 5,
+    "historical_replies": 4,
+    "question_priority_retrained": 9,
+    "replay_items": 20,
+    "replay_training_ready": true,
+    "reply_strategy_retrained": 4,
+    "risk_pattern_reinforced": 5
+  }
+}

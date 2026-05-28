@@ -8,6 +8,7 @@ from typing import Any
 from services.action_recommendation_engine import ActionRecommendationEngine
 from services.action_queue_engine import ActionQueueEngine
 from services.agos_workbench_adapter_contract import AGOSWorkbenchAdapterContract
+from services.agos_training_acceptance_export import AGOSTrainingAcceptanceExport
 from services.api_collection_review_and_correction import APICollectionReviewAndCorrection
 from services.api_capability_registry import APICapabilityRegistry
 from services.api_credential_setup_wizard import APICredentialSetupWizard
@@ -236,6 +237,7 @@ class RuntimeUIBridge:
             drift_monitor=external_drift_monitor,
         )
         workbench_adapter_contract = AGOSWorkbenchAdapterContract().build()
+        training_acceptance_export = AGOSTrainingAcceptanceExport().export(adapter_contract=workbench_adapter_contract)
         batch_scout_runtime = BatchScoutRuntime().run()
         batch_topic_clustering = BatchTopicClustering().cluster(batch_scout_runtime.get("batchAnalysis", []))
         batch_human_review = BatchHumanReview().review(batch_topic_clustering.get("batchTrendClusters", []))
@@ -639,6 +641,14 @@ class RuntimeUIBridge:
             "workbenchGateIndex": workbench_adapter_contract.get("workbenchGateIndex", []),
             "workbenchAdapterSafetyReview": workbench_adapter_contract.get("workbenchAdapterSafetyReview", {}),
             "workbenchAdapterSummary": workbench_adapter_contract.get("workbenchAdapterSummary", {}),
+            "trainingAcceptanceExport": training_acceptance_export,
+            "trainingAcceptanceCapabilityScore": training_acceptance_export.get("capabilityScore", {}),
+            "trainingAcceptanceReplayResult": training_acceptance_export.get("replayResult", {}),
+            "trainingAcceptanceFeedbackEvidence": training_acceptance_export.get("feedbackEvidence", {}),
+            "trainingAcceptanceDriftResult": training_acceptance_export.get("driftResult", {}),
+            "trainingAcceptanceGateStatus": training_acceptance_export.get("gateStatus", {}),
+            "trainingAcceptanceBlockedRisks": training_acceptance_export.get("blockedRisks", []),
+            "trainingAcceptanceSummary": training_acceptance_export.get("trainingAcceptanceSummary", {}),
             "locationDemandHeatmap": location_demand_heatmap,
             "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),

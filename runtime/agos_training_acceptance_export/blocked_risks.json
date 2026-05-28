@@ -1,0 +1,58 @@
+[
+  {
+    "blocked": true,
+    "reason": "Workbench cannot directly modify AGOS business code.",
+    "risk": "business_code_write",
+    "risk_id": "WB-RISK-001",
+    "status": "blocked",
+    "workbench_action_allowed": false
+  },
+  {
+    "blocked": true,
+    "reason": "Workbench cannot read secrets, tokens, .env, or credential payloads.",
+    "risk": "secret_read",
+    "risk_id": "WB-RISK-002",
+    "status": "blocked",
+    "workbench_action_allowed": false
+  },
+  {
+    "blocked": true,
+    "reason": "Workbench cannot start external platform actions.",
+    "risk": "external_action_start",
+    "risk_id": "WB-RISK-003",
+    "status": "blocked",
+    "workbench_action_allowed": false
+  },
+  {
+    "blocked": true,
+    "reason": "Platform write APIs remain disabled.",
+    "risk": "platform_write_api",
+    "risk_id": "WB-RISK-004",
+    "status": "blocked",
+    "workbench_action_allowed": false
+  },
+  {
+    "blocked": true,
+    "reason": "Automatic posting, replying, and login remain disabled.",
+    "risk": "automatic_post_reply_login",
+    "risk_id": "WB-RISK-005",
+    "status": "blocked",
+    "workbench_action_allowed": false
+  },
+  {
+    "blocked": true,
+    "reason": "Drift only creates recommendations; it cannot change external execution strategy.",
+    "risk": "drift_auto_strategy_change",
+    "risk_id": "WB-RISK-006",
+    "status": "blocked",
+    "workbench_action_allowed": false
+  },
+  {
+    "blocked": true,
+    "reason": "Missing evidence is blocked or ledger-bound before feedback learning.",
+    "risk": "feedback_without_evidence",
+    "risk_id": "WB-RISK-007",
+    "status": "blocked",
+    "workbench_action_allowed": false
+  }
+]

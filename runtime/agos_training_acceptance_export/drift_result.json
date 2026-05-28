@@ -1,0 +1,14 @@
+{
+  "acceptance_passed": true,
+  "auto_strategy_change_allowed": false,
+  "drift_status": "external_drift_monitor_ready",
+  "drift_types": [
+    "platform_drift",
+    "strategy_drift",
+    "tone_drift"
+  ],
+  "external_execution_change_allowed": false,
+  "highest_severity": "high",
+  "recommendation_only": true,
+  "signal_count": 5
+}

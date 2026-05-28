@@ -1,0 +1,19 @@
+{
+  "acceptanceReady": true,
+  "blockedRiskCount": 7,
+  "capabilityGrade": "pass",
+  "capabilityScore": 100,
+  "currentRound": "ROUND-WB-AGOS-002 / AGOS_TRAINING_ACCEPTANCE_EXPORT",
+  "panelExists": true,
+  "panelTextIncludesBlockedRisk": true,
+  "panelTextIncludesCapability": true,
+  "panelTextIncludesDrift": true,
+  "panelTextIncludesFeedback": true,
+  "panelTextIncludesGate": true,
+  "panelTextIncludesReplay": true,
+  "url": "http://127.0.0.1:8765/project_control_center.html?runtime_ui=1&cache_bust=1779959695602#war-room-growth",
+  "version": "0.1.131",
+  "visibleSnippet": "Capability Score100/100pass / ready: true\nReplay20avg weight: 0.843\nFeedback20best: 12 / failed: 12\nGatehuman_controlled_trial_allowedWorkbench ingest: true / execute: false\nCHECK\nreplay_result / passed\nitems: 20 / memory: 20 / source types: historical_question / historical_reply / historical_feedback / historical_failure\npassed\nCHECK\nfeedback_evidence / passed\nevents: 20 / evidence records: 4 / learning allowed: 1\npassed\nCHECK\ndrift_result / passed\nsignals: 5 / severity: high / recommendation only: true\npassed\nCHECK\ngate_status / passed\nhuman trial: true / auto external: false / read only: true\npassed\nWB-RISK-001\nbusiness_code_write / blocked\nWorkbench cannot directly modify AGOS business code.\nWorkbench action allowed: false\nblocked\nWB-RISK-002\nsecret_read / blocked\nWorkbench cannot read secrets, tokens, .env, or credential payloads.\nWorkbench action allowed: false\nblocked\nWB-RISK-003\n",
+  "workbenchMayExecute": false,
+  "workbenchMayIngest": true
+}

@@ -1,0 +1,23 @@
+{
+  "acceptance_passed": true,
+  "best_pattern_count": 12,
+  "evidence_ledger_ready": true,
+  "evidence_record_count": 4,
+  "failed_pattern_count": 12,
+  "feedback_event_count": 20,
+  "feedback_learning_allowed_count": 1,
+  "feedback_status": "promotion_feedback_learning_ready",
+  "missing_evidence_blocks_learning": true,
+  "sample_or_manual_boundary": "Feedback evidence is local/manual/sample bounded unless evidence ledger marks a manually executed item.",
+  "supported_feedback_types": [
+    "posted_manually",
+    "liked",
+    "replied",
+    "saved",
+    "shared",
+    "ignored",
+    "rejected_by_human",
+    "modified_by_human",
+    "unsafe_flagged"
+  ]
+}

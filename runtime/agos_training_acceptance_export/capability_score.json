@@ -1,0 +1,13 @@
+{
+  "acceptance_ready": true,
+  "dimensions": {
+    "blocked_risks": 20,
+    "drift_result": 20,
+    "feedback_evidence": 20,
+    "gate_status": 20,
+    "replay_result": 20
+  },
+  "grade": "pass",
+  "max_score": 100,
+  "score": 100
+}
