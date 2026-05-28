@@ -1,0 +1,23 @@
+{
+  "control_center_version": "0.1.124",
+  "panel_present": true,
+  "manual_export_pack_ready": true,
+  "export_item_count": 4,
+  "approved_count": 2,
+  "modified_count": 2,
+  "human_gate_required": true,
+  "external_execution_allowed": false,
+  "auto_post_allowed": false,
+  "auto_reply_allowed": false,
+  "auto_dm_allowed": false,
+  "auto_follow_allowed": false,
+  "auto_like_allowed": false,
+  "write_api_called": false,
+  "credentials_touched": false,
+  "real_business_data_writeback": false,
+  "copy_ready": true,
+  "auditable": true,
+  "every_item_has_evidence": true,
+  "every_item_has_risk_level": true,
+  "passed": true
+}

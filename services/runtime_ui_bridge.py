@@ -40,6 +40,7 @@ from services.live_collection_runner import LiveCollectionRunner
 from services.live_data_import_to_memory import LiveDataImportToMemory
 from services.live_data_normalization_pipeline import LiveDataNormalizationPipeline
 from services.location_demand_heatmap_engine import LocationDemandHeatmapEngine
+from services.manual_promotion_export_pack import ManualPromotionExportPack
 from services.merchant_growth_engine_gate import MerchantGrowthEngineGate
 from services.merchant_promotion_workspace import MerchantPromotionWorkspace
 from services.mobility_demand_intent_engine import MobilityDemandIntentEngine
@@ -197,6 +198,7 @@ class RuntimeUIBridge:
         promotion_review_center = PromotionReviewCenter().build()
         promotion_feedback_learning = PromotionFeedbackLearning().learn()
         merchant_growth_engine_gate = MerchantGrowthEngineGate().evaluate()
+        manual_promotion_export_pack = ManualPromotionExportPack().build()
         location_demand_heatmap = LocationDemandHeatmapEngine().build(seasonal_demand_calendar.get("seasonalCalendar", []))
         mobility_demand_intent = MobilityDemandIntentEngine().build()
         demand_to_action_strategy = DemandToActionStrategyEngine().build()
@@ -578,6 +580,10 @@ class RuntimeUIBridge:
             "merchantGrowthEngineSafetyReview": merchant_growth_engine_gate.get("merchantGrowthEngineSafetyReview", {}),
             "merchantGrowthEngineChecks": merchant_growth_engine_gate.get("merchantGrowthEngineChecks", []),
             "merchantGrowthEngineSummary": merchant_growth_engine_gate.get("merchantGrowthEngineSummary", {}),
+            "manualPromotionExportPack": manual_promotion_export_pack,
+            "manualExportItems": manual_promotion_export_pack.get("manualExportItems", []),
+            "manualExportAudit": manual_promotion_export_pack.get("manualExportAudit", {}),
+            "manualExportSummary": manual_promotion_export_pack.get("manualExportSummary", {}),
             "locationDemandHeatmap": location_demand_heatmap,
             "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),

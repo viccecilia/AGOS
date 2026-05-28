@@ -1,0 +1,22 @@
+{
+  "audit_id": "MANUAL_PROMOTION_EXPORT_AUDIT",
+  "best_pattern_count": 8,
+  "created_at": "2026-05-28T08:27:46+00:00",
+  "credentials_touched": false,
+  "decision_count": 20,
+  "every_item_has_evidence": true,
+  "every_item_has_risk_level": true,
+  "export_item_count": 4,
+  "external_execution_allowed": false,
+  "only_human_approved_or_modified": true,
+  "promotion_plan_count": 48,
+  "real_business_data_writeback": false,
+  "review_item_count": 80,
+  "source_files": [
+    "runtime/promotion_review_center/promotion_review_items.json",
+    "runtime/promotion_review_center/promotion_review_decisions.json",
+    "runtime/cross_platform_promotion_plan/promotion_plans.json",
+    "runtime/promotion_feedback_learning/best_promotion_patterns.json"
+  ],
+  "write_api_called": false
+}

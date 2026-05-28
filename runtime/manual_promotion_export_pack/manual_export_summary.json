@@ -1,0 +1,23 @@
+{
+  "approved_count": 2,
+  "auditable": true,
+  "auto_dm_allowed": false,
+  "auto_follow_allowed": false,
+  "auto_like_allowed": false,
+  "auto_post_allowed": false,
+  "auto_reply_allowed": false,
+  "best_pattern_count": 8,
+  "copy_ready": true,
+  "credentials_touched": false,
+  "export_item_count": 4,
+  "external_execution_allowed": false,
+  "human_gate_required": true,
+  "manual_export_pack_ready": true,
+  "modified_count": 2,
+  "next_recommendation": "Manually post selected export items, then record posted_manually, ignored, liked, replied, saved, shared, or rejected_by_human feedback for the next learning loop.",
+  "platforms": [
+    "Reddit"
+  ],
+  "real_business_data_writeback": false,
+  "write_api_called": false
+}

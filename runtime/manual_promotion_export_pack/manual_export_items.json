@@ -1,0 +1,262 @@
+[
+  {
+    "auto_dm_allowed": false,
+    "auto_follow_allowed": false,
+    "auto_like_allowed": false,
+    "auto_post_allowed": false,
+    "auto_reply_allowed": false,
+    "best_pattern_references": [
+      {
+        "dimension": "problem_type",
+        "pattern_id": "BEST-001",
+        "value": "transport_planning"
+      },
+      {
+        "dimension": "platform",
+        "pattern_id": "BEST-002",
+        "value": "Instagram"
+      },
+      {
+        "dimension": "platform",
+        "pattern_id": "BEST-003",
+        "value": "TikTok"
+      },
+      {
+        "dimension": "platform",
+        "pattern_id": "BEST-004",
+        "value": "X"
+      },
+      {
+        "dimension": "platform",
+        "pattern_id": "BEST-005",
+        "value": "YouTube"
+      }
+    ],
+    "content_format": "reply",
+    "copy_text": "For this situation, do not judge only by train price. With luggage, kids, late arrival, or a first Japan trip, compare the full route from arrival gate to hotel door: train changes, walking distance, last-train risk, and luggage handling. Key steps: List the arrival time, hotel area, group size, luggage count, and whether anyone needs walking support.; Compare door-to-door time, not only station-to-station time.; Keep a fallback option if the route depends on late trains, crowded buses, or several transfers..\n\nSoft CTA: If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "created_at": "2026-05-28T08:27:46+00:00",
+    "credentials_required": false,
+    "decision_id": "PROMO-DECISION-013",
+    "export_id": "MANUAL-EXPORT-001",
+    "external_execution_allowed": false,
+    "homepage_reference": "https://japan-ai-guide.example/pending-official-url",
+    "hook": "Practical tradeoff answer before any recommendation",
+    "human_approval_status": "human_approve",
+    "human_decision": "approve",
+    "human_gate_required": true,
+    "human_notes": "Approved for manual export only. Human will copy and re-check platform rules.",
+    "merchant_name": "Japan AI Guide App",
+    "modified_version": "",
+    "platform": "Reddit",
+    "real_business_data_writeback": false,
+    "review_id": "PROMO-CENTER-REVIEW-033",
+    "risk_level": "medium",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "source_evidence": [
+      "review:PROMO-CENTER-REVIEW-033",
+      "source:promotion_plan:PROMO-PLAN-001",
+      "runtime/promotion_review_center/promotion_review_decisions.json",
+      "runtime/cross_platform_promotion_plan/promotion_plans.json",
+      "runtime/promotion_feedback_learning/best_promotion_patterns.json"
+    ],
+    "source_id": "PROMO-PLAN-001",
+    "source_type": "promotion_plan",
+    "workspace_id": "jag_app_growth",
+    "write_api_called": false
+  },
+  {
+    "auto_dm_allowed": false,
+    "auto_follow_allowed": false,
+    "auto_like_allowed": false,
+    "auto_post_allowed": false,
+    "auto_reply_allowed": false,
+    "best_pattern_references": [
+      {
+        "dimension": "problem_type",
+        "pattern_id": "BEST-001",
+        "value": "transport_planning"
+      },
+      {
+        "dimension": "platform",
+        "pattern_id": "BEST-002",
+        "value": "Instagram"
+      },
+      {
+        "dimension": "platform",
+        "pattern_id": "BEST-003",
+        "value": "TikTok"
+      },
+      {
+        "dimension": "platform",
+        "pattern_id": "BEST-004",
+        "value": "X"
+      },
+      {
+        "dimension": "platform",
+        "pattern_id": "BEST-005",
+        "value": "YouTube"
+      }
+    ],
+    "content_format": "answer_draft",
+    "copy_text": "Manual version: answer the travel question first, keep the homepage reference optional, and avoid hard sell.",
+    "created_at": "2026-05-28T08:27:46+00:00",
+    "credentials_required": false,
+    "decision_id": "PROMO-DECISION-014",
+    "export_id": "MANUAL-EXPORT-002",
+    "external_execution_allowed": false,
+    "homepage_reference": "human_confirm_required",
+    "hook": "",
+    "human_approval_status": "human_modify",
+    "human_decision": "modify",
+    "human_gate_required": true,
+    "human_notes": "Make CTA softer before manual use.",
+    "merchant_name": "Japan AI Guide App",
+    "modified_version": "Manual version: answer the travel question first, keep the homepage reference optional, and avoid hard sell.",
+    "platform": "Reddit",
+    "real_business_data_writeback": false,
+    "review_id": "PROMO-CENTER-REVIEW-027",
+    "risk_level": "low",
+    "soft_cta": "",
+    "source_evidence": [
+      "review:PROMO-CENTER-REVIEW-027",
+      "source:answer_draft:HOME-DRAFT-001",
+      "runtime/promotion_review_center/promotion_review_decisions.json",
+      "runtime/cross_platform_promotion_plan/promotion_plans.json",
+      "runtime/promotion_feedback_learning/best_promotion_patterns.json"
+    ],
+    "source_id": "HOME-DRAFT-001",
+    "source_type": "answer_draft",
+    "workspace_id": "jag_app_growth",
+    "write_api_called": false
+  },
+  {
+    "auto_dm_allowed": false,
+    "auto_follow_allowed": false,
+    "auto_like_allowed": false,
+    "auto_post_allowed": false,
+    "auto_reply_allowed": false,
+    "best_pattern_references": [
+      {
+        "dimension": "problem_type",
+        "pattern_id": "BEST-001",
+        "value": "transport_planning"
+      },
+      {
+        "dimension": "platform",
+        "pattern_id": "BEST-002",
+        "value": "Instagram"
+      },
+      {
+        "dimension": "platform",
+        "pattern_id": "BEST-003",
+        "value": "TikTok"
+      },
+      {
+        "dimension": "platform",
+        "pattern_id": "BEST-004",
+        "value": "X"
+      },
+      {
+        "dimension": "platform",
+        "pattern_id": "BEST-005",
+        "value": "YouTube"
+      }
+    ],
+    "content_format": "reply",
+    "copy_text": "For this situation, do not judge only by train price. With luggage, kids, late arrival, or a first Japan trip, compare the full route from arrival gate to hotel door: train changes, walking distance, last-train risk, and luggage handling. Key steps: List the arrival time, hotel area, group size, luggage count, and whether anyone needs walking support.; Compare door-to-door time, not only station-to-station time.; Keep a fallback option if the route depends on late trains, crowded buses, or several transfers..\n\nSoft CTA: If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "created_at": "2026-05-28T08:27:46+00:00",
+    "credentials_required": false,
+    "decision_id": "PROMO-DECISION-019",
+    "export_id": "MANUAL-EXPORT-003",
+    "external_execution_allowed": false,
+    "homepage_reference": "https://japan-ai-guide.example/pending-official-url",
+    "hook": "Practical tradeoff answer before any recommendation",
+    "human_approval_status": "human_approve",
+    "human_decision": "approve",
+    "human_gate_required": true,
+    "human_notes": "Approved for manual export only. Human will copy and re-check platform rules.",
+    "merchant_name": "Japan AI Guide App",
+    "modified_version": "",
+    "platform": "Reddit",
+    "real_business_data_writeback": false,
+    "review_id": "PROMO-CENTER-REVIEW-033",
+    "risk_level": "medium",
+    "soft_cta": "If you want a second check, use the Japan AI Guide App homepage as a planning reference, then manually confirm any booking, route, or pickup detail before acting.",
+    "source_evidence": [
+      "review:PROMO-CENTER-REVIEW-033",
+      "source:promotion_plan:PROMO-PLAN-001",
+      "runtime/promotion_review_center/promotion_review_decisions.json",
+      "runtime/cross_platform_promotion_plan/promotion_plans.json",
+      "runtime/promotion_feedback_learning/best_promotion_patterns.json"
+    ],
+    "source_id": "PROMO-PLAN-001",
+    "source_type": "promotion_plan",
+    "workspace_id": "jag_app_growth",
+    "write_api_called": false
+  },
+  {
+    "auto_dm_allowed": false,
+    "auto_follow_allowed": false,
+    "auto_like_allowed": false,
+    "auto_post_allowed": false,
+    "auto_reply_allowed": false,
+    "best_pattern_references": [
+      {
+        "dimension": "problem_type",
+        "pattern_id": "BEST-001",
+        "value": "transport_planning"
+      },
+      {
+        "dimension": "platform",
+        "pattern_id": "BEST-002",
+        "value": "Instagram"
+      },
+      {
+        "dimension": "platform",
+        "pattern_id": "BEST-003",
+        "value": "TikTok"
+      },
+      {
+        "dimension": "platform",
+        "pattern_id": "BEST-004",
+        "value": "X"
+      },
+      {
+        "dimension": "platform",
+        "pattern_id": "BEST-005",
+        "value": "YouTube"
+      }
+    ],
+    "content_format": "answer_draft",
+    "copy_text": "Manual version: answer the travel question first, keep the homepage reference optional, and avoid hard sell.",
+    "created_at": "2026-05-28T08:27:46+00:00",
+    "credentials_required": false,
+    "decision_id": "PROMO-DECISION-020",
+    "export_id": "MANUAL-EXPORT-004",
+    "external_execution_allowed": false,
+    "homepage_reference": "human_confirm_required",
+    "hook": "",
+    "human_approval_status": "human_modify",
+    "human_decision": "modify",
+    "human_gate_required": true,
+    "human_notes": "Make CTA softer before manual use.",
+    "merchant_name": "Japan AI Guide App",
+    "modified_version": "Manual version: answer the travel question first, keep the homepage reference optional, and avoid hard sell.",
+    "platform": "Reddit",
+    "real_business_data_writeback": false,
+    "review_id": "PROMO-CENTER-REVIEW-027",
+    "risk_level": "low",
+    "soft_cta": "",
+    "source_evidence": [
+      "review:PROMO-CENTER-REVIEW-027",
+      "source:answer_draft:HOME-DRAFT-001",
+      "runtime/promotion_review_center/promotion_review_decisions.json",
+      "runtime/cross_platform_promotion_plan/promotion_plans.json",
+      "runtime/promotion_feedback_learning/best_promotion_patterns.json"
+    ],
+    "source_id": "HOME-DRAFT-001",
+    "source_type": "answer_draft",
+    "workspace_id": "jag_app_growth",
+    "write_api_called": false
+  }
+]
