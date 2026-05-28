@@ -5,25 +5,25 @@
     "pattern_id": "BEST-001",
     "positive_feedback": 1,
     "sample_data_only": true,
-    "value": "transport_planning",
+    "value": "external_promotion_response",
     "why_best": "Positive sample/manual feedback without unsafe flags."
   },
   {
-    "dimension": "platform",
+    "dimension": "problem_type",
     "failed_feedback": 0,
     "pattern_id": "BEST-002",
     "positive_feedback": 1,
     "sample_data_only": true,
-    "value": "Instagram",
+    "value": "transport_planning",
     "why_best": "Positive sample/manual feedback without unsafe flags."
   },
   {
-    "dimension": "platform",
+    "dimension": "pain_point",
     "failed_feedback": 0,
     "pattern_id": "BEST-003",
     "positive_feedback": 1,
     "sample_data_only": true,
-    "value": "TikTok",
+    "value": "manual_external_signal",
     "why_best": "Positive sample/manual feedback without unsafe flags."
   },
   {
@@ -32,7 +32,7 @@
     "pattern_id": "BEST-004",
     "positive_feedback": 1,
     "sample_data_only": true,
-    "value": "X",
+    "value": "Instagram",
     "why_best": "Positive sample/manual feedback without unsafe flags."
   },
   {
@@ -41,14 +41,41 @@
     "pattern_id": "BEST-005",
     "positive_feedback": 1,
     "sample_data_only": true,
+    "value": "TikTok",
+    "why_best": "Positive sample/manual feedback without unsafe flags."
+  },
+  {
+    "dimension": "platform",
+    "failed_feedback": 0,
+    "pattern_id": "BEST-006",
+    "positive_feedback": 1,
+    "sample_data_only": true,
+    "value": "X",
+    "why_best": "Positive sample/manual feedback without unsafe flags."
+  },
+  {
+    "dimension": "platform",
+    "failed_feedback": 0,
+    "pattern_id": "BEST-007",
+    "positive_feedback": 1,
+    "sample_data_only": true,
     "value": "YouTube",
+    "why_best": "Positive sample/manual feedback without unsafe flags."
+  },
+  {
+    "dimension": "answer_style",
+    "failed_feedback": 0,
+    "pattern_id": "BEST-008",
+    "positive_feedback": 1,
+    "sample_data_only": true,
+    "value": "human_posted_export",
     "why_best": "Positive sample/manual feedback without unsafe flags."
   },
   {
     "dimension": "cta_style",
     "failed_feedback": 0,
-    "pattern_id": "BEST-006",
-    "positive_feedback": 5,
+    "pattern_id": "BEST-009",
+    "positive_feedback": 6,
     "sample_data_only": true,
     "value": "answer_first_soft_reference",
     "why_best": "Positive sample/manual feedback without unsafe flags."
@@ -56,7 +83,7 @@
   {
     "dimension": "content_format",
     "failed_feedback": 0,
-    "pattern_id": "BEST-007",
+    "pattern_id": "BEST-010",
     "positive_feedback": 1,
     "sample_data_only": true,
     "value": "carousel",
@@ -65,7 +92,16 @@
   {
     "dimension": "content_format",
     "failed_feedback": 0,
-    "pattern_id": "BEST-008",
+    "pattern_id": "BEST-011",
+    "positive_feedback": 1,
+    "sample_data_only": true,
+    "value": "manual_external_post",
+    "why_best": "Positive sample/manual feedback without unsafe flags."
+  },
+  {
+    "dimension": "content_format",
+    "failed_feedback": 0,
+    "pattern_id": "BEST-012",
     "positive_feedback": 1,
     "sample_data_only": true,
     "value": "short_video_hook",

@@ -41,6 +41,7 @@ from services.live_collection_runner import LiveCollectionRunner
 from services.live_data_import_to_memory import LiveDataImportToMemory
 from services.live_data_normalization_pipeline import LiveDataNormalizationPipeline
 from services.location_demand_heatmap_engine import LocationDemandHeatmapEngine
+from services.manual_external_feedback_intake import ManualExternalFeedbackIntake
 from services.manual_promotion_export_pack import ManualPromotionExportPack
 from services.merchant_growth_engine_gate import MerchantGrowthEngineGate
 from services.merchant_promotion_workspace import MerchantPromotionWorkspace
@@ -201,6 +202,8 @@ class RuntimeUIBridge:
         merchant_growth_engine_gate = MerchantGrowthEngineGate().evaluate()
         manual_promotion_export_pack = ManualPromotionExportPack().build()
         external_evidence_ledger = ExternalEvidenceLedger().build()
+        manual_external_feedback_intake = ManualExternalFeedbackIntake().build()
+        promotion_feedback_learning = PromotionFeedbackLearning().state()
         location_demand_heatmap = LocationDemandHeatmapEngine().build(seasonal_demand_calendar.get("seasonalCalendar", []))
         mobility_demand_intent = MobilityDemandIntentEngine().build()
         demand_to_action_strategy = DemandToActionStrategyEngine().build()
@@ -588,6 +591,11 @@ class RuntimeUIBridge:
             "manualExportSummary": manual_promotion_export_pack.get("manualExportSummary", {}),
             "externalEvidenceLedger": external_evidence_ledger.get("externalEvidenceLedger", []),
             "externalEvidenceLedgerReport": external_evidence_ledger.get("externalEvidenceLedgerReport", {}),
+            "manualExternalFeedbackIntake": manual_external_feedback_intake,
+            "manualExternalFeedbackRecords": manual_external_feedback_intake.get("manualExternalFeedbackRecords", []),
+            "manualFeedbackLearningEvents": manual_external_feedback_intake.get("manualFeedbackLearningEvents", []),
+            "manualFeedbackRejected": manual_external_feedback_intake.get("manualFeedbackRejected", []),
+            "manualExternalFeedbackSummary": manual_external_feedback_intake.get("manualExternalFeedbackSummary", {}),
             "locationDemandHeatmap": location_demand_heatmap,
             "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),

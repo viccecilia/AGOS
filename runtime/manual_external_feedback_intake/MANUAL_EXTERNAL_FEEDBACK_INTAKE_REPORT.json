@@ -1,0 +1,20 @@
+{
+  "accepted_to_learning_count": 1,
+  "auto_collection_used": false,
+  "boundaries": [
+    "sample",
+    "manual",
+    "real_external_feedback"
+  ],
+  "evidence_blocked_count": 2,
+  "external_page_auto_verified": false,
+  "feedback_record_count": 4,
+  "feedback_source": "manual_import",
+  "learning_event_count": 1,
+  "manual_feedback_intake_ready": true,
+  "missing_evidence_blocked_from_learning": true,
+  "platform_api_called": false,
+  "promotion_feedback_learning_updated": true,
+  "promotion_learning_event_count": 18,
+  "rejected_count": 1
+}

@@ -3,7 +3,7 @@
   "best_cta": [
     "answer_first_soft_reference"
   ],
-  "best_pattern_count": 8,
+  "best_pattern_count": 12,
   "best_platforms": [
     "Instagram",
     "TikTok",
@@ -11,17 +11,18 @@
     "YouTube"
   ],
   "best_problem_types": [
+    "external_promotion_response",
     "transport_planning"
   ],
   "failed_pattern_count": 12,
-  "feedback_event_count": 11,
+  "feedback_event_count": 18,
   "feedback_type_counts": {
     "ignored": 1,
     "liked": 1,
-    "modified_by_human": 2,
+    "modified_by_human": 6,
     "posted_manually": 1,
-    "rejected_by_human": 2,
-    "replied": 1,
+    "rejected_by_human": 4,
+    "replied": 2,
     "saved": 1,
     "shared": 1,
     "unsafe_flagged": 1
@@ -40,7 +41,7 @@
   "ignored_patterns": [
     {
       "dimension": "cta_style",
-      "failed_feedback": 2,
+      "failed_feedback": 4,
       "pattern_id": "FAILED-012",
       "sample_data_only": true,
       "unsafe_feedback": 1,
@@ -63,7 +64,7 @@
     },
     {
       "dimension": "problem_type",
-      "failed_feedback": 1,
+      "failed_feedback": 3,
       "pattern_id": "FAILED-002",
       "sample_data_only": true,
       "unsafe_feedback": 0,
@@ -72,7 +73,7 @@
     },
     {
       "dimension": "problem_type",
-      "failed_feedback": 4,
+      "failed_feedback": 8,
       "pattern_id": "FAILED-003",
       "sample_data_only": true,
       "unsafe_feedback": 0,
@@ -90,7 +91,7 @@
     },
     {
       "dimension": "pain_point",
-      "failed_feedback": 5,
+      "failed_feedback": 11,
       "pattern_id": "FAILED-005",
       "sample_data_only": true,
       "unsafe_feedback": 0,
@@ -121,7 +122,7 @@
     },
     {
       "dimension": "platform",
-      "failed_feedback": 6,
+      "failed_feedback": 12,
       "pattern_id": "FAILED-006",
       "sample_data_only": true,
       "unsafe_feedback": 1,
@@ -148,7 +149,7 @@
     },
     {
       "dimension": "cta_style",
-      "failed_feedback": 2,
+      "failed_feedback": 4,
       "pattern_id": "FAILED-012",
       "sample_data_only": true,
       "unsafe_feedback": 1,

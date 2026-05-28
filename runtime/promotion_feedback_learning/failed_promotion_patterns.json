@@ -10,7 +10,7 @@
   },
   {
     "dimension": "problem_type",
-    "failed_feedback": 1,
+    "failed_feedback": 3,
     "pattern_id": "FAILED-002",
     "sample_data_only": true,
     "unsafe_feedback": 0,
@@ -19,7 +19,7 @@
   },
   {
     "dimension": "problem_type",
-    "failed_feedback": 4,
+    "failed_feedback": 8,
     "pattern_id": "FAILED-003",
     "sample_data_only": true,
     "unsafe_feedback": 0,
@@ -37,7 +37,7 @@
   },
   {
     "dimension": "pain_point",
-    "failed_feedback": 5,
+    "failed_feedback": 11,
     "pattern_id": "FAILED-005",
     "sample_data_only": true,
     "unsafe_feedback": 0,
@@ -46,7 +46,7 @@
   },
   {
     "dimension": "platform",
-    "failed_feedback": 6,
+    "failed_feedback": 12,
     "pattern_id": "FAILED-006",
     "sample_data_only": true,
     "unsafe_feedback": 1,
@@ -64,7 +64,7 @@
   },
   {
     "dimension": "market",
-    "failed_feedback": 5,
+    "failed_feedback": 11,
     "pattern_id": "FAILED-008",
     "sample_data_only": true,
     "unsafe_feedback": 0,
@@ -82,7 +82,7 @@
   },
   {
     "dimension": "answer_style",
-    "failed_feedback": 1,
+    "failed_feedback": 3,
     "pattern_id": "FAILED-010",
     "sample_data_only": true,
     "unsafe_feedback": 0,
@@ -91,7 +91,7 @@
   },
   {
     "dimension": "answer_style",
-    "failed_feedback": 4,
+    "failed_feedback": 8,
     "pattern_id": "FAILED-011",
     "sample_data_only": true,
     "unsafe_feedback": 0,
@@ -100,7 +100,7 @@
   },
   {
     "dimension": "cta_style",
-    "failed_feedback": 2,
+    "failed_feedback": 4,
     "pattern_id": "FAILED-012",
     "sample_data_only": true,
     "unsafe_feedback": 1,

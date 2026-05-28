@@ -1,0 +1,35 @@
+{
+  "currentRound": "ROUND-EXT-003 / MANUAL_EXTERNAL_FEEDBACK_INTAKE",
+  "hasAccepted": true,
+  "hasBlocked": true,
+  "hasManualSource": true,
+  "hasNoAutoCollection": true,
+  "hasNoPlatformApi": true,
+  "hasRealExternalBoundary": true,
+  "hasRejected": true,
+  "learningEventCount": 1,
+  "panelExists": true,
+  "panelText": "Manual FeedbacktrueRecords: 4\nLearning Gateaccepted: 1blocked: 2 / rejected: 1\nFeedback Sourcemanual_importsample / manual / real_external_feedback\nSafetymissing evidence blocked: trueAPI: false / auto collect: false\nMANUAL-FEEDBACK-001\nMANUAL-EXPORT-001 / Reddit / accepted_to_learning\nFeedback source: manual_import / Boundary: real_external_feedback / Real external: true\nViews: 457 / Likes: 13 / Replies: 3 / Saves: 5\nComments: Manual feedback: helpful route answer / Manual feedback: soft CTA was acceptable\nRejection reason:\nEvidence: EVIDENCE-MANUAL-EXPORT-001 / URL: https://example.com/manual-feedback-source / Screenshot: runtime/evidence_screenshots/manual-feedback-source.png\nLearning allowed: true / Block reason:\nAuto collection: false / Platform API: false / External page verified: false\naccepted_to_learning\nMANUAL-FEEDBACK-002\nMANUAL-EXPORT-002 / Reddit / evidence_blocked\nFeedback source: manual_import / Boundary: manual / Real external: false\nViews: 0 / Likes: 0 / Replies: 0 / Saves: 0\nComments:\nRejection reason:\nEvidence: EVIDENCE-MANUAL-EXPORT-002 / URL: missing / Screenshot: missing\nLearning allowed: false / Block reason: Missing execution evidence or feedback was rejected.\nAuto collection: false / Platform API: false / External page verified: false\nevidence_blocked\nMANUAL-FEEDBACK-003\nMANUAL-EXPORT-003 / Reddit / rejected\nFeedback source: manual_import / Boundary: manual / Real external: false\nViews: 0 / Likes: 0 / Replies: 0 / Saves: 0\nComments:\nRejection reason: Human rejected external execution after manual review.\nEvidence: EVIDENCE-MANUAL-EXPORT-003 / URL: missing / Screenshot: missing\nLearning allowed: false / Block reason: Missing execution evidence or feedback was rejected.\nAuto collection: false / Platform API: false / External page verified: false\nrejected\nMANUAL-FEEDBACK-004\nMANUAL-EXPORT-004 / Reddit / evidence_blocked\nFeedback source: manual_import / Boundary: manual / Real external: false\nViews: 0 / Likes: 0 / Replies: 0 / Saves: 0\nComments:\nRejection reason:\nEvidence: EVIDENCE-MANUAL-EXPORT-004 / URL: missing / Screenshot: missing\nLearning allowed: false / Block reason: Missing execution evidence or feedback was rejected.\nAuto collection: false / Platform API: false / External page verified: false\nevidence_blocked\nMANUAL-EXTERNAL-LEARNING-001\nlearning event / replied / Reddit\nViews: 457 / Likes: 13 / Replies: 3 / Saves: 5\nEvidence: external_evidence_ledger:EVIDENCE-MANUAL-EXPORT-001 / Auto next action: false\nlearning",
+  "recordCount": 4,
+  "summary": {
+    "accepted_to_learning_count": 1,
+    "auto_collection_used": false,
+    "boundaries": [
+      "sample",
+      "manual",
+      "real_external_feedback"
+    ],
+    "evidence_blocked_count": 2,
+    "external_page_auto_verified": false,
+    "feedback_record_count": 4,
+    "feedback_source": "manual_import",
+    "learning_event_count": 1,
+    "manual_feedback_intake_ready": true,
+    "missing_evidence_blocked_from_learning": true,
+    "platform_api_called": false,
+    "promotion_feedback_learning_updated": true,
+    "promotion_learning_event_count": 18,
+    "rejected_count": 1
+  },
+  "version": "0.1.126"
+}

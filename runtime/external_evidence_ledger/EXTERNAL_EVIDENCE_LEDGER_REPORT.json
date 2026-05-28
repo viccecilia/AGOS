@@ -10,13 +10,13 @@
   "login_scraping_used": false,
   "manual_export_item_count": 4,
   "missing_evidence_export_ids": [
-    "MANUAL-EXPORT-003",
+    "MANUAL-EXPORT-002",
     "MANUAL-EXPORT-004"
   ],
   "platform_api_called": false,
   "platform_crawling_enabled": false,
   "rejected_export_ids": [
-    "MANUAL-EXPORT-002"
+    "MANUAL-EXPORT-003"
   ],
   "status_counts": {
     "evidence_pending": 2,

@@ -1,0 +1,30 @@
+[
+  {
+    "answer_style": "human_posted_export",
+    "auto_next_action_allowed": false,
+    "comments": [
+      "Manual feedback: helpful route answer",
+      "Manual feedback: soft CTA was acceptable"
+    ],
+    "content_format": "manual_external_post",
+    "cta_style": "answer_first_soft_reference",
+    "evidence": "external_evidence_ledger:EVIDENCE-MANUAL-EXPORT-001",
+    "feedback_id": "MANUAL-EXTERNAL-LEARNING-001",
+    "feedback_type": "replied",
+    "likes": 13,
+    "market": "Japan",
+    "merchant_name": "Japan AI Guide App",
+    "pain_point": "manual_external_signal",
+    "platform": "Reddit",
+    "problem_type": "external_promotion_response",
+    "real_business_result": false,
+    "replies": 3,
+    "risk_pattern": "evidence_backed",
+    "sample_data_only": false,
+    "saves": 5,
+    "source_id": "MANUAL-FEEDBACK-001",
+    "source_type": "manual_external_feedback",
+    "views": 457,
+    "workspace_id": "jag_app_growth"
+  }
+]

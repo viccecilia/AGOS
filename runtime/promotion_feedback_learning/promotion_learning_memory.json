@@ -8,14 +8,21 @@
       "value": "platform_specific_plan"
     },
     {
-      "failed_feedback": 1,
+      "failed_feedback": 0,
+      "positive_feedback": 1,
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
+      "value": "human_posted_export"
+    },
+    {
+      "failed_feedback": 3,
       "positive_feedback": 0,
       "sample_data_only": true,
       "unsafe_feedback": 0,
       "value": "direct_answer_with_steps"
     },
     {
-      "failed_feedback": 4,
+      "failed_feedback": 8,
       "positive_feedback": 0,
       "sample_data_only": true,
       "unsafe_feedback": 0,
@@ -42,17 +49,24 @@
       "positive_feedback": 1,
       "sample_data_only": true,
       "unsafe_feedback": 0,
+      "value": "manual_external_post"
+    },
+    {
+      "failed_feedback": 0,
+      "positive_feedback": 1,
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
       "value": "short_video_hook"
     },
     {
-      "failed_feedback": 1,
+      "failed_feedback": 3,
       "positive_feedback": 0,
       "sample_data_only": true,
       "unsafe_feedback": 0,
       "value": "answer_draft"
     },
     {
-      "failed_feedback": 4,
+      "failed_feedback": 8,
       "positive_feedback": 0,
       "sample_data_only": true,
       "unsafe_feedback": 0,
@@ -62,20 +76,20 @@
   "cta_style": [
     {
       "failed_feedback": 0,
-      "positive_feedback": 5,
+      "positive_feedback": 6,
       "sample_data_only": true,
       "unsafe_feedback": 0,
       "value": "answer_first_soft_reference"
     },
     {
-      "failed_feedback": 2,
+      "failed_feedback": 4,
       "positive_feedback": 0,
       "sample_data_only": true,
       "unsafe_feedback": 1,
       "value": "soft_reference"
     },
     {
-      "failed_feedback": 4,
+      "failed_feedback": 8,
       "positive_feedback": 0,
       "sample_data_only": true,
       "unsafe_feedback": 0,
@@ -85,13 +99,13 @@
   "market": [
     {
       "failed_feedback": 1,
-      "positive_feedback": 4,
+      "positive_feedback": 5,
       "sample_data_only": true,
       "unsafe_feedback": 1,
       "value": "Japan"
     },
     {
-      "failed_feedback": 5,
+      "failed_feedback": 11,
       "positive_feedback": 1,
       "sample_data_only": true,
       "unsafe_feedback": 0,
@@ -107,7 +121,14 @@
       "value": "planning uncertainty"
     },
     {
-      "failed_feedback": 5,
+      "failed_feedback": 0,
+      "positive_feedback": 1,
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
+      "value": "manual_external_signal"
+    },
+    {
+      "failed_feedback": 11,
       "positive_feedback": 0,
       "sample_data_only": true,
       "unsafe_feedback": 0,
@@ -144,8 +165,8 @@
       "value": "YouTube"
     },
     {
-      "failed_feedback": 6,
-      "positive_feedback": 1,
+      "failed_feedback": 12,
+      "positive_feedback": 2,
       "sample_data_only": true,
       "unsafe_feedback": 1,
       "value": "Reddit"
@@ -164,17 +185,24 @@
       "positive_feedback": 1,
       "sample_data_only": true,
       "unsafe_feedback": 0,
+      "value": "external_promotion_response"
+    },
+    {
+      "failed_feedback": 0,
+      "positive_feedback": 1,
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
       "value": "transport_planning"
     },
     {
-      "failed_feedback": 1,
+      "failed_feedback": 3,
       "positive_feedback": 0,
       "sample_data_only": true,
       "unsafe_feedback": 0,
       "value": "luggage_heavy_trip"
     },
     {
-      "failed_feedback": 4,
+      "failed_feedback": 8,
       "positive_feedback": 1,
       "sample_data_only": true,
       "unsafe_feedback": 0,
@@ -190,7 +218,14 @@
       "value": "medium"
     },
     {
-      "failed_feedback": 5,
+      "failed_feedback": 0,
+      "positive_feedback": 1,
+      "sample_data_only": true,
+      "unsafe_feedback": 0,
+      "value": "evidence_backed"
+    },
+    {
+      "failed_feedback": 11,
       "positive_feedback": 2,
       "sample_data_only": true,
       "unsafe_feedback": 0,
