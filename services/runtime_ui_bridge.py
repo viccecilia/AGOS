@@ -31,6 +31,7 @@ from services.failure_analysis_engine import FailureAnalysisEngine
 from services.growth_signal_correlation_engine import GrowthSignalCorrelationEngine
 from services.external_evidence_ledger import ExternalEvidenceLedger
 from services.external_action_sandbox import ExternalActionSandbox
+from services.external_drift_monitor import ExternalDriftMonitor
 from services.human_approval_orchestrator import HumanApprovalOrchestrator
 from services.human_feedback_learning import HumanFeedbackLearning
 from services.human_personality_training import HumanPersonalityTraining
@@ -218,6 +219,12 @@ class RuntimeUIBridge:
         platform_survival_rulebook = PlatformSurvivalRulebook().build(
             promotion_review_center.get("promotionReviewItems", []),
             external_action_sandbox.get("externalActionQueue", []),
+        )
+        external_drift_monitor = ExternalDriftMonitor().monitor(
+            expected_actions=external_action_sandbox.get("externalActionSimulations", []),
+            manual_feedback=manual_external_feedback_intake.get("manualExternalFeedbackRecords", []),
+            strategy_state=strategy_evolution,
+            feedback_learning=promotion_feedback_learning,
         )
         batch_scout_runtime = BatchScoutRuntime().run()
         batch_topic_clustering = BatchTopicClustering().cluster(batch_scout_runtime.get("batchAnalysis", []))
@@ -607,6 +614,10 @@ class RuntimeUIBridge:
             "governedExternalActionQueue": platform_survival_rulebook.get("governedExternalActionQueue", []),
             "platformSurvivalRiskReview": platform_survival_rulebook.get("platformSurvivalRiskReview", {}),
             "platformSurvivalRulebookSummary": platform_survival_rulebook.get("platformSurvivalRulebookSummary", {}),
+            "externalDriftMonitor": external_drift_monitor,
+            "externalDriftSignals": external_drift_monitor.get("externalDriftSignals", []),
+            "externalDriftRecommendations": external_drift_monitor.get("externalDriftRecommendations", []),
+            "externalDriftSummary": external_drift_monitor.get("externalDriftSummary", {}),
             "locationDemandHeatmap": location_demand_heatmap,
             "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),

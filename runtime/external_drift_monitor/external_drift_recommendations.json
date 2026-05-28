@@ -1,0 +1,57 @@
+[
+  {
+    "auto_strategy_change_allowed": false,
+    "drift_id": "EXT-DRIFT-001-STRATEGY-DRIFT",
+    "drift_type": "strategy_drift",
+    "external_execution_change_allowed": false,
+    "human_review_required": true,
+    "platform": "Reddit",
+    "recommendation": "Review strategy assumptions because recommendation effectiveness is declining.",
+    "recommendation_id": "EXT-DRIFT-REC-001",
+    "recommendation_only": true
+  },
+  {
+    "auto_strategy_change_allowed": false,
+    "drift_id": "EXT-DRIFT-001-PLATFORM-DRIFT",
+    "drift_type": "platform_drift",
+    "external_execution_change_allowed": false,
+    "human_review_required": true,
+    "platform": "Reddit",
+    "recommendation": "Re-check platform fit and cadence before recommending more actions on this platform.",
+    "recommendation_id": "EXT-DRIFT-REC-002",
+    "recommendation_only": true
+  },
+  {
+    "auto_strategy_change_allowed": false,
+    "drift_id": "EXT-DRIFT-002-STRATEGY-DRIFT",
+    "drift_type": "strategy_drift",
+    "external_execution_change_allowed": false,
+    "human_review_required": true,
+    "platform": "Reddit",
+    "recommendation": "Review strategy assumptions because recommendation effectiveness is declining.",
+    "recommendation_id": "EXT-DRIFT-REC-003",
+    "recommendation_only": true
+  },
+  {
+    "auto_strategy_change_allowed": false,
+    "drift_id": "EXT-DRIFT-002-PLATFORM-DRIFT",
+    "drift_type": "platform_drift",
+    "external_execution_change_allowed": false,
+    "human_review_required": true,
+    "platform": "Reddit",
+    "recommendation": "Re-check platform fit and cadence before recommending more actions on this platform.",
+    "recommendation_id": "EXT-DRIFT-REC-004",
+    "recommendation_only": true
+  },
+  {
+    "auto_strategy_change_allowed": false,
+    "drift_id": "EXT-DRIFT-002-TONE-DRIFT",
+    "drift_type": "tone_drift",
+    "external_execution_change_allowed": false,
+    "human_review_required": true,
+    "platform": "Reddit",
+    "recommendation": "Review CTA tone and reduce homepage emphasis before the next manual export.",
+    "recommendation_id": "EXT-DRIFT-REC-005",
+    "recommendation_only": true
+  }
+]

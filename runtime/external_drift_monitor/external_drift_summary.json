@@ -1,0 +1,22 @@
+{
+  "audience_drift_detected": false,
+  "auto_strategy_change_allowed": false,
+  "drift_signal_count": 5,
+  "drift_type_counts": {
+    "audience_drift": 0,
+    "platform_drift": 2,
+    "strategy_drift": 2,
+    "tone_drift": 1
+  },
+  "external_drift_monitor_ready": true,
+  "external_execution_change_allowed": false,
+  "highest_severity": "high",
+  "next_recommendation": "Route drift findings to human review before changing promotion strategy or manual export priorities.",
+  "platform_drift_detected": true,
+  "recommendation_count": 5,
+  "recommendation_effectiveness_declining": true,
+  "recommendation_only": true,
+  "signal_count": 5,
+  "strategy_drift_detected": true,
+  "tone_drift_detected": true
+}

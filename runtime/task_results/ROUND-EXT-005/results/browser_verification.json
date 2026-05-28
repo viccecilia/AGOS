@@ -1,0 +1,38 @@
+{
+  "currentRound": "ROUND-EXT-005 / EXTERNAL_DRIFT_MONITOR",
+  "hasExpected": true,
+  "hasFeedback": true,
+  "hasNoAutoStrategyChange": true,
+  "hasNoExternalChange": true,
+  "hasPlatformDrift": true,
+  "hasRecommendationOnly": true,
+  "hasStrategyDrift": true,
+  "hasToneDrift": true,
+  "panelExists": true,
+  "panelText": "Drift MonitortrueSignals: 5 / Drift: 5\nEffectivenessdeclining: truehighest severity: high\nDrift Typesstrategy: trueplatform: true / audience: false / tone: true\nBoundaryrecommendation only: trueauto strategy change: false / external change: false\nEXT-DRIFT-001-STRATEGY-DRIFT\nstrategy_drift / Reddit / high\nExpected: Human can review the suggested action and manually execute outside AGOS if approved.\nFeedback: views 457 / likes 13 / replies 3 / saves 5\nScore: expected 0.7 / actual 0.194 / delta -0.506\nReason: Recommendation effectiveness appears lower than expected.\nRecommendation only: true / Auto strategy change: false / External execution change: false\nstrategy_drift\nEXT-DRIFT-001-PLATFORM-DRIFT\nplatform_drift / Reddit / high\nExpected: Human can review the suggested action and manually execute outside AGOS if approved.\nFeedback: views 457 / likes 13 / replies 3 / saves 5\nScore: expected 0.7 / actual 0.194 / delta -0.506\nReason: Platform response is weaker than expected or platform has failed-pattern pressure.\nRecommendation only: true / Auto strategy change: false / External execution change: false\nplatform_drift\nEXT-DRIFT-002-STRATEGY-DRIFT\nstrategy_drift / Reddit / high\nExpected: Human can review the suggested action and manually execute outside AGOS if approved.\nFeedback: views 0 / likes 0 / replies 0 / saves 0\nScore: expected 0.7 / actual 0 / delta -0.7\nReason: Recommendation effectiveness appears lower than expected.\nRecommendation only: true / Auto strategy change: false / External execution change: false\nstrategy_drift\nEXT-DRIFT-002-PLATFORM-DRIFT\nplatform_drift / Reddit / high\nExpected: Human can review the suggested action and manually execute outside AGOS if approved.\nFeedback: views 0 / likes 0 / replies 0 / saves 0\nScore: expected 0.7 / actual 0 / delta -0.7\nReason: Platform response is weaker than expected or platform has failed-pattern pressure.\nRecommendation only: true / Auto strategy change: false / External execution change: false\nplatform_drift\nEXT-DRIFT-002-TONE-DRIFT\ntone_drift / Reddit / high\nExpected: Human can review the suggested action and manually execute outside AGOS if approved.\nFeedback: views 0 / likes 0 / replies 0 / saves 0\nScore: expected 0.7 / actual 0 / delta -0.7\nReason: Manual feedback indicates tone or CTA may be too aggressive.\nRecommendation only: true / Auto strategy change: false / External execution change: false\ntone_drift\nEXT-DRIFT-REC-001\nstrategy_drift / Reddit\nReview strategy assumptions because recommendation effectiveness is declining.\nHuman review: true / Recommendation only: true\nAuto strategy change: false / External execution change: false\nrecommend\nEXT-DRIFT-REC-002\nplatform_drift / Reddit\nRe-check platform fit and cadence before recommending more actions on this platform.\nHuman review: true / Recommendation only: true\nAuto strategy change: false / External execution change: false\nrecommend\nEXT-DRIFT-REC-003\nstrategy_drift / Reddit\nReview strategy assumptions because recommendation effectiv",
+  "recommendationCount": 5,
+  "signalCount": 5,
+  "summary": {
+    "audience_drift_detected": false,
+    "auto_strategy_change_allowed": false,
+    "drift_signal_count": 5,
+    "drift_type_counts": {
+      "audience_drift": 0,
+      "platform_drift": 2,
+      "strategy_drift": 2,
+      "tone_drift": 1
+    },
+    "external_drift_monitor_ready": true,
+    "external_execution_change_allowed": false,
+    "highest_severity": "high",
+    "next_recommendation": "Route drift findings to human review before changing promotion strategy or manual export priorities.",
+    "platform_drift_detected": true,
+    "recommendation_count": 5,
+    "recommendation_effectiveness_declining": true,
+    "recommendation_only": true,
+    "signal_count": 5,
+    "strategy_drift_detected": true,
+    "tone_drift_detected": true
+  },
+  "version": "0.1.128"
+}
