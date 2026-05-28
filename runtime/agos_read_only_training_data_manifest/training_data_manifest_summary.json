@@ -1,0 +1,16 @@
+{
+  "audit_first": true,
+  "blocked_dataset_count": 0,
+  "contains_credentials": false,
+  "credential_scan_passed": true,
+  "dataset_count": 16,
+  "human_gated": true,
+  "next_recommendation": "Workbench can import this manifest as a read-only training data index before any training or orchestration step.",
+  "read_only": true,
+  "readable_dataset_count": 16,
+  "sample_first": true,
+  "training_data_manifest_ready": true,
+  "workbench_may_execute": false,
+  "workbench_may_read": true,
+  "workbench_may_write": false
+}

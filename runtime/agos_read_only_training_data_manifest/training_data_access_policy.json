@@ -1,0 +1,27 @@
+{
+  "adapter_contract_read_only": true,
+  "audit_first": true,
+  "business_code_write_allowed": false,
+  "contains_credentials": false,
+  "credential_value_export_allowed": false,
+  "forbidden_path_patterns": [
+    ".env",
+    "api_credentials",
+    "credentials",
+    "oauth",
+    "platform_credentials",
+    "refresh",
+    "secrets",
+    "token"
+  ],
+  "human_gated": true,
+  "platform_write_api_allowed": false,
+  "read_only": true,
+  "sample_first": true,
+  "secret_read_allowed": false,
+  "training_acceptance_read_only": true,
+  "training_acceptance_ready": true,
+  "workbench_execute_allowed": false,
+  "workbench_read_allowed": true,
+  "workbench_write_allowed": false
+}

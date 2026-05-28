@@ -1,0 +1,11 @@
+{
+  "audit_first": true,
+  "blocked_dataset_count": 0,
+  "blocked_datasets": [],
+  "credential_scan_passed": true,
+  "external_execution_allowed": false,
+  "human_gated": true,
+  "readable_dataset_count": 16,
+  "review_id": "TRAINING_DATA_MANIFEST_AUDIT_REVIEW",
+  "write_api_allowed": false
+}

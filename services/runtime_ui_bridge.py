@@ -9,6 +9,7 @@ from services.action_recommendation_engine import ActionRecommendationEngine
 from services.action_queue_engine import ActionQueueEngine
 from services.agos_workbench_adapter_contract import AGOSWorkbenchAdapterContract
 from services.agos_training_acceptance_export import AGOSTrainingAcceptanceExport
+from services.agos_read_only_training_data_manifest import AGOSReadOnlyTrainingDataManifest
 from services.api_collection_review_and_correction import APICollectionReviewAndCorrection
 from services.api_capability_registry import APICapabilityRegistry
 from services.api_credential_setup_wizard import APICredentialSetupWizard
@@ -238,6 +239,10 @@ class RuntimeUIBridge:
         )
         workbench_adapter_contract = AGOSWorkbenchAdapterContract().build()
         training_acceptance_export = AGOSTrainingAcceptanceExport().export(adapter_contract=workbench_adapter_contract)
+        training_data_manifest = AGOSReadOnlyTrainingDataManifest().build(
+            adapter_contract=workbench_adapter_contract,
+            training_acceptance=training_acceptance_export,
+        )
         batch_scout_runtime = BatchScoutRuntime().run()
         batch_topic_clustering = BatchTopicClustering().cluster(batch_scout_runtime.get("batchAnalysis", []))
         batch_human_review = BatchHumanReview().review(batch_topic_clustering.get("batchTrendClusters", []))
@@ -649,6 +654,11 @@ class RuntimeUIBridge:
             "trainingAcceptanceGateStatus": training_acceptance_export.get("gateStatus", {}),
             "trainingAcceptanceBlockedRisks": training_acceptance_export.get("blockedRisks", []),
             "trainingAcceptanceSummary": training_acceptance_export.get("trainingAcceptanceSummary", {}),
+            "trainingDataManifest": training_data_manifest,
+            "trainingDatasetManifest": training_data_manifest.get("trainingDatasetManifest", []),
+            "trainingDataAccessPolicy": training_data_manifest.get("trainingDataAccessPolicy", {}),
+            "trainingDataAuditReview": training_data_manifest.get("trainingDataAuditReview", {}),
+            "trainingDataManifestSummary": training_data_manifest.get("trainingDataManifestSummary", {}),
             "locationDemandHeatmap": location_demand_heatmap,
             "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),

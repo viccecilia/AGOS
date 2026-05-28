@@ -1,0 +1,30 @@
+{
+  "containsCredentials": false,
+  "credentialScanPassed": true,
+  "currentRound": "ROUND-WB-AGOS-003 / AGOS_READ_ONLY_TRAINING_DATA_MANIFEST",
+  "datasetCount": 16,
+  "forbiddenPatterns": [
+    ".env",
+    "api_credentials",
+    "credentials",
+    "oauth",
+    "platform_credentials",
+    "refresh",
+    "secrets",
+    "token"
+  ],
+  "panelExists": true,
+  "panelTextIncludesAuditFirst": true,
+  "panelTextIncludesCredentialsFalse": true,
+  "panelTextIncludesHumanGated": true,
+  "panelTextIncludesManifest": true,
+  "panelTextIncludesReadOnly": true,
+  "panelTextIncludesSampleFirst": true,
+  "readableDatasetCount": 16,
+  "url": "http://127.0.0.1:8765/project_control_center.html?runtime_ui=1&cache_bust=1779960055689#war-room-growth",
+  "version": "0.1.132",
+  "visibleSnippet": "Manifesttruedatasets: 16\nPolicyread only truesample-first: true / audit-first: true\nHuman GatetrueWorkbench execute: false\nCredentialsfalsescan passed: true\nAGOS-TRAINING-DATA-001\nruntime/samples / local_sample\nFiles: 18 / JSON: 18 / MD: 0\nsample-first: true / read-only: true / audit-first: true / human-gated: true\ncontains credentials: false / write: false / execute: false\nWorkbench may read metadata and artifact contents as local_sample; any use remains audit-first and human-gated.\nreadable\nAGOS-TRAINING-DATA-002\nruntime/seasonal_demand_calendar / local_runtime_artifact\nFiles: 7 / JSON: 5 / MD: 0\nsample-first: false / read-only: true / audit-first: true / human-gated: true\ncontains credentials: false / write: false / execute: false\nWorkbench may read metadata and artifact contents as local_runtime_artifact; any use remains audit-first and human-gated.\nreadable\nAGOS-TRAINING-DATA-003\nru",
+  "workbenchMayExecute": false,
+  "workbenchMayRead": true,
+  "workbenchMayWrite": false
+}
