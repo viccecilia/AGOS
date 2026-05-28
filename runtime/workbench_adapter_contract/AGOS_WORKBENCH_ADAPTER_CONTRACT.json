@@ -1,0 +1,1852 @@
+{
+  "access_policy": {
+    "allowed_output_dir": "runtime/workbench_adapter_contract",
+    "business_code_write_allowed": false,
+    "credential_value_export_allowed": false,
+    "external_action_start_allowed": false,
+    "platform_write_api_allowed": false,
+    "read_only": true,
+    "secret_read_allowed": false
+  },
+  "allowed_read_sources": [
+    "runtime/task_results/*",
+    "runtime/*/*REPORT.json",
+    "docs/project_control_center.html",
+    "runtime/runtime_state/ui_state.json",
+    "docs/runtime/runtime_state/ui_state.json",
+    "services/runtime_ui_bridge.py output state"
+  ],
+  "contract_version": "1.0",
+  "created_at": "2026-05-28T09:08:35+00:00",
+  "forbidden_operations": [
+    "Workbench must not directly modify AGOS business code.",
+    "Workbench must not directly read secrets, API keys, OAuth tokens, refresh tokens, .env files, or credential vault payloads.",
+    "Workbench must not start external platform actions.",
+    "Workbench must not call platform write APIs.",
+    "Workbench must not log in to platforms, scrape login-only data, post, reply, DM, follow, like, or dispatch external actions."
+  ],
+  "phase": "WORKBENCH_AGOS_ADAPTER",
+  "report_id": "AGOS_WORKBENCH_ADAPTER_CONTRACT",
+  "round_id": "ROUND-WB-AGOS-001",
+  "safetyBoundary": "Workbench may inspect AGOS task results, report artifacts, control-center state, and runtime UI state only. It cannot mutate AGOS business code, read secrets, or start external platform actions.",
+  "status": "readonly_contract_ready",
+  "workbenchAdapterSafetyReview": {
+    "allowed_artifact_policy": "metadata and artifact summaries only; no secret values and no platform action execution",
+    "business_code_write_allowed": false,
+    "credential_value_export_allowed": false,
+    "external_action_start_allowed": false,
+    "forbidden_path_patterns": [
+      ".env",
+      "runtime/api_credentials/",
+      "runtime/platform_credentials/",
+      "secrets/",
+      "credentials/"
+    ],
+    "platform_write_api_allowed": false,
+    "read_only_contract": true,
+    "review_id": "WORKBENCH_AGOS_ADAPTER_SAFETY_REVIEW",
+    "safety_boundary_passed": true,
+    "secret_read_allowed": false
+  },
+  "workbenchAdapterSummary": {
+    "business_code_write_allowed": false,
+    "control_center_available": true,
+    "external_action_start_allowed": false,
+    "gate_count": 9,
+    "next_recommendation": "Expose this contract to Workbench as a read-only project adapter before any cross-project orchestration.",
+    "platform_write_api_allowed": false,
+    "read_only": true,
+    "runtime_report_count": 59,
+    "runtime_ui_bridge_source_available": true,
+    "runtime_ui_state_available": true,
+    "safety_boundary_passed": true,
+    "secret_read_allowed": false,
+    "task_result_round_count": 127,
+    "task_result_summary_count": 127,
+    "workbench_adapter_contract_ready": true
+  },
+  "workbenchGateIndex": [
+    {
+      "execute_allowed": false,
+      "gate_id": "API_SCOUT_VALIDATION_REPORT",
+      "path": "runtime/api_scout_gate/API_SCOUT_VALIDATION_REPORT.json",
+      "phase": "PLATFORM_API_SCOUT_INTEGRATION",
+      "read_allowed": true,
+      "safety_boundary": "Gate validates safe read-only platform trend intelligence. It does not post, reply, follow, DM, scrape login-only pages, expose credentials, or bypass platform limits.",
+      "status": "passed"
+    },
+    {
+      "execute_allowed": false,
+      "gate_id": "AUTONOMOUS_GROWTH_PREPARATION_REPORT",
+      "path": "runtime/autonomous_growth_preparation_gate/AUTONOMOUS_GROWTH_PREPARATION_REPORT.json",
+      "phase": "AUTONOMOUS_GROWTH_PREPARATION",
+      "read_allowed": true,
+      "safety_boundary": "",
+      "status": "passed"
+    },
+    {
+      "execute_allowed": false,
+      "gate_id": "CONTROLLED_API_COLLECTION_REPORT",
+      "path": "runtime/controlled_api_collection_gate/CONTROLLED_API_COLLECTION_REPORT.json",
+      "phase": "CONTROLLED_API_INTELLIGENCE_COLLECTION",
+      "read_allowed": true,
+      "safety_boundary": "Gate validates safe, compliant, batch platform intelligence collection. It does not post, reply, follow, DM, scrape login-only pages, expose credentials, call platform write APIs, or bypass platform limits.",
+      "status": "passed"
+    },
+    {
+      "execute_allowed": false,
+      "gate_id": "CONTROLLED_EXTERNAL_INTERACTION_GATE_REPORT",
+      "path": "runtime/controlled_external_interaction_gate/CONTROLLED_EXTERNAL_INTERACTION_GATE_REPORT.json",
+      "phase": "CONTROLLED_REAL_EXTERNAL_INTERACTION_PREPARATION",
+      "read_allowed": true,
+      "safety_boundary": "Gate permits only human-controlled external trial preparation. It does not enable automatic posting, replying, login, account operation, platform API writes, scraping, DMs, follows, or likes.",
+      "status": "controlled_external_interaction_gate_ready"
+    },
+    {
+      "execute_allowed": false,
+      "gate_id": "INTELLIGENCE_ACCELERATION_REPORT",
+      "path": "runtime/intelligence_acceleration_gate/INTELLIGENCE_ACCELERATION_REPORT.json",
+      "phase": "",
+      "read_allowed": true,
+      "safety_boundary": "Intelligence Acceleration Gate validates local runtime intelligence only. It does not post, reply, follow, DM, log in, register accounts, or call external write APIs.",
+      "status": "passed"
+    },
+    {
+      "execute_allowed": false,
+      "gate_id": "MERCHANT_GROWTH_ENGINE_REPORT",
+      "path": "runtime/merchant_growth_engine_gate/MERCHANT_GROWTH_ENGINE_REPORT.json",
+      "phase": "",
+      "read_allowed": true,
+      "safety_boundary": "",
+      "status": "unknown"
+    },
+    {
+      "execute_allowed": false,
+      "gate_id": "PERSONALITY_EVOLUTION_REPORT",
+      "path": "runtime/personality_evolution_gate/PERSONALITY_EVOLUTION_REPORT.json",
+      "phase": "",
+      "read_allowed": true,
+      "safety_boundary": "",
+      "status": "passed"
+    },
+    {
+      "execute_allowed": false,
+      "gate_id": "PREDICTIVE_DEMAND_REPORT",
+      "path": "runtime/predictive_demand_gate/PREDICTIVE_DEMAND_REPORT.json",
+      "phase": "",
+      "read_allowed": true,
+      "safety_boundary": "",
+      "status": "unknown"
+    },
+    {
+      "execute_allowed": false,
+      "gate_id": "SEMI_AUTONOMOUS_RUNTIME_REPORT",
+      "path": "runtime/semi_autonomous_runtime_gate/SEMI_AUTONOMOUS_RUNTIME_REPORT.json",
+      "phase": "",
+      "read_allowed": true,
+      "safety_boundary": "Gate review does not post, reply, log in, register accounts, call platform APIs, or change external state.",
+      "status": "passed"
+    }
+  ],
+  "workbenchReadableArtifacts": {
+    "controlCenter": {
+      "exists": true,
+      "path": "docs/project_control_center.html",
+      "read_allowed": true,
+      "size_bytes": 4129832,
+      "write_allowed": false
+    },
+    "runtimeReports": [
+      {
+        "path": "runtime/action_queue/ACTION_QUEUE_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "ACTION_QUEUE_REPORT",
+        "safety_boundary": "Approvals only update local state; no posting, replying, login, account creation, or platform API call is executed.",
+        "status": "active",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/action_recommendations/ACTION_RECOMMENDATION_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "ACTION_RECOMMENDATION_REPORT",
+        "safety_boundary": "Recommendations do not post, reply, register accounts, log in, or call platform APIs.",
+        "status": "recommendations_ready",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/api_collection_review/API_COLLECTION_REVIEW_AND_CORRECTION_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "API_COLLECTION_REVIEW_AND_CORRECTION_REPORT",
+        "safety_boundary": "API Collection Review and Correction edits local intelligence records only. It does not post, reply, follow, DM, log in, register accounts, call platform write APIs, or bypass platform limits.",
+        "status": "api_collection_review_ready",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/api_credentials/API_CREDENTIAL_SETUP_WIZARD_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "API_CREDENTIAL_SETUP_WIZARD",
+        "safety_boundary": "API Credential Setup Wizard stores credentials locally through PlatformCredentialVault, shows only redacted status, keeps workspace scopes isolated, and never enables public upload, Git commit, plaintext logs, or write-side platform automation.",
+        "status": "credential_setup_wizard_ready",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/api_normalized_signals/API_SIGNAL_NORMALIZATION_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "API_SIGNAL_NORMALIZATION_REPORT",
+        "safety_boundary": "Normalizer reads existing trend signals and writes local JSON only. It does not call platform APIs, post, reply, follow, DM, or trigger engagement.",
+        "status": "signals_normalized",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/api_risk/API_RATE_LIMIT_GUARD_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "API_RATE_LIMIT_GUARD_REPORT",
+        "safety_boundary": "Guard evaluates read-only API usage only. It does not post, reply, follow, DM, or bypass platform limits.",
+        "status": "safety_guard_ready",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/api_scout_gate/API_SCOUT_VALIDATION_REPORT.json",
+        "phase": "PLATFORM_API_SCOUT_INTEGRATION",
+        "read_allowed": true,
+        "report_id": "API_SCOUT_VALIDATION_REPORT",
+        "safety_boundary": "Gate validates safe read-only platform trend intelligence. It does not post, reply, follow, DM, scrape login-only pages, expose credentials, or bypass platform limits.",
+        "status": "passed",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/api_scout_pipeline/API_TO_SCOUT_PIPELINE_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "API_TO_SCOUT_PIPELINE_REPORT",
+        "safety_boundary": "Pipeline consumes read-only API signals and writes local Scout Intelligence JSON only. It does not post, reply, follow, DM, scrape login-only pages, or bypass platform limits.",
+        "status": "api_trends_entered_scout_intelligence",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/autonomous_growth_preparation_gate/AUTONOMOUS_GROWTH_PREPARATION_REPORT.json",
+        "phase": "AUTONOMOUS_GROWTH_PREPARATION",
+        "read_allowed": true,
+        "report_id": "AUTONOMOUS_GROWTH_PREPARATION_REPORT",
+        "safety_boundary": "",
+        "status": "passed",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/batch_clusters/BATCH_TOPIC_CLUSTERING_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "BATCH_TOPIC_CLUSTERING_REPORT",
+        "safety_boundary": "Batch Topic Clustering uses local batch analysis only. It does not post, reply, follow, DM, log in, register accounts, or call external write APIs.",
+        "status": "batch_clusters_ready",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/batch_reviews/BATCH_HUMAN_REVIEW_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "BATCH_HUMAN_REVIEW_REPORT",
+        "safety_boundary": "Batch Human Review is local training only. It does not post, reply, follow, DM, log in, register accounts, or call external write APIs.",
+        "status": "batch_human_review_ready",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/batch_runtime/BATCH_SCOUT_RUNTIME_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "BATCH_SCOUT_RUNTIME_REPORT",
+        "safety_boundary": "Batch Scout Runtime processes local question text only. It does not post, reply, follow, DM, log in, register accounts, or call external write APIs.",
+        "status": "batch_processed",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/best_answer_learning/BEST_ANSWER_LEARNING_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "BEST_ANSWER_LEARNING_REPORT",
+        "safety_boundary": "",
+        "status": "active",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/compliance_guard/COLLECTION_COMPLIANCE_GUARD_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "COLLECTION_COMPLIANCE_GUARD_REPORT",
+        "safety_boundary": "Collection Compliance Guard allows read-only public intelligence collection only. It blocks automated login scraping, platform-limit bypass, write API usage, and automated interaction.",
+        "status": "compliance_guard_ready",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/controlled_api_collection_gate/CONTROLLED_API_COLLECTION_REPORT.json",
+        "phase": "CONTROLLED_API_INTELLIGENCE_COLLECTION",
+        "read_allowed": true,
+        "report_id": "CONTROLLED_API_COLLECTION_REPORT",
+        "safety_boundary": "Gate validates safe, compliant, batch platform intelligence collection. It does not post, reply, follow, DM, scrape login-only pages, expose credentials, call platform write APIs, or bypass platform limits.",
+        "status": "passed",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/controlled_external_interaction_gate/CONTROLLED_EXTERNAL_INTERACTION_GATE_REPORT.json",
+        "phase": "CONTROLLED_REAL_EXTERNAL_INTERACTION_PREPARATION",
+        "read_allowed": true,
+        "report_id": "CONTROLLED_EXTERNAL_INTERACTION_GATE_REPORT",
+        "safety_boundary": "Gate permits only human-controlled external trial preparation. It does not enable automatic posting, replying, login, account operation, platform API writes, scraping, DMs, follows, or likes.",
+        "status": "controlled_external_interaction_gate_ready",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/cross_platform_expansion/CROSS_PLATFORM_EXPANSION_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "CROSS_PLATFORM_EXPANSION_REPORT",
+        "safety_boundary": "",
+        "status": "active",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/daily_question_import/DAILY_QUESTION_IMPORT_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "DAILY_QUESTION_IMPORT_REPORT",
+        "safety_boundary": "",
+        "status": "active",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/daily_reports/DAILY_OPERATIONS_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "DAILY_OPERATIONS_REPORT",
+        "safety_boundary": "",
+        "status": "active",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/demand_to_action_strategy/demand_action_strategy_report.json",
+        "phase": "PREDICTIVE_DEMAND_INTELLIGENCE",
+        "read_allowed": true,
+        "report_id": "DEMAND_ACTION_STRATEGY_REPORT",
+        "safety_boundary": "Demand-to-Action Strategy Engine generates human-reviewed local recommendations only. It does not post, DM, quote, contact customers, contact drivers, dispatch vehicles, contact businesses, process payment, or call write APIs.",
+        "status": "demand_action_strategy_ready",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/discovered_topics/DISCOVERED_TOPICS_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "DISCOVERED_TOPICS_REPORT",
+        "safety_boundary": "",
+        "status": "active",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/execution_simulation/EXECUTION_SIMULATION_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "EXECUTION_SIMULATION_REPORT",
+        "safety_boundary": "Simulation never posts, replies, logs in, registers accounts, calls platform APIs, or changes external state.",
+        "status": "simulated",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/external_action_sandbox/EXTERNAL_ACTION_SANDBOX_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "EXTERNAL_ACTION_SANDBOX_REPORT",
+        "safety_boundary": "Sandbox prepares and simulates external actions only. It does not post, reply, follow, DM, like, log in, register accounts, or call write APIs.",
+        "status": "sandbox_ready",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/external_drift_monitor/EXTERNAL_DRIFT_REPORT.json",
+        "phase": "CONTROLLED_REAL_EXTERNAL_INTERACTION_PREPARATION",
+        "read_allowed": true,
+        "report_id": "EXTERNAL_DRIFT_REPORT",
+        "safety_boundary": "External Drift Monitor only creates review recommendations. It does not change external execution strategy, publish, reply, DM, follow, like, crawl platforms, or call write APIs.",
+        "status": "external_drift_monitor_ready",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/external_evidence_ledger/EXTERNAL_EVIDENCE_LEDGER_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "EXTERNAL_EVIDENCE_LEDGER_REPORT",
+        "safety_boundary": "",
+        "status": "unknown",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/failure_analysis/FAILURE_ANALYSIS_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "FAILURE_ANALYSIS_REPORT",
+        "safety_boundary": "",
+        "status": "active",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/feedback_capture/REAL_FEEDBACK_CAPTURE_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "REAL_FEEDBACK_CAPTURE_REPORT",
+        "safety_boundary": "",
+        "status": "active",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/heat_signals/HEAT_DETECTION_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "HEAT_DETECTION_REPORT",
+        "safety_boundary": "",
+        "status": "active",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/human_approval/HUMAN_APPROVAL_ORCHESTRATION_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "HUMAN_APPROVAL_ORCHESTRATION_REPORT",
+        "safety_boundary": "Unified approval only records local human decisions; no posting, replying, login, account creation, or platform API call is executed.",
+        "status": "active",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/intelligence_acceleration_gate/INTELLIGENCE_ACCELERATION_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "INTELLIGENCE_ACCELERATION_REPORT",
+        "safety_boundary": "Intelligence Acceleration Gate validates local runtime intelligence only. It does not post, reply, follow, DM, log in, register accounts, or call external write APIs.",
+        "status": "passed",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/live_collection/LIVE_COLLECTION_RUNNER_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "LIVE_COLLECTION_RUNNER_REPORT",
+        "safety_boundary": "Live Collection Runner reads public intelligence signals only. It does not post, reply, DM, follow, like, log in, register accounts, bypass platform limits, or call write-side APIs.",
+        "status": "live_collection_completed",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/live_memory_import/LIVE_DATA_IMPORT_TO_MEMORY_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "LIVE_DATA_IMPORT_TO_MEMORY_REPORT",
+        "safety_boundary": "Live Data Import to Memory writes local JSON training memory only. It does not post, reply, follow, DM, log in, register accounts, call platform write APIs, or bypass platform limits.",
+        "status": "live_intelligence_imported_to_memory",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/location_demand_heatmap/LOCATION_DEMAND_HEATMAP_REPORT.json",
+        "phase": "PREDICTIVE_DEMAND_INTELLIGENCE",
+        "read_allowed": true,
+        "report_id": "LOCATION_DEMAND_HEATMAP_REPORT",
+        "safety_boundary": "Location Demand Heatmap uses local sample and Seasonal Demand Calendar data only. It does not use real-time GPS, dispatch drivers, contact vehicles, publish content, quote prices, or call platform write APIs.",
+        "status": "location_heatmap_ready",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/long_term_strategy_memory/LONG_TERM_STRATEGY_MEMORY_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "LONG_TERM_STRATEGY_MEMORY_REPORT",
+        "safety_boundary": "",
+        "status": "forming_long_term_memory",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/manual_external_feedback_intake/MANUAL_EXTERNAL_FEEDBACK_INTAKE_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "MANUAL_EXTERNAL_FEEDBACK_INTAKE_REPORT",
+        "safety_boundary": "",
+        "status": "unknown",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/merchant_growth_engine_gate/MERCHANT_GROWTH_ENGINE_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "MERCHANT_GROWTH_ENGINE_REPORT",
+        "safety_boundary": "",
+        "status": "unknown",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/mobility_demand_intent/MOBILITY_DEMAND_INTENT_REPORT.json",
+        "phase": "PREDICTIVE_DEMAND_INTELLIGENCE",
+        "read_allowed": true,
+        "report_id": "MOBILITY_DEMAND_INTENT_REPORT",
+        "safety_boundary": "Mobility Demand Intent Engine classifies local intelligence only. It does not quote prices, contact customers, dispatch drivers, post, reply, DM, log in, or call platform write APIs.",
+        "status": "mobility_intents_classified",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/normalized_live_data/LIVE_DATA_NORMALIZATION_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "LIVE_DATA_NORMALIZATION_REPORT",
+        "safety_boundary": "Live Data Normalization Pipeline reads local live collection data and writes local JSON only. It does not call platform APIs, post, reply, DM, follow, like, log in, or bypass platform limits.",
+        "status": "live_data_normalized",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/pattern_memory/RUNTIME_PATTERN_LEARNING_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "RUNTIME_PATTERN_LEARNING_REPORT",
+        "safety_boundary": "Runtime Pattern Learning uses local batch review signals only. It does not post, reply, follow, DM, log in, register accounts, or call external write APIs.",
+        "status": "runtime_patterns_learned",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/personality_evolution_gate/PERSONALITY_EVOLUTION_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "PERSONALITY_EVOLUTION_REPORT",
+        "safety_boundary": "",
+        "status": "passed",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/personality_isolation/PERSONALITY_ISOLATION_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "PERSONALITY_ISOLATION_REPORT",
+        "safety_boundary": "",
+        "status": "clear",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/personality_reviews/PERSONALITY_REVIEW_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "PERSONALITY_REVIEW_REPORT",
+        "safety_boundary": "",
+        "status": "unknown",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/personality_reviews/PERSONALITY_REVIEW_SESSION_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "PERSONALITY_REVIEW_SESSION_REPORT",
+        "safety_boundary": "",
+        "status": "clear",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/platform_survival_rulebook/PLATFORM_SURVIVAL_RULEBOOK_REPORT.json",
+        "phase": "CONTROLLED_REAL_EXTERNAL_INTERACTION_PREPARATION",
+        "read_allowed": true,
+        "report_id": "PLATFORM_SURVIVAL_RULEBOOK_REPORT",
+        "safety_boundary": "Rulebook only downgrades, rejects, or requires review for risky actions. It does not publish, reply, DM, follow, like, log in, crawl, or call platform write APIs.",
+        "status": "platform_survival_rulebook_ready",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/platform_trends/READ_ONLY_TREND_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "READ_ONLY_TREND_REPORT",
+        "safety_boundary": "Connector reads and normalizes trend inputs only. It cannot post, reply, follow, DM, or trigger engagement.",
+        "status": "trends_read",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/predictive_demand_gate/PREDICTIVE_DEMAND_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "PREDICTIVE_DEMAND_REPORT",
+        "safety_boundary": "",
+        "status": "unknown",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/real_growth_validation/REAL_GROWTH_VALIDATION_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "REAL_GROWTH_VALIDATION_REPORT",
+        "safety_boundary": "",
+        "status": "passed",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/real_reply_attempts/REAL_REPLY_ATTEMPTS_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "REAL_REPLY_ATTEMPTS_REPORT",
+        "safety_boundary": "",
+        "status": "active",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/replay_training/RUNTIME_REPLAY_TRAINING_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "RUNTIME_REPLAY_TRAINING_REPORT",
+        "safety_boundary": "Runtime Replay Training replays local historical intelligence only. It does not post, reply, follow, DM, log in, register accounts, or call external write APIs.",
+        "status": "runtime_replay_trained",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/runtime_priority/RUNTIME_PRIORITY_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "RUNTIME_PRIORITY_REPORT",
+        "safety_boundary": "Priority changes only affect local planning and human-reviewed drafts.",
+        "status": "priority_evolving",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/runtime_risk/RUNTIME_RISK_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "RUNTIME_RISK_REPORT",
+        "safety_boundary": "Risk prediction does not execute external actions.",
+        "status": "risk_predicted",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/seasonal_demand_calendar/SEASONAL_DEMAND_CALENDAR_REPORT.json",
+        "phase": "PREDICTIVE_DEMAND_INTELLIGENCE",
+        "read_allowed": true,
+        "report_id": "SEASONAL_DEMAND_CALENDAR_REPORT",
+        "safety_boundary": "Seasonal Demand Calendar uses local sample/manual-import-ready planning data only. It does not call Google Trends, scrape login-only data, post, reply, contact customers, dispatch drivers, or call platform write APIs.",
+        "status": "seasonal_calendar_ready",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/semi_autonomous_runtime_gate/SEMI_AUTONOMOUS_RUNTIME_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "SEMI_AUTONOMOUS_RUNTIME_REPORT",
+        "safety_boundary": "Gate review does not post, reply, log in, register accounts, call platform APIs, or change external state.",
+        "status": "passed",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/signal_correlation/GROWTH_SIGNAL_CORRELATION_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "GROWTH_SIGNAL_CORRELATION_REPORT",
+        "safety_boundary": "Correlation only informs local planning and human-reviewed drafts.",
+        "status": "correlating_growth_signals",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/strategic_interpretation/STRATEGIC_INTERPRETATION_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "STRATEGIC_INTERPRETATION_REPORT",
+        "safety_boundary": "",
+        "status": "active",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/strategy_evolution/STRATEGY_EVOLUTION_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "STRATEGY_EVOLUTION_REPORT",
+        "safety_boundary": "",
+        "status": "forming_long_term_strategy",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/strategy_simulation/STRATEGY_SIMULATION_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "STRATEGY_SIMULATION_REPORT",
+        "safety_boundary": "Simulation only informs local planning and human-reviewed strategy candidates.",
+        "status": "simulating_strategy_outcomes",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/synthetic_training/SYNTHETIC_FEEDBACK_TRAINING_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "SYNTHETIC_FEEDBACK_TRAINING_REPORT",
+        "safety_boundary": "Synthetic Feedback Training creates local simulated data only. It does not post, reply, follow, DM, log in, register accounts, or call external APIs.",
+        "status": "synthetic_training_ready",
+        "write_allowed": false
+      },
+      {
+        "path": "runtime/trend_clusters/TREND_CLUSTERING_REPORT.json",
+        "phase": "",
+        "read_allowed": true,
+        "report_id": "TREND_CLUSTERING_REPORT",
+        "safety_boundary": "",
+        "status": "active",
+        "write_allowed": false
+      }
+    ],
+    "runtimeUiBridgeSource": {
+      "exists": true,
+      "path": "services/runtime_ui_bridge.py",
+      "read_allowed": true,
+      "size_bytes": 52503,
+      "write_allowed": false
+    },
+    "runtimeUiState": {
+      "exists": true,
+      "path": "runtime/runtime_state/ui_state.json",
+      "read_allowed": true,
+      "size_bytes": 61738,
+      "write_allowed": false
+    },
+    "taskResults": [
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/BLUEPRINT-ROUND-VISIBILITY-001",
+        "read_allowed": true,
+        "round_id": "BLUEPRINT-ROUND-VISIBILITY-001",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/BLUEPRINT-ROUND-VISIBILITY-001/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/BLUEPRINT-SYSTEM-001",
+        "read_allowed": true,
+        "round_id": "BLUEPRINT-SYSTEM-001",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/BLUEPRINT-SYSTEM-001/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R001",
+        "read_allowed": true,
+        "round_id": "R001",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R001/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R002",
+        "read_allowed": true,
+        "round_id": "R002",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R002/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R003",
+        "read_allowed": true,
+        "round_id": "R003",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R003/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R004",
+        "read_allowed": true,
+        "round_id": "R004",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R004/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R005",
+        "read_allowed": true,
+        "round_id": "R005",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R005/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R006",
+        "read_allowed": true,
+        "round_id": "R006",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R006/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R007",
+        "read_allowed": true,
+        "round_id": "R007",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R007/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R008",
+        "read_allowed": true,
+        "round_id": "R008",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R008/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R009",
+        "read_allowed": true,
+        "round_id": "R009",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R009/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R010",
+        "read_allowed": true,
+        "round_id": "R010",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R010/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R011",
+        "read_allowed": true,
+        "round_id": "R011",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R011/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R012",
+        "read_allowed": true,
+        "round_id": "R012",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R012/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R013",
+        "read_allowed": true,
+        "round_id": "R013",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R013/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R014",
+        "read_allowed": true,
+        "round_id": "R014",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R014/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R015",
+        "read_allowed": true,
+        "round_id": "R015",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R015/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R016",
+        "read_allowed": true,
+        "round_id": "R016",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R016/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R017",
+        "read_allowed": true,
+        "round_id": "R017",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R017/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R018",
+        "read_allowed": true,
+        "round_id": "R018",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R018/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R019",
+        "read_allowed": true,
+        "round_id": "R019",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R019/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R020",
+        "read_allowed": true,
+        "round_id": "R020",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R020/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R021",
+        "read_allowed": true,
+        "round_id": "R021",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R021/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R022",
+        "read_allowed": true,
+        "round_id": "R022",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R022/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R023",
+        "read_allowed": true,
+        "round_id": "R023",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R023/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R024",
+        "read_allowed": true,
+        "round_id": "R024",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R024/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R025",
+        "read_allowed": true,
+        "round_id": "R025",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R025/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R026",
+        "read_allowed": true,
+        "round_id": "R026",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R026/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R027",
+        "read_allowed": true,
+        "round_id": "R027",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R027/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R028",
+        "read_allowed": true,
+        "round_id": "R028",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R028/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R029",
+        "read_allowed": true,
+        "round_id": "R029",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R029/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R030",
+        "read_allowed": true,
+        "round_id": "R030",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R030/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R031",
+        "read_allowed": true,
+        "round_id": "R031",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R031/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R032",
+        "read_allowed": true,
+        "round_id": "R032",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R032/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R033",
+        "read_allowed": true,
+        "round_id": "R033",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R033/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R034",
+        "read_allowed": true,
+        "round_id": "R034",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R034/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R035",
+        "read_allowed": true,
+        "round_id": "R035",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R035/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R036",
+        "read_allowed": true,
+        "round_id": "R036",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R036/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R037",
+        "read_allowed": true,
+        "round_id": "R037",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R037/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R038",
+        "read_allowed": true,
+        "round_id": "R038",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R038/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R039",
+        "read_allowed": true,
+        "round_id": "R039",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R039/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/R040",
+        "read_allowed": true,
+        "round_id": "R040",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/R040/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 5,
+        "path": "runtime/task_results/ROUND-API-COLLECT-001",
+        "read_allowed": true,
+        "round_id": "ROUND-API-COLLECT-001",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-API-COLLECT-001/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 5,
+        "path": "runtime/task_results/ROUND-API-COLLECT-002",
+        "read_allowed": true,
+        "round_id": "ROUND-API-COLLECT-002",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-API-COLLECT-002/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 5,
+        "path": "runtime/task_results/ROUND-API-COLLECT-003",
+        "read_allowed": true,
+        "round_id": "ROUND-API-COLLECT-003",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-API-COLLECT-003/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 5,
+        "path": "runtime/task_results/ROUND-API-COLLECT-004",
+        "read_allowed": true,
+        "round_id": "ROUND-API-COLLECT-004",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-API-COLLECT-004/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 5,
+        "path": "runtime/task_results/ROUND-API-COLLECT-005",
+        "read_allowed": true,
+        "round_id": "ROUND-API-COLLECT-005",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-API-COLLECT-005/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 7,
+        "path": "runtime/task_results/ROUND-API-COLLECT-006",
+        "read_allowed": true,
+        "round_id": "ROUND-API-COLLECT-006",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-API-COLLECT-006/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 7,
+        "path": "runtime/task_results/ROUND-API-COLLECT-007",
+        "read_allowed": true,
+        "round_id": "ROUND-API-COLLECT-007",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-API-COLLECT-007/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 7,
+        "path": "runtime/task_results/ROUND-API-COLLECT-008",
+        "read_allowed": true,
+        "round_id": "ROUND-API-COLLECT-008",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-API-COLLECT-008/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-API-SCOUT-001",
+        "read_allowed": true,
+        "round_id": "ROUND-API-SCOUT-001",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-API-SCOUT-001/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-API-SCOUT-002",
+        "read_allowed": true,
+        "round_id": "ROUND-API-SCOUT-002",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-API-SCOUT-002/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-API-SCOUT-003",
+        "read_allowed": true,
+        "round_id": "ROUND-API-SCOUT-003",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-API-SCOUT-003/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 5,
+        "path": "runtime/task_results/ROUND-API-SCOUT-004",
+        "read_allowed": true,
+        "round_id": "ROUND-API-SCOUT-004",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-API-SCOUT-004/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 5,
+        "path": "runtime/task_results/ROUND-API-SCOUT-005",
+        "read_allowed": true,
+        "round_id": "ROUND-API-SCOUT-005",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-API-SCOUT-005/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 5,
+        "path": "runtime/task_results/ROUND-API-SCOUT-006",
+        "read_allowed": true,
+        "round_id": "ROUND-API-SCOUT-006",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-API-SCOUT-006/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 5,
+        "path": "runtime/task_results/ROUND-API-SCOUT-007",
+        "read_allowed": true,
+        "round_id": "ROUND-API-SCOUT-007",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-API-SCOUT-007/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-AUTO-PREP-001",
+        "read_allowed": true,
+        "round_id": "ROUND-AUTO-PREP-001",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-AUTO-PREP-001/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-AUTO-PREP-002",
+        "read_allowed": true,
+        "round_id": "ROUND-AUTO-PREP-002",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-AUTO-PREP-002/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-AUTO-PREP-003",
+        "read_allowed": true,
+        "round_id": "ROUND-AUTO-PREP-003",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-AUTO-PREP-003/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-AUTO-PREP-004",
+        "read_allowed": true,
+        "round_id": "ROUND-AUTO-PREP-004",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-AUTO-PREP-004/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-AUTO-PREP-005",
+        "read_allowed": true,
+        "round_id": "ROUND-AUTO-PREP-005",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-AUTO-PREP-005/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 5,
+        "path": "runtime/task_results/ROUND-BATCH-001",
+        "read_allowed": true,
+        "round_id": "ROUND-BATCH-001",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-BATCH-001/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 5,
+        "path": "runtime/task_results/ROUND-BATCH-002",
+        "read_allowed": true,
+        "round_id": "ROUND-BATCH-002",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-BATCH-002/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 5,
+        "path": "runtime/task_results/ROUND-BATCH-003",
+        "read_allowed": true,
+        "round_id": "ROUND-BATCH-003",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-BATCH-003/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 5,
+        "path": "runtime/task_results/ROUND-BATCH-004",
+        "read_allowed": true,
+        "round_id": "ROUND-BATCH-004",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-BATCH-004/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 5,
+        "path": "runtime/task_results/ROUND-BATCH-005",
+        "read_allowed": true,
+        "round_id": "ROUND-BATCH-005",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-BATCH-005/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 5,
+        "path": "runtime/task_results/ROUND-BATCH-006",
+        "read_allowed": true,
+        "round_id": "ROUND-BATCH-006",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-BATCH-006/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 5,
+        "path": "runtime/task_results/ROUND-BATCH-007",
+        "read_allowed": true,
+        "round_id": "ROUND-BATCH-007",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-BATCH-007/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 6,
+        "path": "runtime/task_results/ROUND-EXT-001",
+        "read_allowed": true,
+        "round_id": "ROUND-EXT-001",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-EXT-001/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 6,
+        "path": "runtime/task_results/ROUND-EXT-002",
+        "read_allowed": true,
+        "round_id": "ROUND-EXT-002",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-EXT-002/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-EXT-003",
+        "read_allowed": true,
+        "round_id": "ROUND-EXT-003",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-EXT-003/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-EXT-004",
+        "read_allowed": true,
+        "round_id": "ROUND-EXT-004",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-EXT-004/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-EXT-005",
+        "read_allowed": true,
+        "round_id": "ROUND-EXT-005",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-EXT-005/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-EXT-006",
+        "read_allowed": true,
+        "round_id": "ROUND-EXT-006",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-EXT-006/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 5,
+        "path": "runtime/task_results/ROUND-EXTERNAL-001",
+        "read_allowed": true,
+        "round_id": "ROUND-EXTERNAL-001",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-EXTERNAL-001/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 5,
+        "path": "runtime/task_results/ROUND-GROWTH-PLUGIN-001",
+        "read_allowed": true,
+        "round_id": "ROUND-GROWTH-PLUGIN-001",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-GROWTH-PLUGIN-001/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 6,
+        "path": "runtime/task_results/ROUND-GROWTH-PLUGIN-002",
+        "read_allowed": true,
+        "round_id": "ROUND-GROWTH-PLUGIN-002",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-GROWTH-PLUGIN-002/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 6,
+        "path": "runtime/task_results/ROUND-GROWTH-PLUGIN-003",
+        "read_allowed": true,
+        "round_id": "ROUND-GROWTH-PLUGIN-003",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-GROWTH-PLUGIN-003/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 6,
+        "path": "runtime/task_results/ROUND-GROWTH-PLUGIN-004",
+        "read_allowed": true,
+        "round_id": "ROUND-GROWTH-PLUGIN-004",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-GROWTH-PLUGIN-004/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 6,
+        "path": "runtime/task_results/ROUND-GROWTH-PLUGIN-005",
+        "read_allowed": true,
+        "round_id": "ROUND-GROWTH-PLUGIN-005",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-GROWTH-PLUGIN-005/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 6,
+        "path": "runtime/task_results/ROUND-GROWTH-PLUGIN-006",
+        "read_allowed": true,
+        "round_id": "ROUND-GROWTH-PLUGIN-006",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-GROWTH-PLUGIN-006/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 6,
+        "path": "runtime/task_results/ROUND-GROWTH-PLUGIN-007",
+        "read_allowed": true,
+        "round_id": "ROUND-GROWTH-PLUGIN-007",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-GROWTH-PLUGIN-007/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 6,
+        "path": "runtime/task_results/ROUND-GROWTH-PLUGIN-008",
+        "read_allowed": true,
+        "round_id": "ROUND-GROWTH-PLUGIN-008",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-GROWTH-PLUGIN-008/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-OPS-001",
+        "read_allowed": true,
+        "round_id": "ROUND-OPS-001",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-OPS-001/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-OPS-002",
+        "read_allowed": true,
+        "round_id": "ROUND-OPS-002",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-OPS-002/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-OPS-003",
+        "read_allowed": true,
+        "round_id": "ROUND-OPS-003",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-OPS-003/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-OPS-004",
+        "read_allowed": true,
+        "round_id": "ROUND-OPS-004",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-OPS-004/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-OPS-005",
+        "read_allowed": true,
+        "round_id": "ROUND-OPS-005",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-OPS-005/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-OPS-006",
+        "read_allowed": true,
+        "round_id": "ROUND-OPS-006",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-OPS-006/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-OPS-007",
+        "read_allowed": true,
+        "round_id": "ROUND-OPS-007",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-OPS-007/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 7,
+        "path": "runtime/task_results/ROUND-PREDICT-001",
+        "read_allowed": true,
+        "round_id": "ROUND-PREDICT-001",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-PREDICT-001/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 13,
+        "path": "runtime/task_results/ROUND-PREDICT-002",
+        "read_allowed": true,
+        "round_id": "ROUND-PREDICT-002",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-PREDICT-002/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 6,
+        "path": "runtime/task_results/ROUND-PREDICT-003",
+        "read_allowed": true,
+        "round_id": "ROUND-PREDICT-003",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-PREDICT-003/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 6,
+        "path": "runtime/task_results/ROUND-PREDICT-004",
+        "read_allowed": true,
+        "round_id": "ROUND-PREDICT-004",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-PREDICT-004/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 6,
+        "path": "runtime/task_results/ROUND-PREDICT-005",
+        "read_allowed": true,
+        "round_id": "ROUND-PREDICT-005",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-PREDICT-005/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-REAL-GROWTH-001",
+        "read_allowed": true,
+        "round_id": "ROUND-REAL-GROWTH-001",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-REAL-GROWTH-001/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-RUNTIME-API-001",
+        "read_allowed": true,
+        "round_id": "ROUND-RUNTIME-API-001",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-RUNTIME-API-001/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/ROUND-RUNTIME-ENGINE-001",
+        "read_allowed": true,
+        "round_id": "ROUND-RUNTIME-ENGINE-001",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-RUNTIME-ENGINE-001/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-RUNTIME-PERSONALITY-001",
+        "read_allowed": true,
+        "round_id": "ROUND-RUNTIME-PERSONALITY-001",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-RUNTIME-PERSONALITY-001/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-RUNTIME-PERSONALITY-002",
+        "read_allowed": true,
+        "round_id": "ROUND-RUNTIME-PERSONALITY-002",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-RUNTIME-PERSONALITY-002/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-RUNTIME-PERSONALITY-003",
+        "read_allowed": true,
+        "round_id": "ROUND-RUNTIME-PERSONALITY-003",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-RUNTIME-PERSONALITY-003/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-RUNTIME-PERSONALITY-004",
+        "read_allowed": true,
+        "round_id": "ROUND-RUNTIME-PERSONALITY-004",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-RUNTIME-PERSONALITY-004/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-RUNTIME-PERSONALITY-005",
+        "read_allowed": true,
+        "round_id": "ROUND-RUNTIME-PERSONALITY-005",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-RUNTIME-PERSONALITY-005/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-RUNTIME-PERSONALITY-006",
+        "read_allowed": true,
+        "round_id": "ROUND-RUNTIME-PERSONALITY-006",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-RUNTIME-PERSONALITY-006/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-RUNTIME-PERSONALITY-007",
+        "read_allowed": true,
+        "round_id": "ROUND-RUNTIME-PERSONALITY-007",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-RUNTIME-PERSONALITY-007/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-RUNTIME-PERSONALITY-008",
+        "read_allowed": true,
+        "round_id": "ROUND-RUNTIME-PERSONALITY-008",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-RUNTIME-PERSONALITY-008/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-RUNTIME-PERSONALITY-009",
+        "read_allowed": true,
+        "round_id": "ROUND-RUNTIME-PERSONALITY-009",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-RUNTIME-PERSONALITY-009/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-RUNTIME-PERSONALITY-010",
+        "read_allowed": true,
+        "round_id": "ROUND-RUNTIME-PERSONALITY-010",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-RUNTIME-PERSONALITY-010/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-RUNTIME-REVIEW-UI-001",
+        "read_allowed": true,
+        "round_id": "ROUND-RUNTIME-REVIEW-UI-001",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-RUNTIME-REVIEW-UI-001/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/ROUND-RUNTIME-TRAINING-001",
+        "read_allowed": true,
+        "round_id": "ROUND-RUNTIME-TRAINING-001",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-RUNTIME-TRAINING-001/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-SCOUT-001",
+        "read_allowed": true,
+        "round_id": "ROUND-SCOUT-001",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-SCOUT-001/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-SCOUT-002",
+        "read_allowed": true,
+        "round_id": "ROUND-SCOUT-002",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-SCOUT-002/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-SCOUT-003",
+        "read_allowed": true,
+        "round_id": "ROUND-SCOUT-003",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-SCOUT-003/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-SCOUT-004",
+        "read_allowed": true,
+        "round_id": "ROUND-SCOUT-004",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-SCOUT-004/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-SCOUT-005",
+        "read_allowed": true,
+        "round_id": "ROUND-SCOUT-005",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-SCOUT-005/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-SCOUT-006",
+        "read_allowed": true,
+        "round_id": "ROUND-SCOUT-006",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-SCOUT-006/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-SCOUT-007",
+        "read_allowed": true,
+        "round_id": "ROUND-SCOUT-007",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-SCOUT-007/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-SEMI-AUTO-001",
+        "read_allowed": true,
+        "round_id": "ROUND-SEMI-AUTO-001",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-SEMI-AUTO-001/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-SEMI-AUTO-002",
+        "read_allowed": true,
+        "round_id": "ROUND-SEMI-AUTO-002",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-SEMI-AUTO-002/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-SEMI-AUTO-003",
+        "read_allowed": true,
+        "round_id": "ROUND-SEMI-AUTO-003",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-SEMI-AUTO-003/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-SEMI-AUTO-004",
+        "read_allowed": true,
+        "round_id": "ROUND-SEMI-AUTO-004",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-SEMI-AUTO-004/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-SEMI-AUTO-005",
+        "read_allowed": true,
+        "round_id": "ROUND-SEMI-AUTO-005",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-SEMI-AUTO-005/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-SEMI-AUTO-006",
+        "read_allowed": true,
+        "round_id": "ROUND-SEMI-AUTO-006",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-SEMI-AUTO-006/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 4,
+        "path": "runtime/task_results/ROUND-SEMI-AUTO-007",
+        "read_allowed": true,
+        "round_id": "ROUND-SEMI-AUTO-007",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-SEMI-AUTO-007/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/ROUND-WAR-ROOM-GROWTH-001",
+        "read_allowed": true,
+        "round_id": "ROUND-WAR-ROOM-GROWTH-001",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-WAR-ROOM-GROWTH-001/ROUND_SUMMARY.md",
+        "write_allowed": false
+      },
+      {
+        "artifact_count": 1,
+        "path": "runtime/task_results/ROUND-WAR-ROOM-UI-001",
+        "read_allowed": true,
+        "round_id": "ROUND-WAR-ROOM-UI-001",
+        "summary_exists": true,
+        "summary_path": "runtime/task_results/ROUND-WAR-ROOM-UI-001/ROUND_SUMMARY.md",
+        "write_allowed": false
+      }
+    ]
+  }
+}

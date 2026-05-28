@@ -1,0 +1,83 @@
+[
+  {
+    "execute_allowed": false,
+    "gate_id": "API_SCOUT_VALIDATION_REPORT",
+    "path": "runtime/api_scout_gate/API_SCOUT_VALIDATION_REPORT.json",
+    "phase": "PLATFORM_API_SCOUT_INTEGRATION",
+    "read_allowed": true,
+    "safety_boundary": "Gate validates safe read-only platform trend intelligence. It does not post, reply, follow, DM, scrape login-only pages, expose credentials, or bypass platform limits.",
+    "status": "passed"
+  },
+  {
+    "execute_allowed": false,
+    "gate_id": "AUTONOMOUS_GROWTH_PREPARATION_REPORT",
+    "path": "runtime/autonomous_growth_preparation_gate/AUTONOMOUS_GROWTH_PREPARATION_REPORT.json",
+    "phase": "AUTONOMOUS_GROWTH_PREPARATION",
+    "read_allowed": true,
+    "safety_boundary": "",
+    "status": "passed"
+  },
+  {
+    "execute_allowed": false,
+    "gate_id": "CONTROLLED_API_COLLECTION_REPORT",
+    "path": "runtime/controlled_api_collection_gate/CONTROLLED_API_COLLECTION_REPORT.json",
+    "phase": "CONTROLLED_API_INTELLIGENCE_COLLECTION",
+    "read_allowed": true,
+    "safety_boundary": "Gate validates safe, compliant, batch platform intelligence collection. It does not post, reply, follow, DM, scrape login-only pages, expose credentials, call platform write APIs, or bypass platform limits.",
+    "status": "passed"
+  },
+  {
+    "execute_allowed": false,
+    "gate_id": "CONTROLLED_EXTERNAL_INTERACTION_GATE_REPORT",
+    "path": "runtime/controlled_external_interaction_gate/CONTROLLED_EXTERNAL_INTERACTION_GATE_REPORT.json",
+    "phase": "CONTROLLED_REAL_EXTERNAL_INTERACTION_PREPARATION",
+    "read_allowed": true,
+    "safety_boundary": "Gate permits only human-controlled external trial preparation. It does not enable automatic posting, replying, login, account operation, platform API writes, scraping, DMs, follows, or likes.",
+    "status": "controlled_external_interaction_gate_ready"
+  },
+  {
+    "execute_allowed": false,
+    "gate_id": "INTELLIGENCE_ACCELERATION_REPORT",
+    "path": "runtime/intelligence_acceleration_gate/INTELLIGENCE_ACCELERATION_REPORT.json",
+    "phase": "",
+    "read_allowed": true,
+    "safety_boundary": "Intelligence Acceleration Gate validates local runtime intelligence only. It does not post, reply, follow, DM, log in, register accounts, or call external write APIs.",
+    "status": "passed"
+  },
+  {
+    "execute_allowed": false,
+    "gate_id": "MERCHANT_GROWTH_ENGINE_REPORT",
+    "path": "runtime/merchant_growth_engine_gate/MERCHANT_GROWTH_ENGINE_REPORT.json",
+    "phase": "",
+    "read_allowed": true,
+    "safety_boundary": "",
+    "status": "unknown"
+  },
+  {
+    "execute_allowed": false,
+    "gate_id": "PERSONALITY_EVOLUTION_REPORT",
+    "path": "runtime/personality_evolution_gate/PERSONALITY_EVOLUTION_REPORT.json",
+    "phase": "",
+    "read_allowed": true,
+    "safety_boundary": "",
+    "status": "passed"
+  },
+  {
+    "execute_allowed": false,
+    "gate_id": "PREDICTIVE_DEMAND_REPORT",
+    "path": "runtime/predictive_demand_gate/PREDICTIVE_DEMAND_REPORT.json",
+    "phase": "",
+    "read_allowed": true,
+    "safety_boundary": "",
+    "status": "unknown"
+  },
+  {
+    "execute_allowed": false,
+    "gate_id": "SEMI_AUTONOMOUS_RUNTIME_REPORT",
+    "path": "runtime/semi_autonomous_runtime_gate/SEMI_AUTONOMOUS_RUNTIME_REPORT.json",
+    "phase": "",
+    "read_allowed": true,
+    "safety_boundary": "Gate review does not post, reply, log in, register accounts, call platform APIs, or change external state.",
+    "status": "passed"
+  }
+]

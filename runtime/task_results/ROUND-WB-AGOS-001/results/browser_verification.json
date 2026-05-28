@@ -1,0 +1,20 @@
+{
+  "businessCodeWriteAllowed": false,
+  "currentRound": "ROUND-WB-AGOS-001 / AGOS_WORKBENCH_ADAPTER_CONTRACT",
+  "externalActionStartAllowed": false,
+  "gateCount": 9,
+  "panelExists": true,
+  "panelTextIncludesBusinessWriteFalse": true,
+  "panelTextIncludesContract": true,
+  "panelTextIncludesExternalActionFalse": true,
+  "panelTextIncludesReadOnly": true,
+  "panelTextIncludesSecretReadFalse": true,
+  "readOnly": true,
+  "runtimeReportCount": 59,
+  "secretReadAllowed": false,
+  "taskResultRoundCount": 127,
+  "url": "http://127.0.0.1:8765/project_control_center.html?runtime_ui=1&cache_bust=1779959381206#war-room-growth",
+  "version": "0.1.130",
+  "visibleSnippet": "Contracttrueread only: true\nArtifactsrounds 127reports: 59 / gates: 9\nSourcescontrol center trueruntime state: true\nSafetysecrets: falsebusiness write: false / external action: false\nREAD\ntask_results / 127\nruntime/task_results/*\nWorkbench read: true / write: false\nread only\nREAD\nruntime_reports / 59\nruntime/*/*REPORT.json\nWorkbench read: true / write: false\nread only\nREAD\ncontrol_center / true\ndocs/project_control_center.html\nWorkbench read: true / write: false\nread only\nREAD\nruntime_ui_state / true\nruntime/runtime_state/ui_state.json\nWorkbench read: true / write: false\nread only\nGATE\nAPI_SCOUT_VALIDATION_REPORT / passed\nruntime/api_scout_gate/API_SCOUT_VALIDATION_REPORT.json\nPhase: PLATFORM_API_SCOUT_INTEGRATION\nExecute allowed: false\nindexed\nGATE\nAUTONOMOUS_GROWTH_PREPARATION_REPORT / passed\nruntime/autonomous_growth_preparation_gate/AUTONOMOUS_GROWTH_PREPARATION_REPORT.json\nPhase: AU",
+  "workbenchReady": true
+}

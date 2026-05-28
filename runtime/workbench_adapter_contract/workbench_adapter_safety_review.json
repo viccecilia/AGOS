@@ -1,0 +1,18 @@
+{
+  "allowed_artifact_policy": "metadata and artifact summaries only; no secret values and no platform action execution",
+  "business_code_write_allowed": false,
+  "credential_value_export_allowed": false,
+  "external_action_start_allowed": false,
+  "forbidden_path_patterns": [
+    ".env",
+    "runtime/api_credentials/",
+    "runtime/platform_credentials/",
+    "secrets/",
+    "credentials/"
+  ],
+  "platform_write_api_allowed": false,
+  "read_only_contract": true,
+  "review_id": "WORKBENCH_AGOS_ADAPTER_SAFETY_REVIEW",
+  "safety_boundary_passed": true,
+  "secret_read_allowed": false
+}

@@ -1,0 +1,17 @@
+{
+  "business_code_write_allowed": false,
+  "control_center_available": true,
+  "external_action_start_allowed": false,
+  "gate_count": 9,
+  "next_recommendation": "Expose this contract to Workbench as a read-only project adapter before any cross-project orchestration.",
+  "platform_write_api_allowed": false,
+  "read_only": true,
+  "runtime_report_count": 59,
+  "runtime_ui_bridge_source_available": true,
+  "runtime_ui_state_available": true,
+  "safety_boundary_passed": true,
+  "secret_read_allowed": false,
+  "task_result_round_count": 127,
+  "task_result_summary_count": 127,
+  "workbench_adapter_contract_ready": true
+}

@@ -7,6 +7,7 @@ from typing import Any
 
 from services.action_recommendation_engine import ActionRecommendationEngine
 from services.action_queue_engine import ActionQueueEngine
+from services.agos_workbench_adapter_contract import AGOSWorkbenchAdapterContract
 from services.api_collection_review_and_correction import APICollectionReviewAndCorrection
 from services.api_capability_registry import APICapabilityRegistry
 from services.api_credential_setup_wizard import APICredentialSetupWizard
@@ -234,6 +235,7 @@ class RuntimeUIBridge:
             survival_rulebook=platform_survival_rulebook,
             drift_monitor=external_drift_monitor,
         )
+        workbench_adapter_contract = AGOSWorkbenchAdapterContract().build()
         batch_scout_runtime = BatchScoutRuntime().run()
         batch_topic_clustering = BatchTopicClustering().cluster(batch_scout_runtime.get("batchAnalysis", []))
         batch_human_review = BatchHumanReview().review(batch_topic_clustering.get("batchTrendClusters", []))
@@ -632,6 +634,11 @@ class RuntimeUIBridge:
             "controlledExternalInteractionActions": controlled_external_interaction_gate.get("controlledExternalInteractionActions", []),
             "controlledExternalInteractionChecks": controlled_external_interaction_gate.get("controlledExternalInteractionChecks", []),
             "controlledExternalInteractionSummary": controlled_external_interaction_gate.get("controlledExternalInteractionSummary", {}),
+            "workbenchAdapterContract": workbench_adapter_contract,
+            "workbenchReadableArtifacts": workbench_adapter_contract.get("workbenchReadableArtifacts", {}),
+            "workbenchGateIndex": workbench_adapter_contract.get("workbenchGateIndex", []),
+            "workbenchAdapterSafetyReview": workbench_adapter_contract.get("workbenchAdapterSafetyReview", {}),
+            "workbenchAdapterSummary": workbench_adapter_contract.get("workbenchAdapterSummary", {}),
             "locationDemandHeatmap": location_demand_heatmap,
             "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),
