@@ -1,0 +1,322 @@
+{
+  "agos_training_started": false,
+  "blocked_permission_count": 9,
+  "check_count": 9,
+  "created_at": "2026-05-29T06:27:11+00:00",
+  "dm_allowed": false,
+  "large_real_dataset_storage_allowed": false,
+  "permissionChecks": [
+    {
+      "allowed_data_types": [
+        "public trend metadata after authorization",
+        "public content metadata after authorization",
+        "public engagement metrics after authorization"
+      ],
+      "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending",
+      "checks": {
+        "api_terms_reviewed": false,
+        "cost_limit_known": false,
+        "credential_reference_exists": true,
+        "credential_reference_verified": false,
+        "private_data_excluded": true,
+        "rate_limit_known": false,
+        "scope_is_read_only": true,
+        "write_actions_disabled": true
+      },
+      "connection_mode": "not_connected",
+      "dry_run_status": "blocked",
+      "endpoint_type": "trend_search",
+      "forbidden_data_types": [
+        "private messages",
+        "private account data",
+        "sensitive personal data",
+        "raw credential values",
+        "write action payloads",
+        "large real datasets"
+      ],
+      "large_dataset_storage_allowed": false,
+      "permission_status": "blocked",
+      "platform_id": "youtube",
+      "training_allowed": false,
+      "writes_disabled": true
+    },
+    {
+      "allowed_data_types": [
+        "public trend metadata after authorization",
+        "public content metadata after authorization",
+        "public engagement metrics after authorization"
+      ],
+      "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending",
+      "checks": {
+        "api_terms_reviewed": false,
+        "cost_limit_known": false,
+        "credential_reference_exists": true,
+        "credential_reference_verified": false,
+        "private_data_excluded": true,
+        "rate_limit_known": false,
+        "scope_is_read_only": true,
+        "write_actions_disabled": true
+      },
+      "connection_mode": "not_connected",
+      "dry_run_status": "blocked",
+      "endpoint_type": "public_content_metadata",
+      "forbidden_data_types": [
+        "private messages",
+        "private account data",
+        "sensitive personal data",
+        "raw credential values",
+        "write action payloads",
+        "large real datasets"
+      ],
+      "large_dataset_storage_allowed": false,
+      "permission_status": "blocked",
+      "platform_id": "youtube",
+      "training_allowed": false,
+      "writes_disabled": true
+    },
+    {
+      "allowed_data_types": [
+        "public trend metadata after authorization",
+        "public content metadata after authorization",
+        "public engagement metrics after authorization"
+      ],
+      "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending",
+      "checks": {
+        "api_terms_reviewed": false,
+        "cost_limit_known": false,
+        "credential_reference_exists": true,
+        "credential_reference_verified": false,
+        "private_data_excluded": true,
+        "rate_limit_known": false,
+        "scope_is_read_only": true,
+        "write_actions_disabled": true
+      },
+      "connection_mode": "not_connected",
+      "dry_run_status": "blocked",
+      "endpoint_type": "public_analytics",
+      "forbidden_data_types": [
+        "private messages",
+        "private account data",
+        "sensitive personal data",
+        "raw credential values",
+        "write action payloads",
+        "large real datasets"
+      ],
+      "large_dataset_storage_allowed": false,
+      "permission_status": "blocked",
+      "platform_id": "youtube",
+      "training_allowed": false,
+      "writes_disabled": true
+    },
+    {
+      "allowed_data_types": [
+        "public trend metadata after authorization",
+        "public content metadata after authorization",
+        "public engagement metrics after authorization"
+      ],
+      "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending",
+      "checks": {
+        "api_terms_reviewed": false,
+        "cost_limit_known": false,
+        "credential_reference_exists": true,
+        "credential_reference_verified": false,
+        "private_data_excluded": true,
+        "rate_limit_known": false,
+        "scope_is_read_only": true,
+        "write_actions_disabled": true
+      },
+      "connection_mode": "not_connected",
+      "dry_run_status": "blocked",
+      "endpoint_type": "trend_search",
+      "forbidden_data_types": [
+        "private messages",
+        "private account data",
+        "sensitive personal data",
+        "raw credential values",
+        "write action payloads",
+        "large real datasets"
+      ],
+      "large_dataset_storage_allowed": false,
+      "permission_status": "blocked",
+      "platform_id": "tiktok",
+      "training_allowed": false,
+      "writes_disabled": true
+    },
+    {
+      "allowed_data_types": [
+        "public trend metadata after authorization",
+        "public content metadata after authorization",
+        "public engagement metrics after authorization"
+      ],
+      "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending",
+      "checks": {
+        "api_terms_reviewed": false,
+        "cost_limit_known": false,
+        "credential_reference_exists": true,
+        "credential_reference_verified": false,
+        "private_data_excluded": true,
+        "rate_limit_known": false,
+        "scope_is_read_only": true,
+        "write_actions_disabled": true
+      },
+      "connection_mode": "not_connected",
+      "dry_run_status": "blocked",
+      "endpoint_type": "public_content_metadata",
+      "forbidden_data_types": [
+        "private messages",
+        "private account data",
+        "sensitive personal data",
+        "raw credential values",
+        "write action payloads",
+        "large real datasets"
+      ],
+      "large_dataset_storage_allowed": false,
+      "permission_status": "blocked",
+      "platform_id": "tiktok",
+      "training_allowed": false,
+      "writes_disabled": true
+    },
+    {
+      "allowed_data_types": [
+        "public trend metadata after authorization",
+        "public content metadata after authorization",
+        "public engagement metrics after authorization"
+      ],
+      "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending",
+      "checks": {
+        "api_terms_reviewed": false,
+        "cost_limit_known": false,
+        "credential_reference_exists": true,
+        "credential_reference_verified": false,
+        "private_data_excluded": true,
+        "rate_limit_known": false,
+        "scope_is_read_only": true,
+        "write_actions_disabled": true
+      },
+      "connection_mode": "not_connected",
+      "dry_run_status": "blocked",
+      "endpoint_type": "public_analytics",
+      "forbidden_data_types": [
+        "private messages",
+        "private account data",
+        "sensitive personal data",
+        "raw credential values",
+        "write action payloads",
+        "large real datasets"
+      ],
+      "large_dataset_storage_allowed": false,
+      "permission_status": "blocked",
+      "platform_id": "tiktok",
+      "training_allowed": false,
+      "writes_disabled": true
+    },
+    {
+      "allowed_data_types": [
+        "public trend metadata after authorization",
+        "public content metadata after authorization",
+        "public engagement metrics after authorization"
+      ],
+      "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending",
+      "checks": {
+        "api_terms_reviewed": false,
+        "cost_limit_known": false,
+        "credential_reference_exists": true,
+        "credential_reference_verified": false,
+        "private_data_excluded": true,
+        "rate_limit_known": false,
+        "scope_is_read_only": true,
+        "write_actions_disabled": true
+      },
+      "connection_mode": "not_connected",
+      "dry_run_status": "blocked",
+      "endpoint_type": "trend_search",
+      "forbidden_data_types": [
+        "private messages",
+        "private account data",
+        "sensitive personal data",
+        "raw credential values",
+        "write action payloads",
+        "large real datasets"
+      ],
+      "large_dataset_storage_allowed": false,
+      "permission_status": "blocked",
+      "platform_id": "instagram",
+      "training_allowed": false,
+      "writes_disabled": true
+    },
+    {
+      "allowed_data_types": [
+        "public trend metadata after authorization",
+        "public content metadata after authorization",
+        "public engagement metrics after authorization"
+      ],
+      "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending",
+      "checks": {
+        "api_terms_reviewed": false,
+        "cost_limit_known": false,
+        "credential_reference_exists": true,
+        "credential_reference_verified": false,
+        "private_data_excluded": true,
+        "rate_limit_known": false,
+        "scope_is_read_only": true,
+        "write_actions_disabled": true
+      },
+      "connection_mode": "not_connected",
+      "dry_run_status": "blocked",
+      "endpoint_type": "public_content_metadata",
+      "forbidden_data_types": [
+        "private messages",
+        "private account data",
+        "sensitive personal data",
+        "raw credential values",
+        "write action payloads",
+        "large real datasets"
+      ],
+      "large_dataset_storage_allowed": false,
+      "permission_status": "blocked",
+      "platform_id": "instagram",
+      "training_allowed": false,
+      "writes_disabled": true
+    },
+    {
+      "allowed_data_types": [
+        "public trend metadata after authorization",
+        "public content metadata after authorization",
+        "public engagement metrics after authorization"
+      ],
+      "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending",
+      "checks": {
+        "api_terms_reviewed": false,
+        "cost_limit_known": false,
+        "credential_reference_exists": true,
+        "credential_reference_verified": false,
+        "private_data_excluded": true,
+        "rate_limit_known": false,
+        "scope_is_read_only": true,
+        "write_actions_disabled": true
+      },
+      "connection_mode": "not_connected",
+      "dry_run_status": "blocked",
+      "endpoint_type": "public_analytics",
+      "forbidden_data_types": [
+        "private messages",
+        "private account data",
+        "sensitive personal data",
+        "raw credential values",
+        "write action payloads",
+        "large real datasets"
+      ],
+      "large_dataset_storage_allowed": false,
+      "permission_status": "blocked",
+      "platform_id": "instagram",
+      "training_allowed": false,
+      "writes_disabled": true
+    }
+  ],
+  "publish_allowed": false,
+  "read_only_authorized_permission_count": 0,
+  "reply_allowed": false,
+  "report_id": "API_PERMISSION_CHECK_REPORT",
+  "round_id": "ROUND-REALDATA-004_READ_ONLY_API_DRY_RUN",
+  "write_api_allowed": false
+}

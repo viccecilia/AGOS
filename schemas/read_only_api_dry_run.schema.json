@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AGOS Read-Only API Dry-Run Contract",
+  "type": "object",
+  "required": [
+    "contract_id",
+    "round_id",
+    "phase",
+    "status",
+    "supportedPlatformIds",
+    "connectionModes",
+    "dryRunChecks",
+    "dryRunOutputShape",
+    "safetyBoundary",
+    "platformDryRunStatus",
+    "apiPermissionCheckReport",
+    "readOnlyApiDryRunDecision"
+  ],
+  "properties": {
+    "contract_id": {"const": "READ_ONLY_API_DRY_RUN_CONTRACT"},
+    "round_id": {"const": "ROUND-REALDATA-004_READ_ONLY_API_DRY_RUN"},
+    "phase": {"const": "AGOS_REAL_DATA_CONTROLLED_ACCESS"},
+    "status": {"type": "string"},
+    "supportedPlatformIds": {
+      "type": "array",
+      "minItems": 3,
+      "items": {"type": "string"}
+    },
+    "connectionModes": {
+      "type": "array",
+      "contains": {"const": "not_connected"},
+      "items": {"enum": ["not_connected", "mock_connection", "read_only_authorized", "blocked"]}
+    },
+    "dryRunChecks": {
+      "type": "array",
+      "minItems": 7,
+      "items": {"type": "string"}
+    },
+    "dryRunOutputShape": {
+      "type": "array",
+      "contains": {"const": "platform_id"},
+      "items": {"type": "string"}
+    },
+    "safetyBoundary": {
+      "type": "object",
+      "required": [
+        "write_api_allowed",
+        "auto_publish_allowed",
+        "auto_reply_allowed",
+        "auto_dm_allowed",
+        "large_real_dataset_storage_allowed",
+        "agos_training_allowed",
+        "real_api_called"
+      ],
+      "properties": {
+        "write_api_allowed": {"const": false},
+        "auto_publish_allowed": {"const": false},
+        "auto_reply_allowed": {"const": false},
+        "auto_dm_allowed": {"const": false},
+        "large_real_dataset_storage_allowed": {"const": false},
+        "agos_training_allowed": {"const": false},
+        "real_api_called": {"const": false}
+      }
+    },
+    "platformDryRunStatus": {"type": "object"},
+    "apiPermissionCheckReport": {"type": "object"},
+    "readOnlyApiDryRunDecision": {"type": "object"}
+  }
+}
