@@ -1,0 +1,19 @@
+﻿{
+  "url": "http://127.0.0.1:8765/project_control_center.html?runtime_ui=1&cache_bust=realdata002#war-room-growth",
+  "version": "0.1.146",
+  "currentRound": "ROUND-REALDATA-002_CREDENTIAL_VAULT_AND_SECRET_BOUNDARY",
+  "panelExists": true,
+  "hasCredentialVault": true,
+  "hasReferenceOnly": true,
+  "hasNoChatSecrets": true,
+  "hasNoGitTokens": true,
+  "hasNoRuntimeTokens": true,
+  "hasNoEnvWrites": true,
+  "hasNoApi": true,
+  "hasNoTraining": true,
+  "auditRowCount": 10,
+  "realTokensStored": false,
+  "apiCalled": false,
+  "trainingStarted": false,
+  "verifiedAt": "2026-05-29"
+}
