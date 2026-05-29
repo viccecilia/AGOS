@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-05-29T07:01:50+00:00",
+  "excluded_private_message_count": 1,
+  "minors_data_flagged_count": 1,
+  "privacy_filter_passed": true,
+  "privacy_filter_report_present": true,
+  "private_messages_present": false,
+  "provider_execution_allowed": false,
+  "raw_content_stored": false,
+  "redaction_total": 4,
+  "report_id": "DATASET_PRIVACY_VALIDATION_REPORT",
+  "round_id": "ROUND-REALDATA-008_REAL_DATA_TRAINING_APPROVAL_GATE",
+  "sensitive_pii_present": false,
+  "sensitive_pii_training_allowed": false,
+  "training_allowed": false,
+  "unsafe_candidate_exclusion_count": 4,
+  "unsafe_signal_count": 4,
+  "unsafe_signals_blocked_from_training": true
+}

@@ -544,31 +544,38 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.151",
+    "controlCenterVersion": "0.1.152",
     "lastUpdated": "2026-05-29",
     "currentPhase": "AGOS Real Data Controlled Access",
-    "currentRound": "ROUND-REALDATA-007_TRAINING_DATASET_CANDIDATE_BUILDER",
-    "nextRound": "ROUND-REALDATA-008 Dataset Quality and Bias Review",
+    "currentRound": "ROUND-REALDATA-008_REAL_DATA_TRAINING_APPROVAL_GATE",
+    "nextRound": "ROUND-REALDATA-009 Dataset Expansion and Bias Review",
     "overallProgress": 100,
-    "activeFocus": "AGOS now builds a replayable training dataset candidate from privacy-filtered and normalized social samples. The candidate groups records by language, region, platform, content type, pain category, use case, mobility relevance, and confidence tier; reports duplication and novelty; generates replay instructions; and keeps actual training, provider execution, memory writeback, promotion, writeback, and user contact blocked."
+    "activeFocus": "AGOS now runs a real-data training approval gate. The candidate dataset has privacy-safe and replayable lineage, but remains too small, too exclusion-heavy, and lacks repeated-demand pressure, so controlled training pilot review is not allowed yet and the system must keep collecting."
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.151 Add training dataset candidate builder",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.151",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.151",
-    "note": "Training Dataset Candidate Builder creates replayable candidate manifests, grouping dimensions, duplication/novelty reports, and replay manifests while training remains blocked."
+    "latestCommit": "agos-v0.1.152 Add real data training approval gate",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.152",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.152",
+    "note": "Real Data Training Approval Gate validates completeness, lineage, replay, privacy, duplication/novelty, coverage, unsafe exclusions, and human approval requirements while training remains blocked."
   },
   "metrics": {
-    "roundsPlanned": 172,
-    "roundsCompleted": 143,
+    "roundsPlanned": 173,
+    "roundsCompleted": 144,
     "roundsInProgress": 0,
-    "reportsEmbedded": 157,
+    "reportsEmbedded": 158,
     "aiCompletion": 100
   },
   "modules": [
+    {
+      "name": "Real Data Training Approval Gate",
+      "progress": 100,
+      "status": "done",
+      "ownerPath": "services/real_data_training_approval_gate.py + schemas/real_data_training_approval_gate.schema.json + runtime/training_candidates/",
+      "next": "Continue controlled sample collection and bias/coverage review before any controlled training pilot review; do not start training automatically."
+    },
     {
       "name": "Training Dataset Candidate Builder",
       "progress": 100,
@@ -957,6 +964,11 @@
   ],
   "paths": [
     {
+      "path": "runtime/training_candidates/REAL_DATA_TRAINING_* + DATASET_*_VALIDATION_REPORT.json",
+      "purpose": "Real-data training approval checklist, privacy validation, replay validation, gate decision, and evidence for ROUND-REALDATA-008.",
+      "status": "active"
+    },
+    {
       "path": "runtime/training_candidates/TRAINING_DATASET_* + DUPLICATION_* + DATASET_REPLAY_MANIFEST.json",
       "purpose": "Replayable candidate-only training dataset manifest, grouping dimensions, duplication/novelty report, replay manifest, and evidence for ROUND-REALDATA-007.",
       "status": "active"
@@ -1156,6 +1168,33 @@
     }
   ],
   "reports": [
+    {
+      "id": "ROUND-REALDATA-008_REAL_DATA_TRAINING_APPROVAL_GATE",
+      "title": "AGOS Real Data Training Approval Gate",
+      "status": "done",
+      "date": "2026-05-29",
+      "summary": "Validated dataset candidate completeness, lineage, replay manifest, privacy and PII filters, duplication and novelty, language/region coverage, unsafe exclusions, and human approval requirements. The current candidate dataset is privacy-safe and replayable but too small, exclusion-heavy, and lacks repeated-demand pressure, so the gate decision is keep_collecting and controlled training pilot review is not allowed yet.",
+      "files": [
+        "schemas/real_data_training_approval_gate.schema.json",
+        "services/real_data_training_approval_gate.py",
+        "runtime/training_candidates/REAL_DATA_TRAINING_APPROVAL_CHECKLIST.json",
+        "runtime/training_candidates/DATASET_PRIVACY_VALIDATION_REPORT.json",
+        "runtime/training_candidates/DATASET_REPLAY_VALIDATION_REPORT.json",
+        "runtime/training_candidates/REAL_DATA_TRAINING_GATE_DECISION.json",
+        "runtime/training_candidates/REAL_DATA_TRAINING_APPROVAL_EVIDENCE.json",
+        "tests/real_data_training_approval_gate_smoke_test.py",
+        "docs/project_control_center.html",
+        "runtime/task_results/ROUND-REALDATA-008_REAL_DATA_TRAINING_APPROVAL_GATE/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "python -m compileall services schemas tests",
+        "python tests\\real_data_training_approval_gate_smoke_test.py",
+        "python tests\\training_dataset_candidate_builder_smoke_test.py",
+        "python tests\\social_signal_normalization_smoke_test.py",
+        "python tests\\war_room_runtime_ui_smoke_test.py",
+        "Browser verification: Real Data Controlled Access panel shows Real Data Training Approval Gate, keep_collecting decision, privacy/replay validation, dataset_too_small, no training, no provider execution, and human approval required"
+      ]
+    },
     {
       "id": "ROUND-REALDATA-007_TRAINING_DATASET_CANDIDATE_BUILDER",
       "title": "AGOS Training Dataset Candidate Builder",
@@ -5630,6 +5669,14 @@
     }
   ],
   "rounds": [
+    {
+      "id": "ROUND-REALDATA-008_REAL_DATA_TRAINING_APPROVAL_GATE",
+      "name": "REAL_DATA_TRAINING_APPROVAL_GATE",
+      "phase": "AGOS_REAL_DATA_CONTROLLED_ACCESS",
+      "status": "done",
+      "summary": "Validated whether the privacy-filtered training candidate can enter controlled training pilot review. The gate decision is keep_collecting: lineage and replay pass, privacy passes, but the dataset is too small, exclusion-heavy, and not yet coverage/repetition ready. Training, provider execution, and model promotion remain blocked.",
+      "resultPath": "runtime/task_results/ROUND-REALDATA-008_REAL_DATA_TRAINING_APPROVAL_GATE/ROUND_SUMMARY.md"
+    },
     {
       "id": "ROUND-REALDATA-007_TRAINING_DATASET_CANDIDATE_BUILDER",
       "name": "TRAINING_DATASET_CANDIDATE_BUILDER",
@@ -140041,10 +140088,18 @@
   },
   "lastUpdated": "2026-05-29",
   "currentPhase": "AGOS Real Data Controlled Access",
-  "currentRound": "ROUND-REALDATA-007_TRAINING_DATASET_CANDIDATE_BUILDER",
-  "nextRound": "ROUND-REALDATA-008 Dataset Quality and Bias Review",
-  "activeFocus": "AGOS now builds a replayable training dataset candidate from privacy-filtered and normalized social samples. The candidate groups records by language, region, platform, content type, pain category, use case, mobility relevance, and confidence tier; reports duplication and novelty; generates replay instructions; and keeps actual training, provider execution, memory writeback, promotion, writeback, and user contact blocked.",
+  "currentRound": "ROUND-REALDATA-008_REAL_DATA_TRAINING_APPROVAL_GATE",
+  "nextRound": "ROUND-REALDATA-009 Dataset Expansion and Bias Review",
+  "activeFocus": "AGOS now runs a real-data training approval gate. The candidate dataset has privacy-safe and replayable lineage, but remains too small, too exclusion-heavy, and lacks repeated-demand pressure, so controlled training pilot review is not allowed yet and the system must keep collecting.",
   "gitVersions": [
+    {
+      "tag": "agos-v0.1.152",
+      "label": "ROUND-REALDATA-008 Real Data Training Approval Gate",
+      "date": "2026-05-29",
+      "location": "GitHub origin/master",
+      "url": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.152",
+      "notes": "Adds the approval gate that decides current real-data training candidates must keep collecting; no controlled training review, automatic training, provider execution, or model promotion is allowed."
+    },
     {
       "tag": "agos-v0.1.151",
       "label": "ROUND-REALDATA-007 Training Dataset Candidate Builder",
@@ -141375,6 +141430,194 @@
       "training_started": false,
       "users_contacted": false,
       "writeback_started": false
+    },
+    "realDataTrainingApprovalChecklist": {
+      "blocked_check_count": 0,
+      "candidate_record_count": 2,
+      "checklist_id": "REAL_DATA_TRAINING_APPROVAL_CHECKLIST",
+      "checks": [
+        {
+          "blocking": false,
+          "check_id": "dataset_candidate_completeness",
+          "evidence": "2 candidate records / 4 excluded records",
+          "human_review_required": true,
+          "passed": true,
+          "status": "passed"
+        },
+        {
+          "blocking": false,
+          "check_id": "lineage_and_replay_manifest",
+          "evidence": "lineage rows 2 / candidates 2",
+          "human_review_required": true,
+          "passed": true,
+          "status": "passed"
+        },
+        {
+          "blocking": false,
+          "check_id": "privacy_and_pii_filter",
+          "evidence": "sensitive_pii_present=False private_messages_present=False",
+          "human_review_required": true,
+          "passed": true,
+          "status": "passed"
+        },
+        {
+          "blocking": false,
+          "check_id": "duplication_and_novelty_report",
+          "evidence": "repeated_content_ratio=0.0 new_demand_ratio=1.0",
+          "human_review_required": true,
+          "passed": true,
+          "status": "passed"
+        },
+        {
+          "blocking": false,
+          "check_id": "language_and_region_coverage",
+          "evidence": "languages=2 regions=2 platforms=2",
+          "human_review_required": true,
+          "passed": true,
+          "status": "passed"
+        },
+        {
+          "blocking": false,
+          "check_id": "risk_score_and_unsafe_exclusions",
+          "evidence": "unsafe signals blocked=4",
+          "human_review_required": true,
+          "passed": true,
+          "status": "passed"
+        },
+        {
+          "blocking": false,
+          "check_id": "human_approval_requirements",
+          "evidence": "all candidate records require human review",
+          "human_review_required": true,
+          "passed": true,
+          "status": "passed"
+        },
+        {
+          "blocking": false,
+          "check_id": "controlled_training_approval_decision_inputs",
+          "evidence": "coverage_sufficient=False dataset_too_small=True noisy_or_exclusion_heavy=True",
+          "human_review_required": true,
+          "passed": false,
+          "status": "keep_collecting"
+        }
+      ],
+      "created_at": "2026-05-29T07:01:50+00:00",
+      "excluded_record_count": 4,
+      "excluded_record_ratio": 0.667,
+      "keep_collecting_check_count": 1,
+      "max_excluded_ratio_for_review": 0.5,
+      "minimum_candidates_for_review": 5,
+      "model_promotion_allowed": false,
+      "passed_check_count": 7,
+      "provider_execution_allowed": false,
+      "round_id": "ROUND-REALDATA-008_REAL_DATA_TRAINING_APPROVAL_GATE",
+      "training_allowed": false
+    },
+    "datasetPrivacyValidationReport": {
+      "created_at": "2026-05-29T07:01:50+00:00",
+      "excluded_private_message_count": 1,
+      "minors_data_flagged_count": 1,
+      "privacy_filter_passed": true,
+      "privacy_filter_report_present": true,
+      "private_messages_present": false,
+      "provider_execution_allowed": false,
+      "raw_content_stored": false,
+      "redaction_total": 4,
+      "report_id": "DATASET_PRIVACY_VALIDATION_REPORT",
+      "round_id": "ROUND-REALDATA-008_REAL_DATA_TRAINING_APPROVAL_GATE",
+      "sensitive_pii_present": false,
+      "sensitive_pii_training_allowed": false,
+      "training_allowed": false,
+      "unsafe_candidate_exclusion_count": 4,
+      "unsafe_signal_count": 4,
+      "unsafe_signals_blocked_from_training": true
+    },
+    "datasetReplayValidationReport": {
+      "candidate_record_count": 2,
+      "created_at": "2026-05-29T07:01:50+00:00",
+      "dataset_version": "training-candidate-v0.1.0",
+      "filter_version": "sample-ingestion-privacy-filter-v0.1.0",
+      "missing_lineage_candidates": [],
+      "non_auditable_candidates": [],
+      "non_replayable_candidates": [],
+      "normalization_version": "social-signal-normalization-v0.1.0",
+      "provider_execution_allowed": false,
+      "replay_manifest_present": true,
+      "replay_manifest_valid": true,
+      "report_id": "DATASET_REPLAY_VALIDATION_REPORT",
+      "round_id": "ROUND-REALDATA-008_REAL_DATA_TRAINING_APPROVAL_GATE",
+      "source_lineage_count": 2,
+      "training_allowed": false
+    },
+    "realDataTrainingGateDecision": {
+      "agos_core_overwrite_allowed": false,
+      "allowed_next_actions": [
+        "continue small controlled sample collection",
+        "expand language and region coverage",
+        "rerun privacy filtering and normalization",
+        "rerun dataset candidate builder",
+        "repeat this approval gate after coverage improves"
+      ],
+      "approval_status": "keep_collecting",
+      "automatic_training_allowed": false,
+      "blocked_actions": [
+        "automatic training",
+        "provider execution",
+        "model promotion",
+        "AGOS core overwrite",
+        "promotion or external contact from candidate records"
+      ],
+      "candidate_record_count": 2,
+      "collection_blockers": [
+        "dataset_too_small",
+        "dataset_too_noisy_or_exclusion_heavy",
+        "sample_coverage_threshold_not_met",
+        "repeated_content_ratio_not_high"
+      ],
+      "controlled_training_pilot_review_allowed": false,
+      "coverage_sufficient": false,
+      "created_at": "2026-05-29T07:01:50+00:00",
+      "dataset_too_noisy_or_exclusion_heavy": true,
+      "dataset_too_small": true,
+      "decision_id": "REAL_DATA_TRAINING_GATE_DECISION",
+      "decision_reason": "Current candidate dataset is privacy-safe and replayable, but too small, too exclusion-heavy, and lacks repeated-demand pressure for controlled training pilot review.",
+      "excluded_record_count": 4,
+      "excluded_record_ratio": 0.667,
+      "gate_decision": "keep_collecting",
+      "hard_blockers": [],
+      "human_approval_required": true,
+      "model_promotion_allowed": false,
+      "new_demand_ratio": 1.0,
+      "next_gate_required": "ROUND-REALDATA-009_DATASET_EXPANSION_AND_BIAS_REVIEW",
+      "provider_execution_allowed": false,
+      "repeated_content_ratio": 0.0,
+      "round_id": "ROUND-REALDATA-008_REAL_DATA_TRAINING_APPROVAL_GATE",
+      "unsafe_content_excluded": true
+    },
+    "realDataTrainingApprovalEvidence": {
+      "agos_core_overwritten": false,
+      "automatic_promotion_started": false,
+      "checklist_generated": true,
+      "controlled_training_pilot_review_allowed": false,
+      "created_at": "2026-05-29T07:01:50+00:00",
+      "dataset_too_noisy_or_exclusion_heavy": true,
+      "dataset_too_small": true,
+      "evidence_id": "REAL_DATA_TRAINING_APPROVAL_EVIDENCE",
+      "gate_decision_generated": true,
+      "human_approval_required": true,
+      "lineage_complete": true,
+      "model_promoted": false,
+      "next_gate_required": "ROUND-REALDATA-009_DATASET_EXPANSION_AND_BIAS_REVIEW",
+      "privacy_filter_passed": true,
+      "privacy_validation_generated": true,
+      "private_messages_present": false,
+      "provider_execution_started": false,
+      "replay_manifest_present": true,
+      "replay_validation_generated": true,
+      "round_id": "ROUND-REALDATA-008_REAL_DATA_TRAINING_APPROVAL_GATE",
+      "schema_defined": true,
+      "sensitive_pii_present": false,
+      "training_started": false
     }
   },
   "realDataAccess": {
@@ -145317,6 +145560,11 @@
       const duplicationNoveltyReport = rds.duplicationAndNoveltyReport || {};
       const datasetReplayManifest = rds.datasetReplayManifest || {};
       const trainingCandidateEvidence = rds.trainingDatasetCandidateEvidence || {};
+      const trainingApprovalChecklist = rds.realDataTrainingApprovalChecklist || {};
+      const datasetPrivacyValidationReport = rds.datasetPrivacyValidationReport || {};
+      const datasetReplayValidationReport = rds.datasetReplayValidationReport || {};
+      const realDataTrainingGateDecision = rds.realDataTrainingGateDecision || {};
+      const realDataTrainingApprovalEvidence = rds.realDataTrainingApprovalEvidence || {};
       const rdaOverview = '<div class="trend-visual-grid"><div class="trend-stat"><span>MVP Platforms</span><strong>' + esc((rdaContract.supportedMvpPlatforms || []).join(' / ')) + '</strong><small>later: ' + esc((rdaContract.optionalLaterPlatforms || []).slice(0, 4).join(' / ')) + '</small></div><div class="trend-stat"><span>Authorized</span><strong>' + esc(rdaStatus.authorized_read_only_count || 0) + '</strong><small>not connected: ' + esc(rdaStatus.not_connected_count || 0) + '</small></div><div class="trend-stat"><span>Access</span><strong>' + esc(rdaStatus.real_data_access_enabled || false) + '</strong><small>minimum scope: ' + esc(rdaScope.minimum_scope_policy || '') + '</small></div><div class="trend-stat"><span>Training</span><strong>' + esc(rdaEvidence.agos_training_started || false) + '</strong><small>API called: ' + esc(rdaEvidence.real_platform_api_called || false) + ' / credentials: ' + esc(rdaEvidence.credentials_found || false) + '</small></div></div>';
       const rdaPlatformRows = ((rdaStatus.platformStatuses || []).slice(0, 10)).map(item =>
         '<div class="feed-item"><time>' + esc(item.platform || '') + '</time><div class="feed-main"><strong>' + esc(item.access_status || '') + ' / ' + esc(item.platform_group || '') + '</strong><span>Owner approved: ' + esc(item.owner_approved || false) + ' / Scope verified: ' + esc(item.scope_verified || false) + ' / Authorized read-only: ' + esc(item.authorized_read_only || false) + '</span><span>Token present: ' + esc(item.token_present || false) + ' / Credential present: ' + esc(item.credential_present || false) + ' / Safe to ingest real data: ' + esc(item.safe_to_ingest_real_data || false) + '</span><span>Human review required: ' + esc(item.requires_human_review || false) + '</span></div><span class="badge b-amber">not connected</span></div>'
@@ -145361,6 +145609,14 @@
       const signalScoringRow = signalScoringPolicy.policy_id ? '<div class="feed-item"><time>SCORE</time><div class="feed-main"><strong>Signal Quality Scoring policy</strong><span>Fields: ' + esc(Object.keys(signalScoringPolicy.fields || {}).join(' / ')) + '</span><span>Classification: usable_for_review, monitor, unsafe_review_required, noise.</span><span>Blocked actions: training ' + esc((signalScoringPolicy.blocked_actions || {}).training_allowed || false) + ' / promotion ' + esc((signalScoringPolicy.blocked_actions || {}).promotion_allowed || false) + ' / writeback ' + esc((signalScoringPolicy.blocked_actions || {}).writeback_allowed || false) + ' / contact ' + esc((signalScoringPolicy.blocked_actions || {}).contact_user_allowed || false) + '</span></div><span class="badge b-cyan">quality</span></div>' : '';
       const signalNoiseRow = signalNoiseReport.report_id ? '<div class="feed-item"><time>NOISE</time><div class="feed-main"><strong>Signal Noise Filter Report</strong><span>Flags: ' + esc(JSON.stringify(signalNoiseReport.flag_counts || {})) + '</span><span>Status: ' + esc(JSON.stringify(signalNoiseReport.status_counts || {})) + '</span><span>Unsafe record ids: ' + esc((signalNoiseReport.unsafe_record_ids || []).join(' / ')) + ' / Noise record ids: ' + esc((signalNoiseReport.noise_record_ids || []).join(' / ')) + '</span><span>Low-confidence signals confirmed demand: ' + esc(!(signalNoiseReport.low_confidence_not_confirmed_demand || false)) + ' / Training blocked: ' + esc(signalNoiseReport.unsafe_signals_blocked_from_training || false) + ' / Promotion blocked: ' + esc(signalNoiseReport.unsafe_signals_blocked_from_promotion || false) + ' / Writeback: ' + esc(signalNoiseReport.writeback_allowed || false) + ' / Contact: ' + esc(signalNoiseReport.contact_user_allowed || false) + '</span></div><span class="badge b-green">blocked</span></div>' : '';
       const signalEvidenceRow = signalEvidence.evidence_id ? '<div class="feed-item"><time>SIGNAL-EVIDENCE</time><div class="feed-main"><strong>Social Signal Normalization evidence</strong><span>Records: ' + esc(signalEvidence.normalized_record_count || 0) + ' / Engagement normalized: ' + esc(signalEvidence.engagement_metrics_normalized || false) + ' / Content normalized: ' + esc(signalEvidence.content_signals_normalized || false) + ' / Quality scores: ' + esc(signalEvidence.quality_scores_generated || false) + ' / Unsafe filtering: ' + esc(signalEvidence.unsafe_filtering_active || false) + '</span><span>Training: ' + esc(signalEvidence.training_started || false) + ' / Promotion: ' + esc(signalEvidence.promotion_started || false) + ' / Writeback: ' + esc(signalEvidence.platform_writeback_called || false) + ' / Users contacted: ' + esc(signalEvidence.users_contacted || false) + '</span><span>Replayable: ' + esc(signalEvidence.all_records_replayable || false) + ' / Auditable: ' + esc(signalEvidence.all_records_auditable || false) + ' / Human review: ' + esc(signalEvidence.all_records_human_review_required || false) + ' / Next gate: ' + esc(signalEvidence.next_gate || '') + '</span></div><span class="badge b-green">audit</span></div>' : '';
+      const trainingGateOverview = realDataTrainingGateDecision.decision_id ? '<div class="trend-visual-grid"><div class="trend-stat"><span>Training Approval Gate</span><strong>' + esc(realDataTrainingGateDecision.gate_decision || '') + '</strong><small>pilot review allowed: ' + esc(realDataTrainingGateDecision.controlled_training_pilot_review_allowed || false) + '</small></div><div class="trend-stat"><span>Dataset</span><strong>' + esc(realDataTrainingGateDecision.candidate_record_count || 0) + '</strong><small>excluded: ' + esc(realDataTrainingGateDecision.excluded_record_count || 0) + ' / too small: ' + esc(realDataTrainingGateDecision.dataset_too_small || false) + '</small></div><div class="trend-stat"><span>Privacy / Replay</span><strong>' + esc(realDataTrainingApprovalEvidence.privacy_filter_passed || false) + ' / ' + esc(realDataTrainingApprovalEvidence.replay_manifest_present || false) + '</strong><small>lineage: ' + esc(realDataTrainingApprovalEvidence.lineage_complete || false) + '</small></div><div class="trend-stat"><span>Blocked</span><strong>training ' + esc(realDataTrainingGateDecision.automatic_training_allowed || false) + '</strong><small>provider: ' + esc(realDataTrainingGateDecision.provider_execution_allowed || false) + ' / model promotion: ' + esc(realDataTrainingGateDecision.model_promotion_allowed || false) + '</small></div></div>' : '';
+      const trainingChecklistRows = ((trainingApprovalChecklist.checks || []).slice(0, 8)).map(item =>
+        '<div class="feed-item"><time>' + esc(item.check_id || '') + '</time><div class="feed-main"><strong>Real Data Training Approval Checklist / ' + esc(item.status || '') + '</strong><span>Passed: ' + esc(item.passed || false) + ' / Blocking: ' + esc(item.blocking || false) + ' / Human review: ' + esc(item.human_review_required || false) + '</span><span>Evidence: ' + esc(item.evidence || '') + '</span></div><span class="badge ' + (item.status === 'passed' ? 'b-green' : (item.status === 'keep_collecting' ? 'b-amber' : 'b-red')) + '">' + esc(item.status || 'check') + '</span></div>'
+      );
+      const trainingPrivacyRow = datasetPrivacyValidationReport.report_id ? '<div class="feed-item"><time>TRAINING-PII</time><div class="feed-main"><strong>Dataset Privacy Validation Report</strong><span>Privacy filter passed: ' + esc(datasetPrivacyValidationReport.privacy_filter_passed || false) + ' / Sensitive PII present: ' + esc(datasetPrivacyValidationReport.sensitive_pii_present || false) + ' / Private messages present: ' + esc(datasetPrivacyValidationReport.private_messages_present || false) + ' / Raw content stored: ' + esc(datasetPrivacyValidationReport.raw_content_stored || false) + '</span><span>Private messages excluded: ' + esc(datasetPrivacyValidationReport.excluded_private_message_count || 0) + ' / Minors flagged: ' + esc(datasetPrivacyValidationReport.minors_data_flagged_count || 0) + ' / Redactions: ' + esc(datasetPrivacyValidationReport.redaction_total || 0) + ' / Unsafe candidate exclusions: ' + esc(datasetPrivacyValidationReport.unsafe_candidate_exclusion_count || 0) + '</span><span>Training: ' + esc(datasetPrivacyValidationReport.training_allowed || false) + ' / Provider: ' + esc(datasetPrivacyValidationReport.provider_execution_allowed || false) + '</span></div><span class="badge b-green">privacy passed</span></div>' : '';
+      const trainingReplayValidationRow = datasetReplayValidationReport.report_id ? '<div class="feed-item"><time>TRAINING-REPLAY</time><div class="feed-main"><strong>Dataset Replay Validation Report</strong><span>Replay manifest present: ' + esc(datasetReplayValidationReport.replay_manifest_present || false) + ' / Valid: ' + esc(datasetReplayValidationReport.replay_manifest_valid || false) + ' / Source lineage rows: ' + esc(datasetReplayValidationReport.source_lineage_count || 0) + ' / Candidate records: ' + esc(datasetReplayValidationReport.candidate_record_count || 0) + '</span><span>Missing lineage: ' + esc((datasetReplayValidationReport.missing_lineage_candidates || []).join(' / ')) + ' / Non-replayable: ' + esc((datasetReplayValidationReport.non_replayable_candidates || []).join(' / ')) + ' / Non-auditable: ' + esc((datasetReplayValidationReport.non_auditable_candidates || []).join(' / ')) + '</span><span>Dataset version: ' + esc(datasetReplayValidationReport.dataset_version || '') + ' / Filter: ' + esc(datasetReplayValidationReport.filter_version || '') + ' / Normalization: ' + esc(datasetReplayValidationReport.normalization_version || '') + ' / Training: ' + esc(datasetReplayValidationReport.training_allowed || false) + '</span></div><span class="badge b-green">replay passed</span></div>' : '';
+      const trainingGateDecisionRow = realDataTrainingGateDecision.decision_id ? '<div class="feed-item"><time>TRAINING-GATE</time><div class="feed-main"><strong>REAL_DATA_TRAINING_GATE_DECISION / ' + esc(realDataTrainingGateDecision.gate_decision || '') + '</strong><span>' + esc(realDataTrainingGateDecision.decision_reason || '') + '</span><span>Hard blockers: ' + esc((realDataTrainingGateDecision.hard_blockers || []).join(' / ') || 'none') + '</span><span>Collection blockers: ' + esc((realDataTrainingGateDecision.collection_blockers || []).join(' / ')) + '</span><span>Allowed next: ' + esc((realDataTrainingGateDecision.allowed_next_actions || []).slice(0, 4).join(' / ')) + '</span><span>Blocked actions: ' + esc((realDataTrainingGateDecision.blocked_actions || []).join(' / ')) + '</span><span>Human approval required: ' + esc(realDataTrainingGateDecision.human_approval_required || false) + ' / Automatic training: ' + esc(realDataTrainingGateDecision.automatic_training_allowed || false) + ' / Provider execution: ' + esc(realDataTrainingGateDecision.provider_execution_allowed || false) + ' / Next gate: ' + esc(realDataTrainingGateDecision.next_gate_required || '') + '</span></div><span class="badge b-amber">keep collecting</span></div>' : '';
+      const trainingApprovalEvidenceRow = realDataTrainingApprovalEvidence.evidence_id ? '<div class="feed-item"><time>TRAINING-EVIDENCE</time><div class="feed-main"><strong>Real Data Training Approval Evidence</strong><span>Checklist: ' + esc(realDataTrainingApprovalEvidence.checklist_generated || false) + ' / Privacy validation: ' + esc(realDataTrainingApprovalEvidence.privacy_validation_generated || false) + ' / Replay validation: ' + esc(realDataTrainingApprovalEvidence.replay_validation_generated || false) + ' / Gate decision: ' + esc(realDataTrainingApprovalEvidence.gate_decision_generated || false) + '</span><span>Lineage complete: ' + esc(realDataTrainingApprovalEvidence.lineage_complete || false) + ' / Replay manifest present: ' + esc(realDataTrainingApprovalEvidence.replay_manifest_present || false) + ' / Dataset too small: ' + esc(realDataTrainingApprovalEvidence.dataset_too_small || false) + ' / Exclusion-heavy: ' + esc(realDataTrainingApprovalEvidence.dataset_too_noisy_or_exclusion_heavy || false) + '</span><span>Training started: ' + esc(realDataTrainingApprovalEvidence.training_started || false) + ' / Provider execution: ' + esc(realDataTrainingApprovalEvidence.provider_execution_started || false) + ' / Model promoted: ' + esc(realDataTrainingApprovalEvidence.model_promoted || false) + ' / AGOS core overwritten: ' + esc(realDataTrainingApprovalEvidence.agos_core_overwritten || false) + ' / Human approval: ' + esc(realDataTrainingApprovalEvidence.human_approval_required || false) + '</span></div><span class="badge b-green">evidence</span></div>' : '';
       const candidateStage = trainingCandidateManifest.stage_transition_signal || {};
       const candidateOverview = trainingCandidateEvidence.evidence_id ? '<div class="trend-visual-grid"><div class="trend-stat"><span>Dataset Candidates</span><strong>' + esc(trainingCandidateEvidence.candidate_record_count || 0) + '</strong><small>excluded: ' + esc(trainingCandidateEvidence.excluded_record_count || 0) + '</small></div><div class="trend-stat"><span>Groups</span><strong>' + esc((trainingCandidatePolicy.grouping_dimensions || []).length || 0) + '</strong><small>' + esc((trainingCandidatePolicy.grouping_dimensions || []).slice(0, 4).join(' / ')) + '</small></div><div class="trend-stat"><span>Replay</span><strong>' + esc(trainingCandidateEvidence.replay_manifest_generated || false) + '</strong><small>lineage: ' + esc(trainingCandidateEvidence.all_candidate_records_have_lineage || false) + ' / auditable: ' + esc(trainingCandidateEvidence.all_candidate_records_auditable || false) + '</small></div><div class="trend-stat"><span>Training</span><strong>' + esc(trainingCandidateEvidence.training_started || false) + '</strong><small>provider: ' + esc(trainingCandidateEvidence.provider_execution_started || false) + ' / memory: ' + esc(trainingCandidateEvidence.memory_writeback_started || false) + '</small></div></div>' : '';
       const candidatePolicyRow = trainingCandidatePolicy.policy_id ? '<div class="feed-item"><time>CANDIDATE</time><div class="feed-main"><strong>Training Dataset Candidate policy</strong><span>Grouping dimensions: ' + esc((trainingCandidatePolicy.grouping_dimensions || []).join(' / ')) + '</span><span>Duplication logic: ' + esc((trainingCandidatePolicy.duplication_logic || []).join(' / ')) + '</span><span>Stage signals: ' + esc((trainingCandidatePolicy.stage_transition_signals || []).join(' / ')) + '</span><span>Candidate only: ' + esc((trainingCandidatePolicy.safety_boundary || {}).dataset_candidate_only || false) + ' / Training: ' + esc((trainingCandidatePolicy.safety_boundary || {}).training_allowed || false) + ' / Provider: ' + esc((trainingCandidatePolicy.safety_boundary || {}).provider_execution_allowed || false) + ' / Memory writeback: ' + esc((trainingCandidatePolicy.safety_boundary || {}).memory_writeback_allowed || false) + '</span></div><span class="badge b-green">candidate-only</span></div>' : '';
@@ -145373,7 +145629,7 @@
       const duplicationRow = duplicationNoveltyReport.report_id ? '<div class="feed-item"><time>DUPLICATION</time><div class="feed-main"><strong>Duplication and Novelty Report</strong><span>Exact duplicates: ' + esc((duplicationNoveltyReport.exact_duplicates || []).length || 0) + ' / Semantic duplicates: ' + esc((duplicationNoveltyReport.semantic_duplicates || []).length || 0) + ' / Same question different language: ' + esc((duplicationNoveltyReport.same_question_different_language || []).length || 0) + ' / Same pain different platform: ' + esc((duplicationNoveltyReport.same_pain_different_platform || []).length || 0) + '</span><span>Repeated demand clusters: ' + esc((duplicationNoveltyReport.repeated_demand_clusters || []).length || 0) + ' / Repeated content ratio: ' + esc(duplicationNoveltyReport.repeated_content_ratio || 0) + ' / New demand ratio: ' + esc(duplicationNoveltyReport.new_demand_ratio || 0) + '</span><span>Novelty scores: ' + esc((duplicationNoveltyReport.novelty_scores || []).map(item => item.candidate_id + ':' + item.novelty_score).join(' / ')) + '</span><span>Training: ' + esc(duplicationNoveltyReport.training_allowed || false) + '</span></div><span class="badge b-cyan">novelty</span></div>' : '';
       const replayRow = datasetReplayManifest.manifest_id ? '<div class="feed-item"><time>REPLAY</time><div class="feed-main"><strong>Dataset Replay Manifest</strong><span>Dataset version: ' + esc(datasetReplayManifest.dataset_version || '') + ' / Filter version: ' + esc(datasetReplayManifest.filter_version || '') + ' / Normalization version: ' + esc(datasetReplayManifest.normalization_version || '') + '</span><span>Source lineage rows: ' + esc((datasetReplayManifest.source_lineage || []).length || 0) + ' / Excluded reason rows: ' + esc((datasetReplayManifest.excluded_data_reasons || []).length || 0) + '</span><span>Replay instructions: ' + esc((datasetReplayManifest.replay_instructions || []).slice(0, 4).join(' / ')) + '</span><span>Training: ' + esc(datasetReplayManifest.training_allowed || false) + ' / Provider: ' + esc(datasetReplayManifest.provider_execution_allowed || false) + ' / Memory writeback: ' + esc(datasetReplayManifest.memory_writeback_allowed || false) + ' / Replayable: ' + esc(datasetReplayManifest.replayable || false) + ' / Auditable: ' + esc(datasetReplayManifest.auditable || false) + '</span></div><span class="badge b-green">replayable</span></div>' : '';
       const candidateStageRow = trainingCandidateEvidence.evidence_id ? '<div class="feed-item"><time>STAGE</time><div class="feed-main"><strong>Stage transition signal</strong><span>Repeated content ratio: ' + esc(candidateStage.repeated_content_ratio || 0) + ' / New demand ratio: ' + esc(candidateStage.new_demand_ratio || 0) + ' / High-value pain clusters: ' + esc(candidateStage.high_value_pain_cluster_count || 0) + ' / Unresolved categories: ' + esc(candidateStage.unresolved_category_count || 0) + '</span><span>Confidence threshold met: ' + esc(candidateStage.confidence_threshold_met || false) + ' / Sample coverage threshold met: ' + esc(candidateStage.sample_coverage_threshold_met || false) + ' / Training ready: ' + esc(candidateStage.training_ready || false) + ' / Stage transition allowed: ' + esc(candidateStage.stage_transition_allowed || false) + '</span><span>Recommendation: ' + esc(candidateStage.stage_transition_recommendation || '') + '</span><span>Evidence: sensitive PII included ' + esc(trainingCandidateEvidence.sensitive_pii_included || false) + ' / Private messages included ' + esc(trainingCandidateEvidence.private_messages_included || false) + ' / Training started ' + esc(trainingCandidateEvidence.training_started || false) + ' / Provider execution ' + esc(trainingCandidateEvidence.provider_execution_started || false) + ' / Memory writeback ' + esc(trainingCandidateEvidence.memory_writeback_started || false) + '</span></div><span class="badge b-green">blocked gate</span></div>' : '';
-      el('runtime-real-data-access').innerHTML = (rdaContract.contract_id || qsPolicy.policy_id || dryRunContract.contract_id || sampleEvidence.evidence_id || signalEvidence.evidence_id || trainingCandidateEvidence.evidence_id ? candidateOverview + candidatePolicyRow + candidateRows.join('') + excludedCandidateRows.join('') + duplicationRow + replayRow + candidateStageRow + signalOverview + signalPolicyRow + signalRows.join('') + signalScoringRow + signalNoiseRow + signalEvidenceRow + sampleOverview + samplePolicyRow + privacyFilterRow + sampleRows.join('') + sampleEvidenceRow + dryRunOverview + dryRunPlatformRows.join('') + permissionRows.join('') + dryRunSafetyRow + rdaOverview + rdaPlatformRows.join('') + rdaScopeRows.join('') + rdaSafetyRow + cvOverview + cvAuditRows.join('') + cvSafetyRow + qsOverview + qsSourceRows.join('') + qsContentRows.join('') + qsSafetyRow : '') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Real Data Controlled Access pending</strong><span>AGOS will define read-only platform authorization contracts before any real API access or training.</span></div><span class="badge b-amber">pending</span></div>';
+      el('runtime-real-data-access').innerHTML = (rdaContract.contract_id || qsPolicy.policy_id || dryRunContract.contract_id || sampleEvidence.evidence_id || signalEvidence.evidence_id || trainingCandidateEvidence.evidence_id || realDataTrainingGateDecision.decision_id ? trainingGateOverview + trainingChecklistRows.join('') + trainingPrivacyRow + trainingReplayValidationRow + trainingGateDecisionRow + trainingApprovalEvidenceRow + candidateOverview + candidatePolicyRow + candidateRows.join('') + excludedCandidateRows.join('') + duplicationRow + replayRow + candidateStageRow + signalOverview + signalPolicyRow + signalRows.join('') + signalScoringRow + signalNoiseRow + signalEvidenceRow + sampleOverview + samplePolicyRow + privacyFilterRow + sampleRows.join('') + sampleEvidenceRow + dryRunOverview + dryRunPlatformRows.join('') + permissionRows.join('') + dryRunSafetyRow + rdaOverview + rdaPlatformRows.join('') + rdaScopeRows.join('') + rdaSafetyRow + cvOverview + cvAuditRows.join('') + cvSafetyRow + qsOverview + qsSourceRows.join('') + qsContentRows.join('') + qsSafetyRow : '') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Real Data Controlled Access pending</strong><span>AGOS will define read-only platform authorization contracts before any real API access or training.</span></div><span class="badge b-amber">pending</span></div>';
       const locationHeatmapSummary = wr.locationHeatmapSummary || {};
       el('runtime-location-demand-heatmap').innerHTML = (wr.locationHeatmap || []).map(item =>
         '<div class="feed-item"><time>' + esc(item.location_id || '') + '</time><div class="feed-main"><strong>' + esc(item.location_name || '') + ' / ' + esc(item.location_type || '') + ' / heat ' + esc(item.demand_heat_score || 0) + '</strong><span>Hot reason: ' + esc(item.hot_reason || '') + '</span><span>Related seasons: ' + esc((item.related_seasons || []).join(' / ')) + '</span><span>Mobility demand: ' + esc((item.mobility_demand_types || []).join(' / ')) + '</span><span>Pain points: ' + esc((item.common_pain_points || []).join(' / ')) + '</span><span>Risk score: crowd ' + esc(item.crowd_risk_score || 0) + ' / transfer ' + esc(item.transfer_complexity_score || 0) + ' / luggage ' + esc(item.luggage_difficulty_score || 0) + '</span><span>Driver/vehicle prep: ' + esc(item.driver_vehicle_preparation_required || false) + ' / Real-time crowd data: ' + esc(item.real_time_crowd_data_connected || false) + ' / GPS dispatch: ' + esc(locationHeatmapSummary.gps_dispatch_enabled || false) + ' / Write ops: ' + esc(item.write_operations_enabled || false) + '</span></div><span class="badge ' + ((item.demand_heat_score || 0) >= 80 ? 'b-green' : (item.demand_heat_score || 0) >= 65 ? 'b-amber' : 'b-cyan') + '">' + esc(item.region || 'location') + '</span></div>'

@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AGOS Real Data Training Approval Gate Decision",
+  "type": "object",
+  "required": [
+    "decision_id",
+    "round_id",
+    "gate_decision",
+    "controlled_training_pilot_review_allowed",
+    "automatic_training_allowed",
+    "provider_execution_allowed",
+    "model_promotion_allowed",
+    "human_approval_required",
+    "hard_blockers",
+    "collection_blockers",
+    "blocked_actions"
+  ],
+  "properties": {
+    "decision_id": {
+      "const": "REAL_DATA_TRAINING_GATE_DECISION"
+    },
+    "round_id": {
+      "const": "ROUND-REALDATA-008_REAL_DATA_TRAINING_APPROVAL_GATE"
+    },
+    "gate_decision": {
+      "enum": [
+        "blocked",
+        "keep_collecting",
+        "reviewable_controlled_training_pilot"
+      ]
+    },
+    "approval_status": {
+      "type": "string"
+    },
+    "controlled_training_pilot_review_allowed": {
+      "type": "boolean"
+    },
+    "automatic_training_allowed": {
+      "const": false
+    },
+    "provider_execution_allowed": {
+      "const": false
+    },
+    "model_promotion_allowed": {
+      "const": false
+    },
+    "agos_core_overwrite_allowed": {
+      "const": false
+    },
+    "human_approval_required": {
+      "const": true
+    },
+    "candidate_record_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "excluded_record_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "excluded_record_ratio": {
+      "type": "number",
+      "minimum": 0
+    },
+    "repeated_content_ratio": {
+      "type": "number",
+      "minimum": 0
+    },
+    "new_demand_ratio": {
+      "type": "number",
+      "minimum": 0
+    },
+    "coverage_sufficient": {
+      "type": "boolean"
+    },
+    "dataset_too_small": {
+      "type": "boolean"
+    },
+    "dataset_too_noisy_or_exclusion_heavy": {
+      "type": "boolean"
+    },
+    "hard_blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "collection_blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "unsafe_content_excluded": {
+      "type": "boolean"
+    },
+    "allowed_next_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blocked_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "decision_reason": {
+      "type": "string"
+    },
+    "next_gate_required": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

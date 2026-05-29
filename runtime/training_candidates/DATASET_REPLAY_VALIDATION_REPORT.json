@@ -1,0 +1,17 @@
+{
+  "candidate_record_count": 2,
+  "created_at": "2026-05-29T07:01:50+00:00",
+  "dataset_version": "training-candidate-v0.1.0",
+  "filter_version": "sample-ingestion-privacy-filter-v0.1.0",
+  "missing_lineage_candidates": [],
+  "non_auditable_candidates": [],
+  "non_replayable_candidates": [],
+  "normalization_version": "social-signal-normalization-v0.1.0",
+  "provider_execution_allowed": false,
+  "replay_manifest_present": true,
+  "replay_manifest_valid": true,
+  "report_id": "DATASET_REPLAY_VALIDATION_REPORT",
+  "round_id": "ROUND-REALDATA-008_REAL_DATA_TRAINING_APPROVAL_GATE",
+  "source_lineage_count": 2,
+  "training_allowed": false
+}

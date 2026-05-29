@@ -1,0 +1,82 @@
+{
+  "blocked_check_count": 0,
+  "candidate_record_count": 2,
+  "checklist_id": "REAL_DATA_TRAINING_APPROVAL_CHECKLIST",
+  "checks": [
+    {
+      "blocking": false,
+      "check_id": "dataset_candidate_completeness",
+      "evidence": "2 candidate records / 4 excluded records",
+      "human_review_required": true,
+      "passed": true,
+      "status": "passed"
+    },
+    {
+      "blocking": false,
+      "check_id": "lineage_and_replay_manifest",
+      "evidence": "lineage rows 2 / candidates 2",
+      "human_review_required": true,
+      "passed": true,
+      "status": "passed"
+    },
+    {
+      "blocking": false,
+      "check_id": "privacy_and_pii_filter",
+      "evidence": "sensitive_pii_present=False private_messages_present=False",
+      "human_review_required": true,
+      "passed": true,
+      "status": "passed"
+    },
+    {
+      "blocking": false,
+      "check_id": "duplication_and_novelty_report",
+      "evidence": "repeated_content_ratio=0.0 new_demand_ratio=1.0",
+      "human_review_required": true,
+      "passed": true,
+      "status": "passed"
+    },
+    {
+      "blocking": false,
+      "check_id": "language_and_region_coverage",
+      "evidence": "languages=2 regions=2 platforms=2",
+      "human_review_required": true,
+      "passed": true,
+      "status": "passed"
+    },
+    {
+      "blocking": false,
+      "check_id": "risk_score_and_unsafe_exclusions",
+      "evidence": "unsafe signals blocked=4",
+      "human_review_required": true,
+      "passed": true,
+      "status": "passed"
+    },
+    {
+      "blocking": false,
+      "check_id": "human_approval_requirements",
+      "evidence": "all candidate records require human review",
+      "human_review_required": true,
+      "passed": true,
+      "status": "passed"
+    },
+    {
+      "blocking": false,
+      "check_id": "controlled_training_approval_decision_inputs",
+      "evidence": "coverage_sufficient=False dataset_too_small=True noisy_or_exclusion_heavy=True",
+      "human_review_required": true,
+      "passed": false,
+      "status": "keep_collecting"
+    }
+  ],
+  "created_at": "2026-05-29T07:01:50+00:00",
+  "excluded_record_count": 4,
+  "excluded_record_ratio": 0.667,
+  "keep_collecting_check_count": 1,
+  "max_excluded_ratio_for_review": 0.5,
+  "minimum_candidates_for_review": 5,
+  "model_promotion_allowed": false,
+  "passed_check_count": 7,
+  "provider_execution_allowed": false,
+  "round_id": "ROUND-REALDATA-008_REAL_DATA_TRAINING_APPROVAL_GATE",
+  "training_allowed": false
+}
