@@ -1,0 +1,138 @@
+[
+  {
+    "automatic_driver_contact_enabled": false,
+    "average_heat_score": 88.6,
+    "demand_type": "airport_transfer",
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_market_count": 30
+  },
+  {
+    "automatic_driver_contact_enabled": false,
+    "average_heat_score": 89.46,
+    "demand_type": "private_charter",
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_market_count": 24
+  },
+  {
+    "automatic_driver_contact_enabled": false,
+    "average_heat_score": 89.48,
+    "demand_type": "station_to_hotel",
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_market_count": 21
+  },
+  {
+    "automatic_driver_contact_enabled": false,
+    "average_heat_score": 89.08,
+    "demand_type": "night_arrival",
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_market_count": 12
+  },
+  {
+    "automatic_driver_contact_enabled": false,
+    "average_heat_score": 88.67,
+    "demand_type": "family_trip",
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_market_count": 12
+  },
+  {
+    "automatic_driver_contact_enabled": false,
+    "average_heat_score": 87.0,
+    "demand_type": "multi_city_transfer",
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_market_count": 12
+  },
+  {
+    "automatic_driver_contact_enabled": false,
+    "average_heat_score": 86.25,
+    "demand_type": "event_pickup",
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_market_count": 12
+  },
+  {
+    "automatic_driver_contact_enabled": false,
+    "average_heat_score": 91.0,
+    "demand_type": "family_group_transfer",
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_market_count": 9
+  },
+  {
+    "automatic_driver_contact_enabled": false,
+    "average_heat_score": 91.0,
+    "demand_type": "luggage_heavy_trip",
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_market_count": 9
+  },
+  {
+    "automatic_driver_contact_enabled": false,
+    "average_heat_score": 89.89,
+    "demand_type": "sightseeing_route",
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_market_count": 9
+  },
+  {
+    "automatic_driver_contact_enabled": false,
+    "average_heat_score": 91.5,
+    "demand_type": "elderly_support",
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_market_count": 6
+  },
+  {
+    "automatic_driver_contact_enabled": false,
+    "average_heat_score": 89.5,
+    "demand_type": "group_transfer",
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_market_count": 6
+  },
+  {
+    "automatic_driver_contact_enabled": false,
+    "average_heat_score": 86.33,
+    "demand_type": "local_transfer",
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_market_count": 6
+  },
+  {
+    "automatic_driver_contact_enabled": false,
+    "average_heat_score": 89.0,
+    "demand_type": "night_return",
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_market_count": 3
+  },
+  {
+    "automatic_driver_contact_enabled": false,
+    "average_heat_score": 87.33,
+    "demand_type": "winter_transfer",
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_market_count": 3
+  },
+  {
+    "automatic_driver_contact_enabled": false,
+    "average_heat_score": 86.33,
+    "demand_type": "resort_transfer",
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_market_count": 3
+  },
+  {
+    "automatic_driver_contact_enabled": false,
+    "average_heat_score": 84.33,
+    "demand_type": "hotel_transfer",
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_market_count": 3
+  }
+]

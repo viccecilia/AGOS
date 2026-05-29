@@ -1,0 +1,83 @@
+{
+  "all_items_human_review_required": true,
+  "auto_publish_allowed": false,
+  "auto_reply_allowed": false,
+  "automatic_driver_contact_enabled": false,
+  "automatic_vehicle_contact_enabled": false,
+  "demand_type_count": 17,
+  "gps_dispatch_enabled": false,
+  "heatmap_rows": 48,
+  "location_count": 16,
+  "location_market_rows": 48,
+  "location_types": [
+    "airport",
+    "attraction",
+    "city",
+    "event_venue",
+    "shopping_district"
+  ],
+  "market_count": 6,
+  "next_recommendation": "Use reviewed spatial intelligence as input for Event Intelligence Engine; do not dispatch vehicles or contact drivers automatically.",
+  "real_time_gps_connected": false,
+  "sample_data_only": true,
+  "spatial_intelligence_ready": true,
+  "top_location_markets": [
+    {
+      "confidence_score": 76,
+      "demand_heat_score": 94,
+      "location_name": "Tokyo",
+      "location_type": "city",
+      "market": "Taiwan"
+    },
+    {
+      "confidence_score": 76,
+      "demand_heat_score": 94,
+      "location_name": "Kyoto",
+      "location_type": "city",
+      "market": "Taiwan"
+    },
+    {
+      "confidence_score": 76,
+      "demand_heat_score": 93,
+      "location_name": "Tokyo",
+      "location_type": "city",
+      "market": "US"
+    },
+    {
+      "confidence_score": 76,
+      "demand_heat_score": 93,
+      "location_name": "Kyoto",
+      "location_type": "city",
+      "market": "US"
+    },
+    {
+      "confidence_score": 76,
+      "demand_heat_score": 93,
+      "location_name": "Narita Airport",
+      "location_type": "airport",
+      "market": "Taiwan"
+    },
+    {
+      "confidence_score": 76,
+      "demand_heat_score": 93,
+      "location_name": "Haneda Airport",
+      "location_type": "airport",
+      "market": "Taiwan"
+    },
+    {
+      "confidence_score": 76,
+      "demand_heat_score": 93,
+      "location_name": "Kansai Airport",
+      "location_type": "airport",
+      "market": "Taiwan"
+    },
+    {
+      "confidence_score": 76,
+      "demand_heat_score": 92,
+      "location_name": "Narita Airport",
+      "location_type": "airport",
+      "market": "US"
+    }
+  ],
+  "write_api_allowed": false
+}

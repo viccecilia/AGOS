@@ -1,0 +1,21 @@
+{
+  "version": "0.1.140",
+  "currentRound": "ROUND-GLOBAL-008 / AGOS_SPATIAL_INTELLIGENCE_ENGINE",
+  "panelExists": true,
+  "panelHasSpatial": true,
+  "panelHasGPSFalse": true,
+  "panelHasDriverFalse": true,
+  "locationCount": 16,
+  "locationMarketRows": 48,
+  "locationTypes": [
+    "airport",
+    "attraction",
+    "city",
+    "event_venue",
+    "shopping_district"
+  ],
+  "gpsDispatchEnabled": false,
+  "driverContactEnabled": false,
+  "allHumanReview": true,
+  "writeApiAllowed": false
+}

@@ -1,0 +1,2729 @@
+[
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 76,
+    "country": "Japan",
+    "crowd_pressure_score": 88,
+    "demand_heat_score": 94,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-TOKYO",
+    "location_name": "Tokyo",
+    "location_type": "city",
+    "luggage_difficulty_score": 86,
+    "market": "Taiwan",
+    "market_opportunity_score": 96,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "station_to_hotel",
+      "private_charter",
+      "night_arrival"
+    ],
+    "mobility_need": "airport_transfer, station_to_hotel, private_charter, night_arrival; market need: private charter, family trip, luggage-heavy sightseeing route",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "complex rail transfers",
+      "large luggage"
+    ],
+    "raw_location_type": "city",
+    "region": "Kanto",
+    "related_events": [
+      "citywide seasonal travel",
+      "airport arrival peaks",
+      "shopping and hotel district movement"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-007",
+      "INTEL-RANK-005",
+      "INTEL-RANK-002"
+    ],
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Sakura Season",
+      "Golden Week",
+      "Summer Vacation",
+      "Christmas and Year End",
+      "Chinese New Year Travel",
+      "Long Weekends",
+      "Japan New Year"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 7,
+    "transfer_complexity_score": 92,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 76,
+    "country": "Japan",
+    "crowd_pressure_score": 91,
+    "demand_heat_score": 94,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-KYOTO",
+    "location_name": "Kyoto",
+    "location_type": "city",
+    "luggage_difficulty_score": 83,
+    "market": "Taiwan",
+    "market_opportunity_score": 96,
+    "mobility_demand_types": [
+      "private_charter",
+      "sightseeing_route",
+      "station_to_hotel",
+      "elderly_support"
+    ],
+    "mobility_need": "private_charter, sightseeing_route, station_to_hotel, elderly_support; market need: private charter, family trip, luggage-heavy sightseeing route",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "crowded buses",
+      "scattered temples"
+    ],
+    "raw_location_type": "city",
+    "region": "Kansai",
+    "related_events": [
+      "temple routes",
+      "seasonal sightseeing peaks"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Sakura Season",
+      "Golden Week",
+      "Summer Vacation",
+      "Chinese New Year Travel",
+      "Long Weekends",
+      "Exhibitions Concerts Sports Events",
+      "Japan New Year"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 6,
+    "transfer_complexity_score": 86,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 76,
+    "country": "Japan",
+    "crowd_pressure_score": 88,
+    "demand_heat_score": 93,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-TOKYO",
+    "location_name": "Tokyo",
+    "location_type": "city",
+    "luggage_difficulty_score": 86,
+    "market": "US",
+    "market_opportunity_score": 92,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "station_to_hotel",
+      "private_charter",
+      "night_arrival"
+    ],
+    "mobility_need": "airport_transfer, station_to_hotel, private_charter, night_arrival; market need: airport transfer, family trip, luggage-heavy private movement",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "complex rail transfers",
+      "large luggage"
+    ],
+    "raw_location_type": "city",
+    "region": "Kanto",
+    "related_events": [
+      "citywide seasonal travel",
+      "airport arrival peaks",
+      "shopping and hotel district movement"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-007",
+      "INTEL-RANK-005",
+      "INTEL-RANK-002",
+      "INTEL-RANK-013"
+    ],
+    "related_seasons": [
+      "Sakura Season",
+      "Summer Vacation",
+      "Autumn Leaves Season",
+      "Christmas and Year End",
+      "Japan New Year",
+      "School Holidays",
+      "Chinese New Year Travel",
+      "Golden Week"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 6,
+    "transfer_complexity_score": 92,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 76,
+    "country": "Japan",
+    "crowd_pressure_score": 91,
+    "demand_heat_score": 93,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-KYOTO",
+    "location_name": "Kyoto",
+    "location_type": "city",
+    "luggage_difficulty_score": 83,
+    "market": "US",
+    "market_opportunity_score": 92,
+    "mobility_demand_types": [
+      "private_charter",
+      "sightseeing_route",
+      "station_to_hotel",
+      "elderly_support"
+    ],
+    "mobility_need": "private_charter, sightseeing_route, station_to_hotel, elderly_support; market need: airport transfer, family trip, luggage-heavy private movement",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "crowded buses",
+      "scattered temples"
+    ],
+    "raw_location_type": "city",
+    "region": "Kansai",
+    "related_events": [
+      "temple routes",
+      "seasonal sightseeing peaks"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Sakura Season",
+      "Summer Vacation",
+      "Autumn Leaves Season",
+      "Japan New Year",
+      "Exhibitions Concerts Sports Events",
+      "Chinese New Year Travel",
+      "Golden Week",
+      "Long Weekends"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 5,
+    "transfer_complexity_score": 86,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 76,
+    "country": "Japan",
+    "crowd_pressure_score": 80,
+    "demand_heat_score": 93,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-NARITA",
+    "location_name": "Narita Airport",
+    "location_type": "airport",
+    "luggage_difficulty_score": 91,
+    "market": "Taiwan",
+    "market_opportunity_score": 96,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "multi_city_transfer",
+      "family_group_transfer",
+      "luggage_heavy_trip"
+    ],
+    "mobility_need": "airport_transfer, multi_city_transfer, family_group_transfer, luggage_heavy_trip; market need: private charter, family trip, luggage-heavy sightseeing route",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "long transfer distance",
+      "rail transfer confusion",
+      "large luggage"
+    ],
+    "raw_location_type": "airport",
+    "region": "Chiba",
+    "related_events": [
+      "long-distance airport transfers",
+      "inbound peak arrivals"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Sakura Season",
+      "Golden Week",
+      "Summer Vacation",
+      "Christmas and Year End",
+      "Chinese New Year Travel",
+      "Long Weekends",
+      "Japan New Year"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 7,
+    "transfer_complexity_score": 88,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 76,
+    "country": "Japan",
+    "crowd_pressure_score": 82,
+    "demand_heat_score": 93,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-HANEDA",
+    "location_name": "Haneda Airport",
+    "location_type": "airport",
+    "luggage_difficulty_score": 90,
+    "market": "Taiwan",
+    "market_opportunity_score": 96,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "family_group_transfer",
+      "night_arrival",
+      "luggage_heavy_trip"
+    ],
+    "mobility_need": "airport_transfer, family_group_transfer, night_arrival, luggage_heavy_trip; market need: private charter, family trip, luggage-heavy sightseeing route",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "late train anxiety",
+      "airport queue uncertainty",
+      "large luggage"
+    ],
+    "raw_location_type": "airport",
+    "region": "Tokyo",
+    "related_events": [
+      "international arrivals",
+      "late-night arrivals"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-004",
+      "INTEL-RANK-005"
+    ],
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Sakura Season",
+      "Golden Week",
+      "Summer Vacation",
+      "Christmas and Year End",
+      "Chinese New Year Travel",
+      "Long Weekends",
+      "Japan New Year"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 7,
+    "transfer_complexity_score": 80,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 76,
+    "country": "Japan",
+    "crowd_pressure_score": 79,
+    "demand_heat_score": 93,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-KANSAI-AIRPORT",
+    "location_name": "Kansai Airport",
+    "location_type": "airport",
+    "luggage_difficulty_score": 89,
+    "market": "Taiwan",
+    "market_opportunity_score": 96,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "multi_city_transfer",
+      "family_group_transfer",
+      "luggage_heavy_trip"
+    ],
+    "mobility_need": "airport_transfer, multi_city_transfer, family_group_transfer, luggage_heavy_trip; market need: private charter, family trip, luggage-heavy sightseeing route",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "bridge distance",
+      "late arrival",
+      "large luggage"
+    ],
+    "raw_location_type": "airport",
+    "region": "Osaka",
+    "related_events": [
+      "Kansai inbound arrivals",
+      "late-night airport transfer"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Sakura Season",
+      "Golden Week",
+      "Summer Vacation",
+      "Christmas and Year End",
+      "Chinese New Year Travel",
+      "Long Weekends",
+      "Exhibitions Concerts Sports Events"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 7,
+    "transfer_complexity_score": 84,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 76,
+    "country": "Japan",
+    "crowd_pressure_score": 80,
+    "demand_heat_score": 92,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-NARITA",
+    "location_name": "Narita Airport",
+    "location_type": "airport",
+    "luggage_difficulty_score": 91,
+    "market": "US",
+    "market_opportunity_score": 92,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "multi_city_transfer",
+      "family_group_transfer",
+      "luggage_heavy_trip"
+    ],
+    "mobility_need": "airport_transfer, multi_city_transfer, family_group_transfer, luggage_heavy_trip; market need: airport transfer, family trip, luggage-heavy private movement",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "long transfer distance",
+      "rail transfer confusion",
+      "large luggage"
+    ],
+    "raw_location_type": "airport",
+    "region": "Chiba",
+    "related_events": [
+      "long-distance airport transfers",
+      "inbound peak arrivals"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Sakura Season",
+      "Summer Vacation",
+      "Autumn Leaves Season",
+      "Christmas and Year End",
+      "Japan New Year",
+      "School Holidays",
+      "Chinese New Year Travel",
+      "Golden Week"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 6,
+    "transfer_complexity_score": 88,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 76,
+    "country": "Japan",
+    "crowd_pressure_score": 82,
+    "demand_heat_score": 92,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-HANEDA",
+    "location_name": "Haneda Airport",
+    "location_type": "airport",
+    "luggage_difficulty_score": 90,
+    "market": "US",
+    "market_opportunity_score": 92,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "family_group_transfer",
+      "night_arrival",
+      "luggage_heavy_trip"
+    ],
+    "mobility_need": "airport_transfer, family_group_transfer, night_arrival, luggage_heavy_trip; market need: airport transfer, family trip, luggage-heavy private movement",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "late train anxiety",
+      "airport queue uncertainty",
+      "large luggage"
+    ],
+    "raw_location_type": "airport",
+    "region": "Tokyo",
+    "related_events": [
+      "international arrivals",
+      "late-night arrivals"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-004",
+      "INTEL-RANK-005"
+    ],
+    "related_seasons": [
+      "Sakura Season",
+      "Summer Vacation",
+      "Autumn Leaves Season",
+      "Christmas and Year End",
+      "Japan New Year",
+      "School Holidays",
+      "Chinese New Year Travel",
+      "Golden Week"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 6,
+    "transfer_complexity_score": 80,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 76,
+    "country": "Japan",
+    "crowd_pressure_score": 79,
+    "demand_heat_score": 92,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-KANSAI-AIRPORT",
+    "location_name": "Kansai Airport",
+    "location_type": "airport",
+    "luggage_difficulty_score": 89,
+    "market": "US",
+    "market_opportunity_score": 92,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "multi_city_transfer",
+      "family_group_transfer",
+      "luggage_heavy_trip"
+    ],
+    "mobility_need": "airport_transfer, multi_city_transfer, family_group_transfer, luggage_heavy_trip; market need: airport transfer, family trip, luggage-heavy private movement",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "bridge distance",
+      "late arrival",
+      "large luggage"
+    ],
+    "raw_location_type": "airport",
+    "region": "Osaka",
+    "related_events": [
+      "Kansai inbound arrivals",
+      "late-night airport transfer"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Sakura Season",
+      "Summer Vacation",
+      "Autumn Leaves Season",
+      "Christmas and Year End",
+      "Japan New Year",
+      "School Holidays",
+      "Exhibitions Concerts Sports Events",
+      "Chinese New Year Travel"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 7,
+    "transfer_complexity_score": 84,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 76,
+    "country": "Japan",
+    "crowd_pressure_score": 82,
+    "demand_heat_score": 92,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-OSAKA",
+    "location_name": "Osaka",
+    "location_type": "city",
+    "luggage_difficulty_score": 84,
+    "market": "Taiwan",
+    "market_opportunity_score": 96,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "station_to_hotel",
+      "private_charter",
+      "family_trip"
+    ],
+    "mobility_need": "airport_transfer, station_to_hotel, private_charter, family_trip; market need: private charter, family trip, luggage-heavy sightseeing route",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "airport-to-city distance",
+      "hotel congestion",
+      "family luggage"
+    ],
+    "raw_location_type": "city",
+    "region": "Kansai",
+    "related_events": [
+      "citywide travel",
+      "shopping and food district movement"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-005"
+    ],
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Sakura Season",
+      "Golden Week",
+      "Summer Vacation",
+      "Christmas and Year End",
+      "Chinese New Year Travel",
+      "Long Weekends",
+      "Exhibitions Concerts Sports Events"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 7,
+    "transfer_complexity_score": 78,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 76,
+    "country": "Japan",
+    "crowd_pressure_score": 79,
+    "demand_heat_score": 92,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-MOUNT-FUJI",
+    "location_name": "Mount Fuji",
+    "location_type": "attraction",
+    "luggage_difficulty_score": 74,
+    "market": "Taiwan",
+    "market_opportunity_score": 96,
+    "mobility_demand_types": [
+      "private_charter",
+      "sightseeing_route",
+      "family_trip",
+      "elderly_support"
+    ],
+    "mobility_need": "private_charter, sightseeing_route, family_trip, elderly_support; market need: private charter, family trip, luggage-heavy sightseeing route",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "long day-trip route",
+      "weather changes",
+      "public transport complexity"
+    ],
+    "raw_location_type": "attraction",
+    "region": "Yamanashi / Shizuoka",
+    "related_events": [
+      "Fuji sightseeing",
+      "seasonal day trips"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-005",
+      "INTEL-RANK-002",
+      "INTEL-RANK-010"
+    ],
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Sakura Season",
+      "Golden Week",
+      "Summer Vacation",
+      "Christmas and Year End",
+      "Chinese New Year Travel",
+      "Long Weekends",
+      "Japan New Year"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 7,
+    "transfer_complexity_score": 87,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 68,
+    "country": "Japan",
+    "crowd_pressure_score": 88,
+    "demand_heat_score": 91,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-TOKYO",
+    "location_name": "Tokyo",
+    "location_type": "city",
+    "luggage_difficulty_score": 86,
+    "market": "Korea",
+    "market_opportunity_score": 94,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "station_to_hotel",
+      "private_charter",
+      "night_arrival"
+    ],
+    "mobility_need": "airport_transfer, station_to_hotel, private_charter, night_arrival; market need: airport transfer, family route, shopping and luggage support",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "complex rail transfers",
+      "large luggage"
+    ],
+    "raw_location_type": "city",
+    "region": "Kanto",
+    "related_events": [
+      "citywide seasonal travel",
+      "airport arrival peaks",
+      "shopping and hotel district movement"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-007",
+      "INTEL-RANK-005",
+      "INTEL-RANK-002",
+      "INTEL-RANK-013"
+    ],
+    "related_seasons": [
+      "Golden Week",
+      "Sakura Season",
+      "Summer Vacation",
+      "Autumn Leaves Season",
+      "Christmas and Year End",
+      "Japan New Year",
+      "Long Weekends",
+      "School Holidays"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 8,
+    "transfer_complexity_score": 92,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 68,
+    "country": "Japan",
+    "crowd_pressure_score": 91,
+    "demand_heat_score": 91,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-KYOTO",
+    "location_name": "Kyoto",
+    "location_type": "city",
+    "luggage_difficulty_score": 83,
+    "market": "Korea",
+    "market_opportunity_score": 94,
+    "mobility_demand_types": [
+      "private_charter",
+      "sightseeing_route",
+      "station_to_hotel",
+      "elderly_support"
+    ],
+    "mobility_need": "private_charter, sightseeing_route, station_to_hotel, elderly_support; market need: airport transfer, family route, shopping and luggage support",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "crowded buses",
+      "scattered temples"
+    ],
+    "raw_location_type": "city",
+    "region": "Kansai",
+    "related_events": [
+      "temple routes",
+      "seasonal sightseeing peaks"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Golden Week",
+      "Sakura Season",
+      "Summer Vacation",
+      "Autumn Leaves Season",
+      "Japan New Year",
+      "Long Weekends",
+      "Exhibitions Concerts Sports Events",
+      "Chinese New Year Travel"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 7,
+    "transfer_complexity_score": 86,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 76,
+    "country": "Japan",
+    "crowd_pressure_score": 82,
+    "demand_heat_score": 91,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-OSAKA",
+    "location_name": "Osaka",
+    "location_type": "city",
+    "luggage_difficulty_score": 84,
+    "market": "US",
+    "market_opportunity_score": 92,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "station_to_hotel",
+      "private_charter",
+      "family_trip"
+    ],
+    "mobility_need": "airport_transfer, station_to_hotel, private_charter, family_trip; market need: airport transfer, family trip, luggage-heavy private movement",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "airport-to-city distance",
+      "hotel congestion",
+      "family luggage"
+    ],
+    "raw_location_type": "city",
+    "region": "Kansai",
+    "related_events": [
+      "citywide travel",
+      "shopping and food district movement"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-005",
+      "INTEL-RANK-002"
+    ],
+    "related_seasons": [
+      "Sakura Season",
+      "Summer Vacation",
+      "Autumn Leaves Season",
+      "Christmas and Year End",
+      "Japan New Year",
+      "School Holidays",
+      "Exhibitions Concerts Sports Events",
+      "Chinese New Year Travel"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 7,
+    "transfer_complexity_score": 78,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 76,
+    "country": "Japan",
+    "crowd_pressure_score": 82,
+    "demand_heat_score": 91,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-TOKYO-BIG-SIGHT",
+    "location_name": "Tokyo Big Sight",
+    "location_type": "event_venue",
+    "luggage_difficulty_score": 78,
+    "market": "Taiwan",
+    "market_opportunity_score": 96,
+    "mobility_demand_types": [
+      "event_pickup",
+      "airport_transfer",
+      "station_to_hotel",
+      "group_transfer"
+    ],
+    "mobility_need": "event_pickup, airport_transfer, station_to_hotel, group_transfer; market need: private charter, family trip, luggage-heavy sightseeing route",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "venue exit congestion"
+    ],
+    "raw_location_type": "exhibition_center",
+    "region": "Tokyo",
+    "related_events": [
+      "trade shows",
+      "conference arrivals",
+      "launch events"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Sakura Season",
+      "Golden Week",
+      "Summer Vacation",
+      "Christmas and Year End",
+      "Chinese New Year Travel",
+      "Long Weekends",
+      "Exhibitions Concerts Sports Events"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 7,
+    "transfer_complexity_score": 76,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 64,
+    "country": "Japan",
+    "crowd_pressure_score": 90,
+    "demand_heat_score": 90,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-SUZUKA",
+    "location_name": "Suzuka Circuit",
+    "location_type": "event_venue",
+    "luggage_difficulty_score": 70,
+    "market": "Taiwan",
+    "market_opportunity_score": 96,
+    "mobility_demand_types": [
+      "event_pickup",
+      "private_charter",
+      "group_transfer",
+      "night_return"
+    ],
+    "mobility_need": "event_pickup, private_charter, group_transfer, night_return; market need: private charter, family trip, luggage-heavy sightseeing route",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "venue exit congestion"
+    ],
+    "raw_location_type": "racing_venue",
+    "region": "Mie",
+    "related_events": [
+      "F1 / racing",
+      "motorsport race weekend"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Golden Week",
+      "Long Weekends",
+      "Exhibitions Concerts Sports Events",
+      "Japan New Year"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 3,
+    "transfer_complexity_score": 89,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 76,
+    "country": "Japan",
+    "crowd_pressure_score": 79,
+    "demand_heat_score": 90,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-MOUNT-FUJI",
+    "location_name": "Mount Fuji",
+    "location_type": "attraction",
+    "luggage_difficulty_score": 74,
+    "market": "US",
+    "market_opportunity_score": 92,
+    "mobility_demand_types": [
+      "private_charter",
+      "sightseeing_route",
+      "family_trip",
+      "elderly_support"
+    ],
+    "mobility_need": "private_charter, sightseeing_route, family_trip, elderly_support; market need: airport transfer, family trip, luggage-heavy private movement",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "long day-trip route",
+      "weather changes",
+      "public transport complexity"
+    ],
+    "raw_location_type": "attraction",
+    "region": "Yamanashi / Shizuoka",
+    "related_events": [
+      "Fuji sightseeing",
+      "seasonal day trips"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-005",
+      "INTEL-RANK-002",
+      "INTEL-RANK-010",
+      "INTEL-RANK-012"
+    ],
+    "related_seasons": [
+      "Sakura Season",
+      "Summer Vacation",
+      "Autumn Leaves Season",
+      "Christmas and Year End",
+      "Japan New Year",
+      "School Holidays",
+      "Chinese New Year Travel",
+      "Golden Week"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 6,
+    "transfer_complexity_score": 87,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 66,
+    "country": "Japan",
+    "crowd_pressure_score": 86,
+    "demand_heat_score": 90,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-SHINJUKU",
+    "location_name": "Shinjuku",
+    "location_type": "shopping_district",
+    "luggage_difficulty_score": 82,
+    "market": "Taiwan",
+    "market_opportunity_score": 96,
+    "mobility_demand_types": [
+      "station_to_hotel",
+      "night_arrival",
+      "local_transfer"
+    ],
+    "mobility_need": "station_to_hotel, night_arrival, local_transfer; market need: private charter, family trip, luggage-heavy sightseeing route",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "station maze",
+      "hotel pickup confusion"
+    ],
+    "raw_location_type": "commercial_district",
+    "region": "Tokyo",
+    "related_events": [
+      "hotel district arrivals",
+      "night entertainment movement"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Sakura Season",
+      "Christmas and Year End",
+      "Golden Week"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 2,
+    "transfer_complexity_score": 94,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 76,
+    "country": "Japan",
+    "crowd_pressure_score": 82,
+    "demand_heat_score": 90,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-TOKYO-BIG-SIGHT",
+    "location_name": "Tokyo Big Sight",
+    "location_type": "event_venue",
+    "luggage_difficulty_score": 78,
+    "market": "US",
+    "market_opportunity_score": 92,
+    "mobility_demand_types": [
+      "event_pickup",
+      "airport_transfer",
+      "station_to_hotel",
+      "group_transfer"
+    ],
+    "mobility_need": "event_pickup, airport_transfer, station_to_hotel, group_transfer; market need: airport transfer, family trip, luggage-heavy private movement",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "venue exit congestion"
+    ],
+    "raw_location_type": "exhibition_center",
+    "region": "Tokyo",
+    "related_events": [
+      "trade shows",
+      "conference arrivals",
+      "launch events"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Sakura Season",
+      "Summer Vacation",
+      "Autumn Leaves Season",
+      "Christmas and Year End",
+      "Japan New Year",
+      "School Holidays",
+      "Exhibitions Concerts Sports Events",
+      "Chinese New Year Travel"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 7,
+    "transfer_complexity_score": 76,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 68,
+    "country": "Japan",
+    "crowd_pressure_score": 82,
+    "demand_heat_score": 89,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-OSAKA",
+    "location_name": "Osaka",
+    "location_type": "city",
+    "luggage_difficulty_score": 84,
+    "market": "Korea",
+    "market_opportunity_score": 94,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "station_to_hotel",
+      "private_charter",
+      "family_trip"
+    ],
+    "mobility_need": "airport_transfer, station_to_hotel, private_charter, family_trip; market need: airport transfer, family route, shopping and luggage support",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "airport-to-city distance",
+      "hotel congestion",
+      "family luggage"
+    ],
+    "raw_location_type": "city",
+    "region": "Kansai",
+    "related_events": [
+      "citywide travel",
+      "shopping and food district movement"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-005",
+      "INTEL-RANK-002"
+    ],
+    "related_seasons": [
+      "Golden Week",
+      "Sakura Season",
+      "Summer Vacation",
+      "Autumn Leaves Season",
+      "Christmas and Year End",
+      "Japan New Year",
+      "Long Weekends",
+      "School Holidays"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 9,
+    "transfer_complexity_score": 78,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 68,
+    "country": "Japan",
+    "crowd_pressure_score": 90,
+    "demand_heat_score": 89,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-SUZUKA",
+    "location_name": "Suzuka Circuit",
+    "location_type": "event_venue",
+    "luggage_difficulty_score": 70,
+    "market": "Korea",
+    "market_opportunity_score": 94,
+    "mobility_demand_types": [
+      "event_pickup",
+      "private_charter",
+      "group_transfer",
+      "night_return"
+    ],
+    "mobility_need": "event_pickup, private_charter, group_transfer, night_return; market need: airport transfer, family route, shopping and luggage support",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "venue exit congestion"
+    ],
+    "raw_location_type": "racing_venue",
+    "region": "Mie",
+    "related_events": [
+      "F1 / racing",
+      "motorsport race weekend"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Golden Week",
+      "Autumn Leaves Season",
+      "Japan New Year",
+      "Long Weekends",
+      "Exhibitions Concerts Sports Events"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 5,
+    "transfer_complexity_score": 89,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 68,
+    "country": "Japan",
+    "crowd_pressure_score": 79,
+    "demand_heat_score": 89,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-MOUNT-FUJI",
+    "location_name": "Mount Fuji",
+    "location_type": "attraction",
+    "luggage_difficulty_score": 74,
+    "market": "Korea",
+    "market_opportunity_score": 94,
+    "mobility_demand_types": [
+      "private_charter",
+      "sightseeing_route",
+      "family_trip",
+      "elderly_support"
+    ],
+    "mobility_need": "private_charter, sightseeing_route, family_trip, elderly_support; market need: airport transfer, family route, shopping and luggage support",
+    "pain_clusters": [
+      "Family trip mobility stress",
+      "Airport transfer confusion",
+      "Public transport anxiety",
+      "long day-trip route",
+      "weather changes",
+      "public transport complexity"
+    ],
+    "raw_location_type": "attraction",
+    "region": "Yamanashi / Shizuoka",
+    "related_events": [
+      "Fuji sightseeing",
+      "seasonal day trips"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-007",
+      "INTEL-RANK-005",
+      "INTEL-RANK-002",
+      "INTEL-RANK-010",
+      "INTEL-RANK-012"
+    ],
+    "related_seasons": [
+      "Golden Week",
+      "Sakura Season",
+      "Summer Vacation",
+      "Autumn Leaves Season",
+      "Christmas and Year End",
+      "Japan New Year",
+      "Long Weekends",
+      "School Holidays"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 8,
+    "transfer_complexity_score": 87,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 66,
+    "country": "Japan",
+    "crowd_pressure_score": 86,
+    "demand_heat_score": 89,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-SHINJUKU",
+    "location_name": "Shinjuku",
+    "location_type": "shopping_district",
+    "luggage_difficulty_score": 82,
+    "market": "US",
+    "market_opportunity_score": 92,
+    "mobility_demand_types": [
+      "station_to_hotel",
+      "night_arrival",
+      "local_transfer"
+    ],
+    "mobility_need": "station_to_hotel, night_arrival, local_transfer; market need: airport transfer, family trip, luggage-heavy private movement",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "station maze",
+      "hotel pickup confusion"
+    ],
+    "raw_location_type": "commercial_district",
+    "region": "Tokyo",
+    "related_events": [
+      "hotel district arrivals",
+      "night entertainment movement"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Sakura Season",
+      "Christmas and Year End",
+      "Golden Week"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 2,
+    "transfer_complexity_score": 94,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 68,
+    "country": "Japan",
+    "crowd_pressure_score": 82,
+    "demand_heat_score": 89,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-TOKYO-BIG-SIGHT",
+    "location_name": "Tokyo Big Sight",
+    "location_type": "event_venue",
+    "luggage_difficulty_score": 78,
+    "market": "Korea",
+    "market_opportunity_score": 94,
+    "mobility_demand_types": [
+      "event_pickup",
+      "airport_transfer",
+      "station_to_hotel",
+      "group_transfer"
+    ],
+    "mobility_need": "event_pickup, airport_transfer, station_to_hotel, group_transfer; market need: airport transfer, family route, shopping and luggage support",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "venue exit congestion"
+    ],
+    "raw_location_type": "exhibition_center",
+    "region": "Tokyo",
+    "related_events": [
+      "trade shows",
+      "conference arrivals",
+      "launch events"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Golden Week",
+      "Sakura Season",
+      "Summer Vacation",
+      "Autumn Leaves Season",
+      "Christmas and Year End",
+      "Japan New Year",
+      "Long Weekends",
+      "School Holidays"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 9,
+    "transfer_complexity_score": 76,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 74,
+    "country": "Japan",
+    "crowd_pressure_score": 74,
+    "demand_heat_score": 89,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-SAPPORO",
+    "location_name": "Sapporo",
+    "location_type": "city",
+    "luggage_difficulty_score": 83,
+    "market": "Southeast Asia",
+    "market_opportunity_score": 91,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "winter_transfer",
+      "family_trip",
+      "private_charter"
+    ],
+    "mobility_need": "airport_transfer, winter_transfer, family_trip, private_charter; market need: airport transfer, group route, seasonal itinerary support",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "snow luggage",
+      "winter road risk",
+      "airport transfer timing"
+    ],
+    "raw_location_type": "city",
+    "region": "Hokkaido",
+    "related_events": [
+      "winter travel",
+      "summer escape travel"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Golden Week",
+      "Christmas and Year End",
+      "Japan New Year",
+      "School Holidays",
+      "Summer Vacation"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 1,
+    "transfer_complexity_score": 76,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 75,
+    "country": "Japan",
+    "crowd_pressure_score": 84,
+    "demand_heat_score": 89,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-UENO",
+    "location_name": "Ueno",
+    "location_type": "attraction",
+    "luggage_difficulty_score": 79,
+    "market": "US",
+    "market_opportunity_score": 92,
+    "mobility_demand_types": [
+      "sightseeing_route",
+      "station_to_hotel",
+      "private_charter"
+    ],
+    "mobility_need": "sightseeing_route, station_to_hotel, private_charter; market need: airport transfer, family trip, luggage-heavy private movement",
+    "pain_clusters": [
+      "Family trip mobility stress",
+      "Airport transfer confusion",
+      "Public transport anxiety",
+      "park crowds",
+      "station crowding",
+      "family walking burden"
+    ],
+    "raw_location_type": "attraction",
+    "region": "Tokyo",
+    "related_events": [
+      "park cherry blossom viewing",
+      "museum visits"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-007",
+      "INTEL-RANK-005",
+      "INTEL-RANK-002",
+      "INTEL-RANK-010",
+      "INTEL-RANK-012"
+    ],
+    "related_seasons": [
+      "Sakura Season",
+      "Golden Week"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 1,
+    "transfer_complexity_score": 72,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 75,
+    "country": "Japan",
+    "crowd_pressure_score": 84,
+    "demand_heat_score": 89,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-UENO",
+    "location_name": "Ueno",
+    "location_type": "attraction",
+    "luggage_difficulty_score": 79,
+    "market": "Taiwan",
+    "market_opportunity_score": 96,
+    "mobility_demand_types": [
+      "sightseeing_route",
+      "station_to_hotel",
+      "private_charter"
+    ],
+    "mobility_need": "sightseeing_route, station_to_hotel, private_charter; market need: private charter, family trip, luggage-heavy sightseeing route",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "park crowds",
+      "station crowding",
+      "family walking burden"
+    ],
+    "raw_location_type": "attraction",
+    "region": "Tokyo",
+    "related_events": [
+      "park cherry blossom viewing",
+      "museum visits"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-007",
+      "INTEL-RANK-005",
+      "INTEL-RANK-002"
+    ],
+    "related_seasons": [
+      "Sakura Season",
+      "Golden Week"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 1,
+    "transfer_complexity_score": 72,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 52,
+    "country": "Japan",
+    "crowd_pressure_score": 80,
+    "demand_heat_score": 88,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-NARITA",
+    "location_name": "Narita Airport",
+    "location_type": "airport",
+    "luggage_difficulty_score": 91,
+    "market": "China outbound",
+    "market_opportunity_score": 93,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "multi_city_transfer",
+      "family_group_transfer",
+      "luggage_heavy_trip"
+    ],
+    "mobility_need": "airport_transfer, multi_city_transfer, family_group_transfer, luggage_heavy_trip; market need: airport pickup, private charter, luggage-heavy shopping route",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "long transfer distance"
+    ],
+    "raw_location_type": "airport",
+    "region": "Chiba",
+    "related_events": [
+      "long-distance airport transfers",
+      "inbound peak arrivals"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Chinese New Year Travel",
+      "Autumn Leaves Season",
+      "Christmas and Year End",
+      "Golden Week",
+      "Japan New Year",
+      "Long Weekends",
+      "Sakura Season",
+      "School Holidays"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 1,
+    "transfer_complexity_score": 88,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 52,
+    "country": "Japan",
+    "crowd_pressure_score": 82,
+    "demand_heat_score": 88,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-HANEDA",
+    "location_name": "Haneda Airport",
+    "location_type": "airport",
+    "luggage_difficulty_score": 90,
+    "market": "China outbound",
+    "market_opportunity_score": 93,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "family_group_transfer",
+      "night_arrival",
+      "luggage_heavy_trip"
+    ],
+    "mobility_need": "airport_transfer, family_group_transfer, night_arrival, luggage_heavy_trip; market need: airport pickup, private charter, luggage-heavy shopping route",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Seasonal crowd pressure",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "late train anxiety"
+    ],
+    "raw_location_type": "airport",
+    "region": "Tokyo",
+    "related_events": [
+      "international arrivals",
+      "late-night arrivals"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-004",
+      "INTEL-RANK-005"
+    ],
+    "related_seasons": [
+      "Chinese New Year Travel",
+      "Autumn Leaves Season",
+      "Christmas and Year End",
+      "Golden Week",
+      "Japan New Year",
+      "Long Weekends",
+      "Sakura Season",
+      "School Holidays"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 1,
+    "transfer_complexity_score": 80,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 52,
+    "country": "Japan",
+    "crowd_pressure_score": 79,
+    "demand_heat_score": 88,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-KANSAI-AIRPORT",
+    "location_name": "Kansai Airport",
+    "location_type": "airport",
+    "luggage_difficulty_score": 89,
+    "market": "China outbound",
+    "market_opportunity_score": 93,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "multi_city_transfer",
+      "family_group_transfer",
+      "luggage_heavy_trip"
+    ],
+    "mobility_need": "airport_transfer, multi_city_transfer, family_group_transfer, luggage_heavy_trip; market need: airport pickup, private charter, luggage-heavy shopping route",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "bridge distance"
+    ],
+    "raw_location_type": "airport",
+    "region": "Osaka",
+    "related_events": [
+      "Kansai inbound arrivals",
+      "late-night airport transfer"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Chinese New Year Travel",
+      "Autumn Leaves Season",
+      "Christmas and Year End",
+      "Exhibitions Concerts Sports Events",
+      "Golden Week",
+      "Japan New Year",
+      "Long Weekends",
+      "Sakura Season"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 1,
+    "transfer_complexity_score": 84,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 64,
+    "country": "Japan",
+    "crowd_pressure_score": 90,
+    "demand_heat_score": 88,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-SUZUKA",
+    "location_name": "Suzuka Circuit",
+    "location_type": "event_venue",
+    "luggage_difficulty_score": 70,
+    "market": "Europe",
+    "market_opportunity_score": 90,
+    "mobility_demand_types": [
+      "event_pickup",
+      "private_charter",
+      "group_transfer",
+      "night_return"
+    ],
+    "mobility_need": "event_pickup, private_charter, group_transfer, night_return; market need: multi-city transfer, station-to-hotel, airport pickup",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "venue exit congestion"
+    ],
+    "raw_location_type": "racing_venue",
+    "region": "Mie",
+    "related_events": [
+      "F1 / racing",
+      "motorsport race weekend"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Japan New Year",
+      "Exhibitions Concerts Sports Events",
+      "Golden Week",
+      "Long Weekends"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 3,
+    "transfer_complexity_score": 89,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 74,
+    "country": "Japan",
+    "crowd_pressure_score": 78,
+    "demand_heat_score": 88,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-OKINAWA",
+    "location_name": "Okinawa",
+    "location_type": "attraction",
+    "luggage_difficulty_score": 82,
+    "market": "Southeast Asia",
+    "market_opportunity_score": 91,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "family_trip",
+      "private_charter",
+      "resort_transfer"
+    ],
+    "mobility_need": "airport_transfer, family_trip, private_charter, resort_transfer; market need: airport transfer, group route, seasonal itinerary support",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "rental car shortage",
+      "family luggage",
+      "resort distance",
+      "heat fatigue"
+    ],
+    "raw_location_type": "attraction",
+    "region": "Okinawa",
+    "related_events": [
+      "island resort travel",
+      "family summer trips"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-005",
+      "INTEL-RANK-002",
+      "INTEL-RANK-010"
+    ],
+    "related_seasons": [
+      "Golden Week",
+      "School Holidays",
+      "Summer Vacation"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 1,
+    "transfer_complexity_score": 74,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 68,
+    "country": "Japan",
+    "crowd_pressure_score": 74,
+    "demand_heat_score": 87,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-SAPPORO",
+    "location_name": "Sapporo",
+    "location_type": "city",
+    "luggage_difficulty_score": 83,
+    "market": "Korea",
+    "market_opportunity_score": 94,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "winter_transfer",
+      "family_trip",
+      "private_charter"
+    ],
+    "mobility_need": "airport_transfer, winter_transfer, family_trip, private_charter; market need: airport transfer, family route, shopping and luggage support",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "snow luggage",
+      "winter road risk",
+      "airport transfer timing"
+    ],
+    "raw_location_type": "city",
+    "region": "Hokkaido",
+    "related_events": [
+      "winter travel",
+      "summer escape travel"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Golden Week",
+      "Summer Vacation",
+      "Christmas and Year End",
+      "Japan New Year",
+      "School Holidays"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 5,
+    "transfer_complexity_score": 76,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 64,
+    "country": "Japan",
+    "crowd_pressure_score": 70,
+    "demand_heat_score": 87,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-CHUBU-AIRPORT",
+    "location_name": "Chubu Centrair Airport",
+    "location_type": "airport",
+    "luggage_difficulty_score": 80,
+    "market": "Taiwan",
+    "market_opportunity_score": 96,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "event_pickup",
+      "multi_city_transfer"
+    ],
+    "mobility_need": "airport_transfer, event_pickup, multi_city_transfer; market need: private charter, family trip, luggage-heavy sightseeing route",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "regional transfer uncertainty",
+      "race weekend luggage",
+      "airport-to-venue distance"
+    ],
+    "raw_location_type": "airport",
+    "region": "Aichi",
+    "related_events": [
+      "Nagoya event arrivals",
+      "Suzuka race transfers"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Golden Week",
+      "Long Weekends",
+      "Exhibitions Concerts Sports Events",
+      "Japan New Year"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 3,
+    "transfer_complexity_score": 78,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 54,
+    "country": "Japan",
+    "crowd_pressure_score": 86,
+    "demand_heat_score": 86,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-SHINJUKU",
+    "location_name": "Shinjuku",
+    "location_type": "shopping_district",
+    "luggage_difficulty_score": 82,
+    "market": "Korea",
+    "market_opportunity_score": 94,
+    "mobility_demand_types": [
+      "station_to_hotel",
+      "night_arrival",
+      "local_transfer"
+    ],
+    "mobility_need": "station_to_hotel, night_arrival, local_transfer; market need: airport transfer, family route, shopping and luggage support",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "station maze",
+      "hotel pickup confusion"
+    ],
+    "raw_location_type": "commercial_district",
+    "region": "Tokyo",
+    "related_events": [
+      "hotel district arrivals",
+      "night entertainment movement"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Sakura Season",
+      "Christmas and Year End",
+      "Golden Week"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 2,
+    "transfer_complexity_score": 94,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 66,
+    "country": "Japan",
+    "crowd_pressure_score": 74,
+    "demand_heat_score": 86,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-SAPPORO",
+    "location_name": "Sapporo",
+    "location_type": "city",
+    "luggage_difficulty_score": 83,
+    "market": "US",
+    "market_opportunity_score": 92,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "winter_transfer",
+      "family_trip",
+      "private_charter"
+    ],
+    "mobility_need": "airport_transfer, winter_transfer, family_trip, private_charter; market need: airport transfer, family trip, luggage-heavy private movement",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "snow luggage",
+      "winter road risk",
+      "airport transfer timing"
+    ],
+    "raw_location_type": "city",
+    "region": "Hokkaido",
+    "related_events": [
+      "winter travel",
+      "summer escape travel"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Summer Vacation",
+      "Christmas and Year End",
+      "Japan New Year",
+      "School Holidays",
+      "Golden Week"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 4,
+    "transfer_complexity_score": 76,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 68,
+    "country": "Japan",
+    "crowd_pressure_score": 70,
+    "demand_heat_score": 86,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-CHUBU-AIRPORT",
+    "location_name": "Chubu Centrair Airport",
+    "location_type": "airport",
+    "luggage_difficulty_score": 80,
+    "market": "Korea",
+    "market_opportunity_score": 94,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "event_pickup",
+      "multi_city_transfer"
+    ],
+    "mobility_need": "airport_transfer, event_pickup, multi_city_transfer; market need: airport transfer, family route, shopping and luggage support",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "regional transfer uncertainty",
+      "race weekend luggage",
+      "airport-to-venue distance"
+    ],
+    "raw_location_type": "airport",
+    "region": "Aichi",
+    "related_events": [
+      "Nagoya event arrivals",
+      "Suzuka race transfers"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Golden Week",
+      "Autumn Leaves Season",
+      "Japan New Year",
+      "Long Weekends",
+      "Exhibitions Concerts Sports Events"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 5,
+    "transfer_complexity_score": 78,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 64,
+    "country": "Japan",
+    "crowd_pressure_score": 72,
+    "demand_heat_score": 86,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-NAGOYA",
+    "location_name": "Nagoya",
+    "location_type": "city",
+    "luggage_difficulty_score": 72,
+    "market": "Taiwan",
+    "market_opportunity_score": 96,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "event_pickup",
+      "multi_city_transfer",
+      "station_to_hotel"
+    ],
+    "mobility_need": "airport_transfer, event_pickup, multi_city_transfer, station_to_hotel; market need: private charter, family trip, luggage-heavy sightseeing route",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "event transfer timing",
+      "airport-city transfer",
+      "regional route planning"
+    ],
+    "raw_location_type": "city",
+    "region": "Chubu",
+    "related_events": [
+      "event staging city",
+      "Suzuka access",
+      "future Asian Games monitoring"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Golden Week",
+      "Long Weekends",
+      "Exhibitions Concerts Sports Events",
+      "Japan New Year"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 3,
+    "transfer_complexity_score": 74,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 68,
+    "country": "Japan",
+    "crowd_pressure_score": 72,
+    "demand_heat_score": 86,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-NAGOYA",
+    "location_name": "Nagoya",
+    "location_type": "city",
+    "luggage_difficulty_score": 72,
+    "market": "Korea",
+    "market_opportunity_score": 94,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "event_pickup",
+      "multi_city_transfer",
+      "station_to_hotel"
+    ],
+    "mobility_need": "airport_transfer, event_pickup, multi_city_transfer, station_to_hotel; market need: airport transfer, family route, shopping and luggage support",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "event transfer timing",
+      "airport-city transfer",
+      "regional route planning"
+    ],
+    "raw_location_type": "city",
+    "region": "Chubu",
+    "related_events": [
+      "event staging city",
+      "Suzuka access",
+      "future Asian Games monitoring"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Golden Week",
+      "Autumn Leaves Season",
+      "Japan New Year",
+      "Long Weekends",
+      "Exhibitions Concerts Sports Events"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 5,
+    "transfer_complexity_score": 74,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 66,
+    "country": "Japan",
+    "crowd_pressure_score": 78,
+    "demand_heat_score": 86,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-OKINAWA",
+    "location_name": "Okinawa",
+    "location_type": "attraction",
+    "luggage_difficulty_score": 82,
+    "market": "US",
+    "market_opportunity_score": 92,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "family_trip",
+      "private_charter",
+      "resort_transfer"
+    ],
+    "mobility_need": "airport_transfer, family_trip, private_charter, resort_transfer; market need: airport transfer, family trip, luggage-heavy private movement",
+    "pain_clusters": [
+      "Family trip mobility stress",
+      "Airport transfer confusion",
+      "rental car shortage",
+      "family luggage",
+      "resort distance",
+      "heat fatigue"
+    ],
+    "raw_location_type": "attraction",
+    "region": "Okinawa",
+    "related_events": [
+      "island resort travel",
+      "family summer trips"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-007",
+      "INTEL-RANK-005",
+      "INTEL-RANK-002",
+      "INTEL-RANK-010"
+    ],
+    "related_seasons": [
+      "Summer Vacation",
+      "School Holidays",
+      "Golden Week"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 2,
+    "transfer_complexity_score": 74,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 52,
+    "country": "Japan",
+    "crowd_pressure_score": 85,
+    "demand_heat_score": 85,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-SHIBUYA",
+    "location_name": "Shibuya",
+    "location_type": "shopping_district",
+    "luggage_difficulty_score": 76,
+    "market": "Taiwan",
+    "market_opportunity_score": 96,
+    "mobility_demand_types": [
+      "hotel_transfer",
+      "night_arrival",
+      "local_transfer"
+    ],
+    "mobility_need": "hotel_transfer, night_arrival, local_transfer; market need: private charter, family trip, luggage-heavy sightseeing route",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Event pickup and exit demand",
+      "crowded crossings",
+      "pickup point confusion",
+      "late return"
+    ],
+    "raw_location_type": "commercial_district",
+    "region": "Tokyo",
+    "related_events": [
+      "shopping peaks",
+      "night events",
+      "youth travel trends"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-004",
+      "INTEL-RANK-005"
+    ],
+    "related_seasons": [
+      "Christmas and Year End",
+      "Golden Week"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 1,
+    "transfer_complexity_score": 82,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 64,
+    "country": "Japan",
+    "crowd_pressure_score": 78,
+    "demand_heat_score": 85,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-OKINAWA",
+    "location_name": "Okinawa",
+    "location_type": "attraction",
+    "luggage_difficulty_score": 82,
+    "market": "Korea",
+    "market_opportunity_score": 94,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "family_trip",
+      "private_charter",
+      "resort_transfer"
+    ],
+    "mobility_need": "airport_transfer, family_trip, private_charter, resort_transfer; market need: airport transfer, family route, shopping and luggage support",
+    "pain_clusters": [
+      "Family trip mobility stress",
+      "Airport transfer confusion",
+      "rental car shortage",
+      "family luggage",
+      "resort distance",
+      "heat fatigue"
+    ],
+    "raw_location_type": "attraction",
+    "region": "Okinawa",
+    "related_events": [
+      "island resort travel",
+      "family summer trips"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-007",
+      "INTEL-RANK-005",
+      "INTEL-RANK-002",
+      "INTEL-RANK-010"
+    ],
+    "related_seasons": [
+      "Golden Week",
+      "Summer Vacation",
+      "School Holidays"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 3,
+    "transfer_complexity_score": 74,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 52,
+    "country": "Japan",
+    "crowd_pressure_score": 85,
+    "demand_heat_score": 84,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-SHIBUYA",
+    "location_name": "Shibuya",
+    "location_type": "shopping_district",
+    "luggage_difficulty_score": 76,
+    "market": "US",
+    "market_opportunity_score": 92,
+    "mobility_demand_types": [
+      "hotel_transfer",
+      "night_arrival",
+      "local_transfer"
+    ],
+    "mobility_need": "hotel_transfer, night_arrival, local_transfer; market need: airport transfer, family trip, luggage-heavy private movement",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Event pickup and exit demand",
+      "crowded crossings",
+      "pickup point confusion",
+      "late return"
+    ],
+    "raw_location_type": "commercial_district",
+    "region": "Tokyo",
+    "related_events": [
+      "shopping peaks",
+      "night events",
+      "youth travel trends"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-004",
+      "INTEL-RANK-005"
+    ],
+    "related_seasons": [
+      "Christmas and Year End",
+      "Golden Week"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 1,
+    "transfer_complexity_score": 82,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 52,
+    "country": "Japan",
+    "crowd_pressure_score": 85,
+    "demand_heat_score": 84,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-SHIBUYA",
+    "location_name": "Shibuya",
+    "location_type": "shopping_district",
+    "luggage_difficulty_score": 76,
+    "market": "Korea",
+    "market_opportunity_score": 94,
+    "mobility_demand_types": [
+      "hotel_transfer",
+      "night_arrival",
+      "local_transfer"
+    ],
+    "mobility_need": "hotel_transfer, night_arrival, local_transfer; market need: airport transfer, family route, shopping and luggage support",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Event pickup and exit demand",
+      "crowded crossings",
+      "pickup point confusion",
+      "late return"
+    ],
+    "raw_location_type": "commercial_district",
+    "region": "Tokyo",
+    "related_events": [
+      "shopping peaks",
+      "night events",
+      "youth travel trends"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Christmas and Year End",
+      "Golden Week"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 1,
+    "transfer_complexity_score": 82,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 64,
+    "country": "Japan",
+    "crowd_pressure_score": 72,
+    "demand_heat_score": 84,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-NAGOYA",
+    "location_name": "Nagoya",
+    "location_type": "city",
+    "luggage_difficulty_score": 72,
+    "market": "Europe",
+    "market_opportunity_score": 90,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "event_pickup",
+      "multi_city_transfer",
+      "station_to_hotel"
+    ],
+    "mobility_need": "airport_transfer, event_pickup, multi_city_transfer, station_to_hotel; market need: multi-city transfer, station-to-hotel, airport pickup",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "event transfer timing",
+      "airport-city transfer",
+      "regional route planning"
+    ],
+    "raw_location_type": "city",
+    "region": "Chubu",
+    "related_events": [
+      "event staging city",
+      "Suzuka access",
+      "future Asian Games monitoring"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Japan New Year",
+      "Exhibitions Concerts Sports Events",
+      "Golden Week",
+      "Long Weekends"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 3,
+    "transfer_complexity_score": 74,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 52,
+    "country": "Japan",
+    "crowd_pressure_score": 84,
+    "demand_heat_score": 82,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-UENO",
+    "location_name": "Ueno",
+    "location_type": "attraction",
+    "luggage_difficulty_score": 79,
+    "market": "Korea",
+    "market_opportunity_score": 94,
+    "mobility_demand_types": [
+      "sightseeing_route",
+      "station_to_hotel",
+      "private_charter"
+    ],
+    "mobility_need": "sightseeing_route, station_to_hotel, private_charter; market need: airport transfer, family route, shopping and luggage support",
+    "pain_clusters": [
+      "Family trip mobility stress",
+      "Airport transfer confusion",
+      "Public transport anxiety",
+      "park crowds",
+      "station crowding",
+      "family walking burden"
+    ],
+    "raw_location_type": "attraction",
+    "region": "Tokyo",
+    "related_events": [
+      "park cherry blossom viewing",
+      "museum visits"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-007",
+      "INTEL-RANK-005",
+      "INTEL-RANK-002",
+      "INTEL-RANK-010",
+      "INTEL-RANK-012"
+    ],
+    "related_seasons": [
+      "Sakura Season",
+      "Golden Week"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 1,
+    "transfer_complexity_score": 72,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "automatic_driver_contact_enabled": false,
+    "confidence_score": 42,
+    "country": "Japan",
+    "crowd_pressure_score": 70,
+    "demand_heat_score": 69,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "location_id": "LOC-CHUBU-AIRPORT",
+    "location_name": "Chubu Centrair Airport",
+    "location_type": "airport",
+    "luggage_difficulty_score": 80,
+    "market": "China outbound",
+    "market_opportunity_score": 93,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "event_pickup",
+      "multi_city_transfer"
+    ],
+    "mobility_need": "airport_transfer, event_pickup, multi_city_transfer; market need: airport pickup, private charter, luggage-heavy shopping route",
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "regional transfer uncertainty"
+    ],
+    "raw_location_type": "airport",
+    "region": "Aichi",
+    "related_events": [
+      "Nagoya event arrivals",
+      "Suzuka race transfers"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "related_seasons": [
+      "Autumn Leaves Season",
+      "Exhibitions Concerts Sports Events",
+      "Golden Week",
+      "Japan New Year",
+      "Long Weekends"
+    ],
+    "sample_data_only": true,
+    "seasonal_signal_count": 0,
+    "transfer_complexity_score": 78,
+    "write_api_allowed": false
+  }
+]

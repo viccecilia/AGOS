@@ -92,6 +92,7 @@ from services.semi_autonomous_runtime_gate import SemiAutonomousRuntimeGate
 from services.seasonal_demand_calendar_engine import SeasonalDemandCalendarEngine
 from services.seasonal_intelligence_engine import SeasonalIntelligenceEngine
 from services.seasonal_trend_import_trial import SeasonalTrendImportTrial
+from services.spatial_intelligence_engine import SpatialIntelligenceEngine
 from services.strategic_interpretation_engine import StrategicInterpretationEngine
 from services.runtime_trainer_dashboard import RuntimeTrainerDashboard
 from services.strategy_evolution_engine import StrategyEvolutionEngine
@@ -279,6 +280,12 @@ class RuntimeUIBridge:
             seasonal_trend_import_trial.get("seasonalTrendMatches", []),
             seasonal_trend_import_trial.get("seasonalMarketHeatmap", []),
             market_intelligence_matrix.get("marketIntelligenceMatrix", []),
+            intelligence_ranking.get("rankedIntelligence", []),
+        )
+        spatial_intelligence = SpatialIntelligenceEngine().build(
+            location_demand_heatmap.get("locationHeatmap", []),
+            market_intelligence_matrix.get("marketIntelligenceMatrix", []),
+            seasonal_intelligence.get("seasonalIntelligence", []),
             intelligence_ranking.get("rankedIntelligence", []),
         )
         batch_scout_runtime = BatchScoutRuntime().run()
@@ -733,6 +740,11 @@ class RuntimeUIBridge:
             "seasonMarketHeatmap": seasonal_intelligence.get("seasonMarketHeatmap", []),
             "seasonalDemandRanking": seasonal_intelligence.get("seasonalDemandRanking", []),
             "seasonalIntelligenceSummary": seasonal_intelligence.get("seasonalIntelligenceSummary", {}),
+            "spatialIntelligenceEngine": spatial_intelligence,
+            "spatialIntelligence": spatial_intelligence.get("spatialIntelligence", []),
+            "locationMarketHeatmap": spatial_intelligence.get("locationMarketHeatmap", []),
+            "spatialDemandRanking": spatial_intelligence.get("spatialDemandRanking", []),
+            "spatialIntelligenceSummary": spatial_intelligence.get("spatialIntelligenceSummary", {}),
             "locationDemandHeatmap": location_demand_heatmap,
             "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),
