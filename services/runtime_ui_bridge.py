@@ -36,6 +36,7 @@ from services.failure_analysis_engine import FailureAnalysisEngine
 from services.growth_signal_correlation_engine import GrowthSignalCorrelationEngine
 from services.global_batch_intelligence_collection import GlobalBatchIntelligenceCollection
 from services.global_pain_cluster_engine import GlobalPainClusterEngine
+from services.intelligence_ranking_noise_filter import IntelligenceRankingNoiseFilter
 from services.external_evidence_ledger import ExternalEvidenceLedger
 from services.external_action_sandbox import ExternalActionSandbox
 from services.external_drift_monitor import ExternalDriftMonitor
@@ -265,6 +266,12 @@ class RuntimeUIBridge:
             platform_pain_intelligence.get("platformPainProfiles", []),
             market_intelligence_matrix.get("marketIntelligenceMatrix", []),
             global_pain_clusters.get("globalPainClusters", []),
+        )
+        intelligence_ranking = IntelligenceRankingNoiseFilter().build(
+            global_pain_clusters.get("globalPainClusters", []),
+            platform_pain_intelligence.get("platformPainProfiles", []),
+            market_intelligence_matrix.get("marketIntelligenceMatrix", []),
+            cross_platform_correlation.get("crossPlatformCorrelations", []),
         )
         batch_scout_runtime = BatchScoutRuntime().run()
         batch_topic_clustering = BatchTopicClustering().cluster(batch_scout_runtime.get("batchAnalysis", []))
@@ -707,6 +714,12 @@ class RuntimeUIBridge:
             "platformExpansionMap": cross_platform_correlation.get("platformExpansionMap", []),
             "correlationRiskReview": cross_platform_correlation.get("correlationRiskReview", {}),
             "crossPlatformCorrelationSummary": cross_platform_correlation.get("crossPlatformCorrelationSummary", {}),
+            "intelligenceRankingNoiseFilter": intelligence_ranking,
+            "rankedIntelligence": intelligence_ranking.get("rankedIntelligence", []),
+            "highValueIntelligence": intelligence_ranking.get("highValueIntelligence", []),
+            "noiseFilteredSignals": intelligence_ranking.get("noiseFilteredSignals", []),
+            "unsafeSignals": intelligence_ranking.get("unsafeSignals", []),
+            "intelligenceRankingSummary": intelligence_ranking.get("intelligenceRankingSummary", {}),
             "locationDemandHeatmap": location_demand_heatmap,
             "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),

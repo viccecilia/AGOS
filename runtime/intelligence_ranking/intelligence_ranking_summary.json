@@ -1,0 +1,23 @@
+{
+  "all_items_human_review_required": true,
+  "auto_action_allowed": false,
+  "auto_execute_allowed": false,
+  "auto_publish_allowed": false,
+  "auto_reply_allowed": false,
+  "high_value_count": 12,
+  "intelligence_ranking_ready": true,
+  "low_value_count": 0,
+  "monitor_count": 0,
+  "next_recommendation": "Route only human-reviewed high-value intelligence into Seasonal Intelligence Engine; keep monitor, low-value, noise, and unsafe signals blocked.",
+  "noise_count": 1,
+  "noise_enters_action": false,
+  "ranked_count": 14,
+  "status_counts": {
+    "high_value": 12,
+    "noise": 1,
+    "unsafe": 1
+  },
+  "unsafe_count": 1,
+  "unsafe_enters_action": false,
+  "write_api_allowed": false
+}

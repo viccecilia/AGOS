@@ -1,0 +1,52 @@
+[
+  {
+    "auto_action_allowed": false,
+    "auto_execute_allowed": false,
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "evidence_summary": {
+      "content_expansion_fit": "Turn detailed pain question into short hook, explainer, and search FAQ.",
+      "sample_or_read_only": true,
+      "source_record_ids": [
+        "GLOBAL-INTEL-0001",
+        "GLOBAL-INTEL-0006",
+        "GLOBAL-INTEL-0011",
+        "GLOBAL-INTEL-0016",
+        "GLOBAL-INTEL-0021",
+        "GLOBAL-INTEL-0026",
+        "GLOBAL-INTEL-0031"
+      ]
+    },
+    "human_review_required": true,
+    "intelligence_id": "INTEL-RANK-001",
+    "market": "US",
+    "noise_reason": "Risk level is high; keep blocked and require explicit human review.",
+    "pain_cluster": "Airport transfer confusion",
+    "pain_cluster_id": "GLOBAL-PAIN-001",
+    "platform": "Reddit",
+    "ranking_status": "unsafe",
+    "recommended_next_step": "Block from action and require human safety review before any downstream use.",
+    "score_breakdown": {
+      "conversion_potential": 92,
+      "emotion_intensity": 95,
+      "evidence_confidence": 94,
+      "frequency": 100,
+      "market_value": 92,
+      "mobility_relevance": 86,
+      "pain_strength": 100,
+      "platform_fit": 76,
+      "risk_level": 32
+    },
+    "source_id": "CROSS-PLATFORM-CORR-001",
+    "source_pain": "late arrival uncertainty",
+    "source_type": "cross_platform_correlation",
+    "target_platforms": [
+      "TikTok",
+      "YouTube",
+      "SEO / Search"
+    ],
+    "total_score": 85.2,
+    "unsafe_enters_action": false,
+    "write_api_allowed": false
+  }
+]

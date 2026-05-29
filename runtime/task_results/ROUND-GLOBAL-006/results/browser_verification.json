@@ -1,0 +1,17 @@
+{
+  "version": "0.1.138",
+  "currentRound": "ROUND-GLOBAL-006 / AGOS_INTELLIGENCE_RANKING_AND_NOISE_FILTERING",
+  "panelExists": true,
+  "panelHasHighValue": true,
+  "panelHasNoise": true,
+  "panelHasUnsafe": true,
+  "panelHasHumanGate": true,
+  "rankedCount": 14,
+  "highValueCount": 12,
+  "noiseCount": 1,
+  "unsafeCount": 1,
+  "allHumanReview": true,
+  "autoExecuteAllowed": false,
+  "writeApiAllowed": false,
+  "unsafeEntersAction": false
+}

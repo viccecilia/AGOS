@@ -1,0 +1,40 @@
+[
+  {
+    "auto_action_allowed": false,
+    "auto_execute_allowed": false,
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "evidence_summary": {
+      "content_expansion_fit": "Not actionable.",
+      "sample_or_read_only": true,
+      "source_record_ids": []
+    },
+    "human_review_required": true,
+    "intelligence_id": "INTEL-RANK-014",
+    "market": "Global English",
+    "noise_reason": "Low mobility relevance, weak evidence confidence, and no clear problem to solve.",
+    "pain_cluster": "generic travel chatter",
+    "pain_cluster_id": "noise_sample",
+    "platform": "unknown",
+    "ranking_status": "noise",
+    "recommended_next_step": "Do not route into action. Keep only as a filtered noise example for review.",
+    "score_breakdown": {
+      "conversion_potential": 16,
+      "emotion_intensity": 22,
+      "evidence_confidence": 24,
+      "frequency": 18,
+      "market_value": 28,
+      "mobility_relevance": 10,
+      "pain_strength": 20,
+      "platform_fit": 20,
+      "risk_level": 82
+    },
+    "source_id": "NOISE-SAMPLE-001",
+    "source_pain": "nice photos and casual comments without mobility intent",
+    "source_type": "noise_candidate",
+    "target_platforms": [],
+    "total_score": 26.7,
+    "unsafe_enters_action": null,
+    "write_api_allowed": false
+  }
+]
