@@ -1,0 +1,16 @@
+{
+  "round_id": "ROUND-GLOBAL-010",
+  "url": "http://127.0.0.1:8765/project_control_center.html?runtime_ui=1&cache_bust=global010#war-room-growth",
+  "control_center_version": "0.1.142",
+  "panel_exists": true,
+  "mobility_rows": 123,
+  "high_value_mobility_demand": 94,
+  "mobility_noise_signals": 13,
+  "airport_transfer_visible": true,
+  "event_pickup_visible": true,
+  "no_real_mobility_intent_visible": true,
+  "quote_blocked_visible": true,
+  "dispatch_blocked_visible": true,
+  "write_api_blocked_visible": true,
+  "browser_verification": "passed"
+}

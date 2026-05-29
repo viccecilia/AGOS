@@ -57,6 +57,7 @@ from services.manual_promotion_export_pack import ManualPromotionExportPack
 from services.merchant_growth_engine_gate import MerchantGrowthEngineGate
 from services.merchant_promotion_workspace import MerchantPromotionWorkspace
 from services.mobility_demand_intent_engine import MobilityDemandIntentEngine
+from services.mobility_intelligence_engine import MobilityIntelligenceEngine
 from services.opportunity_qualification_engine import OpportunityQualificationEngine
 from services.personality_drift_engine import PersonalityDriftEngine
 from services.personality_isolation_engine import PersonalityIsolationEngine
@@ -291,6 +292,13 @@ class RuntimeUIBridge:
         )
         event_intelligence = EventIntelligenceEngine().build(
             spatial_intelligence.get("spatialIntelligence", [])
+        )
+        mobility_intelligence = MobilityIntelligenceEngine().build(
+            seasonal_intelligence.get("seasonalIntelligence", []),
+            spatial_intelligence.get("spatialIntelligence", []),
+            event_intelligence.get("eventIntelligence", []),
+            mobility_demand_intent.get("mobilityIntents", []),
+            intelligence_ranking.get("rankedIntelligence", []),
         )
         batch_scout_runtime = BatchScoutRuntime().run()
         batch_topic_clustering = BatchTopicClustering().cluster(batch_scout_runtime.get("batchAnalysis", []))
@@ -754,6 +762,11 @@ class RuntimeUIBridge:
             "eventLocationHeatmap": event_intelligence.get("eventLocationHeatmap", []),
             "eventMobilityDemand": event_intelligence.get("eventMobilityDemand", []),
             "eventIntelligenceSummary": event_intelligence.get("eventIntelligenceSummary", {}),
+            "mobilityIntelligenceEngine": mobility_intelligence,
+            "mobilityIntelligence": mobility_intelligence.get("mobilityIntelligence", []),
+            "highValueMobilityDemand": mobility_intelligence.get("highValueMobilityDemand", []),
+            "mobilityNoiseSignals": mobility_intelligence.get("mobilityNoiseSignals", []),
+            "mobilityIntelligenceSummary": mobility_intelligence.get("mobilityIntelligenceSummary", {}),
             "locationDemandHeatmap": location_demand_heatmap,
             "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),

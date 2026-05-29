@@ -1,0 +1,33 @@
+{
+  "airport_transfer_detected": true,
+  "all_items_human_review_required": true,
+  "auto_customer_contact_allowed": false,
+  "auto_dispatch_allowed": false,
+  "auto_driver_contact_allowed": false,
+  "auto_publish_allowed": false,
+  "auto_quote_allowed": false,
+  "auto_reply_allowed": false,
+  "demand_types": [
+    "airport transfer",
+    "elderly support",
+    "event pickup",
+    "family trip",
+    "hotel transfer",
+    "luggage-heavy trip",
+    "multi-city route",
+    "night arrival",
+    "no real mobility intent",
+    "private charter",
+    "sightseeing route"
+  ],
+  "event_pickup_detected": true,
+  "high_value_and_noise_separated": true,
+  "high_value_count": 94,
+  "mobility_count": 123,
+  "mobility_intelligence_ready": true,
+  "next_recommendation": "Use reviewed high-value mobility demand as input for Demand Prediction Engine; keep quotes, dispatch, customer contact, and driver contact blocked.",
+  "no_real_mobility_intent_detected": true,
+  "noise_count": 13,
+  "sample_data_only": true,
+  "write_api_allowed": false
+}
