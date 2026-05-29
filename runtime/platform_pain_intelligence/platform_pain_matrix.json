@@ -1,0 +1,82 @@
+[
+  {
+    "content_format_fit": "detailed reply, checklist, comparison, transparent caveat",
+    "human_review_required": true,
+    "language_style": "long-form, specific, skeptical, experience-based",
+    "platform": "Reddit",
+    "promotion_risk": "high",
+    "reply_risk": "medium",
+    "safe_cta_style": "answer first, disclose context, mention homepage only as optional reference after value",
+    "top_pain": "late arrival uncertainty"
+  },
+  {
+    "content_format_fit": "short hook, fast scenario, visual before-after, comment prompt",
+    "human_review_required": true,
+    "language_style": "short rhythm, emotional hook, compressed pain language",
+    "platform": "TikTok",
+    "promotion_risk": "medium",
+    "reply_risk": "medium",
+    "safe_cta_style": "soft profile reference after a useful tip, no hard sell",
+    "top_pain": "kids and luggage burden"
+  },
+  {
+    "content_format_fit": "carousel, story checklist, saveable mini guide",
+    "human_review_required": true,
+    "language_style": "visual, lifestyle, calm, aspirational but practical",
+    "platform": "Instagram",
+    "promotion_risk": "medium",
+    "reply_risk": "low",
+    "safe_cta_style": "saveable guide CTA with homepage as planning reference",
+    "top_pain": "crowd congestion"
+  },
+  {
+    "content_format_fit": "short explainer, route guide, problem walkthrough",
+    "human_review_required": true,
+    "language_style": "explainer, step-by-step, practical narrative",
+    "platform": "YouTube",
+    "promotion_risk": "medium",
+    "reply_risk": "low",
+    "safe_cta_style": "link as supporting resource after explaining the decision logic",
+    "top_pain": "crowded venue exit"
+  },
+  {
+    "content_format_fit": "short post, thread, trend observation, quick warning",
+    "human_review_required": true,
+    "language_style": "concise, opinionated, trend-aware, fast signal",
+    "platform": "X",
+    "promotion_risk": "medium",
+    "reply_risk": "medium",
+    "safe_cta_style": "one-line resource reference only when directly relevant",
+    "top_pain": "confusing station transfers"
+  },
+  {
+    "content_format_fit": "short conversational post, soft discussion starter",
+    "human_review_required": true,
+    "language_style": "conversational, light, community-style, less formal",
+    "platform": "Threads",
+    "promotion_risk": "medium",
+    "reply_risk": "low",
+    "safe_cta_style": "community-friendly optional reference, avoid repeated CTA",
+    "top_pain": "late arrival uncertainty"
+  },
+  {
+    "content_format_fit": "search article, FAQ, route guide, comparison page",
+    "human_review_required": true,
+    "language_style": "search intent, direct query answer, structured headings",
+    "platform": "SEO / Search",
+    "promotion_risk": "low",
+    "reply_risk": "low",
+    "safe_cta_style": "contextual internal link after satisfying search intent",
+    "top_pain": "kids and luggage burden"
+  },
+  {
+    "content_format_fit": "note angle, checklist, route screenshot plan, saveable tips",
+    "human_review_required": true,
+    "language_style": "experience note, practical warning, visual lifestyle detail",
+    "platform": "Xiaohongshu",
+    "promotion_risk": "medium",
+    "reply_risk": "medium",
+    "safe_cta_style": "soft note-style reference after practical steps, no exaggerated claims",
+    "top_pain": "crowded venue exit"
+  }
+]

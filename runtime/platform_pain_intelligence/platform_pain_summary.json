@@ -1,0 +1,22 @@
+{
+  "all_platforms_human_review_required": true,
+  "auto_publish_allowed": false,
+  "auto_reply_allowed": false,
+  "next_recommendation": "Use platform pain profiles for Market Intelligence Matrix and later review-gated content strategy.",
+  "platform_count": 8,
+  "platform_pain_intelligence_ready": true,
+  "reddit_strong_marketing_allowed": false,
+  "seo_search_intent_ready": true,
+  "supported_platforms": [
+    "Reddit",
+    "TikTok",
+    "Instagram",
+    "YouTube",
+    "X",
+    "Threads",
+    "SEO / Search",
+    "Xiaohongshu"
+  ],
+  "tiktok_short_rhythm_ready": true,
+  "write_api_allowed": false
+}

@@ -1,0 +1,18 @@
+{
+  "all_platforms_human_review_required": true,
+  "auto_publish_allowed": false,
+  "auto_reply_allowed": false,
+  "high_promotion_risk_platforms": [
+    "Reddit"
+  ],
+  "human_review_required": true,
+  "medium_reply_risk_platforms": [
+    "Reddit",
+    "TikTok",
+    "X",
+    "Xiaohongshu"
+  ],
+  "reddit_strong_marketing_allowed": false,
+  "risk_note": "Platform guidance is analysis-only. High-risk platforms require softer CTA and explicit human review.",
+  "write_api_allowed": false
+}

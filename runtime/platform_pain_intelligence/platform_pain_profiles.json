@@ -1,0 +1,290 @@
+[
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "common_emotion": [
+      "anxious",
+      "urgent",
+      "confused",
+      "nervous",
+      "stressed",
+      "careful"
+    ],
+    "common_language_style": "long-form, specific, skeptical, experience-based",
+    "content_format_fit": "detailed reply, checklist, comparison, transparent caveat",
+    "dominant_pain_points": [
+      "late arrival uncertainty",
+      "airport pickup confusion",
+      "confusing station transfers",
+      "language friction",
+      "kids and luggage burden",
+      "multi-stop planning"
+    ],
+    "dominant_topics": [
+      "airport transfer confusion",
+      "public transport anxiety",
+      "family trip mobility stress",
+      "seasonal crowd pressure"
+    ],
+    "human_review_required": true,
+    "platform": "Reddit",
+    "promotion_risk": "high",
+    "question_format": "How do I solve this without getting trapped by tourist logistics?",
+    "record_count": 4,
+    "reply_risk": "medium",
+    "safe_cta_style": "answer first, disclose context, mention homepage only as optional reference after value",
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "common_emotion": [
+      "stressed",
+      "careful",
+      "crowded",
+      "worried",
+      "impatient",
+      "anxious"
+    ],
+    "common_language_style": "short rhythm, emotional hook, compressed pain language",
+    "content_format_fit": "short hook, fast scenario, visual before-after, comment prompt",
+    "dominant_pain_points": [
+      "kids and luggage burden",
+      "multi-stop planning",
+      "crowd congestion",
+      "hotel district pressure",
+      "crowded venue exit",
+      "wait time uncertainty"
+    ],
+    "dominant_topics": [
+      "family trip mobility stress",
+      "seasonal crowd pressure",
+      "event pickup demand",
+      "airport transfer confusion"
+    ],
+    "human_review_required": true,
+    "platform": "TikTok",
+    "promotion_risk": "medium",
+    "question_format": "POV: you land late and transport gets stressful",
+    "record_count": 4,
+    "reply_risk": "medium",
+    "safe_cta_style": "soft profile reference after a useful tip, no hard sell",
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "common_emotion": [
+      "crowded",
+      "worried",
+      "impatient",
+      "anxious",
+      "urgent",
+      "confused"
+    ],
+    "common_language_style": "visual, lifestyle, calm, aspirational but practical",
+    "content_format_fit": "carousel, story checklist, saveable mini guide",
+    "dominant_pain_points": [
+      "crowd congestion",
+      "hotel district pressure",
+      "crowded venue exit",
+      "wait time uncertainty",
+      "late arrival uncertainty",
+      "airport pickup confusion"
+    ],
+    "dominant_topics": [
+      "seasonal crowd pressure",
+      "event pickup demand",
+      "airport transfer confusion",
+      "public transport anxiety"
+    ],
+    "human_review_required": true,
+    "platform": "Instagram",
+    "promotion_risk": "medium",
+    "question_format": "What should I prepare before this trip moment?",
+    "record_count": 4,
+    "reply_risk": "low",
+    "safe_cta_style": "saveable guide CTA with homepage as planning reference",
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "common_emotion": [
+      "impatient",
+      "crowded",
+      "anxious",
+      "urgent",
+      "confused",
+      "nervous"
+    ],
+    "common_language_style": "explainer, step-by-step, practical narrative",
+    "content_format_fit": "short explainer, route guide, problem walkthrough",
+    "dominant_pain_points": [
+      "crowded venue exit",
+      "wait time uncertainty",
+      "late arrival uncertainty",
+      "airport pickup confusion",
+      "confusing station transfers",
+      "language friction"
+    ],
+    "dominant_topics": [
+      "event pickup demand",
+      "airport transfer confusion",
+      "public transport anxiety",
+      "family trip mobility stress"
+    ],
+    "human_review_required": true,
+    "platform": "YouTube",
+    "promotion_risk": "medium",
+    "question_format": "What is the safest plan for this route or season?",
+    "record_count": 4,
+    "reply_risk": "low",
+    "safe_cta_style": "link as supporting resource after explaining the decision logic",
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "common_emotion": [
+      "confused",
+      "nervous",
+      "stressed",
+      "careful",
+      "crowded",
+      "worried"
+    ],
+    "common_language_style": "concise, opinionated, trend-aware, fast signal",
+    "content_format_fit": "short post, thread, trend observation, quick warning",
+    "dominant_pain_points": [
+      "confusing station transfers",
+      "language friction",
+      "kids and luggage burden",
+      "multi-stop planning",
+      "crowd congestion",
+      "hotel district pressure"
+    ],
+    "dominant_topics": [
+      "public transport anxiety",
+      "family trip mobility stress",
+      "seasonal crowd pressure",
+      "event pickup demand"
+    ],
+    "human_review_required": true,
+    "platform": "X",
+    "promotion_risk": "medium",
+    "question_format": "What is changing and what should travelers watch?",
+    "record_count": 4,
+    "reply_risk": "medium",
+    "safe_cta_style": "one-line resource reference only when directly relevant",
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "common_emotion": [
+      "anxious",
+      "urgent",
+      "confused",
+      "nervous",
+      "stressed",
+      "careful"
+    ],
+    "common_language_style": "conversational, light, community-style, less formal",
+    "content_format_fit": "short conversational post, soft discussion starter",
+    "dominant_pain_points": [
+      "late arrival uncertainty",
+      "airport pickup confusion",
+      "confusing station transfers",
+      "language friction",
+      "kids and luggage burden",
+      "multi-stop planning"
+    ],
+    "dominant_topics": [
+      "airport transfer confusion",
+      "public transport anxiety",
+      "family trip mobility stress",
+      "seasonal crowd pressure"
+    ],
+    "human_review_required": true,
+    "platform": "Threads",
+    "promotion_risk": "medium",
+    "question_format": "Has anyone else run into this trip planning problem?",
+    "record_count": 4,
+    "reply_risk": "low",
+    "safe_cta_style": "community-friendly optional reference, avoid repeated CTA",
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "common_emotion": [
+      "stressed",
+      "careful",
+      "crowded",
+      "worried",
+      "impatient",
+      "anxious"
+    ],
+    "common_language_style": "search intent, direct query answer, structured headings",
+    "content_format_fit": "search article, FAQ, route guide, comparison page",
+    "dominant_pain_points": [
+      "kids and luggage burden",
+      "multi-stop planning",
+      "crowd congestion",
+      "hotel district pressure",
+      "crowded venue exit",
+      "wait time uncertainty"
+    ],
+    "dominant_topics": [
+      "family trip mobility stress",
+      "seasonal crowd pressure",
+      "event pickup demand",
+      "airport transfer confusion"
+    ],
+    "human_review_required": true,
+    "platform": "SEO / Search",
+    "promotion_risk": "low",
+    "question_format": "best way to handle airport transfer / luggage / seasonal crowd problem",
+    "record_count": 4,
+    "reply_risk": "low",
+    "safe_cta_style": "contextual internal link after satisfying search intent",
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "common_emotion": [
+      "impatient",
+      "crowded",
+      "anxious",
+      "urgent",
+      "confused",
+      "nervous"
+    ],
+    "common_language_style": "experience note, practical warning, visual lifestyle detail",
+    "content_format_fit": "note angle, checklist, route screenshot plan, saveable tips",
+    "dominant_pain_points": [
+      "crowded venue exit",
+      "wait time uncertainty",
+      "late arrival uncertainty",
+      "airport pickup confusion",
+      "confusing station transfers",
+      "language friction"
+    ],
+    "dominant_topics": [
+      "event pickup demand",
+      "airport transfer confusion",
+      "public transport anxiety",
+      "family trip mobility stress"
+    ],
+    "human_review_required": true,
+    "platform": "Xiaohongshu",
+    "promotion_risk": "medium",
+    "question_format": "避坑: this trip moment is harder than it looks",
+    "record_count": 4,
+    "reply_risk": "medium",
+    "safe_cta_style": "soft note-style reference after practical steps, no exaggerated claims",
+    "write_api_allowed": false
+  }
+]

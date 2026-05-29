@@ -1,0 +1,22 @@
+{
+  "round_id": "ROUND-GLOBAL-003",
+  "url": "http://localhost:8765/project_control_center.html?runtime_ui=1&cache_bust=global003#war-room-growth",
+  "version": "0.1.135",
+  "currentRound": "ROUND-GLOBAL-003 / AGOS_PLATFORM_PAIN_INTELLIGENCE",
+  "panelExists": true,
+  "panelTextIncludesReddit": true,
+  "panelTextIncludesTikTok": true,
+  "panelTextIncludesSEO": true,
+  "panelTextIncludesSafeCTA": true,
+  "platformCount": 8,
+  "allPlatformsHumanReviewRequired": true,
+  "autoPublishAllowed": false,
+  "autoReplyAllowed": false,
+  "writeApiAllowed": false,
+  "redditStrongMarketingAllowed": false,
+  "tiktokShortRhythmReady": true,
+  "seoSearchIntentReady": true,
+  "highPromotionRiskPlatforms": [
+    "Reddit"
+  ]
+}
