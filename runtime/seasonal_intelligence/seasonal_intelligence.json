@@ -1,0 +1,1959 @@
+[
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 87,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Kyoto autumn leaves",
+      "Japan autumn leaves private tour",
+      "Mount Fuji autumn charter",
+      "Kyoto luggage transfer autumn"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Kyoto",
+      "Mount Fuji",
+      "Tokyo",
+      "Osaka",
+      "Nagoya"
+    ],
+    "market": "Taiwan",
+    "market_opportunity_score": 96,
+    "mobility_demand_types": [
+      "private_charter",
+      "sightseeing_route",
+      "elderly_support",
+      "station_to_hotel"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "scattered sightseeing routes"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-AUTUMN-LEAVES",
+    "season_name": "Autumn Leaves Season",
+    "seasonal_heat_score": 85,
+    "source_status": "sample_trend_plus_calendar_plus_ranked_intelligence",
+    "time_window": "October_to_late_November",
+    "trend_match_count": 1,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 87,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan cherry blossom travel",
+      "Tokyo airport transfer sakura",
+      "Kyoto cherry blossom private tour",
+      "Tokyo luggage transfer cherry blossom"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Ueno",
+      "Shinjuku",
+      "Kyoto",
+      "Osaka",
+      "Mount Fuji"
+    ],
+    "market": "US",
+    "market_opportunity_score": 92,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "private_charter",
+      "family_trip",
+      "luggage_heavy_trip"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "crowded trains"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-SAKURA",
+    "season_name": "Sakura Season",
+    "seasonal_heat_score": 84,
+    "source_status": "sample_trend_plus_calendar_plus_ranked_intelligence",
+    "time_window": "mid_March_to_early_April",
+    "trend_match_count": 1,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 87,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan Golden Week travel",
+      "Golden Week airport pickup",
+      "Osaka airport pickup Golden Week",
+      "Japan family trip Golden Week"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Sapporo",
+      "Okinawa",
+      "Nagoya"
+    ],
+    "market": "Korea",
+    "market_opportunity_score": 94,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "family_trip",
+      "multi_city_transfer",
+      "station_to_hotel"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "hotel surge",
+      "crowded public transport"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-GOLDEN-WEEK",
+    "season_name": "Golden Week",
+    "seasonal_heat_score": 84,
+    "source_status": "sample_trend_plus_calendar_plus_ranked_intelligence",
+    "time_window": "late_April_to_early_May",
+    "trend_match_count": 1,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 87,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan summer family trip",
+      "Japan summer airport transfer",
+      "Okinawa family private transfer",
+      "Mount Fuji summer charter"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Mount Fuji",
+      "Sapporo",
+      "Okinawa"
+    ],
+    "market": "US",
+    "market_opportunity_score": 92,
+    "mobility_demand_types": [
+      "family_trip",
+      "elderly_support",
+      "private_charter",
+      "sightseeing_route"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "heat fatigue",
+      "children and elderly support",
+      "long walking distance"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-SUMMER",
+    "season_name": "Summer Vacation",
+    "seasonal_heat_score": 82,
+    "source_status": "sample_trend_plus_calendar_plus_ranked_intelligence",
+    "time_window": "July_to_August",
+    "trend_match_count": 1,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 87,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan cherry blossom travel",
+      "Tokyo airport transfer sakura",
+      "Kyoto cherry blossom private tour",
+      "Tokyo luggage transfer cherry blossom"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Ueno",
+      "Shinjuku",
+      "Kyoto",
+      "Osaka",
+      "Mount Fuji"
+    ],
+    "market": "Taiwan",
+    "market_opportunity_score": 96,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "private_charter",
+      "family_trip",
+      "luggage_heavy_trip"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "crowded trains"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-SAKURA",
+    "season_name": "Sakura Season",
+    "seasonal_heat_score": 81,
+    "source_status": "sample_trend_plus_calendar_plus_ranked_intelligence",
+    "time_window": "mid_March_to_early_April",
+    "trend_match_count": 1,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 87,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Kyoto autumn leaves",
+      "Japan autumn leaves private tour",
+      "Mount Fuji autumn charter",
+      "Kyoto luggage transfer autumn"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Kyoto",
+      "Mount Fuji",
+      "Tokyo",
+      "Osaka",
+      "Nagoya"
+    ],
+    "market": "Europe",
+    "market_opportunity_score": 90,
+    "mobility_demand_types": [
+      "private_charter",
+      "sightseeing_route",
+      "elderly_support",
+      "station_to_hotel"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "scattered sightseeing routes"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-AUTUMN-LEAVES",
+    "season_name": "Autumn Leaves Season",
+    "seasonal_heat_score": 80,
+    "source_status": "sample_trend_plus_calendar_plus_ranked_intelligence",
+    "time_window": "October_to_late_November",
+    "trend_match_count": 1,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 85,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan Golden Week travel",
+      "Golden Week airport pickup",
+      "Osaka airport pickup Golden Week",
+      "Japan family trip Golden Week"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Sapporo",
+      "Okinawa",
+      "Nagoya"
+    ],
+    "market": "Southeast Asia",
+    "market_opportunity_score": 91,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "family_trip",
+      "multi_city_transfer",
+      "station_to_hotel"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "hotel surge",
+      "crowded public transport"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-GOLDEN-WEEK",
+    "season_name": "Golden Week",
+    "seasonal_heat_score": 79,
+    "source_status": "sample_trend_plus_calendar_plus_ranked_intelligence",
+    "time_window": "late_April_to_early_May",
+    "trend_match_count": 1,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 87,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan summer family trip",
+      "Japan summer airport transfer",
+      "Okinawa family private transfer",
+      "Mount Fuji summer charter"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Mount Fuji",
+      "Sapporo",
+      "Okinawa"
+    ],
+    "market": "Europe",
+    "market_opportunity_score": 90,
+    "mobility_demand_types": [
+      "family_trip",
+      "elderly_support",
+      "private_charter",
+      "sightseeing_route"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "heat fatigue",
+      "children and elderly support",
+      "long walking distance"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-SUMMER",
+    "season_name": "Summer Vacation",
+    "seasonal_heat_score": 77,
+    "source_status": "sample_trend_plus_calendar_plus_ranked_intelligence",
+    "time_window": "July_to_August",
+    "trend_match_count": 1,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan Golden Week travel",
+      "Golden Week airport pickup",
+      "Osaka airport pickup Golden Week",
+      "Japan family trip Golden Week"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Sapporo",
+      "Okinawa",
+      "Nagoya"
+    ],
+    "market": "Taiwan",
+    "market_opportunity_score": 96,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "family_trip",
+      "multi_city_transfer",
+      "station_to_hotel"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "hotel surge",
+      "crowded public transport"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-GOLDEN-WEEK",
+    "season_name": "Golden Week",
+    "seasonal_heat_score": 59,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "late_April_to_early_May",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan summer family trip",
+      "Japan summer airport transfer",
+      "Okinawa family private transfer",
+      "Mount Fuji summer charter"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Mount Fuji",
+      "Sapporo",
+      "Okinawa"
+    ],
+    "market": "Taiwan",
+    "market_opportunity_score": 96,
+    "mobility_demand_types": [
+      "family_trip",
+      "elderly_support",
+      "private_charter",
+      "sightseeing_route"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "heat fatigue",
+      "children and elderly support",
+      "long walking distance"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-SUMMER",
+    "season_name": "Summer Vacation",
+    "seasonal_heat_score": 59,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "July_to_August",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan Christmas travel",
+      "Tokyo Christmas airport transfer",
+      "Shibuya Christmas hotel transfer",
+      "Sapporo winter airport pickup"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Shibuya",
+      "Shinjuku",
+      "Osaka",
+      "Sapporo"
+    ],
+    "market": "Taiwan",
+    "market_opportunity_score": 96,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "night_arrival",
+      "station_to_hotel",
+      "luggage_heavy_trip"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "night arrival"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-CHRISTMAS",
+    "season_name": "Christmas and Year End",
+    "seasonal_heat_score": 59,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "mid_December_to_late_December",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan Chinese New Year travel",
+      "Tokyo airport transfer Chinese New Year",
+      "Osaka airport pickup Chinese New Year",
+      "Japan family charter Chinese New Year"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Haneda Airport",
+      "Narita Airport",
+      "Kansai Airport"
+    ],
+    "market": "Taiwan",
+    "market_opportunity_score": 96,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "family_trip",
+      "private_charter",
+      "luggage_heavy_trip"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "family group transfer",
+      "airport arrival peaks"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-CHINESE-NEW-YEAR",
+    "season_name": "Chinese New Year Travel",
+    "seasonal_heat_score": 59,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "late_January_to_mid_February",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan long weekend travel",
+      "Tokyo weekend private tour",
+      "Mount Fuji weekend charter",
+      "Osaka weekend airport pickup"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Nagoya",
+      "Mount Fuji"
+    ],
+    "market": "Taiwan",
+    "market_opportunity_score": 96,
+    "mobility_demand_types": [
+      "private_charter",
+      "sightseeing_route",
+      "station_to_hotel",
+      "airport_transfer"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "short trip density",
+      "same-day luggage"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-LONG-WEEKENDS",
+    "season_name": "Long Weekends",
+    "seasonal_heat_score": 59,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "rolling_three_day_weekends",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan cherry blossom travel",
+      "Tokyo airport transfer sakura",
+      "Kyoto cherry blossom private tour",
+      "Tokyo luggage transfer cherry blossom"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Ueno",
+      "Shinjuku",
+      "Kyoto",
+      "Osaka",
+      "Mount Fuji"
+    ],
+    "market": "Korea",
+    "market_opportunity_score": 94,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "private_charter",
+      "family_trip",
+      "luggage_heavy_trip"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "crowded trains"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-SAKURA",
+    "season_name": "Sakura Season",
+    "seasonal_heat_score": 58,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "mid_March_to_early_April",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan summer family trip",
+      "Japan summer airport transfer",
+      "Okinawa family private transfer",
+      "Mount Fuji summer charter"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Mount Fuji",
+      "Sapporo",
+      "Okinawa"
+    ],
+    "market": "Korea",
+    "market_opportunity_score": 94,
+    "mobility_demand_types": [
+      "family_trip",
+      "elderly_support",
+      "private_charter",
+      "sightseeing_route"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "heat fatigue",
+      "children and elderly support",
+      "long walking distance"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-SUMMER",
+    "season_name": "Summer Vacation",
+    "seasonal_heat_score": 58,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "July_to_August",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Kyoto autumn leaves",
+      "Japan autumn leaves private tour",
+      "Mount Fuji autumn charter",
+      "Kyoto luggage transfer autumn"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Kyoto",
+      "Mount Fuji",
+      "Tokyo",
+      "Osaka",
+      "Nagoya"
+    ],
+    "market": "US",
+    "market_opportunity_score": 92,
+    "mobility_demand_types": [
+      "private_charter",
+      "sightseeing_route",
+      "elderly_support",
+      "station_to_hotel"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "scattered sightseeing routes"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-AUTUMN-LEAVES",
+    "season_name": "Autumn Leaves Season",
+    "seasonal_heat_score": 58,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "October_to_late_November",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Kyoto autumn leaves",
+      "Japan autumn leaves private tour",
+      "Mount Fuji autumn charter",
+      "Kyoto luggage transfer autumn"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Kyoto",
+      "Mount Fuji",
+      "Tokyo",
+      "Osaka",
+      "Nagoya"
+    ],
+    "market": "Korea",
+    "market_opportunity_score": 94,
+    "mobility_demand_types": [
+      "private_charter",
+      "sightseeing_route",
+      "elderly_support",
+      "station_to_hotel"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "scattered sightseeing routes"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-AUTUMN-LEAVES",
+    "season_name": "Autumn Leaves Season",
+    "seasonal_heat_score": 58,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "October_to_late_November",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan Christmas travel",
+      "Tokyo Christmas airport transfer",
+      "Shibuya Christmas hotel transfer",
+      "Sapporo winter airport pickup"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Shibuya",
+      "Shinjuku",
+      "Osaka",
+      "Sapporo"
+    ],
+    "market": "US",
+    "market_opportunity_score": 92,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "night_arrival",
+      "station_to_hotel",
+      "luggage_heavy_trip"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "night arrival"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-CHRISTMAS",
+    "season_name": "Christmas and Year End",
+    "seasonal_heat_score": 58,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "mid_December_to_late_December",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan Christmas travel",
+      "Tokyo Christmas airport transfer",
+      "Shibuya Christmas hotel transfer",
+      "Sapporo winter airport pickup"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Shibuya",
+      "Shinjuku",
+      "Osaka",
+      "Sapporo"
+    ],
+    "market": "Korea",
+    "market_opportunity_score": 94,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "night_arrival",
+      "station_to_hotel",
+      "luggage_heavy_trip"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "night arrival"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-CHRISTMAS",
+    "season_name": "Christmas and Year End",
+    "seasonal_heat_score": 58,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "mid_December_to_late_December",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan Chinese New Year travel",
+      "Tokyo airport transfer Chinese New Year",
+      "Osaka airport pickup Chinese New Year",
+      "Japan family charter Chinese New Year"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Haneda Airport",
+      "Narita Airport",
+      "Kansai Airport"
+    ],
+    "market": "China outbound",
+    "market_opportunity_score": 93,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "family_trip",
+      "private_charter",
+      "luggage_heavy_trip"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "family group transfer"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-CHINESE-NEW-YEAR",
+    "season_name": "Chinese New Year Travel",
+    "seasonal_heat_score": 58,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "late_January_to_mid_February",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan New Year travel",
+      "Tokyo New Year airport transfer",
+      "Kyoto New Year shrine visit",
+      "Japan holiday transport"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Kyoto",
+      "Osaka",
+      "Nagoya",
+      "Sapporo"
+    ],
+    "market": "US",
+    "market_opportunity_score": 92,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "night_arrival",
+      "private_charter",
+      "station_to_hotel"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "holiday timetable changes",
+      "late night movement",
+      "station crowding"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-JAPAN-NEW-YEAR",
+    "season_name": "Japan New Year",
+    "seasonal_heat_score": 58,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "late_December_to_early_January",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan New Year travel",
+      "Tokyo New Year airport transfer",
+      "Kyoto New Year shrine visit",
+      "Japan holiday transport"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Kyoto",
+      "Osaka",
+      "Nagoya",
+      "Sapporo"
+    ],
+    "market": "Korea",
+    "market_opportunity_score": 94,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "night_arrival",
+      "private_charter",
+      "station_to_hotel"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "holiday timetable changes",
+      "late night movement",
+      "station crowding"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-JAPAN-NEW-YEAR",
+    "season_name": "Japan New Year",
+    "seasonal_heat_score": 58,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "late_December_to_early_January",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan long weekend travel",
+      "Tokyo weekend private tour",
+      "Mount Fuji weekend charter",
+      "Osaka weekend airport pickup"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Nagoya",
+      "Mount Fuji"
+    ],
+    "market": "Korea",
+    "market_opportunity_score": 94,
+    "mobility_demand_types": [
+      "private_charter",
+      "sightseeing_route",
+      "station_to_hotel",
+      "airport_transfer"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "short trip density",
+      "same-day luggage"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-LONG-WEEKENDS",
+    "season_name": "Long Weekends",
+    "seasonal_heat_score": 58,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "rolling_three_day_weekends",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan school holiday family trip",
+      "Japan family airport transfer",
+      "Okinawa family transfer",
+      "Tokyo family luggage transfer"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Okinawa",
+      "Sapporo",
+      "Mount Fuji"
+    ],
+    "market": "US",
+    "market_opportunity_score": 92,
+    "mobility_demand_types": [
+      "family_trip",
+      "elderly_support",
+      "luggage_heavy_trip",
+      "private_charter"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "children support",
+      "stroller and luggage",
+      "elderly support"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-SCHOOL-HOLIDAYS",
+    "season_name": "School Holidays",
+    "seasonal_heat_score": 58,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "spring_summer_winter_school_breaks",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan school holiday family trip",
+      "Japan family airport transfer",
+      "Okinawa family transfer",
+      "Tokyo family luggage transfer"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Okinawa",
+      "Sapporo",
+      "Mount Fuji"
+    ],
+    "market": "Korea",
+    "market_opportunity_score": 94,
+    "mobility_demand_types": [
+      "family_trip",
+      "elderly_support",
+      "luggage_heavy_trip",
+      "private_charter"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "children support",
+      "stroller and luggage",
+      "elderly support"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-SCHOOL-HOLIDAYS",
+    "season_name": "School Holidays",
+    "seasonal_heat_score": 58,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "spring_summer_winter_school_breaks",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan event transfer",
+      "Suzuka Circuit transfer",
+      "Tokyo Big Sight taxi alternative",
+      "Nagoya event airport pickup"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo Big Sight",
+      "Makuhari Messe",
+      "Nagoya",
+      "Suzuka Circuit",
+      "Osaka",
+      "Kyoto"
+    ],
+    "market": "US",
+    "market_opportunity_score": 92,
+    "mobility_demand_types": [
+      "event_pickup",
+      "private_charter",
+      "station_to_hotel",
+      "night_arrival"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "venue exit congestion"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-EVENTS",
+    "season_name": "Exhibitions Concerts Sports Events",
+    "seasonal_heat_score": 58,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "event_driven",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan event transfer",
+      "Suzuka Circuit transfer",
+      "Tokyo Big Sight taxi alternative",
+      "Nagoya event airport pickup"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo Big Sight",
+      "Makuhari Messe",
+      "Nagoya",
+      "Suzuka Circuit",
+      "Osaka",
+      "Kyoto"
+    ],
+    "market": "Korea",
+    "market_opportunity_score": 94,
+    "mobility_demand_types": [
+      "event_pickup",
+      "private_charter",
+      "station_to_hotel",
+      "night_arrival"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "venue exit congestion"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-EVENTS",
+    "season_name": "Exhibitions Concerts Sports Events",
+    "seasonal_heat_score": 58,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "event_driven",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan cherry blossom travel",
+      "Tokyo airport transfer sakura",
+      "Kyoto cherry blossom private tour",
+      "Tokyo luggage transfer cherry blossom"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Ueno",
+      "Shinjuku",
+      "Kyoto",
+      "Osaka",
+      "Mount Fuji"
+    ],
+    "market": "Europe",
+    "market_opportunity_score": 90,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "private_charter",
+      "family_trip",
+      "luggage_heavy_trip"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "crowded trains"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-SAKURA",
+    "season_name": "Sakura Season",
+    "seasonal_heat_score": 57,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "mid_March_to_early_April",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan Golden Week travel",
+      "Golden Week airport pickup",
+      "Osaka airport pickup Golden Week",
+      "Japan family trip Golden Week"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Sapporo",
+      "Okinawa",
+      "Nagoya"
+    ],
+    "market": "Japan",
+    "market_opportunity_score": 88,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "family_trip",
+      "multi_city_transfer",
+      "station_to_hotel"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "hotel surge",
+      "crowded public transport"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-GOLDEN-WEEK",
+    "season_name": "Golden Week",
+    "seasonal_heat_score": 57,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "late_April_to_early_May",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan Christmas travel",
+      "Tokyo Christmas airport transfer",
+      "Shibuya Christmas hotel transfer",
+      "Sapporo winter airport pickup"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Shibuya",
+      "Shinjuku",
+      "Osaka",
+      "Sapporo"
+    ],
+    "market": "Europe",
+    "market_opportunity_score": 90,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "night_arrival",
+      "station_to_hotel",
+      "luggage_heavy_trip"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "night arrival"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-CHRISTMAS",
+    "season_name": "Christmas and Year End",
+    "seasonal_heat_score": 57,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "mid_December_to_late_December",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan Chinese New Year travel",
+      "Tokyo airport transfer Chinese New Year",
+      "Osaka airport pickup Chinese New Year",
+      "Japan family charter Chinese New Year"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Haneda Airport",
+      "Narita Airport",
+      "Kansai Airport"
+    ],
+    "market": "Southeast Asia",
+    "market_opportunity_score": 91,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "family_trip",
+      "private_charter",
+      "luggage_heavy_trip"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "family group transfer",
+      "airport arrival peaks"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-CHINESE-NEW-YEAR",
+    "season_name": "Chinese New Year Travel",
+    "seasonal_heat_score": 57,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "late_January_to_mid_February",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan New Year travel",
+      "Tokyo New Year airport transfer",
+      "Kyoto New Year shrine visit",
+      "Japan holiday transport"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Kyoto",
+      "Osaka",
+      "Nagoya",
+      "Sapporo"
+    ],
+    "market": "Japan",
+    "market_opportunity_score": 88,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "night_arrival",
+      "private_charter",
+      "station_to_hotel"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "holiday timetable changes",
+      "late night movement",
+      "station crowding"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-JAPAN-NEW-YEAR",
+    "season_name": "Japan New Year",
+    "seasonal_heat_score": 57,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "late_December_to_early_January",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan New Year travel",
+      "Tokyo New Year airport transfer",
+      "Kyoto New Year shrine visit",
+      "Japan holiday transport"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Kyoto",
+      "Osaka",
+      "Nagoya",
+      "Sapporo"
+    ],
+    "market": "Europe",
+    "market_opportunity_score": 90,
+    "mobility_demand_types": [
+      "airport_transfer",
+      "night_arrival",
+      "private_charter",
+      "station_to_hotel"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "holiday timetable changes",
+      "late night movement",
+      "station crowding"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-JAPAN-NEW-YEAR",
+    "season_name": "Japan New Year",
+    "seasonal_heat_score": 57,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "late_December_to_early_January",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan long weekend travel",
+      "Tokyo weekend private tour",
+      "Mount Fuji weekend charter",
+      "Osaka weekend airport pickup"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Kyoto",
+      "Nagoya",
+      "Mount Fuji"
+    ],
+    "market": "Japan",
+    "market_opportunity_score": 88,
+    "mobility_demand_types": [
+      "private_charter",
+      "sightseeing_route",
+      "station_to_hotel",
+      "airport_transfer"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "short trip density",
+      "same-day luggage"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-LONG-WEEKENDS",
+    "season_name": "Long Weekends",
+    "seasonal_heat_score": 57,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "rolling_three_day_weekends",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan school holiday family trip",
+      "Japan family airport transfer",
+      "Okinawa family transfer",
+      "Tokyo family luggage transfer"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Okinawa",
+      "Sapporo",
+      "Mount Fuji"
+    ],
+    "market": "Japan",
+    "market_opportunity_score": 88,
+    "mobility_demand_types": [
+      "family_trip",
+      "elderly_support",
+      "luggage_heavy_trip",
+      "private_charter"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "children support",
+      "stroller and luggage",
+      "elderly support"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-SCHOOL-HOLIDAYS",
+    "season_name": "School Holidays",
+    "seasonal_heat_score": 57,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "spring_summer_winter_school_breaks",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan school holiday family trip",
+      "Japan family airport transfer",
+      "Okinawa family transfer",
+      "Tokyo family luggage transfer"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo",
+      "Osaka",
+      "Okinawa",
+      "Sapporo",
+      "Mount Fuji"
+    ],
+    "market": "Europe",
+    "market_opportunity_score": 90,
+    "mobility_demand_types": [
+      "family_trip",
+      "elderly_support",
+      "luggage_heavy_trip",
+      "private_charter"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Public transport anxiety",
+      "children support",
+      "stroller and luggage",
+      "elderly support"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-SCHOOL-HOLIDAYS",
+    "season_name": "School Holidays",
+    "seasonal_heat_score": 57,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "spring_summer_winter_school_breaks",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan event transfer",
+      "Suzuka Circuit transfer",
+      "Tokyo Big Sight taxi alternative",
+      "Nagoya event airport pickup"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo Big Sight",
+      "Makuhari Messe",
+      "Nagoya",
+      "Suzuka Circuit",
+      "Osaka",
+      "Kyoto"
+    ],
+    "market": "Japan",
+    "market_opportunity_score": 88,
+    "mobility_demand_types": [
+      "event_pickup",
+      "private_charter",
+      "station_to_hotel",
+      "night_arrival"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "venue exit congestion"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-EVENTS",
+    "season_name": "Exhibitions Concerts Sports Events",
+    "seasonal_heat_score": 57,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "event_driven",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 24,
+    "confirmed_prediction": false,
+    "demand_keywords": [
+      "Japan event transfer",
+      "Suzuka Circuit transfer",
+      "Tokyo Big Sight taxi alternative",
+      "Nagoya event airport pickup"
+    ],
+    "human_review_required": true,
+    "likely_locations": [
+      "Tokyo Big Sight",
+      "Makuhari Messe",
+      "Nagoya",
+      "Suzuka Circuit",
+      "Osaka",
+      "Kyoto"
+    ],
+    "market": "Europe",
+    "market_opportunity_score": 90,
+    "mobility_demand_types": [
+      "event_pickup",
+      "private_charter",
+      "station_to_hotel",
+      "night_arrival"
+    ],
+    "pain_clusters": [
+      "Airport transfer confusion",
+      "Family trip mobility stress",
+      "Seasonal crowd pressure",
+      "Public transport anxiety",
+      "Event pickup and exit demand",
+      "venue exit congestion"
+    ],
+    "related_ranked_intelligence_ids": [
+      "INTEL-RANK-006",
+      "INTEL-RANK-003",
+      "INTEL-RANK-008",
+      "INTEL-RANK-007",
+      "INTEL-RANK-004"
+    ],
+    "sample_data_only": true,
+    "season_id": "SEASON-EVENTS",
+    "season_name": "Exhibitions Concerts Sports Events",
+    "seasonal_heat_score": 57,
+    "source_status": "calendar_plus_market_matrix_only",
+    "time_window": "event_driven",
+    "trend_match_count": 0,
+    "write_api_allowed": false
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "version": "0.1.139",
+  "currentRound": "ROUND-GLOBAL-007 / AGOS_SEASONAL_INTELLIGENCE_ENGINE",
+  "panelExists": true,
+  "panelHasSeasonal": true,
+  "panelHasSampleOnly": true,
+  "panelHasConfirmedFalse": true,
+  "seasonCount": 10,
+  "seasonMarketRows": 38,
+  "marketCount": 7,
+  "sampleDataOnly": true,
+  "confirmedPrediction": false,
+  "allHumanReview": true,
+  "writeApiAllowed": false
+}

@@ -1,0 +1,48 @@
+{
+  "all_items_human_review_required": true,
+  "auto_publish_allowed": false,
+  "auto_reply_allowed": false,
+  "confirmed_prediction": false,
+  "demand_type_count": 10,
+  "heatmap_rows": 38,
+  "market_count": 7,
+  "next_recommendation": "Use reviewed seasonal intelligence as input for Spatial Intelligence Engine; do not treat sample trend heat as confirmed demand.",
+  "real_external_api_connected": false,
+  "sample_data_only": true,
+  "season_count": 10,
+  "season_market_rows": 38,
+  "seasonal_intelligence_ready": true,
+  "top_season_markets": [
+    {
+      "confidence_score": 87,
+      "heat_score": 85,
+      "market": "Taiwan",
+      "season_name": "Autumn Leaves Season"
+    },
+    {
+      "confidence_score": 87,
+      "heat_score": 84,
+      "market": "US",
+      "season_name": "Sakura Season"
+    },
+    {
+      "confidence_score": 87,
+      "heat_score": 84,
+      "market": "Korea",
+      "season_name": "Golden Week"
+    },
+    {
+      "confidence_score": 87,
+      "heat_score": 82,
+      "market": "US",
+      "season_name": "Summer Vacation"
+    },
+    {
+      "confidence_score": 87,
+      "heat_score": 81,
+      "market": "Taiwan",
+      "season_name": "Sakura Season"
+    }
+  ],
+  "write_api_allowed": false
+}

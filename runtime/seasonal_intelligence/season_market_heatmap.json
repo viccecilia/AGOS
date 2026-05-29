@@ -1,0 +1,344 @@
+[
+  {
+    "confidence_score": 87,
+    "heat_score": 85,
+    "human_review_required": true,
+    "market": "Taiwan",
+    "sample_data_only": true,
+    "season_id": "SEASON-AUTUMN-LEAVES",
+    "season_name": "Autumn Leaves Season"
+  },
+  {
+    "confidence_score": 87,
+    "heat_score": 84,
+    "human_review_required": true,
+    "market": "US",
+    "sample_data_only": true,
+    "season_id": "SEASON-SAKURA",
+    "season_name": "Sakura Season"
+  },
+  {
+    "confidence_score": 87,
+    "heat_score": 84,
+    "human_review_required": true,
+    "market": "Korea",
+    "sample_data_only": true,
+    "season_id": "SEASON-GOLDEN-WEEK",
+    "season_name": "Golden Week"
+  },
+  {
+    "confidence_score": 87,
+    "heat_score": 82,
+    "human_review_required": true,
+    "market": "US",
+    "sample_data_only": true,
+    "season_id": "SEASON-SUMMER",
+    "season_name": "Summer Vacation"
+  },
+  {
+    "confidence_score": 87,
+    "heat_score": 81,
+    "human_review_required": true,
+    "market": "Taiwan",
+    "sample_data_only": true,
+    "season_id": "SEASON-SAKURA",
+    "season_name": "Sakura Season"
+  },
+  {
+    "confidence_score": 87,
+    "heat_score": 80,
+    "human_review_required": true,
+    "market": "Europe",
+    "sample_data_only": true,
+    "season_id": "SEASON-AUTUMN-LEAVES",
+    "season_name": "Autumn Leaves Season"
+  },
+  {
+    "confidence_score": 85,
+    "heat_score": 79,
+    "human_review_required": true,
+    "market": "Southeast Asia",
+    "sample_data_only": true,
+    "season_id": "SEASON-GOLDEN-WEEK",
+    "season_name": "Golden Week"
+  },
+  {
+    "confidence_score": 87,
+    "heat_score": 77,
+    "human_review_required": true,
+    "market": "Europe",
+    "sample_data_only": true,
+    "season_id": "SEASON-SUMMER",
+    "season_name": "Summer Vacation"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 59,
+    "human_review_required": true,
+    "market": "Taiwan",
+    "sample_data_only": true,
+    "season_id": "SEASON-GOLDEN-WEEK",
+    "season_name": "Golden Week"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 59,
+    "human_review_required": true,
+    "market": "Taiwan",
+    "sample_data_only": true,
+    "season_id": "SEASON-SUMMER",
+    "season_name": "Summer Vacation"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 59,
+    "human_review_required": true,
+    "market": "Taiwan",
+    "sample_data_only": true,
+    "season_id": "SEASON-CHRISTMAS",
+    "season_name": "Christmas and Year End"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 59,
+    "human_review_required": true,
+    "market": "Taiwan",
+    "sample_data_only": true,
+    "season_id": "SEASON-CHINESE-NEW-YEAR",
+    "season_name": "Chinese New Year Travel"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 59,
+    "human_review_required": true,
+    "market": "Taiwan",
+    "sample_data_only": true,
+    "season_id": "SEASON-LONG-WEEKENDS",
+    "season_name": "Long Weekends"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 58,
+    "human_review_required": true,
+    "market": "Korea",
+    "sample_data_only": true,
+    "season_id": "SEASON-SAKURA",
+    "season_name": "Sakura Season"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 58,
+    "human_review_required": true,
+    "market": "Korea",
+    "sample_data_only": true,
+    "season_id": "SEASON-SUMMER",
+    "season_name": "Summer Vacation"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 58,
+    "human_review_required": true,
+    "market": "US",
+    "sample_data_only": true,
+    "season_id": "SEASON-AUTUMN-LEAVES",
+    "season_name": "Autumn Leaves Season"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 58,
+    "human_review_required": true,
+    "market": "Korea",
+    "sample_data_only": true,
+    "season_id": "SEASON-AUTUMN-LEAVES",
+    "season_name": "Autumn Leaves Season"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 58,
+    "human_review_required": true,
+    "market": "US",
+    "sample_data_only": true,
+    "season_id": "SEASON-CHRISTMAS",
+    "season_name": "Christmas and Year End"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 58,
+    "human_review_required": true,
+    "market": "Korea",
+    "sample_data_only": true,
+    "season_id": "SEASON-CHRISTMAS",
+    "season_name": "Christmas and Year End"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 58,
+    "human_review_required": true,
+    "market": "China outbound",
+    "sample_data_only": true,
+    "season_id": "SEASON-CHINESE-NEW-YEAR",
+    "season_name": "Chinese New Year Travel"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 58,
+    "human_review_required": true,
+    "market": "US",
+    "sample_data_only": true,
+    "season_id": "SEASON-JAPAN-NEW-YEAR",
+    "season_name": "Japan New Year"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 58,
+    "human_review_required": true,
+    "market": "Korea",
+    "sample_data_only": true,
+    "season_id": "SEASON-JAPAN-NEW-YEAR",
+    "season_name": "Japan New Year"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 58,
+    "human_review_required": true,
+    "market": "Korea",
+    "sample_data_only": true,
+    "season_id": "SEASON-LONG-WEEKENDS",
+    "season_name": "Long Weekends"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 58,
+    "human_review_required": true,
+    "market": "US",
+    "sample_data_only": true,
+    "season_id": "SEASON-SCHOOL-HOLIDAYS",
+    "season_name": "School Holidays"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 58,
+    "human_review_required": true,
+    "market": "Korea",
+    "sample_data_only": true,
+    "season_id": "SEASON-SCHOOL-HOLIDAYS",
+    "season_name": "School Holidays"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 58,
+    "human_review_required": true,
+    "market": "US",
+    "sample_data_only": true,
+    "season_id": "SEASON-EVENTS",
+    "season_name": "Exhibitions Concerts Sports Events"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 58,
+    "human_review_required": true,
+    "market": "Korea",
+    "sample_data_only": true,
+    "season_id": "SEASON-EVENTS",
+    "season_name": "Exhibitions Concerts Sports Events"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 57,
+    "human_review_required": true,
+    "market": "Europe",
+    "sample_data_only": true,
+    "season_id": "SEASON-SAKURA",
+    "season_name": "Sakura Season"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 57,
+    "human_review_required": true,
+    "market": "Japan",
+    "sample_data_only": true,
+    "season_id": "SEASON-GOLDEN-WEEK",
+    "season_name": "Golden Week"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 57,
+    "human_review_required": true,
+    "market": "Europe",
+    "sample_data_only": true,
+    "season_id": "SEASON-CHRISTMAS",
+    "season_name": "Christmas and Year End"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 57,
+    "human_review_required": true,
+    "market": "Southeast Asia",
+    "sample_data_only": true,
+    "season_id": "SEASON-CHINESE-NEW-YEAR",
+    "season_name": "Chinese New Year Travel"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 57,
+    "human_review_required": true,
+    "market": "Japan",
+    "sample_data_only": true,
+    "season_id": "SEASON-JAPAN-NEW-YEAR",
+    "season_name": "Japan New Year"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 57,
+    "human_review_required": true,
+    "market": "Europe",
+    "sample_data_only": true,
+    "season_id": "SEASON-JAPAN-NEW-YEAR",
+    "season_name": "Japan New Year"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 57,
+    "human_review_required": true,
+    "market": "Japan",
+    "sample_data_only": true,
+    "season_id": "SEASON-LONG-WEEKENDS",
+    "season_name": "Long Weekends"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 57,
+    "human_review_required": true,
+    "market": "Japan",
+    "sample_data_only": true,
+    "season_id": "SEASON-SCHOOL-HOLIDAYS",
+    "season_name": "School Holidays"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 57,
+    "human_review_required": true,
+    "market": "Europe",
+    "sample_data_only": true,
+    "season_id": "SEASON-SCHOOL-HOLIDAYS",
+    "season_name": "School Holidays"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 57,
+    "human_review_required": true,
+    "market": "Japan",
+    "sample_data_only": true,
+    "season_id": "SEASON-EVENTS",
+    "season_name": "Exhibitions Concerts Sports Events"
+  },
+  {
+    "confidence_score": 24,
+    "heat_score": 57,
+    "human_review_required": true,
+    "market": "Europe",
+    "sample_data_only": true,
+    "season_id": "SEASON-EVENTS",
+    "season_name": "Exhibitions Concerts Sports Events"
+  }
+]

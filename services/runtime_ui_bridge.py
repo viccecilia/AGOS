@@ -90,6 +90,7 @@ from services.runtime_strategy_simulation import RuntimeStrategySimulation
 from services.runtime_strategy_personality import RuntimeStrategyPersonalityEngine
 from services.semi_autonomous_runtime_gate import SemiAutonomousRuntimeGate
 from services.seasonal_demand_calendar_engine import SeasonalDemandCalendarEngine
+from services.seasonal_intelligence_engine import SeasonalIntelligenceEngine
 from services.seasonal_trend_import_trial import SeasonalTrendImportTrial
 from services.strategic_interpretation_engine import StrategicInterpretationEngine
 from services.runtime_trainer_dashboard import RuntimeTrainerDashboard
@@ -272,6 +273,13 @@ class RuntimeUIBridge:
             platform_pain_intelligence.get("platformPainProfiles", []),
             market_intelligence_matrix.get("marketIntelligenceMatrix", []),
             cross_platform_correlation.get("crossPlatformCorrelations", []),
+        )
+        seasonal_intelligence = SeasonalIntelligenceEngine().build(
+            seasonal_demand_calendar.get("seasonalCalendar", []),
+            seasonal_trend_import_trial.get("seasonalTrendMatches", []),
+            seasonal_trend_import_trial.get("seasonalMarketHeatmap", []),
+            market_intelligence_matrix.get("marketIntelligenceMatrix", []),
+            intelligence_ranking.get("rankedIntelligence", []),
         )
         batch_scout_runtime = BatchScoutRuntime().run()
         batch_topic_clustering = BatchTopicClustering().cluster(batch_scout_runtime.get("batchAnalysis", []))
@@ -720,6 +728,11 @@ class RuntimeUIBridge:
             "noiseFilteredSignals": intelligence_ranking.get("noiseFilteredSignals", []),
             "unsafeSignals": intelligence_ranking.get("unsafeSignals", []),
             "intelligenceRankingSummary": intelligence_ranking.get("intelligenceRankingSummary", {}),
+            "seasonalIntelligenceEngine": seasonal_intelligence,
+            "seasonalIntelligence": seasonal_intelligence.get("seasonalIntelligence", []),
+            "seasonMarketHeatmap": seasonal_intelligence.get("seasonMarketHeatmap", []),
+            "seasonalDemandRanking": seasonal_intelligence.get("seasonalDemandRanking", []),
+            "seasonalIntelligenceSummary": seasonal_intelligence.get("seasonalIntelligenceSummary", {}),
             "locationDemandHeatmap": location_demand_heatmap,
             "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),
