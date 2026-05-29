@@ -1,0 +1,31 @@
+{
+  "allowed_source_modes": [
+    "manual_controlled_sample",
+    "operator_provided_public_reference",
+    "mock_read_only_export"
+  ],
+  "created_at": "2026-05-29T06:34:27+00:00",
+  "forbidden_source_modes": [
+    "private_messages",
+    "login_scraping",
+    "continuous_api_collection",
+    "write_api_response"
+  ],
+  "policy_id": "SAMPLE_INGESTION_POLICY",
+  "round_id": "ROUND-REALDATA-005_SAMPLE_INGESTION_PRIVACY_FILTER",
+  "sample_limits": {
+    "continuous_ingestion_allowed": false,
+    "per_language_cap": 3,
+    "per_platform_cap": 3,
+    "per_query_cap": 2,
+    "small_batch_only": true,
+    "total_sample_cap": 8
+  },
+  "storage_policy": {
+    "automatic_promotion_allowed": false,
+    "store_filtered_excerpt_only": true,
+    "store_large_real_dataset": false,
+    "store_raw_content": false,
+    "training_allowed": false
+  }
+}

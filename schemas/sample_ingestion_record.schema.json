@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AGOS Privacy-Filtered Sample Ingestion Record",
+  "type": "object",
+  "required": [
+    "record_id",
+    "record_hash",
+    "platform_id",
+    "source_type",
+    "query_id",
+    "collection_time",
+    "language",
+    "region",
+    "content_type",
+    "engagement_metrics",
+    "source_reference",
+    "filtered_excerpt",
+    "privacy_review_status",
+    "lineage_complete",
+    "training_allowed",
+    "automatic_promotion_allowed"
+  ],
+  "properties": {
+    "record_id": {"type": "string"},
+    "record_hash": {"type": "string"},
+    "platform_id": {"type": "string"},
+    "source_type": {"type": "string"},
+    "query_id": {"type": "string"},
+    "collection_time": {"type": "string"},
+    "language": {"type": "string"},
+    "region": {"type": "string"},
+    "content_type": {
+      "enum": [
+        "help-seeking",
+        "confusion/problem",
+        "solution",
+        "recommendation",
+        "transport issue",
+        "purchase/food/visit interest",
+        "uncategorized"
+      ]
+    },
+    "engagement_metrics": {"type": "object"},
+    "source_reference": {"type": "string"},
+    "source_url_allowed": {"type": "boolean"},
+    "filtered_excerpt": {"type": "string"},
+    "redaction_count": {"type": "integer", "minimum": 0},
+    "redaction_types": {"type": "array", "items": {"type": "string"}},
+    "minors_data_flagged": {"type": "boolean"},
+    "privacy_review_status": {"type": "string"},
+    "lineage_complete": {"const": true},
+    "training_allowed": {"const": false},
+    "automatic_promotion_allowed": {"const": false}
+  }
+}

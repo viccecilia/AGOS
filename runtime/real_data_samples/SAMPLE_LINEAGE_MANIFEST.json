@@ -1,0 +1,184 @@
+{
+  "all_records_training_blocked": true,
+  "created_at": "2026-05-29T06:34:27+00:00",
+  "lineage_fields": [
+    "platform_id",
+    "source_type",
+    "query_id",
+    "collection_time",
+    "language",
+    "region",
+    "content_type",
+    "engagement_metrics",
+    "source_reference"
+  ],
+  "manifest_id": "SAMPLE_LINEAGE_MANIFEST",
+  "raw_content_stored": false,
+  "record_count": 6,
+  "records": [
+    {
+      "automatic_promotion_allowed": false,
+      "collection_time": "2026-05-29T06:34:27+00:00",
+      "content_type": "help-seeking",
+      "engagement_metrics": {
+        "likes": 18,
+        "replies": 4,
+        "shares": 1
+      },
+      "filtered_excerpt": "Can anyone help with Haneda airport transfer after midnight? I have 2 suitcases, [REDACTED_SENSITIVE_PERSONAL_INFORMATION] note, and emailed me at [REDACTED_CONTACT_INFORMATION].",
+      "language": "English",
+      "lineage_complete": true,
+      "minors_data_flagged": false,
+      "platform_id": "youtube",
+      "privacy_review_status": "privacy_filtered",
+      "query_id": "japan_airport_transfer",
+      "record_hash": "c00749b81a505d6c",
+      "record_id": "SAMPLE-001",
+      "redaction_count": 2,
+      "redaction_types": [
+        "contact_information",
+        "sensitive_personal_information"
+      ],
+      "region": "region inferred: US",
+      "source_reference": "yt_public_ref_001",
+      "source_type": "public_comment",
+      "source_url_allowed": false,
+      "training_allowed": false
+    },
+    {
+      "automatic_promotion_allowed": false,
+      "collection_time": "2026-05-29T06:34:27+00:00",
+      "content_type": "confusion/problem",
+      "engagement_metrics": {
+        "likes": 42,
+        "replies": 12,
+        "shares": 7
+      },
+      "filtered_excerpt": "Tokyo station transfer is confusing. Not sure if taxi or train is better with luggage.",
+      "language": "English",
+      "lineage_complete": true,
+      "minors_data_flagged": false,
+      "platform_id": "tiktok",
+      "privacy_review_status": "privacy_filtered",
+      "query_id": "tokyo_transport_confusion",
+      "record_hash": "8ec674b874a7735d",
+      "record_id": "SAMPLE-002",
+      "redaction_count": 0,
+      "redaction_types": [],
+      "region": "region unknown",
+      "source_reference": "tt_public_ref_002",
+      "source_type": "public_post",
+      "source_url_allowed": false,
+      "training_allowed": false
+    },
+    {
+      "automatic_promotion_allowed": false,
+      "collection_time": "2026-05-29T06:34:27+00:00",
+      "content_type": "purchase/food/visit interest",
+      "engagement_metrics": {
+        "likes": 9,
+        "replies": 2,
+        "shares": 0
+      },
+      "filtered_excerpt": "京都紅葉季有什麼 must-eat 和 must-visit？我住在 [REDACTED_PRECISE_PERSONAL_LOCATION], Kyoto。",
+      "language": "Chinese",
+      "lineage_complete": true,
+      "minors_data_flagged": false,
+      "platform_id": "instagram",
+      "privacy_review_status": "privacy_filtered",
+      "query_id": "kyoto_visit_food",
+      "record_hash": "7e6ac12b456d0424",
+      "record_id": "SAMPLE-003",
+      "redaction_count": 1,
+      "redaction_types": [
+        "precise_personal_location"
+      ],
+      "region": "region inferred: Taiwan",
+      "source_reference": "ig_public_ref_003",
+      "source_type": "public_comment",
+      "source_url_allowed": false,
+      "training_allowed": false
+    },
+    {
+      "automatic_promotion_allowed": false,
+      "collection_time": "2026-05-29T06:34:27+00:00",
+      "content_type": "transport issue",
+      "engagement_metrics": {
+        "likes": 6,
+        "replies": 1,
+        "shares": 0
+      },
+      "filtered_excerpt": "가족 여행인데 Narita에서 호텔까지 아이와 짐이 많아서 이동 방법 추천 부탁해요.",
+      "language": "Korean",
+      "lineage_complete": true,
+      "minors_data_flagged": false,
+      "platform_id": "youtube",
+      "privacy_review_status": "privacy_filtered",
+      "query_id": "family_trip_transfer",
+      "record_hash": "39b5dea1a9eb6e06",
+      "record_id": "SAMPLE-004",
+      "redaction_count": 0,
+      "redaction_types": [],
+      "region": "region inferred: Korea",
+      "source_reference": "yt_public_ref_004",
+      "source_type": "public_comment",
+      "source_url_allowed": false,
+      "training_allowed": false
+    },
+    {
+      "automatic_promotion_allowed": false,
+      "collection_time": "2026-05-29T06:34:27+00:00",
+      "content_type": "recommendation",
+      "engagement_metrics": {
+        "likes": 25,
+        "replies": 8,
+        "shares": 3
+      },
+      "filtered_excerpt": "Best Osaka food street and airport train tip? My phone is [REDACTED_CONTACT_INFORMATION] if guide can contact.",
+      "language": "Southeast Asia languages",
+      "lineage_complete": true,
+      "minors_data_flagged": false,
+      "platform_id": "tiktok",
+      "privacy_review_status": "privacy_filtered",
+      "query_id": "osaka_food_visit",
+      "record_hash": "022db42e429b704d",
+      "record_id": "SAMPLE-005",
+      "redaction_count": 1,
+      "redaction_types": [
+        "contact_information"
+      ],
+      "region": "region inferred: Southeast Asia",
+      "source_reference": "tt_public_ref_005",
+      "source_type": "public_comment",
+      "source_url_allowed": false,
+      "training_allowed": false
+    },
+    {
+      "automatic_promotion_allowed": false,
+      "collection_time": "2026-05-29T06:34:27+00:00",
+      "content_type": "transport issue",
+      "engagement_metrics": {
+        "likes": 3,
+        "replies": 1,
+        "shares": 0
+      },
+      "filtered_excerpt": "中学生だけで夜に新宿からホテルまで移動する安全な方法は？",
+      "language": "Japanese",
+      "lineage_complete": true,
+      "minors_data_flagged": true,
+      "platform_id": "youtube",
+      "privacy_review_status": "excluded_from_training",
+      "query_id": "minor_school_trip",
+      "record_hash": "63a97d2158378176",
+      "record_id": "SAMPLE-007",
+      "redaction_count": 0,
+      "redaction_types": [],
+      "region": "region explicit: Japan",
+      "source_reference": "yt_public_ref_007",
+      "source_type": "public_comment",
+      "source_url_allowed": false,
+      "training_allowed": false
+    }
+  ],
+  "round_id": "ROUND-REALDATA-005_SAMPLE_INGESTION_PRIVACY_FILTER"
+}
