@@ -1,0 +1,20 @@
+{
+  "all_markets_human_review_required": true,
+  "auto_promotion_allowed": false,
+  "auto_reply_allowed": false,
+  "china_outbound_isolation_key": "China outbound",
+  "china_outbound_pollutes_japan_local": false,
+  "highest_opportunity_score": 96,
+  "japan_isolation_key": "Japan",
+  "market_count": 7,
+  "market_intelligence_matrix_ready": true,
+  "next_recommendation": "Use market matrix for Cross-Platform Correlation Expansion after human review.",
+  "top_opportunity_markets": [
+    "Taiwan",
+    "Korea",
+    "China outbound",
+    "US",
+    "Southeast Asia"
+  ],
+  "write_api_allowed": false
+}

@@ -1,0 +1,338 @@
+[
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "Japan",
+    "opportunity_score": 87,
+    "pain_point": "late arrival uncertainty",
+    "rank": 1
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "Japan",
+    "opportunity_score": 86,
+    "pain_point": "airport pickup confusion",
+    "rank": 2
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "Japan",
+    "opportunity_score": 85,
+    "pain_point": "confusing station transfers",
+    "rank": 3
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "Japan",
+    "opportunity_score": 84,
+    "pain_point": "language friction",
+    "rank": 4
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "Japan",
+    "opportunity_score": 83,
+    "pain_point": "kids and luggage burden",
+    "rank": 5
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "Japan",
+    "opportunity_score": 82,
+    "pain_point": "multi-stop planning",
+    "rank": 6
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "US",
+    "opportunity_score": 91,
+    "pain_point": "kids and luggage burden",
+    "rank": 1
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "US",
+    "opportunity_score": 90,
+    "pain_point": "multi-stop planning",
+    "rank": 2
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "US",
+    "opportunity_score": 89,
+    "pain_point": "crowd congestion",
+    "rank": 3
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "US",
+    "opportunity_score": 88,
+    "pain_point": "hotel district pressure",
+    "rank": 4
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "US",
+    "opportunity_score": 87,
+    "pain_point": "crowded venue exit",
+    "rank": 5
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "US",
+    "opportunity_score": 86,
+    "pain_point": "wait time uncertainty",
+    "rank": 6
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "Europe",
+    "opportunity_score": 89,
+    "pain_point": "crowded venue exit",
+    "rank": 1
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "Europe",
+    "opportunity_score": 88,
+    "pain_point": "wait time uncertainty",
+    "rank": 2
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "Europe",
+    "opportunity_score": 87,
+    "pain_point": "late arrival uncertainty",
+    "rank": 3
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "Europe",
+    "opportunity_score": 86,
+    "pain_point": "airport pickup confusion",
+    "rank": 4
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "Europe",
+    "opportunity_score": 85,
+    "pain_point": "confusing station transfers",
+    "rank": 5
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "Europe",
+    "opportunity_score": 84,
+    "pain_point": "language friction",
+    "rank": 6
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "Korea",
+    "opportunity_score": 93,
+    "pain_point": "confusing station transfers",
+    "rank": 1
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "Korea",
+    "opportunity_score": 92,
+    "pain_point": "language friction",
+    "rank": 2
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "Korea",
+    "opportunity_score": 91,
+    "pain_point": "kids and luggage burden",
+    "rank": 3
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "Korea",
+    "opportunity_score": 90,
+    "pain_point": "multi-stop planning",
+    "rank": 4
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "Korea",
+    "opportunity_score": 89,
+    "pain_point": "crowd congestion",
+    "rank": 5
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "Korea",
+    "opportunity_score": 88,
+    "pain_point": "hotel district pressure",
+    "rank": 6
+  },
+  {
+    "conversion_risk": "low",
+    "human_review_required": true,
+    "market": "Taiwan",
+    "opportunity_score": 95,
+    "pain_point": "crowd congestion",
+    "rank": 1
+  },
+  {
+    "conversion_risk": "low",
+    "human_review_required": true,
+    "market": "Taiwan",
+    "opportunity_score": 94,
+    "pain_point": "hotel district pressure",
+    "rank": 2
+  },
+  {
+    "conversion_risk": "low",
+    "human_review_required": true,
+    "market": "Taiwan",
+    "opportunity_score": 93,
+    "pain_point": "crowded venue exit",
+    "rank": 3
+  },
+  {
+    "conversion_risk": "low",
+    "human_review_required": true,
+    "market": "Taiwan",
+    "opportunity_score": 92,
+    "pain_point": "wait time uncertainty",
+    "rank": 4
+  },
+  {
+    "conversion_risk": "low",
+    "human_review_required": true,
+    "market": "Taiwan",
+    "opportunity_score": 91,
+    "pain_point": "late arrival uncertainty",
+    "rank": 5
+  },
+  {
+    "conversion_risk": "low",
+    "human_review_required": true,
+    "market": "Taiwan",
+    "opportunity_score": 90,
+    "pain_point": "airport pickup confusion",
+    "rank": 6
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "Southeast Asia",
+    "opportunity_score": 90,
+    "pain_point": "late arrival uncertainty",
+    "rank": 1
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "Southeast Asia",
+    "opportunity_score": 89,
+    "pain_point": "airport pickup confusion",
+    "rank": 2
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "Southeast Asia",
+    "opportunity_score": 88,
+    "pain_point": "confusing station transfers",
+    "rank": 3
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "Southeast Asia",
+    "opportunity_score": 87,
+    "pain_point": "language friction",
+    "rank": 4
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "Southeast Asia",
+    "opportunity_score": 86,
+    "pain_point": "kids and luggage burden",
+    "rank": 5
+  },
+  {
+    "conversion_risk": "medium",
+    "human_review_required": true,
+    "market": "Southeast Asia",
+    "opportunity_score": 85,
+    "pain_point": "multi-stop planning",
+    "rank": 6
+  },
+  {
+    "conversion_risk": "high",
+    "human_review_required": true,
+    "market": "China outbound",
+    "opportunity_score": 92,
+    "pain_point": "kids and luggage burden",
+    "rank": 1
+  },
+  {
+    "conversion_risk": "high",
+    "human_review_required": true,
+    "market": "China outbound",
+    "opportunity_score": 91,
+    "pain_point": "multi-stop planning",
+    "rank": 2
+  },
+  {
+    "conversion_risk": "high",
+    "human_review_required": true,
+    "market": "China outbound",
+    "opportunity_score": 90,
+    "pain_point": "crowd congestion",
+    "rank": 3
+  },
+  {
+    "conversion_risk": "high",
+    "human_review_required": true,
+    "market": "China outbound",
+    "opportunity_score": 89,
+    "pain_point": "hotel district pressure",
+    "rank": 4
+  },
+  {
+    "conversion_risk": "high",
+    "human_review_required": true,
+    "market": "China outbound",
+    "opportunity_score": 88,
+    "pain_point": "crowded venue exit",
+    "rank": 5
+  },
+  {
+    "conversion_risk": "high",
+    "human_review_required": true,
+    "market": "China outbound",
+    "opportunity_score": 87,
+    "pain_point": "wait time uncertainty",
+    "rank": 6
+  }
+]

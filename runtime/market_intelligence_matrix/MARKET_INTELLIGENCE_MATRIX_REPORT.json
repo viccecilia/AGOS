@@ -1,0 +1,990 @@
+{
+  "created_at": "2026-05-29T04:23:32+00:00",
+  "marketIntelligenceMatrix": [
+    {
+      "auto_promotion_allowed": false,
+      "auto_reply_allowed": false,
+      "content_tone": "calm, precise, local, non-exaggerated",
+      "conversion_risk": "medium",
+      "dominant_pain_points": [
+        "late arrival uncertainty",
+        "airport pickup confusion",
+        "confusing station transfers",
+        "language friction",
+        "kids and luggage burden",
+        "multi-stop planning"
+      ],
+      "human_review_required": true,
+      "languages": [
+        "ja"
+      ],
+      "market": "Japan",
+      "market_isolation_key": "Japan",
+      "mobility_need": "station-to-hotel, airport transfer, complex urban transfer",
+      "opportunity_score": 88,
+      "platform_preference": [
+        {
+          "fit_reason": "Japan demand can use Reddit for platform-aware discovery or education.",
+          "human_review_required": true,
+          "platform": "Reddit",
+          "promotion_risk": "high"
+        },
+        {
+          "fit_reason": "Japan demand can use SEO / Search for platform-aware discovery or education.",
+          "human_review_required": true,
+          "platform": "SEO / Search",
+          "promotion_risk": "low"
+        },
+        {
+          "fit_reason": "Japan demand can use YouTube for platform-aware discovery or education.",
+          "human_review_required": true,
+          "platform": "YouTube",
+          "promotion_risk": "medium"
+        },
+        {
+          "fit_reason": "Japan demand can use X for platform-aware discovery or education.",
+          "human_review_required": true,
+          "platform": "X",
+          "promotion_risk": "medium"
+        }
+      ],
+      "price_sensitivity": "medium",
+      "record_count": 4,
+      "source_record_ids": [
+        "GLOBAL-INTEL-0001",
+        "GLOBAL-INTEL-0009",
+        "GLOBAL-INTEL-0017",
+        "GLOBAL-INTEL-0025"
+      ],
+      "travel_style": "domestic precision, punctuality, station detail, local convenience",
+      "trust_barrier": "expects precise route and reliability; avoids vague claims",
+      "write_api_allowed": false
+    },
+    {
+      "auto_promotion_allowed": false,
+      "auto_reply_allowed": false,
+      "content_tone": "direct, practical, proof-backed",
+      "conversion_risk": "medium",
+      "dominant_pain_points": [
+        "kids and luggage burden",
+        "multi-stop planning",
+        "crowd congestion",
+        "hotel district pressure",
+        "crowded venue exit",
+        "wait time uncertainty"
+      ],
+      "human_review_required": true,
+      "languages": [
+        "en"
+      ],
+      "market": "US",
+      "market_isolation_key": "US",
+      "mobility_need": "airport transfer, family trip, luggage-heavy private movement",
+      "opportunity_score": 92,
+      "platform_preference": [
+        {
+          "fit_reason": "US demand can use TikTok for platform-aware discovery or education.",
+          "human_review_required": true,
+          "platform": "TikTok",
+          "promotion_risk": "medium"
+        },
+        {
+          "fit_reason": "US demand can use Reddit for platform-aware discovery or education.",
+          "human_review_required": true,
+          "platform": "Reddit",
+          "promotion_risk": "high"
+        },
+        {
+          "fit_reason": "US demand can use YouTube for platform-aware discovery or education.",
+          "human_review_required": true,
+          "platform": "YouTube",
+          "promotion_risk": "medium"
+        },
+        {
+          "fit_reason": "US demand can use SEO / Search for platform-aware discovery or education.",
+          "human_review_required": true,
+          "platform": "SEO / Search",
+          "promotion_risk": "low"
+        }
+      ],
+      "price_sensitivity": "medium",
+      "record_count": 4,
+      "source_record_ids": [
+        "GLOBAL-INTEL-0002",
+        "GLOBAL-INTEL-0010",
+        "GLOBAL-INTEL-0018",
+        "GLOBAL-INTEL-0026"
+      ],
+      "travel_style": "independent planning, convenience-driven, review-aware",
+      "trust_barrier": "needs proof, reviews, transparent pricing, and safety context",
+      "write_api_allowed": false
+    },
+    {
+      "auto_promotion_allowed": false,
+      "auto_reply_allowed": false,
+      "content_tone": "transparent, comparative, understated",
+      "conversion_risk": "medium",
+      "dominant_pain_points": [
+        "crowded venue exit",
+        "wait time uncertainty",
+        "late arrival uncertainty",
+        "airport pickup confusion",
+        "confusing station transfers",
+        "language friction"
+      ],
+      "human_review_required": true,
+      "languages": [
+        "en"
+      ],
+      "market": "Europe",
+      "market_isolation_key": "Europe",
+      "mobility_need": "multi-city transfer, station-to-hotel, airport pickup",
+      "opportunity_score": 90,
+      "platform_preference": [
+        {
+          "fit_reason": "Europe demand can use YouTube for platform-aware discovery or education.",
+          "human_review_required": true,
+          "platform": "YouTube",
+          "promotion_risk": "medium"
+        },
+        {
+          "fit_reason": "Europe demand can use SEO / Search for platform-aware discovery or education.",
+          "human_review_required": true,
+          "platform": "SEO / Search",
+          "promotion_risk": "low"
+        },
+        {
+          "fit_reason": "Europe demand can use Reddit for platform-aware discovery or education.",
+          "human_review_required": true,
+          "platform": "Reddit",
+          "promotion_risk": "high"
+        }
+      ],
+      "price_sensitivity": "high",
+      "record_count": 4,
+      "source_record_ids": [
+        "GLOBAL-INTEL-0003",
+        "GLOBAL-INTEL-0011",
+        "GLOBAL-INTEL-0019",
+        "GLOBAL-INTEL-0027"
+      ],
+      "travel_style": "multi-city planning, rail-aware, value and reliability balanced",
+      "trust_barrier": "skeptical of tourist traps and unclear inclusions",
+      "write_api_allowed": false
+    },
+    {
+      "auto_promotion_allowed": false,
+      "auto_reply_allowed": false,
+      "content_tone": "visual, concise, stylish, reassuring",
+      "conversion_risk": "medium",
+      "dominant_pain_points": [
+        "confusing station transfers",
+        "language friction",
+        "kids and luggage burden",
+        "multi-stop planning",
+        "crowd congestion",
+        "hotel district pressure"
+      ],
+      "human_review_required": true,
+      "languages": [
+        "ko"
+      ],
+      "market": "Korea",
+      "market_isolation_key": "Korea",
+      "mobility_need": "airport transfer, family route, shopping and luggage support",
+      "opportunity_score": 94,
+      "platform_preference": [
+        {
+          "fit_reason": "Korea demand can use X for platform-aware discovery or education.",
+          "human_review_required": true,
+          "platform": "X",
+          "promotion_risk": "medium"
+        },
+        {
+          "fit_reason": "Korea demand can use Instagram for platform-aware discovery or education.",
+          "human_review_required": true,
+          "platform": "Instagram",
+          "promotion_risk": "medium"
+        },
+        {
+          "fit_reason": "Korea demand can use TikTok for platform-aware discovery or education.",
+          "human_review_required": true,
+          "platform": "TikTok",
+          "promotion_risk": "medium"
+        },
+        {
+          "fit_reason": "Korea demand can use YouTube for platform-aware discovery or education.",
+          "human_review_required": true,
+          "platform": "YouTube",
+          "promotion_risk": "medium"
+        }
+      ],
+      "price_sensitivity": "medium",
+      "record_count": 4,
+      "source_record_ids": [
+        "GLOBAL-INTEL-0004",
+        "GLOBAL-INTEL-0012",
+        "GLOBAL-INTEL-0020",
+        "GLOBAL-INTEL-0028"
+      ],
+      "travel_style": "visual planning, trend-sensitive, compact itinerary",
+      "trust_barrier": "needs social proof, clean visuals, and clear Korean-language guidance",
+      "write_api_allowed": false
+    },
+    {
+      "auto_promotion_allowed": false,
+      "auto_reply_allowed": false,
+      "content_tone": "friendly, practical, life-style, low pressure",
+      "conversion_risk": "low",
+      "dominant_pain_points": [
+        "crowd congestion",
+        "hotel district pressure",
+        "crowded venue exit",
+        "wait time uncertainty",
+        "late arrival uncertainty",
+        "airport pickup confusion"
+      ],
+      "human_review_required": true,
+      "languages": [
+        "zh-TW"
+      ],
+      "market": "Taiwan",
+      "market_isolation_key": "Taiwan",
+      "mobility_need": "private charter, family trip, luggage-heavy sightseeing route",
+      "opportunity_score": 96,
+      "platform_preference": [
+        {
+          "fit_reason": "Taiwan demand can use Instagram for platform-aware discovery or education.",
+          "human_review_required": true,
+          "platform": "Instagram",
+          "promotion_risk": "medium"
+        },
+        {
+          "fit_reason": "Taiwan demand can use YouTube for platform-aware discovery or education.",
+          "human_review_required": true,
+          "platform": "YouTube",
+          "promotion_risk": "medium"
+        },
+        {
+          "fit_reason": "Taiwan demand can use SEO / Search for platform-aware discovery or education.",
+          "human_review_required": true,
+          "platform": "SEO / Search",
+          "promotion_risk": "low"
+        }
+      ],
+      "price_sensitivity": "medium",
+      "record_count": 4,
+      "source_record_ids": [
+        "GLOBAL-INTEL-0005",
+        "GLOBAL-INTEL-0013",
+        "GLOBAL-INTEL-0021",
+        "GLOBAL-INTEL-0029"
+      ],
+      "travel_style": "life-oriented, relaxed itinerary, family and small-group friendly",
+      "trust_barrier": "needs warm tone, practical itinerary examples, and low-pressure CTA",
+      "write_api_allowed": false
+    },
+    {
+      "auto_promotion_allowed": false,
+      "auto_reply_allowed": false,
+      "content_tone": "simple, helpful, mobile-first, clear value",
+      "conversion_risk": "medium",
+      "dominant_pain_points": [
+        "late arrival uncertainty",
+        "airport pickup confusion",
+        "confusing station transfers",
+        "language friction",
+        "kids and luggage burden",
+        "multi-stop planning"
+      ],
+      "human_review_required": true,
+      "languages": [
+        "en"
+      ],
+      "market": "Southeast Asia",
+      "market_isolation_key": "Southeast Asia",
+      "mobility_need": "airport transfer, group route, seasonal itinerary support",
+      "opportunity_score": 91,
+      "platform_preference": [
+        {
+          "fit_reason": "Southeast Asia demand can use Threads for platform-aware discovery or education.",
+          "human_review_required": true,
+          "platform": "Threads",
+          "promotion_risk": "medium"
+        },
+        {
+          "fit_reason": "Southeast Asia demand can use TikTok for platform-aware discovery or education.",
+          "human_review_required": true,
+          "platform": "TikTok",
+          "promotion_risk": "medium"
+        },
+        {
+          "fit_reason": "Southeast Asia demand can use Instagram for platform-aware discovery or education.",
+          "human_review_required": true,
+          "platform": "Instagram",
+          "promotion_risk": "medium"
+        },
+        {
+          "fit_reason": "Southeast Asia demand can use YouTube for platform-aware discovery or education.",
+          "human_review_required": true,
+          "platform": "YouTube",
+          "promotion_risk": "medium"
+        }
+      ],
+      "price_sensitivity": "high",
+      "record_count": 4,
+      "source_record_ids": [
+        "GLOBAL-INTEL-0006",
+        "GLOBAL-INTEL-0014",
+        "GLOBAL-INTEL-0022",
+        "GLOBAL-INTEL-0030"
+      ],
+      "travel_style": "mobile-first, deal-aware, group and family planning",
+      "trust_barrier": "needs price clarity, language simplicity, and fast response expectation",
+      "write_api_allowed": false
+    },
+    {
+      "auto_promotion_allowed": false,
+      "auto_reply_allowed": false,
+      "content_tone": "practical, note-style, trust-building, avoid overclaiming",
+      "conversion_risk": "high",
+      "dominant_pain_points": [
+        "kids and luggage burden",
+        "multi-stop planning",
+        "crowd congestion",
+        "hotel district pressure",
+        "crowded venue exit",
+        "wait time uncertainty"
+      ],
+      "human_review_required": true,
+      "languages": [
+        "zh-CN"
+      ],
+      "market": "China outbound",
+      "market_isolation_key": "China outbound",
+      "mobility_need": "airport pickup, private charter, luggage-heavy shopping route",
+      "opportunity_score": 93,
+      "platform_preference": [
+        {
+          "fit_reason": "China outbound demand can use SEO / Search for platform-aware discovery or education.",
+          "human_review_required": true,
+          "platform": "SEO / Search",
+          "promotion_risk": "low"
+        },
+        {
+          "fit_reason": "China outbound demand can use Xiaohongshu for platform-aware discovery or education.",
+          "human_review_required": true,
+          "platform": "Xiaohongshu",
+          "promotion_risk": "medium"
+        },
+        {
+          "fit_reason": "China outbound demand can use TikTok for platform-aware discovery or education.",
+          "human_review_required": true,
+          "platform": "TikTok",
+          "promotion_risk": "medium"
+        }
+      ],
+      "price_sensitivity": "medium",
+      "record_count": 4,
+      "source_record_ids": [
+        "GLOBAL-INTEL-0007",
+        "GLOBAL-INTEL-0015",
+        "GLOBAL-INTEL-0023",
+        "GLOBAL-INTEL-0031"
+      ],
+      "travel_style": "outbound planning, platform-specific note-taking, family and shopping routes",
+      "trust_barrier": "needs Mandarin clarity, local proof, and strict claim control",
+      "write_api_allowed": false
+    }
+  ],
+  "marketIntelligenceSummary": {
+    "all_markets_human_review_required": true,
+    "auto_promotion_allowed": false,
+    "auto_reply_allowed": false,
+    "china_outbound_isolation_key": "China outbound",
+    "china_outbound_pollutes_japan_local": false,
+    "highest_opportunity_score": 96,
+    "japan_isolation_key": "Japan",
+    "market_count": 7,
+    "market_intelligence_matrix_ready": true,
+    "next_recommendation": "Use market matrix for Cross-Platform Correlation Expansion after human review.",
+    "top_opportunity_markets": [
+      "Taiwan",
+      "Korea",
+      "China outbound",
+      "US",
+      "Southeast Asia"
+    ],
+    "write_api_allowed": false
+  },
+  "marketPainRanking": [
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "Japan",
+      "opportunity_score": 87,
+      "pain_point": "late arrival uncertainty",
+      "rank": 1
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "Japan",
+      "opportunity_score": 86,
+      "pain_point": "airport pickup confusion",
+      "rank": 2
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "Japan",
+      "opportunity_score": 85,
+      "pain_point": "confusing station transfers",
+      "rank": 3
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "Japan",
+      "opportunity_score": 84,
+      "pain_point": "language friction",
+      "rank": 4
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "Japan",
+      "opportunity_score": 83,
+      "pain_point": "kids and luggage burden",
+      "rank": 5
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "Japan",
+      "opportunity_score": 82,
+      "pain_point": "multi-stop planning",
+      "rank": 6
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "US",
+      "opportunity_score": 91,
+      "pain_point": "kids and luggage burden",
+      "rank": 1
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "US",
+      "opportunity_score": 90,
+      "pain_point": "multi-stop planning",
+      "rank": 2
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "US",
+      "opportunity_score": 89,
+      "pain_point": "crowd congestion",
+      "rank": 3
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "US",
+      "opportunity_score": 88,
+      "pain_point": "hotel district pressure",
+      "rank": 4
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "US",
+      "opportunity_score": 87,
+      "pain_point": "crowded venue exit",
+      "rank": 5
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "US",
+      "opportunity_score": 86,
+      "pain_point": "wait time uncertainty",
+      "rank": 6
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "Europe",
+      "opportunity_score": 89,
+      "pain_point": "crowded venue exit",
+      "rank": 1
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "Europe",
+      "opportunity_score": 88,
+      "pain_point": "wait time uncertainty",
+      "rank": 2
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "Europe",
+      "opportunity_score": 87,
+      "pain_point": "late arrival uncertainty",
+      "rank": 3
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "Europe",
+      "opportunity_score": 86,
+      "pain_point": "airport pickup confusion",
+      "rank": 4
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "Europe",
+      "opportunity_score": 85,
+      "pain_point": "confusing station transfers",
+      "rank": 5
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "Europe",
+      "opportunity_score": 84,
+      "pain_point": "language friction",
+      "rank": 6
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "Korea",
+      "opportunity_score": 93,
+      "pain_point": "confusing station transfers",
+      "rank": 1
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "Korea",
+      "opportunity_score": 92,
+      "pain_point": "language friction",
+      "rank": 2
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "Korea",
+      "opportunity_score": 91,
+      "pain_point": "kids and luggage burden",
+      "rank": 3
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "Korea",
+      "opportunity_score": 90,
+      "pain_point": "multi-stop planning",
+      "rank": 4
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "Korea",
+      "opportunity_score": 89,
+      "pain_point": "crowd congestion",
+      "rank": 5
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "Korea",
+      "opportunity_score": 88,
+      "pain_point": "hotel district pressure",
+      "rank": 6
+    },
+    {
+      "conversion_risk": "low",
+      "human_review_required": true,
+      "market": "Taiwan",
+      "opportunity_score": 95,
+      "pain_point": "crowd congestion",
+      "rank": 1
+    },
+    {
+      "conversion_risk": "low",
+      "human_review_required": true,
+      "market": "Taiwan",
+      "opportunity_score": 94,
+      "pain_point": "hotel district pressure",
+      "rank": 2
+    },
+    {
+      "conversion_risk": "low",
+      "human_review_required": true,
+      "market": "Taiwan",
+      "opportunity_score": 93,
+      "pain_point": "crowded venue exit",
+      "rank": 3
+    },
+    {
+      "conversion_risk": "low",
+      "human_review_required": true,
+      "market": "Taiwan",
+      "opportunity_score": 92,
+      "pain_point": "wait time uncertainty",
+      "rank": 4
+    },
+    {
+      "conversion_risk": "low",
+      "human_review_required": true,
+      "market": "Taiwan",
+      "opportunity_score": 91,
+      "pain_point": "late arrival uncertainty",
+      "rank": 5
+    },
+    {
+      "conversion_risk": "low",
+      "human_review_required": true,
+      "market": "Taiwan",
+      "opportunity_score": 90,
+      "pain_point": "airport pickup confusion",
+      "rank": 6
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "Southeast Asia",
+      "opportunity_score": 90,
+      "pain_point": "late arrival uncertainty",
+      "rank": 1
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "Southeast Asia",
+      "opportunity_score": 89,
+      "pain_point": "airport pickup confusion",
+      "rank": 2
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "Southeast Asia",
+      "opportunity_score": 88,
+      "pain_point": "confusing station transfers",
+      "rank": 3
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "Southeast Asia",
+      "opportunity_score": 87,
+      "pain_point": "language friction",
+      "rank": 4
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "Southeast Asia",
+      "opportunity_score": 86,
+      "pain_point": "kids and luggage burden",
+      "rank": 5
+    },
+    {
+      "conversion_risk": "medium",
+      "human_review_required": true,
+      "market": "Southeast Asia",
+      "opportunity_score": 85,
+      "pain_point": "multi-stop planning",
+      "rank": 6
+    },
+    {
+      "conversion_risk": "high",
+      "human_review_required": true,
+      "market": "China outbound",
+      "opportunity_score": 92,
+      "pain_point": "kids and luggage burden",
+      "rank": 1
+    },
+    {
+      "conversion_risk": "high",
+      "human_review_required": true,
+      "market": "China outbound",
+      "opportunity_score": 91,
+      "pain_point": "multi-stop planning",
+      "rank": 2
+    },
+    {
+      "conversion_risk": "high",
+      "human_review_required": true,
+      "market": "China outbound",
+      "opportunity_score": 90,
+      "pain_point": "crowd congestion",
+      "rank": 3
+    },
+    {
+      "conversion_risk": "high",
+      "human_review_required": true,
+      "market": "China outbound",
+      "opportunity_score": 89,
+      "pain_point": "hotel district pressure",
+      "rank": 4
+    },
+    {
+      "conversion_risk": "high",
+      "human_review_required": true,
+      "market": "China outbound",
+      "opportunity_score": 88,
+      "pain_point": "crowded venue exit",
+      "rank": 5
+    },
+    {
+      "conversion_risk": "high",
+      "human_review_required": true,
+      "market": "China outbound",
+      "opportunity_score": 87,
+      "pain_point": "wait time uncertainty",
+      "rank": 6
+    }
+  ],
+  "marketPlatformFit": [
+    {
+      "content_format_fit": "detailed reply, checklist, comparison, transparent caveat",
+      "content_tone": "calm, precise, local, non-exaggerated",
+      "human_review_required": true,
+      "market": "Japan",
+      "platform": "Reddit",
+      "promotion_risk": "high",
+      "safe_cta_style": "answer first, disclose context, mention homepage only as optional reference after value"
+    },
+    {
+      "content_format_fit": "search article, FAQ, route guide, comparison page",
+      "content_tone": "calm, precise, local, non-exaggerated",
+      "human_review_required": true,
+      "market": "Japan",
+      "platform": "SEO / Search",
+      "promotion_risk": "low",
+      "safe_cta_style": "contextual internal link after satisfying search intent"
+    },
+    {
+      "content_format_fit": "short explainer, route guide, problem walkthrough",
+      "content_tone": "calm, precise, local, non-exaggerated",
+      "human_review_required": true,
+      "market": "Japan",
+      "platform": "YouTube",
+      "promotion_risk": "medium",
+      "safe_cta_style": "link as supporting resource after explaining the decision logic"
+    },
+    {
+      "content_format_fit": "short post, thread, trend observation, quick warning",
+      "content_tone": "calm, precise, local, non-exaggerated",
+      "human_review_required": true,
+      "market": "Japan",
+      "platform": "X",
+      "promotion_risk": "medium",
+      "safe_cta_style": "one-line resource reference only when directly relevant"
+    },
+    {
+      "content_format_fit": "short hook, fast scenario, visual before-after, comment prompt",
+      "content_tone": "direct, practical, proof-backed",
+      "human_review_required": true,
+      "market": "US",
+      "platform": "TikTok",
+      "promotion_risk": "medium",
+      "safe_cta_style": "soft profile reference after a useful tip, no hard sell"
+    },
+    {
+      "content_format_fit": "detailed reply, checklist, comparison, transparent caveat",
+      "content_tone": "direct, practical, proof-backed",
+      "human_review_required": true,
+      "market": "US",
+      "platform": "Reddit",
+      "promotion_risk": "high",
+      "safe_cta_style": "answer first, disclose context, mention homepage only as optional reference after value"
+    },
+    {
+      "content_format_fit": "short explainer, route guide, problem walkthrough",
+      "content_tone": "direct, practical, proof-backed",
+      "human_review_required": true,
+      "market": "US",
+      "platform": "YouTube",
+      "promotion_risk": "medium",
+      "safe_cta_style": "link as supporting resource after explaining the decision logic"
+    },
+    {
+      "content_format_fit": "search article, FAQ, route guide, comparison page",
+      "content_tone": "direct, practical, proof-backed",
+      "human_review_required": true,
+      "market": "US",
+      "platform": "SEO / Search",
+      "promotion_risk": "low",
+      "safe_cta_style": "contextual internal link after satisfying search intent"
+    },
+    {
+      "content_format_fit": "short explainer, route guide, problem walkthrough",
+      "content_tone": "transparent, comparative, understated",
+      "human_review_required": true,
+      "market": "Europe",
+      "platform": "YouTube",
+      "promotion_risk": "medium",
+      "safe_cta_style": "link as supporting resource after explaining the decision logic"
+    },
+    {
+      "content_format_fit": "search article, FAQ, route guide, comparison page",
+      "content_tone": "transparent, comparative, understated",
+      "human_review_required": true,
+      "market": "Europe",
+      "platform": "SEO / Search",
+      "promotion_risk": "low",
+      "safe_cta_style": "contextual internal link after satisfying search intent"
+    },
+    {
+      "content_format_fit": "detailed reply, checklist, comparison, transparent caveat",
+      "content_tone": "transparent, comparative, understated",
+      "human_review_required": true,
+      "market": "Europe",
+      "platform": "Reddit",
+      "promotion_risk": "high",
+      "safe_cta_style": "answer first, disclose context, mention homepage only as optional reference after value"
+    },
+    {
+      "content_format_fit": "short post, thread, trend observation, quick warning",
+      "content_tone": "visual, concise, stylish, reassuring",
+      "human_review_required": true,
+      "market": "Korea",
+      "platform": "X",
+      "promotion_risk": "medium",
+      "safe_cta_style": "one-line resource reference only when directly relevant"
+    },
+    {
+      "content_format_fit": "carousel, story checklist, saveable mini guide",
+      "content_tone": "visual, concise, stylish, reassuring",
+      "human_review_required": true,
+      "market": "Korea",
+      "platform": "Instagram",
+      "promotion_risk": "medium",
+      "safe_cta_style": "saveable guide CTA with homepage as planning reference"
+    },
+    {
+      "content_format_fit": "short hook, fast scenario, visual before-after, comment prompt",
+      "content_tone": "visual, concise, stylish, reassuring",
+      "human_review_required": true,
+      "market": "Korea",
+      "platform": "TikTok",
+      "promotion_risk": "medium",
+      "safe_cta_style": "soft profile reference after a useful tip, no hard sell"
+    },
+    {
+      "content_format_fit": "short explainer, route guide, problem walkthrough",
+      "content_tone": "visual, concise, stylish, reassuring",
+      "human_review_required": true,
+      "market": "Korea",
+      "platform": "YouTube",
+      "promotion_risk": "medium",
+      "safe_cta_style": "link as supporting resource after explaining the decision logic"
+    },
+    {
+      "content_format_fit": "carousel, story checklist, saveable mini guide",
+      "content_tone": "friendly, practical, life-style, low pressure",
+      "human_review_required": true,
+      "market": "Taiwan",
+      "platform": "Instagram",
+      "promotion_risk": "medium",
+      "safe_cta_style": "saveable guide CTA with homepage as planning reference"
+    },
+    {
+      "content_format_fit": "short explainer, route guide, problem walkthrough",
+      "content_tone": "friendly, practical, life-style, low pressure",
+      "human_review_required": true,
+      "market": "Taiwan",
+      "platform": "YouTube",
+      "promotion_risk": "medium",
+      "safe_cta_style": "link as supporting resource after explaining the decision logic"
+    },
+    {
+      "content_format_fit": "search article, FAQ, route guide, comparison page",
+      "content_tone": "friendly, practical, life-style, low pressure",
+      "human_review_required": true,
+      "market": "Taiwan",
+      "platform": "SEO / Search",
+      "promotion_risk": "low",
+      "safe_cta_style": "contextual internal link after satisfying search intent"
+    },
+    {
+      "content_format_fit": "short conversational post, soft discussion starter",
+      "content_tone": "simple, helpful, mobile-first, clear value",
+      "human_review_required": true,
+      "market": "Southeast Asia",
+      "platform": "Threads",
+      "promotion_risk": "medium",
+      "safe_cta_style": "community-friendly optional reference, avoid repeated CTA"
+    },
+    {
+      "content_format_fit": "short hook, fast scenario, visual before-after, comment prompt",
+      "content_tone": "simple, helpful, mobile-first, clear value",
+      "human_review_required": true,
+      "market": "Southeast Asia",
+      "platform": "TikTok",
+      "promotion_risk": "medium",
+      "safe_cta_style": "soft profile reference after a useful tip, no hard sell"
+    },
+    {
+      "content_format_fit": "carousel, story checklist, saveable mini guide",
+      "content_tone": "simple, helpful, mobile-first, clear value",
+      "human_review_required": true,
+      "market": "Southeast Asia",
+      "platform": "Instagram",
+      "promotion_risk": "medium",
+      "safe_cta_style": "saveable guide CTA with homepage as planning reference"
+    },
+    {
+      "content_format_fit": "short explainer, route guide, problem walkthrough",
+      "content_tone": "simple, helpful, mobile-first, clear value",
+      "human_review_required": true,
+      "market": "Southeast Asia",
+      "platform": "YouTube",
+      "promotion_risk": "medium",
+      "safe_cta_style": "link as supporting resource after explaining the decision logic"
+    },
+    {
+      "content_format_fit": "search article, FAQ, route guide, comparison page",
+      "content_tone": "practical, note-style, trust-building, avoid overclaiming",
+      "human_review_required": true,
+      "market": "China outbound",
+      "platform": "SEO / Search",
+      "promotion_risk": "low",
+      "safe_cta_style": "contextual internal link after satisfying search intent"
+    },
+    {
+      "content_format_fit": "note angle, checklist, route screenshot plan, saveable tips",
+      "content_tone": "practical, note-style, trust-building, avoid overclaiming",
+      "human_review_required": true,
+      "market": "China outbound",
+      "platform": "Xiaohongshu",
+      "promotion_risk": "medium",
+      "safe_cta_style": "soft note-style reference after practical steps, no exaggerated claims"
+    },
+    {
+      "content_format_fit": "short hook, fast scenario, visual before-after, comment prompt",
+      "content_tone": "practical, note-style, trust-building, avoid overclaiming",
+      "human_review_required": true,
+      "market": "China outbound",
+      "platform": "TikTok",
+      "promotion_risk": "medium",
+      "safe_cta_style": "soft profile reference after a useful tip, no hard sell"
+    }
+  ],
+  "phase": "GLOBAL_INTELLIGENCE_COLLECTION",
+  "report_id": "MARKET_INTELLIGENCE_MATRIX_REPORT",
+  "round_id": "ROUND-GLOBAL-004",
+  "safetyBoundary": "Market Intelligence Matrix builds market-level analysis only. It does not generate automatic promotion actions, publish, reply, contact users, or call platform write APIs.",
+  "status": "market_intelligence_matrix_ready"
+}

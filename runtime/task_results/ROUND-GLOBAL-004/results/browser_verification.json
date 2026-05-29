@@ -1,0 +1,27 @@
+{
+  "round_id": "ROUND-GLOBAL-004",
+  "url": "http://localhost:8765/project_control_center.html?runtime_ui=1&cache_bust=global004#war-room-growth",
+  "version": "0.1.136",
+  "currentRound": "ROUND-GLOBAL-004 / AGOS_MARKET_INTELLIGENCE_MATRIX",
+  "panelExists": true,
+  "panelTextIncludesJapan": true,
+  "panelTextIncludesChinaOutbound": true,
+  "panelTextIncludesPlatformPreference": true,
+  "panelTextIncludesOpportunity": true,
+  "marketCount": 7,
+  "topOpportunityMarkets": [
+    "Taiwan",
+    "Korea",
+    "China outbound",
+    "US",
+    "Southeast Asia"
+  ],
+  "highestOpportunityScore": 96,
+  "allMarketsHumanReviewRequired": true,
+  "autoPromotionAllowed": false,
+  "autoReplyAllowed": false,
+  "writeApiAllowed": false,
+  "chinaOutboundIsolationKey": "China outbound",
+  "japanIsolationKey": "Japan",
+  "chinaOutboundPollutesJapanLocal": false
+}

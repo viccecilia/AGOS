@@ -1,0 +1,227 @@
+[
+  {
+    "content_format_fit": "detailed reply, checklist, comparison, transparent caveat",
+    "content_tone": "calm, precise, local, non-exaggerated",
+    "human_review_required": true,
+    "market": "Japan",
+    "platform": "Reddit",
+    "promotion_risk": "high",
+    "safe_cta_style": "answer first, disclose context, mention homepage only as optional reference after value"
+  },
+  {
+    "content_format_fit": "search article, FAQ, route guide, comparison page",
+    "content_tone": "calm, precise, local, non-exaggerated",
+    "human_review_required": true,
+    "market": "Japan",
+    "platform": "SEO / Search",
+    "promotion_risk": "low",
+    "safe_cta_style": "contextual internal link after satisfying search intent"
+  },
+  {
+    "content_format_fit": "short explainer, route guide, problem walkthrough",
+    "content_tone": "calm, precise, local, non-exaggerated",
+    "human_review_required": true,
+    "market": "Japan",
+    "platform": "YouTube",
+    "promotion_risk": "medium",
+    "safe_cta_style": "link as supporting resource after explaining the decision logic"
+  },
+  {
+    "content_format_fit": "short post, thread, trend observation, quick warning",
+    "content_tone": "calm, precise, local, non-exaggerated",
+    "human_review_required": true,
+    "market": "Japan",
+    "platform": "X",
+    "promotion_risk": "medium",
+    "safe_cta_style": "one-line resource reference only when directly relevant"
+  },
+  {
+    "content_format_fit": "short hook, fast scenario, visual before-after, comment prompt",
+    "content_tone": "direct, practical, proof-backed",
+    "human_review_required": true,
+    "market": "US",
+    "platform": "TikTok",
+    "promotion_risk": "medium",
+    "safe_cta_style": "soft profile reference after a useful tip, no hard sell"
+  },
+  {
+    "content_format_fit": "detailed reply, checklist, comparison, transparent caveat",
+    "content_tone": "direct, practical, proof-backed",
+    "human_review_required": true,
+    "market": "US",
+    "platform": "Reddit",
+    "promotion_risk": "high",
+    "safe_cta_style": "answer first, disclose context, mention homepage only as optional reference after value"
+  },
+  {
+    "content_format_fit": "short explainer, route guide, problem walkthrough",
+    "content_tone": "direct, practical, proof-backed",
+    "human_review_required": true,
+    "market": "US",
+    "platform": "YouTube",
+    "promotion_risk": "medium",
+    "safe_cta_style": "link as supporting resource after explaining the decision logic"
+  },
+  {
+    "content_format_fit": "search article, FAQ, route guide, comparison page",
+    "content_tone": "direct, practical, proof-backed",
+    "human_review_required": true,
+    "market": "US",
+    "platform": "SEO / Search",
+    "promotion_risk": "low",
+    "safe_cta_style": "contextual internal link after satisfying search intent"
+  },
+  {
+    "content_format_fit": "short explainer, route guide, problem walkthrough",
+    "content_tone": "transparent, comparative, understated",
+    "human_review_required": true,
+    "market": "Europe",
+    "platform": "YouTube",
+    "promotion_risk": "medium",
+    "safe_cta_style": "link as supporting resource after explaining the decision logic"
+  },
+  {
+    "content_format_fit": "search article, FAQ, route guide, comparison page",
+    "content_tone": "transparent, comparative, understated",
+    "human_review_required": true,
+    "market": "Europe",
+    "platform": "SEO / Search",
+    "promotion_risk": "low",
+    "safe_cta_style": "contextual internal link after satisfying search intent"
+  },
+  {
+    "content_format_fit": "detailed reply, checklist, comparison, transparent caveat",
+    "content_tone": "transparent, comparative, understated",
+    "human_review_required": true,
+    "market": "Europe",
+    "platform": "Reddit",
+    "promotion_risk": "high",
+    "safe_cta_style": "answer first, disclose context, mention homepage only as optional reference after value"
+  },
+  {
+    "content_format_fit": "short post, thread, trend observation, quick warning",
+    "content_tone": "visual, concise, stylish, reassuring",
+    "human_review_required": true,
+    "market": "Korea",
+    "platform": "X",
+    "promotion_risk": "medium",
+    "safe_cta_style": "one-line resource reference only when directly relevant"
+  },
+  {
+    "content_format_fit": "carousel, story checklist, saveable mini guide",
+    "content_tone": "visual, concise, stylish, reassuring",
+    "human_review_required": true,
+    "market": "Korea",
+    "platform": "Instagram",
+    "promotion_risk": "medium",
+    "safe_cta_style": "saveable guide CTA with homepage as planning reference"
+  },
+  {
+    "content_format_fit": "short hook, fast scenario, visual before-after, comment prompt",
+    "content_tone": "visual, concise, stylish, reassuring",
+    "human_review_required": true,
+    "market": "Korea",
+    "platform": "TikTok",
+    "promotion_risk": "medium",
+    "safe_cta_style": "soft profile reference after a useful tip, no hard sell"
+  },
+  {
+    "content_format_fit": "short explainer, route guide, problem walkthrough",
+    "content_tone": "visual, concise, stylish, reassuring",
+    "human_review_required": true,
+    "market": "Korea",
+    "platform": "YouTube",
+    "promotion_risk": "medium",
+    "safe_cta_style": "link as supporting resource after explaining the decision logic"
+  },
+  {
+    "content_format_fit": "carousel, story checklist, saveable mini guide",
+    "content_tone": "friendly, practical, life-style, low pressure",
+    "human_review_required": true,
+    "market": "Taiwan",
+    "platform": "Instagram",
+    "promotion_risk": "medium",
+    "safe_cta_style": "saveable guide CTA with homepage as planning reference"
+  },
+  {
+    "content_format_fit": "short explainer, route guide, problem walkthrough",
+    "content_tone": "friendly, practical, life-style, low pressure",
+    "human_review_required": true,
+    "market": "Taiwan",
+    "platform": "YouTube",
+    "promotion_risk": "medium",
+    "safe_cta_style": "link as supporting resource after explaining the decision logic"
+  },
+  {
+    "content_format_fit": "search article, FAQ, route guide, comparison page",
+    "content_tone": "friendly, practical, life-style, low pressure",
+    "human_review_required": true,
+    "market": "Taiwan",
+    "platform": "SEO / Search",
+    "promotion_risk": "low",
+    "safe_cta_style": "contextual internal link after satisfying search intent"
+  },
+  {
+    "content_format_fit": "short conversational post, soft discussion starter",
+    "content_tone": "simple, helpful, mobile-first, clear value",
+    "human_review_required": true,
+    "market": "Southeast Asia",
+    "platform": "Threads",
+    "promotion_risk": "medium",
+    "safe_cta_style": "community-friendly optional reference, avoid repeated CTA"
+  },
+  {
+    "content_format_fit": "short hook, fast scenario, visual before-after, comment prompt",
+    "content_tone": "simple, helpful, mobile-first, clear value",
+    "human_review_required": true,
+    "market": "Southeast Asia",
+    "platform": "TikTok",
+    "promotion_risk": "medium",
+    "safe_cta_style": "soft profile reference after a useful tip, no hard sell"
+  },
+  {
+    "content_format_fit": "carousel, story checklist, saveable mini guide",
+    "content_tone": "simple, helpful, mobile-first, clear value",
+    "human_review_required": true,
+    "market": "Southeast Asia",
+    "platform": "Instagram",
+    "promotion_risk": "medium",
+    "safe_cta_style": "saveable guide CTA with homepage as planning reference"
+  },
+  {
+    "content_format_fit": "short explainer, route guide, problem walkthrough",
+    "content_tone": "simple, helpful, mobile-first, clear value",
+    "human_review_required": true,
+    "market": "Southeast Asia",
+    "platform": "YouTube",
+    "promotion_risk": "medium",
+    "safe_cta_style": "link as supporting resource after explaining the decision logic"
+  },
+  {
+    "content_format_fit": "search article, FAQ, route guide, comparison page",
+    "content_tone": "practical, note-style, trust-building, avoid overclaiming",
+    "human_review_required": true,
+    "market": "China outbound",
+    "platform": "SEO / Search",
+    "promotion_risk": "low",
+    "safe_cta_style": "contextual internal link after satisfying search intent"
+  },
+  {
+    "content_format_fit": "note angle, checklist, route screenshot plan, saveable tips",
+    "content_tone": "practical, note-style, trust-building, avoid overclaiming",
+    "human_review_required": true,
+    "market": "China outbound",
+    "platform": "Xiaohongshu",
+    "promotion_risk": "medium",
+    "safe_cta_style": "soft note-style reference after practical steps, no exaggerated claims"
+  },
+  {
+    "content_format_fit": "short hook, fast scenario, visual before-after, comment prompt",
+    "content_tone": "practical, note-style, trust-building, avoid overclaiming",
+    "human_review_required": true,
+    "market": "China outbound",
+    "platform": "TikTok",
+    "promotion_risk": "medium",
+    "safe_cta_style": "soft profile reference after a useful tip, no hard sell"
+  }
+]

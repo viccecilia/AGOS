@@ -48,6 +48,7 @@ from services.live_collection_runner import LiveCollectionRunner
 from services.live_data_import_to_memory import LiveDataImportToMemory
 from services.live_data_normalization_pipeline import LiveDataNormalizationPipeline
 from services.location_demand_heatmap_engine import LocationDemandHeatmapEngine
+from services.market_intelligence_matrix import MarketIntelligenceMatrix
 from services.manual_external_feedback_intake import ManualExternalFeedbackIntake
 from services.manual_promotion_export_pack import ManualPromotionExportPack
 from services.merchant_growth_engine_gate import MerchantGrowthEngineGate
@@ -253,6 +254,11 @@ class RuntimeUIBridge:
         platform_pain_intelligence = PlatformPainIntelligence().build(
             global_pain_clusters.get("globalPainClusters", []),
             global_batch_intelligence.get("globalIntelligenceRecords", []),
+        )
+        market_intelligence_matrix = MarketIntelligenceMatrix().build(
+            global_batch_intelligence.get("globalIntelligenceRecords", []),
+            global_pain_clusters.get("globalPainClusters", []),
+            platform_pain_intelligence.get("platformPainProfiles", []),
         )
         batch_scout_runtime = BatchScoutRuntime().run()
         batch_topic_clustering = BatchTopicClustering().cluster(batch_scout_runtime.get("batchAnalysis", []))
@@ -685,6 +691,11 @@ class RuntimeUIBridge:
             "platformPainMatrix": platform_pain_intelligence.get("platformPainMatrix", []),
             "platformPainRiskReview": platform_pain_intelligence.get("platformPainRiskReview", {}),
             "platformPainSummary": platform_pain_intelligence.get("platformPainSummary", {}),
+            "marketIntelligenceMatrixReport": market_intelligence_matrix,
+            "marketIntelligenceMatrix": market_intelligence_matrix.get("marketIntelligenceMatrix", []),
+            "marketPlatformFit": market_intelligence_matrix.get("marketPlatformFit", []),
+            "marketPainRanking": market_intelligence_matrix.get("marketPainRanking", []),
+            "marketIntelligenceSummary": market_intelligence_matrix.get("marketIntelligenceSummary", {}),
             "locationDemandHeatmap": location_demand_heatmap,
             "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),
