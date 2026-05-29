@@ -1,0 +1,18 @@
+﻿{
+  "url": "http://127.0.0.1:8765/project_control_center.html?runtime_ui=1&cache_bust=realdata001#war-room-growth",
+  "version": "0.1.145",
+  "currentRound": "ROUND-REALDATA-001_PLATFORM_AUTHORIZATION_CONTRACT",
+  "panelExists": true,
+  "hasYouTube": true,
+  "hasTikTok": true,
+  "hasInstagram": true,
+  "hasNotConnected": true,
+  "hasNoApi": true,
+  "hasNoCredentials": true,
+  "hasNoTraining": true,
+  "hasReadOnly": true,
+  "accessEnabled": false,
+  "apiCalled": false,
+  "trainingStarted": false,
+  "verifiedAt": "2026-05-29"
+}

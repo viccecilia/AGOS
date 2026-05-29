@@ -1,0 +1,168 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agos.local/schemas/platform_authorization_contract.schema.json",
+  "title": "AGOS Platform Authorization Contract",
+  "type": "object",
+  "required": [
+    "contract_id",
+    "round_id",
+    "phase",
+    "supportedMvpPlatforms",
+    "optionalLaterPlatforms",
+    "accessStatuses",
+    "accountAuthorizationRequirements",
+    "platformAuthorizationContracts",
+    "authorizationStatus",
+    "platformScopeRequirements",
+    "authorizationEvidence",
+    "safetyBoundary"
+  ],
+  "properties": {
+    "contract_id": {
+      "const": "PLATFORM_AUTHORIZATION_CONTRACT"
+    },
+    "round_id": {
+      "const": "ROUND-REALDATA-001_PLATFORM_AUTHORIZATION_CONTRACT"
+    },
+    "phase": {
+      "const": "AGOS_REAL_DATA_CONTROLLED_ACCESS"
+    },
+    "supportedMvpPlatforms": {
+      "type": "array",
+      "contains": {
+        "const": "YouTube"
+      },
+      "items": {
+        "type": "string"
+      },
+      "minItems": 3
+    },
+    "optionalLaterPlatforms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 7
+    },
+    "accessStatuses": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "not_connected",
+          "authorization_pending",
+          "authorized_read_only",
+          "suspended",
+          "revoked"
+        ]
+      },
+      "minItems": 5
+    },
+    "accountAuthorizationRequirements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 6
+    },
+    "platformAuthorizationContracts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/platformAuthorizationContract"
+      },
+      "minItems": 10
+    },
+    "authorizationStatus": {
+      "type": "object"
+    },
+    "platformScopeRequirements": {
+      "type": "object"
+    },
+    "authorizationEvidence": {
+      "type": "object",
+      "required": [
+        "contract_defined",
+        "real_platform_api_called",
+        "real_data_ingested",
+        "agos_training_started",
+        "credentials_found"
+      ]
+    },
+    "safetyBoundary": {
+      "type": "object",
+      "required": [
+        "real_platform_api_called",
+        "credentials_stored",
+        "env_file_written",
+        "real_data_ingested",
+        "agos_training_started",
+        "write_api_allowed"
+      ]
+    }
+  },
+  "$defs": {
+    "platformAuthorizationContract": {
+      "type": "object",
+      "required": [
+        "platform",
+        "platform_group",
+        "access_status",
+        "account_owner_approval_required",
+        "required_permission_scope",
+        "read_only_access_required",
+        "private_messages_allowed",
+        "password_storage_allowed",
+        "token_committed_to_repo_allowed",
+        "write_api_allowed",
+        "real_data_ingestion_allowed",
+        "training_allowed"
+      ],
+      "properties": {
+        "platform": {
+          "type": "string"
+        },
+        "platform_group": {
+          "enum": [
+            "mvp",
+            "optional_later"
+          ]
+        },
+        "access_status": {
+          "enum": [
+            "not_connected",
+            "authorization_pending",
+            "authorized_read_only",
+            "suspended",
+            "revoked"
+          ]
+        },
+        "account_owner_approval_required": {
+          "const": true
+        },
+        "required_permission_scope": {
+          "type": "string"
+        },
+        "read_only_access_required": {
+          "const": true
+        },
+        "private_messages_allowed": {
+          "const": false
+        },
+        "password_storage_allowed": {
+          "const": false
+        },
+        "token_committed_to_repo_allowed": {
+          "const": false
+        },
+        "write_api_allowed": {
+          "const": false
+        },
+        "real_data_ingestion_allowed": {
+          "const": false
+        },
+        "training_allowed": {
+          "const": false
+        }
+      }
+    }
+  }
+}

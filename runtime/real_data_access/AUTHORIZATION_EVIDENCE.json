@@ -1,0 +1,42 @@
+{
+  "account_owner_approval_required": true,
+  "agos_training_started": false,
+  "contract_defined": true,
+  "created_at": "2026-05-29T06:08:54+00:00",
+  "credentials_found": false,
+  "env_file_written": false,
+  "evidence_id": "AUTHORIZATION_EVIDENCE",
+  "evidence_status": "contract_only_no_real_connections",
+  "mvp_platforms_defined": [
+    "YouTube",
+    "TikTok",
+    "Instagram"
+  ],
+  "next_gate_required": "ROUND-REALDATA-002_READ_ONLY_CONNECTION_DRY_RUN",
+  "optional_later_platforms_defined": [
+    "X / Twitter",
+    "Reddit",
+    "Facebook Page",
+    "LinkedIn",
+    "小红书",
+    "抖音",
+    "Bilibili"
+  ],
+  "password_storage_allowed": false,
+  "platform_status_values_defined": [
+    "not_connected",
+    "authorization_pending",
+    "authorized_read_only",
+    "suspended",
+    "revoked"
+  ],
+  "private_messages_allowed": false,
+  "read_only_access_required": true,
+  "real_data_access_enabled": false,
+  "real_data_ingested": false,
+  "real_platform_api_called": false,
+  "round_id": "ROUND-REALDATA-001_PLATFORM_AUTHORIZATION_CONTRACT",
+  "schema_required": true,
+  "token_committed_to_repo_allowed": false,
+  "write_scope_allowed": false
+}

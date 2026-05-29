@@ -544,31 +544,38 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.144",
+    "controlCenterVersion": "0.1.145",
     "lastUpdated": "2026-05-29",
-    "currentPhase": "Global Predictive Intelligence",
-    "currentRound": "ROUND-GLOBAL-012 / AGOS_CROSS_DIMENSIONAL_CORRELATION",
-    "nextRound": "Global strategy signal review / next stage planning",
+    "currentPhase": "AGOS Real Data Controlled Access",
+    "currentRound": "ROUND-REALDATA-001_PLATFORM_AUTHORIZATION_CONTRACT",
+    "nextRound": "ROUND-REALDATA-002 Read-Only Connection Dry Run",
     "overallProgress": 100,
-    "activeFocus": "AGOS now connects season, location, event, platform, market, pain, and mobility demand into explainable cross-dimensional correlation chains. All strategy candidates remain sample-first, read-only, audit-first, and human-gated."
+    "activeFocus": "AGOS has entered Real Data Controlled Access Stage. This round defines platform account authorization contracts for read-only access only. No real platform API is called, no credentials are stored, no real data is ingested, and AGOS training remains stopped."
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.144 Add cross dimensional correlation",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.144",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.144",
-    "note": "Cross-Dimensional Correlation creates explainable prediction chains and human-gated strategy signal candidates without publishing, contact, quote, dispatch, or write API actions."
+    "latestCommit": "agos-v0.1.145 Add platform authorization contract",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.145",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.145",
+    "note": "Platform Authorization Contract defines read-only platform authorization requirements and evidence without calling real APIs, storing credentials, ingesting real data, or starting training."
   },
   "metrics": {
-    "roundsPlanned": 165,
-    "roundsCompleted": 136,
+    "roundsPlanned": 166,
+    "roundsCompleted": 137,
     "roundsInProgress": 0,
-    "reportsEmbedded": 150,
+    "reportsEmbedded": 151,
     "aiCompletion": 100
   },
   "modules": [
+    {
+      "name": "Platform Authorization Contract",
+      "progress": 100,
+      "status": "done",
+      "ownerPath": "services/platform_authorization_contract.py + schemas/platform_authorization_contract.schema.json + runtime/real_data_access/",
+      "next": "Use the contract as the prerequisite for a read-only connection dry run; keep credentials out of repo and keep training stopped."
+    },
     {
       "name": "Cross-Dimensional Correlation",
       "progress": 100,
@@ -908,6 +915,10 @@
   ],
   "paths": [
     {
+      "path": "runtime/real_data_access/",
+      "purpose": "Platform authorization contract, status, scope requirements, and evidence for controlled read-only real-data access preparation."
+    },
+    {
       "path": "runtime/cross_dimensional_correlation/",
       "purpose": "Cross-dimensional correlation chains, heatmap, strategy signal candidates, and summary for explainable demand prediction links."
     },
@@ -1077,6 +1088,29 @@
     }
   ],
   "reports": [
+    {
+      "id": "ROUND-REALDATA-001_PLATFORM_AUTHORIZATION_CONTRACT",
+      "title": "AGOS Platform Authorization Contract",
+      "status": "done",
+      "date": "2026-05-29",
+      "summary": "Defined platform authorization contracts for YouTube, TikTok, and Instagram as MVP platforms, plus optional later platforms. Every platform starts not_connected, requires account owner approval and read-only scope, forbids private messages, password storage, repo-committed tokens, write APIs, real data ingestion, and AGOS training.",
+      "files": [
+        "schemas/platform_authorization_contract.schema.json",
+        "services/platform_authorization_contract.py",
+        "runtime/real_data_access/PLATFORM_AUTHORIZATION_CONTRACT.json",
+        "runtime/real_data_access/PLATFORM_AUTHORIZATION_STATUS.json",
+        "runtime/real_data_access/PLATFORM_SCOPE_REQUIREMENTS.json",
+        "runtime/real_data_access/AUTHORIZATION_EVIDENCE.json",
+        "tests/platform_authorization_contract_smoke_test.py",
+        "docs/project_control_center.html",
+        "runtime/task_results/ROUND-REALDATA-001_PLATFORM_AUTHORIZATION_CONTRACT/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "python -m compileall services schemas tests",
+        "python tests\\platform_authorization_contract_smoke_test.py",
+        "Browser verification: Real Data Controlled Access panel shows MVP platforms, not_connected statuses, read-only scope, no credentials, no API calls, no ingestion, and no training"
+      ]
+    },
     {
       "id": "ROUND-GLOBAL-012",
       "title": "AGOS Cross-Dimensional Correlation",
@@ -4042,6 +4076,14 @@
   ],
   "versions": [
     {
+      "tag": "agos-v0.1.145",
+      "label": "ROUND-REALDATA-001 Platform Authorization Contract",
+      "date": "2026-05-29",
+      "location": "GitHub origin/master",
+      "url": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.145",
+      "notes": "Defines platform account authorization contracts for read-only real-data access preparation with no credentials, no API calls, no ingestion, and no training."
+    },
+    {
       "tag": "agos-v0.1.144",
       "label": "ROUND-GLOBAL-012 Cross-Dimensional Correlation",
       "date": "2026-05-29",
@@ -5336,6 +5378,14 @@
     }
   ],
   "rounds": [
+    {
+      "id": "ROUND-REALDATA-001_PLATFORM_AUTHORIZATION_CONTRACT",
+      "name": "PLATFORM_AUTHORIZATION_CONTRACT",
+      "phase": "AGOS_REAL_DATA_CONTROLLED_ACCESS",
+      "status": "done",
+      "summary": "Defined read-only platform authorization contracts for MVP platforms YouTube, TikTok, and Instagram, with optional later platforms documented. All access remains not_connected and blocked until owner approval and later gate review.",
+      "resultPath": "runtime/task_results/ROUND-REALDATA-001_PLATFORM_AUTHORIZATION_CONTRACT/ROUND_SUMMARY.md"
+    },
     {
       "id": "ROUND-GLOBAL-012",
       "name": "AGOS_CROSS_DIMENSIONAL_CORRELATION",
@@ -139690,11 +139740,19 @@
     }
   },
   "lastUpdated": "2026-05-29",
-  "currentPhase": "Global Predictive Intelligence",
-  "currentRound": "ROUND-GLOBAL-012 / AGOS_CROSS_DIMENSIONAL_CORRELATION",
-  "nextRound": "Global strategy signal review / next stage planning",
-  "activeFocus": "AGOS now connects season, location, event, platform, market, pain, and mobility demand into explainable cross-dimensional correlation chains. All strategy candidates remain sample-first, read-only, audit-first, and human-gated.",
+  "currentPhase": "AGOS Real Data Controlled Access",
+  "currentRound": "ROUND-REALDATA-001_PLATFORM_AUTHORIZATION_CONTRACT",
+  "nextRound": "ROUND-REALDATA-002 Read-Only Connection Dry Run",
+  "activeFocus": "AGOS has entered Real Data Controlled Access Stage. This round defines platform account authorization contracts for read-only access only. No real platform API is called, no credentials are stored, no real data is ingested, and AGOS training remains stopped.",
   "gitVersions": [
+    {
+      "tag": "agos-v0.1.145",
+      "label": "ROUND-REALDATA-001 Platform Authorization Contract",
+      "date": "2026-05-29",
+      "location": "GitHub origin/master",
+      "url": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.145",
+      "notes": "Defines platform account authorization contracts for read-only real-data access preparation with no credentials, no API calls, no ingestion, and no training."
+    },
     {
       "tag": "agos-v0.1.144",
       "label": "ROUND-GLOBAL-012 Cross-Dimensional Correlation",
@@ -139703,7 +139761,1200 @@
       "url": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.144",
       "notes": "Adds explainable cross-dimensional correlation chains across time, space, event, platform, market, pain, and mobility demand with all external actions blocked."
     }
-  ]
+  ],
+  "realDataAccess": {
+    "platformAuthorizationContract": {
+      "accessStatuses": [
+        "not_connected",
+        "authorization_pending",
+        "authorized_read_only",
+        "suspended",
+        "revoked"
+      ],
+      "accountAuthorizationRequirements": [
+        "account owner approval",
+        "platform API permission scope",
+        "read-only access",
+        "no private messages",
+        "no password storage",
+        "no token committed to repo"
+      ],
+      "authorizationEvidence": {
+        "account_owner_approval_required": true,
+        "agos_training_started": false,
+        "contract_defined": true,
+        "created_at": "2026-05-29T06:08:54+00:00",
+        "credentials_found": false,
+        "env_file_written": false,
+        "evidence_id": "AUTHORIZATION_EVIDENCE",
+        "evidence_status": "contract_only_no_real_connections",
+        "mvp_platforms_defined": [
+          "YouTube",
+          "TikTok",
+          "Instagram"
+        ],
+        "next_gate_required": "ROUND-REALDATA-002_READ_ONLY_CONNECTION_DRY_RUN",
+        "optional_later_platforms_defined": [
+          "X / Twitter",
+          "Reddit",
+          "Facebook Page",
+          "LinkedIn",
+          "小红书",
+          "抖音",
+          "Bilibili"
+        ],
+        "password_storage_allowed": false,
+        "platform_status_values_defined": [
+          "not_connected",
+          "authorization_pending",
+          "authorized_read_only",
+          "suspended",
+          "revoked"
+        ],
+        "private_messages_allowed": false,
+        "read_only_access_required": true,
+        "real_data_access_enabled": false,
+        "real_data_ingested": false,
+        "real_platform_api_called": false,
+        "round_id": "ROUND-REALDATA-001_PLATFORM_AUTHORIZATION_CONTRACT",
+        "schema_required": true,
+        "token_committed_to_repo_allowed": false,
+        "write_scope_allowed": false
+      },
+      "authorizationStatus": {
+        "all_platforms_default_not_connected": true,
+        "authorized_read_only_count": 0,
+        "created_at": "2026-05-29T06:08:54+00:00",
+        "mvp_platform_count": 3,
+        "not_connected_count": 10,
+        "platformStatuses": [
+          {
+            "access_status": "not_connected",
+            "authorization_pending": false,
+            "authorized_read_only": false,
+            "credential_present": false,
+            "owner_approved": false,
+            "platform": "YouTube",
+            "platform_group": "mvp",
+            "requires_human_review": true,
+            "safe_to_ingest_real_data": false,
+            "scope_verified": false,
+            "token_present": false
+          },
+          {
+            "access_status": "not_connected",
+            "authorization_pending": false,
+            "authorized_read_only": false,
+            "credential_present": false,
+            "owner_approved": false,
+            "platform": "TikTok",
+            "platform_group": "mvp",
+            "requires_human_review": true,
+            "safe_to_ingest_real_data": false,
+            "scope_verified": false,
+            "token_present": false
+          },
+          {
+            "access_status": "not_connected",
+            "authorization_pending": false,
+            "authorized_read_only": false,
+            "credential_present": false,
+            "owner_approved": false,
+            "platform": "Instagram",
+            "platform_group": "mvp",
+            "requires_human_review": true,
+            "safe_to_ingest_real_data": false,
+            "scope_verified": false,
+            "token_present": false
+          },
+          {
+            "access_status": "not_connected",
+            "authorization_pending": false,
+            "authorized_read_only": false,
+            "credential_present": false,
+            "owner_approved": false,
+            "platform": "X / Twitter",
+            "platform_group": "optional_later",
+            "requires_human_review": true,
+            "safe_to_ingest_real_data": false,
+            "scope_verified": false,
+            "token_present": false
+          },
+          {
+            "access_status": "not_connected",
+            "authorization_pending": false,
+            "authorized_read_only": false,
+            "credential_present": false,
+            "owner_approved": false,
+            "platform": "Reddit",
+            "platform_group": "optional_later",
+            "requires_human_review": true,
+            "safe_to_ingest_real_data": false,
+            "scope_verified": false,
+            "token_present": false
+          },
+          {
+            "access_status": "not_connected",
+            "authorization_pending": false,
+            "authorized_read_only": false,
+            "credential_present": false,
+            "owner_approved": false,
+            "platform": "Facebook Page",
+            "platform_group": "optional_later",
+            "requires_human_review": true,
+            "safe_to_ingest_real_data": false,
+            "scope_verified": false,
+            "token_present": false
+          },
+          {
+            "access_status": "not_connected",
+            "authorization_pending": false,
+            "authorized_read_only": false,
+            "credential_present": false,
+            "owner_approved": false,
+            "platform": "LinkedIn",
+            "platform_group": "optional_later",
+            "requires_human_review": true,
+            "safe_to_ingest_real_data": false,
+            "scope_verified": false,
+            "token_present": false
+          },
+          {
+            "access_status": "not_connected",
+            "authorization_pending": false,
+            "authorized_read_only": false,
+            "credential_present": false,
+            "owner_approved": false,
+            "platform": "小红书",
+            "platform_group": "optional_later",
+            "requires_human_review": true,
+            "safe_to_ingest_real_data": false,
+            "scope_verified": false,
+            "token_present": false
+          },
+          {
+            "access_status": "not_connected",
+            "authorization_pending": false,
+            "authorized_read_only": false,
+            "credential_present": false,
+            "owner_approved": false,
+            "platform": "抖音",
+            "platform_group": "optional_later",
+            "requires_human_review": true,
+            "safe_to_ingest_real_data": false,
+            "scope_verified": false,
+            "token_present": false
+          },
+          {
+            "access_status": "not_connected",
+            "authorization_pending": false,
+            "authorized_read_only": false,
+            "credential_present": false,
+            "owner_approved": false,
+            "platform": "Bilibili",
+            "platform_group": "optional_later",
+            "requires_human_review": true,
+            "safe_to_ingest_real_data": false,
+            "scope_verified": false,
+            "token_present": false
+          }
+        ],
+        "real_data_access_enabled": false,
+        "round_id": "ROUND-REALDATA-001_PLATFORM_AUTHORIZATION_CONTRACT",
+        "status_id": "PLATFORM_AUTHORIZATION_STATUS"
+      },
+      "contract_id": "PLATFORM_AUTHORIZATION_CONTRACT",
+      "created_at": "2026-05-29T06:08:54+00:00",
+      "optionalLaterPlatforms": [
+        "X / Twitter",
+        "Reddit",
+        "Facebook Page",
+        "LinkedIn",
+        "小红书",
+        "抖音",
+        "Bilibili"
+      ],
+      "phase": "AGOS_REAL_DATA_CONTROLLED_ACCESS",
+      "platformAuthorizationContracts": [
+        {
+          "access_status": "not_connected",
+          "account_owner_approval_required": true,
+          "account_owner_approval_status": "not_requested",
+          "authorization_evidence_required": true,
+          "auto_dm_allowed": false,
+          "auto_post_allowed": false,
+          "auto_reply_allowed": false,
+          "created_at": "2026-05-29T06:08:54+00:00",
+          "credential_storage_allowed": false,
+          "password_storage_allowed": false,
+          "platform": "YouTube",
+          "platform_group": "mvp",
+          "private_messages_allowed": false,
+          "read_only_access_required": true,
+          "real_data_ingestion_allowed": false,
+          "required_permission_scope": "read_only_public_analytics_and_public_content_metadata",
+          "token_committed_to_repo_allowed": false,
+          "training_allowed": false,
+          "write_api_allowed": false
+        },
+        {
+          "access_status": "not_connected",
+          "account_owner_approval_required": true,
+          "account_owner_approval_status": "not_requested",
+          "authorization_evidence_required": true,
+          "auto_dm_allowed": false,
+          "auto_post_allowed": false,
+          "auto_reply_allowed": false,
+          "created_at": "2026-05-29T06:08:54+00:00",
+          "credential_storage_allowed": false,
+          "password_storage_allowed": false,
+          "platform": "TikTok",
+          "platform_group": "mvp",
+          "private_messages_allowed": false,
+          "read_only_access_required": true,
+          "real_data_ingestion_allowed": false,
+          "required_permission_scope": "read_only_public_analytics_and_public_content_metadata",
+          "token_committed_to_repo_allowed": false,
+          "training_allowed": false,
+          "write_api_allowed": false
+        },
+        {
+          "access_status": "not_connected",
+          "account_owner_approval_required": true,
+          "account_owner_approval_status": "not_requested",
+          "authorization_evidence_required": true,
+          "auto_dm_allowed": false,
+          "auto_post_allowed": false,
+          "auto_reply_allowed": false,
+          "created_at": "2026-05-29T06:08:54+00:00",
+          "credential_storage_allowed": false,
+          "password_storage_allowed": false,
+          "platform": "Instagram",
+          "platform_group": "mvp",
+          "private_messages_allowed": false,
+          "read_only_access_required": true,
+          "real_data_ingestion_allowed": false,
+          "required_permission_scope": "read_only_public_analytics_and_public_content_metadata",
+          "token_committed_to_repo_allowed": false,
+          "training_allowed": false,
+          "write_api_allowed": false
+        },
+        {
+          "access_status": "not_connected",
+          "account_owner_approval_required": true,
+          "account_owner_approval_status": "not_requested",
+          "authorization_evidence_required": true,
+          "auto_dm_allowed": false,
+          "auto_post_allowed": false,
+          "auto_reply_allowed": false,
+          "created_at": "2026-05-29T06:08:54+00:00",
+          "credential_storage_allowed": false,
+          "password_storage_allowed": false,
+          "platform": "X / Twitter",
+          "platform_group": "optional_later",
+          "private_messages_allowed": false,
+          "read_only_access_required": true,
+          "real_data_ingestion_allowed": false,
+          "required_permission_scope": "read_only_public_analytics_and_public_content_metadata",
+          "token_committed_to_repo_allowed": false,
+          "training_allowed": false,
+          "write_api_allowed": false
+        },
+        {
+          "access_status": "not_connected",
+          "account_owner_approval_required": true,
+          "account_owner_approval_status": "not_requested",
+          "authorization_evidence_required": true,
+          "auto_dm_allowed": false,
+          "auto_post_allowed": false,
+          "auto_reply_allowed": false,
+          "created_at": "2026-05-29T06:08:54+00:00",
+          "credential_storage_allowed": false,
+          "password_storage_allowed": false,
+          "platform": "Reddit",
+          "platform_group": "optional_later",
+          "private_messages_allowed": false,
+          "read_only_access_required": true,
+          "real_data_ingestion_allowed": false,
+          "required_permission_scope": "read_only_public_analytics_and_public_content_metadata",
+          "token_committed_to_repo_allowed": false,
+          "training_allowed": false,
+          "write_api_allowed": false
+        },
+        {
+          "access_status": "not_connected",
+          "account_owner_approval_required": true,
+          "account_owner_approval_status": "not_requested",
+          "authorization_evidence_required": true,
+          "auto_dm_allowed": false,
+          "auto_post_allowed": false,
+          "auto_reply_allowed": false,
+          "created_at": "2026-05-29T06:08:54+00:00",
+          "credential_storage_allowed": false,
+          "password_storage_allowed": false,
+          "platform": "Facebook Page",
+          "platform_group": "optional_later",
+          "private_messages_allowed": false,
+          "read_only_access_required": true,
+          "real_data_ingestion_allowed": false,
+          "required_permission_scope": "read_only_public_analytics_and_public_content_metadata",
+          "token_committed_to_repo_allowed": false,
+          "training_allowed": false,
+          "write_api_allowed": false
+        },
+        {
+          "access_status": "not_connected",
+          "account_owner_approval_required": true,
+          "account_owner_approval_status": "not_requested",
+          "authorization_evidence_required": true,
+          "auto_dm_allowed": false,
+          "auto_post_allowed": false,
+          "auto_reply_allowed": false,
+          "created_at": "2026-05-29T06:08:54+00:00",
+          "credential_storage_allowed": false,
+          "password_storage_allowed": false,
+          "platform": "LinkedIn",
+          "platform_group": "optional_later",
+          "private_messages_allowed": false,
+          "read_only_access_required": true,
+          "real_data_ingestion_allowed": false,
+          "required_permission_scope": "read_only_public_analytics_and_public_content_metadata",
+          "token_committed_to_repo_allowed": false,
+          "training_allowed": false,
+          "write_api_allowed": false
+        },
+        {
+          "access_status": "not_connected",
+          "account_owner_approval_required": true,
+          "account_owner_approval_status": "not_requested",
+          "authorization_evidence_required": true,
+          "auto_dm_allowed": false,
+          "auto_post_allowed": false,
+          "auto_reply_allowed": false,
+          "created_at": "2026-05-29T06:08:54+00:00",
+          "credential_storage_allowed": false,
+          "password_storage_allowed": false,
+          "platform": "小红书",
+          "platform_group": "optional_later",
+          "private_messages_allowed": false,
+          "read_only_access_required": true,
+          "real_data_ingestion_allowed": false,
+          "required_permission_scope": "read_only_public_analytics_and_public_content_metadata",
+          "token_committed_to_repo_allowed": false,
+          "training_allowed": false,
+          "write_api_allowed": false
+        },
+        {
+          "access_status": "not_connected",
+          "account_owner_approval_required": true,
+          "account_owner_approval_status": "not_requested",
+          "authorization_evidence_required": true,
+          "auto_dm_allowed": false,
+          "auto_post_allowed": false,
+          "auto_reply_allowed": false,
+          "created_at": "2026-05-29T06:08:54+00:00",
+          "credential_storage_allowed": false,
+          "password_storage_allowed": false,
+          "platform": "抖音",
+          "platform_group": "optional_later",
+          "private_messages_allowed": false,
+          "read_only_access_required": true,
+          "real_data_ingestion_allowed": false,
+          "required_permission_scope": "read_only_public_analytics_and_public_content_metadata",
+          "token_committed_to_repo_allowed": false,
+          "training_allowed": false,
+          "write_api_allowed": false
+        },
+        {
+          "access_status": "not_connected",
+          "account_owner_approval_required": true,
+          "account_owner_approval_status": "not_requested",
+          "authorization_evidence_required": true,
+          "auto_dm_allowed": false,
+          "auto_post_allowed": false,
+          "auto_reply_allowed": false,
+          "created_at": "2026-05-29T06:08:54+00:00",
+          "credential_storage_allowed": false,
+          "password_storage_allowed": false,
+          "platform": "Bilibili",
+          "platform_group": "optional_later",
+          "private_messages_allowed": false,
+          "read_only_access_required": true,
+          "real_data_ingestion_allowed": false,
+          "required_permission_scope": "read_only_public_analytics_and_public_content_metadata",
+          "token_committed_to_repo_allowed": false,
+          "training_allowed": false,
+          "write_api_allowed": false
+        }
+      ],
+      "platformScopeRequirements": {
+        "created_at": "2026-05-29T06:08:54+00:00",
+        "credential_storage_allowed": false,
+        "minimum_scope_policy": "read_only_only",
+        "private_message_scope_allowed": false,
+        "round_id": "ROUND-REALDATA-001_PLATFORM_AUTHORIZATION_CONTRACT",
+        "scopeRequirements": [
+          {
+            "allowed_operations": [
+              "read public account metadata after owner approval",
+              "read public content metadata after owner approval",
+              "read public analytics if the platform grants read-only scope"
+            ],
+            "forbidden_operations": [
+              "private messages",
+              "password storage",
+              "token commit",
+              "posting",
+              "replying",
+              "DM",
+              "following",
+              "liking",
+              "write API",
+              "login scraping",
+              "training without later gate"
+            ],
+            "platform": "YouTube",
+            "platform_group": "mvp",
+            "read_only": true,
+            "required_scope": "read_only_public_analytics_and_public_content_metadata",
+            "requires_human_review": true,
+            "requires_owner_approval": true,
+            "write_allowed": false
+          },
+          {
+            "allowed_operations": [
+              "read public account metadata after owner approval",
+              "read public content metadata after owner approval",
+              "read public analytics if the platform grants read-only scope"
+            ],
+            "forbidden_operations": [
+              "private messages",
+              "password storage",
+              "token commit",
+              "posting",
+              "replying",
+              "DM",
+              "following",
+              "liking",
+              "write API",
+              "login scraping",
+              "training without later gate"
+            ],
+            "platform": "TikTok",
+            "platform_group": "mvp",
+            "read_only": true,
+            "required_scope": "read_only_public_analytics_and_public_content_metadata",
+            "requires_human_review": true,
+            "requires_owner_approval": true,
+            "write_allowed": false
+          },
+          {
+            "allowed_operations": [
+              "read public account metadata after owner approval",
+              "read public content metadata after owner approval",
+              "read public analytics if the platform grants read-only scope"
+            ],
+            "forbidden_operations": [
+              "private messages",
+              "password storage",
+              "token commit",
+              "posting",
+              "replying",
+              "DM",
+              "following",
+              "liking",
+              "write API",
+              "login scraping",
+              "training without later gate"
+            ],
+            "platform": "Instagram",
+            "platform_group": "mvp",
+            "read_only": true,
+            "required_scope": "read_only_public_analytics_and_public_content_metadata",
+            "requires_human_review": true,
+            "requires_owner_approval": true,
+            "write_allowed": false
+          },
+          {
+            "allowed_operations": [
+              "read public account metadata after owner approval",
+              "read public content metadata after owner approval",
+              "read public analytics if the platform grants read-only scope"
+            ],
+            "forbidden_operations": [
+              "private messages",
+              "password storage",
+              "token commit",
+              "posting",
+              "replying",
+              "DM",
+              "following",
+              "liking",
+              "write API",
+              "login scraping",
+              "training without later gate"
+            ],
+            "platform": "X / Twitter",
+            "platform_group": "optional_later",
+            "read_only": true,
+            "required_scope": "read_only_public_analytics_and_public_content_metadata",
+            "requires_human_review": true,
+            "requires_owner_approval": true,
+            "write_allowed": false
+          },
+          {
+            "allowed_operations": [
+              "read public account metadata after owner approval",
+              "read public content metadata after owner approval",
+              "read public analytics if the platform grants read-only scope"
+            ],
+            "forbidden_operations": [
+              "private messages",
+              "password storage",
+              "token commit",
+              "posting",
+              "replying",
+              "DM",
+              "following",
+              "liking",
+              "write API",
+              "login scraping",
+              "training without later gate"
+            ],
+            "platform": "Reddit",
+            "platform_group": "optional_later",
+            "read_only": true,
+            "required_scope": "read_only_public_analytics_and_public_content_metadata",
+            "requires_human_review": true,
+            "requires_owner_approval": true,
+            "write_allowed": false
+          },
+          {
+            "allowed_operations": [
+              "read public account metadata after owner approval",
+              "read public content metadata after owner approval",
+              "read public analytics if the platform grants read-only scope"
+            ],
+            "forbidden_operations": [
+              "private messages",
+              "password storage",
+              "token commit",
+              "posting",
+              "replying",
+              "DM",
+              "following",
+              "liking",
+              "write API",
+              "login scraping",
+              "training without later gate"
+            ],
+            "platform": "Facebook Page",
+            "platform_group": "optional_later",
+            "read_only": true,
+            "required_scope": "read_only_public_analytics_and_public_content_metadata",
+            "requires_human_review": true,
+            "requires_owner_approval": true,
+            "write_allowed": false
+          },
+          {
+            "allowed_operations": [
+              "read public account metadata after owner approval",
+              "read public content metadata after owner approval",
+              "read public analytics if the platform grants read-only scope"
+            ],
+            "forbidden_operations": [
+              "private messages",
+              "password storage",
+              "token commit",
+              "posting",
+              "replying",
+              "DM",
+              "following",
+              "liking",
+              "write API",
+              "login scraping",
+              "training without later gate"
+            ],
+            "platform": "LinkedIn",
+            "platform_group": "optional_later",
+            "read_only": true,
+            "required_scope": "read_only_public_analytics_and_public_content_metadata",
+            "requires_human_review": true,
+            "requires_owner_approval": true,
+            "write_allowed": false
+          },
+          {
+            "allowed_operations": [
+              "read public account metadata after owner approval",
+              "read public content metadata after owner approval",
+              "read public analytics if the platform grants read-only scope"
+            ],
+            "forbidden_operations": [
+              "private messages",
+              "password storage",
+              "token commit",
+              "posting",
+              "replying",
+              "DM",
+              "following",
+              "liking",
+              "write API",
+              "login scraping",
+              "training without later gate"
+            ],
+            "platform": "小红书",
+            "platform_group": "optional_later",
+            "read_only": true,
+            "required_scope": "read_only_public_analytics_and_public_content_metadata",
+            "requires_human_review": true,
+            "requires_owner_approval": true,
+            "write_allowed": false
+          },
+          {
+            "allowed_operations": [
+              "read public account metadata after owner approval",
+              "read public content metadata after owner approval",
+              "read public analytics if the platform grants read-only scope"
+            ],
+            "forbidden_operations": [
+              "private messages",
+              "password storage",
+              "token commit",
+              "posting",
+              "replying",
+              "DM",
+              "following",
+              "liking",
+              "write API",
+              "login scraping",
+              "training without later gate"
+            ],
+            "platform": "抖音",
+            "platform_group": "optional_later",
+            "read_only": true,
+            "required_scope": "read_only_public_analytics_and_public_content_metadata",
+            "requires_human_review": true,
+            "requires_owner_approval": true,
+            "write_allowed": false
+          },
+          {
+            "allowed_operations": [
+              "read public account metadata after owner approval",
+              "read public content metadata after owner approval",
+              "read public analytics if the platform grants read-only scope"
+            ],
+            "forbidden_operations": [
+              "private messages",
+              "password storage",
+              "token commit",
+              "posting",
+              "replying",
+              "DM",
+              "following",
+              "liking",
+              "write API",
+              "login scraping",
+              "training without later gate"
+            ],
+            "platform": "Bilibili",
+            "platform_group": "optional_later",
+            "read_only": true,
+            "required_scope": "read_only_public_analytics_and_public_content_metadata",
+            "requires_human_review": true,
+            "requires_owner_approval": true,
+            "write_allowed": false
+          }
+        ],
+        "scope_id": "PLATFORM_SCOPE_REQUIREMENTS",
+        "token_commit_allowed": false,
+        "write_scope_allowed": false
+      },
+      "round_id": "ROUND-REALDATA-001_PLATFORM_AUTHORIZATION_CONTRACT",
+      "safetyBoundary": {
+        "agos_training_started": false,
+        "credentials_stored": false,
+        "env_file_written": false,
+        "password_storage_allowed": false,
+        "private_message_access_allowed": false,
+        "real_data_ingested": false,
+        "real_platform_api_called": false,
+        "token_commit_allowed": false,
+        "write_api_allowed": false
+      },
+      "status": "contract_defined_no_connections",
+      "supportedMvpPlatforms": [
+        "YouTube",
+        "TikTok",
+        "Instagram"
+      ]
+    },
+    "platformAuthorizationStatus": {
+      "all_platforms_default_not_connected": true,
+      "authorized_read_only_count": 0,
+      "created_at": "2026-05-29T06:08:54+00:00",
+      "mvp_platform_count": 3,
+      "not_connected_count": 10,
+      "platformStatuses": [
+        {
+          "access_status": "not_connected",
+          "authorization_pending": false,
+          "authorized_read_only": false,
+          "credential_present": false,
+          "owner_approved": false,
+          "platform": "YouTube",
+          "platform_group": "mvp",
+          "requires_human_review": true,
+          "safe_to_ingest_real_data": false,
+          "scope_verified": false,
+          "token_present": false
+        },
+        {
+          "access_status": "not_connected",
+          "authorization_pending": false,
+          "authorized_read_only": false,
+          "credential_present": false,
+          "owner_approved": false,
+          "platform": "TikTok",
+          "platform_group": "mvp",
+          "requires_human_review": true,
+          "safe_to_ingest_real_data": false,
+          "scope_verified": false,
+          "token_present": false
+        },
+        {
+          "access_status": "not_connected",
+          "authorization_pending": false,
+          "authorized_read_only": false,
+          "credential_present": false,
+          "owner_approved": false,
+          "platform": "Instagram",
+          "platform_group": "mvp",
+          "requires_human_review": true,
+          "safe_to_ingest_real_data": false,
+          "scope_verified": false,
+          "token_present": false
+        },
+        {
+          "access_status": "not_connected",
+          "authorization_pending": false,
+          "authorized_read_only": false,
+          "credential_present": false,
+          "owner_approved": false,
+          "platform": "X / Twitter",
+          "platform_group": "optional_later",
+          "requires_human_review": true,
+          "safe_to_ingest_real_data": false,
+          "scope_verified": false,
+          "token_present": false
+        },
+        {
+          "access_status": "not_connected",
+          "authorization_pending": false,
+          "authorized_read_only": false,
+          "credential_present": false,
+          "owner_approved": false,
+          "platform": "Reddit",
+          "platform_group": "optional_later",
+          "requires_human_review": true,
+          "safe_to_ingest_real_data": false,
+          "scope_verified": false,
+          "token_present": false
+        },
+        {
+          "access_status": "not_connected",
+          "authorization_pending": false,
+          "authorized_read_only": false,
+          "credential_present": false,
+          "owner_approved": false,
+          "platform": "Facebook Page",
+          "platform_group": "optional_later",
+          "requires_human_review": true,
+          "safe_to_ingest_real_data": false,
+          "scope_verified": false,
+          "token_present": false
+        },
+        {
+          "access_status": "not_connected",
+          "authorization_pending": false,
+          "authorized_read_only": false,
+          "credential_present": false,
+          "owner_approved": false,
+          "platform": "LinkedIn",
+          "platform_group": "optional_later",
+          "requires_human_review": true,
+          "safe_to_ingest_real_data": false,
+          "scope_verified": false,
+          "token_present": false
+        },
+        {
+          "access_status": "not_connected",
+          "authorization_pending": false,
+          "authorized_read_only": false,
+          "credential_present": false,
+          "owner_approved": false,
+          "platform": "小红书",
+          "platform_group": "optional_later",
+          "requires_human_review": true,
+          "safe_to_ingest_real_data": false,
+          "scope_verified": false,
+          "token_present": false
+        },
+        {
+          "access_status": "not_connected",
+          "authorization_pending": false,
+          "authorized_read_only": false,
+          "credential_present": false,
+          "owner_approved": false,
+          "platform": "抖音",
+          "platform_group": "optional_later",
+          "requires_human_review": true,
+          "safe_to_ingest_real_data": false,
+          "scope_verified": false,
+          "token_present": false
+        },
+        {
+          "access_status": "not_connected",
+          "authorization_pending": false,
+          "authorized_read_only": false,
+          "credential_present": false,
+          "owner_approved": false,
+          "platform": "Bilibili",
+          "platform_group": "optional_later",
+          "requires_human_review": true,
+          "safe_to_ingest_real_data": false,
+          "scope_verified": false,
+          "token_present": false
+        }
+      ],
+      "real_data_access_enabled": false,
+      "round_id": "ROUND-REALDATA-001_PLATFORM_AUTHORIZATION_CONTRACT",
+      "status_id": "PLATFORM_AUTHORIZATION_STATUS"
+    },
+    "platformScopeRequirements": {
+      "created_at": "2026-05-29T06:08:54+00:00",
+      "credential_storage_allowed": false,
+      "minimum_scope_policy": "read_only_only",
+      "private_message_scope_allowed": false,
+      "round_id": "ROUND-REALDATA-001_PLATFORM_AUTHORIZATION_CONTRACT",
+      "scopeRequirements": [
+        {
+          "allowed_operations": [
+            "read public account metadata after owner approval",
+            "read public content metadata after owner approval",
+            "read public analytics if the platform grants read-only scope"
+          ],
+          "forbidden_operations": [
+            "private messages",
+            "password storage",
+            "token commit",
+            "posting",
+            "replying",
+            "DM",
+            "following",
+            "liking",
+            "write API",
+            "login scraping",
+            "training without later gate"
+          ],
+          "platform": "YouTube",
+          "platform_group": "mvp",
+          "read_only": true,
+          "required_scope": "read_only_public_analytics_and_public_content_metadata",
+          "requires_human_review": true,
+          "requires_owner_approval": true,
+          "write_allowed": false
+        },
+        {
+          "allowed_operations": [
+            "read public account metadata after owner approval",
+            "read public content metadata after owner approval",
+            "read public analytics if the platform grants read-only scope"
+          ],
+          "forbidden_operations": [
+            "private messages",
+            "password storage",
+            "token commit",
+            "posting",
+            "replying",
+            "DM",
+            "following",
+            "liking",
+            "write API",
+            "login scraping",
+            "training without later gate"
+          ],
+          "platform": "TikTok",
+          "platform_group": "mvp",
+          "read_only": true,
+          "required_scope": "read_only_public_analytics_and_public_content_metadata",
+          "requires_human_review": true,
+          "requires_owner_approval": true,
+          "write_allowed": false
+        },
+        {
+          "allowed_operations": [
+            "read public account metadata after owner approval",
+            "read public content metadata after owner approval",
+            "read public analytics if the platform grants read-only scope"
+          ],
+          "forbidden_operations": [
+            "private messages",
+            "password storage",
+            "token commit",
+            "posting",
+            "replying",
+            "DM",
+            "following",
+            "liking",
+            "write API",
+            "login scraping",
+            "training without later gate"
+          ],
+          "platform": "Instagram",
+          "platform_group": "mvp",
+          "read_only": true,
+          "required_scope": "read_only_public_analytics_and_public_content_metadata",
+          "requires_human_review": true,
+          "requires_owner_approval": true,
+          "write_allowed": false
+        },
+        {
+          "allowed_operations": [
+            "read public account metadata after owner approval",
+            "read public content metadata after owner approval",
+            "read public analytics if the platform grants read-only scope"
+          ],
+          "forbidden_operations": [
+            "private messages",
+            "password storage",
+            "token commit",
+            "posting",
+            "replying",
+            "DM",
+            "following",
+            "liking",
+            "write API",
+            "login scraping",
+            "training without later gate"
+          ],
+          "platform": "X / Twitter",
+          "platform_group": "optional_later",
+          "read_only": true,
+          "required_scope": "read_only_public_analytics_and_public_content_metadata",
+          "requires_human_review": true,
+          "requires_owner_approval": true,
+          "write_allowed": false
+        },
+        {
+          "allowed_operations": [
+            "read public account metadata after owner approval",
+            "read public content metadata after owner approval",
+            "read public analytics if the platform grants read-only scope"
+          ],
+          "forbidden_operations": [
+            "private messages",
+            "password storage",
+            "token commit",
+            "posting",
+            "replying",
+            "DM",
+            "following",
+            "liking",
+            "write API",
+            "login scraping",
+            "training without later gate"
+          ],
+          "platform": "Reddit",
+          "platform_group": "optional_later",
+          "read_only": true,
+          "required_scope": "read_only_public_analytics_and_public_content_metadata",
+          "requires_human_review": true,
+          "requires_owner_approval": true,
+          "write_allowed": false
+        },
+        {
+          "allowed_operations": [
+            "read public account metadata after owner approval",
+            "read public content metadata after owner approval",
+            "read public analytics if the platform grants read-only scope"
+          ],
+          "forbidden_operations": [
+            "private messages",
+            "password storage",
+            "token commit",
+            "posting",
+            "replying",
+            "DM",
+            "following",
+            "liking",
+            "write API",
+            "login scraping",
+            "training without later gate"
+          ],
+          "platform": "Facebook Page",
+          "platform_group": "optional_later",
+          "read_only": true,
+          "required_scope": "read_only_public_analytics_and_public_content_metadata",
+          "requires_human_review": true,
+          "requires_owner_approval": true,
+          "write_allowed": false
+        },
+        {
+          "allowed_operations": [
+            "read public account metadata after owner approval",
+            "read public content metadata after owner approval",
+            "read public analytics if the platform grants read-only scope"
+          ],
+          "forbidden_operations": [
+            "private messages",
+            "password storage",
+            "token commit",
+            "posting",
+            "replying",
+            "DM",
+            "following",
+            "liking",
+            "write API",
+            "login scraping",
+            "training without later gate"
+          ],
+          "platform": "LinkedIn",
+          "platform_group": "optional_later",
+          "read_only": true,
+          "required_scope": "read_only_public_analytics_and_public_content_metadata",
+          "requires_human_review": true,
+          "requires_owner_approval": true,
+          "write_allowed": false
+        },
+        {
+          "allowed_operations": [
+            "read public account metadata after owner approval",
+            "read public content metadata after owner approval",
+            "read public analytics if the platform grants read-only scope"
+          ],
+          "forbidden_operations": [
+            "private messages",
+            "password storage",
+            "token commit",
+            "posting",
+            "replying",
+            "DM",
+            "following",
+            "liking",
+            "write API",
+            "login scraping",
+            "training without later gate"
+          ],
+          "platform": "小红书",
+          "platform_group": "optional_later",
+          "read_only": true,
+          "required_scope": "read_only_public_analytics_and_public_content_metadata",
+          "requires_human_review": true,
+          "requires_owner_approval": true,
+          "write_allowed": false
+        },
+        {
+          "allowed_operations": [
+            "read public account metadata after owner approval",
+            "read public content metadata after owner approval",
+            "read public analytics if the platform grants read-only scope"
+          ],
+          "forbidden_operations": [
+            "private messages",
+            "password storage",
+            "token commit",
+            "posting",
+            "replying",
+            "DM",
+            "following",
+            "liking",
+            "write API",
+            "login scraping",
+            "training without later gate"
+          ],
+          "platform": "抖音",
+          "platform_group": "optional_later",
+          "read_only": true,
+          "required_scope": "read_only_public_analytics_and_public_content_metadata",
+          "requires_human_review": true,
+          "requires_owner_approval": true,
+          "write_allowed": false
+        },
+        {
+          "allowed_operations": [
+            "read public account metadata after owner approval",
+            "read public content metadata after owner approval",
+            "read public analytics if the platform grants read-only scope"
+          ],
+          "forbidden_operations": [
+            "private messages",
+            "password storage",
+            "token commit",
+            "posting",
+            "replying",
+            "DM",
+            "following",
+            "liking",
+            "write API",
+            "login scraping",
+            "training without later gate"
+          ],
+          "platform": "Bilibili",
+          "platform_group": "optional_later",
+          "read_only": true,
+          "required_scope": "read_only_public_analytics_and_public_content_metadata",
+          "requires_human_review": true,
+          "requires_owner_approval": true,
+          "write_allowed": false
+        }
+      ],
+      "scope_id": "PLATFORM_SCOPE_REQUIREMENTS",
+      "token_commit_allowed": false,
+      "write_scope_allowed": false
+    },
+    "authorizationEvidence": {
+      "account_owner_approval_required": true,
+      "agos_training_started": false,
+      "contract_defined": true,
+      "created_at": "2026-05-29T06:08:54+00:00",
+      "credentials_found": false,
+      "env_file_written": false,
+      "evidence_id": "AUTHORIZATION_EVIDENCE",
+      "evidence_status": "contract_only_no_real_connections",
+      "mvp_platforms_defined": [
+        "YouTube",
+        "TikTok",
+        "Instagram"
+      ],
+      "next_gate_required": "ROUND-REALDATA-002_READ_ONLY_CONNECTION_DRY_RUN",
+      "optional_later_platforms_defined": [
+        "X / Twitter",
+        "Reddit",
+        "Facebook Page",
+        "LinkedIn",
+        "小红书",
+        "抖音",
+        "Bilibili"
+      ],
+      "password_storage_allowed": false,
+      "platform_status_values_defined": [
+        "not_connected",
+        "authorization_pending",
+        "authorized_read_only",
+        "suspended",
+        "revoked"
+      ],
+      "private_messages_allowed": false,
+      "read_only_access_required": true,
+      "real_data_access_enabled": false,
+      "real_data_ingested": false,
+      "real_platform_api_called": false,
+      "round_id": "ROUND-REALDATA-001_PLATFORM_AUTHORIZATION_CONTRACT",
+      "schema_required": true,
+      "token_committed_to_repo_allowed": false,
+      "write_scope_allowed": false
+    }
+  }
 }
   </script>
 
@@ -140144,6 +141395,9 @@
             <div style="height:10px"></div>
             <div class="runtime-title-row"><h3>Cross-Dimensional Correlation</h3><p>season / location / event / platform / market / pain / mobility evidence chains</p></div>
             <div class="feed-stream" id="runtime-cross-dimensional-correlation"></div>
+            <div style="height:10px"></div>
+            <div class="runtime-title-row"><h3>Real Data Controlled Access</h3><p>platform authorization contract / read-only scope / no credentials / no training</p></div>
+            <div class="feed-stream" id="runtime-real-data-access"></div>
             <div style="height:10px"></div>
             <div class="runtime-title-row"><h3>Location Demand Heatmap</h3><p>Japan cities / airports / stations / attractions / venues / event locations</p></div>
             <div class="feed-stream" id="runtime-location-demand-heatmap"></div>
@@ -141342,6 +142596,20 @@
       );
       const cdcSafetyRow = '<div class="feed-item"><time>SAFE</time><div class="feed-main"><strong>Correlation safety boundary</strong><span>Correlation chains explain why demand may happen across time, space, events, platform behavior, market pain, and mobility need. They are strategy candidates only.</span><span>Publish: ' + esc(cdcSummary.auto_publish_allowed || false) + ' / Reply: ' + esc(cdcSummary.auto_reply_allowed || false) + ' / Contact: ' + esc(cdcSummary.auto_contact_allowed || false) + ' / Dispatch: ' + esc(cdcSummary.auto_dispatch_allowed || false) + ' / Quote: ' + esc(cdcSummary.auto_quote_allowed || false) + ' / Write API: ' + esc(cdcSummary.write_api_allowed || false) + '</span><span>Next: ' + esc(cdcSummary.next_recommendation || '') + '</span></div><span class="badge b-green">human gated</span></div>';
       el('runtime-cross-dimensional-correlation').innerHTML = (cdcSummary.cross_dimensional_correlation_ready ? cdcOverview + cdcChainRows.join('') + cdcStrategyRows.join('') + cdcSafetyRow : '') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Cross-Dimensional Correlation pending</strong><span>AGOS will connect season, location, event, platform, market, pain, and mobility demand into explainable prediction chains.</span></div><span class="badge b-amber">pending</span></div>';
+      const rda = state.realDataAccess || wr.realDataAccess || {};
+      const rdaContract = rda.platformAuthorizationContract || {};
+      const rdaStatus = rda.platformAuthorizationStatus || {};
+      const rdaScope = rda.platformScopeRequirements || {};
+      const rdaEvidence = rda.authorizationEvidence || {};
+      const rdaOverview = '<div class="trend-visual-grid"><div class="trend-stat"><span>MVP Platforms</span><strong>' + esc((rdaContract.supportedMvpPlatforms || []).join(' / ')) + '</strong><small>later: ' + esc((rdaContract.optionalLaterPlatforms || []).slice(0, 4).join(' / ')) + '</small></div><div class="trend-stat"><span>Authorized</span><strong>' + esc(rdaStatus.authorized_read_only_count || 0) + '</strong><small>not connected: ' + esc(rdaStatus.not_connected_count || 0) + '</small></div><div class="trend-stat"><span>Access</span><strong>' + esc(rdaStatus.real_data_access_enabled || false) + '</strong><small>minimum scope: ' + esc(rdaScope.minimum_scope_policy || '') + '</small></div><div class="trend-stat"><span>Training</span><strong>' + esc(rdaEvidence.agos_training_started || false) + '</strong><small>API called: ' + esc(rdaEvidence.real_platform_api_called || false) + ' / credentials: ' + esc(rdaEvidence.credentials_found || false) + '</small></div></div>';
+      const rdaPlatformRows = ((rdaStatus.platformStatuses || []).slice(0, 10)).map(item =>
+        '<div class="feed-item"><time>' + esc(item.platform || '') + '</time><div class="feed-main"><strong>' + esc(item.access_status || '') + ' / ' + esc(item.platform_group || '') + '</strong><span>Owner approved: ' + esc(item.owner_approved || false) + ' / Scope verified: ' + esc(item.scope_verified || false) + ' / Authorized read-only: ' + esc(item.authorized_read_only || false) + '</span><span>Token present: ' + esc(item.token_present || false) + ' / Credential present: ' + esc(item.credential_present || false) + ' / Safe to ingest real data: ' + esc(item.safe_to_ingest_real_data || false) + '</span><span>Human review required: ' + esc(item.requires_human_review || false) + '</span></div><span class="badge b-amber">not connected</span></div>'
+      );
+      const rdaScopeRows = ((rdaScope.scopeRequirements || []).slice(0, 3)).map(item =>
+        '<div class="feed-item"><time>' + esc(item.platform || '') + '</time><div class="feed-main"><strong>Read-only scope requirement</strong><span>Required: ' + esc(item.required_scope || '') + '</span><span>Allowed: ' + esc((item.allowed_operations || []).join(' / ')) + '</span><span>Forbidden: ' + esc((item.forbidden_operations || []).slice(0, 8).join(' / ')) + '</span></div><span class="badge b-cyan">scope</span></div>'
+      );
+      const rdaSafetyRow = '<div class="feed-item"><time>SAFE</time><div class="feed-main"><strong>Authorization evidence boundary</strong><span>Contract only. No real platform API calls, no credentials, no .env writes, no real data ingestion, and no AGOS training starts in this round.</span><span>Real API: ' + esc(rdaEvidence.real_platform_api_called || false) + ' / Real data: ' + esc(rdaEvidence.real_data_ingested || false) + ' / Training: ' + esc(rdaEvidence.agos_training_started || false) + ' / Password storage: ' + esc(rdaEvidence.password_storage_allowed || false) + ' / Token committed: ' + esc(rdaEvidence.token_committed_to_repo_allowed || false) + ' / Write scope: ' + esc(rdaEvidence.write_scope_allowed || false) + '</span><span>Next gate: ' + esc(rdaEvidence.next_gate_required || '') + '</span></div><span class="badge b-green">blocked</span></div>';
+      el('runtime-real-data-access').innerHTML = (rdaContract.contract_id ? rdaOverview + rdaPlatformRows.join('') + rdaScopeRows.join('') + rdaSafetyRow : '') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Real Data Controlled Access pending</strong><span>AGOS will define read-only platform authorization contracts before any real API access or training.</span></div><span class="badge b-amber">pending</span></div>';
       const locationHeatmapSummary = wr.locationHeatmapSummary || {};
       el('runtime-location-demand-heatmap').innerHTML = (wr.locationHeatmap || []).map(item =>
         '<div class="feed-item"><time>' + esc(item.location_id || '') + '</time><div class="feed-main"><strong>' + esc(item.location_name || '') + ' / ' + esc(item.location_type || '') + ' / heat ' + esc(item.demand_heat_score || 0) + '</strong><span>Hot reason: ' + esc(item.hot_reason || '') + '</span><span>Related seasons: ' + esc((item.related_seasons || []).join(' / ')) + '</span><span>Mobility demand: ' + esc((item.mobility_demand_types || []).join(' / ')) + '</span><span>Pain points: ' + esc((item.common_pain_points || []).join(' / ')) + '</span><span>Risk score: crowd ' + esc(item.crowd_risk_score || 0) + ' / transfer ' + esc(item.transfer_complexity_score || 0) + ' / luggage ' + esc(item.luggage_difficulty_score || 0) + '</span><span>Driver/vehicle prep: ' + esc(item.driver_vehicle_preparation_required || false) + ' / Real-time crowd data: ' + esc(item.real_time_crowd_data_connected || false) + ' / GPS dispatch: ' + esc(locationHeatmapSummary.gps_dispatch_enabled || false) + ' / Write ops: ' + esc(item.write_operations_enabled || false) + '</span></div><span class="badge ' + ((item.demand_heat_score || 0) >= 80 ? 'b-green' : (item.demand_heat_score || 0) >= 65 ? 'b-amber' : 'b-cyan') + '">' + esc(item.region || 'location') + '</span></div>'

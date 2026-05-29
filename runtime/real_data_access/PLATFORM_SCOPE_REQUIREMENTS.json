@@ -1,0 +1,282 @@
+{
+  "created_at": "2026-05-29T06:08:54+00:00",
+  "credential_storage_allowed": false,
+  "minimum_scope_policy": "read_only_only",
+  "private_message_scope_allowed": false,
+  "round_id": "ROUND-REALDATA-001_PLATFORM_AUTHORIZATION_CONTRACT",
+  "scopeRequirements": [
+    {
+      "allowed_operations": [
+        "read public account metadata after owner approval",
+        "read public content metadata after owner approval",
+        "read public analytics if the platform grants read-only scope"
+      ],
+      "forbidden_operations": [
+        "private messages",
+        "password storage",
+        "token commit",
+        "posting",
+        "replying",
+        "DM",
+        "following",
+        "liking",
+        "write API",
+        "login scraping",
+        "training without later gate"
+      ],
+      "platform": "YouTube",
+      "platform_group": "mvp",
+      "read_only": true,
+      "required_scope": "read_only_public_analytics_and_public_content_metadata",
+      "requires_human_review": true,
+      "requires_owner_approval": true,
+      "write_allowed": false
+    },
+    {
+      "allowed_operations": [
+        "read public account metadata after owner approval",
+        "read public content metadata after owner approval",
+        "read public analytics if the platform grants read-only scope"
+      ],
+      "forbidden_operations": [
+        "private messages",
+        "password storage",
+        "token commit",
+        "posting",
+        "replying",
+        "DM",
+        "following",
+        "liking",
+        "write API",
+        "login scraping",
+        "training without later gate"
+      ],
+      "platform": "TikTok",
+      "platform_group": "mvp",
+      "read_only": true,
+      "required_scope": "read_only_public_analytics_and_public_content_metadata",
+      "requires_human_review": true,
+      "requires_owner_approval": true,
+      "write_allowed": false
+    },
+    {
+      "allowed_operations": [
+        "read public account metadata after owner approval",
+        "read public content metadata after owner approval",
+        "read public analytics if the platform grants read-only scope"
+      ],
+      "forbidden_operations": [
+        "private messages",
+        "password storage",
+        "token commit",
+        "posting",
+        "replying",
+        "DM",
+        "following",
+        "liking",
+        "write API",
+        "login scraping",
+        "training without later gate"
+      ],
+      "platform": "Instagram",
+      "platform_group": "mvp",
+      "read_only": true,
+      "required_scope": "read_only_public_analytics_and_public_content_metadata",
+      "requires_human_review": true,
+      "requires_owner_approval": true,
+      "write_allowed": false
+    },
+    {
+      "allowed_operations": [
+        "read public account metadata after owner approval",
+        "read public content metadata after owner approval",
+        "read public analytics if the platform grants read-only scope"
+      ],
+      "forbidden_operations": [
+        "private messages",
+        "password storage",
+        "token commit",
+        "posting",
+        "replying",
+        "DM",
+        "following",
+        "liking",
+        "write API",
+        "login scraping",
+        "training without later gate"
+      ],
+      "platform": "X / Twitter",
+      "platform_group": "optional_later",
+      "read_only": true,
+      "required_scope": "read_only_public_analytics_and_public_content_metadata",
+      "requires_human_review": true,
+      "requires_owner_approval": true,
+      "write_allowed": false
+    },
+    {
+      "allowed_operations": [
+        "read public account metadata after owner approval",
+        "read public content metadata after owner approval",
+        "read public analytics if the platform grants read-only scope"
+      ],
+      "forbidden_operations": [
+        "private messages",
+        "password storage",
+        "token commit",
+        "posting",
+        "replying",
+        "DM",
+        "following",
+        "liking",
+        "write API",
+        "login scraping",
+        "training without later gate"
+      ],
+      "platform": "Reddit",
+      "platform_group": "optional_later",
+      "read_only": true,
+      "required_scope": "read_only_public_analytics_and_public_content_metadata",
+      "requires_human_review": true,
+      "requires_owner_approval": true,
+      "write_allowed": false
+    },
+    {
+      "allowed_operations": [
+        "read public account metadata after owner approval",
+        "read public content metadata after owner approval",
+        "read public analytics if the platform grants read-only scope"
+      ],
+      "forbidden_operations": [
+        "private messages",
+        "password storage",
+        "token commit",
+        "posting",
+        "replying",
+        "DM",
+        "following",
+        "liking",
+        "write API",
+        "login scraping",
+        "training without later gate"
+      ],
+      "platform": "Facebook Page",
+      "platform_group": "optional_later",
+      "read_only": true,
+      "required_scope": "read_only_public_analytics_and_public_content_metadata",
+      "requires_human_review": true,
+      "requires_owner_approval": true,
+      "write_allowed": false
+    },
+    {
+      "allowed_operations": [
+        "read public account metadata after owner approval",
+        "read public content metadata after owner approval",
+        "read public analytics if the platform grants read-only scope"
+      ],
+      "forbidden_operations": [
+        "private messages",
+        "password storage",
+        "token commit",
+        "posting",
+        "replying",
+        "DM",
+        "following",
+        "liking",
+        "write API",
+        "login scraping",
+        "training without later gate"
+      ],
+      "platform": "LinkedIn",
+      "platform_group": "optional_later",
+      "read_only": true,
+      "required_scope": "read_only_public_analytics_and_public_content_metadata",
+      "requires_human_review": true,
+      "requires_owner_approval": true,
+      "write_allowed": false
+    },
+    {
+      "allowed_operations": [
+        "read public account metadata after owner approval",
+        "read public content metadata after owner approval",
+        "read public analytics if the platform grants read-only scope"
+      ],
+      "forbidden_operations": [
+        "private messages",
+        "password storage",
+        "token commit",
+        "posting",
+        "replying",
+        "DM",
+        "following",
+        "liking",
+        "write API",
+        "login scraping",
+        "training without later gate"
+      ],
+      "platform": "小红书",
+      "platform_group": "optional_later",
+      "read_only": true,
+      "required_scope": "read_only_public_analytics_and_public_content_metadata",
+      "requires_human_review": true,
+      "requires_owner_approval": true,
+      "write_allowed": false
+    },
+    {
+      "allowed_operations": [
+        "read public account metadata after owner approval",
+        "read public content metadata after owner approval",
+        "read public analytics if the platform grants read-only scope"
+      ],
+      "forbidden_operations": [
+        "private messages",
+        "password storage",
+        "token commit",
+        "posting",
+        "replying",
+        "DM",
+        "following",
+        "liking",
+        "write API",
+        "login scraping",
+        "training without later gate"
+      ],
+      "platform": "抖音",
+      "platform_group": "optional_later",
+      "read_only": true,
+      "required_scope": "read_only_public_analytics_and_public_content_metadata",
+      "requires_human_review": true,
+      "requires_owner_approval": true,
+      "write_allowed": false
+    },
+    {
+      "allowed_operations": [
+        "read public account metadata after owner approval",
+        "read public content metadata after owner approval",
+        "read public analytics if the platform grants read-only scope"
+      ],
+      "forbidden_operations": [
+        "private messages",
+        "password storage",
+        "token commit",
+        "posting",
+        "replying",
+        "DM",
+        "following",
+        "liking",
+        "write API",
+        "login scraping",
+        "training without later gate"
+      ],
+      "platform": "Bilibili",
+      "platform_group": "optional_later",
+      "read_only": true,
+      "required_scope": "read_only_public_analytics_and_public_content_metadata",
+      "requires_human_review": true,
+      "requires_owner_approval": true,
+      "write_allowed": false
+    }
+  ],
+  "scope_id": "PLATFORM_SCOPE_REQUIREMENTS",
+  "token_commit_allowed": false,
+  "write_scope_allowed": false
+}
