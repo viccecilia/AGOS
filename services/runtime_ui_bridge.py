@@ -30,6 +30,7 @@ from services.cross_platform_correlation_expansion import CrossPlatformCorrelati
 from services.cross_platform_promotion_plan_engine import CrossPlatformPromotionPlanEngine
 from services.cross_platform_expansion_engine import CrossPlatformExpansionEngine
 from services.demand_to_action_strategy_engine import DemandToActionStrategyEngine
+from services.demand_prediction_engine import DemandPredictionEngine
 from services.event_intelligence_engine import EventIntelligenceEngine
 from services.daily_question_import_engine import DailyQuestionImportEngine
 from services.daily_operations_report_engine import DailyOperationsReportEngine
@@ -299,6 +300,15 @@ class RuntimeUIBridge:
             event_intelligence.get("eventIntelligence", []),
             mobility_demand_intent.get("mobilityIntents", []),
             intelligence_ranking.get("rankedIntelligence", []),
+        )
+        demand_prediction = DemandPredictionEngine().build(
+            seasonal_intelligence.get("seasonalIntelligence", []),
+            spatial_intelligence.get("spatialIntelligence", []),
+            event_intelligence.get("eventIntelligence", []),
+            mobility_intelligence.get("mobilityIntelligence", []),
+            intelligence_ranking.get("rankedIntelligence", []),
+            manual_external_feedback_intake.get("manualExternalFeedbackRecords", []),
+            external_drift_monitor.get("externalDriftSummary", {}),
         )
         batch_scout_runtime = BatchScoutRuntime().run()
         batch_topic_clustering = BatchTopicClustering().cluster(batch_scout_runtime.get("batchAnalysis", []))
@@ -767,6 +777,12 @@ class RuntimeUIBridge:
             "highValueMobilityDemand": mobility_intelligence.get("highValueMobilityDemand", []),
             "mobilityNoiseSignals": mobility_intelligence.get("mobilityNoiseSignals", []),
             "mobilityIntelligenceSummary": mobility_intelligence.get("mobilityIntelligenceSummary", {}),
+            "demandPredictionEngine": demand_prediction,
+            "demandPredictions": demand_prediction.get("demandPredictions", []),
+            "highConfidencePredictions": demand_prediction.get("highConfidencePredictions", []),
+            "lowConfidencePredictions": demand_prediction.get("lowConfidencePredictions", []),
+            "predictionRiskReview": demand_prediction.get("predictionRiskReview", {}),
+            "demandPredictionSummary": demand_prediction.get("demandPredictionSummary", {}),
             "locationDemandHeatmap": location_demand_heatmap,
             "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),

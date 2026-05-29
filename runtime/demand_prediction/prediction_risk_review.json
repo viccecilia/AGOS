@@ -1,0 +1,20 @@
+{
+  "all_actions_blocked": true,
+  "all_predictions_human_review_required": true,
+  "auto_customer_contact_allowed": false,
+  "auto_dispatch_allowed": false,
+  "auto_driver_contact_allowed": false,
+  "auto_operational_action_allowed": false,
+  "auto_publish_allowed": false,
+  "auto_quote_allowed": false,
+  "auto_reply_allowed": false,
+  "drift_highest_severity": "high",
+  "drift_signal_count": 5,
+  "high_confidence_count": 11,
+  "low_confidence_count": 26,
+  "low_confidence_enters_action": false,
+  "prediction_count": 37,
+  "prediction_risk_review_ready": true,
+  "sample_data_marked_real_prediction": false,
+  "write_api_allowed": false
+}

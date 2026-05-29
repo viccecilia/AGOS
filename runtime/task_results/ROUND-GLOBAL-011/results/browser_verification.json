@@ -1,0 +1,17 @@
+{
+  "round_id": "ROUND-GLOBAL-011",
+  "url": "http://127.0.0.1:8765/project_control_center.html?runtime_ui=1&cache_bust=global011#war-room-growth",
+  "control_center_version": "0.1.143",
+  "panel_exists": true,
+  "prediction_count": 37,
+  "high_confidence_predictions": 11,
+  "low_confidence_predictions": 26,
+  "low_confidence_enters_action": false,
+  "sample_data_marked_real_prediction": false,
+  "all_predictions_human_review_required": true,
+  "auto_operational_action_allowed": false,
+  "auto_quote_allowed": false,
+  "auto_dispatch_allowed": false,
+  "write_api_allowed": false,
+  "browser_verification": "passed"
+}

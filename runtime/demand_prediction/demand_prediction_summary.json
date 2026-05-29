@@ -1,0 +1,46 @@
+{
+  "all_predictions_human_review_required": true,
+  "auto_customer_contact_allowed": false,
+  "auto_dispatch_allowed": false,
+  "auto_driver_contact_allowed": false,
+  "auto_operational_action_allowed": false,
+  "auto_publish_allowed": false,
+  "auto_quote_allowed": false,
+  "auto_reply_allowed": false,
+  "confirmed_real_predictions": false,
+  "demand_prediction_ready": true,
+  "demand_types": [
+    "airport transfer",
+    "elderly support",
+    "event pickup",
+    "family trip",
+    "hotel transfer",
+    "luggage-heavy trip",
+    "night arrival",
+    "no real mobility intent",
+    "private charter",
+    "sightseeing route"
+  ],
+  "high_confidence_count": 11,
+  "low_confidence_count": 26,
+  "low_confidence_enters_action": false,
+  "markets": [
+    "Europe",
+    "Global English",
+    "Japan",
+    "Japan domestic",
+    "Korea",
+    "Taiwan",
+    "US"
+  ],
+  "next_recommendation": "Use human-reviewed high-confidence predictions as input for Cross-Dimensional Correlation; never route low-confidence predictions to action.",
+  "prediction_count": 37,
+  "prediction_dimensions": {
+    "event-driven spike": 18,
+    "location trend": 5,
+    "mobility demand trend": 13,
+    "platform signal trend": 1
+  },
+  "sample_data_only": true,
+  "write_api_allowed": false
+}
