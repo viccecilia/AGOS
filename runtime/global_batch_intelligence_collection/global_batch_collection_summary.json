@@ -1,0 +1,19 @@
+{
+  "all_records_need_human_review": true,
+  "all_records_read_only": true,
+  "audit_first": true,
+  "auto_contact_user_allowed": false,
+  "contains_credentials": false,
+  "credentials_read": false,
+  "global_batch_collection_ready": true,
+  "human_gated": true,
+  "language_count": 5,
+  "market_count": 8,
+  "next_recommendation": "Route global intelligence records into Global Pain Cluster Engine after human review.",
+  "platform_count": 8,
+  "platform_write_api_called": false,
+  "read_only": true,
+  "record_count": 32,
+  "sample_first": true,
+  "source_type_count": 8
+}

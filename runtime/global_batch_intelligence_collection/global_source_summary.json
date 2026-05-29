@@ -1,0 +1,42 @@
+{
+  "human_review_required_records": 32,
+  "languages": {
+    "en": 16,
+    "ja": 4,
+    "ko": 4,
+    "zh-CN": 4,
+    "zh-TW": 4
+  },
+  "markets": {
+    "China outbound": 4,
+    "Europe": 4,
+    "Global English": 4,
+    "Japan": 4,
+    "Korea": 4,
+    "Southeast Asia": 4,
+    "Taiwan": 4,
+    "US": 4
+  },
+  "platforms": {
+    "Instagram": 4,
+    "Reddit": 4,
+    "SEO / Search": 4,
+    "Threads": 4,
+    "TikTok": 4,
+    "X": 4,
+    "Xiaohongshu": 4,
+    "YouTube": 4
+  },
+  "read_only_records": 32,
+  "sample_records": 32,
+  "source_types": {
+    "CSV": 4,
+    "Google Trends-style sample": 4,
+    "JSON": 4,
+    "RSS export": 4,
+    "local research notes": 4,
+    "manual import": 4,
+    "platform trend sample": 4,
+    "read-only API output": 4
+  }
+}

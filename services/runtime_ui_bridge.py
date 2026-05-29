@@ -33,6 +33,7 @@ from services.daily_question_import_engine import DailyQuestionImportEngine
 from services.daily_operations_report_engine import DailyOperationsReportEngine
 from services.failure_analysis_engine import FailureAnalysisEngine
 from services.growth_signal_correlation_engine import GrowthSignalCorrelationEngine
+from services.global_batch_intelligence_collection import GlobalBatchIntelligenceCollection
 from services.external_evidence_ledger import ExternalEvidenceLedger
 from services.external_action_sandbox import ExternalActionSandbox
 from services.external_drift_monitor import ExternalDriftMonitor
@@ -243,6 +244,7 @@ class RuntimeUIBridge:
             adapter_contract=workbench_adapter_contract,
             training_acceptance=training_acceptance_export,
         )
+        global_batch_intelligence = GlobalBatchIntelligenceCollection().collect()
         batch_scout_runtime = BatchScoutRuntime().run()
         batch_topic_clustering = BatchTopicClustering().cluster(batch_scout_runtime.get("batchAnalysis", []))
         batch_human_review = BatchHumanReview().review(batch_topic_clustering.get("batchTrendClusters", []))
@@ -659,6 +661,11 @@ class RuntimeUIBridge:
             "trainingDataAccessPolicy": training_data_manifest.get("trainingDataAccessPolicy", {}),
             "trainingDataAuditReview": training_data_manifest.get("trainingDataAuditReview", {}),
             "trainingDataManifestSummary": training_data_manifest.get("trainingDataManifestSummary", {}),
+            "globalBatchIntelligenceCollection": global_batch_intelligence,
+            "globalIntelligenceRecords": global_batch_intelligence.get("globalIntelligenceRecords", []),
+            "globalSourceSummary": global_batch_intelligence.get("globalSourceSummary", {}),
+            "globalBatchCollectionFeed": global_batch_intelligence.get("globalBatchCollectionFeed", []),
+            "globalBatchCollectionSummary": global_batch_intelligence.get("globalBatchCollectionSummary", {}),
             "locationDemandHeatmap": location_demand_heatmap,
             "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),

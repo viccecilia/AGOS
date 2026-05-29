@@ -1,0 +1,20 @@
+{
+  "round_id": "ROUND-GLOBAL-001",
+  "url": "http://localhost:8765/project_control_center.html?runtime_ui=1&cache_bust=global001#war-room-growth",
+  "version": "0.1.133",
+  "currentRound": "ROUND-GLOBAL-001 / AGOS_GLOBAL_BATCH_INTELLIGENCE_COLLECTION",
+  "panelExists": true,
+  "panelTextIncludesGlobal": true,
+  "panelTextIncludesReadOnly": true,
+  "recordCount": 32,
+  "marketCount": 8,
+  "platformCount": 8,
+  "sourceTypeCount": 8,
+  "sampleFirst": true,
+  "readOnly": true,
+  "auditFirst": true,
+  "humanGated": true,
+  "credentialsRead": false,
+  "platformWriteApiCalled": false,
+  "allRecordsNeedHumanReview": true
+}
