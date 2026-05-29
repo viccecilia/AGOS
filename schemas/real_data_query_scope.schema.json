@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://agos.local/schemas/real_data_query_scope.schema.json",
+  "title": "AGOS Real Data Query Scope Policy",
+  "type": "object",
+  "required": [
+    "policy_id",
+    "round_id",
+    "phase",
+    "status",
+    "querySourceHierarchy",
+    "targetContentTypes",
+    "fuzzyClassificationStrategy",
+    "languageTags",
+    "regionTags",
+    "queryExclusions",
+    "readOnlyAndReviewGate",
+    "sourcePolicy",
+    "languageRegionTaggingPolicy",
+    "contentTypePolicy",
+    "queryScopeEvidence"
+  ],
+  "properties": {
+    "policy_id": {
+      "const": "QUERY_SCOPE_POLICY"
+    },
+    "round_id": {
+      "const": "ROUND-REALDATA-003_QUERY_SCOPE_AND_SOURCE_POLICY"
+    },
+    "phase": {
+      "const": "AGOS_REAL_DATA_CONTROLLED_ACCESS"
+    },
+    "status": {
+      "const": "query_scope_defined_no_api_access"
+    },
+    "querySourceHierarchy": {
+      "type": "array",
+      "minItems": 6,
+      "contains": {
+        "const": "Google Trends search guidance"
+      }
+    },
+    "targetContentTypes": {
+      "type": "array",
+      "minItems": 9,
+      "contains": {
+        "const": "help-seeking posts"
+      }
+    },
+    "fuzzyClassificationStrategy": {
+      "type": "object",
+      "required": [
+        "do_not_hard_code_exact_regional_needs_too_early",
+        "classify_discovered_needs_into_broad_categories",
+        "uncategorized_bucket_for_new_demand_types",
+        "cross_language_overlap_as_shared_pain",
+        "language_specific_pain_as_individual_market_pain"
+      ]
+    },
+    "languageTags": {
+      "type": "array",
+      "minItems": 5
+    },
+    "regionTags": {
+      "type": "array",
+      "minItems": 3
+    },
+    "queryExclusions": {
+      "type": "array",
+      "minItems": 6
+    },
+    "readOnlyAndReviewGate": {
+      "type": "object",
+      "required": [
+        "read_only",
+        "human_review_required",
+        "real_api_call_allowed",
+        "platform_scraping_allowed",
+        "real_data_ingestion_allowed",
+        "training_allowed",
+        "write_api_allowed"
+      ],
+      "properties": {
+        "read_only": {
+          "const": true
+        },
+        "human_review_required": {
+          "const": true
+        },
+        "real_api_call_allowed": {
+          "const": false
+        },
+        "platform_scraping_allowed": {
+          "const": false
+        },
+        "real_data_ingestion_allowed": {
+          "const": false
+        },
+        "training_allowed": {
+          "const": false
+        },
+        "write_api_allowed": {
+          "const": false
+        }
+      }
+    },
+    "sourcePolicy": {
+      "type": "object"
+    },
+    "languageRegionTaggingPolicy": {
+      "type": "object"
+    },
+    "contentTypePolicy": {
+      "type": "object"
+    },
+    "queryScopeEvidence": {
+      "type": "object",
+      "required": [
+        "query_scope_policy_defined",
+        "all_sources_read_only",
+        "all_sources_review_gated",
+        "private_messages_excluded",
+        "real_api_call_allowed",
+        "platform_scraping_allowed",
+        "real_data_ingestion_allowed",
+        "training_allowed",
+        "write_api_allowed"
+      ]
+    }
+  }
+}

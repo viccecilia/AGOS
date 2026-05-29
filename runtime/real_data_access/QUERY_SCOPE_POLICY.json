@@ -1,0 +1,340 @@
+{
+  "contentTypePolicy": {
+    "broadCategories": [
+      "travel planning confusion",
+      "transport anxiety",
+      "itinerary uncertainty",
+      "place recommendation demand",
+      "shopping/food discussion demand",
+      "solution validation",
+      "viral engagement signal",
+      "uncategorized_new_demand_type"
+    ],
+    "created_at": "2026-05-29T06:20:33+00:00",
+    "fuzzyClassificationStrategy": {
+      "broad_category_first": true,
+      "hard_code_exact_region_needs_now": false,
+      "individual_market_pain_detection": true,
+      "new_demand_type_review_required": true,
+      "shared_pain_cross_language_detection": true,
+      "uncategorized_bucket_enabled": true
+    },
+    "policy_id": "CONTENT_TYPE_POLICY",
+    "round_id": "ROUND-REALDATA-003_QUERY_SCOPE_AND_SOURCE_POLICY",
+    "targetContentTypes": [
+      {
+        "auto_reply_allowed": false,
+        "broad_category": "travel planning confusion",
+        "content_type": "help-seeking posts",
+        "review_required": true,
+        "training_allowed_now": false
+      },
+      {
+        "auto_reply_allowed": false,
+        "broad_category": "travel planning confusion",
+        "content_type": "confusion/problem posts",
+        "review_required": true,
+        "training_allowed_now": false
+      },
+      {
+        "auto_reply_allowed": false,
+        "broad_category": "solution validation",
+        "content_type": "solution posts",
+        "review_required": true,
+        "training_allowed_now": false
+      },
+      {
+        "auto_reply_allowed": false,
+        "broad_category": "itinerary uncertainty",
+        "content_type": "itinerary questions",
+        "review_required": true,
+        "training_allowed_now": false
+      },
+      {
+        "auto_reply_allowed": false,
+        "broad_category": "transport anxiety",
+        "content_type": "transport disruption questions",
+        "review_required": true,
+        "training_allowed_now": false
+      },
+      {
+        "auto_reply_allowed": false,
+        "broad_category": "place recommendation demand",
+        "content_type": "must-buy/must-eat/must-visit discussions",
+        "review_required": true,
+        "training_allowed_now": false
+      },
+      {
+        "auto_reply_allowed": false,
+        "broad_category": "viral engagement signal",
+        "content_type": "high-like posts",
+        "review_required": true,
+        "training_allowed_now": false
+      },
+      {
+        "auto_reply_allowed": false,
+        "broad_category": "viral engagement signal",
+        "content_type": "high-share posts",
+        "review_required": true,
+        "training_allowed_now": false
+      },
+      {
+        "auto_reply_allowed": false,
+        "broad_category": "solution validation",
+        "content_type": "author-thanked answers",
+        "review_required": true,
+        "training_allowed_now": false
+      }
+    ]
+  },
+  "created_at": "2026-05-29T06:20:33+00:00",
+  "fuzzyClassificationStrategy": {
+    "classify_discovered_needs_into_broad_categories": true,
+    "cross_language_overlap_as_shared_pain": true,
+    "do_not_hard_code_exact_regional_needs_too_early": true,
+    "language_specific_pain_as_individual_market_pain": true,
+    "review_required_before_new_category_promotion": true,
+    "uncategorized_bucket_for_new_demand_types": true
+  },
+  "languageRegionTaggingPolicy": {
+    "created_at": "2026-05-29T06:20:33+00:00",
+    "languageRegionRules": [
+      {
+        "default_region_tag": "region unknown",
+        "language": "English",
+        "possible_markets": [
+          "US",
+          "Europe",
+          "Global English",
+          "Southeast Asia"
+        ],
+        "requires_region_evidence": true
+      },
+      {
+        "default_region_tag": "region inferred",
+        "language": "Japanese",
+        "possible_markets": [
+          "Japan"
+        ],
+        "requires_region_evidence": true
+      },
+      {
+        "default_region_tag": "region inferred",
+        "language": "Chinese",
+        "possible_markets": [
+          "China outbound",
+          "Taiwan",
+          "Southeast Asia"
+        ],
+        "requires_region_evidence": true
+      },
+      {
+        "default_region_tag": "region inferred",
+        "language": "Korean",
+        "possible_markets": [
+          "Korea"
+        ],
+        "requires_region_evidence": true
+      },
+      {
+        "default_region_tag": "region inferred",
+        "language": "Southeast Asia languages",
+        "possible_markets": [
+          "Southeast Asia"
+        ],
+        "requires_region_evidence": true
+      }
+    ],
+    "languageTags": [
+      "English",
+      "Japanese",
+      "Chinese",
+      "Korean",
+      "Southeast Asia languages"
+    ],
+    "overlapPolicy": {
+      "cross_language_overlap_as_shared_pain": true,
+      "language_specific_pain_as_individual_market_pain": true,
+      "region_unknown_allowed": true,
+      "unclear_language_goes_to_review": true
+    },
+    "policy_id": "LANGUAGE_REGION_TAGGING_POLICY",
+    "regionTags": [
+      "region inferred",
+      "region explicit",
+      "region unknown"
+    ],
+    "round_id": "ROUND-REALDATA-003_QUERY_SCOPE_AND_SOURCE_POLICY"
+  },
+  "languageTags": [
+    "English",
+    "Japanese",
+    "Chinese",
+    "Korean",
+    "Southeast Asia languages"
+  ],
+  "phase": "AGOS_REAL_DATA_CONTROLLED_ACCESS",
+  "policy_id": "QUERY_SCOPE_POLICY",
+  "queryExclusions": [
+    "private messages",
+    "sensitive personal data",
+    "doxxing content",
+    "minors' sensitive data",
+    "non-authorized account data",
+    "platform-forbidden scraping"
+  ],
+  "queryScopeEvidence": {
+    "all_content_types_review_required": true,
+    "all_sources_read_only": true,
+    "all_sources_review_gated": true,
+    "content_type_policy_defined": true,
+    "created_at": "2026-05-29T06:20:33+00:00",
+    "cross_language_overlap_as_shared_pain": true,
+    "doxxing_content_excluded": true,
+    "evidence_id": "QUERY_SCOPE_EVIDENCE",
+    "evidence_status": "query_scope_defined_no_api_no_scrape_no_training",
+    "language_region_tagging_policy_defined": true,
+    "language_specific_pain_as_individual_market_pain": true,
+    "language_tag_count": 5,
+    "minors_sensitive_data_excluded": true,
+    "next_gate_required": "ROUND-REALDATA-004_API_DRY_RUN_PLAN",
+    "non_authorized_account_data_excluded": true,
+    "platform_forbidden_scraping_excluded": true,
+    "platform_scraping_allowed": false,
+    "private_messages_excluded": true,
+    "query_exclusion_count": 6,
+    "query_scope_policy_defined": true,
+    "query_source_count": 6,
+    "real_api_call_allowed": false,
+    "real_data_ingestion_allowed": false,
+    "region_tag_count": 3,
+    "round_id": "ROUND-REALDATA-003_QUERY_SCOPE_AND_SOURCE_POLICY",
+    "sensitive_personal_data_excluded": true,
+    "source_policy_defined": true,
+    "target_content_type_count": 9,
+    "training_allowed": false,
+    "uncategorized_bucket_enabled": true,
+    "write_api_allowed": false
+  },
+  "querySourceHierarchy": [
+    "Google Trends search guidance",
+    "platform search results",
+    "public posts",
+    "public comments",
+    "public engagement metrics",
+    "manual import samples"
+  ],
+  "readOnlyAndReviewGate": {
+    "human_review_required": true,
+    "platform_scraping_allowed": false,
+    "read_only": true,
+    "real_api_call_allowed": false,
+    "real_data_ingestion_allowed": false,
+    "training_allowed": false,
+    "write_api_allowed": false
+  },
+  "regionTags": [
+    "region inferred",
+    "region explicit",
+    "region unknown"
+  ],
+  "round_id": "ROUND-REALDATA-003_QUERY_SCOPE_AND_SOURCE_POLICY",
+  "sourcePolicy": {
+    "created_at": "2026-05-29T06:20:33+00:00",
+    "policy_id": "SOURCE_POLICY",
+    "publicOnlyPolicy": {
+      "non_authorized_account_data_allowed": false,
+      "platform_forbidden_scraping_allowed": false,
+      "private_messages_allowed": false,
+      "public_comments_allowed_after_authorization": true,
+      "public_engagement_metrics_allowed_after_authorization": true,
+      "public_posts_allowed_after_authorization": true
+    },
+    "reviewGate": {
+      "all_sources_review_gated": true,
+      "new_source_requires_policy_review": true,
+      "source_evidence_required": true
+    },
+    "round_id": "ROUND-REALDATA-003_QUERY_SCOPE_AND_SOURCE_POLICY",
+    "sourceHierarchy": [
+      {
+        "allowed_before_api_dry_run": true,
+        "api_call_allowed_now": false,
+        "credential_required_before_live_access": true,
+        "human_review_required": true,
+        "rank": 1,
+        "read_only": true,
+        "scraping_allowed": false,
+        "source_type": "Google Trends search guidance",
+        "write_action_allowed": false
+      },
+      {
+        "allowed_before_api_dry_run": false,
+        "api_call_allowed_now": false,
+        "credential_required_before_live_access": true,
+        "human_review_required": true,
+        "rank": 2,
+        "read_only": true,
+        "scraping_allowed": false,
+        "source_type": "platform search results",
+        "write_action_allowed": false
+      },
+      {
+        "allowed_before_api_dry_run": false,
+        "api_call_allowed_now": false,
+        "credential_required_before_live_access": true,
+        "human_review_required": true,
+        "rank": 3,
+        "read_only": true,
+        "scraping_allowed": false,
+        "source_type": "public posts",
+        "write_action_allowed": false
+      },
+      {
+        "allowed_before_api_dry_run": false,
+        "api_call_allowed_now": false,
+        "credential_required_before_live_access": true,
+        "human_review_required": true,
+        "rank": 4,
+        "read_only": true,
+        "scraping_allowed": false,
+        "source_type": "public comments",
+        "write_action_allowed": false
+      },
+      {
+        "allowed_before_api_dry_run": false,
+        "api_call_allowed_now": false,
+        "credential_required_before_live_access": true,
+        "human_review_required": true,
+        "rank": 5,
+        "read_only": true,
+        "scraping_allowed": false,
+        "source_type": "public engagement metrics",
+        "write_action_allowed": false
+      },
+      {
+        "allowed_before_api_dry_run": true,
+        "api_call_allowed_now": false,
+        "credential_required_before_live_access": false,
+        "human_review_required": true,
+        "rank": 6,
+        "read_only": true,
+        "scraping_allowed": false,
+        "source_type": "manual import samples",
+        "write_action_allowed": false
+      }
+    ]
+  },
+  "status": "query_scope_defined_no_api_access",
+  "targetContentTypes": [
+    "help-seeking posts",
+    "confusion/problem posts",
+    "solution posts",
+    "itinerary questions",
+    "transport disruption questions",
+    "must-buy/must-eat/must-visit discussions",
+    "high-like posts",
+    "high-share posts",
+    "author-thanked answers"
+  ]
+}

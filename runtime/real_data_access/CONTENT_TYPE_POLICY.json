@@ -1,0 +1,88 @@
+{
+  "broadCategories": [
+    "travel planning confusion",
+    "transport anxiety",
+    "itinerary uncertainty",
+    "place recommendation demand",
+    "shopping/food discussion demand",
+    "solution validation",
+    "viral engagement signal",
+    "uncategorized_new_demand_type"
+  ],
+  "created_at": "2026-05-29T06:20:33+00:00",
+  "fuzzyClassificationStrategy": {
+    "broad_category_first": true,
+    "hard_code_exact_region_needs_now": false,
+    "individual_market_pain_detection": true,
+    "new_demand_type_review_required": true,
+    "shared_pain_cross_language_detection": true,
+    "uncategorized_bucket_enabled": true
+  },
+  "policy_id": "CONTENT_TYPE_POLICY",
+  "round_id": "ROUND-REALDATA-003_QUERY_SCOPE_AND_SOURCE_POLICY",
+  "targetContentTypes": [
+    {
+      "auto_reply_allowed": false,
+      "broad_category": "travel planning confusion",
+      "content_type": "help-seeking posts",
+      "review_required": true,
+      "training_allowed_now": false
+    },
+    {
+      "auto_reply_allowed": false,
+      "broad_category": "travel planning confusion",
+      "content_type": "confusion/problem posts",
+      "review_required": true,
+      "training_allowed_now": false
+    },
+    {
+      "auto_reply_allowed": false,
+      "broad_category": "solution validation",
+      "content_type": "solution posts",
+      "review_required": true,
+      "training_allowed_now": false
+    },
+    {
+      "auto_reply_allowed": false,
+      "broad_category": "itinerary uncertainty",
+      "content_type": "itinerary questions",
+      "review_required": true,
+      "training_allowed_now": false
+    },
+    {
+      "auto_reply_allowed": false,
+      "broad_category": "transport anxiety",
+      "content_type": "transport disruption questions",
+      "review_required": true,
+      "training_allowed_now": false
+    },
+    {
+      "auto_reply_allowed": false,
+      "broad_category": "place recommendation demand",
+      "content_type": "must-buy/must-eat/must-visit discussions",
+      "review_required": true,
+      "training_allowed_now": false
+    },
+    {
+      "auto_reply_allowed": false,
+      "broad_category": "viral engagement signal",
+      "content_type": "high-like posts",
+      "review_required": true,
+      "training_allowed_now": false
+    },
+    {
+      "auto_reply_allowed": false,
+      "broad_category": "viral engagement signal",
+      "content_type": "high-share posts",
+      "review_required": true,
+      "training_allowed_now": false
+    },
+    {
+      "auto_reply_allowed": false,
+      "broad_category": "solution validation",
+      "content_type": "author-thanked answers",
+      "review_required": true,
+      "training_allowed_now": false
+    }
+  ]
+}

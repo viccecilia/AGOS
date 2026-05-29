@@ -1,0 +1,86 @@
+{
+  "created_at": "2026-05-29T06:20:33+00:00",
+  "policy_id": "SOURCE_POLICY",
+  "publicOnlyPolicy": {
+    "non_authorized_account_data_allowed": false,
+    "platform_forbidden_scraping_allowed": false,
+    "private_messages_allowed": false,
+    "public_comments_allowed_after_authorization": true,
+    "public_engagement_metrics_allowed_after_authorization": true,
+    "public_posts_allowed_after_authorization": true
+  },
+  "reviewGate": {
+    "all_sources_review_gated": true,
+    "new_source_requires_policy_review": true,
+    "source_evidence_required": true
+  },
+  "round_id": "ROUND-REALDATA-003_QUERY_SCOPE_AND_SOURCE_POLICY",
+  "sourceHierarchy": [
+    {
+      "allowed_before_api_dry_run": true,
+      "api_call_allowed_now": false,
+      "credential_required_before_live_access": true,
+      "human_review_required": true,
+      "rank": 1,
+      "read_only": true,
+      "scraping_allowed": false,
+      "source_type": "Google Trends search guidance",
+      "write_action_allowed": false
+    },
+    {
+      "allowed_before_api_dry_run": false,
+      "api_call_allowed_now": false,
+      "credential_required_before_live_access": true,
+      "human_review_required": true,
+      "rank": 2,
+      "read_only": true,
+      "scraping_allowed": false,
+      "source_type": "platform search results",
+      "write_action_allowed": false
+    },
+    {
+      "allowed_before_api_dry_run": false,
+      "api_call_allowed_now": false,
+      "credential_required_before_live_access": true,
+      "human_review_required": true,
+      "rank": 3,
+      "read_only": true,
+      "scraping_allowed": false,
+      "source_type": "public posts",
+      "write_action_allowed": false
+    },
+    {
+      "allowed_before_api_dry_run": false,
+      "api_call_allowed_now": false,
+      "credential_required_before_live_access": true,
+      "human_review_required": true,
+      "rank": 4,
+      "read_only": true,
+      "scraping_allowed": false,
+      "source_type": "public comments",
+      "write_action_allowed": false
+    },
+    {
+      "allowed_before_api_dry_run": false,
+      "api_call_allowed_now": false,
+      "credential_required_before_live_access": true,
+      "human_review_required": true,
+      "rank": 5,
+      "read_only": true,
+      "scraping_allowed": false,
+      "source_type": "public engagement metrics",
+      "write_action_allowed": false
+    },
+    {
+      "allowed_before_api_dry_run": true,
+      "api_call_allowed_now": false,
+      "credential_required_before_live_access": false,
+      "human_review_required": true,
+      "rank": 6,
+      "read_only": true,
+      "scraping_allowed": false,
+      "source_type": "manual import samples",
+      "write_action_allowed": false
+    }
+  ]
+}

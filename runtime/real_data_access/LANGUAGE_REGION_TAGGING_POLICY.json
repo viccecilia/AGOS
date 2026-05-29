@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-05-29T06:20:33+00:00",
+  "languageRegionRules": [
+    {
+      "default_region_tag": "region unknown",
+      "language": "English",
+      "possible_markets": [
+        "US",
+        "Europe",
+        "Global English",
+        "Southeast Asia"
+      ],
+      "requires_region_evidence": true
+    },
+    {
+      "default_region_tag": "region inferred",
+      "language": "Japanese",
+      "possible_markets": [
+        "Japan"
+      ],
+      "requires_region_evidence": true
+    },
+    {
+      "default_region_tag": "region inferred",
+      "language": "Chinese",
+      "possible_markets": [
+        "China outbound",
+        "Taiwan",
+        "Southeast Asia"
+      ],
+      "requires_region_evidence": true
+    },
+    {
+      "default_region_tag": "region inferred",
+      "language": "Korean",
+      "possible_markets": [
+        "Korea"
+      ],
+      "requires_region_evidence": true
+    },
+    {
+      "default_region_tag": "region inferred",
+      "language": "Southeast Asia languages",
+      "possible_markets": [
+        "Southeast Asia"
+      ],
+      "requires_region_evidence": true
+    }
+  ],
+  "languageTags": [
+    "English",
+    "Japanese",
+    "Chinese",
+    "Korean",
+    "Southeast Asia languages"
+  ],
+  "overlapPolicy": {
+    "cross_language_overlap_as_shared_pain": true,
+    "language_specific_pain_as_individual_market_pain": true,
+    "region_unknown_allowed": true,
+    "unclear_language_goes_to_review": true
+  },
+  "policy_id": "LANGUAGE_REGION_TAGGING_POLICY",
+  "regionTags": [
+    "region inferred",
+    "region explicit",
+    "region unknown"
+  ],
+  "round_id": "ROUND-REALDATA-003_QUERY_SCOPE_AND_SOURCE_POLICY"
+}

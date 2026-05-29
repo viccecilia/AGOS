@@ -544,31 +544,38 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.146",
+    "controlCenterVersion": "0.1.147",
     "lastUpdated": "2026-05-29",
     "currentPhase": "AGOS Real Data Controlled Access",
-    "currentRound": "ROUND-REALDATA-002_CREDENTIAL_VAULT_AND_SECRET_BOUNDARY",
-    "nextRound": "ROUND-REALDATA-003 Read-Only Connection Dry Run",
+    "currentRound": "ROUND-REALDATA-003_QUERY_SCOPE_AND_SOURCE_POLICY",
+    "nextRound": "ROUND-REALDATA-004 API Dry Run Plan",
     "overallProgress": 100,
-    "activeFocus": "AGOS now has a Credential Vault and Secret Boundary contract. The system stores only credential references and audit templates; no real secrets are requested in chat, no tokens are stored in Git or runtime JSON, no .env files are written, no platform APIs are called, and AGOS training remains stopped."
+    "activeFocus": "AGOS now has a real-data Query Scope and Source Policy. The system defines read-only source hierarchy, target content types, fuzzy classification, language/region tags, and exclusion rules before any API dry-run; no APIs are called, no platforms are scraped, no real data is ingested, and no training starts."
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.146 Add credential vault contract",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.146",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.146",
-    "note": "Credential Vault Contract defines secret handling rules, audit template, and evidence without requesting or storing real secrets, writing .env, calling APIs, ingesting data, or starting training."
+    "latestCommit": "agos-v0.1.147 Add real data query scope policy",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.147",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.147",
+    "note": "Query Scope and Source Policy defines read-only source hierarchy, target content types, fuzzy classification, language/region tags, and exclusions before any API dry-run."
   },
   "metrics": {
-    "roundsPlanned": 167,
-    "roundsCompleted": 138,
+    "roundsPlanned": 168,
+    "roundsCompleted": 139,
     "roundsInProgress": 0,
-    "reportsEmbedded": 152,
+    "reportsEmbedded": 153,
     "aiCompletion": 100
   },
   "modules": [
+    {
+      "name": "Real Data Query Scope and Source Policy",
+      "progress": 100,
+      "status": "done",
+      "ownerPath": "services/real_data_query_scope_policy.py + schemas/real_data_query_scope.schema.json + runtime/real_data_access/",
+      "next": "Use these read-only source, content, language, region, and exclusion rules as the prerequisite for API dry-run planning."
+    },
     {
       "name": "Credential Vault and Secret Boundary",
       "progress": 100,
@@ -922,6 +929,10 @@
   ],
   "paths": [
     {
+      "path": "runtime/real_data_access/QUERY_* + SOURCE_* + LANGUAGE_* + CONTENT_*",
+      "purpose": "Query scope, source hierarchy, language/region tagging, target content type policy, and evidence for read-only real-data API dry-run preparation."
+    },
+    {
       "path": "runtime/real_data_access/CREDENTIAL_* + SECRET_*",
       "purpose": "Credential vault contract, secret boundary policy, credential audit template, and secret boundary evidence for safe real-data access preparation."
     },
@@ -1099,6 +1110,33 @@
     }
   ],
   "reports": [
+    {
+      "id": "ROUND-REALDATA-003_QUERY_SCOPE_AND_SOURCE_POLICY",
+      "title": "AGOS Query Scope and Source Policy",
+      "status": "done",
+      "date": "2026-05-29",
+      "summary": "Defined real-data query scope, source hierarchy, target content types, fuzzy classification, language/region tags, and exclusion rules before API dry-run. All sources remain read-only, review-gated, no scraping, no real API calls, no real data ingestion, no write actions, and no training.",
+      "files": [
+        "schemas/real_data_query_scope.schema.json",
+        "services/real_data_query_scope_policy.py",
+        "runtime/real_data_access/QUERY_SCOPE_POLICY.json",
+        "runtime/real_data_access/SOURCE_POLICY.json",
+        "runtime/real_data_access/LANGUAGE_REGION_TAGGING_POLICY.json",
+        "runtime/real_data_access/CONTENT_TYPE_POLICY.json",
+        "runtime/real_data_access/QUERY_SCOPE_EVIDENCE.json",
+        "tests/real_data_query_scope_policy_smoke_test.py",
+        "docs/project_control_center.html",
+        "runtime/task_results/ROUND-REALDATA-003_QUERY_SCOPE_AND_SOURCE_POLICY/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "python -m compileall services schemas tests",
+        "python tests\\real_data_query_scope_policy_smoke_test.py",
+        "python tests\\credential_vault_contract_smoke_test.py",
+        "python tests\\platform_authorization_contract_smoke_test.py",
+        "python tests\\war_room_runtime_ui_smoke_test.py",
+        "Browser verification: Real Data Controlled Access panel shows query source hierarchy, content type policy, language/region tags, exclusions, and all API/scraping/data/training/write actions blocked"
+      ]
+    },
     {
       "id": "ROUND-REALDATA-002_CREDENTIAL_VAULT_AND_SECRET_BOUNDARY",
       "title": "AGOS Credential Vault and Secret Boundary",
@@ -5422,6 +5460,14 @@
     }
   ],
   "rounds": [
+    {
+      "id": "ROUND-REALDATA-003_QUERY_SCOPE_AND_SOURCE_POLICY",
+      "name": "QUERY_SCOPE_AND_SOURCE_POLICY",
+      "phase": "AGOS_REAL_DATA_CONTROLLED_ACCESS",
+      "status": "done",
+      "summary": "Defined read-only query source hierarchy, target content types, fuzzy classification rules, language/region tagging, and excluded content before any API dry-run.",
+      "resultPath": "runtime/task_results/ROUND-REALDATA-003_QUERY_SCOPE_AND_SOURCE_POLICY/ROUND_SUMMARY.md"
+    },
     {
       "id": "ROUND-REALDATA-002_CREDENTIAL_VAULT_AND_SECRET_BOUNDARY",
       "name": "CREDENTIAL_VAULT_AND_SECRET_BOUNDARY",
@@ -139793,10 +139839,18 @@
   },
   "lastUpdated": "2026-05-29",
   "currentPhase": "AGOS Real Data Controlled Access",
-  "currentRound": "ROUND-REALDATA-002_CREDENTIAL_VAULT_AND_SECRET_BOUNDARY",
-  "nextRound": "ROUND-REALDATA-003 Read-Only Connection Dry Run",
-  "activeFocus": "AGOS now has a Credential Vault and Secret Boundary contract. The system stores only credential references and audit templates; no real secrets are requested in chat, no tokens are stored in Git or runtime JSON, no .env files are written, no platform APIs are called, and AGOS training remains stopped.",
+  "currentRound": "ROUND-REALDATA-003_QUERY_SCOPE_AND_SOURCE_POLICY",
+  "nextRound": "ROUND-REALDATA-004 API Dry Run Plan",
+  "activeFocus": "AGOS now has a real-data Query Scope and Source Policy. The system defines read-only source hierarchy, target content types, fuzzy classification, language/region tags, and exclusion rules before any API dry-run; no APIs are called, no platforms are scraped, no real data is ingested, and no training starts.",
   "gitVersions": [
+    {
+      "tag": "agos-v0.1.147",
+      "label": "ROUND-REALDATA-003 Query Scope and Source Policy",
+      "date": "2026-05-29",
+      "location": "GitHub origin/master",
+      "url": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.147",
+      "notes": "Defines read-only query scope, source hierarchy, target content types, fuzzy classification, language/region tags, and exclusion rules before API dry-run."
+    },
     {
       "tag": "agos-v0.1.146",
       "label": "ROUND-REALDATA-002 Credential Vault and Secret Boundary",
@@ -139823,6 +139877,109 @@
     }
   ],
   "realDataAccess": {
+    "queryScopePolicy": {
+      "policy_id": "QUERY_SCOPE_POLICY",
+      "round_id": "ROUND-REALDATA-003_QUERY_SCOPE_AND_SOURCE_POLICY",
+      "phase": "AGOS_REAL_DATA_CONTROLLED_ACCESS",
+      "status": "query_scope_defined_no_api_access",
+      "querySourceHierarchy": [
+        "Google Trends search guidance",
+        "platform search results",
+        "public posts",
+        "public comments",
+        "public engagement metrics",
+        "manual import samples"
+      ],
+      "targetContentTypes": [
+        "help-seeking posts",
+        "confusion/problem posts",
+        "solution posts",
+        "itinerary questions",
+        "transport disruption questions",
+        "must-buy/must-eat/must-visit discussions",
+        "high-like posts",
+        "high-share posts",
+        "author-thanked answers"
+      ],
+      "queryExclusions": [
+        "private messages",
+        "sensitive personal data",
+        "doxxing content",
+        "minors' sensitive data",
+        "non-authorized account data",
+        "platform-forbidden scraping"
+      ],
+      "fuzzyClassificationStrategy": {
+        "hard_code_exact_region_needs_now": false,
+        "broad_category_first": true,
+        "uncategorized_bucket_enabled": true,
+        "shared_pain_cross_language_detection": true,
+        "individual_market_pain_detection": true
+      },
+      "readOnlyAndReviewGate": {
+        "read_only": true,
+        "human_review_required": true,
+        "real_api_call_allowed": false,
+        "platform_scraping_allowed": false,
+        "real_data_ingestion_allowed": false,
+        "training_allowed": false,
+        "write_api_allowed": false
+      }
+    },
+    "sourcePolicy": {
+      "policy_id": "SOURCE_POLICY",
+      "sourceHierarchy": [
+        {"rank": 1, "source_type": "Google Trends search guidance", "read_only": true, "human_review_required": true, "api_call_allowed_now": false, "scraping_allowed": false, "write_action_allowed": false, "allowed_before_api_dry_run": true},
+        {"rank": 2, "source_type": "platform search results", "read_only": true, "human_review_required": true, "api_call_allowed_now": false, "scraping_allowed": false, "write_action_allowed": false, "allowed_before_api_dry_run": false},
+        {"rank": 3, "source_type": "public posts", "read_only": true, "human_review_required": true, "api_call_allowed_now": false, "scraping_allowed": false, "write_action_allowed": false, "allowed_before_api_dry_run": false},
+        {"rank": 4, "source_type": "public comments", "read_only": true, "human_review_required": true, "api_call_allowed_now": false, "scraping_allowed": false, "write_action_allowed": false, "allowed_before_api_dry_run": false},
+        {"rank": 5, "source_type": "public engagement metrics", "read_only": true, "human_review_required": true, "api_call_allowed_now": false, "scraping_allowed": false, "write_action_allowed": false, "allowed_before_api_dry_run": false},
+        {"rank": 6, "source_type": "manual import samples", "read_only": true, "human_review_required": true, "api_call_allowed_now": false, "scraping_allowed": false, "write_action_allowed": false, "allowed_before_api_dry_run": true}
+      ]
+    },
+    "languageRegionTaggingPolicy": {
+      "policy_id": "LANGUAGE_REGION_TAGGING_POLICY",
+      "languageTags": ["English", "Japanese", "Chinese", "Korean", "Southeast Asia languages"],
+      "regionTags": ["region inferred", "region explicit", "region unknown"],
+      "overlapPolicy": {
+        "cross_language_overlap_as_shared_pain": true,
+        "language_specific_pain_as_individual_market_pain": true,
+        "region_unknown_allowed": true
+      }
+    },
+    "contentTypePolicy": {
+      "policy_id": "CONTENT_TYPE_POLICY",
+      "targetContentTypes": [
+        {"content_type": "help-seeking posts", "broad_category": "travel planning confusion", "review_required": true, "auto_reply_allowed": false, "training_allowed_now": false},
+        {"content_type": "confusion/problem posts", "broad_category": "travel planning confusion", "review_required": true, "auto_reply_allowed": false, "training_allowed_now": false},
+        {"content_type": "solution posts", "broad_category": "solution validation", "review_required": true, "auto_reply_allowed": false, "training_allowed_now": false},
+        {"content_type": "itinerary questions", "broad_category": "itinerary uncertainty", "review_required": true, "auto_reply_allowed": false, "training_allowed_now": false},
+        {"content_type": "transport disruption questions", "broad_category": "transport anxiety", "review_required": true, "auto_reply_allowed": false, "training_allowed_now": false},
+        {"content_type": "must-buy/must-eat/must-visit discussions", "broad_category": "place recommendation demand", "review_required": true, "auto_reply_allowed": false, "training_allowed_now": false},
+        {"content_type": "high-like posts", "broad_category": "viral engagement signal", "review_required": true, "auto_reply_allowed": false, "training_allowed_now": false},
+        {"content_type": "high-share posts", "broad_category": "viral engagement signal", "review_required": true, "auto_reply_allowed": false, "training_allowed_now": false},
+        {"content_type": "author-thanked answers", "broad_category": "solution validation", "review_required": true, "auto_reply_allowed": false, "training_allowed_now": false}
+      ]
+    },
+    "queryScopeEvidence": {
+      "evidence_id": "QUERY_SCOPE_EVIDENCE",
+      "round_id": "ROUND-REALDATA-003_QUERY_SCOPE_AND_SOURCE_POLICY",
+      "evidence_status": "query_scope_defined_no_api_no_scrape_no_training",
+      "query_source_count": 6,
+      "target_content_type_count": 9,
+      "language_tag_count": 5,
+      "region_tag_count": 3,
+      "query_exclusion_count": 6,
+      "all_sources_read_only": true,
+      "all_sources_review_gated": true,
+      "all_content_types_review_required": true,
+      "real_api_call_allowed": false,
+      "platform_scraping_allowed": false,
+      "real_data_ingestion_allowed": false,
+      "training_allowed": false,
+      "write_api_allowed": false,
+      "next_gate_required": "ROUND-REALDATA-004_API_DRY_RUN_PLAN"
+    },
     "platformAuthorizationContract": {
       "accessStatuses": [
         "not_connected",
@@ -143204,6 +143361,11 @@
       const cvPolicy = rda.secretBoundaryPolicy || {};
       const cvAudit = rda.credentialAuditTemplate || {};
       const cvEvidence = rda.secretBoundaryEvidence || {};
+      const qsPolicy = rda.queryScopePolicy || {};
+      const sourcePolicy = rda.sourcePolicy || {};
+      const languageRegionPolicy = rda.languageRegionTaggingPolicy || {};
+      const contentTypePolicy = rda.contentTypePolicy || {};
+      const qsEvidence = rda.queryScopeEvidence || {};
       const rdaOverview = '<div class="trend-visual-grid"><div class="trend-stat"><span>MVP Platforms</span><strong>' + esc((rdaContract.supportedMvpPlatforms || []).join(' / ')) + '</strong><small>later: ' + esc((rdaContract.optionalLaterPlatforms || []).slice(0, 4).join(' / ')) + '</small></div><div class="trend-stat"><span>Authorized</span><strong>' + esc(rdaStatus.authorized_read_only_count || 0) + '</strong><small>not connected: ' + esc(rdaStatus.not_connected_count || 0) + '</small></div><div class="trend-stat"><span>Access</span><strong>' + esc(rdaStatus.real_data_access_enabled || false) + '</strong><small>minimum scope: ' + esc(rdaScope.minimum_scope_policy || '') + '</small></div><div class="trend-stat"><span>Training</span><strong>' + esc(rdaEvidence.agos_training_started || false) + '</strong><small>API called: ' + esc(rdaEvidence.real_platform_api_called || false) + ' / credentials: ' + esc(rdaEvidence.credentials_found || false) + '</small></div></div>';
       const rdaPlatformRows = ((rdaStatus.platformStatuses || []).slice(0, 10)).map(item =>
         '<div class="feed-item"><time>' + esc(item.platform || '') + '</time><div class="feed-main"><strong>' + esc(item.access_status || '') + ' / ' + esc(item.platform_group || '') + '</strong><span>Owner approved: ' + esc(item.owner_approved || false) + ' / Scope verified: ' + esc(item.scope_verified || false) + ' / Authorized read-only: ' + esc(item.authorized_read_only || false) + '</span><span>Token present: ' + esc(item.token_present || false) + ' / Credential present: ' + esc(item.credential_present || false) + ' / Safe to ingest real data: ' + esc(item.safe_to_ingest_real_data || false) + '</span><span>Human review required: ' + esc(item.requires_human_review || false) + '</span></div><span class="badge b-amber">not connected</span></div>'
@@ -143217,7 +143379,15 @@
         '<div class="feed-item"><time>' + esc(item.platform_id || '') + '</time><div class="feed-main"><strong>' + esc(item.credential_reference_id || '') + '</strong><span>Scope: ' + esc(item.scope_summary || '') + ' / Owner approval: ' + esc(item.owner_approval_status || '') + ' / Rotation required: ' + esc(item.rotation_required || false) + '</span><span>Last verified: ' + esc(item.last_verified_at || 'not_verified') + ' / Secret present: ' + esc(item.secret_value_present || false) + ' / Token in Git: ' + esc(item.token_in_git || false) + ' / Token in runtime JSON: ' + esc(item.token_in_runtime_json || false) + '</span></div><span class="badge b-cyan">audit template</span></div>'
       );
       const cvSafetyRow = cvEvidence.evidence_id ? '<div class="feed-item"><time>SECRET</time><div class="feed-main"><strong>Secret boundary evidence</strong><span>No real secrets requested in chat, no real tokens stored, no tokens in Git, no tokens in runtime JSON, no .env writes, no secret logs, and no secret screenshots.</span><span>Chat secrets: ' + esc(cvEvidence.real_secrets_requested_in_chat || false) + ' / Git tokens allowed: ' + esc(cvEvidence.tokens_in_git_allowed || false) + ' / Runtime JSON tokens allowed: ' + esc(cvEvidence.tokens_in_runtime_json_allowed || false) + ' / Env writes: ' + esc(cvEvidence.env_writes_by_agos_allowed || false) + ' / Logs: ' + esc(cvEvidence.logs_containing_secrets_allowed || false) + ' / Screenshots: ' + esc(cvEvidence.screenshots_containing_secrets_allowed || false) + '</span><span>Real API: ' + esc(cvEvidence.real_platform_api_called || false) + ' / Real data: ' + esc(cvEvidence.real_data_ingested || false) + ' / Training: ' + esc(cvEvidence.agos_training_started || false) + ' / Write API: ' + esc(cvEvidence.write_api_allowed || false) + ' / Next gate: ' + esc(cvEvidence.next_gate_required || '') + '</span></div><span class="badge b-green">no secrets</span></div>' : '';
-      el('runtime-real-data-access').innerHTML = (rdaContract.contract_id ? rdaOverview + rdaPlatformRows.join('') + rdaScopeRows.join('') + rdaSafetyRow + cvOverview + cvAuditRows.join('') + cvSafetyRow : '') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Real Data Controlled Access pending</strong><span>AGOS will define read-only platform authorization contracts before any real API access or training.</span></div><span class="badge b-amber">pending</span></div>';
+      const qsOverview = qsPolicy.policy_id ? '<div class="trend-visual-grid"><div class="trend-stat"><span>Query Sources</span><strong>' + esc(qsEvidence.query_source_count || (qsPolicy.querySourceHierarchy || []).length || 0) + '</strong><small>' + esc((qsPolicy.querySourceHierarchy || []).slice(0, 2).join(' / ')) + '</small></div><div class="trend-stat"><span>Content Types</span><strong>' + esc(qsEvidence.target_content_type_count || (qsPolicy.targetContentTypes || []).length || 0) + '</strong><small>' + esc((qsPolicy.targetContentTypes || []).slice(0, 2).join(' / ')) + '</small></div><div class="trend-stat"><span>Language / Region</span><strong>' + esc((languageRegionPolicy.languageTags || []).join(' / ')) + '</strong><small>' + esc((languageRegionPolicy.regionTags || []).join(' / ')) + '</small></div><div class="trend-stat"><span>Blocked</span><strong>API ' + esc(qsEvidence.real_api_call_allowed || false) + '</strong><small>Scraping: ' + esc(qsEvidence.platform_scraping_allowed || false) + ' / Training: ' + esc(qsEvidence.training_allowed || false) + '</small></div></div>' : '';
+      const qsSourceRows = ((sourcePolicy.sourceHierarchy || []).slice(0, 6)).map(item =>
+        '<div class="feed-item"><time>SRC-' + esc(item.rank || '') + '</time><div class="feed-main"><strong>' + esc(item.source_type || '') + '</strong><span>Read-only: ' + esc(item.read_only || false) + ' / Human review: ' + esc(item.human_review_required || false) + ' / Allowed before API dry-run: ' + esc(item.allowed_before_api_dry_run || false) + '</span><span>API now: ' + esc(item.api_call_allowed_now || false) + ' / Scraping: ' + esc(item.scraping_allowed || false) + ' / Write action: ' + esc(item.write_action_allowed || false) + '</span></div><span class="badge b-cyan">source policy</span></div>'
+      );
+      const qsContentRows = ((contentTypePolicy.targetContentTypes || []).slice(0, 6)).map(item =>
+        '<div class="feed-item"><time>TYPE</time><div class="feed-main"><strong>' + esc(item.content_type || '') + '</strong><span>Broad category: ' + esc(item.broad_category || '') + '</span><span>Review: ' + esc(item.review_required || false) + ' / Auto reply: ' + esc(item.auto_reply_allowed || false) + ' / Training now: ' + esc(item.training_allowed_now || false) + '</span></div><span class="badge b-amber">review gated</span></div>'
+      );
+      const qsSafetyRow = qsEvidence.evidence_id ? '<div class="feed-item"><time>QUERY</time><div class="feed-main"><strong>Query Scope Evidence / no API dry-run yet</strong><span>Excluded: ' + esc((qsPolicy.queryExclusions || []).join(' / ')) + '</span><span>Real API: ' + esc(qsEvidence.real_api_call_allowed || false) + ' / Scraping: ' + esc(qsEvidence.platform_scraping_allowed || false) + ' / Real data: ' + esc(qsEvidence.real_data_ingestion_allowed || false) + ' / Training: ' + esc(qsEvidence.training_allowed || false) + ' / Write API: ' + esc(qsEvidence.write_api_allowed || false) + '</span><span>Fuzzy classification: broad category first, uncategorized bucket enabled, cross-language overlap becomes shared pain; next gate: ' + esc(qsEvidence.next_gate_required || '') + '</span></div><span class="badge b-green">scope locked</span></div>' : '';
+      el('runtime-real-data-access').innerHTML = (rdaContract.contract_id || qsPolicy.policy_id ? rdaOverview + rdaPlatformRows.join('') + rdaScopeRows.join('') + rdaSafetyRow + cvOverview + cvAuditRows.join('') + cvSafetyRow + qsOverview + qsSourceRows.join('') + qsContentRows.join('') + qsSafetyRow : '') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Real Data Controlled Access pending</strong><span>AGOS will define read-only platform authorization contracts before any real API access or training.</span></div><span class="badge b-amber">pending</span></div>';
       const locationHeatmapSummary = wr.locationHeatmapSummary || {};
       el('runtime-location-demand-heatmap').innerHTML = (wr.locationHeatmap || []).map(item =>
         '<div class="feed-item"><time>' + esc(item.location_id || '') + '</time><div class="feed-main"><strong>' + esc(item.location_name || '') + ' / ' + esc(item.location_type || '') + ' / heat ' + esc(item.demand_heat_score || 0) + '</strong><span>Hot reason: ' + esc(item.hot_reason || '') + '</span><span>Related seasons: ' + esc((item.related_seasons || []).join(' / ')) + '</span><span>Mobility demand: ' + esc((item.mobility_demand_types || []).join(' / ')) + '</span><span>Pain points: ' + esc((item.common_pain_points || []).join(' / ')) + '</span><span>Risk score: crowd ' + esc(item.crowd_risk_score || 0) + ' / transfer ' + esc(item.transfer_complexity_score || 0) + ' / luggage ' + esc(item.luggage_difficulty_score || 0) + '</span><span>Driver/vehicle prep: ' + esc(item.driver_vehicle_preparation_required || false) + ' / Real-time crowd data: ' + esc(item.real_time_crowd_data_connected || false) + ' / GPS dispatch: ' + esc(locationHeatmapSummary.gps_dispatch_enabled || false) + ' / Write ops: ' + esc(item.write_operations_enabled || false) + '</span></div><span class="badge ' + ((item.demand_heat_score || 0) >= 80 ? 'b-green' : (item.demand_heat_score || 0) >= 65 ? 'b-amber' : 'b-cyan') + '">' + esc(item.region || 'location') + '</span></div>'
