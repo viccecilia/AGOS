@@ -1,0 +1,17 @@
+﻿{
+  "url": "http://127.0.0.1:8765/project_control_center.html?runtime_ui=1&cache_bust=global012b#war-room-growth",
+  "version": "0.1.144",
+  "currentRound": "ROUND-GLOBAL-012 / AGOS_CROSS_DIMENSIONAL_CORRELATION",
+  "panelExists": true,
+  "chainCount": 19,
+  "heatmapCount": 19,
+  "strategyCount": 16,
+  "summaryReady": true,
+  "hasEvidence": true,
+  "hasWhy": true,
+  "hasStrategy": true,
+  "hasHumanReview": true,
+  "hasDispatchBlocked": true,
+  "hasWriteBlocked": true,
+  "verifiedAt": "2026-05-29"
+}

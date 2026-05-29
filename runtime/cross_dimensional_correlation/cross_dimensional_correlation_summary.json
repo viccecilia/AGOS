@@ -1,0 +1,32 @@
+{
+  "all_chains_human_review_required": true,
+  "all_strategy_candidates_human_review_required": true,
+  "auto_contact_allowed": false,
+  "auto_dispatch_allowed": false,
+  "auto_publish_allowed": false,
+  "auto_quote_allowed": false,
+  "auto_reply_allowed": false,
+  "correlation_chain_count": 19,
+  "cross_dimensional_correlation_ready": true,
+  "heatmap_row_count": 19,
+  "markets": [
+    "Europe",
+    "Korea",
+    "Taiwan",
+    "US"
+  ],
+  "next_recommendation": "Use reviewed correlation chains to choose content, local business, or driver operation strategy candidates; keep every action human-gated.",
+  "platforms": [
+    "Instagram",
+    "TikTok",
+    "X",
+    "YouTube"
+  ],
+  "sample_data_only": true,
+  "strategy_candidate_count": 16,
+  "strategy_type_counts": {
+    "driver_operation_strategy": 10,
+    "event_response_strategy": 9
+  },
+  "write_api_allowed": false
+}

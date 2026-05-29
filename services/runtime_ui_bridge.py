@@ -26,6 +26,7 @@ from services.autonomous_growth_preparation_gate import AutonomousGrowthPreparat
 from services.collection_compliance_guard import CollectionComplianceGuard
 from services.controlled_api_collection_gate import ControlledAPICollectionGate
 from services.controlled_external_interaction_gate import ControlledExternalInteractionGate
+from services.cross_dimensional_correlation import CrossDimensionalCorrelation
 from services.cross_platform_correlation_expansion import CrossPlatformCorrelationExpansion
 from services.cross_platform_promotion_plan_engine import CrossPlatformPromotionPlanEngine
 from services.cross_platform_expansion_engine import CrossPlatformExpansionEngine
@@ -309,6 +310,15 @@ class RuntimeUIBridge:
             intelligence_ranking.get("rankedIntelligence", []),
             manual_external_feedback_intake.get("manualExternalFeedbackRecords", []),
             external_drift_monitor.get("externalDriftSummary", {}),
+        )
+        cross_dimensional_correlation = CrossDimensionalCorrelation().build(
+            seasonal_intelligence.get("seasonalIntelligence", []),
+            spatial_intelligence.get("spatialIntelligence", []),
+            event_intelligence.get("eventIntelligence", []),
+            mobility_intelligence.get("mobilityIntelligence", []),
+            demand_prediction.get("demandPredictions", []),
+            platform_pain_intelligence.get("platformPainProfiles", []),
+            market_intelligence_matrix.get("marketIntelligenceMatrix", []),
         )
         batch_scout_runtime = BatchScoutRuntime().run()
         batch_topic_clustering = BatchTopicClustering().cluster(batch_scout_runtime.get("batchAnalysis", []))
@@ -783,6 +793,11 @@ class RuntimeUIBridge:
             "lowConfidencePredictions": demand_prediction.get("lowConfidencePredictions", []),
             "predictionRiskReview": demand_prediction.get("predictionRiskReview", {}),
             "demandPredictionSummary": demand_prediction.get("demandPredictionSummary", {}),
+            "crossDimensionalCorrelation": cross_dimensional_correlation,
+            "correlationChains": cross_dimensional_correlation.get("correlationChains", []),
+            "crossDimensionHeatmap": cross_dimensional_correlation.get("crossDimensionHeatmap", []),
+            "strategySignalCandidates": cross_dimensional_correlation.get("strategySignalCandidates", []),
+            "crossDimensionalCorrelationSummary": cross_dimensional_correlation.get("crossDimensionalCorrelationSummary", {}),
             "locationDemandHeatmap": location_demand_heatmap,
             "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),
