@@ -1,0 +1,20 @@
+{
+  "round_id": "ROUND-GLOBAL-002",
+  "url": "http://localhost:8765/project_control_center.html?runtime_ui=1&cache_bust=global002#war-room-growth",
+  "version": "0.1.134",
+  "currentRound": "ROUND-GLOBAL-002 / AGOS_GLOBAL_PAIN_CLUSTER_ENGINE",
+  "panelExists": true,
+  "panelTextIncludesCluster": true,
+  "panelTextIncludesReview": true,
+  "panelTextIncludesAnalysisOnly": true,
+  "inputRecordCount": 32,
+  "clusterCount": 5,
+  "highEmotionClusterCount": 5,
+  "crossMarketClusterCount": 5,
+  "crossPlatformClusterCount": 5,
+  "rankingCandidateCount": 5,
+  "allClustersNeedHumanReview": true,
+  "autoReplyAllowed": false,
+  "replyGenerationAllowed": false,
+  "promotionAllowed": false
+}

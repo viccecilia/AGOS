@@ -1,0 +1,314 @@
+[
+  {
+    "auto_reply_allowed": false,
+    "business_relevance_score": 100,
+    "cluster_id": "GLOBAL-PAIN-001",
+    "cluster_key": "airport transfer confusion",
+    "cluster_name": "Airport transfer confusion",
+    "cross_market": true,
+    "cross_platform": true,
+    "emotion_intensity_score": 95,
+    "emotion_tags": [
+      "anxious",
+      "urgent",
+      "overwhelmed"
+    ],
+    "enter_ranking": true,
+    "frequency_score": 100,
+    "human_review_required": true,
+    "intent": "airport_transfer",
+    "languages": [
+      "en",
+      "ja",
+      "zh-CN",
+      "zh-TW"
+    ],
+    "locations": [
+      "airport corridor"
+    ],
+    "markets": [
+      "China outbound",
+      "Europe",
+      "Global English",
+      "Japan",
+      "Southeast Asia",
+      "Taiwan",
+      "US"
+    ],
+    "pain_points": [
+      "late arrival uncertainty",
+      "airport pickup confusion",
+      "luggage transfer stress"
+    ],
+    "platforms": [
+      "Instagram",
+      "Reddit",
+      "SEO / Search",
+      "Threads",
+      "TikTok",
+      "Xiaohongshu",
+      "YouTube"
+    ],
+    "promotion_allowed": false,
+    "reply_generation_allowed": false,
+    "season": "peak arrival windows",
+    "source_record_count": 7,
+    "source_record_ids": [
+      "GLOBAL-INTEL-0001",
+      "GLOBAL-INTEL-0006",
+      "GLOBAL-INTEL-0011",
+      "GLOBAL-INTEL-0016",
+      "GLOBAL-INTEL-0021",
+      "GLOBAL-INTEL-0026",
+      "GLOBAL-INTEL-0031"
+    ]
+  },
+  {
+    "auto_reply_allowed": false,
+    "business_relevance_score": 100,
+    "cluster_id": "GLOBAL-PAIN-003",
+    "cluster_key": "family trip mobility stress",
+    "cluster_name": "Family trip mobility stress",
+    "cross_market": true,
+    "cross_platform": true,
+    "emotion_intensity_score": 95,
+    "emotion_tags": [
+      "stressed",
+      "careful",
+      "risk_averse"
+    ],
+    "enter_ranking": true,
+    "frequency_score": 100,
+    "human_review_required": true,
+    "intent": "family_trip",
+    "languages": [
+      "en",
+      "ja",
+      "ko",
+      "zh-CN"
+    ],
+    "locations": [
+      "hotel zone"
+    ],
+    "markets": [
+      "China outbound",
+      "Europe",
+      "Global English",
+      "Japan",
+      "Korea",
+      "Southeast Asia",
+      "US"
+    ],
+    "pain_points": [
+      "kids and luggage burden",
+      "multi-stop planning",
+      "family comfort concern"
+    ],
+    "platforms": [
+      "Reddit",
+      "SEO / Search",
+      "Threads",
+      "TikTok",
+      "X",
+      "Xiaohongshu",
+      "YouTube"
+    ],
+    "promotion_allowed": false,
+    "reply_generation_allowed": false,
+    "season": "school holidays",
+    "source_record_count": 7,
+    "source_record_ids": [
+      "GLOBAL-INTEL-0002",
+      "GLOBAL-INTEL-0007",
+      "GLOBAL-INTEL-0012",
+      "GLOBAL-INTEL-0017",
+      "GLOBAL-INTEL-0022",
+      "GLOBAL-INTEL-0027",
+      "GLOBAL-INTEL-0032"
+    ]
+  },
+  {
+    "auto_reply_allowed": false,
+    "business_relevance_score": 100,
+    "cluster_id": "GLOBAL-PAIN-002",
+    "cluster_key": "event pickup demand",
+    "cluster_name": "Event pickup and exit demand",
+    "cross_market": true,
+    "cross_platform": true,
+    "emotion_intensity_score": 92,
+    "emotion_tags": [
+      "impatient",
+      "crowded",
+      "time_sensitive"
+    ],
+    "enter_ranking": true,
+    "frequency_score": 100,
+    "human_review_required": true,
+    "intent": "event_pickup",
+    "languages": [
+      "en",
+      "ko",
+      "zh-CN",
+      "zh-TW"
+    ],
+    "locations": [
+      "event venue"
+    ],
+    "markets": [
+      "China outbound",
+      "Europe",
+      "Global English",
+      "Korea",
+      "Taiwan",
+      "US"
+    ],
+    "pain_points": [
+      "crowded venue exit",
+      "wait time uncertainty",
+      "post-event pickup difficulty"
+    ],
+    "platforms": [
+      "Instagram",
+      "SEO / Search",
+      "TikTok",
+      "X",
+      "Xiaohongshu",
+      "YouTube"
+    ],
+    "promotion_allowed": false,
+    "reply_generation_allowed": false,
+    "season": "event calendar",
+    "source_record_count": 6,
+    "source_record_ids": [
+      "GLOBAL-INTEL-0003",
+      "GLOBAL-INTEL-0008",
+      "GLOBAL-INTEL-0013",
+      "GLOBAL-INTEL-0018",
+      "GLOBAL-INTEL-0023",
+      "GLOBAL-INTEL-0028"
+    ]
+  },
+  {
+    "auto_reply_allowed": false,
+    "business_relevance_score": 100,
+    "cluster_id": "GLOBAL-PAIN-004",
+    "cluster_key": "public transport anxiety",
+    "cluster_name": "Public transport anxiety",
+    "cross_market": true,
+    "cross_platform": true,
+    "emotion_intensity_score": 92,
+    "emotion_tags": [
+      "confused",
+      "nervous",
+      "lost"
+    ],
+    "enter_ranking": true,
+    "frequency_score": 100,
+    "human_review_required": true,
+    "intent": "public_transport_anxiety",
+    "languages": [
+      "en",
+      "ja",
+      "ko",
+      "zh-TW"
+    ],
+    "locations": [
+      "city center"
+    ],
+    "markets": [
+      "Europe",
+      "Global English",
+      "Japan",
+      "Korea",
+      "Southeast Asia",
+      "Taiwan"
+    ],
+    "pain_points": [
+      "confusing station transfers",
+      "language friction",
+      "first-trip uncertainty"
+    ],
+    "platforms": [
+      "Instagram",
+      "Reddit",
+      "Threads",
+      "X",
+      "Xiaohongshu",
+      "YouTube"
+    ],
+    "promotion_allowed": false,
+    "reply_generation_allowed": false,
+    "season": "first-time visitor periods",
+    "source_record_count": 6,
+    "source_record_ids": [
+      "GLOBAL-INTEL-0004",
+      "GLOBAL-INTEL-0009",
+      "GLOBAL-INTEL-0014",
+      "GLOBAL-INTEL-0019",
+      "GLOBAL-INTEL-0024",
+      "GLOBAL-INTEL-0029"
+    ]
+  },
+  {
+    "auto_reply_allowed": false,
+    "business_relevance_score": 100,
+    "cluster_id": "GLOBAL-PAIN-005",
+    "cluster_key": "seasonal crowd pressure",
+    "cluster_name": "Seasonal crowd pressure",
+    "cross_market": true,
+    "cross_platform": true,
+    "emotion_intensity_score": 92,
+    "emotion_tags": [
+      "crowded",
+      "worried",
+      "planning_pressure"
+    ],
+    "enter_ranking": true,
+    "frequency_score": 100,
+    "human_review_required": true,
+    "intent": "seasonal_private_transfer",
+    "languages": [
+      "en",
+      "ja",
+      "ko",
+      "zh-CN",
+      "zh-TW"
+    ],
+    "locations": [
+      "tourism district"
+    ],
+    "markets": [
+      "China outbound",
+      "Japan",
+      "Korea",
+      "Southeast Asia",
+      "Taiwan",
+      "US"
+    ],
+    "pain_points": [
+      "crowd congestion",
+      "hotel district pressure",
+      "route uncertainty during peaks"
+    ],
+    "platforms": [
+      "Instagram",
+      "Reddit",
+      "SEO / Search",
+      "Threads",
+      "TikTok",
+      "X"
+    ],
+    "promotion_allowed": false,
+    "reply_generation_allowed": false,
+    "season": "seasonal peak",
+    "source_record_count": 6,
+    "source_record_ids": [
+      "GLOBAL-INTEL-0005",
+      "GLOBAL-INTEL-0010",
+      "GLOBAL-INTEL-0015",
+      "GLOBAL-INTEL-0020",
+      "GLOBAL-INTEL-0025",
+      "GLOBAL-INTEL-0030"
+    ]
+  }
+]

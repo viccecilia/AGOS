@@ -34,6 +34,7 @@ from services.daily_operations_report_engine import DailyOperationsReportEngine
 from services.failure_analysis_engine import FailureAnalysisEngine
 from services.growth_signal_correlation_engine import GrowthSignalCorrelationEngine
 from services.global_batch_intelligence_collection import GlobalBatchIntelligenceCollection
+from services.global_pain_cluster_engine import GlobalPainClusterEngine
 from services.external_evidence_ledger import ExternalEvidenceLedger
 from services.external_action_sandbox import ExternalActionSandbox
 from services.external_drift_monitor import ExternalDriftMonitor
@@ -245,6 +246,9 @@ class RuntimeUIBridge:
             training_acceptance=training_acceptance_export,
         )
         global_batch_intelligence = GlobalBatchIntelligenceCollection().collect()
+        global_pain_clusters = GlobalPainClusterEngine().build(
+            global_batch_intelligence.get("globalIntelligenceRecords", [])
+        )
         batch_scout_runtime = BatchScoutRuntime().run()
         batch_topic_clustering = BatchTopicClustering().cluster(batch_scout_runtime.get("batchAnalysis", []))
         batch_human_review = BatchHumanReview().review(batch_topic_clustering.get("batchTrendClusters", []))
@@ -666,6 +670,11 @@ class RuntimeUIBridge:
             "globalSourceSummary": global_batch_intelligence.get("globalSourceSummary", {}),
             "globalBatchCollectionFeed": global_batch_intelligence.get("globalBatchCollectionFeed", []),
             "globalBatchCollectionSummary": global_batch_intelligence.get("globalBatchCollectionSummary", {}),
+            "globalPainClusterEngine": global_pain_clusters,
+            "globalPainClusters": global_pain_clusters.get("globalPainClusters", []),
+            "painClusterSources": global_pain_clusters.get("painClusterSources", []),
+            "painClusterFeed": global_pain_clusters.get("painClusterFeed", []),
+            "globalPainClusterSummary": global_pain_clusters.get("globalPainClusterSummary", {}),
             "locationDemandHeatmap": location_demand_heatmap,
             "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),

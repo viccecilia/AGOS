@@ -1,0 +1,158 @@
+[
+  {
+    "cluster_id": "GLOBAL-PAIN-001",
+    "cluster_name": "Airport transfer confusion",
+    "human_review_required": true,
+    "markets": [
+      "China outbound",
+      "Europe",
+      "Global English",
+      "Japan",
+      "Southeast Asia",
+      "Taiwan",
+      "US"
+    ],
+    "platforms": [
+      "Instagram",
+      "Reddit",
+      "SEO / Search",
+      "Threads",
+      "TikTok",
+      "Xiaohongshu",
+      "YouTube"
+    ],
+    "source_record_count": 7,
+    "source_record_ids": [
+      "GLOBAL-INTEL-0001",
+      "GLOBAL-INTEL-0006",
+      "GLOBAL-INTEL-0011",
+      "GLOBAL-INTEL-0016",
+      "GLOBAL-INTEL-0021",
+      "GLOBAL-INTEL-0026",
+      "GLOBAL-INTEL-0031"
+    ]
+  },
+  {
+    "cluster_id": "GLOBAL-PAIN-003",
+    "cluster_name": "Family trip mobility stress",
+    "human_review_required": true,
+    "markets": [
+      "China outbound",
+      "Europe",
+      "Global English",
+      "Japan",
+      "Korea",
+      "Southeast Asia",
+      "US"
+    ],
+    "platforms": [
+      "Reddit",
+      "SEO / Search",
+      "Threads",
+      "TikTok",
+      "X",
+      "Xiaohongshu",
+      "YouTube"
+    ],
+    "source_record_count": 7,
+    "source_record_ids": [
+      "GLOBAL-INTEL-0002",
+      "GLOBAL-INTEL-0007",
+      "GLOBAL-INTEL-0012",
+      "GLOBAL-INTEL-0017",
+      "GLOBAL-INTEL-0022",
+      "GLOBAL-INTEL-0027",
+      "GLOBAL-INTEL-0032"
+    ]
+  },
+  {
+    "cluster_id": "GLOBAL-PAIN-002",
+    "cluster_name": "Event pickup and exit demand",
+    "human_review_required": true,
+    "markets": [
+      "China outbound",
+      "Europe",
+      "Global English",
+      "Korea",
+      "Taiwan",
+      "US"
+    ],
+    "platforms": [
+      "Instagram",
+      "SEO / Search",
+      "TikTok",
+      "X",
+      "Xiaohongshu",
+      "YouTube"
+    ],
+    "source_record_count": 6,
+    "source_record_ids": [
+      "GLOBAL-INTEL-0003",
+      "GLOBAL-INTEL-0008",
+      "GLOBAL-INTEL-0013",
+      "GLOBAL-INTEL-0018",
+      "GLOBAL-INTEL-0023",
+      "GLOBAL-INTEL-0028"
+    ]
+  },
+  {
+    "cluster_id": "GLOBAL-PAIN-004",
+    "cluster_name": "Public transport anxiety",
+    "human_review_required": true,
+    "markets": [
+      "Europe",
+      "Global English",
+      "Japan",
+      "Korea",
+      "Southeast Asia",
+      "Taiwan"
+    ],
+    "platforms": [
+      "Instagram",
+      "Reddit",
+      "Threads",
+      "X",
+      "Xiaohongshu",
+      "YouTube"
+    ],
+    "source_record_count": 6,
+    "source_record_ids": [
+      "GLOBAL-INTEL-0004",
+      "GLOBAL-INTEL-0009",
+      "GLOBAL-INTEL-0014",
+      "GLOBAL-INTEL-0019",
+      "GLOBAL-INTEL-0024",
+      "GLOBAL-INTEL-0029"
+    ]
+  },
+  {
+    "cluster_id": "GLOBAL-PAIN-005",
+    "cluster_name": "Seasonal crowd pressure",
+    "human_review_required": true,
+    "markets": [
+      "China outbound",
+      "Japan",
+      "Korea",
+      "Southeast Asia",
+      "Taiwan",
+      "US"
+    ],
+    "platforms": [
+      "Instagram",
+      "Reddit",
+      "SEO / Search",
+      "Threads",
+      "TikTok",
+      "X"
+    ],
+    "source_record_count": 6,
+    "source_record_ids": [
+      "GLOBAL-INTEL-0005",
+      "GLOBAL-INTEL-0010",
+      "GLOBAL-INTEL-0015",
+      "GLOBAL-INTEL-0020",
+      "GLOBAL-INTEL-0025",
+      "GLOBAL-INTEL-0030"
+    ]
+  }
+]

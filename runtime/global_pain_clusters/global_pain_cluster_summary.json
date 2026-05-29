@@ -1,0 +1,34 @@
+{
+  "all_clusters_need_human_review": true,
+  "auto_reply_allowed": false,
+  "cluster_count": 5,
+  "cross_market_cluster_count": 5,
+  "cross_platform_cluster_count": 5,
+  "global_pain_cluster_ready": true,
+  "high_emotion_cluster_count": 5,
+  "input_record_count": 32,
+  "next_recommendation": "Send reviewed pain clusters into Intelligence Ranking and Noise Filtering after human review.",
+  "promotion_allowed": false,
+  "ranking_candidate_count": 5,
+  "reply_generation_allowed": false,
+  "top_markets": {
+    "China outbound": 4,
+    "Europe": 4,
+    "Global English": 4,
+    "Japan": 4,
+    "Korea": 4,
+    "Southeast Asia": 4,
+    "Taiwan": 4,
+    "US": 4
+  },
+  "top_platforms": {
+    "Instagram": 4,
+    "Reddit": 4,
+    "SEO / Search": 4,
+    "Threads": 4,
+    "TikTok": 4,
+    "X": 4,
+    "Xiaohongshu": 4,
+    "YouTube": 4
+  }
+}
