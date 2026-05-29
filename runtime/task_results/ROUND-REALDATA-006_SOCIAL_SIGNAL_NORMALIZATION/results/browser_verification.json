@@ -1,0 +1,13 @@
+{
+  "url": "http://127.0.0.1:8765/project_control_center.html?runtime_ui=1&cache_bust=realdata006#war-room-growth",
+  "title": "AGOS Project Control Center",
+  "hasRound": true,
+  "hasPanel": true,
+  "hasSignal": true,
+  "hasEngagement": true,
+  "hasQuality": true,
+  "hasNoise": true,
+  "hasBlocked": true,
+  "verified_at": "2026-05-29",
+  "notes": "Control Center renders Social Signal Normalization with SIGNAL-001, normalized engagement metrics, quality score fields, noise flags, and blocked Training/Promotion/Writeback/Contact states."
+}

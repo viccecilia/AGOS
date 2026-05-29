@@ -1,0 +1,27 @@
+{
+  "blocked_actions": {
+    "contact_user_allowed": false,
+    "promotion_allowed": false,
+    "training_allowed": false,
+    "writeback_allowed": false
+  },
+  "classification": {
+    "monitor": "confidence >= 40 or risk < 70",
+    "noise": "off-topic, ads, spam, or low evidence and low relevance",
+    "unsafe_review_required": "unsafe personal data, minors flag, or risk >= 70",
+    "usable_for_review": "confidence >= 55 and risk < 55"
+  },
+  "created_at": "2026-05-29T06:44:06+00:00",
+  "fields": {
+    "confidence_score": "combined evidence, relevance, engagement, and inverse risk",
+    "duplication_score": "placeholder duplicate pressure score; higher means more duplicate-like",
+    "engagement_strength": "normalized likes, comments, shares, saves, views, thanks, depth, and reposts",
+    "evidence_strength": "lineage completeness, public source type, and source reference quality",
+    "mobility_relevance": "airport, transfer, luggage, taxi, train, station, family, event, and route intent",
+    "relevance_score": "question type and pain category fit for AGOS mobility intelligence",
+    "risk_score": "redaction, minors, unverifiable claims, ads, spam, and unsafe personal-data risk"
+  },
+  "policy_id": "SIGNAL_QUALITY_SCORING_POLICY",
+  "round_id": "ROUND-REALDATA-006_SOCIAL_SIGNAL_NORMALIZATION",
+  "score_range": "0-100"
+}

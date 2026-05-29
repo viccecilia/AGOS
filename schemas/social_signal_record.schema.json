@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AGOS Normalized Social Signal Record",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "signal_id",
+    "source_record_id",
+    "platform_id",
+    "language",
+    "region",
+    "content_format",
+    "question_type",
+    "pain_category",
+    "emotion_intensity",
+    "urgency",
+    "normalized_engagement",
+    "quality_scores",
+    "noise_filter",
+    "lineage",
+    "review_status",
+    "training_allowed",
+    "promotion_allowed",
+    "writeback_allowed",
+    "contact_user_allowed",
+    "replayable",
+    "auditable"
+  ],
+  "properties": {
+    "signal_id": { "type": "string", "pattern": "^SIGNAL-[0-9]{3,}$" },
+    "source_record_id": { "type": "string" },
+    "platform_id": { "type": "string" },
+    "platform": { "type": "string" },
+    "language": { "type": "string" },
+    "region": { "type": "string" },
+    "content_format": { "type": "string" },
+    "question_type": { "type": "string" },
+    "pain_category": { "type": "string" },
+    "emotion_intensity": { "type": "string", "enum": ["low", "medium", "high"] },
+    "urgency": { "type": "string", "enum": ["low", "medium", "high"] },
+    "normalized_engagement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["likes", "comments", "shares", "saves", "views", "author_thanks", "reply_depth", "reposts"],
+      "properties": {
+        "likes": { "type": "integer", "minimum": 0 },
+        "comments": { "type": "integer", "minimum": 0 },
+        "shares": { "type": "integer", "minimum": 0 },
+        "saves": { "type": "integer", "minimum": 0 },
+        "views": { "type": "integer", "minimum": 0 },
+        "author_thanks": { "type": "integer", "minimum": 0 },
+        "reply_depth": { "type": "integer", "minimum": 0 },
+        "reposts": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "quality_scores": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "evidence_strength",
+        "duplication_score",
+        "engagement_strength",
+        "relevance_score",
+        "mobility_relevance",
+        "risk_score",
+        "confidence_score"
+      ],
+      "properties": {
+        "evidence_strength": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "duplication_score": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "engagement_strength": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "relevance_score": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "mobility_relevance": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "risk_score": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "confidence_score": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "total_quality_score": { "type": "integer", "minimum": 0, "maximum": 100 }
+      }
+    },
+    "noise_filter": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "spam",
+        "ads",
+        "bot_like_content",
+        "off_topic_content",
+        "unsafe_personal_data",
+        "unverifiable_claims",
+        "noise_status"
+      ],
+      "properties": {
+        "spam": { "type": "boolean" },
+        "ads": { "type": "boolean" },
+        "bot_like_content": { "type": "boolean" },
+        "off_topic_content": { "type": "boolean" },
+        "unsafe_personal_data": { "type": "boolean" },
+        "unverifiable_claims": { "type": "boolean" },
+        "noise_status": {
+          "type": "string",
+          "enum": ["usable_for_review", "monitor", "unsafe_review_required", "noise"]
+        },
+        "filter_reason": { "type": "string" }
+      }
+    },
+    "lineage": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["query_id", "source_type", "source_reference", "collection_time", "sample_data_only", "lineage_complete"],
+      "properties": {
+        "query_id": { "type": "string" },
+        "source_type": { "type": "string" },
+        "source_reference": { "type": "string" },
+        "collection_time": { "type": "string" },
+        "record_hash": { "type": "string" },
+        "privacy_review_status": { "type": "string" },
+        "sample_data_only": { "const": true },
+        "source_url_allowed": { "type": "boolean" },
+        "lineage_complete": { "type": "boolean" }
+      }
+    },
+    "review_status": { "const": "needs_human_review" },
+    "training_allowed": { "const": false },
+    "promotion_allowed": { "const": false },
+    "writeback_allowed": { "const": false },
+    "contact_user_allowed": { "const": false },
+    "replayable": { "const": true },
+    "auditable": { "const": true }
+  }
+}

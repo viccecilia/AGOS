@@ -1,0 +1,21 @@
+{
+  "all_records_auditable": true,
+  "all_records_human_review_required": true,
+  "all_records_replayable": true,
+  "content_signals_normalized": true,
+  "created_at": "2026-05-29T06:44:06+00:00",
+  "engagement_metrics_normalized": true,
+  "evidence_id": "SOCIAL_SIGNAL_NORMALIZATION_EVIDENCE",
+  "next_gate": "ROUND-REALDATA-007_SIGNAL_QUALITY_AND_BIAS_REVIEW",
+  "noise_filter_report_generated": true,
+  "normalization_policy_defined": true,
+  "normalized_record_count": 6,
+  "platform_writeback_called": false,
+  "promotion_started": false,
+  "quality_scores_generated": true,
+  "quality_scoring_policy_defined": true,
+  "round_id": "ROUND-REALDATA-006_SOCIAL_SIGNAL_NORMALIZATION",
+  "training_started": false,
+  "unsafe_filtering_active": true,
+  "users_contacted": false
+}

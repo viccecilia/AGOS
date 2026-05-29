@@ -1,0 +1,61 @@
+{
+  "audit_policy": {
+    "auditable": true,
+    "human_review_required": true,
+    "lineage_required": true,
+    "replayable": true
+  },
+  "created_at": "2026-05-29T06:44:06+00:00",
+  "input_contract": {
+    "privacy_filtered_input_required": true,
+    "raw_content_required": false,
+    "small_sample_only": true,
+    "source_manifest": "runtime/real_data_samples/SAMPLE_LINEAGE_MANIFEST.json"
+  },
+  "noise_and_unsafe_flags": [
+    "spam",
+    "ads",
+    "bot_like_content",
+    "off_topic_content",
+    "unsafe_personal_data",
+    "unverifiable_claims"
+  ],
+  "normalized_content_signals": [
+    "question_type",
+    "pain_category",
+    "emotion_intensity",
+    "urgency",
+    "language",
+    "region",
+    "platform",
+    "content_format"
+  ],
+  "normalized_engagement_metrics": [
+    "likes",
+    "comments",
+    "shares",
+    "saves",
+    "views",
+    "author_thanks",
+    "reply_depth",
+    "reposts"
+  ],
+  "policy_id": "SOCIAL_SIGNAL_NORMALIZATION_POLICY",
+  "quality_scoring_fields": [
+    "evidence_strength",
+    "duplication_score",
+    "engagement_strength",
+    "relevance_score",
+    "mobility_relevance",
+    "risk_score",
+    "confidence_score"
+  ],
+  "round_id": "ROUND-REALDATA-006_SOCIAL_SIGNAL_NORMALIZATION",
+  "safety_boundary": {
+    "contact_user_allowed": false,
+    "platform_api_calls_allowed": false,
+    "promotion_allowed": false,
+    "training_allowed": false,
+    "writeback_allowed": false
+  }
+}

@@ -544,31 +544,38 @@
   "project": {
     "name": "AI Growth Operating System SaaS",
     "shortName": "AGOS",
-    "controlCenterVersion": "0.1.149",
+    "controlCenterVersion": "0.1.150",
     "lastUpdated": "2026-05-29",
     "currentPhase": "AGOS Real Data Controlled Access",
-    "currentRound": "ROUND-REALDATA-005_SAMPLE_INGESTION_PRIVACY_FILTER",
-    "nextRound": "ROUND-REALDATA-006 Sample Quality and Bias Review",
+    "currentRound": "ROUND-REALDATA-006_SOCIAL_SIGNAL_NORMALIZATION",
+    "nextRound": "ROUND-REALDATA-007 Signal Quality and Bias Review",
     "overallProgress": 100,
-    "activeFocus": "AGOS now has a small-sample ingestion and privacy filter. The system applies per-platform, per-language, per-query, and total sample caps; removes contact, location, and sensitive personal information; excludes private messages; flags minors' data; records lineage; and keeps training and automatic promotion blocked."
+    "activeFocus": "AGOS now normalizes privacy-filtered social samples into comparable social signal records with engagement metrics, content signals, quality scores, noise/unsafe filters, lineage, replayability, and audit evidence while keeping training, promotion, writeback, and user contact blocked."
   },
   "git": {
     "status": "remote_synced",
     "repositoryUrl": "https://github.com/viccecilia/AGOS.git",
     "branch": "master",
-    "latestCommit": "agos-v0.1.149 Add sample ingestion privacy filter",
-    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.149",
-    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.149",
-    "note": "Sample Ingestion Privacy Filter applies small-batch caps, privacy/PII redaction, lineage metadata, classification, and evidence while keeping training and automatic promotion blocked."
+    "latestCommit": "agos-v0.1.150 Add social signal normalization",
+    "latestCommitUrl": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.150",
+    "uploadLocationLabel": "GitHub origin/master tag agos-v0.1.150",
+    "note": "Social Signal Normalization standardizes privacy-filtered sample signals into comparable engagement, content, quality, and noise records while keeping all external actions blocked."
   },
   "metrics": {
-    "roundsPlanned": 170,
-    "roundsCompleted": 141,
+    "roundsPlanned": 171,
+    "roundsCompleted": 142,
     "roundsInProgress": 0,
-    "reportsEmbedded": 155,
+    "reportsEmbedded": 156,
     "aiCompletion": 100
   },
   "modules": [
+    {
+      "name": "Social Signal Normalization",
+      "progress": 100,
+      "status": "done",
+      "ownerPath": "services/social_signal_normalization.py + schemas/social_signal_record.schema.json + runtime/real_data_samples/",
+      "next": "Use normalized, replayable, auditable social signals for signal quality and bias review; keep training, promotion, writeback, and user contact blocked."
+    },
     {
       "name": "Sample Ingestion Privacy Filter",
       "progress": 100,
@@ -943,6 +950,11 @@
   ],
   "paths": [
     {
+      "path": "runtime/real_data_samples/SOCIAL_SIGNAL_* + NORMALIZED_SOCIAL_SIGNAL_SAMPLE.json",
+      "purpose": "Normalized social signal policy, sample records, quality scoring policy, noise filter report, and evidence for ROUND-REALDATA-006.",
+      "status": "active"
+    },
+    {
       "path": "runtime/real_data_samples/SAMPLE_* + PRIVACY_FILTER_*",
       "purpose": "Small-batch sample ingestion policy, privacy filter policy, lineage manifest, privacy report, and evidence for supervised real-data sample handling."
     },
@@ -1132,6 +1144,33 @@
     }
   ],
   "reports": [
+    {
+      "id": "ROUND-REALDATA-006_SOCIAL_SIGNAL_NORMALIZATION",
+      "title": "AGOS Social Signal Normalization",
+      "status": "done",
+      "date": "2026-05-29",
+      "summary": "AGOS now normalizes privacy-filtered social samples into comparable social signal records with engagement metrics, content signals, quality scores, noise/unsafe filters, lineage, replayability, and audit evidence while keeping training, promotion, writeback, and user contact blocked.",
+      "files": [
+        "schemas/social_signal_record.schema.json",
+        "services/social_signal_normalization.py",
+        "runtime/real_data_samples/SOCIAL_SIGNAL_NORMALIZATION_POLICY.json",
+        "runtime/real_data_samples/NORMALIZED_SOCIAL_SIGNAL_SAMPLE.json",
+        "runtime/real_data_samples/SIGNAL_QUALITY_SCORING_POLICY.json",
+        "runtime/real_data_samples/SIGNAL_NOISE_FILTER_REPORT.json",
+        "runtime/real_data_samples/SOCIAL_SIGNAL_NORMALIZATION_EVIDENCE.json",
+        "tests/social_signal_normalization_smoke_test.py",
+        "docs/project_control_center.html",
+        "runtime/task_results/ROUND-REALDATA-006_SOCIAL_SIGNAL_NORMALIZATION/ROUND_SUMMARY.md"
+      ],
+      "verification": [
+        "python -m compileall services schemas tests",
+        "python tests\\social_signal_normalization_smoke_test.py",
+        "python tests\\sample_ingestion_privacy_filter_smoke_test.py",
+        "python tests\\read_only_api_dry_run_smoke_test.py",
+        "python tests\\war_room_runtime_ui_smoke_test.py",
+        "Browser verification: Control Center shows Social Signal Normalization with engagement/content/quality/noise fields and blocked training/promotion/writeback/contact states"
+      ]
+    },
     {
       "id": "ROUND-REALDATA-005_SAMPLE_INGESTION_PRIVACY_FILTER",
       "title": "AGOS Sample Ingestion Privacy Filter",
@@ -4226,6 +4265,14 @@
   ],
   "versions": [
     {
+      "tag": "agos-v0.1.150",
+      "label": "ROUND-REALDATA-006 Social Signal Normalization",
+      "date": "2026-05-29",
+      "location": "GitHub origin/master",
+      "url": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.150",
+      "notes": "Adds normalized social signal schema, engagement/content normalization, quality scoring, noise filtering, and audit evidence. Training, promotion, writeback, and user contact remain blocked."
+    },
+    {
       "tag": "agos-v0.1.146",
       "label": "ROUND-REALDATA-002 Credential Vault and Secret Boundary",
       "date": "2026-05-29",
@@ -5536,6 +5583,14 @@
     }
   ],
   "rounds": [
+    {
+      "id": "ROUND-REALDATA-006_SOCIAL_SIGNAL_NORMALIZATION",
+      "name": "SOCIAL_SIGNAL_NORMALIZATION",
+      "phase": "AGOS_REAL_DATA_CONTROLLED_ACCESS",
+      "status": "done",
+      "summary": "Normalized privacy-filtered sample records into comparable social signals with engagement metrics, content signals, quality scores, and noise/unsafe filters. Every signal remains sample-only, replayable, auditable, and human-review required.",
+      "resultPath": "runtime/task_results/ROUND-REALDATA-006_SOCIAL_SIGNAL_NORMALIZATION/ROUND_SUMMARY.md"
+    },
     {
       "id": "ROUND-REALDATA-005_SAMPLE_INGESTION_PRIVACY_FILTER",
       "name": "SAMPLE_INGESTION_PRIVACY_FILTER",
@@ -139931,10 +139986,18 @@
   },
   "lastUpdated": "2026-05-29",
   "currentPhase": "AGOS Real Data Controlled Access",
-  "currentRound": "ROUND-REALDATA-005_SAMPLE_INGESTION_PRIVACY_FILTER",
-  "nextRound": "ROUND-REALDATA-006 Sample Quality and Bias Review",
-  "activeFocus": "AGOS now has a small-sample ingestion and privacy filter. The system applies per-platform, per-language, per-query, and total sample caps; removes contact, location, and sensitive personal information; excludes private messages; flags minors' data; records lineage; and keeps training and automatic promotion blocked.",
+  "currentRound": "ROUND-REALDATA-006_SOCIAL_SIGNAL_NORMALIZATION",
+  "nextRound": "ROUND-REALDATA-007 Signal Quality and Bias Review",
+  "activeFocus": "AGOS now normalizes privacy-filtered social samples into comparable social signal records with engagement metrics, content signals, quality scores, noise/unsafe filters, lineage, replayability, and audit evidence while keeping training, promotion, writeback, and user contact blocked.",
   "gitVersions": [
+    {
+      "tag": "agos-v0.1.150",
+      "label": "ROUND-REALDATA-006 Social Signal Normalization",
+      "date": "2026-05-29",
+      "location": "GitHub origin/master",
+      "url": "https://github.com/viccecilia/AGOS/tree/agos-v0.1.150",
+      "notes": "Adds normalized social signal schema, engagement/content normalization, quality scoring, noise filtering, and audit evidence. Training, promotion, writeback, and user contact remain blocked."
+    },
     {
       "tag": "agos-v0.1.149",
       "label": "ROUND-REALDATA-005 Sample Ingestion Privacy Filter",
@@ -140046,10 +140109,17 @@
           "language": "English",
           "region": "region inferred: US",
           "content_type": "help-seeking",
-          "engagement_metrics": {"likes": 18, "replies": 4, "shares": 1},
+          "engagement_metrics": {
+            "likes": 18,
+            "replies": 4,
+            "shares": 1
+          },
           "filtered_excerpt": "Can anyone help with Haneda airport transfer after midnight? I have 2 suitcases, [REDACTED_SENSITIVE_PERSONAL_INFORMATION] note, and emailed me at [REDACTED_CONTACT_INFORMATION].",
           "redaction_count": 2,
-          "redaction_types": ["contact_information", "sensitive_personal_information"],
+          "redaction_types": [
+            "contact_information",
+            "sensitive_personal_information"
+          ],
           "minors_data_flagged": false,
           "privacy_review_status": "privacy_filtered",
           "lineage_complete": true,
@@ -140064,7 +140134,11 @@
           "language": "English",
           "region": "region unknown",
           "content_type": "confusion/problem",
-          "engagement_metrics": {"likes": 42, "replies": 12, "shares": 7},
+          "engagement_metrics": {
+            "likes": 42,
+            "replies": 12,
+            "shares": 7
+          },
           "filtered_excerpt": "Tokyo station transfer is confusing. Not sure if taxi or train is better with luggage.",
           "redaction_count": 0,
           "redaction_types": [],
@@ -140082,10 +140156,16 @@
           "language": "Southeast Asia languages",
           "region": "region inferred: Southeast Asia",
           "content_type": "recommendation",
-          "engagement_metrics": {"likes": 25, "replies": 8, "shares": 3},
+          "engagement_metrics": {
+            "likes": 25,
+            "replies": 8,
+            "shares": 3
+          },
           "filtered_excerpt": "Best Osaka food street and airport train tip? My phone is [REDACTED_CONTACT_INFORMATION] if guide can contact.",
           "redaction_count": 1,
-          "redaction_types": ["contact_information"],
+          "redaction_types": [
+            "contact_information"
+          ],
           "minors_data_flagged": false,
           "privacy_review_status": "privacy_filtered",
           "lineage_complete": true,
@@ -140100,7 +140180,11 @@
           "language": "Japanese",
           "region": "region explicit: Japan",
           "content_type": "transport issue",
-          "engagement_metrics": {"likes": 3, "replies": 1, "shares": 0},
+          "engagement_metrics": {
+            "likes": 3,
+            "replies": 1,
+            "shares": 0
+          },
           "filtered_excerpt": "[MINOR_RELATED_PUBLIC_TRANSPORT_QUESTION_REDACTED_FOR_REVIEW]",
           "redaction_count": 0,
           "redaction_types": [],
@@ -140120,7 +140204,11 @@
       "excluded_private_message_count": 1,
       "minors_data_flagged_count": 1,
       "redaction_total": 4,
-      "redaction_types": ["contact_information", "precise_personal_location", "sensitive_personal_information"],
+      "redaction_types": [
+        "contact_information",
+        "precise_personal_location",
+        "sensitive_personal_information"
+      ],
       "raw_content_stored": false,
       "sensitive_pii_training_allowed": false,
       "large_scale_ingestion_allowed": false,
@@ -140148,6 +140236,535 @@
       "automatic_promotion_allowed": false,
       "large_scale_ingestion_allowed": false,
       "next_gate_required": "ROUND-REALDATA-006_SAMPLE_QUALITY_AND_BIAS_REVIEW"
+    },
+    "socialSignalNormalizationPolicy": {
+      "audit_policy": {
+        "auditable": true,
+        "human_review_required": true,
+        "lineage_required": true,
+        "replayable": true
+      },
+      "created_at": "2026-05-29T06:44:06+00:00",
+      "input_contract": {
+        "privacy_filtered_input_required": true,
+        "raw_content_required": false,
+        "small_sample_only": true,
+        "source_manifest": "runtime/real_data_samples/SAMPLE_LINEAGE_MANIFEST.json"
+      },
+      "noise_and_unsafe_flags": [
+        "spam",
+        "ads",
+        "bot_like_content",
+        "off_topic_content",
+        "unsafe_personal_data",
+        "unverifiable_claims"
+      ],
+      "normalized_content_signals": [
+        "question_type",
+        "pain_category",
+        "emotion_intensity",
+        "urgency",
+        "language",
+        "region",
+        "platform",
+        "content_format"
+      ],
+      "normalized_engagement_metrics": [
+        "likes",
+        "comments",
+        "shares",
+        "saves",
+        "views",
+        "author_thanks",
+        "reply_depth",
+        "reposts"
+      ],
+      "policy_id": "SOCIAL_SIGNAL_NORMALIZATION_POLICY",
+      "quality_scoring_fields": [
+        "evidence_strength",
+        "duplication_score",
+        "engagement_strength",
+        "relevance_score",
+        "mobility_relevance",
+        "risk_score",
+        "confidence_score"
+      ],
+      "round_id": "ROUND-REALDATA-006_SOCIAL_SIGNAL_NORMALIZATION",
+      "safety_boundary": {
+        "contact_user_allowed": false,
+        "platform_api_calls_allowed": false,
+        "promotion_allowed": false,
+        "training_allowed": false,
+        "writeback_allowed": false
+      }
+    },
+    "normalizedSocialSignalSample": {
+      "auditable": true,
+      "contact_user_allowed": false,
+      "created_at": "2026-05-29T06:44:06+00:00",
+      "normalized_record_count": 6,
+      "promotion_allowed": false,
+      "records": [
+        {
+          "auditable": true,
+          "contact_user_allowed": false,
+          "content_format": "public_comment",
+          "created_at": "2026-05-29T06:44:06+00:00",
+          "emotion_intensity": "medium",
+          "language": "English",
+          "lineage": {
+            "collection_time": "2026-05-29T06:34:27+00:00",
+            "lineage_complete": true,
+            "privacy_review_status": "privacy_filtered",
+            "query_id": "japan_airport_transfer",
+            "record_hash": "c00749b81a505d6c",
+            "sample_data_only": true,
+            "source_reference": "yt_public_ref_001",
+            "source_type": "public_comment",
+            "source_url_allowed": false
+          },
+          "noise_filter": {
+            "ads": false,
+            "bot_like_content": false,
+            "filter_reason": "privacy redaction or minors flag requires human review before any downstream use",
+            "noise_status": "unsafe_review_required",
+            "off_topic_content": false,
+            "spam": false,
+            "unsafe_personal_data": true,
+            "unverifiable_claims": false
+          },
+          "normalized_engagement": {
+            "author_thanks": 0,
+            "comments": 4,
+            "likes": 18,
+            "reply_depth": 4,
+            "reposts": 1,
+            "saves": 0,
+            "shares": 1,
+            "views": 430
+          },
+          "pain_category": "airport_transfer_anxiety",
+          "platform": "youtube",
+          "platform_id": "youtube",
+          "promotion_allowed": false,
+          "quality_scores": {
+            "confidence_score": 54,
+            "duplication_score": 10,
+            "engagement_strength": 35,
+            "evidence_strength": 80,
+            "mobility_relevance": 85,
+            "relevance_score": 80,
+            "risk_score": 65,
+            "total_quality_score": 73
+          },
+          "question_type": "direct_help_question",
+          "region": "region inferred: US",
+          "replayable": true,
+          "review_status": "needs_human_review",
+          "signal_id": "SIGNAL-001",
+          "source_record_id": "SAMPLE-001",
+          "training_allowed": false,
+          "urgency": "high",
+          "writeback_allowed": false
+        },
+        {
+          "auditable": true,
+          "contact_user_allowed": false,
+          "content_format": "public_post",
+          "created_at": "2026-05-29T06:44:06+00:00",
+          "emotion_intensity": "high",
+          "language": "English",
+          "lineage": {
+            "collection_time": "2026-05-29T06:34:27+00:00",
+            "lineage_complete": true,
+            "privacy_review_status": "privacy_filtered",
+            "query_id": "tokyo_transport_confusion",
+            "record_hash": "8ec674b874a7735d",
+            "sample_data_only": true,
+            "source_reference": "tt_public_ref_002",
+            "source_type": "public_post",
+            "source_url_allowed": false
+          },
+          "noise_filter": {
+            "ads": false,
+            "bot_like_content": false,
+            "filter_reason": "region or lineage confidence is incomplete",
+            "noise_status": "monitor",
+            "off_topic_content": false,
+            "spam": false,
+            "unsafe_personal_data": false,
+            "unverifiable_claims": true
+          },
+          "normalized_engagement": {
+            "author_thanks": 0,
+            "comments": 12,
+            "likes": 42,
+            "reply_depth": 5,
+            "reposts": 7,
+            "saves": 0,
+            "shares": 7,
+            "views": 1170
+          },
+          "pain_category": "public_transport_anxiety",
+          "platform": "tiktok",
+          "platform_id": "tiktok",
+          "promotion_allowed": false,
+          "quality_scores": {
+            "confidence_score": 76,
+            "duplication_score": 10,
+            "engagement_strength": 100,
+            "evidence_strength": 65,
+            "mobility_relevance": 85,
+            "relevance_score": 80,
+            "risk_score": 25,
+            "total_quality_score": 80
+          },
+          "question_type": "confusion_problem_question",
+          "region": "region unknown",
+          "replayable": true,
+          "review_status": "needs_human_review",
+          "signal_id": "SIGNAL-002",
+          "source_record_id": "SAMPLE-002",
+          "training_allowed": false,
+          "urgency": "medium",
+          "writeback_allowed": false
+        },
+        {
+          "auditable": true,
+          "contact_user_allowed": false,
+          "content_format": "public_comment",
+          "created_at": "2026-05-29T06:44:06+00:00",
+          "emotion_intensity": "low",
+          "language": "Chinese",
+          "lineage": {
+            "collection_time": "2026-05-29T06:34:27+00:00",
+            "lineage_complete": true,
+            "privacy_review_status": "privacy_filtered",
+            "query_id": "kyoto_visit_food",
+            "record_hash": "7e6ac12b456d0424",
+            "sample_data_only": true,
+            "source_reference": "ig_public_ref_003",
+            "source_type": "public_comment",
+            "source_url_allowed": false
+          },
+          "noise_filter": {
+            "ads": false,
+            "bot_like_content": false,
+            "filter_reason": "privacy redaction or minors flag requires human review before any downstream use",
+            "noise_status": "unsafe_review_required",
+            "off_topic_content": false,
+            "spam": false,
+            "unsafe_personal_data": true,
+            "unverifiable_claims": false
+          },
+          "normalized_engagement": {
+            "author_thanks": 0,
+            "comments": 2,
+            "likes": 9,
+            "reply_depth": 2,
+            "reposts": 0,
+            "saves": 0,
+            "shares": 0,
+            "views": 200
+          },
+          "pain_category": "food_visit_recommendation_need",
+          "platform": "instagram",
+          "platform_id": "instagram",
+          "promotion_allowed": false,
+          "quality_scores": {
+            "confidence_score": 39,
+            "duplication_score": 10,
+            "engagement_strength": 15,
+            "evidence_strength": 80,
+            "mobility_relevance": 45,
+            "relevance_score": 80,
+            "risk_score": 65,
+            "total_quality_score": 55
+          },
+          "question_type": "must_buy_must_eat_must_visit_discussion",
+          "region": "region inferred: Taiwan",
+          "replayable": true,
+          "review_status": "needs_human_review",
+          "signal_id": "SIGNAL-003",
+          "source_record_id": "SAMPLE-003",
+          "training_allowed": false,
+          "urgency": "low",
+          "writeback_allowed": false
+        },
+        {
+          "auditable": true,
+          "contact_user_allowed": false,
+          "content_format": "public_comment",
+          "created_at": "2026-05-29T06:44:06+00:00",
+          "emotion_intensity": "medium",
+          "language": "Korean",
+          "lineage": {
+            "collection_time": "2026-05-29T06:34:27+00:00",
+            "lineage_complete": true,
+            "privacy_review_status": "privacy_filtered",
+            "query_id": "family_trip_transfer",
+            "record_hash": "39b5dea1a9eb6e06",
+            "sample_data_only": true,
+            "source_reference": "yt_public_ref_004",
+            "source_type": "public_comment",
+            "source_url_allowed": false
+          },
+          "noise_filter": {
+            "ads": false,
+            "bot_like_content": false,
+            "filter_reason": "privacy-filtered signal is usable for review only",
+            "noise_status": "usable_for_review",
+            "off_topic_content": false,
+            "spam": false,
+            "unsafe_personal_data": false,
+            "unverifiable_claims": false
+          },
+          "normalized_engagement": {
+            "author_thanks": 0,
+            "comments": 1,
+            "likes": 6,
+            "reply_depth": 1,
+            "reposts": 0,
+            "saves": 0,
+            "shares": 0,
+            "views": 130
+          },
+          "pain_category": "airport_transfer_anxiety",
+          "platform": "youtube",
+          "platform_id": "youtube",
+          "promotion_allowed": false,
+          "quality_scores": {
+            "confidence_score": 61,
+            "duplication_score": 10,
+            "engagement_strength": 9,
+            "evidence_strength": 80,
+            "mobility_relevance": 85,
+            "relevance_score": 80,
+            "risk_score": 10,
+            "total_quality_score": 75
+          },
+          "question_type": "transport_disruption_question",
+          "region": "region inferred: Korea",
+          "replayable": true,
+          "review_status": "needs_human_review",
+          "signal_id": "SIGNAL-004",
+          "source_record_id": "SAMPLE-004",
+          "training_allowed": false,
+          "urgency": "high",
+          "writeback_allowed": false
+        },
+        {
+          "auditable": true,
+          "contact_user_allowed": false,
+          "content_format": "public_comment",
+          "created_at": "2026-05-29T06:44:06+00:00",
+          "emotion_intensity": "medium",
+          "language": "Southeast Asia languages",
+          "lineage": {
+            "collection_time": "2026-05-29T06:34:27+00:00",
+            "lineage_complete": true,
+            "privacy_review_status": "privacy_filtered",
+            "query_id": "osaka_food_visit",
+            "record_hash": "022db42e429b704d",
+            "sample_data_only": true,
+            "source_reference": "tt_public_ref_005",
+            "source_type": "public_comment",
+            "source_url_allowed": false
+          },
+          "noise_filter": {
+            "ads": false,
+            "bot_like_content": false,
+            "filter_reason": "privacy redaction or minors flag requires human review before any downstream use",
+            "noise_status": "unsafe_review_required",
+            "off_topic_content": false,
+            "spam": false,
+            "unsafe_personal_data": true,
+            "unverifiable_claims": false
+          },
+          "normalized_engagement": {
+            "author_thanks": 0,
+            "comments": 8,
+            "likes": 25,
+            "reply_depth": 5,
+            "reposts": 3,
+            "saves": 0,
+            "shares": 3,
+            "views": 670
+          },
+          "pain_category": "airport_transfer_anxiety",
+          "platform": "tiktok",
+          "platform_id": "tiktok",
+          "promotion_allowed": false,
+          "quality_scores": {
+            "confidence_score": 61,
+            "duplication_score": 10,
+            "engagement_strength": 64,
+            "evidence_strength": 80,
+            "mobility_relevance": 85,
+            "relevance_score": 80,
+            "risk_score": 65,
+            "total_quality_score": 75
+          },
+          "question_type": "recommendation_request",
+          "region": "region inferred: Southeast Asia",
+          "replayable": true,
+          "review_status": "needs_human_review",
+          "signal_id": "SIGNAL-005",
+          "source_record_id": "SAMPLE-005",
+          "training_allowed": false,
+          "urgency": "high",
+          "writeback_allowed": false
+        },
+        {
+          "auditable": true,
+          "contact_user_allowed": false,
+          "content_format": "public_comment",
+          "created_at": "2026-05-29T06:44:06+00:00",
+          "emotion_intensity": "high",
+          "language": "Japanese",
+          "lineage": {
+            "collection_time": "2026-05-29T06:34:27+00:00",
+            "lineage_complete": true,
+            "privacy_review_status": "excluded_from_training",
+            "query_id": "minor_school_trip",
+            "record_hash": "63a97d2158378176",
+            "sample_data_only": true,
+            "source_reference": "yt_public_ref_007",
+            "source_type": "public_comment",
+            "source_url_allowed": false
+          },
+          "noise_filter": {
+            "ads": false,
+            "bot_like_content": true,
+            "filter_reason": "privacy redaction or minors flag requires human review before any downstream use",
+            "noise_status": "unsafe_review_required",
+            "off_topic_content": false,
+            "spam": false,
+            "unsafe_personal_data": true,
+            "unverifiable_claims": false
+          },
+          "normalized_engagement": {
+            "author_thanks": 0,
+            "comments": 1,
+            "likes": 3,
+            "reply_depth": 1,
+            "reposts": 0,
+            "saves": 0,
+            "shares": 0,
+            "views": 70
+          },
+          "pain_category": "public_transport_anxiety",
+          "platform": "youtube",
+          "platform_id": "youtube",
+          "promotion_allowed": false,
+          "quality_scores": {
+            "confidence_score": 38,
+            "duplication_score": 10,
+            "engagement_strength": 6,
+            "evidence_strength": 80,
+            "mobility_relevance": 85,
+            "relevance_score": 80,
+            "risk_score": 100,
+            "total_quality_score": 68
+          },
+          "question_type": "transport_disruption_question",
+          "region": "region explicit: Japan",
+          "replayable": true,
+          "review_status": "needs_human_review",
+          "signal_id": "SIGNAL-006",
+          "source_record_id": "SAMPLE-007",
+          "training_allowed": false,
+          "urgency": "low",
+          "writeback_allowed": false
+        }
+      ],
+      "replayable": true,
+      "round_id": "ROUND-REALDATA-006_SOCIAL_SIGNAL_NORMALIZATION",
+      "sample_data_only": true,
+      "sample_id": "NORMALIZED_SOCIAL_SIGNAL_SAMPLE",
+      "source_manifest_id": "SAMPLE_LINEAGE_MANIFEST",
+      "source_record_count": 6,
+      "training_allowed": false,
+      "writeback_allowed": false
+    },
+    "signalQualityScoringPolicy": {
+      "blocked_actions": {
+        "contact_user_allowed": false,
+        "promotion_allowed": false,
+        "training_allowed": false,
+        "writeback_allowed": false
+      },
+      "classification": {
+        "monitor": "confidence >= 40 or risk < 70",
+        "noise": "off-topic, ads, spam, or low evidence and low relevance",
+        "unsafe_review_required": "unsafe personal data, minors flag, or risk >= 70",
+        "usable_for_review": "confidence >= 55 and risk < 55"
+      },
+      "created_at": "2026-05-29T06:44:06+00:00",
+      "fields": {
+        "confidence_score": "combined evidence, relevance, engagement, and inverse risk",
+        "duplication_score": "placeholder duplicate pressure score; higher means more duplicate-like",
+        "engagement_strength": "normalized likes, comments, shares, saves, views, thanks, depth, and reposts",
+        "evidence_strength": "lineage completeness, public source type, and source reference quality",
+        "mobility_relevance": "airport, transfer, luggage, taxi, train, station, family, event, and route intent",
+        "relevance_score": "question type and pain category fit for AGOS mobility intelligence",
+        "risk_score": "redaction, minors, unverifiable claims, ads, spam, and unsafe personal-data risk"
+      },
+      "policy_id": "SIGNAL_QUALITY_SCORING_POLICY",
+      "round_id": "ROUND-REALDATA-006_SOCIAL_SIGNAL_NORMALIZATION",
+      "score_range": "0-100"
+    },
+    "signalNoiseFilterReport": {
+      "contact_user_allowed": false,
+      "created_at": "2026-05-29T06:44:06+00:00",
+      "flag_counts": {
+        "ads": 0,
+        "bot_like_content": 1,
+        "off_topic_content": 0,
+        "spam": 0,
+        "unsafe_personal_data": 4,
+        "unverifiable_claims": 1
+      },
+      "low_confidence_not_confirmed_demand": true,
+      "noise_record_ids": [],
+      "record_count": 6,
+      "report_id": "SIGNAL_NOISE_FILTER_REPORT",
+      "round_id": "ROUND-REALDATA-006_SOCIAL_SIGNAL_NORMALIZATION",
+      "status_counts": {
+        "monitor": 1,
+        "unsafe_review_required": 4,
+        "usable_for_review": 1
+      },
+      "unsafe_record_ids": [
+        "SIGNAL-001",
+        "SIGNAL-003",
+        "SIGNAL-005",
+        "SIGNAL-006"
+      ],
+      "unsafe_signals_blocked_from_promotion": true,
+      "unsafe_signals_blocked_from_training": true,
+      "writeback_allowed": false
+    },
+    "socialSignalNormalizationEvidence": {
+      "all_records_auditable": true,
+      "all_records_human_review_required": true,
+      "all_records_replayable": true,
+      "content_signals_normalized": true,
+      "created_at": "2026-05-29T06:44:06+00:00",
+      "engagement_metrics_normalized": true,
+      "evidence_id": "SOCIAL_SIGNAL_NORMALIZATION_EVIDENCE",
+      "next_gate": "ROUND-REALDATA-007_SIGNAL_QUALITY_AND_BIAS_REVIEW",
+      "noise_filter_report_generated": true,
+      "normalization_policy_defined": true,
+      "normalized_record_count": 6,
+      "platform_writeback_called": false,
+      "promotion_started": false,
+      "quality_scores_generated": true,
+      "quality_scoring_policy_defined": true,
+      "round_id": "ROUND-REALDATA-006_SOCIAL_SIGNAL_NORMALIZATION",
+      "training_started": false,
+      "unsafe_filtering_active": true,
+      "users_contacted": false
     }
   },
   "realDataAccess": {
@@ -140156,9 +140773,22 @@
       "round_id": "ROUND-REALDATA-004_READ_ONLY_API_DRY_RUN",
       "phase": "AGOS_REAL_DATA_CONTROLLED_ACCESS",
       "status": "dry_run_readiness_defined_no_real_api_calls",
-      "supportedPlatformIds": ["youtube", "tiktok", "instagram"],
-      "connectionModes": ["not_connected", "mock_connection", "read_only_authorized", "blocked"],
-      "endpointTypes": ["trend_search", "public_content_metadata", "public_analytics"],
+      "supportedPlatformIds": [
+        "youtube",
+        "tiktok",
+        "instagram"
+      ],
+      "connectionModes": [
+        "not_connected",
+        "mock_connection",
+        "read_only_authorized",
+        "blocked"
+      ],
+      "endpointTypes": [
+        "trend_search",
+        "public_content_metadata",
+        "public_analytics"
+      ],
       "dryRunChecks": [
         "credential reference exists",
         "scope is read-only",
@@ -140191,7 +140821,12 @@
     "platformDryRunStatus": {
       "status_id": "PLATFORM_DRY_RUN_STATUS",
       "round_id": "ROUND-REALDATA-004_READ_ONLY_API_DRY_RUN",
-      "connectionModes": ["not_connected", "mock_connection", "read_only_authorized", "blocked"],
+      "connectionModes": [
+        "not_connected",
+        "mock_connection",
+        "read_only_authorized",
+        "blocked"
+      ],
       "platform_count": 3,
       "mock_connection_ready_count": 0,
       "read_only_authorized_count": 0,
@@ -140200,9 +140835,57 @@
       "all_private_data_excluded": true,
       "all_training_disabled": true,
       "platformStatuses": [
-        {"platform_id": "youtube", "connection_mode": "not_connected", "credential_reference_exists": true, "credential_reference_verified": false, "owner_approval_status": "not_requested", "scope_is_read_only": true, "rate_limit_known": false, "cost_limit_known": false, "api_terms_reviewed": false, "private_data_excluded": true, "write_actions_disabled": true, "large_dataset_storage_disabled": true, "training_disabled": true, "dry_run_status": "blocked", "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending"},
-        {"platform_id": "tiktok", "connection_mode": "not_connected", "credential_reference_exists": true, "credential_reference_verified": false, "owner_approval_status": "not_requested", "scope_is_read_only": true, "rate_limit_known": false, "cost_limit_known": false, "api_terms_reviewed": false, "private_data_excluded": true, "write_actions_disabled": true, "large_dataset_storage_disabled": true, "training_disabled": true, "dry_run_status": "blocked", "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending"},
-        {"platform_id": "instagram", "connection_mode": "not_connected", "credential_reference_exists": true, "credential_reference_verified": false, "owner_approval_status": "not_requested", "scope_is_read_only": true, "rate_limit_known": false, "cost_limit_known": false, "api_terms_reviewed": false, "private_data_excluded": true, "write_actions_disabled": true, "large_dataset_storage_disabled": true, "training_disabled": true, "dry_run_status": "blocked", "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending"}
+        {
+          "platform_id": "youtube",
+          "connection_mode": "not_connected",
+          "credential_reference_exists": true,
+          "credential_reference_verified": false,
+          "owner_approval_status": "not_requested",
+          "scope_is_read_only": true,
+          "rate_limit_known": false,
+          "cost_limit_known": false,
+          "api_terms_reviewed": false,
+          "private_data_excluded": true,
+          "write_actions_disabled": true,
+          "large_dataset_storage_disabled": true,
+          "training_disabled": true,
+          "dry_run_status": "blocked",
+          "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending"
+        },
+        {
+          "platform_id": "tiktok",
+          "connection_mode": "not_connected",
+          "credential_reference_exists": true,
+          "credential_reference_verified": false,
+          "owner_approval_status": "not_requested",
+          "scope_is_read_only": true,
+          "rate_limit_known": false,
+          "cost_limit_known": false,
+          "api_terms_reviewed": false,
+          "private_data_excluded": true,
+          "write_actions_disabled": true,
+          "large_dataset_storage_disabled": true,
+          "training_disabled": true,
+          "dry_run_status": "blocked",
+          "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending"
+        },
+        {
+          "platform_id": "instagram",
+          "connection_mode": "not_connected",
+          "credential_reference_exists": true,
+          "credential_reference_verified": false,
+          "owner_approval_status": "not_requested",
+          "scope_is_read_only": true,
+          "rate_limit_known": false,
+          "cost_limit_known": false,
+          "api_terms_reviewed": false,
+          "private_data_excluded": true,
+          "write_actions_disabled": true,
+          "large_dataset_storage_disabled": true,
+          "training_disabled": true,
+          "dry_run_status": "blocked",
+          "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending"
+        }
       ]
     },
     "apiPermissionCheckReport": {
@@ -140218,12 +140901,150 @@
       "large_real_dataset_storage_allowed": false,
       "agos_training_started": false,
       "permissionChecks": [
-        {"platform_id": "youtube", "endpoint_type": "trend_search", "permission_status": "blocked", "connection_mode": "not_connected", "allowed_data_types": ["public trend metadata after authorization", "public content metadata after authorization", "public engagement metrics after authorization"], "forbidden_data_types": ["private messages", "private account data", "sensitive personal data", "raw credential values", "write action payloads", "large real datasets"], "dry_run_status": "blocked", "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending", "writes_disabled": true, "large_dataset_storage_allowed": false, "training_allowed": false},
-        {"platform_id": "youtube", "endpoint_type": "public_content_metadata", "permission_status": "blocked", "connection_mode": "not_connected", "allowed_data_types": ["public trend metadata after authorization", "public content metadata after authorization", "public engagement metrics after authorization"], "forbidden_data_types": ["private messages", "private account data", "sensitive personal data", "raw credential values", "write action payloads", "large real datasets"], "dry_run_status": "blocked", "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending", "writes_disabled": true, "large_dataset_storage_allowed": false, "training_allowed": false},
-        {"platform_id": "youtube", "endpoint_type": "public_analytics", "permission_status": "blocked", "connection_mode": "not_connected", "allowed_data_types": ["public trend metadata after authorization", "public content metadata after authorization", "public engagement metrics after authorization"], "forbidden_data_types": ["private messages", "private account data", "sensitive personal data", "raw credential values", "write action payloads", "large real datasets"], "dry_run_status": "blocked", "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending", "writes_disabled": true, "large_dataset_storage_allowed": false, "training_allowed": false},
-        {"platform_id": "tiktok", "endpoint_type": "trend_search", "permission_status": "blocked", "connection_mode": "not_connected", "allowed_data_types": ["public trend metadata after authorization", "public content metadata after authorization", "public engagement metrics after authorization"], "forbidden_data_types": ["private messages", "private account data", "sensitive personal data", "raw credential values", "write action payloads", "large real datasets"], "dry_run_status": "blocked", "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending", "writes_disabled": true, "large_dataset_storage_allowed": false, "training_allowed": false},
-        {"platform_id": "tiktok", "endpoint_type": "public_content_metadata", "permission_status": "blocked", "connection_mode": "not_connected", "allowed_data_types": ["public trend metadata after authorization", "public content metadata after authorization", "public engagement metrics after authorization"], "forbidden_data_types": ["private messages", "private account data", "sensitive personal data", "raw credential values", "write action payloads", "large real datasets"], "dry_run_status": "blocked", "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending", "writes_disabled": true, "large_dataset_storage_allowed": false, "training_allowed": false},
-        {"platform_id": "instagram", "endpoint_type": "trend_search", "permission_status": "blocked", "connection_mode": "not_connected", "allowed_data_types": ["public trend metadata after authorization", "public content metadata after authorization", "public engagement metrics after authorization"], "forbidden_data_types": ["private messages", "private account data", "sensitive personal data", "raw credential values", "write action payloads", "large real datasets"], "dry_run_status": "blocked", "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending", "writes_disabled": true, "large_dataset_storage_allowed": false, "training_allowed": false}
+        {
+          "platform_id": "youtube",
+          "endpoint_type": "trend_search",
+          "permission_status": "blocked",
+          "connection_mode": "not_connected",
+          "allowed_data_types": [
+            "public trend metadata after authorization",
+            "public content metadata after authorization",
+            "public engagement metrics after authorization"
+          ],
+          "forbidden_data_types": [
+            "private messages",
+            "private account data",
+            "sensitive personal data",
+            "raw credential values",
+            "write action payloads",
+            "large real datasets"
+          ],
+          "dry_run_status": "blocked",
+          "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending",
+          "writes_disabled": true,
+          "large_dataset_storage_allowed": false,
+          "training_allowed": false
+        },
+        {
+          "platform_id": "youtube",
+          "endpoint_type": "public_content_metadata",
+          "permission_status": "blocked",
+          "connection_mode": "not_connected",
+          "allowed_data_types": [
+            "public trend metadata after authorization",
+            "public content metadata after authorization",
+            "public engagement metrics after authorization"
+          ],
+          "forbidden_data_types": [
+            "private messages",
+            "private account data",
+            "sensitive personal data",
+            "raw credential values",
+            "write action payloads",
+            "large real datasets"
+          ],
+          "dry_run_status": "blocked",
+          "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending",
+          "writes_disabled": true,
+          "large_dataset_storage_allowed": false,
+          "training_allowed": false
+        },
+        {
+          "platform_id": "youtube",
+          "endpoint_type": "public_analytics",
+          "permission_status": "blocked",
+          "connection_mode": "not_connected",
+          "allowed_data_types": [
+            "public trend metadata after authorization",
+            "public content metadata after authorization",
+            "public engagement metrics after authorization"
+          ],
+          "forbidden_data_types": [
+            "private messages",
+            "private account data",
+            "sensitive personal data",
+            "raw credential values",
+            "write action payloads",
+            "large real datasets"
+          ],
+          "dry_run_status": "blocked",
+          "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending",
+          "writes_disabled": true,
+          "large_dataset_storage_allowed": false,
+          "training_allowed": false
+        },
+        {
+          "platform_id": "tiktok",
+          "endpoint_type": "trend_search",
+          "permission_status": "blocked",
+          "connection_mode": "not_connected",
+          "allowed_data_types": [
+            "public trend metadata after authorization",
+            "public content metadata after authorization",
+            "public engagement metrics after authorization"
+          ],
+          "forbidden_data_types": [
+            "private messages",
+            "private account data",
+            "sensitive personal data",
+            "raw credential values",
+            "write action payloads",
+            "large real datasets"
+          ],
+          "dry_run_status": "blocked",
+          "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending",
+          "writes_disabled": true,
+          "large_dataset_storage_allowed": false,
+          "training_allowed": false
+        },
+        {
+          "platform_id": "tiktok",
+          "endpoint_type": "public_content_metadata",
+          "permission_status": "blocked",
+          "connection_mode": "not_connected",
+          "allowed_data_types": [
+            "public trend metadata after authorization",
+            "public content metadata after authorization",
+            "public engagement metrics after authorization"
+          ],
+          "forbidden_data_types": [
+            "private messages",
+            "private account data",
+            "sensitive personal data",
+            "raw credential values",
+            "write action payloads",
+            "large real datasets"
+          ],
+          "dry_run_status": "blocked",
+          "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending",
+          "writes_disabled": true,
+          "large_dataset_storage_allowed": false,
+          "training_allowed": false
+        },
+        {
+          "platform_id": "instagram",
+          "endpoint_type": "trend_search",
+          "permission_status": "blocked",
+          "connection_mode": "not_connected",
+          "allowed_data_types": [
+            "public trend metadata after authorization",
+            "public content metadata after authorization",
+            "public engagement metrics after authorization"
+          ],
+          "forbidden_data_types": [
+            "private messages",
+            "private account data",
+            "sensitive personal data",
+            "raw credential values",
+            "write action payloads",
+            "large real datasets"
+          ],
+          "dry_run_status": "blocked",
+          "blocker_reason": "owner approval, verified credential reference, rate limit, cost limit, and API terms review are still pending",
+          "writes_disabled": true,
+          "large_dataset_storage_allowed": false,
+          "training_allowed": false
+        }
       ]
     },
     "readOnlyApiDryRunDecision": {
@@ -140237,8 +141058,19 @@
       "blocked_platform_count": 3,
       "permission_check_count": 9,
       "blocked_permission_count": 9,
-      "allowed_actions": ["local contract review", "mock connection readiness review", "manual policy verification"],
-      "blocked_actions": ["write API", "publish", "reply", "DM", "large real dataset storage", "AGOS training"],
+      "allowed_actions": [
+        "local contract review",
+        "mock connection readiness review",
+        "manual policy verification"
+      ],
+      "blocked_actions": [
+        "write API",
+        "publish",
+        "reply",
+        "DM",
+        "large real dataset storage",
+        "AGOS training"
+      ],
       "write_api_allowed": false,
       "publish_allowed": false,
       "reply_allowed": false,
@@ -140300,18 +141132,82 @@
     "sourcePolicy": {
       "policy_id": "SOURCE_POLICY",
       "sourceHierarchy": [
-        {"rank": 1, "source_type": "Google Trends search guidance", "read_only": true, "human_review_required": true, "api_call_allowed_now": false, "scraping_allowed": false, "write_action_allowed": false, "allowed_before_api_dry_run": true},
-        {"rank": 2, "source_type": "platform search results", "read_only": true, "human_review_required": true, "api_call_allowed_now": false, "scraping_allowed": false, "write_action_allowed": false, "allowed_before_api_dry_run": false},
-        {"rank": 3, "source_type": "public posts", "read_only": true, "human_review_required": true, "api_call_allowed_now": false, "scraping_allowed": false, "write_action_allowed": false, "allowed_before_api_dry_run": false},
-        {"rank": 4, "source_type": "public comments", "read_only": true, "human_review_required": true, "api_call_allowed_now": false, "scraping_allowed": false, "write_action_allowed": false, "allowed_before_api_dry_run": false},
-        {"rank": 5, "source_type": "public engagement metrics", "read_only": true, "human_review_required": true, "api_call_allowed_now": false, "scraping_allowed": false, "write_action_allowed": false, "allowed_before_api_dry_run": false},
-        {"rank": 6, "source_type": "manual import samples", "read_only": true, "human_review_required": true, "api_call_allowed_now": false, "scraping_allowed": false, "write_action_allowed": false, "allowed_before_api_dry_run": true}
+        {
+          "rank": 1,
+          "source_type": "Google Trends search guidance",
+          "read_only": true,
+          "human_review_required": true,
+          "api_call_allowed_now": false,
+          "scraping_allowed": false,
+          "write_action_allowed": false,
+          "allowed_before_api_dry_run": true
+        },
+        {
+          "rank": 2,
+          "source_type": "platform search results",
+          "read_only": true,
+          "human_review_required": true,
+          "api_call_allowed_now": false,
+          "scraping_allowed": false,
+          "write_action_allowed": false,
+          "allowed_before_api_dry_run": false
+        },
+        {
+          "rank": 3,
+          "source_type": "public posts",
+          "read_only": true,
+          "human_review_required": true,
+          "api_call_allowed_now": false,
+          "scraping_allowed": false,
+          "write_action_allowed": false,
+          "allowed_before_api_dry_run": false
+        },
+        {
+          "rank": 4,
+          "source_type": "public comments",
+          "read_only": true,
+          "human_review_required": true,
+          "api_call_allowed_now": false,
+          "scraping_allowed": false,
+          "write_action_allowed": false,
+          "allowed_before_api_dry_run": false
+        },
+        {
+          "rank": 5,
+          "source_type": "public engagement metrics",
+          "read_only": true,
+          "human_review_required": true,
+          "api_call_allowed_now": false,
+          "scraping_allowed": false,
+          "write_action_allowed": false,
+          "allowed_before_api_dry_run": false
+        },
+        {
+          "rank": 6,
+          "source_type": "manual import samples",
+          "read_only": true,
+          "human_review_required": true,
+          "api_call_allowed_now": false,
+          "scraping_allowed": false,
+          "write_action_allowed": false,
+          "allowed_before_api_dry_run": true
+        }
       ]
     },
     "languageRegionTaggingPolicy": {
       "policy_id": "LANGUAGE_REGION_TAGGING_POLICY",
-      "languageTags": ["English", "Japanese", "Chinese", "Korean", "Southeast Asia languages"],
-      "regionTags": ["region inferred", "region explicit", "region unknown"],
+      "languageTags": [
+        "English",
+        "Japanese",
+        "Chinese",
+        "Korean",
+        "Southeast Asia languages"
+      ],
+      "regionTags": [
+        "region inferred",
+        "region explicit",
+        "region unknown"
+      ],
       "overlapPolicy": {
         "cross_language_overlap_as_shared_pain": true,
         "language_specific_pain_as_individual_market_pain": true,
@@ -140321,15 +141217,69 @@
     "contentTypePolicy": {
       "policy_id": "CONTENT_TYPE_POLICY",
       "targetContentTypes": [
-        {"content_type": "help-seeking posts", "broad_category": "travel planning confusion", "review_required": true, "auto_reply_allowed": false, "training_allowed_now": false},
-        {"content_type": "confusion/problem posts", "broad_category": "travel planning confusion", "review_required": true, "auto_reply_allowed": false, "training_allowed_now": false},
-        {"content_type": "solution posts", "broad_category": "solution validation", "review_required": true, "auto_reply_allowed": false, "training_allowed_now": false},
-        {"content_type": "itinerary questions", "broad_category": "itinerary uncertainty", "review_required": true, "auto_reply_allowed": false, "training_allowed_now": false},
-        {"content_type": "transport disruption questions", "broad_category": "transport anxiety", "review_required": true, "auto_reply_allowed": false, "training_allowed_now": false},
-        {"content_type": "must-buy/must-eat/must-visit discussions", "broad_category": "place recommendation demand", "review_required": true, "auto_reply_allowed": false, "training_allowed_now": false},
-        {"content_type": "high-like posts", "broad_category": "viral engagement signal", "review_required": true, "auto_reply_allowed": false, "training_allowed_now": false},
-        {"content_type": "high-share posts", "broad_category": "viral engagement signal", "review_required": true, "auto_reply_allowed": false, "training_allowed_now": false},
-        {"content_type": "author-thanked answers", "broad_category": "solution validation", "review_required": true, "auto_reply_allowed": false, "training_allowed_now": false}
+        {
+          "content_type": "help-seeking posts",
+          "broad_category": "travel planning confusion",
+          "review_required": true,
+          "auto_reply_allowed": false,
+          "training_allowed_now": false
+        },
+        {
+          "content_type": "confusion/problem posts",
+          "broad_category": "travel planning confusion",
+          "review_required": true,
+          "auto_reply_allowed": false,
+          "training_allowed_now": false
+        },
+        {
+          "content_type": "solution posts",
+          "broad_category": "solution validation",
+          "review_required": true,
+          "auto_reply_allowed": false,
+          "training_allowed_now": false
+        },
+        {
+          "content_type": "itinerary questions",
+          "broad_category": "itinerary uncertainty",
+          "review_required": true,
+          "auto_reply_allowed": false,
+          "training_allowed_now": false
+        },
+        {
+          "content_type": "transport disruption questions",
+          "broad_category": "transport anxiety",
+          "review_required": true,
+          "auto_reply_allowed": false,
+          "training_allowed_now": false
+        },
+        {
+          "content_type": "must-buy/must-eat/must-visit discussions",
+          "broad_category": "place recommendation demand",
+          "review_required": true,
+          "auto_reply_allowed": false,
+          "training_allowed_now": false
+        },
+        {
+          "content_type": "high-like posts",
+          "broad_category": "viral engagement signal",
+          "review_required": true,
+          "auto_reply_allowed": false,
+          "training_allowed_now": false
+        },
+        {
+          "content_type": "high-share posts",
+          "broad_category": "viral engagement signal",
+          "review_required": true,
+          "auto_reply_allowed": false,
+          "training_allowed_now": false
+        },
+        {
+          "content_type": "author-thanked answers",
+          "broad_category": "solution validation",
+          "review_required": true,
+          "auto_reply_allowed": false,
+          "training_allowed_now": false
+        }
       ]
     },
     "queryScopeEvidence": {
@@ -143747,6 +144697,11 @@
       const lineageManifest = rds.sampleLineageManifest || {};
       const privacyReport = rds.privacyFilterReport || {};
       const sampleEvidence = rds.sampleIngestionEvidence || {};
+      const signalPolicy = rds.socialSignalNormalizationPolicy || {};
+      const normalizedSignals = rds.normalizedSocialSignalSample || {};
+      const signalScoringPolicy = rds.signalQualityScoringPolicy || {};
+      const signalNoiseReport = rds.signalNoiseFilterReport || {};
+      const signalEvidence = rds.socialSignalNormalizationEvidence || {};
       const rdaOverview = '<div class="trend-visual-grid"><div class="trend-stat"><span>MVP Platforms</span><strong>' + esc((rdaContract.supportedMvpPlatforms || []).join(' / ')) + '</strong><small>later: ' + esc((rdaContract.optionalLaterPlatforms || []).slice(0, 4).join(' / ')) + '</small></div><div class="trend-stat"><span>Authorized</span><strong>' + esc(rdaStatus.authorized_read_only_count || 0) + '</strong><small>not connected: ' + esc(rdaStatus.not_connected_count || 0) + '</small></div><div class="trend-stat"><span>Access</span><strong>' + esc(rdaStatus.real_data_access_enabled || false) + '</strong><small>minimum scope: ' + esc(rdaScope.minimum_scope_policy || '') + '</small></div><div class="trend-stat"><span>Training</span><strong>' + esc(rdaEvidence.agos_training_started || false) + '</strong><small>API called: ' + esc(rdaEvidence.real_platform_api_called || false) + ' / credentials: ' + esc(rdaEvidence.credentials_found || false) + '</small></div></div>';
       const rdaPlatformRows = ((rdaStatus.platformStatuses || []).slice(0, 10)).map(item =>
         '<div class="feed-item"><time>' + esc(item.platform || '') + '</time><div class="feed-main"><strong>' + esc(item.access_status || '') + ' / ' + esc(item.platform_group || '') + '</strong><span>Owner approved: ' + esc(item.owner_approved || false) + ' / Scope verified: ' + esc(item.scope_verified || false) + ' / Authorized read-only: ' + esc(item.authorized_read_only || false) + '</span><span>Token present: ' + esc(item.token_present || false) + ' / Credential present: ' + esc(item.credential_present || false) + ' / Safe to ingest real data: ' + esc(item.safe_to_ingest_real_data || false) + '</span><span>Human review required: ' + esc(item.requires_human_review || false) + '</span></div><span class="badge b-amber">not connected</span></div>'
@@ -143783,7 +144738,15 @@
         '<div class="feed-item"><time>' + esc(item.record_id || '') + '</time><div class="feed-main"><strong>' + esc(item.platform_id || '') + ' / ' + esc(item.content_type || '') + ' / ' + esc(item.privacy_review_status || '') + '</strong><span>Source: ' + esc(item.source_type || '') + ' / Query: ' + esc(item.query_id || '') + ' / Language: ' + esc(item.language || '') + ' / Region: ' + esc(item.region || '') + '</span><span>Engagement: likes ' + esc((item.engagement_metrics || {}).likes || 0) + ' / replies ' + esc((item.engagement_metrics || {}).replies || 0) + ' / shares ' + esc((item.engagement_metrics || {}).shares || 0) + '</span><span>Excerpt: ' + esc(item.filtered_excerpt || '') + '</span><span>Redactions: ' + esc(item.redaction_count || 0) + ' / ' + esc((item.redaction_types || []).join(' / ')) + ' / minors: ' + esc(item.minors_data_flagged || false) + ' / lineage: ' + esc(item.lineage_complete || false) + '</span><span>Training: ' + esc(item.training_allowed || false) + ' / Automatic promotion: ' + esc(item.automatic_promotion_allowed || false) + '</span></div><span class="badge ' + (item.minors_data_flagged ? 'b-red' : 'b-cyan') + '">' + esc(item.minors_data_flagged ? 'review' : 'filtered') + '</span></div>'
       );
       const sampleEvidenceRow = sampleEvidence.evidence_id ? '<div class="feed-item"><time>EVIDENCE</time><div class="feed-main"><strong>Sample ingestion evidence</strong><span>Status: ' + esc(sampleEvidence.evidence_status || '') + '</span><span>Contact redacted: ' + esc(sampleEvidence.contact_information_redacted || false) + ' / Precise location redacted: ' + esc(sampleEvidence.precise_personal_location_redacted || false) + ' / Sensitive info redacted: ' + esc(sampleEvidence.sensitive_personal_information_redacted || false) + ' / Minors flagged: ' + esc(sampleEvidence.minors_data_flagged || false) + '</span><span>Large-scale ingestion: ' + esc(sampleEvidence.large_scale_ingestion_allowed || false) + ' / Training: ' + esc(sampleEvidence.training_allowed || false) + ' / Auto promotion: ' + esc(sampleEvidence.automatic_promotion_allowed || false) + ' / Next gate: ' + esc(sampleEvidence.next_gate_required || '') + '</span></div><span class="badge b-green">no training</span></div>' : '';
-      el('runtime-real-data-access').innerHTML = (rdaContract.contract_id || qsPolicy.policy_id || dryRunContract.contract_id || sampleEvidence.evidence_id ? sampleOverview + samplePolicyRow + privacyFilterRow + sampleRows.join('') + sampleEvidenceRow + dryRunOverview + dryRunPlatformRows.join('') + permissionRows.join('') + dryRunSafetyRow + rdaOverview + rdaPlatformRows.join('') + rdaScopeRows.join('') + rdaSafetyRow + cvOverview + cvAuditRows.join('') + cvSafetyRow + qsOverview + qsSourceRows.join('') + qsContentRows.join('') + qsSafetyRow : '') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Real Data Controlled Access pending</strong><span>AGOS will define read-only platform authorization contracts before any real API access or training.</span></div><span class="badge b-amber">pending</span></div>';
+      const signalOverview = signalEvidence.evidence_id ? '<div class="trend-visual-grid"><div class="trend-stat"><span>Social Signals</span><strong>' + esc(signalEvidence.normalized_record_count || 0) + '</strong><small>source sample: ' + esc(normalizedSignals.source_record_count || 0) + '</small></div><div class="trend-stat"><span>Normalized</span><strong>' + esc(signalEvidence.engagement_metrics_normalized || false) + '</strong><small>content: ' + esc(signalEvidence.content_signals_normalized || false) + ' / quality: ' + esc(signalEvidence.quality_scores_generated || false) + '</small></div><div class="trend-stat"><span>Unsafe Filter</span><strong>' + esc(signalEvidence.unsafe_filtering_active || false) + '</strong><small>unsafe records: ' + esc((signalNoiseReport.unsafe_record_ids || []).length || 0) + ' / noise: ' + esc((signalNoiseReport.noise_record_ids || []).length || 0) + '</small></div><div class="trend-stat"><span>Blocked</span><strong>training ' + esc(signalEvidence.training_started || false) + '</strong><small>promotion: ' + esc(signalEvidence.promotion_started || false) + ' / writeback: ' + esc(signalEvidence.platform_writeback_called || false) + ' / contact: ' + esc(signalEvidence.users_contacted || false) + '</small></div></div>' : '';
+      const signalPolicyRow = signalPolicy.policy_id ? '<div class="feed-item"><time>SIGNAL</time><div class="feed-main"><strong>Social Signal Normalization policy</strong><span>Engagement: ' + esc((signalPolicy.normalized_engagement_metrics || []).join(' / ')) + '</span><span>Content: ' + esc((signalPolicy.normalized_content_signals || []).join(' / ')) + '</span><span>Quality: ' + esc((signalPolicy.quality_scoring_fields || []).join(' / ')) + '</span><span>Noise: ' + esc((signalPolicy.noise_and_unsafe_flags || []).join(' / ')) + '</span><span>Replayable: ' + esc((signalPolicy.audit_policy || {}).replayable || false) + ' / Auditable: ' + esc((signalPolicy.audit_policy || {}).auditable || false) + ' / Human review: ' + esc((signalPolicy.audit_policy || {}).human_review_required || false) + '</span></div><span class="badge b-green">normalized</span></div>' : '';
+      const signalRows = ((normalizedSignals.records || []).slice(0, 6)).map(item =>
+        '<div class="feed-item"><time>' + esc(item.signal_id || '') + '</time><div class="feed-main"><strong>' + esc(item.platform_id || '') + ' / ' + esc(item.question_type || '') + ' / ' + esc(item.pain_category || '') + '</strong><span>Source: ' + esc(item.source_record_id || '') + ' / Format: ' + esc(item.content_format || '') + ' / Language: ' + esc(item.language || '') + ' / Region: ' + esc(item.region || '') + '</span><span>Engagement: likes ' + esc((item.normalized_engagement || {}).likes || 0) + ' / comments ' + esc((item.normalized_engagement || {}).comments || 0) + ' / shares ' + esc((item.normalized_engagement || {}).shares || 0) + ' / saves ' + esc((item.normalized_engagement || {}).saves || 0) + ' / views ' + esc((item.normalized_engagement || {}).views || 0) + ' / author thanks ' + esc((item.normalized_engagement || {}).author_thanks || 0) + ' / reply depth ' + esc((item.normalized_engagement || {}).reply_depth || 0) + ' / reposts ' + esc((item.normalized_engagement || {}).reposts || 0) + '</span><span>Scores: evidence_strength ' + esc((item.quality_scores || {}).evidence_strength || 0) + ' / duplication_score ' + esc((item.quality_scores || {}).duplication_score || 0) + ' / engagement_strength ' + esc((item.quality_scores || {}).engagement_strength || 0) + ' / relevance_score ' + esc((item.quality_scores || {}).relevance_score || 0) + ' / mobility_relevance ' + esc((item.quality_scores || {}).mobility_relevance || 0) + ' / risk_score ' + esc((item.quality_scores || {}).risk_score || 0) + ' / confidence_score ' + esc((item.quality_scores || {}).confidence_score || 0) + '</span><span>Noise: spam ' + esc((item.noise_filter || {}).spam || false) + ' / ads ' + esc((item.noise_filter || {}).ads || false) + ' / bot_like_content ' + esc((item.noise_filter || {}).bot_like_content || false) + ' / off_topic_content ' + esc((item.noise_filter || {}).off_topic_content || false) + ' / unsafe_personal_data ' + esc((item.noise_filter || {}).unsafe_personal_data || false) + ' / unverifiable_claims ' + esc((item.noise_filter || {}).unverifiable_claims || false) + ' / status ' + esc((item.noise_filter || {}).noise_status || '') + '</span><span>Training: ' + esc(item.training_allowed || false) + ' / Promotion: ' + esc(item.promotion_allowed || false) + ' / Writeback: ' + esc(item.writeback_allowed || false) + ' / Contact: ' + esc(item.contact_user_allowed || false) + ' / Replayable: ' + esc(item.replayable || false) + ' / Auditable: ' + esc(item.auditable || false) + '</span></div><span class="badge ' + ((item.noise_filter || {}).unsafe_personal_data ? 'b-red' : ((item.noise_filter || {}).noise_status === 'monitor' ? 'b-amber' : 'b-cyan')) + '">' + esc((item.noise_filter || {}).noise_status || 'review') + '</span></div>'
+      );
+      const signalScoringRow = signalScoringPolicy.policy_id ? '<div class="feed-item"><time>SCORE</time><div class="feed-main"><strong>Signal Quality Scoring policy</strong><span>Fields: ' + esc(Object.keys(signalScoringPolicy.fields || {}).join(' / ')) + '</span><span>Classification: usable_for_review, monitor, unsafe_review_required, noise.</span><span>Blocked actions: training ' + esc((signalScoringPolicy.blocked_actions || {}).training_allowed || false) + ' / promotion ' + esc((signalScoringPolicy.blocked_actions || {}).promotion_allowed || false) + ' / writeback ' + esc((signalScoringPolicy.blocked_actions || {}).writeback_allowed || false) + ' / contact ' + esc((signalScoringPolicy.blocked_actions || {}).contact_user_allowed || false) + '</span></div><span class="badge b-cyan">quality</span></div>' : '';
+      const signalNoiseRow = signalNoiseReport.report_id ? '<div class="feed-item"><time>NOISE</time><div class="feed-main"><strong>Signal Noise Filter Report</strong><span>Flags: ' + esc(JSON.stringify(signalNoiseReport.flag_counts || {})) + '</span><span>Status: ' + esc(JSON.stringify(signalNoiseReport.status_counts || {})) + '</span><span>Unsafe record ids: ' + esc((signalNoiseReport.unsafe_record_ids || []).join(' / ')) + ' / Noise record ids: ' + esc((signalNoiseReport.noise_record_ids || []).join(' / ')) + '</span><span>Low-confidence signals confirmed demand: ' + esc(!(signalNoiseReport.low_confidence_not_confirmed_demand || false)) + ' / Training blocked: ' + esc(signalNoiseReport.unsafe_signals_blocked_from_training || false) + ' / Promotion blocked: ' + esc(signalNoiseReport.unsafe_signals_blocked_from_promotion || false) + ' / Writeback: ' + esc(signalNoiseReport.writeback_allowed || false) + ' / Contact: ' + esc(signalNoiseReport.contact_user_allowed || false) + '</span></div><span class="badge b-green">blocked</span></div>' : '';
+      const signalEvidenceRow = signalEvidence.evidence_id ? '<div class="feed-item"><time>SIGNAL-EVIDENCE</time><div class="feed-main"><strong>Social Signal Normalization evidence</strong><span>Records: ' + esc(signalEvidence.normalized_record_count || 0) + ' / Engagement normalized: ' + esc(signalEvidence.engagement_metrics_normalized || false) + ' / Content normalized: ' + esc(signalEvidence.content_signals_normalized || false) + ' / Quality scores: ' + esc(signalEvidence.quality_scores_generated || false) + ' / Unsafe filtering: ' + esc(signalEvidence.unsafe_filtering_active || false) + '</span><span>Training: ' + esc(signalEvidence.training_started || false) + ' / Promotion: ' + esc(signalEvidence.promotion_started || false) + ' / Writeback: ' + esc(signalEvidence.platform_writeback_called || false) + ' / Users contacted: ' + esc(signalEvidence.users_contacted || false) + '</span><span>Replayable: ' + esc(signalEvidence.all_records_replayable || false) + ' / Auditable: ' + esc(signalEvidence.all_records_auditable || false) + ' / Human review: ' + esc(signalEvidence.all_records_human_review_required || false) + ' / Next gate: ' + esc(signalEvidence.next_gate || '') + '</span></div><span class="badge b-green">audit</span></div>' : '';
+      el('runtime-real-data-access').innerHTML = (rdaContract.contract_id || qsPolicy.policy_id || dryRunContract.contract_id || sampleEvidence.evidence_id || signalEvidence.evidence_id ? signalOverview + signalPolicyRow + signalRows.join('') + signalScoringRow + signalNoiseRow + signalEvidenceRow + sampleOverview + samplePolicyRow + privacyFilterRow + sampleRows.join('') + sampleEvidenceRow + dryRunOverview + dryRunPlatformRows.join('') + permissionRows.join('') + dryRunSafetyRow + rdaOverview + rdaPlatformRows.join('') + rdaScopeRows.join('') + rdaSafetyRow + cvOverview + cvAuditRows.join('') + cvSafetyRow + qsOverview + qsSourceRows.join('') + qsContentRows.join('') + qsSafetyRow : '') || '<div class="feed-item"><time>WAIT</time><div class="feed-main"><strong>Real Data Controlled Access pending</strong><span>AGOS will define read-only platform authorization contracts before any real API access or training.</span></div><span class="badge b-amber">pending</span></div>';
       const locationHeatmapSummary = wr.locationHeatmapSummary || {};
       el('runtime-location-demand-heatmap').innerHTML = (wr.locationHeatmap || []).map(item =>
         '<div class="feed-item"><time>' + esc(item.location_id || '') + '</time><div class="feed-main"><strong>' + esc(item.location_name || '') + ' / ' + esc(item.location_type || '') + ' / heat ' + esc(item.demand_heat_score || 0) + '</strong><span>Hot reason: ' + esc(item.hot_reason || '') + '</span><span>Related seasons: ' + esc((item.related_seasons || []).join(' / ')) + '</span><span>Mobility demand: ' + esc((item.mobility_demand_types || []).join(' / ')) + '</span><span>Pain points: ' + esc((item.common_pain_points || []).join(' / ')) + '</span><span>Risk score: crowd ' + esc(item.crowd_risk_score || 0) + ' / transfer ' + esc(item.transfer_complexity_score || 0) + ' / luggage ' + esc(item.luggage_difficulty_score || 0) + '</span><span>Driver/vehicle prep: ' + esc(item.driver_vehicle_preparation_required || false) + ' / Real-time crowd data: ' + esc(item.real_time_crowd_data_connected || false) + ' / GPS dispatch: ' + esc(locationHeatmapSummary.gps_dispatch_enabled || false) + ' / Write ops: ' + esc(item.write_operations_enabled || false) + '</span></div><span class="badge ' + ((item.demand_heat_score || 0) >= 80 ? 'b-green' : (item.demand_heat_score || 0) >= 65 ? 'b-amber' : 'b-cyan') + '">' + esc(item.region || 'location') + '</span></div>'

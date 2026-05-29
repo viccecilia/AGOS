@@ -1,0 +1,31 @@
+{
+  "contact_user_allowed": false,
+  "created_at": "2026-05-29T06:44:06+00:00",
+  "flag_counts": {
+    "ads": 0,
+    "bot_like_content": 1,
+    "off_topic_content": 0,
+    "spam": 0,
+    "unsafe_personal_data": 4,
+    "unverifiable_claims": 1
+  },
+  "low_confidence_not_confirmed_demand": true,
+  "noise_record_ids": [],
+  "record_count": 6,
+  "report_id": "SIGNAL_NOISE_FILTER_REPORT",
+  "round_id": "ROUND-REALDATA-006_SOCIAL_SIGNAL_NORMALIZATION",
+  "status_counts": {
+    "monitor": 1,
+    "unsafe_review_required": 4,
+    "usable_for_review": 1
+  },
+  "unsafe_record_ids": [
+    "SIGNAL-001",
+    "SIGNAL-003",
+    "SIGNAL-005",
+    "SIGNAL-006"
+  ],
+  "unsafe_signals_blocked_from_promotion": true,
+  "unsafe_signals_blocked_from_training": true,
+  "writeback_allowed": false
+}
