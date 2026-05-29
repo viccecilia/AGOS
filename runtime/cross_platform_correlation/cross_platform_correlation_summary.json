@@ -1,0 +1,13 @@
+{
+  "all_correlations_human_review_required": true,
+  "auto_publish_allowed": false,
+  "auto_reply_allowed": false,
+  "correlation_count": 8,
+  "cross_platform_correlation_ready": true,
+  "high_risk_correlation_count": 1,
+  "next_recommendation": "Use reviewed correlations for Intelligence Ranking and Noise Filtering; keep publishing blocked.",
+  "publish_task_created": false,
+  "source_platform_count": 8,
+  "target_platform_count": 8,
+  "write_api_allowed": false
+}

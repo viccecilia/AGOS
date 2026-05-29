@@ -26,6 +26,7 @@ from services.autonomous_growth_preparation_gate import AutonomousGrowthPreparat
 from services.collection_compliance_guard import CollectionComplianceGuard
 from services.controlled_api_collection_gate import ControlledAPICollectionGate
 from services.controlled_external_interaction_gate import ControlledExternalInteractionGate
+from services.cross_platform_correlation_expansion import CrossPlatformCorrelationExpansion
 from services.cross_platform_promotion_plan_engine import CrossPlatformPromotionPlanEngine
 from services.cross_platform_expansion_engine import CrossPlatformExpansionEngine
 from services.demand_to_action_strategy_engine import DemandToActionStrategyEngine
@@ -259,6 +260,11 @@ class RuntimeUIBridge:
             global_batch_intelligence.get("globalIntelligenceRecords", []),
             global_pain_clusters.get("globalPainClusters", []),
             platform_pain_intelligence.get("platformPainProfiles", []),
+        )
+        cross_platform_correlation = CrossPlatformCorrelationExpansion().build(
+            platform_pain_intelligence.get("platformPainProfiles", []),
+            market_intelligence_matrix.get("marketIntelligenceMatrix", []),
+            global_pain_clusters.get("globalPainClusters", []),
         )
         batch_scout_runtime = BatchScoutRuntime().run()
         batch_topic_clustering = BatchTopicClustering().cluster(batch_scout_runtime.get("batchAnalysis", []))
@@ -696,6 +702,11 @@ class RuntimeUIBridge:
             "marketPlatformFit": market_intelligence_matrix.get("marketPlatformFit", []),
             "marketPainRanking": market_intelligence_matrix.get("marketPainRanking", []),
             "marketIntelligenceSummary": market_intelligence_matrix.get("marketIntelligenceSummary", {}),
+            "crossPlatformCorrelationExpansion": cross_platform_correlation,
+            "crossPlatformCorrelations": cross_platform_correlation.get("crossPlatformCorrelations", []),
+            "platformExpansionMap": cross_platform_correlation.get("platformExpansionMap", []),
+            "correlationRiskReview": cross_platform_correlation.get("correlationRiskReview", {}),
+            "crossPlatformCorrelationSummary": cross_platform_correlation.get("crossPlatformCorrelationSummary", {}),
             "locationDemandHeatmap": location_demand_heatmap,
             "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),

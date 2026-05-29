@@ -1,0 +1,162 @@
+[
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "content_expansion_fit": "Turn detailed pain question into short hook, explainer, and search FAQ.",
+    "correlation_id": "CROSS-PLATFORM-CORR-001",
+    "human_review_required": true,
+    "market": "US",
+    "publish_task_created": false,
+    "risk_level": "high",
+    "source_cluster_id": "GLOBAL-PAIN-001",
+    "source_pain": "late arrival uncertainty",
+    "source_platform": "Reddit",
+    "target_platforms": [
+      "TikTok",
+      "YouTube",
+      "SEO / Search"
+    ],
+    "why_correlated": "Reddit captures 'late arrival uncertainty' in US; the same pain can be reframed for TikTok, YouTube, SEO / Search with platform-specific format and safer CTA.",
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "content_expansion_fit": "Turn trend hook into search topic, saveable carousel, and quick signal post.",
+    "correlation_id": "CROSS-PLATFORM-CORR-002",
+    "human_review_required": true,
+    "market": "Korea",
+    "publish_task_created": false,
+    "risk_level": "medium",
+    "source_cluster_id": "GLOBAL-PAIN-001",
+    "source_pain": "kids and luggage burden",
+    "source_platform": "TikTok",
+    "target_platforms": [
+      "SEO / Search",
+      "Instagram",
+      "X"
+    ],
+    "why_correlated": "TikTok captures 'kids and luggage burden' in Korea; the same pain can be reframed for SEO / Search, Instagram, X with platform-specific format and safer CTA.",
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "content_expansion_fit": "Turn comment pain into short post, FAQ section, and community discussion.",
+    "correlation_id": "CROSS-PLATFORM-CORR-003",
+    "human_review_required": true,
+    "market": "Taiwan",
+    "publish_task_created": false,
+    "risk_level": "medium",
+    "source_cluster_id": "GLOBAL-PAIN-001",
+    "source_pain": "crowded venue exit",
+    "source_platform": "YouTube",
+    "target_platforms": [
+      "X",
+      "SEO / Search",
+      "Threads"
+    ],
+    "why_correlated": "YouTube captures 'crowded venue exit' in Taiwan; the same pain can be reframed for X, SEO / Search, Threads with platform-specific format and safer CTA.",
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "content_expansion_fit": "Turn note-style experience into carousel, short video angle, and search guide.",
+    "correlation_id": "CROSS-PLATFORM-CORR-004",
+    "human_review_required": true,
+    "market": "China outbound",
+    "publish_task_created": false,
+    "risk_level": "medium",
+    "source_cluster_id": "GLOBAL-PAIN-001",
+    "source_pain": "crowded venue exit",
+    "source_platform": "Xiaohongshu",
+    "target_platforms": [
+      "Instagram",
+      "TikTok",
+      "SEO / Search"
+    ],
+    "why_correlated": "Xiaohongshu captures 'crowded venue exit' in China outbound; the same pain can be reframed for Instagram, TikTok, SEO / Search with platform-specific format and safer CTA.",
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "content_expansion_fit": "Turn search intent into question-led reply, explainer, and discussion starter.",
+    "correlation_id": "CROSS-PLATFORM-CORR-005",
+    "human_review_required": true,
+    "market": "Taiwan",
+    "publish_task_created": false,
+    "risk_level": "medium",
+    "source_cluster_id": "GLOBAL-PAIN-001",
+    "source_pain": "kids and luggage burden",
+    "source_platform": "SEO / Search",
+    "target_platforms": [
+      "Reddit",
+      "YouTube",
+      "Threads"
+    ],
+    "why_correlated": "SEO / Search captures 'kids and luggage burden' in Taiwan; the same pain can be reframed for Reddit, YouTube, Threads with platform-specific format and safer CTA.",
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "content_expansion_fit": "Turn saveable visual guide into note, short hook, and route explainer.",
+    "correlation_id": "CROSS-PLATFORM-CORR-006",
+    "human_review_required": true,
+    "market": "Taiwan",
+    "publish_task_created": false,
+    "risk_level": "medium",
+    "source_cluster_id": "GLOBAL-PAIN-001",
+    "source_pain": "crowd congestion",
+    "source_platform": "Instagram",
+    "target_platforms": [
+      "Xiaohongshu",
+      "TikTok",
+      "YouTube"
+    ],
+    "why_correlated": "Instagram captures 'crowd congestion' in Taiwan; the same pain can be reframed for Xiaohongshu, TikTok, YouTube with platform-specific format and safer CTA.",
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "content_expansion_fit": "Turn quick signal into discussion, community post, and search article idea.",
+    "correlation_id": "CROSS-PLATFORM-CORR-007",
+    "human_review_required": true,
+    "market": "Korea",
+    "publish_task_created": false,
+    "risk_level": "medium",
+    "source_cluster_id": "GLOBAL-PAIN-003",
+    "source_pain": "confusing station transfers",
+    "source_platform": "X",
+    "target_platforms": [
+      "Reddit",
+      "Threads",
+      "SEO / Search"
+    ],
+    "why_correlated": "X captures 'confusing station transfers' in Korea; the same pain can be reframed for Reddit, Threads, SEO / Search with platform-specific format and safer CTA.",
+    "write_api_allowed": false
+  },
+  {
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "content_expansion_fit": "Turn casual discussion into carousel, concise post, and detailed question.",
+    "correlation_id": "CROSS-PLATFORM-CORR-008",
+    "human_review_required": true,
+    "market": "Southeast Asia",
+    "publish_task_created": false,
+    "risk_level": "low",
+    "source_cluster_id": "GLOBAL-PAIN-001",
+    "source_pain": "late arrival uncertainty",
+    "source_platform": "Threads",
+    "target_platforms": [
+      "Instagram",
+      "X",
+      "Reddit"
+    ],
+    "why_correlated": "Threads captures 'late arrival uncertainty' in Southeast Asia; the same pain can be reframed for Instagram, X, Reddit with platform-specific format and safer CTA.",
+    "write_api_allowed": false
+  }
+]

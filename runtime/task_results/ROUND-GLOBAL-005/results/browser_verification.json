@@ -1,0 +1,23 @@
+{
+  "round_id": "ROUND-GLOBAL-005",
+  "url": "http://localhost:8765/project_control_center.html?runtime_ui=1&cache_bust=global005#war-room-growth",
+  "version": "0.1.137",
+  "currentRound": "ROUND-GLOBAL-005 / AGOS_CROSS_PLATFORM_CORRELATION_EXPANSION",
+  "panelExists": true,
+  "panelTextIncludesRedditToTikTok": true,
+  "panelTextIncludesSEO": true,
+  "panelTextIncludesPublishTaskFalse": true,
+  "panelTextIncludesBlocked": true,
+  "correlationCount": 8,
+  "sourcePlatformCount": 8,
+  "targetPlatformCount": 8,
+  "highRiskCorrelationCount": 1,
+  "allCorrelationsHumanReviewRequired": true,
+  "autoPublishAllowed": false,
+  "autoReplyAllowed": false,
+  "publishTaskCreated": false,
+  "writeApiAllowed": false,
+  "highRiskCorrelationIds": [
+    "CROSS-PLATFORM-CORR-001"
+  ]
+}

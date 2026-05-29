@@ -1,0 +1,13 @@
+{
+  "all_correlations_human_review_required": true,
+  "auto_publish_allowed": false,
+  "auto_reply_allowed": false,
+  "high_risk_correlation_count": 1,
+  "high_risk_correlation_ids": [
+    "CROSS-PLATFORM-CORR-001"
+  ],
+  "human_review_required": true,
+  "publish_task_created": false,
+  "risk_note": "High-risk correlations are expansion ideas only and must not become publish tasks without explicit human review.",
+  "write_api_allowed": false
+}
