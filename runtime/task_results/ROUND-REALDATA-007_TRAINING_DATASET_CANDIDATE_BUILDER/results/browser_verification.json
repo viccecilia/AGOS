@@ -1,0 +1,14 @@
+{
+  "url": "http://127.0.0.1:8765/project_control_center.html?runtime_ui=1&cache_bust=realdata007#war-room-growth",
+  "title": "AGOS Project Control Center",
+  "hasRound": true,
+  "hasPanel": true,
+  "hasCandidate": true,
+  "hasGrouping": true,
+  "hasDuplication": true,
+  "hasReplay": true,
+  "hasExclusions": true,
+  "hasBlocked": true,
+  "verified_at": "2026-05-29",
+  "notes": "Control Center renders Training Dataset Candidate with TDC records, grouping dimensions, duplication and novelty report, replay manifest, unsafe exclusions, and blocked Training/Provider/Memory writeback states."
+}

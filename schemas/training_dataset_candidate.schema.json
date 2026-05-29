@@ -1,0 +1,163 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AGOS Training Dataset Candidate Manifest",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "manifest_id",
+    "round_id",
+    "dataset_version",
+    "source_normalized_sample_id",
+    "candidate_record_count",
+    "excluded_record_count",
+    "grouping_dimensions",
+    "groups",
+    "candidate_records",
+    "excluded_records",
+    "stage_transition_signal",
+    "dataset_candidate_only",
+    "training_allowed",
+    "replayable",
+    "auditable"
+  ],
+  "properties": {
+    "manifest_id": { "const": "TRAINING_DATASET_CANDIDATE_MANIFEST" },
+    "round_id": { "const": "ROUND-REALDATA-007_TRAINING_DATASET_CANDIDATE_BUILDER" },
+    "dataset_version": { "type": "string" },
+    "source_normalized_sample_id": { "type": "string" },
+    "source_record_count": { "type": "integer", "minimum": 0 },
+    "candidate_record_count": { "type": "integer", "minimum": 0 },
+    "excluded_record_count": { "type": "integer", "minimum": 0 },
+    "grouping_dimensions": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "language",
+          "region",
+          "platform",
+          "content_type",
+          "pain_category",
+          "use_case_category",
+          "mobility_relevance",
+          "confidence_tier"
+        ]
+      },
+      "minItems": 8
+    },
+    "groups": { "type": "object" },
+    "candidate_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "candidate_id",
+          "source_signal_id",
+          "source_record_id",
+          "language",
+          "region",
+          "platform",
+          "content_type",
+          "pain_category",
+          "use_case_category",
+          "mobility_relevance",
+          "confidence_tier",
+          "lineage",
+          "candidate_data_only",
+          "human_review_required",
+          "training_allowed",
+          "replayable",
+          "auditable"
+        ],
+        "properties": {
+          "candidate_id": { "type": "string", "pattern": "^TDC-[0-9]{3,}$" },
+          "source_signal_id": { "type": "string" },
+          "source_record_id": { "type": "string" },
+          "language": { "type": "string" },
+          "region": { "type": "string" },
+          "platform": { "type": "string" },
+          "content_type": { "type": "string" },
+          "pain_category": { "type": "string" },
+          "use_case_category": { "type": "string" },
+          "mobility_relevance": {
+            "enum": [
+              "high_mobility_relevance",
+              "medium_mobility_relevance",
+              "low_mobility_relevance"
+            ]
+          },
+          "confidence_tier": {
+            "enum": [
+              "high_confidence",
+              "medium_confidence",
+              "low_confidence"
+            ]
+          },
+          "lineage": {
+            "type": "object",
+            "required": ["sample_data_only", "lineage_complete"],
+            "properties": {
+              "sample_data_only": { "const": true },
+              "lineage_complete": { "const": true }
+            }
+          },
+          "candidate_data_only": { "const": true },
+          "human_review_required": { "const": true },
+          "training_allowed": { "const": false },
+          "provider_execution_allowed": { "const": false },
+          "memory_writeback_allowed": { "const": false },
+          "promotion_allowed": { "const": false },
+          "writeback_allowed": { "const": false },
+          "contact_user_allowed": { "const": false },
+          "replayable": { "const": true },
+          "auditable": { "const": true }
+        }
+      }
+    },
+    "excluded_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_signal_id", "excluded_data_reason", "training_allowed"],
+        "properties": {
+          "source_signal_id": { "type": "string" },
+          "excluded_data_reason": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 1
+          },
+          "training_allowed": { "const": false }
+        }
+      }
+    },
+    "stage_transition_signal": {
+      "type": "object",
+      "required": [
+        "repeated_content_ratio",
+        "new_demand_ratio",
+        "high_value_pain_cluster_count",
+        "unresolved_category_count",
+        "confidence_threshold_met",
+        "sample_coverage_threshold_met",
+        "training_ready",
+        "stage_transition_allowed"
+      ],
+      "properties": {
+        "repeated_content_ratio": { "type": "number", "minimum": 0, "maximum": 1 },
+        "new_demand_ratio": { "type": "number", "minimum": 0, "maximum": 1 },
+        "high_value_pain_cluster_count": { "type": "integer", "minimum": 0 },
+        "unresolved_category_count": { "type": "integer", "minimum": 0 },
+        "confidence_threshold_met": { "type": "boolean" },
+        "sample_coverage_threshold_met": { "type": "boolean" },
+        "training_ready": { "const": false },
+        "stage_transition_allowed": { "const": false }
+      }
+    },
+    "dataset_candidate_only": { "const": true },
+    "training_allowed": { "const": false },
+    "provider_execution_allowed": { "const": false },
+    "memory_writeback_allowed": { "const": false },
+    "replayable": { "const": true },
+    "auditable": { "const": true }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "created_at": "2026-05-29T06:52:58+00:00",
+  "dataset_version": "training-candidate-v0.1.0",
+  "duplication_logic": [
+    "exact duplicate",
+    "semantic duplicate",
+    "same question different language",
+    "same pain different platform",
+    "repeated demand cluster",
+    "novelty score"
+  ],
+  "grouping_dimensions": [
+    "language",
+    "region",
+    "platform",
+    "content_type",
+    "pain_category",
+    "use_case_category",
+    "mobility_relevance",
+    "confidence_tier"
+  ],
+  "input_requirements": {
+    "auditable_required": true,
+    "human_review_required": true,
+    "lineage_required": true,
+    "normalized_social_signal": true,
+    "privacy_filtered": true,
+    "replayable_required": true
+  },
+  "policy_id": "TRAINING_DATASET_CANDIDATE_POLICY",
+  "round_id": "ROUND-REALDATA-007_TRAINING_DATASET_CANDIDATE_BUILDER",
+  "safety_boundary": {
+    "contact_user_allowed": false,
+    "dataset_candidate_only": true,
+    "memory_writeback_allowed": false,
+    "private_messages_allowed": false,
+    "promotion_allowed": false,
+    "provider_execution_allowed": false,
+    "sensitive_pii_allowed": false,
+    "training_allowed": false,
+    "writeback_allowed": false
+  },
+  "stage_transition_signals": [
+    "repeated content ratio",
+    "new demand ratio",
+    "high-value pain cluster count",
+    "unresolved category count",
+    "confidence threshold",
+    "sample coverage threshold"
+  ]
+}

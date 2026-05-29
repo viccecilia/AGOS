@@ -1,0 +1,360 @@
+{
+  "auditable": true,
+  "candidate_record_count": 2,
+  "candidate_records": [
+    {
+      "auditable": true,
+      "candidate_data_only": true,
+      "candidate_id": "TDC-002",
+      "confidence_tier": "high_confidence",
+      "contact_user_allowed": false,
+      "content_format": "public_post",
+      "content_type": "confusion_problem_question",
+      "created_at": "2026-05-29T06:52:58+00:00",
+      "human_review_required": true,
+      "language": "English",
+      "lineage": {
+        "collection_time": "2026-05-29T06:34:27+00:00",
+        "lineage_complete": true,
+        "privacy_review_status": "privacy_filtered",
+        "query_id": "tokyo_transport_confusion",
+        "record_hash": "8ec674b874a7735d",
+        "sample_data_only": true,
+        "source_reference": "tt_public_ref_002",
+        "source_type": "public_post",
+        "source_url_allowed": false
+      },
+      "memory_writeback_allowed": false,
+      "mobility_relevance": "high_mobility_relevance",
+      "noise_status": "monitor",
+      "pain_category": "public_transport_anxiety",
+      "platform": "tiktok",
+      "promotion_allowed": false,
+      "provider_execution_allowed": false,
+      "quality_scores": {
+        "confidence_score": 76,
+        "duplication_score": 10,
+        "engagement_strength": 100,
+        "evidence_strength": 65,
+        "mobility_relevance": 85,
+        "relevance_score": 80,
+        "risk_score": 25,
+        "total_quality_score": 80
+      },
+      "region": "region unknown",
+      "replayable": true,
+      "source_record_id": "SAMPLE-002",
+      "source_sample_data_only": true,
+      "source_signal_id": "SIGNAL-002",
+      "training_allowed": false,
+      "use_case_category": "transport_anxiety_training_candidate",
+      "writeback_allowed": false
+    },
+    {
+      "auditable": true,
+      "candidate_data_only": true,
+      "candidate_id": "TDC-004",
+      "confidence_tier": "medium_confidence",
+      "contact_user_allowed": false,
+      "content_format": "public_comment",
+      "content_type": "transport_disruption_question",
+      "created_at": "2026-05-29T06:52:58+00:00",
+      "human_review_required": true,
+      "language": "Korean",
+      "lineage": {
+        "collection_time": "2026-05-29T06:34:27+00:00",
+        "lineage_complete": true,
+        "privacy_review_status": "privacy_filtered",
+        "query_id": "family_trip_transfer",
+        "record_hash": "39b5dea1a9eb6e06",
+        "sample_data_only": true,
+        "source_reference": "yt_public_ref_004",
+        "source_type": "public_comment",
+        "source_url_allowed": false
+      },
+      "memory_writeback_allowed": false,
+      "mobility_relevance": "high_mobility_relevance",
+      "noise_status": "usable_for_review",
+      "pain_category": "airport_transfer_anxiety",
+      "platform": "youtube",
+      "promotion_allowed": false,
+      "provider_execution_allowed": false,
+      "quality_scores": {
+        "confidence_score": 61,
+        "duplication_score": 10,
+        "engagement_strength": 9,
+        "evidence_strength": 80,
+        "mobility_relevance": 85,
+        "relevance_score": 80,
+        "risk_score": 10,
+        "total_quality_score": 75
+      },
+      "region": "region inferred: Korea",
+      "replayable": true,
+      "source_record_id": "SAMPLE-004",
+      "source_sample_data_only": true,
+      "source_signal_id": "SIGNAL-004",
+      "training_allowed": false,
+      "use_case_category": "airport_transfer_training_candidate",
+      "writeback_allowed": false
+    }
+  ],
+  "created_at": "2026-05-29T06:52:58+00:00",
+  "dataset_candidate_only": true,
+  "dataset_version": "training-candidate-v0.1.0",
+  "excluded_record_count": 4,
+  "excluded_records": [
+    {
+      "auditable": true,
+      "excluded_data_reason": [
+        "unsafe personal data or privacy redaction"
+      ],
+      "language": "English",
+      "lineage": {
+        "collection_time": "2026-05-29T06:34:27+00:00",
+        "lineage_complete": true,
+        "privacy_review_status": "privacy_filtered",
+        "query_id": "japan_airport_transfer",
+        "record_hash": "c00749b81a505d6c",
+        "sample_data_only": true,
+        "source_reference": "yt_public_ref_001",
+        "source_type": "public_comment",
+        "source_url_allowed": false
+      },
+      "pain_category": "airport_transfer_anxiety",
+      "platform": "youtube",
+      "replayable": true,
+      "source_record_id": "SAMPLE-001",
+      "source_signal_id": "SIGNAL-001",
+      "training_allowed": false
+    },
+    {
+      "auditable": true,
+      "excluded_data_reason": [
+        "unsafe personal data or privacy redaction"
+      ],
+      "language": "Chinese",
+      "lineage": {
+        "collection_time": "2026-05-29T06:34:27+00:00",
+        "lineage_complete": true,
+        "privacy_review_status": "privacy_filtered",
+        "query_id": "kyoto_visit_food",
+        "record_hash": "7e6ac12b456d0424",
+        "sample_data_only": true,
+        "source_reference": "ig_public_ref_003",
+        "source_type": "public_comment",
+        "source_url_allowed": false
+      },
+      "pain_category": "food_visit_recommendation_need",
+      "platform": "instagram",
+      "replayable": true,
+      "source_record_id": "SAMPLE-003",
+      "source_signal_id": "SIGNAL-003",
+      "training_allowed": false
+    },
+    {
+      "auditable": true,
+      "excluded_data_reason": [
+        "unsafe personal data or privacy redaction"
+      ],
+      "language": "Southeast Asia languages",
+      "lineage": {
+        "collection_time": "2026-05-29T06:34:27+00:00",
+        "lineage_complete": true,
+        "privacy_review_status": "privacy_filtered",
+        "query_id": "osaka_food_visit",
+        "record_hash": "022db42e429b704d",
+        "sample_data_only": true,
+        "source_reference": "tt_public_ref_005",
+        "source_type": "public_comment",
+        "source_url_allowed": false
+      },
+      "pain_category": "airport_transfer_anxiety",
+      "platform": "tiktok",
+      "replayable": true,
+      "source_record_id": "SAMPLE-005",
+      "source_signal_id": "SIGNAL-005",
+      "training_allowed": false
+    },
+    {
+      "auditable": true,
+      "excluded_data_reason": [
+        "unsafe personal data or privacy redaction",
+        "spam, ad, or bot-like content"
+      ],
+      "language": "Japanese",
+      "lineage": {
+        "collection_time": "2026-05-29T06:34:27+00:00",
+        "lineage_complete": true,
+        "privacy_review_status": "excluded_from_training",
+        "query_id": "minor_school_trip",
+        "record_hash": "63a97d2158378176",
+        "sample_data_only": true,
+        "source_reference": "yt_public_ref_007",
+        "source_type": "public_comment",
+        "source_url_allowed": false
+      },
+      "pain_category": "public_transport_anxiety",
+      "platform": "youtube",
+      "replayable": true,
+      "source_record_id": "SAMPLE-007",
+      "source_signal_id": "SIGNAL-006",
+      "training_allowed": false
+    }
+  ],
+  "grouping_dimensions": [
+    "language",
+    "region",
+    "platform",
+    "content_type",
+    "pain_category",
+    "use_case_category",
+    "mobility_relevance",
+    "confidence_tier"
+  ],
+  "groups": {
+    "confidence_tier": [
+      {
+        "candidate_ids": [
+          "TDC-002"
+        ],
+        "count": 1,
+        "value": "high_confidence"
+      },
+      {
+        "candidate_ids": [
+          "TDC-004"
+        ],
+        "count": 1,
+        "value": "medium_confidence"
+      }
+    ],
+    "content_type": [
+      {
+        "candidate_ids": [
+          "TDC-002"
+        ],
+        "count": 1,
+        "value": "confusion_problem_question"
+      },
+      {
+        "candidate_ids": [
+          "TDC-004"
+        ],
+        "count": 1,
+        "value": "transport_disruption_question"
+      }
+    ],
+    "language": [
+      {
+        "candidate_ids": [
+          "TDC-002"
+        ],
+        "count": 1,
+        "value": "English"
+      },
+      {
+        "candidate_ids": [
+          "TDC-004"
+        ],
+        "count": 1,
+        "value": "Korean"
+      }
+    ],
+    "mobility_relevance": [
+      {
+        "candidate_ids": [
+          "TDC-002",
+          "TDC-004"
+        ],
+        "count": 2,
+        "value": "high_mobility_relevance"
+      }
+    ],
+    "pain_category": [
+      {
+        "candidate_ids": [
+          "TDC-004"
+        ],
+        "count": 1,
+        "value": "airport_transfer_anxiety"
+      },
+      {
+        "candidate_ids": [
+          "TDC-002"
+        ],
+        "count": 1,
+        "value": "public_transport_anxiety"
+      }
+    ],
+    "platform": [
+      {
+        "candidate_ids": [
+          "TDC-002"
+        ],
+        "count": 1,
+        "value": "tiktok"
+      },
+      {
+        "candidate_ids": [
+          "TDC-004"
+        ],
+        "count": 1,
+        "value": "youtube"
+      }
+    ],
+    "region": [
+      {
+        "candidate_ids": [
+          "TDC-004"
+        ],
+        "count": 1,
+        "value": "region inferred: Korea"
+      },
+      {
+        "candidate_ids": [
+          "TDC-002"
+        ],
+        "count": 1,
+        "value": "region unknown"
+      }
+    ],
+    "use_case_category": [
+      {
+        "candidate_ids": [
+          "TDC-004"
+        ],
+        "count": 1,
+        "value": "airport_transfer_training_candidate"
+      },
+      {
+        "candidate_ids": [
+          "TDC-002"
+        ],
+        "count": 1,
+        "value": "transport_anxiety_training_candidate"
+      }
+    ]
+  },
+  "manifest_id": "TRAINING_DATASET_CANDIDATE_MANIFEST",
+  "memory_writeback_allowed": false,
+  "provider_execution_allowed": false,
+  "replayable": true,
+  "round_id": "ROUND-REALDATA-007_TRAINING_DATASET_CANDIDATE_BUILDER",
+  "source_normalized_sample_id": "NORMALIZED_SOCIAL_SIGNAL_SAMPLE",
+  "source_record_count": 6,
+  "stage_transition_signal": {
+    "candidate_dataset_ready_for_review": true,
+    "confidence_threshold_met": true,
+    "excluded_record_count": 4,
+    "high_value_pain_cluster_count": 2,
+    "new_demand_ratio": 1.0,
+    "repeated_content_ratio": 0.0,
+    "sample_coverage_threshold_met": false,
+    "stage_transition_allowed": false,
+    "stage_transition_recommendation": "Review candidate coverage, exclusions, bias, and duplicate pressure before any supervised dry-run or training gate.",
+    "training_ready": false,
+    "unresolved_category_count": 0
+  },
+  "training_allowed": false
+}

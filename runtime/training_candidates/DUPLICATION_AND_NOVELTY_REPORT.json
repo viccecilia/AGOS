@@ -1,0 +1,28 @@
+{
+  "candidate_count": 2,
+  "created_at": "2026-05-29T06:52:58+00:00",
+  "exact_duplicates": [],
+  "new_demand_ratio": 1.0,
+  "novelty_scores": [
+    {
+      "candidate_id": "TDC-002",
+      "novelty_reason": "new demand candidate",
+      "novelty_score": 95,
+      "pain_category": "public_transport_anxiety"
+    },
+    {
+      "candidate_id": "TDC-004",
+      "novelty_reason": "new demand candidate",
+      "novelty_score": 90,
+      "pain_category": "airport_transfer_anxiety"
+    }
+  ],
+  "repeated_content_ratio": 0.0,
+  "repeated_demand_clusters": [],
+  "report_id": "DUPLICATION_AND_NOVELTY_REPORT",
+  "round_id": "ROUND-REALDATA-007_TRAINING_DATASET_CANDIDATE_BUILDER",
+  "same_pain_different_platform": [],
+  "same_question_different_language": [],
+  "semantic_duplicates": [],
+  "training_allowed": false
+}

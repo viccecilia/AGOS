@@ -1,0 +1,82 @@
+{
+  "auditable": true,
+  "created_at": "2026-05-29T06:52:58+00:00",
+  "dataset_version": "training-candidate-v0.1.0",
+  "excluded_data_reasons": [
+    {
+      "excluded_data_reason": [
+        "unsafe personal data or privacy redaction"
+      ],
+      "source_signal_id": "SIGNAL-001"
+    },
+    {
+      "excluded_data_reason": [
+        "unsafe personal data or privacy redaction"
+      ],
+      "source_signal_id": "SIGNAL-003"
+    },
+    {
+      "excluded_data_reason": [
+        "unsafe personal data or privacy redaction"
+      ],
+      "source_signal_id": "SIGNAL-005"
+    },
+    {
+      "excluded_data_reason": [
+        "unsafe personal data or privacy redaction",
+        "spam, ad, or bot-like content"
+      ],
+      "source_signal_id": "SIGNAL-006"
+    }
+  ],
+  "filter_version": "sample-ingestion-privacy-filter-v0.1.0",
+  "input_hash_reference": "SAMPLE_LINEAGE_MANIFEST",
+  "manifest_id": "DATASET_REPLAY_MANIFEST",
+  "memory_writeback_allowed": false,
+  "normalization_version": "social-signal-normalization-v0.1.0",
+  "provider_execution_allowed": false,
+  "replay_instructions": [
+    "Load NORMALIZED_SOCIAL_SIGNAL_SAMPLE.json.",
+    "Apply exclusion rules for unsafe personal data, spam, ads, bot-like, off-topic, missing lineage, non-replayable, and non-auditable records.",
+    "Regenerate grouping dimensions, duplication report, novelty scores, and stage transition signal.",
+    "Do not start training from this manifest.",
+    "Use this candidate only for audit, bias review, and supervised readiness review."
+  ],
+  "replayable": true,
+  "round_id": "ROUND-REALDATA-007_TRAINING_DATASET_CANDIDATE_BUILDER",
+  "source_lineage": [
+    {
+      "candidate_id": "TDC-002",
+      "lineage": {
+        "collection_time": "2026-05-29T06:34:27+00:00",
+        "lineage_complete": true,
+        "privacy_review_status": "privacy_filtered",
+        "query_id": "tokyo_transport_confusion",
+        "record_hash": "8ec674b874a7735d",
+        "sample_data_only": true,
+        "source_reference": "tt_public_ref_002",
+        "source_type": "public_post",
+        "source_url_allowed": false
+      },
+      "source_record_id": "SAMPLE-002",
+      "source_signal_id": "SIGNAL-002"
+    },
+    {
+      "candidate_id": "TDC-004",
+      "lineage": {
+        "collection_time": "2026-05-29T06:34:27+00:00",
+        "lineage_complete": true,
+        "privacy_review_status": "privacy_filtered",
+        "query_id": "family_trip_transfer",
+        "record_hash": "39b5dea1a9eb6e06",
+        "sample_data_only": true,
+        "source_reference": "yt_public_ref_004",
+        "source_type": "public_comment",
+        "source_url_allowed": false
+      },
+      "source_record_id": "SAMPLE-004",
+      "source_signal_id": "SIGNAL-004"
+    }
+  ],
+  "training_allowed": false
+}
