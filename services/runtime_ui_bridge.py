@@ -30,6 +30,7 @@ from services.cross_platform_correlation_expansion import CrossPlatformCorrelati
 from services.cross_platform_promotion_plan_engine import CrossPlatformPromotionPlanEngine
 from services.cross_platform_expansion_engine import CrossPlatformExpansionEngine
 from services.demand_to_action_strategy_engine import DemandToActionStrategyEngine
+from services.event_intelligence_engine import EventIntelligenceEngine
 from services.daily_question_import_engine import DailyQuestionImportEngine
 from services.daily_operations_report_engine import DailyOperationsReportEngine
 from services.failure_analysis_engine import FailureAnalysisEngine
@@ -287,6 +288,9 @@ class RuntimeUIBridge:
             market_intelligence_matrix.get("marketIntelligenceMatrix", []),
             seasonal_intelligence.get("seasonalIntelligence", []),
             intelligence_ranking.get("rankedIntelligence", []),
+        )
+        event_intelligence = EventIntelligenceEngine().build(
+            spatial_intelligence.get("spatialIntelligence", [])
         )
         batch_scout_runtime = BatchScoutRuntime().run()
         batch_topic_clustering = BatchTopicClustering().cluster(batch_scout_runtime.get("batchAnalysis", []))
@@ -745,6 +749,11 @@ class RuntimeUIBridge:
             "locationMarketHeatmap": spatial_intelligence.get("locationMarketHeatmap", []),
             "spatialDemandRanking": spatial_intelligence.get("spatialDemandRanking", []),
             "spatialIntelligenceSummary": spatial_intelligence.get("spatialIntelligenceSummary", {}),
+            "eventIntelligenceEngine": event_intelligence,
+            "eventIntelligence": event_intelligence.get("eventIntelligence", []),
+            "eventLocationHeatmap": event_intelligence.get("eventLocationHeatmap", []),
+            "eventMobilityDemand": event_intelligence.get("eventMobilityDemand", []),
+            "eventIntelligenceSummary": event_intelligence.get("eventIntelligenceSummary", {}),
             "locationDemandHeatmap": location_demand_heatmap,
             "locationHeatmap": location_demand_heatmap.get("locationHeatmap", []),
             "locationDemandSignals": location_demand_heatmap.get("locationDemandSignals", []),

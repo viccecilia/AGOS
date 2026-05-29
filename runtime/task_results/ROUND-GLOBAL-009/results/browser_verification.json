@@ -1,0 +1,17 @@
+{
+  "version": "0.1.141",
+  "currentRound": "ROUND-GLOBAL-009 / AGOS_EVENT_INTELLIGENCE_ENGINE",
+  "panelExists": true,
+  "panelHasEvent": true,
+  "panelHasSampleOnly": true,
+  "panelHasMerchantFalse": true,
+  "panelHasDriverFalse": true,
+  "eventCount": 9,
+  "eventTypeCount": 9,
+  "locationCount": 8,
+  "sampleEventOnly": true,
+  "realEventsConfirmed": false,
+  "merchantContactAllowed": false,
+  "driverContactAllowed": false,
+  "writeApiAllowed": false
+}

@@ -1,0 +1,99 @@
+{
+  "all_items_human_review_required": true,
+  "auto_driver_contact_allowed": false,
+  "auto_merchant_contact_allowed": false,
+  "auto_publish_allowed": false,
+  "auto_reply_allowed": false,
+  "event_count": 9,
+  "event_happened_marked_true": false,
+  "event_intelligence_ready": true,
+  "event_type_count": 9,
+  "gps_dispatch_enabled": false,
+  "heatmap_rows": 9,
+  "location_count": 8,
+  "market_count": 5,
+  "mobility_demand_count": 16,
+  "next_recommendation": "Use reviewed event intelligence as input for Mobility Intelligence Engine; verify official event dates before any operational action.",
+  "real_events_confirmed": false,
+  "sample_event_only": true,
+  "supported_event_types": [
+    "concert",
+    "sports event",
+    "exhibition",
+    "conference",
+    "festival",
+    "race",
+    "product launch",
+    "school holiday",
+    "public holiday"
+  ],
+  "top_event_pressure": [
+    {
+      "confidence_score": 60,
+      "event_id": "EVENT-SUZUKA-RACE-WEEKEND",
+      "event_name": "Suzuka Race Weekend",
+      "event_type": "race",
+      "expected_crowd_pressure": 100,
+      "human_review_required": true,
+      "location": "Suzuka Circuit",
+      "market": "US",
+      "sample_event_only": true
+    },
+    {
+      "confidence_score": 65,
+      "event_id": "EVENT-KYOTO-AUTUMN-FESTIVAL",
+      "event_name": "Kyoto Autumn Festival Cluster",
+      "event_type": "festival",
+      "expected_crowd_pressure": 100,
+      "human_review_required": true,
+      "location": "Kyoto",
+      "market": "Taiwan",
+      "sample_event_only": true
+    },
+    {
+      "confidence_score": 65,
+      "event_id": "EVENT-TOKYO-CONCERT-NIGHT",
+      "event_name": "Tokyo Concert Night Sample",
+      "event_type": "concert",
+      "expected_crowd_pressure": 99,
+      "human_review_required": true,
+      "location": "Tokyo",
+      "market": "US",
+      "sample_event_only": true
+    },
+    {
+      "confidence_score": 69,
+      "event_id": "EVENT-TOKYO-BUSINESS-CONFERENCE",
+      "event_name": "Tokyo Business Conference Arrival",
+      "event_type": "conference",
+      "expected_crowd_pressure": 97,
+      "human_review_required": true,
+      "location": "Tokyo",
+      "market": "Europe",
+      "sample_event_only": true
+    },
+    {
+      "confidence_score": 59,
+      "event_id": "EVENT-GOLDEN-WEEK-PUBLIC-HOLIDAY",
+      "event_name": "Golden Week Public Holiday Surge",
+      "event_type": "public holiday",
+      "expected_crowd_pressure": 93,
+      "human_review_required": true,
+      "location": "Osaka",
+      "market": "Korea",
+      "sample_event_only": true
+    },
+    {
+      "confidence_score": 65,
+      "event_id": "EVENT-TOKYO-BIG-SIGHT-EXPO",
+      "event_name": "Tokyo Big Sight Trade Expo",
+      "event_type": "exhibition",
+      "expected_crowd_pressure": 91,
+      "human_review_required": true,
+      "location": "Tokyo Big Sight",
+      "market": "Taiwan",
+      "sample_event_only": true
+    }
+  ],
+  "write_api_allowed": false
+}

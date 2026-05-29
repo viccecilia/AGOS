@@ -1,0 +1,339 @@
+[
+  {
+    "auto_driver_contact_allowed": false,
+    "auto_merchant_contact_allowed": false,
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 60,
+    "event_happened": false,
+    "event_id": "EVENT-SUZUKA-RACE-WEEKEND",
+    "event_name": "Suzuka Race Weekend",
+    "event_type": "race",
+    "expected_crowd_pressure": 100,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "likely_mobility_demand": [
+      "event_pickup",
+      "private_charter",
+      "group_transfer",
+      "night_return"
+    ],
+    "location": "Suzuka Circuit",
+    "market": "US",
+    "real_event_confirmed": false,
+    "related_keywords": [
+      "Suzuka Circuit transfer",
+      "F1 Japan race pickup",
+      "Nagoya to Suzuka private transfer"
+    ],
+    "risk_notes": "Suzuka Race Weekend is sample-only. Location heat is 90 at Suzuka Circuit; verify official event dates and venue logistics before any business action.",
+    "sample_event_only": true,
+    "source_spatial_location_ids": [
+      "LOC-SUZUKA",
+      "LOC-SUZUKA",
+      "LOC-SUZUKA"
+    ],
+    "source_type": "sample_event_catalog",
+    "time_window": "event_weekend_sample_window",
+    "write_api_allowed": false
+  },
+  {
+    "auto_driver_contact_allowed": false,
+    "auto_merchant_contact_allowed": false,
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 65,
+    "event_happened": false,
+    "event_id": "EVENT-TOKYO-BIG-SIGHT-EXPO",
+    "event_name": "Tokyo Big Sight Trade Expo",
+    "event_type": "exhibition",
+    "expected_crowd_pressure": 91,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "likely_mobility_demand": [
+      "event_pickup",
+      "airport_transfer",
+      "equipment_luggage",
+      "station_to_hotel",
+      "group_transfer"
+    ],
+    "location": "Tokyo Big Sight",
+    "market": "Taiwan",
+    "real_event_confirmed": false,
+    "related_keywords": [
+      "Tokyo Big Sight transfer",
+      "expo airport pickup",
+      "conference luggage transfer"
+    ],
+    "risk_notes": "Tokyo Big Sight Trade Expo is sample-only. Location heat is 91 at Tokyo Big Sight; verify official event dates and venue logistics before any business action.",
+    "sample_event_only": true,
+    "source_spatial_location_ids": [
+      "LOC-TOKYO-BIG-SIGHT"
+    ],
+    "source_type": "sample_event_catalog",
+    "time_window": "three_day_exhibition_sample_window",
+    "write_api_allowed": false
+  },
+  {
+    "auto_driver_contact_allowed": false,
+    "auto_merchant_contact_allowed": false,
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 59,
+    "event_happened": false,
+    "event_id": "EVENT-NAGOYA-PRODUCT-LAUNCH",
+    "event_name": "Nagoya Product Launch Week",
+    "event_type": "product launch",
+    "expected_crowd_pressure": 79,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "likely_mobility_demand": [
+      "airport_transfer",
+      "business_transfer",
+      "event_pickup",
+      "multi_city_transfer",
+      "station_to_hotel"
+    ],
+    "location": "Nagoya",
+    "market": "Korea",
+    "real_event_confirmed": false,
+    "related_keywords": [
+      "Nagoya product launch transfer",
+      "Chubu airport event pickup",
+      "business travel Nagoya"
+    ],
+    "risk_notes": "Nagoya Product Launch Week is sample-only. Location heat is 86 at Nagoya; verify official event dates and venue logistics before any business action.",
+    "sample_event_only": true,
+    "source_spatial_location_ids": [
+      "LOC-NAGOYA"
+    ],
+    "source_type": "sample_event_catalog",
+    "time_window": "launch_week_sample_window",
+    "write_api_allowed": false
+  },
+  {
+    "auto_driver_contact_allowed": false,
+    "auto_merchant_contact_allowed": false,
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 65,
+    "event_happened": false,
+    "event_id": "EVENT-KYOTO-AUTUMN-FESTIVAL",
+    "event_name": "Kyoto Autumn Festival Cluster",
+    "event_type": "festival",
+    "expected_crowd_pressure": 100,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "likely_mobility_demand": [
+      "private_charter",
+      "sightseeing_route",
+      "elderly_support",
+      "station_to_hotel"
+    ],
+    "location": "Kyoto",
+    "market": "Taiwan",
+    "real_event_confirmed": false,
+    "related_keywords": [
+      "Kyoto autumn festival transfer",
+      "Kyoto temple crowd",
+      "private charter Kyoto autumn"
+    ],
+    "risk_notes": "Kyoto Autumn Festival Cluster is sample-only. Location heat is 94 at Kyoto; verify official event dates and venue logistics before any business action.",
+    "sample_event_only": true,
+    "source_spatial_location_ids": [
+      "LOC-KYOTO"
+    ],
+    "source_type": "sample_event_catalog",
+    "time_window": "autumn_peak_sample_window",
+    "write_api_allowed": false
+  },
+  {
+    "auto_driver_contact_allowed": false,
+    "auto_merchant_contact_allowed": false,
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 65,
+    "event_happened": false,
+    "event_id": "EVENT-TOKYO-CONCERT-NIGHT",
+    "event_name": "Tokyo Concert Night Sample",
+    "event_type": "concert",
+    "expected_crowd_pressure": 99,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "likely_mobility_demand": [
+      "night_arrival",
+      "event_pickup",
+      "station_to_hotel",
+      "airport_transfer",
+      "private_charter"
+    ],
+    "location": "Tokyo",
+    "market": "US",
+    "real_event_confirmed": false,
+    "related_keywords": [
+      "Tokyo concert night transfer",
+      "late night hotel transfer",
+      "Tokyo event pickup"
+    ],
+    "risk_notes": "Tokyo Concert Night Sample is sample-only. Location heat is 93 at Tokyo; verify official event dates and venue logistics before any business action.",
+    "sample_event_only": true,
+    "source_spatial_location_ids": [
+      "LOC-TOKYO"
+    ],
+    "source_type": "sample_event_catalog",
+    "time_window": "single_night_concert_sample_window",
+    "write_api_allowed": false
+  },
+  {
+    "auto_driver_contact_allowed": false,
+    "auto_merchant_contact_allowed": false,
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 59,
+    "event_happened": false,
+    "event_id": "EVENT-GOLDEN-WEEK-PUBLIC-HOLIDAY",
+    "event_name": "Golden Week Public Holiday Surge",
+    "event_type": "public holiday",
+    "expected_crowd_pressure": 93,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "likely_mobility_demand": [
+      "airport_transfer",
+      "family_trip",
+      "station_to_hotel",
+      "private_charter"
+    ],
+    "location": "Osaka",
+    "market": "Korea",
+    "real_event_confirmed": false,
+    "related_keywords": [
+      "Golden Week airport pickup",
+      "Osaka family transfer",
+      "public holiday hotel transfer"
+    ],
+    "risk_notes": "Golden Week Public Holiday Surge is sample-only. Location heat is 89 at Osaka; verify official event dates and venue logistics before any business action.",
+    "sample_event_only": true,
+    "source_spatial_location_ids": [
+      "LOC-OSAKA"
+    ],
+    "source_type": "sample_event_catalog",
+    "time_window": "golden_week_sample_window",
+    "write_api_allowed": false
+  },
+  {
+    "auto_driver_contact_allowed": false,
+    "auto_merchant_contact_allowed": false,
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 64,
+    "event_happened": false,
+    "event_id": "EVENT-SCHOOL-HOLIDAY-OKINAWA",
+    "event_name": "Okinawa School Holiday Family Travel",
+    "event_type": "school holiday",
+    "expected_crowd_pressure": 87,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "likely_mobility_demand": [
+      "family_trip",
+      "airport_transfer",
+      "luggage_heavy_trip",
+      "private_charter",
+      "resort_transfer"
+    ],
+    "location": "Okinawa",
+    "market": "Southeast Asia",
+    "real_event_confirmed": false,
+    "related_keywords": [
+      "Okinawa family transfer",
+      "school holiday Japan family trip",
+      "resort airport transfer"
+    ],
+    "risk_notes": "Okinawa School Holiday Family Travel is sample-only. Location heat is 88 at Okinawa; verify official event dates and venue logistics before any business action.",
+    "sample_event_only": true,
+    "source_spatial_location_ids": [
+      "LOC-OKINAWA"
+    ],
+    "source_type": "sample_event_catalog",
+    "time_window": "summer_school_holiday_sample_window",
+    "write_api_allowed": false
+  },
+  {
+    "auto_driver_contact_allowed": false,
+    "auto_merchant_contact_allowed": false,
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 68,
+    "event_happened": false,
+    "event_id": "EVENT-SAPPORO-WINTER-SPORTS",
+    "event_name": "Sapporo Winter Sports Travel",
+    "event_type": "sports event",
+    "expected_crowd_pressure": 87,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "likely_mobility_demand": [
+      "event_pickup",
+      "group_transfer",
+      "private_charter",
+      "airport_transfer",
+      "winter_transfer",
+      "family_trip"
+    ],
+    "location": "Sapporo",
+    "market": "Taiwan",
+    "real_event_confirmed": false,
+    "related_keywords": [
+      "Sapporo winter transfer",
+      "snow luggage airport pickup",
+      "winter sports hotel transfer"
+    ],
+    "risk_notes": "Sapporo Winter Sports Travel is sample-only. Location heat is 89 at Sapporo; verify official event dates and venue logistics before any business action.",
+    "sample_event_only": true,
+    "source_spatial_location_ids": [
+      "LOC-SAPPORO",
+      "LOC-SAPPORO",
+      "LOC-SAPPORO"
+    ],
+    "source_type": "sample_event_catalog",
+    "time_window": "winter_sports_sample_window",
+    "write_api_allowed": false
+  },
+  {
+    "auto_driver_contact_allowed": false,
+    "auto_merchant_contact_allowed": false,
+    "auto_publish_allowed": false,
+    "auto_reply_allowed": false,
+    "confidence_score": 69,
+    "event_happened": false,
+    "event_id": "EVENT-TOKYO-BUSINESS-CONFERENCE",
+    "event_name": "Tokyo Business Conference Arrival",
+    "event_type": "conference",
+    "expected_crowd_pressure": 97,
+    "gps_dispatch_enabled": false,
+    "human_review_required": true,
+    "likely_mobility_demand": [
+      "airport_transfer",
+      "business_transfer",
+      "station_to_hotel",
+      "private_charter",
+      "night_arrival"
+    ],
+    "location": "Tokyo",
+    "market": "Europe",
+    "real_event_confirmed": false,
+    "related_keywords": [
+      "Tokyo conference airport transfer",
+      "business district hotel transfer",
+      "conference luggage pickup"
+    ],
+    "risk_notes": "Tokyo Business Conference Arrival is sample-only. Location heat is 94 at Tokyo; verify official event dates and venue logistics before any business action.",
+    "sample_event_only": true,
+    "source_spatial_location_ids": [
+      "LOC-TOKYO",
+      "LOC-TOKYO",
+      "LOC-TOKYO"
+    ],
+    "source_type": "sample_event_catalog",
+    "time_window": "conference_arrival_sample_window",
+    "write_api_allowed": false
+  }
+]
